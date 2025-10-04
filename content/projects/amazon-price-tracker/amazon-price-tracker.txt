@@ -1,2 +1,8 @@
+Template: project
+Status: listed
 Title: Amazon Price Tracker
-Text: A tool to monitor and notify on price drops for Amazon listings using automation.
+Summary: Track price drops across multiple products and get alerted instantly.
+Tech_stack: Apify, Telegram API, n8n, Google Sheets
+Results: Saved 5+ hours/week and caught 30+ price drops automatically. Used for private Telegram alerts.
+Image: amazon-price-tracker.jpg
+Link: https://github.com/shimmer-labs/amazon-price-tracker

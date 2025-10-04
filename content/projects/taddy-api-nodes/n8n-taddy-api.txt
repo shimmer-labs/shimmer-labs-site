@@ -1,3 +1,8 @@
-Title: Amazon Price Tracker
-Text: A browser extension and API to monitor price changes across Amazon listings. Ideal for sellers and competitive analysts.
-Status: Complete
+Template: project
+Status: listed
+Title: n8n Taddy API Nodes (Coming Soon)
+Summary: A set of custom n8n nodes for extracting podcast data from the Taddy API.
+Tech_stack: n8n, Taddy API, GitHub Actions, Open Graph scraping
+Results: Automates podcast tracking, guest matching, and metadata enrichment. Will support niche newsletter creators and discovery tooling.
+Image: taddy-api-nodes.jpg
+Link: https://github.com/shimmer-labs/taddy-podcast-actor
