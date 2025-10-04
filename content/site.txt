@@ -1,1 +1,214 @@
-Title: Mægazine
+Title: Shimmer Labs
+
+----
+
+Tagline: 
+
+----
+
+Logo: - 'file://9xi0uhi4ymclav2g'
+
+----
+
+Email: 
+
+----
+
+Linkedin: 
+
+----
+
+Twitter: 
+
+----
+
+Description: 
+
+----
+
+Herosubheading: Small business automation experts
+
+----
+
+Herotitle: Automate Your Business, Reclaim Your Time
+
+----
+
+Herodescription: From tedious admin tasks to tangled tools, we design automation systems and custom integrations that bring clarity, efficiency, and peace of mind.
+
+----
+
+Herocta: Let's Build Your Workflow
+
+----
+
+Heroctaurl: /contact
+
+----
+
+Herolaptopimage: - n8n.jpg
+
+----
+
+Herocircleimage: - hero.jpg
+
+----
+
+Clients:
+
+- 
+  name: Acme Corp
+  url: ""
+- 
+  name: TechStart
+  url: ""
+- 
+  name: GrowthCo
+  url: ""
+
+----
+
+Valuetitle: Stop Leaving Money on the Table
+
+----
+
+Valuedescription: Business automation isn't just about saving time—it's about unlocking revenue. Every manual process is a bottleneck. Every disconnected tool is an opportunity missed. We help you build systems that work while you sleep, so you can focus on growth, strategy, and finally taking that vacation.
+
+----
+
+Servicestitle: How We Work
+
+----
+
+Services:
+
+- 
+  title: Analyze & Audit
+  description: >
+    We dig deep into your workflows to
+    identify where automation can save you
+    time and eliminate bottlenecks. No cookie
+    cutter solutions—just what works for your
+    business.
+  icon: 🔍
+- 
+  title: Design & Strategy
+  description: >
+    We craft custom automation strategies and
+    integrations tailored to your tools and
+    processes. From n8n workflows to API
+    wrappers, we connect everything
+    seamlessly.
+  icon: ✨
+- 
+  title: Build & Optimize
+  description: >
+    We build, test, and deploy your
+    workflows, then continuously optimize
+    them. Your automation system grows with
+    your business, not against it.
+  icon: 🚀
+
+----
+
+Foundername: Logan Herr
+
+----
+
+Foundertitle: Founder & Automation Architect
+
+----
+
+Founderbio: You'll work directly with Logan Herr, who has helped businesses reclaim hundreds of hours through intelligent automation. With expertise in n8n, API integrations, and lifecycle marketing, Logan brings both technical depth and strategic thinking to every project.
+
+----
+
+Founderimage: 
+
+----
+
+Additionalofferings:
+
+- 
+  title: Quick Win Engagements
+  description: >
+    Short-term projects focused on immediate
+    impact. Get one critical workflow
+    automated in 1-2 weeks.
+  status: ""
+- 
+  title: Ongoing Automation Support
+  description: >
+    Monthly retainer for continuous
+    optimization, troubleshooting, and new
+    workflow development.
+  status: ""
+- 
+  title: Training & Workshops
+  description: >
+    Learn to build and maintain your own
+    automations. Empower your team with
+    automation skills.
+  status: Coming Soon
+
+----
+
+Projects:
+
+- 
+  title: Amazon Price Tracker
+  description: >
+    Automated price monitoring system that
+    tracks product prices across Amazon and
+    sends alerts when prices drop. Built with
+    Apify and n8n for seamless data collection
+    and notifications.
+  icon: 🛒
+  url: ""
+  status: active
+- 
+  title: Government Contract Monitor
+  description: >
+    Real-time monitoring of government
+    contract opportunities. Automatically
+    scrapes, filters, and notifies about
+    relevant RFPs and contract awards.
+  icon: 📊
+  url: ""
+  status: active
+- 
+  title: Off The Apps OK
+  description: >
+    Dating app alternative that helps people
+    meet in real life. Combines location-based
+    matching with event coordination and safety
+    features.
+  icon: 💬
+  url: ""
+  status: active
+- 
+  title: Taddy API n8n Node
+  description: >
+    Custom n8n node for the Taddy podcast API.
+    Enables podcast data automation including
+    search, transcripts, and analytics
+    integration.
+  icon: 🔌
+  url: ""
+  status: coming-soon
+
+----
+
+Finalctatitle: Ready to Automate Your Business?
+
+----
+
+Finalctadescription: Let's talk about your workflows, your pain points, and how we can help you reclaim your time.
+
+----
+
+Finalctatext: Schedule a Free Consultation
+
+----
+
+Finalctaurl: /contact

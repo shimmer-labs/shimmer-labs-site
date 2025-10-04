@@ -3,28 +3,46 @@
 <!-- Hero Section -->
 <section class="hero">
   <div class="container">
-    <div class="hero__content">
-      <?php if ($page->heroSubheading()->isNotEmpty()): ?>
-        <p class="hero__subheading"><?= $page->heroSubheading() ?></p>
-      <?php endif ?>
+    <div class="hero__wrapper">
+      <div class="hero__content">
+        <?php if ($page->heroSubheading()->isNotEmpty()): ?>
+          <p class="hero__subheading"><?= $page->heroSubheading() ?></p>
+        <?php endif ?>
+        
+        <h1 class="hero__title"><?= $page->heroTitle()->or('Automate Your Business, Reclaim Your Time') ?></h1>
+        
+        <?php if ($page->heroDescription()->isNotEmpty()): ?>
+          <p class="hero__description"><?= $page->heroDescription() ?></p>
+        <?php endif ?>
+        
+        <?php if ($page->heroCta()->isNotEmpty()): ?>
+          <a href="<?= $page->heroCtaUrl() ?>" class="btn btn--primary">
+            <?= $page->heroCta() ?>
+          </a>
+        <?php endif ?>
+      </div>
       
-      <h1 class="hero__title"><?= $page->heroTitle()->or('Automate Your Business, Reclaim Your Time') ?></h1>
-      
-      <?php if ($page->heroDescription()->isNotEmpty()): ?>
-        <p class="hero__description"><?= $page->heroDescription() ?></p>
-      <?php endif ?>
-      
-      <?php if ($page->heroCta()->isNotEmpty()): ?>
-        <a href="<?= $page->heroCtaUrl() ?>" class="btn btn--primary">
-          <?= $page->heroCta() ?>
-        </a>
-      <?php endif ?>
+      <div class="hero__visual">
+        <div class="laptop-mockup">
+          <?php if ($page->heroLaptopImage()->toFile()): ?>
+            <img src="<?= $page->heroLaptopImage()->toFile()->url() ?>" alt="n8n workflow automation" class="laptop-screen">
+          <?php endif ?>
+        </div>
+        <?php if ($page->heroCircleImage()->toFile()): ?>
+          <div class="hero__circle-image">
+            <img src="<?= $page->heroCircleImage()->toFile()->url() ?>" alt="Automation in action">
+          </div>
+        <?php endif ?>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Social Proof -->
 <?php snippet('social-proof', ['clients' => $page->clients()]) ?>
+
+<!-- Tools Carousel -->
+<?php snippet('tools-carousel') ?>
 
 <!-- Value Proposition -->
 <section class="value-prop">
@@ -80,8 +98,8 @@
 </section>
 <?php endif ?>
 
-<!-- Testimonials -->
-<?php snippet('testimonials', ['testimonials' => $page->testimonials()]) ?>
+<!-- Projects -->
+<?php snippet('projects', ['projects' => $page->projects()]) ?>
 
 <!-- Final CTA -->
 <section class="cta-final">
