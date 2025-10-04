@@ -1,0 +1,8 @@
+title: Pricing
+sections:
+  pricing:
+    type: fields
+    fields:
+      intro:
+        label: Intro Text
+        type: textarea

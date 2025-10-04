@@ -1,0 +1,2 @@
+Title: Amazon Price Tracker
+Text: A tool to monitor and notify on price drops for Amazon listings using automation.

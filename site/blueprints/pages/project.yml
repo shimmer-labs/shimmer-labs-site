@@ -1,0 +1,6 @@
+title: Project
+
+fields:
+  text:
+    label: Project Description
+    type: textarea

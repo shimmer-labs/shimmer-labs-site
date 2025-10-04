@@ -1,0 +1,8 @@
+title: Contact
+sections:
+  contact:
+    type: fields
+    fields:
+      instructions:
+        label: Instructions
+        type: textarea

@@ -1,0 +1,13 @@
+Title: Home
+----
+
+Headline: Automate Smarter, Grow Faster ✨
+----
+
+Subheadline: We help growth-minded teams eliminate tedious work with intelligent automation.
+----
+
+CtaText: See Our Pricing
+----
+
+CtaLink: /pricing

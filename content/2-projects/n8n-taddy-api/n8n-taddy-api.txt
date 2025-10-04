@@ -1,0 +1,3 @@
+Title: Amazon Price Tracker
+Text: A browser extension and API to monitor price changes across Amazon listings. Ideal for sellers and competitive analysts.
+Status: Complete

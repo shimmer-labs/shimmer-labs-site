@@ -1,0 +1,16 @@
+title: Projects
+
+sections:
+  content:
+    type: fields
+    fields:
+      intro:
+        label: Intro
+        type: textarea
+
+  projects:
+    type: pages
+    headline: Projects
+    template: project
+    create:
+      - project
