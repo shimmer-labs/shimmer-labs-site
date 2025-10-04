@@ -245,22 +245,114 @@ section {
    Hero Section
    =================================== */
 .hero {
-  background: var(--color-white);  /* White background */
-  color: var(--color-navy);
-  padding: var(--spacing-xl) 0;
+  background: #FFFFFF !important;
+  color: #0A1A2F;
+  padding: 6rem 0 !important;
   overflow: hidden;
 }
 
+.hero__wrapper {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 4rem !important;
+  align-items: center !important;
+}
+
+.hero__content {
+  max-width: 600px;
+}
+
 .hero__subheading {
-  color: var(--color-gold);  /* Keep gold */
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #FDBE34 !important;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
 }
 
 .hero__title {
-  color: var(--color-navy);  /* Dark text */
+  font-size: 3rem !important;
+  margin-bottom: 2rem !important;
+  line-height: 1.1 !important;
+  color: #0A1A2F !important;
 }
 
 .hero__description {
-  color: var(--color-navy);  /* Dark text */
+  font-size: 1.125rem !important;
+  margin-bottom: 2rem !important;
+  color: #0A1A2F !important;
+  line-height: 1.6;
+}
+
+.hero__visual {
+  position: relative;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 2rem !important;
+}
+
+.laptop-mockup {
+  position: relative;
+  width: 100% !important;
+  max-width: 600px;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%) !important;
+  border-radius: 12px 12px 0 0;
+  padding: 20px 20px 40px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.1) !important;
+}
+
+.laptop-mockup::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.laptop-mockup::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 20px;
+  background: linear-gradient(145deg, #333 0%, #222 100%);
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.laptop-screen {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  display: block !important;
+}
+
+.hero__circle-image {
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 50% !important;
+  overflow: hidden;
+  border: 4px solid #FDBE34 !important;
+  box-shadow: 0 8px 24px rgba(253, 190, 52, 0.3) !important;
+  margin-top: -30px;
+  display: block !important;
+}
+
+.hero__circle-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
 }
 /* ===================================
    Social Proof
