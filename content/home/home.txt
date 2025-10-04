@@ -1,0 +1,4 @@
+Title: Home
+Headline: Automate Your Business. Reclaim Your Time.
+Subheadline: We help small business owners untangle their tech, connect their tools, and build automations that just work — so you can focus on growth (or finally take that vacation).
+Cta_button: Let’s Build Your Workflow

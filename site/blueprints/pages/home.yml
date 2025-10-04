@@ -1,16 +1,11 @@
 title: Home
 fields:
-  headline: text
-  subheadline: textarea
-  cta_button: text
-  services_preview: structure
-    fields:
-      title: text
-      summary: textarea
-      link: url
-  projects_teaser: structure
-    fields:
-      title: text
-      description: textarea
-      link: url
-  contact_cta: textarea
+  headline:
+    label: Headline
+    type: text
+  subheadline:
+    label: Subheadline
+    type: textarea
+  cta_button:
+    label: CTA Button
+    type: text

@@ -1,0 +1,4 @@
+Title: Contact
+Intro: Ready to reclaim your time? Let’s talk through what’s possible — no pressure, no jargon.
+
+Intake_question: What tool or workflow are you stuck on?
