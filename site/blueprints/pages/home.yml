@@ -1,11 +1,179 @@
 title: Home
-fields:
-  headline:
-    label: Headline
-    type: text
-  subheadline:
-    label: Subheadline
-    type: textarea
-  cta_button:
-    label: CTA Button
-    type: text
+
+tabs:
+  hero:
+    label: Hero Section
+    fields:
+      heroSubheading:
+        label: Subheading
+        type: text
+        placeholder: Optional tagline above main headline
+      heroTitle:
+        label: Main Headline
+        type: text
+        default: Automate Your Business, Reclaim Your Time
+      heroDescription:
+        label: Description
+        type: textarea
+        size: medium
+      heroCta:
+        label: CTA Button Text
+        type: text
+        default: Let's Build Your Workflow
+      heroCtaUrl:
+        label: CTA Button URL
+        type: url
+        default: /contact
+      heroLaptopImage:
+        label: Laptop Screen Image (n8n workflow screenshot)
+        type: files
+        max: 1
+        help: This will appear inside the laptop mockup
+      heroCircleImage:
+        label: Hero Circle Image
+        type: files
+        max: 1
+        help: This will appear in a circle below the laptop
+
+  social:
+    label: Social Proof
+    fields:
+      clients:
+        label: Client Names/Logos
+        type: structure
+        fields:
+          name:
+            label: Client Name
+            type: text
+          logo:
+            label: Logo
+            type: files
+            max: 1
+          url:
+            label: Website (optional)
+            type: url
+
+  value:
+    label: Value Proposition
+    fields:
+      valueTitle:
+        label: Section Title
+        type: text
+      valueDescription:
+        label: Description
+        type: textarea
+        size: large
+
+  caseStudy:
+    label: Featured Case Study
+    fields:
+      featuredCaseStudy:
+        label: Select Case Study
+        type: pages
+        max: 1
+        query: site.find('case-studies').children
+
+  founder:
+    label: Founder Section
+    fields:
+      founderName:
+        label: Name
+        type: text
+      founderTitle:
+        label: Title/Role
+        type: text
+      founderBio:
+        label: Biography
+        type: textarea
+        size: large
+      founderImage:
+        label: Photo
+        type: files
+        max: 1
+
+  services:
+    label: Services/Process
+    fields:
+      servicesTitle:
+        label: Section Title
+        type: text
+        default: How We Work
+      services:
+        label: Service Steps
+        type: structure
+        fields:
+          title:
+            label: Service Title
+            type: text
+          description:
+            label: Description
+            type: textarea
+          icon:
+            label: Icon/Emoji
+            type: text
+            help: e.g., 🔍, ✨, 🚀
+
+  offerings:
+    label: Additional Offerings
+    fields:
+      additionalOfferings:
+        label: Additional Services
+        type: structure
+        fields:
+          title:
+            label: Title
+            type: text
+          description:
+            label: Description
+            type: textarea
+          status:
+            label: Status
+            type: text
+            help: e.g., "Coming soon"
+
+  projects:
+    label: Projects
+    fields:
+      projects:
+        label: Featured Projects
+        type: structure
+        fields:
+          title:
+            label: Project Name
+            type: text
+          description:
+            label: Description
+            type: textarea
+          icon:
+            label: Icon/Emoji
+            type: text
+            help: e.g., 🛒, 📊, 💬, 🔌
+          url:
+            label: Project URL (optional)
+            type: url
+          status:
+            label: Status
+            type: select
+            options:
+              active: Active
+              coming-soon: Coming Soon
+            default: active
+
+  finalCta:
+    label: Final CTA
+    fields:
+      finalCtaTitle:
+        label: CTA Title
+        type: text
+        default: Let's Automate Your Business
+      finalCtaDescription:
+        label: Description (optional)
+        type: textarea
+      finalCtaText:
+        label: Button Text
+        type: text
+        default: Get Started
+      finalCtaUrl:
+        label: Button URL
+        type: url
+        default: /contact

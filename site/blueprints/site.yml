@@ -1,6 +1,36 @@
-pages:
-  template:
-    - home
-    - projects
-    - pricing
-    - contact
+title: Site Settings
+
+fields:
+  title:
+    label: Site Title
+    type: text
+    default: Shimmer Labs
+  
+  tagline:
+    label: Tagline
+    type: text
+    default: Let's automate your business.
+  
+  logo:
+    label: Logo
+    type: files
+    max: 1
+    accept: image/png, image/jpeg, image/svg+xml
+  
+  email:
+    label: Email Address
+    type: email
+  
+  linkedin:
+    label: LinkedIn URL
+    type: url
+  
+  twitter:
+    label: Twitter URL
+    type: url
+  
+  description:
+    label: Site Description
+    type: textarea
+    help: For SEO and social media
+    default: Shimmer Labs helps small business owners automate their operations so they can reclaim time, focus on growth, and even take a vacation.
