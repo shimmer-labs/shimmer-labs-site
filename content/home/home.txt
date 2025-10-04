@@ -32,18 +32,16 @@ Herocircleimage: - 'file://ivckyndgl6sqniun'
 
 Clients:
 
--
-  name: 'Acme Corp'
-  logo: []
-  url: ''
--
-  name: TechStart
-  logo: []
-  url: ''
--
-  name: GrowthCo
-  logo: []
-  url: ''
+- 
+  name: Full Stack
+  url: ""
+- 
+  name: API Wrappers
+  url: ""
+- 
+  name: n8n Automations
+  url: ""
+
 
 ----
 

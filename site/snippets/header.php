@@ -20,12 +20,13 @@
     <div class="container">
       <nav class="site-nav">
         <a href="<?= $site->url() ?>" class="site-logo">
-          <?php if ($site->logo()->toFile()): ?>
-            <img src="<?= $site->logo()->toFile()->url() ?>" alt="<?= $site->title() ?>">
-          <?php else: ?>
-            <span class="logo-text"><?= $site->title() ?></span>
-          <?php endif ?>
-        </a>
+  <?php if ($site->logo()->toFile()): ?>
+    <img src="<?= $site->logo()->toFile()->url() ?>" alt="<?= $site->title() ?>">
+    <span class="logo-text"><?= $site->title() ?></span>
+  <?php else: ?>
+    <span class="logo-text"><?= $site->title() ?></span>
+  <?php endif ?>
+</a>
         
         <ul class="nav-menu">
           <?php foreach ($site->children()->listed() as $item): ?>
