@@ -97,8 +97,8 @@ section {
    Header & Navigation
    =================================== */
 .site-header {
-  background: var(--color-navy);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--color-navy);  /* This makes header blue */
+  border-bottom: none;
   padding: var(--spacing-md) 0;
   position: sticky;
   top: 0;
@@ -106,21 +106,10 @@ section {
   transition: var(--transition);
 }
 
-.site-header.scrolled {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
-  padding: 0.75rem 0;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .site-logo {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  gap: 1rem;  /* Space between logo and text */
 }
 
 .site-logo img {
@@ -132,19 +121,12 @@ section {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-white);
-}
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-  gap: var(--spacing-md);
-  margin: 0;
+  color: var(--color-white);  /* White text */
 }
 
 .nav-menu a {
   font-weight: 500;
-  color: var(--color-white);
+  color: var(--color-white);  /* White nav links */
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
 }
@@ -152,6 +134,21 @@ section {
 .nav-menu a:hover,
 .nav-menu a.active {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--color-white);  /* White button text */
+  border-color: var(--color-white);
+}
+
+.btn--secondary:hover {
+  background: var(--color-white);
+  color: var(--color-navy);
+}
+
+.mobile-menu-toggle span {
+  background: var(--color-white);  /* White hamburger menu */
 }
 
 /* ===================================
@@ -210,45 +207,23 @@ section {
    Hero Section
    =================================== */
 .hero {
-  background: var(--color-white);
+  background: var(--color-white);  /* White background */
   color: var(--color-navy);
   padding: var(--spacing-xl) 0;
   overflow: hidden;
 }
 
-.hero__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-lg);
-  align-items: center;
-}
-
-.hero__content {
-  max-width: 600px;
-}
-
 .hero__subheading {
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: var(--color-gold);
-  margin-bottom: var(--spacing-sm);
-  letter-spacing: 0.5px;
+  color: var(--color-gold);  /* Keep gold */
 }
 
 .hero__title {
-  font-size: 3rem;
-  margin-bottom: var(--spacing-md);
-  line-height: 1.1;
-  color: var(--color-navy);
+  color: var(--color-navy);  /* Dark text */
 }
 
 .hero__description {
-  font-size: 1.125rem;
-  margin-bottom: var(--spacing-md);
-  color: var(--color-navy);
-  line-height: 1.6;
+  color: var(--color-navy);  /* Dark text */
 }
-
 /* ===================================
    Social Proof
    =================================== */
