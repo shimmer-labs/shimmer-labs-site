@@ -59,7 +59,7 @@ Featuredcasestudy: []
 
 ----
 
-Foundername: Your Name
+Foundername: Logan Shimmer
 
 ----
 
@@ -67,7 +67,7 @@ Foundertitle: Founder & Automation Architect
 
 ----
 
-Founderbio: You'll work directly with Logan Shimmer, who has helped dozens of small businesses reclaim hundreds of hours through intelligent automation. With expertise in n8n, API integrations, and lifecycle marketing, Shimmer brings both technical depth and strategic thinking to every project.
+Founderbio: You'll work directly with Logan Shimmer, who has helped dozens of small businesses reclaim hundreds of hours through intelligent automation. With expertise in n8n, API integrations, and lifecycle marketing, Logan brings both technical depth and strategic thinking to every project.
 
 ----
 
