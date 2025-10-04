@@ -1,0 +1,9 @@
+title: Service
+fields:
+  title: text
+  summary: textarea
+  features: structure
+    fields:
+      item: text
+  platforms: tags
+  icon: files

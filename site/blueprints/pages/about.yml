@@ -1,0 +1,10 @@
+title: About
+fields:
+  mission: textarea
+  bio: textarea
+  values: structure
+    fields:
+      icon: text
+      label: text
+      description: textarea
+  brand_traits: tags

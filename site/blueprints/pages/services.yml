@@ -1,0 +1,11 @@
+title: Services
+fields:
+  intro: textarea
+  packages: structure
+    fields:
+      name: text
+      description: textarea
+      ideal_for: text
+  services: pages
+    query: page.children
+    multiple: true

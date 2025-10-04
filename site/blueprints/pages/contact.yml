@@ -1,8 +1,5 @@
 title: Contact
-sections:
-  contact:
-    type: fields
-    fields:
-      instructions:
-        label: Instructions
-        type: textarea
+fields:
+  intro: textarea
+  intake_question: text
+  form_integration: textarea  # optional embed or shortcode

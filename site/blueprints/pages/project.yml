@@ -1,6 +1,7 @@
 title: Project
-
 fields:
-  text:
-    label: Project Description
-    type: textarea
+  summary: textarea
+  tech_stack: tags
+  results: textarea
+  link: url
+  image: files
