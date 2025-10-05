@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Open Graph / Social Media Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="<?= $site->url() ?>">
+<meta property="og:title" content="<?= $page->title() ?> | Shimmer Labs - Business Automation">
+<meta property="og:description" content="Automate your business, reclaim your time. Custom automation solutions for small businesses.">
+<meta property="og:image" content="<?= url('assets/images/shimmer-labs-logo.png') ?>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="<?= $site->url() ?>">
+<meta name="twitter:title" content="<?= $page->title() ?> | Shimmer Labs">
+<meta name="twitter:description" content="Automate your business, reclaim your time. Custom automation solutions for small businesses.">
+<meta name="twitter:image" content="<?= url('assets/images/shimmer-labs-logo.png') ?>">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $page->title() ?> | <?= $site->title() ?></title>
