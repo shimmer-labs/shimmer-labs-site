@@ -1425,6 +1425,8 @@ section {
   background: var(--color-navy);
   color: var(--color-white);
   padding: var(--spacing-lg) 0 var(--spacing-md);
+  width: 100%; /* Force full width */
+  margin: 0; /* Remove any margins */
 }
 
 .footer-content {
