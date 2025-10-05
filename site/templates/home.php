@@ -25,12 +25,12 @@
       <div class="hero__visual">
         <div class="laptop-mockup">
           <?php if ($page->heroLaptopImage()->toFile()): ?>
-            <img src="<?= $page->heroLaptopImage()->toFile()->url() ?>" alt="n8n workflow automation" class="laptop-screen">
+            <img src="<?= url('assets/images/n8n.jpg') ?>" alt="n8n workflow automation" class="laptop-screen">
           <?php endif ?>
         </div>
         <?php if ($page->heroCircleImage()->toFile()): ?>
           <div class="hero__circle-image">
-            <img src="<?= $page->heroCircleImage()->toFile()->url() ?>" alt="Automation in action">
+            <img src="<?= url('assets/images/hero.jpg') ?>" alt="Automation in action">
           </div>
         <?php endif ?>
       </div>
@@ -109,7 +109,7 @@
       <?php if ($page->finalCtaDescription()->isNotEmpty()): ?>
         <p><?= $page->finalCtaDescription() ?></p>
       <?php endif ?>
-      <a href="<?= $page->finalCtaUrl() ?>" class="btn btn--primary">
+      <a href="<?= $page->finalCtaUrl() ?>" class="btn btn--cta">
         <?= $page->finalCtaText()->or('Get Started') ?>
       </a>
     </div>

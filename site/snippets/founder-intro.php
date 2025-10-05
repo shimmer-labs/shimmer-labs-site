@@ -7,12 +7,10 @@
         </p>
         <?= $bio->kt() ?>
       </div>
-      <?php if ($image->isNotEmpty()): ?>
-        <div class="founder__image">
-          <img src="<?= $image->toFile()->url() ?>" alt="<?= $name ?>">
-          <span class="founder__name"><?= $name ?></span>
-        </div>
-      <?php endif ?>
+      <div class="founder__image">
+        <img src="<?= url('assets/images/hero.jpg') ?>" alt="<?= $name ?>" class="founder__photo">
+        <span class="founder__name"><?= $name ?></span>
+      </div>
     </div>
   </div>
 </section>

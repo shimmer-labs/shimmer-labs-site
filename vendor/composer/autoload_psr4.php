@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
+    'Uniform\\' => array($baseDir . '/site/plugins/kirby-uniform/src'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Polyfill\\Intl\\Normalizer\\' => array($vendorDir . '/symfony/polyfill-intl-normalizer'),
     'Symfony\\Polyfill\\Intl\\Idn\\' => array($vendorDir . '/symfony/polyfill-intl-idn'),
@@ -17,6 +18,7 @@ return array(
     'League\\ColorExtractor\\' => array($vendorDir . '/league/color-extractor/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
     'Kirby\\' => array($baseDir . '/kirby/src', $vendorDir . '/getkirby/composer-installer/src'),
+    'Jevets\\Kirby\\' => array($baseDir . '/site/plugins/kirby-form/src', $baseDir . '/site/plugins/kirby-flash/src'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
     'Base32\\' => array($vendorDir . '/christian-riesen/base32/src'),
 );

@@ -11,9 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <?= css([
-    'assets/css/main.css',
-    '@auto'
-  ]) ?>
+    'assets/css/main.css']) ?>
 </head>
 <body>
   <header class="site-header">
@@ -21,8 +19,9 @@
       <nav class="site-nav">
         <a href="<?= $site->url() ?>" class="site-logo">
   <?php if ($site->logo()->toFile()): ?>
-    <img src="<?= $site->logo()->toFile()->url() ?>" alt="<?= $site->title() ?>">
-    <span class="logo-text"><?= $site->title() ?></span>
+    <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="<?= $site->title() ?>">
+<span class="logo-text"><?= $site->title() ?></span>
+
   <?php else: ?>
     <span class="logo-text"><?= $site->title() ?></span>
   <?php endif ?>

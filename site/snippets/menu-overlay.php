@@ -21,7 +21,7 @@
       <!-- Right side: CTA -->
       <div class="menu-cta">
         <h2>
-          Ready to invest in lifecycle? 
+          Ready to invest in automation? 
           <span class="highlight">It starts here.</span>
           Get in touch to start a conversation.
         </h2>

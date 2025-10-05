@@ -4,7 +4,7 @@
         <div class="footer-brand">
           <a href="<?= $site->url() ?>" class="footer-logo">
             <?php if ($site->logo()->isNotEmpty()): ?>
-              <img src="<?= $site->logo()->toFile()->url() ?>" alt="<?= $site->title() ?>">
+              <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="<?= $site->title() ?>">
             <?php else: ?>
               <span class="logo-text"><?= $site->title() ?></span>
             <?php endif ?>

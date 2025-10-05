@@ -7,19 +7,26 @@ namespace Composer\Autoload;
 class ComposerStaticInit64758416cba55139ded4b5a4e8c3e322
 {
     public static $files = array (
+        'e862d9fce5eaa28c798b151ac7fc8bc6' => __DIR__ . '/../..' . '/site/plugins/kirby-flash/src/helpers.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '316f57472eecfe71b6733d9d2acbcae9' => __DIR__ . '/../..' . '/site/plugins/kirby-form/src/helpers.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'f864ae44e8154e5ff6f4eec32f46d37f' => __DIR__ . '/../..' . '/kirby/config/setup.php',
         '87988fc7b1c1f093da22a1a3de972f3a' => __DIR__ . '/../..' . '/kirby/config/helpers.php',
+        '1f7ddc2baab73fdd75a4663f7a275bb1' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
             'Whoops\\' => 7,
+        ),
+        'U' => 
+        array (
+            'Uniform\\' => 8,
         ),
         'S' => 
         array (
@@ -43,6 +50,10 @@ class ComposerStaticInit64758416cba55139ded4b5a4e8c3e322
         array (
             'Kirby\\' => 6,
         ),
+        'J' => 
+        array (
+            'Jevets\\Kirby\\' => 13,
+        ),
         'C' => 
         array (
             'Composer\\Semver\\' => 16,
@@ -57,6 +68,10 @@ class ComposerStaticInit64758416cba55139ded4b5a4e8c3e322
         'Whoops\\' => 
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
+        'Uniform\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -98,6 +113,11 @@ class ComposerStaticInit64758416cba55139ded4b5a4e8c3e322
         array (
             0 => __DIR__ . '/../..' . '/kirby/src',
             1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+        ),
+        'Jevets\\Kirby\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/site/plugins/kirby-form/src',
+            1 => __DIR__ . '/../..' . '/site/plugins/kirby-flash/src',
         ),
         'Composer\\Semver\\' => 
         array (
@@ -142,6 +162,11 @@ class ComposerStaticInit64758416cba55139ded4b5a4e8c3e322
         'Composer\\Semver\\Intervals' => __DIR__ . '/..' . '/composer/semver/src/Intervals.php',
         'Composer\\Semver\\Semver' => __DIR__ . '/..' . '/composer/semver/src/Semver.php',
         'Composer\\Semver\\VersionParser' => __DIR__ . '/..' . '/composer/semver/src/VersionParser.php',
+        'Jevets\\Kirby\\Exceptions\\TokenMismatchException' => __DIR__ . '/../..' . '/site/plugins/kirby-form/src/Exceptions/TokenMismatchException.php',
+        'Jevets\\Kirby\\Flash' => __DIR__ . '/../..' . '/site/plugins/kirby-flash/src/Flash.php',
+        'Jevets\\Kirby\\Form' => __DIR__ . '/../..' . '/site/plugins/kirby-form/src/Form.php',
+        'Jevets\\Kirby\\FormInterface' => __DIR__ . '/../..' . '/site/plugins/kirby-form/src/FormInterface.php',
+        'Jevets\\Kirby\\Validator' => __DIR__ . '/../..' . '/site/plugins/kirby-form/src/Validator.php',
         'Kirby\\Api\\Api' => __DIR__ . '/../..' . '/kirby/src/Api/Api.php',
         'Kirby\\Api\\Collection' => __DIR__ . '/../..' . '/kirby/src/Api/Collection.php',
         'Kirby\\Api\\Controller\\Changes' => __DIR__ . '/../..' . '/kirby/src/Api/Controller/Changes.php',
@@ -595,6 +620,24 @@ class ComposerStaticInit64758416cba55139ded4b5a4e8c3e322
         'Symfony\\Polyfill\\Intl\\Idn\\Resources\\unidata\\Regex' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/Resources/unidata/Regex.php',
         'Symfony\\Polyfill\\Intl\\Normalizer\\Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Normalizer.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
+        'Uniform\\Actions\\Action' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Actions/Action.php',
+        'Uniform\\Actions\\DumpAction' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Actions/DumpAction.php',
+        'Uniform\\Actions\\EmailAction' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Actions/EmailAction.php',
+        'Uniform\\Actions\\EmailSelectAction' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Actions/EmailSelectAction.php',
+        'Uniform\\Actions\\LogAction' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Actions/LogAction.php',
+        'Uniform\\Actions\\LoginAction' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Actions/LoginAction.php',
+        'Uniform\\Actions\\SessionStoreAction' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Actions/SessionStoreAction.php',
+        'Uniform\\Actions\\UploadAction' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Actions/UploadAction.php',
+        'Uniform\\Actions\\WebhookAction' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Actions/WebhookAction.php',
+        'Uniform\\Exceptions\\Exception' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Exceptions/Exception.php',
+        'Uniform\\Exceptions\\PerformerException' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Exceptions/PerformerException.php',
+        'Uniform\\Form' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Form.php',
+        'Uniform\\Guards\\CalcGuard' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Guards/CalcGuard.php',
+        'Uniform\\Guards\\Guard' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Guards/Guard.php',
+        'Uniform\\Guards\\HoneypotGuard' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Guards/HoneypotGuard.php',
+        'Uniform\\Guards\\HoneytimeGuard' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Guards/HoneytimeGuard.php',
+        'Uniform\\Performer' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/Performer.php',
+        'Uniform\\PerformerInterface' => __DIR__ . '/../..' . '/site/plugins/kirby-uniform/src/PerformerInterface.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',
         'Whoops\\Exception\\Frame' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Frame.php',
