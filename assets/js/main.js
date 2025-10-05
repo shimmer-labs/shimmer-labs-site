@@ -1,45 +1,44 @@
-// Mobile Menu Toggle
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.querySelector('.mobile-menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
-  
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', function() {
-      navMenu.classList.toggle('active');
-      menuToggle.classList.toggle('active');
-    });
-  }
-  
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href !== '#') {
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      }
-    });
+// Menu overlay functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const menuClose = document.querySelector('.menu-close');
+
+  if (!menuToggle || !menuOverlay || !menuClose) return;
+
+  // Open menu
+  menuToggle.addEventListener('click', () => {
+    menuOverlay.style.display = 'block';
+    // Small delay for animation
+    setTimeout(() => {
+      menuOverlay.classList.add('active');
+    }, 10);
+    document.body.style.overflow = 'hidden';
   });
-  
-  // Add scroll effect to header
-  let lastScroll = 0;
-  const header = document.querySelector('.site-header');
-  
-  window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 100) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+
+  // Close menu function
+  const closeMenu = () => {
+    menuOverlay.classList.remove('active');
+    setTimeout(() => {
+      menuOverlay.style.display = 'none';
+    }, 300); // Match CSS transition time
+    document.body.style.overflow = '';
+  };
+
+  // Close on button click
+  menuClose.addEventListener('click', closeMenu);
+
+  // Close on overlay background click
+  menuOverlay.addEventListener('click', (e) => {
+    if (e.target === menuOverlay) {
+      closeMenu();
     }
-    
-    lastScroll = currentScroll;
+  });
+
+  // Close on ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
+      closeMenu();
+    }
   });
 });

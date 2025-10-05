@@ -1,4 +1,4 @@
-<div class="menu-overlay" id="menuOverlay">
+<div class="menu-overlay" id="menuOverlay" style="display: none;">
   <div class="menu-overlay-content">
     <!-- Close button -->
     <button class="menu-close" aria-label="Close menu">

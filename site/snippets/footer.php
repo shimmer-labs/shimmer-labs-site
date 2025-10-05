@@ -55,6 +55,8 @@
     </div>
   </footer>
 
-  <?= js('assets/js/main.js') ?>
-</body>
+  <?= js([
+    'assets/js/main.js',
+    '@auto'
+  ]) ?></body>
 </html>

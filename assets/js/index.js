@@ -5,20 +5,19 @@ const menuClose = document.querySelector('.menu-close');
 
 // Open menu
 menuToggle?.addEventListener('click', () => {
-  menuOverlay.classList.add('active');
-  document.body.style.overflow = 'hidden'; // Prevent scrolling
+  menuOverlay.style.display = 'block';
+  setTimeout(() => menuOverlay.classList.add('active'), 10);
+  document.body.style.overflow = 'hidden';
 });
 
 // Close menu
-menuClose?.addEventListener('click', () => {
+const closeMenu = () => {
   menuOverlay.classList.remove('active');
-  document.body.style.overflow = ''; // Restore scrolling
-});
+  setTimeout(() => menuOverlay.style.display = 'none', 300);
+  document.body.style.overflow = '';
+};
 
-// Close on overlay background click
+menuClose?.addEventListener('click', closeMenu);
 menuOverlay?.addEventListener('click', (e) => {
-  if (e.target === menuOverlay) {
-    menuOverlay.classList.remove('active');
-    document.body.style.overflow = '';
-  }
+  if (e.target === menuOverlay) closeMenu();
 });
