@@ -1,17 +1,37 @@
-Template: project
-----
-Status: listed
+Title: Amazon Price Tracker
 ----
 Badge: Live
 ----
-Title: Amazon Price Tracker
+Summary: Full-stack price monitoring app with email alerts for deal seekers and competitive analysis.
 ----
-Summary: Track price drops across multiple products and get alerted instantly.
+Tech_stack: Node.js, Supabase, Email API, Stripe, Chart.js
 ----
-Tech_stack: Apify, Telegram API, n8n, Google Sheets
+Video_url: 
 ----
-Results: Saved 5+ hours/week and caught 30+ price drops automatically. Used for private Telegram alerts.
+Description:
+
+## The Challenge
+Learning full-stack development through a real-world project. Price tracking seemed simple on the surface but required mastering authentication, database design, payment integration, and data visualization.
+
+## The Solution
+Built a complete SaaS application that:
+- Tracks Amazon products and detects 10%+ price changes
+- Sends email notifications when thresholds are met
+- Supports deal seekers and competitive analysis use cases
+- Handles user authentication and account management
+- Processes payments through Stripe integration
+- Visualizes price trends with interactive charts
+
+## The Tech
+Full-stack implementation with:
+1. Node.js backend handles scraping and business logic
+2. Supabase manages database, auth, and real-time updates
+3. Email API sends price change notifications
+4. Stripe integration for subscription payments
+5. Chart.js displays price history and trends
+6. Responsive frontend for tracking multiple products
+
 ----
-Image: amazon-price-tracker.jpg
+Results: A complete full-stack application demonstrating authentication, payments, data visualization, and automated monitoring. Live at theamazontracker.com serving deal seekers and competitive analysts.
 ----
-Link: https://theamazontracker.com
+Link: https://www.theamazontracker.com

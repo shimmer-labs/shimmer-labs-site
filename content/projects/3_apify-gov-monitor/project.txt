@@ -1,17 +1,37 @@
-Template: project
-----
-Status: listed
+Title: Apify Government Contracts Monitor
 ----
 Badge: Live
 ----
-Title: Apify Government Contracts Monitor
-----
-Summary: Scrapes state and federal procurement sites to feed a central deal funnel.
+Summary: Automated procurement opportunity tracking that scrapes state and federal contract sites into a unified deal pipeline.
 ----
 Tech_stack: Apify, n8n, Google Sheets, Airtable, Slack API
 ----
-Results: Aggregates 100+ opportunities per week into a single source of truth for partnerships and deal tracking. De-duplicates, filters by industry, and flags priority listings.
+Video_url: 
 ----
-Image: apify-contracts.jpg
+Description:
+
+## The Challenge
+Finding relevant government contracts meant manually checking dozens of procurement portals daily. Opportunities were scattered across federal, state, and local sites with no unified search. Hours wasted, deals missed.
+
+## The Solution
+Built an Apify actor that:
+- Scrapes state and federal procurement websites automatically
+- De-duplicates opportunities across multiple sources
+- Filters contracts by industry, size, and priority
+- Aggregates 100+ opportunities weekly into one feed
+- Flags high-priority listings based on custom criteria
+- Eliminates manual hunting across scattered portals
+
+## The Tech
+The pipeline connects:
+1. Apify actor scrapes government contract sites on schedule
+2. n8n workflow processes and enriches the data
+3. Google Sheets serves as the initial staging area
+4. Airtable becomes the single source of truth with filtering
+5. Slack API sends priority alerts to the team
+6. Automated weekly reports summarize new opportunities
+
+----
+Results: Aggregates 100+ opportunities per week, eliminates hours of manual portal checking, and creates a single filterable database for partnerships and deal tracking.
 ----
 Link: https://console.apify.com/actors/0ygO0DCBQE5dqqKKt/source

@@ -1510,35 +1510,47 @@ section {
   }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.75rem; }
   h3 { font-size: 1.5rem; }
   
   .hero {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   
   .hero__wrapper {
-    grid-template-columns: 1fr;
-    text-align: center;
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
   }
   
   .hero__content {
     max-width: 100%;
-  }
-  
-  .hero__title {
-    font-size: 2rem;
+    order: 2;
   }
   
   .hero__visual {
-    order: -1;
+    order: 1;
+    width: 100%;
+  }
+  
+  .hero__title {
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  .hero__description {
+    font-size: 1rem !important;
   }
   
   .laptop-mockup {
     max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .hero__circle-image {
+    margin: -30px auto 0;
   }
   
   .nav-menu {
