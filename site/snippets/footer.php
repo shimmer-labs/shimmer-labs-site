@@ -44,3 +44,7 @@
     </div>
   </div>
 </footer>
+
+<?= js(['assets/js/main.js']) ?>
+</body>
+</html>
