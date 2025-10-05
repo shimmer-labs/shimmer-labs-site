@@ -73,45 +73,63 @@ Founderimage: []
 
 ----
 
-Servicestitle: How We Work
+Servicestitle: Services We Offer
 
 ----
 
 Services:
-
 -
-  title: 'Analyze & Audit'
-  description: 'We dig deep into your workflows to identify where automation can save you time and eliminate bottlenecks. No cookie cutter solutions—just what works for your business.'
-  icon: 🔍
+  title: 'API Wrappers'
+  description: 'Your software doesn't play nice together? We build custom API wrappers that make your tools actually talk to each other. Clean code, proper documentation, no janky workarounds.'
+  icon: 🔌
 -
-  title: 'Design & Strategy'
-  description: 'We craft custom automation strategies and integrations tailored to your tools and processes. From n8n workflows to API wrappers, we connect everything seamlessly.'
-  icon: ✨
+  title: 'Business Automation'
+  description: 'Stop doing the same repetitive tasks every day. We automate your workflows end-to-end—from lead capture to invoice generation. You focus on growth, we handle the grunt work.'
+  icon: ⚡
 -
-  title: 'Build & Optimize'
-  description: 'We build, test, and deploy your workflows, then continuously optimize them. Your automation system grows with your business, not against it.'
-  icon: 🚀
-
-----
-
-Additionalofferings:
-
+  title: 'n8n Workflows'
+  description: 'Visual automation that actually makes sense. We design and deploy n8n workflows that connect your entire tech stack. No code required on your end, just results.'
+  icon: 🔗
 -
-  title: 'Quick Win Engagements'
-  description: 'Short-term projects focused on immediate impact. Get one critical workflow automated in 1-2 weeks.'
-  status: ''
--
-  title: 'Ongoing Automation Support'
-  description: 'Monthly retainer for continuous optimization, troubleshooting, and new workflow development.'
-  status: ''
--
-  title: 'Training & Workshops'
-  description: 'Learn to build and maintain your own automations. Empower your team with automation skills.'
-  status: 'Coming Soon'
+  title: 'SaaS Integrations'
+  description: 'Your SaaS tools live in silos. We integrate them so data flows automatically between platforms. Shopify to your CRM. Your CRM to your email tool. All of it, synced.'
+  icon: 🔄
 
 ----
 
-Projects: []
+
+
+Projects:
+-
+  title: 'Amazon Price Tracker'
+  description: 'Automated price monitoring across multiple products with instant Telegram alerts. Saves hours of manual checking and never misses a deal.'
+  badge: 'Live'
+  image: amazon-price-tracker.jpg
+  link: https://github.com/shimmer-labs/amazon-price-tracker
+-
+  title: 'OffTheAppsOK'
+  description: 'Local event curation and Instagram automation for Stillwater, OK. AI-powered content creation that posts 20+ events weekly without lifting a finger.'
+  badge: 'Live'
+  image: off-the-apps-ok.jpg
+  link: https://www.instagram.com/offtheappsok
+-
+  title: 'Government Contracts Monitor'
+  description: 'Scrapes state and federal procurement sites, aggregates 100+ opportunities weekly, and filters them into a single source of truth. No more manual hunting.'
+  badge: 'Live'
+  image: apify-contracts.jpg
+  link: https://github.com/shimmer-labs/apify-contracts-monitor
+-
+  title: 'Taddy API n8n Nodes'
+  description: 'Custom n8n nodes for podcast data extraction. Automates podcast tracking, guest matching, and metadata enrichment for newsletter creators.'
+  badge: 'Coming Soon'
+  image: taddy-api-nodes.jpg
+  link: https://github.com/shimmer-labs/taddy-podcast-actor
+-
+  title: 'Shopify Store App'
+  description: 'Automated inventory sync and order management integration for Shopify stores. Connect your store to the rest of your business.'
+  badge: 'Coming Soon'
+  image: shopify-app.jpg
+  link: '#'
 
 ----
 

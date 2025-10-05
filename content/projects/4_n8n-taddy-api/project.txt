@@ -1,0 +1,17 @@
+Template: project
+----
+Status: listed
+----
+Badge: Coming Soon
+----
+Title: n8n Taddy API Nodes
+----
+Summary: A set of custom n8n nodes for extracting podcast data from the Taddy API.
+----
+Tech_stack: n8n, Taddy API, GitHub Actions, Open Graph scraping
+----
+Results: Automates podcast tracking, guest matching, and metadata enrichment. Will support niche newsletter creators and discovery tooling.
+----
+Image: taddy-api-nodes.jpg
+----
+Link: https://github.com/shimmer-labs/taddy-podcast-actor

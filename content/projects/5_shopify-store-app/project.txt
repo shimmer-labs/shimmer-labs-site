@@ -1,0 +1,17 @@
+Template: project
+----
+Status: listed
+----
+Badge: Coming Soon
+----
+Title: Ottomate - AI Email Flow Generator
+----
+Summary: A Shopify app that analyzes stores and generates AI-powered email marketing flows with seamless Klaviyo integration.
+----
+Tech_stack: React Router, Shopify App Platform, Anthropic API (Claude), Klaviyo API, Prisma, SQLite
+----
+Results: Automates email marketing strategy with AI-generated templates, store analysis, and direct Klaviyo template deployment. Supports both plain text and HTML email formats.
+----
+Image: taddy-api-nodes.jpg
+----
+Link: https://github.com/shimmer-labs/taddy-podcast-actor

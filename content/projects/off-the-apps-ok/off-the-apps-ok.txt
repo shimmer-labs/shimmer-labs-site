@@ -1,8 +1,0 @@
-Template: project
-Status: listed
-Title: OffTheAppsOK
-Summary: Local event discovery and Instagram automation powered by n8n + AI.
-Tech_stack: Telegram OCR, Google Sheets, AI Agent (ChatGPT), n8n, Canva
-Results: Curates 20+ events weekly, automates content creation, and supports a growing community of app-free daters and local explorers in Stillwater, OK.
-Image: off-the-apps-ok.jpg
-Link: https://www.instagram.com/offtheappsok

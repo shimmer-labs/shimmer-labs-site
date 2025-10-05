@@ -1,5 +1,5 @@
 <div class="menu-overlay" id="menuOverlay" style="display: none;">
-  <div class="menu-overlay-content">
+  <div class="menu-card">
     <!-- Close button -->
     <button class="menu-close" aria-label="Close menu">
       Close ✕
@@ -10,11 +10,17 @@
       <div class="menu-section">
         <h3>Projects</h3>
         <ul class="menu-links">
-          <li><a href="#">Off The Apps OK</a></li>
-          <li><a href="#">Government Contracts Monitor</a></li>
-          <li><a href="#">Amazon Price Tracker</a></li>
-          <li class="coming-soon"><span>Taddy API n8n Nodes</span> <small>(Coming Soon)</small></li>
-          <li class="coming-soon"><span>Shopify Store App</span> <small>(Coming Soon)</small></li>
+          <?php 
+          if ($projectsPage = page('projects')) {
+            foreach ($projectsPage->children()->listed() as $project) {
+              if ($project->badge() == 'Coming Soon') {
+                echo '<li class="coming-soon"><span>' . $project->title() . '</span> <small>(Coming Soon)</small></li>';
+              } else {
+                echo '<li><a href="' . $project->url() . '">' . $project->title() . '</a></li>';
+              }
+            }
+          }
+          ?>
         </ul>
       </div>
       
@@ -25,7 +31,7 @@
           <span class="highlight">It starts here.</span>
           Get in touch to start a conversation.
         </h2>
-        <a href="#contact" class="cta-button">Contact Us</a>
+        <a href="/contact" class="cta-button">Contact Us</a>
       </div>
     </div>
   </div>

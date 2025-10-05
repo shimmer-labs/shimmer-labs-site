@@ -99,7 +99,18 @@
 <?php endif ?>
 
 <!-- Projects -->
-<?php snippet('projects', ['projects' => $page->projects()]) ?>
+<?php if ($projectsPage = page('projects')): ?>
+<section class="projects">
+  <div class="container">
+    <h2 class="projects__title">Recent Projects</h2>
+    <div class="projects__grid">
+      <?php foreach ($projectsPage->children() as $project): ?>
+        <?php snippet('project-card', ['project' => $project]) ?>
+      <?php endforeach ?>
+    </div>
+  </div>
+</section>
+<?php endif ?>
 
 <!-- Final CTA -->
 <section class="cta-final">

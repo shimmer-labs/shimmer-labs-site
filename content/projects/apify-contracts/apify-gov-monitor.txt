@@ -1,8 +1,0 @@
-Template: project
-Status: listed
-Title: Apify Government Contracts Monitor
-Summary: Scrapes state and federal procurement sites to feed a central deal funnel.
-Tech_stack: Apify, n8n, Google Sheets, Airtable, Slack API
-Results: Aggregates 100+ opportunities per week into a single source of truth for partnerships and deal tracking. De-duplicates, filters by industry, and flags priority listings.
-Image: apify-contracts.jpg
-Link: https://github.com/shimmer-labs/apify-contracts-monitor
