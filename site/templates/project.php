@@ -131,6 +131,10 @@
     </a>
   </div>
 </aside>
+</div><!-- Close sidebar -->
+    </div><!-- Close .project-layout -->
+  </div><!-- Close .container-wide -->
+</section><!-- Close .project-detail -->
 
 <!-- Lightbox for images -->
 <div class="lightbox" id="lightbox" style="display: none;">
