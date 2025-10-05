@@ -38,13 +38,10 @@
           <?php endforeach ?>
         </ul>
         
-        <a href="/contact" class="btn btn--secondary">Get Started</a>
-        
-        <button class="mobile-menu-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <button class="menu-toggle" aria-label="Open menu">
+  Menu <span class="menu-icon">≡</span>
+</button>
       </nav>
     </div>
   </header>
+  <?php snippet('menu-overlay') ?>
