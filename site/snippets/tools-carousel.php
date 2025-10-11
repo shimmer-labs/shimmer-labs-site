@@ -19,6 +19,15 @@
         <div class="tool-logo">
           <img src="<?= url('assets/images/tools/shopify.png') ?>" alt="Shopify">
         </div>
+        <div class="tool-logo">
+          <img src="<?= url('assets/images/tools/supabase-8x.png') ?>" alt="Supabase">
+        </div>
+        <div class="tool-logo">
+          <img src="<?= url('assets/images/tools/nextjs-8x.png') ?>" alt="Next.js">
+        </div>
+        <div class="tool-logo">
+          <img src="<?= url('assets/images/tools/vercel.svg') ?>" alt="Vercel">
+        </div>
         
         <!-- Duplicate set for seamless loop -->
         <div class="tool-logo">
@@ -35,6 +44,15 @@
         </div>
         <div class="tool-logo">
           <img src="<?= url('assets/images/tools/shopify.png') ?>" alt="Shopify">
+        </div>
+        <div class="tool-logo">
+          <img src="<?= url('assets/images/tools/supabase-8x.png') ?>" alt="Supabase">
+        </div>
+        <div class="tool-logo">
+          <img src="<?= url('assets/images/tools/nextjs-8x.png') ?>" alt="Next.js">
+        </div>
+        <div class="tool-logo">
+          <img src="<?= url('assets/images/tools/vercel.svg') ?>" alt="Vercel">
         </div>
       </div>
     </div>
