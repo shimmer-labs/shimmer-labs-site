@@ -10,6 +10,11 @@ fields:
     type: files
     max: 1
     help: Image for social media sharing (recommended 1200x630px). Falls back to project image if empty.
+  featured:
+    type: toggle
+    label: Featured Project
+    help: Show in featured section on projects page (highlight your best work)
+    default: false
   summary: textarea
   tech_stack: tags
   results: textarea

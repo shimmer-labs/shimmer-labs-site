@@ -1,12 +1,14 @@
 Title: EventSnag
 ----
-Badge: Coming Soon
+Badge: Live
 ----
 Summary: Snap it. Snag it. Show up. The iOS app that turns event screenshots into calendar entries instantly—so you actually go to the things you say you will.
 ----
 Tech_stack: Swift, SwiftUI, OpenAI Vision API, Google Calendar API, iOS Share Extension, Core Data, Push Notifications
 ----
 Is_app: true
+----
+Featured: true
 ----
 App_store_url:
 ----
