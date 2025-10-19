@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $page->title() ?> | <?= $site->title() ?></title>
 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="<?= url('assets/images/apple-touch-icon.png') ?>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?= url('assets/images/favicon-32x32.png') ?>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?= url('assets/images/favicon-16x16.png') ?>">
+  <link rel="manifest" href="<?= url('site.webmanifest') ?>">
+  <link rel="shortcut icon" href="<?= url('favicon.ico') ?>">
+
   <?php
   // Meta Description with smart fallbacks
   $metaDescription = $page->meta_description()->or(
