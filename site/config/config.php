@@ -12,9 +12,9 @@ return [
   'analytics.plausible.enabled' => true,
   'analytics.plausible.domain' => 'shimmerlabs.co',
 
-  // Google Analytics 4 (GA4) - Uncomment to enable
-  // 'analytics.ga4.enabled' => true,
-  // 'analytics.ga4.measurementId' => 'G-XXXXXXXXXX', // Replace with your Measurement ID
+  // Google Analytics 4 (GA4)
+  'analytics.ga4.enabled' => true,
+  'analytics.ga4.measurementId' => 'G-KPVHKHKJJY',
 
   // SEO: Sitemap.xml Route
   'routes' => [
