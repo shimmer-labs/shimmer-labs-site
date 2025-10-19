@@ -21,7 +21,7 @@
         <?php if ($page->is_app()->toBool() && $page->badge()->toString() === 'Launching Soon'): ?>
           <?php snippet('app-waitlist', [
             'app_name' => $page->title(),
-            'formspree_id' => 'mwprqqyj', // Using same Formspree account as contact form
+            'formspree_id' => 'xnngrlnp', // EventSnag waitlist → logan@shimmerlabs.co
             'launch_date' => 'Late October 2025'
           ]) ?>
         <?php endif ?>

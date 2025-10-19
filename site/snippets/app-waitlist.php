@@ -32,7 +32,7 @@ $launch_date = $launch_date ?? 'soon';
       </div>
     <?php else: ?>
       <!-- Compact form -->
-      <form class="app-waitlist__form" method="POST" action="https://formspree.io/f/<?= $formspree_id ?>">
+      <form class="app-waitlist__form" method="POST" action="https://formspree.io/f/<?= $formspree_id ?>" accept-charset="UTF-8">
         <input type="email"
                name="_replyto"
                id="waitlist-email"

@@ -14,7 +14,7 @@
         </div>
       <?php else: ?>
 
-      <form class="contact-form" method="POST" action="https://formspree.io/f/mwprqqyj">
+      <form class="contact-form" method="POST" action="https://formspree.io/f/xdkwjykz" accept-charset="UTF-8">
         <div class="form-row">
     <div class="form-group">
       <label for="name">Name</label>
