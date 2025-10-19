@@ -18,7 +18,7 @@
         <p class="project-detail__summary"><?= $page->summary() ?></p>
 
         <!-- Waitlist Section (for pre-launch apps) -->
-        <?php if ($page->is_app()->toBool() && $page->badge()->value() === 'Launching Soon'): ?>
+        <?php if ($page->is_app()->toBool() && $page->badge()->toString() === 'Launching Soon'): ?>
           <?php snippet('app-waitlist', [
             'app_name' => $page->title(),
             'formspree_id' => 'mwprqqyj', // Using same Formspree account as contact form

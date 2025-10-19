@@ -2,7 +2,7 @@ Title: EventSnag
 ----
 Badge: Launching Soon
 ----
-Summary: Snap it. Snag it. Show up. The iOS app that turns event screenshots into calendar entries instantly—so you actually go to the things you say you will.
+Summary: Snap it. Snag it. Show up. The iOS app that turns event screenshots into calendar entries instantly, so you actually go to the things you say you will.
 ----
 Tech_stack: Swift, SwiftUI, OpenAI Vision API, Google Calendar API, iOS Share Extension, Core Data, Push Notifications
 ----
@@ -27,9 +27,9 @@ You screenshot that cool event flyer from Instagram. It gets buried in your came
 **Show up.** Event syncs to your Google Calendar. Thursday at 6pm? You get a notification: "Weekend Plans Ready! 🎉" with all your upcoming events formatted and ready to share with friends.
 
 ## Built for Real Life
-EventSnag isn't another productivity app trying to optimize your life into oblivion. It's built to get you **off your phone** and **into your community**—farmers markets, live music, art shows, the weird pop-up taco stand by the river.
+EventSnag isn't another productivity app trying to optimize your life into oblivion. It's built to get you **off your phone** and **into your community** to farmers markets, live music, art shows, the weird pop-up taco stand by the river.
 
-We started building this because Stillwater, OK has incredible local events, but people kept saying "I didn't know that was happening!" Well, you screenshotted it three weeks ago. Now you'll actually go.
+We started building this because Stillwater, OK has incredible local events, but people kept saying "I didn't know that was happening!" Well, you screenshotted it three weeks ago. Now you'll actually go. To be in the know you have to follow obscure facebook groups, tons of instagram accounts, and find event flyers at coffee shops.
 
 ## How It Works
 
@@ -52,11 +52,11 @@ Our AI doesn't just dump raw data at you:
 - **Year Validation**: Past dates automatically corrected to next occurrence
 - **Time Parsing**: "6-9pm" becomes proper start/end times
 - **Typo Fixing**: "frew" → "free", "vinyls" → "vinyl"
-- **Emoji Selection**: 🎵 for music, 🎨 for art, 🧘 for yoga—you get the idea
+- **Emoji Selection**: 🎵 for music, 🎨 for art, 🧘 for yoga... you get the idea
 - **Confidence Scoring**: "Look good? 👀" with a score so you know if AI nailed it or guessed wildly
 
 ### 4. Google Calendar Sync
-Tap "Snag It 📅" and boom—event's in your calendar. Every synced event includes EventSnag branding so your friends discover it too.
+Tap "Snag It 📅" and boom! The event's in your calendar. Every synced event includes EventSnag branding so your friends discover it too.
 
 Don't want it in your calendar yet? Tap "Save for Later" and it lives in the app.
 
@@ -85,7 +85,7 @@ And here's the kicker: **Every calendar event becomes a mini-billboard for Event
 
 **OpenAI Vision API**
 - Reads images like a human would
-- Optimized prompt extracts 16 key fields (down from 31—we cut the fluff)
+- Optimized prompt extracts 16 key fields (down from 31, we cut the fluff)
 - ~95% parsing accuracy based on 2+ months of production testing via our n8n prototype
 
 **Google Calendar API**
@@ -104,7 +104,7 @@ And here's the kicker: **Every calendar event becomes a mini-billboard for Event
 ```
 ---
 📅 Added via EventSnag
-Never miss local events - snap a flyer, we'll add it to your calendar!
+Never miss local events just snap a flyer, we'll add it to your calendar!
 Download: shimmerlabs.co/projects/eventsnag
 ```
 
