@@ -2085,93 +2085,76 @@ img.loaded {
 }
 
 /* ===================================
-   App Waitlist Section (Compact Banner)
+   App Waitlist Section (Compact 3-Line Banner)
    =================================== */
 .app-waitlist {
-  background: linear-gradient(135deg, rgba(255, 179, 0, 0.1) 0%, rgba(243, 156, 18, 0.1) 100%);
-  border: 2px solid var(--color-gold);
+  background: rgba(255, 179, 0, 0.05);
+  border: 1px solid rgba(255, 179, 0, 0.3);
   border-radius: var(--border-radius);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
   margin: var(--spacing-lg) 0;
 }
 
 .app-waitlist__container {
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
+/* Line 1: Title + Launch Date */
 .app-waitlist__header {
-  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.app-waitlist__header h2 {
-  font-size: 1.25rem;
-  margin-bottom: var(--spacing-xs);
-  color: var(--color-navy);
+.app-waitlist__title {
+  font-size: 1rem;
   font-weight: 600;
+  color: var(--color-navy);
+  margin: 0;
 }
 
-.app-waitlist__header p {
-  font-size: 0.95rem;
-  margin-bottom: 0;
+.app-waitlist__divider {
   color: var(--color-gray-medium);
+  font-weight: 300;
 }
 
-.app-waitlist__launch-date {
-  display: inline-block;
-  margin-top: var(--spacing-xs);
-  padding: 0.25rem 0.75rem;
-  background: rgba(255, 179, 0, 0.15);
-  border: 1px solid var(--color-gold);
-  border-radius: var(--border-radius);
-  font-size: 0.85rem;
-  color: var(--color-navy);
-  font-weight: 600;
+.app-waitlist__launch {
+  font-size: 0.9rem;
+  color: var(--color-gray-medium);
+  margin: 0;
 }
 
+/* Line 2: Email + Button */
 .app-waitlist__form {
   display: flex;
-  align-items: flex-end;
-  gap: var(--spacing-sm);
-  margin-top: var(--spacing-md);
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
-.app-waitlist__form .form-row {
-  display: flex;
-  gap: var(--spacing-sm);
+.app-waitlist__input {
   flex: 1;
-}
-
-.app-waitlist__form .form-group {
-  flex: 1;
-  min-width: 0;
-}
-
-.app-waitlist__form .form-group label {
-  display: block;
-  margin-bottom: 0.25rem;
-  font-weight: 500;
-  color: var(--color-navy);
-  font-size: 0.85rem;
-}
-
-.app-waitlist__form input {
-  width: 100%;
+  min-width: 250px;
   padding: 0.5rem 0.75rem;
   border: 1px solid var(--color-gray-light);
   border-radius: var(--border-radius);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   transition: var(--transition);
 }
 
-.app-waitlist__form input:focus {
+.app-waitlist__input:focus {
   outline: none;
   border-color: var(--color-gold);
   box-shadow: 0 0 0 3px rgba(255, 179, 0, 0.1);
 }
 
-.app-waitlist__form .btn {
-  padding: 0.5rem 1.5rem;
-  font-size: 0.95rem;
+.app-waitlist__button {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
   background: var(--color-gold);
   color: var(--color-navy);
   border: none;
@@ -2183,53 +2166,49 @@ img.loaded {
   flex-shrink: 0;
 }
 
-.app-waitlist__form .btn:hover {
+.app-waitlist__button:hover {
   background: var(--color-navy);
   color: white;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.app-waitlist__form .form-note {
-  color: var(--color-gray-medium);
-  font-size: 0.8rem;
-  margin-top: var(--spacing-xs);
-  text-align: center;
-}
-
-/* Social Share Section (Compact) */
-.app-waitlist__social {
-  margin-top: var(--spacing-md);
-  padding-top: var(--spacing-md);
-  border-top: 1px solid rgba(255, 179, 0, 0.2);
+/* Line 3: Disclaimer + Share */
+.app-waitlist__footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: var(--spacing-sm);
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
 }
 
-.app-waitlist__social-label {
+.app-waitlist__disclaimer {
   color: var(--color-gray-medium);
-  font-size: 0.85rem;
+  margin: 0;
+}
+
+.app-waitlist__share-label {
+  color: var(--color-gray-medium);
   margin: 0;
 }
 
 .social-share-buttons {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .social-share-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.35rem 0.75rem;
+  padding: 0.3rem 0.6rem;
   background: white;
   color: var(--color-navy);
   text-decoration: none;
   border-radius: var(--border-radius);
   font-weight: 500;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   transition: var(--transition);
   border: 1px solid var(--color-gray-light);
 }
@@ -2249,6 +2228,12 @@ img.loaded {
   background: #0077B5;
   color: white;
   border-color: #0077B5;
+}
+
+.social-share-btn--instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  border-color: #bc1888;
 }
 
 .social-share-btn svg {
@@ -2308,47 +2293,62 @@ img.loaded {
   }
 }
 
+/* Form Success Message */
+.form-success {
+  text-align: center;
+  padding: var(--spacing-md);
+  background: rgba(46, 213, 115, 0.1);
+  border: 1px solid rgba(46, 213, 115, 0.3);
+  border-radius: var(--border-radius);
+  color: var(--color-navy);
+}
+
+.form-success p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .app-waitlist {
-    padding: var(--spacing-md);
-    margin: var(--spacing-md) 0;
+    padding: var(--spacing-sm);
   }
 
-  .app-waitlist__header h2 {
-    font-size: 1.1rem;
+  .app-waitlist__container {
+    gap: 0.6rem;
   }
 
-  .app-waitlist__header p {
+  .app-waitlist__title {
     font-size: 0.9rem;
+  }
+
+  .app-waitlist__launch {
+    font-size: 0.85rem;
   }
 
   .app-waitlist__form {
     flex-direction: column;
-    align-items: stretch;
   }
 
-  .app-waitlist__form .form-row {
-    flex-direction: column;
+  .app-waitlist__input {
+    min-width: 100%;
+  }
+
+  .app-waitlist__button {
     width: 100%;
   }
 
-  .app-waitlist__form .btn {
-    width: 100%;
-  }
-
-  .app-waitlist__social {
-    flex-direction: column;
-    align-items: stretch;
+  .app-waitlist__footer {
+    font-size: 0.8rem;
   }
 
   .social-share-buttons {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .social-share-btn {
-    width: 100%;
-    justify-content: center;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
   }
 
   .demo-video-container {
