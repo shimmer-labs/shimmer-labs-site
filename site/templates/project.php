@@ -17,6 +17,38 @@
 
         <p class="project-detail__summary"><?= $page->summary() ?></p>
 
+        <!-- Waitlist Section (for pre-launch apps) -->
+        <?php if ($page->is_app()->toBool() && $page->badge()->value() === 'Launching Soon'): ?>
+          <?php snippet('app-waitlist', [
+            'app_name' => $page->title(),
+            'formspree_id' => 'mwprqqyj', // Using same Formspree account as contact form
+            'launch_date' => 'Late October 2025'
+          ]) ?>
+        <?php endif ?>
+
+        <!-- Demo Video (for apps with demo_video field) -->
+        <?php if ($page->demo_video()->isNotEmpty()): ?>
+          <div class="app-demo-video">
+            <h2>See It In Action</h2>
+            <div class="demo-video-container">
+              <?php
+              $demo_video = $page->demo_video()->toFile();
+              if ($demo_video):
+                $extension = $demo_video->extension();
+              ?>
+                <?php if (in_array($extension, ['mp4', 'webm', 'mov'])): ?>
+                  <video controls autoplay muted loop playsinline>
+                    <source src="<?= $demo_video->url() ?>" type="video/<?= $extension ?>">
+                    Your browser doesn't support video playback.
+                  </video>
+                <?php elseif (in_array($extension, ['gif'])): ?>
+                  <img src="<?= $demo_video->url() ?>" alt="<?= $page->title() ?> demo" class="demo-gif">
+                <?php endif ?>
+              <?php endif ?>
+            </div>
+          </div>
+        <?php endif ?>
+
         <!-- Tech Stack -->
         <?php if ($page->tech_stack()->isNotEmpty()): ?>
           <div class="project-detail__tech">

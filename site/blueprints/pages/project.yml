@@ -31,4 +31,14 @@ fields:
     label: Is this an iOS/mobile app?
     help: Shows App Store download button and legal links
     default: false
+  demo_video:
+    type: files
+    label: Demo Video/GIF
+    help: Upload a demo video (.mp4, .mov, .webm) or GIF showing the app in action
+    max: 1
+    accept:
+      - video/mp4
+      - video/quicktime
+      - video/webm
+      - image/gif
   image: files
