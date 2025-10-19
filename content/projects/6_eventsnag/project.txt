@@ -1,0 +1,169 @@
+Title: EventSnag
+----
+Badge: Coming Soon
+----
+Summary: Snap it. Snag it. Show up. The iOS app that turns event screenshots into calendar entries instantly—so you actually go to the things you say you will.
+----
+Tech_stack: Swift, SwiftUI, OpenAI Vision API, Google Calendar API, iOS Share Extension, Core Data, Push Notifications
+----
+Is_app: true
+----
+App_store_url:
+----
+Video_url:
+----
+Description:
+
+## The Problem
+You screenshot that cool event flyer from Instagram. It gets buried in your camera roll with 847 other screenshots. The event comes and goes. You never went. Sound familiar?
+
+## EventSnag Changes That
+**Snap it.** See a flyer? Open your Photos app, tap Share → EventSnag.
+
+**Snag it.** Our AI reads the screenshot and pulls out everything—date, time, venue, price, vibes. You review it (in case AI got creative), make any edits, and save.
+
+**Show up.** Event syncs to your Google Calendar. Thursday at 6pm? You get a notification: "Weekend Plans Ready! 🎉" with all your upcoming events formatted and ready to share with friends.
+
+## Built for Real Life
+EventSnag isn't another productivity app trying to optimize your life into oblivion. It's built to get you **off your phone** and **into your community**—farmers markets, live music, art shows, the weird pop-up taco stand by the river.
+
+We started building this because Stillwater, OK has incredible local events, but people kept saying "I didn't know that was happening!" Well, you screenshotted it three weeks ago. Now you'll actually go.
+
+## How It Works
+
+### 1. Capture
+- **Camera**: Snap a physical flyer in the wild
+- **Instagram Share Extension**: Screenshot on Instagram → Share → EventSnag
+- **Photo Library**: Upload any event image you've saved
+
+### 2. AI Extraction (Powered by OpenAI Vision)
+EventSnag reads the image and extracts:
+- Event title & description
+- Date, time, and recurring patterns ("Every Monday", "First Friday")
+- Venue name & address
+- Price (or "Free!" because we love free)
+- Age restrictions, categories, social handles
+- Even the vibe (is this chill acoustic or full punk chaos?)
+
+### 3. Smart Normalization
+Our AI doesn't just dump raw data at you:
+- **Year Validation**: Past dates automatically corrected to next occurrence
+- **Time Parsing**: "6-9pm" becomes proper start/end times
+- **Typo Fixing**: "frew" → "free", "vinyls" → "vinyl"
+- **Emoji Selection**: 🎵 for music, 🎨 for art, 🧘 for yoga—you get the idea
+- **Confidence Scoring**: "Look good? 👀" with a score so you know if AI nailed it or guessed wildly
+
+### 4. Google Calendar Sync
+Tap "Snag It 📅" and boom—event's in your calendar. Every synced event includes EventSnag branding so your friends discover it too.
+
+Don't want it in your calendar yet? Tap "Save for Later" and it lives in the app.
+
+### 5. Weekly Roundups
+- **Thursday 6pm**: "Weekend Plans Ready! 🎉" notification with Fri-Sun events
+- **Monday 9am**: "Your Week Ahead 📅" notification with upcoming events
+- Tap notification → Opens filtered list → Share with friends via text/iMessage
+
+## Why This Works (The Shimmer Labs Angle)
+
+We built EventSnag the same way we build automation for businesses—find the friction, eliminate it.
+
+**The friction?** Event discovery is broken. Facebook Events is a wasteland. Eventbrite is corporate conferences. Instagram has the info but zero infrastructure for "I want to go to this."
+
+**The elimination?** One tap from screenshot to calendar. No typing. No copy-paste. No forgetting.
+
+And here's the kicker: **Every calendar event becomes a mini-billboard for EventSnag.** Your friends see "Added via EventSnag" at the bottom of the event. They click the link. They download the app. They share their events. It grows.
+
+## The Tech Stack
+
+**iOS Native (Swift + SwiftUI)**
+- Clean, fast, feels like it belongs on your phone
+- Share Extension lets you capture from Instagram without leaving the app
+- Core Data for local storage (your data stays on your device)
+- App Groups for seamless extension → main app data flow
+
+**OpenAI Vision API**
+- Reads images like a human would
+- Optimized prompt extracts 16 key fields (down from 31—we cut the fluff)
+- ~95% parsing accuracy based on 2+ months of production testing via our n8n prototype
+
+**Google Calendar API**
+- OAuth 2.0 persistent sign-in (no re-prompting every time)
+- Smart sync: only adds events you approve
+- Users can edit/delete in Google Calendar and changes reflect in the app
+
+**Push Notifications**
+- Local notifications (no server tracking)
+- Smart timing: Thu 6pm for weekends, Mon 9am for the week ahead
+- Deep linking: tap notification → opens filtered event list
+
+## Viral Growth Built In
+
+**Calendar Branding**: Every synced event includes:
+```
+---
+📅 Added via EventSnag
+Never miss local events - snap a flyer, we'll add it to your calendar!
+Download: shimmerlabs.co/projects/eventsnag
+```
+
+**Shareable Roundups**: Weekly roundup notifications let you share formatted event lists via text:
+```
+This Weekend in Stillwater 🎉
+
+Friday, Oct 18
+• Live Music at Eskimo Joe's
+  7:00 PM • Free
+
+Saturday, Oct 19
+• Farmers Market
+  9:00 AM • Boomer Lake
+
+---
+Snagged with EventSnag
+Download: apps.apple.com/app/eventsnag
+```
+
+**Instagram Share Extension**: The easiest capture method = the most shared. See event post → Share → EventSnag. Done. Friends see you using it, they want it.
+
+## What's Next
+
+**Launch Roadmap** (Post-App Store Approval):
+1. **QR Code Sharing** - Generate QR codes for physical event posters
+2. **Shareable Event Cards** - Beautiful Instagram Story templates with EventSnag branding
+3. **Friend Referrals** - Earn extra scans by inviting friends
+4. **Discover Tab** - Community event database (browse trending events in your city)
+5. **Social Layer** - See which friends are "Going" to events
+
+## Why Shimmer Labs Built This
+
+EventSnag is a **productized automation system**. It's the same philosophy we use for business clients:
+
+1. Identify repetitive, high-friction task (screenshotting events but not attending)
+2. Build intelligent automation (AI + calendar sync)
+3. Deliver consistent results (weekly roundups, never miss events)
+4. Scale with viral loops (calendar branding, share extension, referrals)
+
+We prototype everything in n8n first. EventSnag started as a Telegram bot → Google Sheets workflow that ran for 2+ months with 95% accuracy. Once we proved it worked, we built the iOS app.
+
+**That's the Shimmer Labs way**: Test cheap, build native, scale smart.
+
+## Perfect For
+
+- **Small cities** with amazing local scenes but terrible event discovery (Stillwater, college towns, tight-knit communities)
+- **People who say "I wish I'd known about that"** after seeing photos of cool events they missed
+- **Community organizers** who want their events actually attended
+- **Anyone who screenshots Instagram event posts** and promptly forgets they exist
+
+## Technical Highlights
+
+- **95% AI parsing accuracy** (tested over 2+ months in production via n8n workflow)
+- **48% token cost reduction** (optimized AI prompt from 31 fields → 16 fields)
+- **Persistent Google OAuth** (no re-authentication headaches)
+- **Year validation logic** (past dates auto-corrected to next occurrence)
+- **App Groups** (Share Extension data seamlessly flows to main app)
+- **Vercel serverless backend** (keeps API keys secure, no exposed credentials)
+
+----
+Results: Turning screenshots into real-life experiences. EventSnag launches on the App Store soon—join the waitlist at shimmerlabs.co/projects/eventsnag/support or download when we go live.
+----
+Link: https://apps.apple.com/app/eventsnag

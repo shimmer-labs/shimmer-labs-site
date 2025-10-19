@@ -1,0 +1,429 @@
+Title: Support & Help
+
+----
+
+Text:
+
+# EventSnag Support
+
+Welcome to EventSnag Support! Find answers to common questions, troubleshooting tips, and contact information below.
+
+**Need help?** Email us at eventsnagsupport@shimmerlabs.co
+
+---
+
+## Quick Start Guide
+
+### How to Snag Your First Event
+
+1. **Screenshot an event post** from Instagram or any event flyer
+2. **Open Photos app** and find your screenshot
+3. **Tap the Share button** (square with arrow)
+4. **Select "EventSnag"** from the share menu
+5. **Review the extracted details** - our AI does the heavy lifting!
+6. **Edit if needed** - AI is smart but not perfect
+7. **Add to Calendar** or **Save Locally**
+
+**Pro Tip**: Expand Instagram post descriptions before screenshotting to capture pricing, location, and full details!
+
+---
+
+## Frequently Asked Questions (FAQ)
+
+### General Questions
+
+**Q: What is EventSnag?**
+A: EventSnag is an AI-powered iOS app that turns event screenshots into calendar events instantly. Never lose track of events you screenshot from Instagram again.
+
+**Q: How much does EventSnag cost?**
+A: EventSnag is free to use with unlimited event capture, AI extraction, and Google Calendar sync. EventSnag Pro ($4.99/month or $39.99/year) offers additional premium features.
+
+**Q: What iOS version do I need?**
+A: EventSnag requires iOS 16.6 or later. We recommend iOS 17+ for the best experience.
+
+**Q: Is my data private?**
+A: Yes! Event data is stored locally on your device. Images are processed temporarily by AI (Anthropic Claude) and not permanently stored. See our [Privacy Policy](https://shimmerlabs.co/projects/eventsnag/privacy) for details.
+
+**Q: Can I use EventSnag without Google Calendar?**
+A: Absolutely! You can save events locally without connecting Google Calendar. Calendar sync is optional.
+
+---
+
+### Getting Started
+
+**Q: Why isn't EventSnag showing up in my share menu?**
+A: Try these steps:
+1. In the share menu, scroll to the bottom and tap "Edit Actions"
+2. Look for EventSnag and make sure it's enabled (green toggle)
+3. Drag EventSnag higher in the list for easier access
+4. If you still don't see it, restart your iPhone
+
+**Q: Can I capture events from the EventSnag camera instead of screenshots?**
+A: Yes! Open EventSnag → Tap "Snap a Flyer" to use your camera directly.
+
+**Q: What types of images work best?**
+A: EventSnag works with:
+- Instagram event posts (screenshots)
+- Physical flyers (photos)
+- Facebook event images
+- Digital posters
+- Text-heavy images with clear event details
+
+**Best Results**: Clear text, good lighting, full event details visible (date, time, venue)
+
+---
+
+### AI Extraction & Accuracy
+
+**Q: Why did the AI get the date wrong?**
+A: AI parsing isn't perfect. Common issues:
+- Ambiguous dates ("Next Friday" without year)
+- Dates in unusual formats
+- Multiple dates on one flyer
+
+**Solution**: Always review extracted details before saving. You can edit any field manually.
+
+**Q: What if the AI can't find all the details?**
+A: If some fields are empty (like price or age restriction), the AI couldn't find that info in the image. You can:
+- Add missing details manually
+- Try a clearer photo with expanded text
+- Screenshot the full Instagram post with description visible
+
+**Q: Can I re-parse an image if it didn't work the first time?**
+A: Currently, no. Delete the event and re-upload the image. We're working on a "Re-Parse" feature!
+
+**Q: Why does the AI keep putting events in the wrong year?**
+A: If the flyer doesn't specify a year, AI guesses. We automatically correct obvious errors (like 2023), but cross-year events (Dec→Jan) can be tricky. Always check the year!
+
+**Year Warning**: EventSnag will alert you if the parsed year seems suspicious.
+
+---
+
+### Google Calendar Integration
+
+**Q: How do I connect Google Calendar?**
+A:
+1. Open EventSnag → Settings
+2. Tap "Connect Google Calendar"
+3. Sign in with your Google account
+4. Grant calendar access permissions
+5. You're all set!
+
+**Q: Can I sync to multiple Google Calendars?**
+A: Currently, EventSnag syncs to your primary Google Calendar. Multi-calendar support is planned for a future update.
+
+**Q: Why aren't my events syncing to Google Calendar?**
+A: Check these:
+1. **Permissions**: Settings → Google Calendar → Make sure EventSnag has access
+2. **Internet**: Calendar sync requires an internet connection
+3. **Google Account**: Make sure you're signed in (Settings → Google Calendar)
+4. **Try Again**: Tap "Add to Calendar" again if sync failed
+
+**Q: If I delete an event in EventSnag, does it delete from Google Calendar?**
+A: Yes! Deleting an event in EventSnag removes it from your Google Calendar if it was previously synced.
+
+**Q: Can I disconnect Google Calendar later?**
+A: Yes! Settings → Google Calendar → "Disconnect". This revokes access but does NOT delete events already synced to your calendar.
+
+---
+
+### Notifications & Roundups
+
+**Q: When do I get roundup notifications?**
+A: EventSnag sends two weekly roundups:
+- **Weekend Roundup**: Thursday at 6:00 PM
+- **This Week Roundup**: Monday at 9:00 AM
+
+**Q: How do I turn off notifications?**
+A: iOS Settings → Notifications → EventSnag → Toggle off "Allow Notifications"
+
+**Q: I'm not getting notifications. Why?**
+A: Check these:
+1. **Permissions**: iOS Settings → Notifications → EventSnag → Make sure notifications are enabled
+2. **Do Not Disturb**: Check if Do Not Disturb is on
+3. **Focus Modes**: Some Focus modes block notifications
+4. **Notification Settings in EventSnag**: Make sure you haven't disabled them in-app
+
+**Q: Can I customize notification times?**
+A: Not yet! Custom notification times are on our roadmap.
+
+**Q: What happens when I tap a notification?**
+A: Tapping a roundup notification opens EventSnag and automatically filters to the relevant roundup (Weekend or This Week).
+
+---
+
+### Sharing & Collaboration
+
+**Q: How do I share my event roundup with friends?**
+A:
+1. Open EventSnag → Events tab
+2. Select a filter (Weekend, This Week, etc.)
+3. Tap the Share button (top right)
+4. Choose how to share (iMessage, SMS, WhatsApp, etc.)
+
+**Q: What does the shared message look like?**
+A: Shared roundups are formatted as clean text lists:
+```
+This Weekend in Stillwater 🎉
+
+Friday, Oct 18
+• Live Music at Eskimo Joe's
+  7:00 PM • Eskimo Joe's
+
+Saturday, Oct 19
+• Farmers Market (Free)
+  9:00 AM • Boomer Lake
+
+---
+Snagged with EventSnag
+Download: https://apps.apple.com/app/eventsnag
+```
+
+**Q: Can friends import my shared events?**
+A: Not yet, but it's on our roadmap! Currently, sharing is text-only for easy reading.
+
+---
+
+### Subscriptions & Billing
+
+**Q: What's included in EventSnag Pro?**
+A: EventSnag Pro includes:
+- [Premium features to be announced]
+- Priority customer support
+- Early access to new features
+
+**Q: How do I subscribe to EventSnag Pro?**
+A: Settings → EventSnag Pro → Choose Monthly ($4.99) or Yearly ($39.99)
+
+**Q: How do I cancel my subscription?**
+A:
+1. iPhone Settings → [Your Name] → Subscriptions
+2. Find EventSnag Pro
+3. Tap "Cancel Subscription"
+
+You'll keep Pro access until the end of your billing period.
+
+**Q: Can I get a refund?**
+A: All purchases are final per Apple's policy. For exceptional circumstances, contact eventsnagsupport@shimmerlabs.co.
+
+**Q: I subscribed but don't see Pro features. Why?**
+A: Try these:
+1. Restart the app
+2. Settings → EventSnag Pro → "Restore Purchases"
+3. Check your subscription in iPhone Settings → Subscriptions
+4. Contact us if it's still not working: eventsnagsupport@shimmerlabs.co
+
+**Q: Does EventSnag Pro work on all my devices?**
+A: Yes! Subscriptions are tied to your Apple ID and work across all your iOS devices.
+
+---
+
+### Troubleshooting
+
+**Q: The app keeps crashing. What should I do?**
+A: Try these steps:
+1. **Force Quit**: Swipe up and close EventSnag, then reopen
+2. **Update**: App Store → Updates → Update EventSnag
+3. **Restart iPhone**: Power off and back on
+4. **Reinstall**: Delete EventSnag, reinstall from App Store (note: this deletes locally saved events)
+5. **Contact Us**: If crashes persist, email eventsnagsupport@shimmerlabs.co with your iOS version and crash details
+
+**Q: AI parsing is taking forever. What's wrong?**
+A: AI processing usually takes 5-15 seconds. If it's stuck:
+1. **Check Internet**: AI parsing requires internet connection
+2. **Wait a bit longer**: Large images or poor connection can slow things down
+3. **Try Again**: If stuck for 60+ seconds, close and reopen the app
+4. **Contact Us**: Persistent issues? Email us at eventsnagsupport@shimmerlabs.co
+
+**Q: Google Calendar sync failed. Now what?**
+A:
+1. **Check Internet**: Calendar sync requires internet
+2. **Reconnect**: Settings → Google Calendar → Disconnect → Reconnect
+3. **Permissions**: Make sure EventSnag has calendar permissions
+4. **Google Status**: Check if Google services are down: https://www.google.com/appsstatus
+5. **Try Later**: Temporary Google API issues happen; try again in a few minutes
+
+**Q: I can't edit event details. Help!**
+A:
+1. Make sure you're on the event preview/edit screen
+2. Tap the field you want to edit
+3. If fields are greyed out, the event may be already saved - delete and re-add
+4. Report bugs to eventsnagsupport@shimmerlabs.co
+
+**Q: EventSnag is using a lot of storage. Why?**
+A: Event images are stored locally. To free up space:
+1. Delete old events you don't need
+2. Uninstall and reinstall (warning: deletes all local data)
+3. Sync to Google Calendar first if you want to keep events
+
+**Q: I lost all my events after updating iOS. What happened?**
+A: iOS updates shouldn't delete data, but if this happens:
+1. **Check Google Calendar**: If you synced events, they're safe there
+2. **App Groups**: Make sure App Groups are enabled for EventSnag
+3. **Contact Us**: Email eventsnagsupport@shimmerlabs.co for help recovering data
+
+---
+
+### Feature Requests & Feedback
+
+**Q: Can I request a new feature?**
+A: Absolutely! We love feedback. Email us at eventsnagsupport@shimmerlabs.co with:
+- Feature description
+- Why you need it
+- How you'd use it
+
+**Q: How do I report a bug?**
+A: Email eventsnagsupport@shimmerlabs.co with:
+- Description of the bug
+- Steps to reproduce it
+- Screenshots (if applicable)
+- iOS version and iPhone model
+
+**Q: Do you have a roadmap?**
+A: Yes! Upcoming features:
+- Re-parse images if extraction fails
+- Custom notification times
+- Multi-calendar support
+- Event import/export
+- Friend event sharing (import shared events)
+- Custom event categories
+
+**Q: Can I beta test new features?**
+A: We'll announce beta testing opportunities via in-app notifications and email. Stay tuned!
+
+---
+
+### Privacy & Data
+
+**Q: Do you sell my data?**
+A: No. We do not sell your data to anyone. See our [Privacy Policy](https://shimmerlabs.co/projects/eventsnag/privacy).
+
+**Q: Can I export my event data?**
+A: Currently, you can share event roundups as text. Full data export (CSV, JSON) is on our roadmap.
+
+**Q: How do I delete all my data?**
+A:
+1. **Locally**: Delete events individually in the app
+2. **Completely**: Uninstall EventSnag (deletes all local data)
+3. **Server-side**: Email eventsnagsupport@shimmerlabs.co to request deletion of any server-side data
+
+**Q: What data does EventSnag collect?**
+A: We collect:
+- Event images (temporarily, for AI processing)
+- Extracted event data (stored locally on your device)
+- Google OAuth tokens (if you connect Google Calendar)
+- Subscription status (via RevenueCat)
+
+We do NOT collect your name, location, contacts, or unnecessary personal data. See our [Privacy Policy](https://shimmerlabs.co/projects/eventsnag/privacy).
+
+---
+
+## Contact Us
+
+### Email Support
+**eventsnagsupport@shimmerlabs.co**
+
+Please include:
+- Subject line describing your issue
+- iOS version (Settings → General → About → Software Version)
+- iPhone model
+- EventSnag version (Settings → About → Version)
+- Screenshots (if applicable)
+
+**Response Time**: We aim to respond within 24-48 hours (weekdays).
+
+### Bug Reports
+Include "Bug Report" in the subject line with:
+- What happened
+- What you expected to happen
+- Steps to reproduce
+- Screenshots/screen recording
+
+### Feature Requests
+Include "Feature Request" in the subject line with:
+- Feature description
+- Your use case
+- Why it would be valuable
+
+### Billing & Subscriptions
+Include "Billing" in the subject line with:
+- Your Apple ID email (no password!)
+- Subscription plan
+- Issue description
+
+### Privacy Requests (GDPR/CCPA)
+Include "Privacy Request" in the subject line with:
+- Type of request (access, deletion, etc.)
+- Your identifying information
+
+---
+
+## Additional Resources
+
+### Privacy Policy
+https://shimmerlabs.co/projects/eventsnag/privacy
+
+### Terms of Service
+https://shimmerlabs.co/projects/eventsnag/terms
+
+### Project Page
+https://shimmerlabs.co/projects/eventsnag
+
+### Shimmer Labs (Parent Company)
+https://shimmerlabs.co
+
+---
+
+## Tips & Tricks
+
+### Get Better AI Results
+1. **Expand Instagram descriptions** before screenshotting
+2. **Capture the whole flyer** - don't crop important details
+3. **Use good lighting** when photographing physical flyers
+4. **Avoid blurry images** - AI can't read blurry text
+5. **Include visible dates** - "Next Friday" is ambiguous
+
+### Stay Organized
+1. **Delete old events** regularly to reduce clutter
+2. **Use filters** (Weekend, This Week) to focus on upcoming events
+3. **Sync to Google Calendar** for cross-device access
+4. **Share roundups** with friends every Thursday for weekend plans
+
+### Power User Tricks
+1. **Share Extension is faster** than opening the app
+2. **Edit events immediately** after capture to fix AI errors
+3. **Set up notifications** to never miss roundups
+4. **Disconnect/reconnect Google** if sync acts weird
+
+---
+
+## Known Issues
+
+### Currently Working On:
+- **iOS 16.6 Share Extension bug**: Some users report Share Extension doesn't appear. Workaround: Update to iOS 17+
+- **Google Calendar duplicate events**: Rare issue where events sync twice. Workaround: Delete duplicate in Google Calendar
+- **AI misses venue names**: Sometimes venue extraction fails. Workaround: Add venue manually
+
+### Fixed in Latest Version:
+- ✅ Date correction logic (v1.0.1)
+- ✅ Google Calendar sync errors (v1.0.1)
+- ✅ Notification permission prompts (v1.0.0)
+
+**Check for Updates**: App Store → Updates → EventSnag
+
+---
+
+## Still Need Help?
+
+Can't find your answer? We're here to help!
+
+**Email**: eventsnagsupport@shimmerlabs.co
+**Response Time**: 24-48 hours (weekdays)
+
+---
+
+*Last Updated: October 18, 2025*
+
+----
+
+Uuid: eventsnag_support_v1

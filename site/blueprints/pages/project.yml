@@ -3,5 +3,17 @@ fields:
   summary: textarea
   tech_stack: tags
   results: textarea
-  link: url
+  link:
+    type: url
+    label: Project Link
+    help: GitHub repo, live demo, or project URL
+  app_store_url:
+    type: url
+    label: App Store URL (for iOS apps)
+    help: Apple App Store link (optional)
+  is_app:
+    type: toggle
+    label: Is this an iOS/mobile app?
+    help: Shows App Store download button and legal links
+    default: false
   image: files

@@ -1,3 +1,64 @@
+// Page Loading Indicator
+(function() {
+  const loadingBar = document.createElement('div');
+  loadingBar.className = 'page-loading';
+  document.body.appendChild(loadingBar);
+
+  // Show loading bar on page load
+  window.addEventListener('beforeunload', () => {
+    loadingBar.classList.add('active');
+  });
+
+  // Hide loading bar when page is loaded
+  window.addEventListener('load', () => {
+    loadingBar.classList.remove('active');
+  });
+})();
+
+// Lazy Load Images
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('img[data-src]');
+
+  if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.add('loaded');
+          observer.unobserve(img);
+        }
+      });
+    });
+
+    images.forEach(img => imageObserver.observe(img));
+  } else {
+    // Fallback for older browsers
+    images.forEach(img => {
+      img.src = img.dataset.src;
+      img.classList.add('loaded');
+    });
+  }
+});
+
+// Fade in content on scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const fadeElements = document.querySelectorAll('.fade-in-on-scroll');
+
+  if ('IntersectionObserver' in window) {
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => fadeObserver.observe(el));
+  }
+});
+
 // Menu overlay functionality
 document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.menu-toggle');

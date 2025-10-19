@@ -1,0 +1,302 @@
+Title: Privacy Policy
+
+----
+
+Text:
+
+# Privacy Policy for EventSnag
+
+**Last Updated**: October 18, 2025
+**Effective Date**: October 18, 2025
+
+## Introduction
+
+Shimmer Labs LLC ("we," "us," or "our") operates the EventSnag mobile application ("App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App.
+
+By using EventSnag, you agree to the collection and use of information in accordance with this policy.
+
+**Contact Us**: If you have questions about this Privacy Policy, contact us at eventsnagsupport@shimmerlabs.co
+
+---
+
+## Information We Collect
+
+### 1. Event Images
+
+**What We Collect**: Photos or screenshots you capture or upload to EventSnag containing event flyer information.
+
+**How We Use It**:
+- Sent to Anthropic's Claude AI API to extract event details (date, time, venue, description, etc.)
+- Images are processed temporarily and not permanently stored on our servers
+- Anthropic's data retention policy applies (typically 30 days for compliance, then deleted)
+
+**Your Control**: You choose which images to share with the App. You can delete events from the App at any time.
+
+### 2. Extracted Event Data
+
+**What We Collect**: Event information parsed from your images, including:
+- Event title and description
+- Date, time, and location
+- Venue name and address
+- Price information
+- Age restrictions
+- URL and social media handles
+- Categories and recurrence rules
+
+**How We Use It**:
+- Stored locally on your device using Core Data
+- Optionally synced to your Google Calendar (with your explicit permission)
+- Used to generate weekly roundup notifications
+- Used to create shareable event lists
+
+**Your Control**: All event data is stored locally on your device. You can edit or delete any event at any time. Deleting the App removes all locally stored data.
+
+### 3. Google Calendar Integration
+
+**What We Collect**: When you connect Google Calendar:
+- Your Google account email address
+- OAuth access tokens (stored securely on your device)
+- Calendar ID where events are synced
+
+**How We Use It**:
+- To add events to your Google Calendar
+- To update or delete synced events
+- OAuth tokens are stored locally on your device using iOS Keychain
+
+**Third-Party**: Google's Privacy Policy applies to data shared with Google Calendar: https://policies.google.com/privacy
+
+**Your Control**: You can disconnect Google Calendar at any time in Settings. This revokes our access but does not delete previously synced events from your calendar.
+
+### 4. Device Information
+
+**What We Collect**:
+- Device type and iOS version (for compatibility)
+- App version (for support purposes)
+- Crash reports and error logs (if you opt-in)
+
+**How We Use It**:
+- To provide technical support
+- To improve app performance and fix bugs
+- To ensure compatibility with your device
+
+**Your Control**: You can disable crash reporting in iOS Settings → Privacy → Analytics.
+
+### 5. Notification Preferences
+
+**What We Collect**: Your notification permission status
+
+**How We Use It**: To send you weekly event roundup notifications (Thursday 6pm for weekends, Monday 9am for the week)
+
+**Your Control**: You can disable notifications in iOS Settings → Notifications → EventSnag
+
+### 6. Subscription Information (Pro Features)
+
+**What We Collect** (via RevenueCat):
+- Subscription status (active, expired, canceled)
+- Purchase receipts
+- Subscription tier and renewal date
+
+**How We Use It**:
+- To manage your subscription
+- To restore purchases across devices
+- To provide Pro features
+
+**Third-Party**: RevenueCat's Privacy Policy applies: https://www.revenuecat.com/privacy
+
+**Your Control**: You can cancel subscriptions in iOS Settings → Your Name → Subscriptions
+
+---
+
+## Information We Do NOT Collect
+
+- We do not collect your name, phone number, or personal identifiers
+- We do not track your location
+- We do not sell your data to third parties
+- We do not use cookies or tracking pixels
+- We do not collect biometric data
+- We do not access other apps on your device
+- We do not collect contact lists or social media credentials (beyond Google OAuth for calendar sync)
+
+---
+
+## How We Use Your Information
+
+We use your information to:
+
+1. **Provide Core Features**
+   - Parse event images using AI
+   - Store events locally on your device
+   - Sync events to Google Calendar
+   - Send weekly roundup notifications
+   - Enable sharing event lists with friends
+
+2. **Improve the App**
+   - Fix bugs and improve performance
+   - Understand which features are most used
+   - Develop new features based on usage patterns
+
+3. **Customer Support**
+   - Respond to your support requests
+   - Troubleshoot technical issues
+   - Communicate important updates
+
+4. **Legal Compliance**
+   - Comply with applicable laws and regulations
+   - Enforce our Terms of Service
+   - Protect our rights and prevent fraud
+
+---
+
+## Data Sharing and Third Parties
+
+We share your data only with the following third-party services necessary to operate the App:
+
+### 1. Anthropic (Claude AI)
+- **Purpose**: AI-powered event data extraction from images
+- **Data Shared**: Event images you upload
+- **Privacy Policy**: https://www.anthropic.com/legal/privacy
+- **Data Retention**: Anthropic retains data for 30 days for Trust & Safety compliance, then deletes it
+
+### 2. Google (Calendar API)
+- **Purpose**: Sync events to your Google Calendar
+- **Data Shared**: Event details, OAuth access tokens
+- **Privacy Policy**: https://policies.google.com/privacy
+- **Your Control**: You can disconnect at any time
+
+### 3. RevenueCat (Subscription Management)
+- **Purpose**: Manage in-app subscriptions
+- **Data Shared**: Purchase receipts, subscription status
+- **Privacy Policy**: https://www.revenuecat.com/privacy
+- **Your Control**: Manage subscriptions in iOS Settings
+
+### 4. Apple (Push Notifications)
+- **Purpose**: Deliver weekly roundup notifications
+- **Data Shared**: Device push token
+- **Privacy Policy**: https://www.apple.com/legal/privacy/
+
+We do NOT:
+- Sell your data to advertisers
+- Share data with social media platforms (except Google for calendar sync with your permission)
+- Use your data for marketing or advertising purposes
+
+---
+
+## Data Retention
+
+- **Event Data**: Stored locally on your device until you delete the event or uninstall the App
+- **Images**: Not permanently stored; processed temporarily by Anthropic (30-day retention)
+- **Google OAuth Tokens**: Stored in iOS Keychain until you disconnect Google Calendar
+- **Subscription Data**: Retained by RevenueCat as long as your subscription is active, plus legal retention periods
+
+**Your Right to Delete**: You can delete all locally stored data by:
+1. Deleting individual events in the App
+2. Uninstalling the App (removes all local data)
+3. Contacting us at eventsnagsupport@shimmerlabs.co to request deletion of any server-side data
+
+---
+
+## Data Security
+
+We take data security seriously:
+
+- **Local Storage**: Event data is stored locally on your device using iOS Core Data with App Sandbox protection
+- **Encryption**: OAuth tokens are stored in iOS Keychain (encrypted)
+- **HTTPS**: All network communication uses HTTPS encryption
+- **Minimal Data**: We collect only the data necessary to provide App features
+- **No Central Database**: We do not maintain a central database of your events
+
+However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee absolute security.
+
+---
+
+## Your Privacy Rights
+
+Depending on your location, you may have the following rights:
+
+### General Rights (All Users)
+- **Access**: View what data we have about you
+- **Deletion**: Delete your data at any time
+- **Correction**: Edit event data directly in the App
+- **Portability**: Export your event data (via share function)
+- **Opt-Out**: Disable notifications, disconnect Google Calendar
+
+### GDPR Rights (EU Users)
+- Right to access your personal data
+- Right to rectification of inaccurate data
+- Right to erasure ("right to be forgotten")
+- Right to restrict processing
+- Right to data portability
+- Right to object to processing
+- Right to withdraw consent at any time
+
+### CCPA Rights (California Users)
+- Right to know what personal information is collected
+- Right to know whether personal information is sold or disclosed
+- Right to say no to the sale of personal information (we don't sell data)
+- Right to deletion
+- Right to non-discrimination for exercising your rights
+
+**To Exercise Your Rights**: Contact us at eventsnagsupport@shimmerlabs.co
+
+---
+
+## Children's Privacy
+
+EventSnag is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected information from a child under 13, please contact us immediately at eventsnagsupport@shimmerlabs.co, and we will delete it.
+
+---
+
+## International Data Transfers
+
+EventSnag is based in the United States. If you are accessing the App from outside the US, please be aware that your information may be transferred to, stored, and processed in the US where our servers and third-party service providers are located.
+
+By using EventSnag, you consent to the transfer of your information to the US and other countries where data protection laws may differ from your jurisdiction.
+
+---
+
+## Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time. We will notify you of material changes by:
+- Posting the new Privacy Policy in the App
+- Updating the "Last Updated" date
+- Sending an in-app notification (for significant changes)
+
+Your continued use of the App after changes are posted constitutes acceptance of the updated Privacy Policy.
+
+---
+
+## California Privacy Disclosures
+
+### California Shine the Light Law
+California residents may request information about our disclosure of personal information to third parties for their direct marketing purposes. We do not share personal information with third parties for their direct marketing purposes.
+
+### Do Not Track Signals
+EventSnag does not track users over time or across third-party websites, so we do not respond to Do Not Track (DNT) signals.
+
+---
+
+## Contact Us
+
+If you have questions, concerns, or requests regarding this Privacy Policy or your data:
+
+**Shimmer Labs LLC**
+Email: eventsnagsupport@shimmerlabs.co
+Website: https://shimmerlabs.co/projects/eventsnag
+
+For EU users exercising GDPR rights, please include "GDPR Request" in your email subject line.
+
+---
+
+## Summary (TL;DR)
+
+- **What we collect**: Event images (temporarily), extracted event data (stored locally), Google Calendar access (optional)
+- **How we use it**: AI parsing, local storage, calendar sync, notifications
+- **Who we share with**: Anthropic (AI), Google (Calendar), RevenueCat (Subscriptions), Apple (Notifications)
+- **Your control**: Delete events anytime, disconnect Google Calendar, disable notifications, uninstall to remove all data
+- **We don't**: Sell data, track you, collect unnecessary personal info
+
+Questions? Email eventsnagsupport@shimmerlabs.co
+
+----
+
+Uuid: eventsnag_privacy_v1

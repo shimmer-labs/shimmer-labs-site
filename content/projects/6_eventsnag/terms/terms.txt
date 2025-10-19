@@ -1,0 +1,361 @@
+Title: Terms of Service
+
+----
+
+Text:
+
+# Terms of Service for EventSnag
+
+**Last Updated**: October 18, 2025
+**Effective Date**: October 18, 2025
+
+## Agreement to Terms
+
+By downloading, installing, or using the EventSnag mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
+
+EventSnag is operated by Shimmer Labs LLC ("we," "us," or "our"), a company based in the United States.
+
+**Contact**: eventsnagsupport@shimmerlabs.co
+
+---
+
+## Description of Service
+
+EventSnag is a mobile application that:
+- Captures event information from images (photos, screenshots, flyers)
+- Uses artificial intelligence to extract event details (date, time, venue, description, etc.)
+- Stores events locally on your device
+- Optionally syncs events to your Google Calendar
+- Provides weekly event roundup notifications
+- Enables sharing event lists with friends
+
+---
+
+## Eligibility
+
+You must be at least 13 years old to use EventSnag. By using the App, you represent and warrant that:
+- You are at least 13 years of age
+- You have the legal capacity to enter into these Terms
+- You will comply with these Terms and all applicable laws
+
+If you are under 18, you must have parental or guardian consent to use the App.
+
+---
+
+## User Account and Subscriptions
+
+### Free Tier
+
+EventSnag offers a free tier with core functionality:
+- Unlimited event capture and storage
+- AI-powered event extraction
+- Google Calendar sync
+- Weekly roundup notifications
+- Event sharing
+
+### Pro Subscription (Optional)
+
+EventSnag Pro offers additional features and benefits:
+- [Future premium features to be determined]
+- Priority customer support
+- Early access to new features
+
+**Subscription Terms**:
+- **Monthly Plan**: $4.99/month, auto-renews monthly
+- **Yearly Plan**: $39.99/year (17% savings), auto-renews yearly
+
+**Billing**:
+- Subscriptions are billed through your Apple ID account
+- Payment is charged at confirmation of purchase
+- Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the current period ends
+- Your account will be charged for renewal within 24 hours prior to the end of the current period
+- You can manage and cancel subscriptions in iOS Settings → Your Name → Subscriptions
+
+**Free Trial** (if offered):
+- We may offer free trial periods for new subscribers
+- You will be charged the full subscription price when the trial ends unless you cancel before the trial period ends
+- Cancel anytime during the trial to avoid charges
+
+**No Refunds**:
+- All purchases are final
+- We do not offer refunds for subscription fees already paid
+- If you cancel, you will retain access to Pro features until the end of your current billing period
+- For exceptional circumstances, contact eventsnagsupport@shimmerlabs.co
+
+---
+
+## Acceptable Use
+
+You agree to use EventSnag only for lawful purposes and in accordance with these Terms. You agree NOT to:
+
+### Prohibited Uses:
+1. **Violate Laws**: Use the App in any way that violates local, state, national, or international law
+2. **Infringe Rights**: Upload content that infringes on intellectual property, privacy, or other rights of third parties
+3. **Spam or Abuse**: Send unsolicited messages, spam, or abuse the sharing feature
+4. **Reverse Engineer**: Decompile, reverse engineer, or attempt to extract source code from the App
+5. **Automated Access**: Use bots, scrapers, or automated systems to access the App
+6. **Circumvent Limits**: Attempt to bypass subscription requirements or access Pro features without payment
+7. **Harmful Content**: Upload images containing illegal, obscene, defamatory, or harmful content
+8. **Impersonate**: Impersonate any person or entity
+9. **Interfere**: Interfere with or disrupt the App or servers
+10. **Commercial Use**: Use the App for commercial event promotion without our permission (personal use only)
+
+### Content You Upload:
+- You retain ownership of images you upload to EventSnag
+- You grant us a limited license to process images via AI for event extraction
+- You are responsible for ensuring you have rights to any images you upload
+- Do not upload images containing personal information of others without consent
+
+---
+
+## Intellectual Property
+
+### Our Rights
+EventSnag, including all software, designs, logos, and content, is owned by Shimmer Labs LLC and protected by copyright, trademark, and other intellectual property laws.
+
+You are granted a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes.
+
+### Your Rights
+You retain all rights to the event images and data you upload to EventSnag. We do not claim ownership of your content.
+
+### Trademarks
+"EventSnag," the EventSnag logo, and other marks are trademarks of Shimmer Labs LLC. You may not use our trademarks without prior written permission.
+
+---
+
+## Third-Party Services
+
+EventSnag integrates with third-party services:
+
+### Google Calendar
+- Subject to Google's Terms of Service: https://policies.google.com/terms
+- You are responsible for your use of Google services
+- We are not responsible for Google's actions or failures
+
+### Anthropic (Claude AI)
+- AI processing subject to Anthropic's Terms: https://www.anthropic.com/legal/terms
+- We are not responsible for AI parsing accuracy or errors
+
+### RevenueCat (Subscriptions)
+- Subscription management subject to RevenueCat's Terms: https://www.revenuecat.com/terms
+- Apple's In-App Purchase terms also apply
+
+### Apple App Store
+- Your use of the App is subject to Apple's Terms: https://www.apple.com/legal/internet-services/itunes/
+
+---
+
+## AI-Generated Content Disclaimer
+
+EventSnag uses artificial intelligence (Claude AI by Anthropic) to extract event information from images.
+
+**Important**:
+- AI parsing may contain errors or inaccuracies
+- Always verify event details before attending
+- We are not responsible for incorrect dates, times, venues, or other event information
+- You are responsible for reviewing and correcting extracted data
+- Events may be canceled, rescheduled, or changed by organizers without our knowledge
+
+**No Warranty**: We provide the AI extraction service "as is" without warranties of accuracy, completeness, or reliability.
+
+---
+
+## Disclaimer of Warranties
+
+THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
+
+- Warranties of merchantability, fitness for a particular purpose, or non-infringement
+- Warranties that the App will be uninterrupted, error-free, or secure
+- Warranties regarding the accuracy or reliability of AI-extracted event data
+- Warranties that defects will be corrected
+
+**Use at Your Own Risk**: Your use of EventSnag is at your sole risk. We do not warrant that:
+- The App will meet your requirements
+- Event data will be accurate
+- Calendar syncing will work without errors
+- Notifications will be delivered reliably
+- The App will be compatible with all devices or iOS versions
+
+---
+
+## Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, SHIMMER LABS LLC AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR:
+
+### Direct Damages:
+- Lost profits, revenue, or data
+- Missed events due to incorrect information
+- Calendar sync failures
+- Notification delivery failures
+
+### Indirect Damages:
+- Indirect, incidental, special, consequential, or punitive damages
+- Damages resulting from use or inability to use the App
+- Unauthorized access to your data
+- Errors or omissions in event information
+
+**Maximum Liability**: In no event shall our total liability exceed the amount you paid for subscriptions in the 12 months prior to the claim (or $100 if you are a free user).
+
+### Exceptions:
+Some jurisdictions do not allow exclusion of certain warranties or limitation of liability, so the above limitations may not apply to you.
+
+---
+
+## Indemnification
+
+You agree to indemnify, defend, and hold harmless Shimmer Labs LLC and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, or expenses (including reasonable attorneys' fees) arising from:
+
+- Your use of EventSnag
+- Your violation of these Terms
+- Your violation of any rights of another person or entity
+- Content you upload to the App
+- Your misuse of AI-generated event data
+
+---
+
+## Data Privacy
+
+Your privacy is important to us. Please review our Privacy Policy at https://shimmerlabs.co/projects/eventsnag/privacy to understand how we collect, use, and protect your information.
+
+By using EventSnag, you agree to our Privacy Policy.
+
+---
+
+## Termination
+
+### By You:
+- You may stop using the App at any time
+- Uninstalling the App terminates your access
+- Cancel subscriptions in iOS Settings to avoid future charges
+
+### By Us:
+We reserve the right to:
+- Suspend or terminate your access to the App at any time, with or without cause
+- Modify or discontinue the App (or any part thereof) with or without notice
+- Remove or disable access to content that violates these Terms
+
+**Effect of Termination**:
+- Upon termination, your license to use the App ends immediately
+- You must cease all use of the App
+- Termination does not entitle you to a refund
+- Provisions that should survive termination (warranty disclaimers, liability limitations, etc.) will remain in effect
+
+---
+
+## Modifications to the App
+
+We reserve the right to:
+- Modify or discontinue the App (or any features) at any time
+- Change subscription pricing with 30 days' notice
+- Add or remove features from free or Pro tiers
+- Update the App to fix bugs or improve performance
+
+We will make reasonable efforts to notify you of significant changes, but we are not obligated to do so.
+
+**No Obligation to Update**: We have no obligation to provide updates, support, or maintenance for the App.
+
+---
+
+## Changes to These Terms
+
+We may update these Terms from time to time. When we do:
+- We will post the updated Terms in the App
+- We will update the "Last Updated" date at the top
+- For material changes, we will provide notice via in-app notification or email (if we have your email)
+
+**Continued Use = Acceptance**: Your continued use of EventSnag after changes are posted constitutes acceptance of the updated Terms.
+
+If you do not agree to the updated Terms, you must stop using the App and uninstall it.
+
+---
+
+## Dispute Resolution
+
+### Governing Law
+These Terms are governed by the laws of the State of Oklahoma, United States, without regard to conflict of law principles.
+
+### Informal Resolution
+Before filing a claim, you agree to contact us at eventsnagsupport@shimmerlabs.co to attempt to resolve the dispute informally. We will try to resolve disputes in good faith.
+
+### Arbitration Agreement
+**YOU AND SHIMMER LABS LLC AGREE TO RESOLVE DISPUTES THROUGH BINDING ARBITRATION, NOT IN COURT.**
+
+- Arbitration will be conducted by the American Arbitration Association (AAA) under its Consumer Arbitration Rules
+- Arbitration will take place in Oklahoma County, Oklahoma, or remotely via video conference
+- The arbitrator's decision is final and binding
+- You waive your right to a jury trial
+- You waive your right to participate in a class action lawsuit
+
+**Exceptions to Arbitration**:
+- Small claims court cases (under $10,000)
+- Intellectual property disputes
+- Claims for injunctive relief
+
+**Opt-Out**: You may opt out of arbitration by emailing us at eventsnagsupport@shimmerlabs.co within 30 days of first using the App with "Arbitration Opt-Out" in the subject line.
+
+### Class Action Waiver
+You agree to bring claims against us only in your individual capacity, not as part of a class, consolidated, or representative action.
+
+---
+
+## Miscellaneous
+
+### Entire Agreement
+These Terms, together with our Privacy Policy, constitute the entire agreement between you and Shimmer Labs LLC regarding EventSnag.
+
+### Severability
+If any provision of these Terms is found unenforceable, the remaining provisions will remain in full effect.
+
+### No Waiver
+Our failure to enforce any right or provision of these Terms does not constitute a waiver of that right or provision.
+
+### Assignment
+You may not assign or transfer these Terms. We may assign these Terms without restriction.
+
+### Force Majeure
+We are not liable for failure to perform due to circumstances beyond our reasonable control (e.g., natural disasters, war, strikes, internet outages).
+
+### Third-Party Beneficiaries
+These Terms do not create any third-party beneficiary rights except for Apple, Google, Anthropic, and RevenueCat to the extent they provide services integral to the App.
+
+### Apple-Specific Terms
+- These Terms are between you and Shimmer Labs LLC, not Apple
+- Apple has no obligation to provide support or maintenance for the App
+- Apple is not responsible for the App or its content
+- Apple is not liable for any claims related to the App
+- In the event of any third-party claim that the App infringes intellectual property rights, Shimmer Labs LLC (not Apple) is responsible
+
+---
+
+## Contact Us
+
+If you have questions about these Terms:
+
+**Shimmer Labs LLC**
+Email: eventsnagsupport@shimmerlabs.co
+Website: https://shimmerlabs.co/projects/eventsnag
+
+For legal inquiries: Include "Legal" in your email subject line.
+
+---
+
+## Acknowledgment
+
+BY USING EVENTSNAG, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE.
+
+---
+
+## Summary (TL;DR)
+
+- **Use responsibly**: Don't upload illegal content, spam, or abuse the service
+- **AI is not perfect**: Always verify event details before attending
+- **Subscriptions**: Auto-renew unless canceled; manage in iOS Settings
+- **No refunds**: All sales are final
+- **We're not liable**: For missed events, incorrect data, or service interruptions
+- **Disputes**: Resolved through binding arbitration in Oklahoma
+- **We can change things**: Terms, features, pricing (with notice)
+- **Questions?** Email eventsnagsupport@shimmerlabs.co
+
+----
+
+Uuid: eventsnag_terms_v1

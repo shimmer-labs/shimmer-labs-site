@@ -1,0 +1,44 @@
+Title: Taddy API n8n Integration
+----
+Badge: Live
+----
+Summary: Custom n8n nodes for the Taddy Podcast API, enabling no-code podcast data workflows for search, transcripts, and RSS feeds.
+----
+Tech_stack:  n8n, TypeScript, Node.js, GraphQL, Taddy Podcast API, npm
+----
+Video_url: https://www.youtube.com/embed/xSWQKqTwyAA
+----
+Description:
+
+## The Challenge
+Podcast creators and automation enthusiasts needed a way to access Taddy's powerful podcast database without writing code. The Taddy API offered rich data on podcasts, episodes, and transcripts, but required GraphQL knowledge and custom integration work that put it out of reach for most no-code users.
+
+## The Solution
+Built the first official n8n integration for Taddy Podcast API that:
+- Provides 8 core operations (search, get transcripts, top charts, popular podcasts)
+- Handles pagination automatically for large datasets
+- Generates on-demand transcripts with credit protection
+- Offers response field selection to optimize downstream processing
+- Works seamlessly with n8n's visual workflow builder
+- Includes comprehensive error handling and user-friendly messaging
+
+## The Tech
+The integration is built as a community node package connecting:
+1. TypeScript-based node structure with clean query architecture
+2. GraphQL integration with Taddy's podcast database
+3. Automatic pagination handling for requests exceeding limits
+4. Credit toggle system preventing accidental transcript generation
+5. Response field mapping for 50+ data points
+6. npm package distribution for easy installation
+
+## Key Operations
+- Search podcasts and episodes across millions of shows
+- Retrieve existing transcripts or generate new ones on-demand
+- Access top charts by country and genre from Apple Podcasts
+- Get popular podcasts with language and genre filtering
+- Fetch latest episodes across multiple shows simultaneously
+
+----
+Results: First-to-market n8n integration for Taddy API, serving as the reference implementation for future Zapier, Make.com, and Gumloop integrations. Enables no-code access to podcast data for creators, researchers, and automation enthusiasts worldwide.
+----
+Link: https://github.com/taddyorg/podcast-data-n8n-integration

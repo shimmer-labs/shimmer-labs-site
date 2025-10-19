@@ -84,11 +84,24 @@
           </div>
         <?php endif ?>
 
+        <!-- App Store Download (for mobile apps) -->
+        <?php if ($page->is_app()->toBool()): ?>
+          <?php snippet('app-download', [
+            'url' => $page->app_store_url(),
+            'app_name' => $page->title()
+          ]) ?>
+        <?php endif ?>
+
         <!-- CTA -->
         <div class="project-detail__cta">
-          <?php if ($page->link()->isNotEmpty()): ?>
+          <?php if ($page->link()->isNotEmpty() && !$page->is_app()->toBool()): ?>
             <a href="<?= $page->link() ?>" class="btn btn--cta" target="_blank" rel="noopener">
               View Live Project →
+            </a>
+          <?php endif ?>
+          <?php if ($page->link()->isNotEmpty() && $page->is_app()->toBool()): ?>
+            <a href="<?= $page->link() ?>" class="btn btn--secondary" target="_blank" rel="noopener">
+              View on GitHub →
             </a>
           <?php endif ?>
           <a href="<?= url('contact') ?>" class="btn btn--secondary">
@@ -135,6 +148,29 @@
     </div><!-- Close .project-layout -->
   </div><!-- Close .container-wide -->
 </section><!-- Close .project-detail -->
+
+<!-- App Legal Footer (Privacy, Terms, Support) -->
+<?php if ($page->is_app()->toBool()): ?>
+<section class="app-legal-footer">
+  <div class="container">
+    <div class="app-legal-footer__content">
+      <p>Legal & Support</p>
+      <ul class="app-legal-links">
+        <?php if ($page->find('privacy')): ?>
+          <li><a href="<?= $page->url() ?>/privacy">Privacy Policy</a></li>
+        <?php endif ?>
+        <?php if ($page->find('terms')): ?>
+          <li><a href="<?= $page->url() ?>/terms">Terms of Service</a></li>
+        <?php endif ?>
+        <?php if ($page->find('support')): ?>
+          <li><a href="<?= $page->url() ?>/support">Support & FAQ</a></li>
+        <?php endif ?>
+        <li><a href="<?= url('contact') ?>">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<?php endif ?>
 
 <!-- Lightbox for images -->
 <div class="lightbox" id="lightbox" style="display: none;">

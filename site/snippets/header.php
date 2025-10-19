@@ -27,6 +27,12 @@
   
   <?= css([
     'assets/css/main.css']) ?>
+
+  <?php snippet('analytics') ?>
+  <?php snippet('schema-org') ?>
+
+  <!-- Service Worker Registration -->
+  <?= js('assets/js/sw-register.js') ?>
 </head>
 <body>
   <header class="site-header">
