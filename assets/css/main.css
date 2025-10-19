@@ -2085,76 +2085,81 @@ img.loaded {
 }
 
 /* ===================================
-   App Waitlist Section
+   App Waitlist Section (Compact Banner)
    =================================== */
 .app-waitlist {
-  background: linear-gradient(135deg, var(--color-gold) 0%, #f39c12 100%);
-  padding: var(--spacing-xxl) var(--spacing-md);
-  margin: var(--spacing-xxl) 0;
-  border-radius: var(--border-radius-lg);
-  box-shadow: 0 8px 24px rgba(255, 179, 0, 0.3);
+  background: linear-gradient(135deg, rgba(255, 179, 0, 0.1) 0%, rgba(243, 156, 18, 0.1) 100%);
+  border: 2px solid var(--color-gold);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
 }
 
 .app-waitlist__container {
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 .app-waitlist__header {
-  text-align: center;
-  margin-bottom: var(--spacing-xl);
-  color: var(--color-navy);
+  margin-bottom: var(--spacing-md);
 }
 
 .app-waitlist__header h2 {
-  font-size: 2rem;
-  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xs);
   color: var(--color-navy);
+  font-weight: 600;
 }
 
 .app-waitlist__header p {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   margin-bottom: 0;
-  color: var(--color-navy);
-  opacity: 0.9;
+  color: var(--color-gray-medium);
 }
 
 .app-waitlist__launch-date {
-  margin-top: var(--spacing-sm);
-  padding: var(--spacing-sm) var(--spacing-md);
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: var(--border-radius);
   display: inline-block;
-  font-size: 1rem;
+  margin-top: var(--spacing-xs);
+  padding: 0.25rem 0.75rem;
+  background: rgba(255, 179, 0, 0.15);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--border-radius);
+  font-size: 0.85rem;
+  color: var(--color-navy);
+  font-weight: 600;
 }
 
 .app-waitlist__form {
-  background: white;
-  padding: var(--spacing-lg);
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
 }
 
 .app-waitlist__form .form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
+  display: flex;
+  gap: var(--spacing-sm);
+  flex: 1;
+}
+
+.app-waitlist__form .form-group {
+  flex: 1;
+  min-width: 0;
 }
 
 .app-waitlist__form .form-group label {
   display: block;
-  margin-bottom: var(--spacing-xs);
-  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
   color: var(--color-navy);
+  font-size: 0.85rem;
 }
 
 .app-waitlist__form input {
   width: 100%;
-  padding: var(--spacing-sm) var(--spacing-md);
-  border: 2px solid var(--color-gray-light);
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-gray-light);
   border-radius: var(--border-radius);
-  font-size: 1rem;
+  font-size: 0.95rem;
   transition: var(--transition);
 }
 
@@ -2165,78 +2170,90 @@ img.loaded {
 }
 
 .app-waitlist__form .btn {
-  width: 100%;
-  margin-top: var(--spacing-sm);
-  font-size: 1.1rem;
-  padding: var(--spacing-md);
-  background: var(--color-navy);
-  color: white;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.95rem;
+  background: var(--color-gold);
+  color: var(--color-navy);
   border: none;
+  border-radius: var(--border-radius);
   cursor: pointer;
   transition: var(--transition);
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .app-waitlist__form .btn:hover {
-  background: var(--color-teal);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: var(--color-navy);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .app-waitlist__form .form-note {
-  text-align: center;
   color: var(--color-gray-medium);
-  font-size: 0.9rem;
-  margin-top: var(--spacing-sm);
-  margin-bottom: 0;
+  font-size: 0.8rem;
+  margin-top: var(--spacing-xs);
+  text-align: center;
 }
 
-/* Social Share Section */
+/* Social Share Section (Compact) */
 .app-waitlist__social {
-  margin-top: var(--spacing-xl);
-  text-align: center;
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 179, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
 }
 
 .app-waitlist__social-label {
-  color: var(--color-navy);
-  font-weight: 600;
-  margin-bottom: var(--spacing-sm);
-  opacity: 0.9;
+  color: var(--color-gray-medium);
+  font-size: 0.85rem;
+  margin: 0;
 }
 
 .social-share-buttons {
   display: flex;
-  gap: var(--spacing-sm);
-  justify-content: center;
-  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .social-share-btn {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-xs);
-  padding: var(--spacing-sm) var(--spacing-md);
+  gap: 0.25rem;
+  padding: 0.35rem 0.75rem;
   background: white;
   color: var(--color-navy);
   text-decoration: none;
   border-radius: var(--border-radius);
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 0.85rem;
   transition: var(--transition);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-gray-light);
 }
 
 .social-share-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .social-share-btn--twitter:hover {
   background: #1DA1F2;
   color: white;
+  border-color: #1DA1F2;
 }
 
 .social-share-btn--linkedin:hover {
   background: #0077B5;
   color: white;
+  border-color: #0077B5;
+}
+
+.social-share-btn svg {
+  width: 14px;
+  height: 14px;
 }
 
 /* ===================================
@@ -2294,22 +2311,35 @@ img.loaded {
 /* Responsive */
 @media (max-width: 768px) {
   .app-waitlist {
-    padding: var(--spacing-xl) var(--spacing-md);
-    margin: var(--spacing-xl) calc(-1 * var(--spacing-md));
-    border-radius: 0;
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
   }
 
   .app-waitlist__header h2 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .app-waitlist__header p {
+    font-size: 0.9rem;
   }
 
   .app-waitlist__form {
-    padding: var(--spacing-md);
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .app-waitlist__form .form-row {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-sm);
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .app-waitlist__form .btn {
+    width: 100%;
+  }
+
+  .app-waitlist__social {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .social-share-buttons {
