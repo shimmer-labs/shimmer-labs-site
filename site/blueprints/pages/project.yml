@@ -16,6 +16,11 @@ fields:
     help: Show in featured section on projects page (highlight your best work)
     default: false
   summary: textarea
+  description:
+    type: textarea
+    label: Detailed Description
+    help: Full project description with markdown support (appears in "How It Works" section)
+    size: large
   tech_stack: tags
   results: textarea
   link:
