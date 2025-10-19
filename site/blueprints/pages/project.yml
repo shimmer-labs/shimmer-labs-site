@@ -1,5 +1,15 @@
 title: Project
 fields:
+  meta_description:
+    label: Meta Description (SEO)
+    type: textarea
+    maxlength: 160
+    help: Appears in search results. If empty, uses summary field.
+  og_image:
+    label: Open Graph Image (Social Sharing)
+    type: files
+    max: 1
+    help: Image for social media sharing (recommended 1200x630px). Falls back to project image if empty.
   summary: textarea
   tech_stack: tags
   results: textarea

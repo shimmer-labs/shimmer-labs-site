@@ -1,0 +1,27 @@
+# Shimmer Labs - shimmerlabs.co
+# Allow all crawlers full access to public content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://shimmerlabs.co/sitemap.xml
+
+# Disallow admin/panel areas (Kirby CMS)
+User-agent: *
+Disallow: /panel
+Disallow: /kirby
+Disallow: /site
+
+# Disallow service worker and cache files
+Disallow: /sw.js
+
+# Allow common crawlers explicitly
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawl delay (optional - prevents aggressive crawling)
+# User-agent: *
+# Crawl-delay: 1

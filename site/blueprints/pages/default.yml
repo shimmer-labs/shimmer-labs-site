@@ -26,6 +26,16 @@ columns:
       fields:
         type: fields
         fields:
+          meta_description:
+            label: Meta Description (SEO)
+            type: textarea
+            maxlength: 160
+            help: Appears in search results (max 160 characters)
+          og_image:
+            label: Open Graph Image (Social Sharing)
+            type: files
+            max: 1
+            help: Image for social media sharing (recommended 1200x630px)
           text:
             type: textarea
             size: huge

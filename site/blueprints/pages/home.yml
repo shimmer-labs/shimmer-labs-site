@@ -1,6 +1,22 @@
 title: Home
 
 tabs:
+  seo:
+    label: SEO
+    icon: 🔍
+    fields:
+      meta_description:
+        label: Meta Description
+        type: textarea
+        maxlength: 160
+        help: Appears in search results (max 160 characters). If empty, falls back to hero description.
+        placeholder: Automate your business, reclaim your time. Custom automation solutions for small businesses.
+      og_image:
+        label: Open Graph Image (Social Sharing)
+        type: files
+        max: 1
+        help: Image shown when sharing on social media (recommended 1200x630px)
+
   hero:
     label: Hero Section
     fields:
