@@ -103,7 +103,6 @@
         <!-- Detailed Description -->
         <?php if ($page->description()->isNotEmpty()): ?>
           <div class="project-detail__description">
-            <h3>How It Works</h3>
             <?= $page->description()->kt() ?>
           </div>
         <?php endif ?>
