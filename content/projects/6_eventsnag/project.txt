@@ -10,6 +10,9 @@ Is_app: true
 ----
 Featured: true
 ----
+Demo_video:
+- eventsnag-demo.mp4
+----
 App_store_url:
 ----
 Video_url:
