@@ -194,16 +194,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const type = thumbnail.dataset.type;
         const src = thumbnail.dataset.src;
+        const videoType = thumbnail.dataset.videoType;
 
         galleryFeatured.innerHTML = '';
 
         if (type === 'video') {
-          const iframe = document.createElement('iframe');
-          iframe.src = src;
-          iframe.setAttribute('frameborder', '0');
-          iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-          iframe.setAttribute('allowfullscreen', '');
-          galleryFeatured.appendChild(iframe);
+          if (videoType === 'local') {
+            // Local video file (MP4, WebM, etc.)
+            const video = document.createElement('video');
+            video.id = 'featuredVideo';
+            video.controls = true;
+            video.autoplay = true;
+            video.muted = true;
+            video.loop = true;
+            video.playsInline = true;
+            video.style.width = '100%';
+            video.style.height = 'auto';
+            video.style.display = 'block';
+
+            const source = document.createElement('source');
+            source.src = src;
+            // Determine video type from file extension
+            const extension = src.split('.').pop().toLowerCase();
+            source.type = 'video/' + extension;
+
+            video.appendChild(source);
+            galleryFeatured.appendChild(video);
+          } else {
+            // YouTube embed
+            const iframe = document.createElement('iframe');
+            iframe.id = 'featuredVideo';
+            iframe.src = src;
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+            iframe.setAttribute('allowfullscreen', '');
+            galleryFeatured.appendChild(iframe);
+          }
         } else {
           const img = document.createElement('img');
           img.src = src;

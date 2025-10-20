@@ -26,29 +26,6 @@
           ]) ?>
         <?php endif ?>
 
-        <!-- Demo Video (for apps with demo_video field) -->
-        <?php if ($page->demo_video()->isNotEmpty()): ?>
-          <div class="app-demo-video">
-            <h2>See It In Action</h2>
-            <div class="demo-video-container">
-              <?php
-              $demo_video = $page->demo_video()->toFile();
-              if ($demo_video):
-                $extension = $demo_video->extension();
-              ?>
-                <?php if (in_array($extension, ['mp4', 'webm', 'mov'])): ?>
-                  <video controls autoplay muted loop playsinline>
-                    <source src="<?= $demo_video->url() ?>" type="video/<?= $extension ?>">
-                    Your browser doesn't support video playback.
-                  </video>
-                <?php elseif (in_array($extension, ['gif'])): ?>
-                  <img src="<?= $demo_video->url() ?>" alt="<?= $page->title() ?> demo" class="demo-gif">
-                <?php endif ?>
-              <?php endif ?>
-            </div>
-          </div>
-        <?php endif ?>
-
         <!-- Tech Stack -->
         <?php if ($page->tech_stack()->isNotEmpty()): ?>
           <div class="project-detail__tech">
@@ -62,17 +39,35 @@
         <?php endif ?>
 
         <!-- Gallery -->
-        <?php if ($page->images()->count() > 0 || $page->video_url()->isNotEmpty()): ?>
+        <?php
+          $hasLocalVideo = $page->demo_video()->isNotEmpty() && $page->demo_video()->toFile();
+          $hasYouTubeVideo = $page->video_url()->isNotEmpty();
+          $hasVideo = $hasLocalVideo || $hasYouTubeVideo;
+        ?>
+        <?php if ($page->images()->count() > 0 || $hasVideo): ?>
           <div class="project-gallery">
             <h3>Gallery</h3>
-            
+
             <div class="gallery-featured" id="galleryFeatured">
-              <?php if ($page->video_url()->isNotEmpty()): ?>
-                <iframe 
+              <?php if ($hasLocalVideo): ?>
+                <?php $demoVideo = $page->demo_video()->toFile(); ?>
+                <video
                   id="featuredVideo"
-                  src="<?= $page->video_url() ?>" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  controls
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  style="width: 100%; height: auto; display: block;">
+                  <source src="<?= $demoVideo->url() ?>" type="video/<?= $demoVideo->extension() ?>">
+                  Your browser doesn't support video playback.
+                </video>
+              <?php elseif ($hasYouTubeVideo): ?>
+                <iframe
+                  id="featuredVideo"
+                  src="<?= $page->video_url() ?>"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
                 </iframe>
               <?php else: ?>
@@ -81,17 +76,17 @@
                 <div class="zoom-hint">🔍 Click to enlarge</div>
               <?php endif ?>
             </div>
-            
+
             <div class="gallery-thumbnails">
-              <?php if ($page->video_url()->isNotEmpty()): ?>
-                <div class="thumbnail thumbnail--active" data-type="video" data-src="<?= $page->video_url() ?>">
+              <?php if ($hasVideo): ?>
+                <div class="thumbnail thumbnail--active" data-type="video" <?php if ($hasLocalVideo): ?>data-src="<?= $demoVideo->url() ?>" data-video-type="local"<?php else: ?>data-src="<?= $page->video_url() ?>" data-video-type="youtube"<?php endif ?>>
                   <div class="thumbnail-video-indicator">▶</div>
                 </div>
               <?php endif ?>
-              
+
               <?php foreach ($page->images() as $index => $image): ?>
-                <div class="thumbnail <?php e($index === 0 && $page->video_url()->isEmpty(), 'thumbnail--active') ?>" 
-                     data-type="image" 
+                <div class="thumbnail <?php e($index === 0 && !$hasVideo, 'thumbnail--active') ?>"
+                     data-type="image"
                      data-src="<?= $image->url() ?>">
                   <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
                 </div>
