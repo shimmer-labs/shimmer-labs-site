@@ -1008,7 +1008,8 @@ section {
 }
 
 .gallery-featured img,
-.gallery-featured iframe {
+.gallery-featured iframe,
+.gallery-featured video {
   max-width: 100%;
   max-height: 600px;
   object-fit: contain;
@@ -1019,6 +1020,12 @@ section {
 .gallery-featured iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
+}
+
+.gallery-featured video {
+  width: auto;
+  height: auto;
+  max-height: 600px;
 }
 
 .zoom-hint {
