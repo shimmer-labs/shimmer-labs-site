@@ -1,9 +1,23 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "**/*.php",
+      "use": "vercel-php@0.6.0"
+    }
+  ],
   "routes": [
     {
-      "src": "/api/waitlist-submit",
-      "dest": "/api/waitlist-submit.js"
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
