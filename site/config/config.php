@@ -21,34 +21,10 @@ return [
     // Waitlist API endpoint
     [
       'pattern' => 'api/waitlist-submit',
-      'method' => 'POST|OPTIONS',
+      'method' => 'POST',
       'action'  => function() {
-        // CORS headers
-        header('Access-Control-Allow-Credentials: true');
-        header('Access-Control-Allow-Origin: *');
-        header('Access-Control-Allow-Methods: GET,OPTIONS,POST');
-        header('Access-Control-Allow-Headers: Content-Type');
-
-        // Handle preflight OPTIONS request
-        if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-          http_response_code(200);
-          exit;
-        }
-
-        // Only allow POST
-        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-          return new Kirby\Cms\Response(json_encode([
-            'error' => 'Method not allowed',
-            'message' => 'This endpoint only accepts POST requests'
-          ]), 'application/json', 405);
-        }
-
-        // Get POST data (JSON or form-encoded)
-        $input = file_get_contents('php://input');
-        $data = json_decode($input, true);
-        if (!$data) {
-          parse_str($input, $data);
-        }
+        // Get POST data using Kirby's request handler
+        $data = kirby()->request()->body()->toArray();
 
         $email = $data['email'] ?? $data['_replyto'] ?? null;
         $appName = $data['app'] ?? 'EventSnag';
@@ -56,10 +32,10 @@ return [
 
         // Validate email
         if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-          return new Kirby\Cms\Response(json_encode([
+          return [
             'error' => 'Invalid email',
             'message' => 'Please provide a valid email address'
-          ]), 'application/json', 400);
+          ];
         }
 
         $normalizedEmail = strtolower(trim($email));
@@ -69,10 +45,10 @@ return [
         $projectId = getenv('FIREBASE_PROJECT_ID');
 
         if (!$apiKey || !$projectId) {
-          return new Kirby\Cms\Response(json_encode([
+          return [
             'error' => 'Configuration error',
             'message' => 'Firebase credentials not configured'
-          ]), 'application/json', 500);
+          ];
         }
 
         // Check if document exists in Firestore
@@ -91,19 +67,19 @@ return [
 
           if ($redeemedBy === null && isset($existingDoc['fields']['redeemedBy']['stringValue'])) {
             // Already redeemed
-            return new Kirby\Cms\Response(json_encode([
+            return [
               'success' => true,
               'message' => "You're already on the waitlist and have claimed your access!",
               'alreadyRedeemed' => true
-            ]), 'application/json', 200);
+            ];
           }
 
           // On waitlist but not redeemed
-          return new Kirby\Cms\Response(json_encode([
+          return [
             'success' => true,
             'message' => "You're already on the waitlist! We'll notify you when EventSnag launches.",
             'alreadyExists' => true
-          ]), 'application/json', 200);
+          ];
         }
 
         // Create new document in Firestore
@@ -131,10 +107,10 @@ return [
 
         if ($createStatus !== 200) {
           error_log("Firestore error: " . $createResponse);
-          return new Kirby\Cms\Response(json_encode([
+          return [
             'error' => 'Internal server error',
             'message' => 'Failed to add to waitlist. Please try again later.'
-          ]), 'application/json', 500);
+          ];
         }
 
         // Send emails via Resend (async, don't wait)
@@ -189,10 +165,10 @@ return [
           // Don't fail the request if email fails
         }
 
-        return new Kirby\Cms\Response(json_encode([
+        return [
           'success' => true,
           'message' => "Thanks for joining the {$appName} waitlist! Check {$normalizedEmail} for confirmation."
-        ]), 'application/json', 200);
+        ];
       }
     ],
     [
