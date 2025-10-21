@@ -51,3 +51,17 @@ Icon
 /site/config/config.starterkit.test.php
 .DS_Store
 .vercel
+
+# API Dependencies
+# ---------------
+
+/api/node_modules
+/api/package-lock.json
+
+# Environment Variables
+# ---------------
+
+.env
+.env.local
+.env.production
+serviceAccountKey.json

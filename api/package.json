@@ -1,0 +1,16 @@
+{
+  "name": "shimmer-labs-api",
+  "version": "1.0.0",
+  "description": "Serverless API functions for Shimmer Labs website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "resend": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
