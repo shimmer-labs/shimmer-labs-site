@@ -44,6 +44,38 @@ This is the main website for Shimmer Labs, a boutique automation consultancy bas
 
 ---
 
+## ⚠️ Lessons Learned
+
+### Custom API Routes (October 21, 2025)
+**Don't try to build custom API endpoints in this Kirby+Vercel setup.**
+
+**What happened:**
+- Attempted to replace Formspree with a custom waitlist API (Node.js serverless function + Firestore)
+- Spent hours troubleshooting routing conflicts between Kirby's PHP routing and Vercel's Node.js functions
+- Tried multiple approaches: Node.js API, PHP routes in Kirby config, explicit Vercel routing rules
+- None worked - Kirby's routing system consistently returned 404s for custom API endpoints
+- Had to revert everything back to Formspree
+
+**Why it failed:**
+- Kirby CMS + Vercel's mixed PHP/Node.js runtime = routing conflicts
+- Kirby catches all routes via `index.php` before Node.js functions can execute
+- Even Kirby's custom routes (following official docs) didn't work properly for POST JSON endpoints
+- The framework is opinionated about routing and doesn't play well with external API functions
+
+**Lessons:**
+1. **Formspree works perfectly** for simple form → email workflows. Don't overcomplicate.
+2. **Know when to stop** - After 2-3 failed approaches, revert rather than continuing to break things
+3. **Don't fix what isn't broken** - The existing solution was stable and working
+4. **If you need custom backend logic**, use a separate Vercel project or different serverless platform entirely
+5. **Mixed runtime environments are complex** - PHP + Node.js on the same Vercel project creates routing hell
+
+**The right approach for future custom APIs:**
+- Deploy as a completely separate Vercel project (e.g., `api.shimmerlabs.co`)
+- Or use Cloudflare Workers, AWS Lambda, or other dedicated serverless platform
+- Keep the Kirby site pure PHP, no mixed runtimes
+
+---
+
 ## Directory Structure
 
 ```
