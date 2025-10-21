@@ -136,8 +136,13 @@ async function sendEmails(userEmail, appName, source) {
  * Add document to Firestore using REST API
  */
 async function addToFirestore(email, appName, source) {
-  const apiKey = process.env.FIREBASE_API_KEY || 'AIzaSyCVAGPaRK6XXeZlkWmM-jbf8zZ7IZvPyZ8';
-  const projectId = process.env.FIREBASE_PROJECT_ID || 'eventsnag-a9fd6';
+  const apiKey = process.env.FIREBASE_API_KEY;
+  const projectId = process.env.FIREBASE_PROJECT_ID;
+
+  if (!apiKey || !projectId) {
+    throw new Error('Firebase credentials not configured. Please set FIREBASE_API_KEY and FIREBASE_PROJECT_ID environment variables.');
+  }
+
   const normalizedEmail = email.toLowerCase().trim();
 
   // Check if document exists first
