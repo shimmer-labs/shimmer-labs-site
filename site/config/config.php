@@ -145,7 +145,7 @@ return [
         try {
           $resendApiKey = getenv('RESEND_API_KEY');
           if ($resendApiKey) {
-            $resend = Resend::client($resendApiKey);
+            $resend = \Resend\Resend::client($resendApiKey);
             $fromEmail = getenv('NOTIFICATION_EMAIL') ?: 'logan@shimmerlabs.co';
             $notificationEmail = getenv('NOTIFICATION_EMAIL') ?: 'logan@shimmerlabs.co';
 
