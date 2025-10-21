@@ -32,95 +32,24 @@ $launch_date = $launch_date ?? 'soon';
       </div>
     <?php else: ?>
       <!-- Compact form -->
-      <form class="app-waitlist__form" id="waitlistForm" method="POST" action="https://shimmerlabs.co/api/waitlist-submit" accept-charset="UTF-8">
+      <form class="app-waitlist__form" method="POST" action="https://formspree.io/f/<?= $formspree_id ?>" accept-charset="UTF-8">
         <input type="email"
-               name="email"
+               name="_replyto"
                id="waitlist-email"
                required
                placeholder="your.email@example.com"
                class="app-waitlist__input">
 
-        <button type="submit" class="app-waitlist__button" id="waitlistSubmit">
+        <button type="submit" class="app-waitlist__button">
           Notify Me at Launch
         </button>
 
         <!-- Hidden fields -->
         <input type="hidden" name="app" value="<?= $app_name ?>">
-        <input type="hidden" name="source" value="website">
-        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="New <?= $app_name ?> Waitlist Signup">
+        <input type="hidden" name="_next" value="<?= $page->url() ?>?waitlist-success=true">
+        <input type="text" name="_gotcha" style="display:none">
       </form>
-
-      <!-- Success/Error messages (shown via JS) -->
-      <div id="waitlistSuccess" class="form-success" style="display:none;">
-        <p>🎉 You're on the list! We'll email you as soon as <?= $app_name ?> is live.</p>
-      </div>
-      <div id="waitlistError" class="form-error" style="display:none;">
-        <p>⚠️ Something went wrong. Please try again or email us directly at <a href="mailto:logan@shimmerlabs.co">logan@shimmerlabs.co</a></p>
-      </div>
-
-      <script>
-      (function() {
-        const form = document.getElementById('waitlistForm');
-        const submitBtn = document.getElementById('waitlistSubmit');
-        const successMsg = document.getElementById('waitlistSuccess');
-        const errorMsg = document.getElementById('waitlistError');
-
-        if (!form) return;
-
-        form.addEventListener('submit', async function(e) {
-          e.preventDefault();
-
-          // Get form data
-          const email = document.getElementById('waitlist-email').value.trim();
-          const app = form.querySelector('[name="app"]').value;
-          const source = form.querySelector('[name="source"]').value;
-
-          // Honeypot check
-          if (form.querySelector('[name="_gotcha"]').value) {
-            return; // Bot detected, silently fail
-          }
-
-          // Update button state
-          const originalText = submitBtn.textContent;
-          submitBtn.textContent = 'Joining...';
-          submitBtn.disabled = true;
-
-          try {
-            const response = await fetch('https://shimmerlabs.co/api/waitlist-submit', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({ email, app, source })
-            });
-
-            const data = await response.json();
-
-            if (data.success) {
-              // Show success message
-              form.style.display = 'none';
-              successMsg.style.display = 'block';
-
-              // Track analytics if available
-              if (typeof gtag !== 'undefined') {
-                gtag('event', 'waitlist_signup', {
-                  'event_category': 'engagement',
-                  'event_label': app,
-                  'value': 1
-                });
-              }
-            } else {
-              throw new Error(data.message || 'Failed to join waitlist');
-            }
-          } catch (error) {
-            console.error('Waitlist submission error:', error);
-            errorMsg.style.display = 'block';
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-          }
-        });
-      })();
-      </script>
     <?php endif ?>
 
     <!-- Bottom line: disclaimer + social -->
