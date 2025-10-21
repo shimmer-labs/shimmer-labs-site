@@ -1,23 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/waitlist-submit.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "index.php",
-      "use": "vercel-php@0.7.1"
+  "functions": {
+    "api/waitlist-submit.js": {
+      "memory": 1024,
+      "maxDuration": 10
     }
-  ],
-  "routes": [
-    {
-      "src": "/api/waitlist-submit",
-      "dest": "/api/waitlist-submit.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.php"
-    }
-  ]
+  }
 }
