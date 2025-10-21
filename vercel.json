@@ -4,5 +4,11 @@
       "memory": 1024,
       "maxDuration": 10
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/api/waitlist-submit",
+      "destination": "/api/waitlist-submit.js"
+    }
+  ]
 }
