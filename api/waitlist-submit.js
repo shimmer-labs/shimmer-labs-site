@@ -1,50 +1,15 @@
 /**
- * Waitlist Submission API
+ * Waitlist Submission API (Firestore REST API version)
  *
- * Handles EventSnag waitlist signups:
- * 1. Validates email format
- * 2. Adds to Firestore waitlist collection
- * 3. Sends email notification to logan@shimmerlabs.co
- * 4. Returns success/error response
+ * Uses Firestore REST API instead of Admin SDK to bypass
+ * organization policy restrictions on service account keys.
  *
  * Environment variables required:
- * - FIREBASE_PROJECT_ID
- * - FIREBASE_PRIVATE_KEY (base64 encoded)
- * - FIREBASE_CLIENT_EMAIL
- * - SENDGRID_API_KEY (optional, for email notifications)
+ * - FIREBASE_API_KEY (Web API key from Firebase config)
+ * - FIREBASE_PROJECT_ID (eventsnag-a9fd6)
+ * - RESEND_API_KEY (for email notifications)
  * - NOTIFICATION_EMAIL (default: logan@shimmerlabs.co)
  */
-
-const admin = require('firebase-admin');
-
-// Initialize Firebase Admin (singleton pattern)
-if (!admin.apps.length) {
-  try {
-    const projectId = process.env.FIREBASE_PROJECT_ID;
-    const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
-    const privateKey = process.env.FIREBASE_PRIVATE_KEY
-      ? Buffer.from(process.env.FIREBASE_PRIVATE_KEY, 'base64').toString('utf8')
-      : undefined;
-
-    if (!projectId || !clientEmail || !privateKey) {
-      throw new Error('Missing Firebase credentials in environment variables');
-    }
-
-    admin.initializeApp({
-      credential: admin.credential.cert({
-        projectId,
-        clientEmail,
-        privateKey
-      })
-    });
-
-    console.log('✅ Firebase Admin initialized');
-  } catch (error) {
-    console.error('❌ Failed to initialize Firebase Admin:', error);
-  }
-}
-
-const db = admin.firestore();
 
 /**
  * Validate email format
@@ -72,7 +37,7 @@ async function sendEmails(userEmail, appName, source) {
     const notificationEmail = process.env.NOTIFICATION_EMAIL || 'logan@shimmerlabs.co';
 
     // Send confirmation email TO THE USER
-    const confirmationEmail = await resend.emails.send({
+    await resend.emails.send({
       from: `EventSnag <${fromEmail}>`,
       to: userEmail,
       subject: "You're on the EventSnag Waitlist! 🎉",
@@ -117,7 +82,7 @@ async function sendEmails(userEmail, appName, source) {
     console.log('✅ Confirmation email sent to user:', userEmail);
 
     // Send notification email TO YOU (Logan)
-    const notificationEmailResult = await resend.emails.send({
+    await resend.emails.send({
       from: `EventSnag Waitlist <${fromEmail}>`,
       to: notificationEmail,
       subject: `New ${appName} Waitlist Signup`,
@@ -153,7 +118,7 @@ async function sendEmails(userEmail, appName, source) {
           </table>
 
           <p style="color: #6E6E73; font-size: 14px;">
-            <a href="https://console.firebase.google.com/project/_/firestore" style="color: #FFB300;">View in Firestore →</a>
+            <a href="https://console.firebase.google.com/project/eventsnag-a9fd6/firestore" style="color: #FFB300;">View in Firestore →</a>
           </p>
         </div>
       `
@@ -165,6 +130,82 @@ async function sendEmails(userEmail, appName, source) {
     console.error('❌ Failed to send emails:', error.message);
     // Don't fail the request if email fails
   }
+}
+
+/**
+ * Add document to Firestore using REST API
+ */
+async function addToFirestore(email, appName, source) {
+  const apiKey = process.env.FIREBASE_API_KEY || 'AIzaSyCVAGPaRK6XXeZlkWmM-jbf8zZ7IZvPyZ8';
+  const projectId = process.env.FIREBASE_PROJECT_ID || 'eventsnag-a9fd6';
+  const normalizedEmail = email.toLowerCase().trim();
+
+  // Check if document exists first
+  const checkUrl = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/waitlist/${encodeURIComponent(normalizedEmail)}?key=${apiKey}`;
+
+  try {
+    const checkResponse = await fetch(checkUrl);
+
+    if (checkResponse.ok) {
+      // Document exists - check if redeemed
+      const existingDoc = await checkResponse.json();
+      const redeemedBy = existingDoc.fields?.redeemedBy?.nullValue !== null
+        ? existingDoc.fields?.redeemedBy?.stringValue
+        : null;
+
+      if (redeemedBy) {
+        return {
+          exists: true,
+          redeemed: true,
+          message: "You're already on the waitlist and have claimed your access!"
+        };
+      }
+
+      return {
+        exists: true,
+        redeemed: false,
+        message: "You're already on the waitlist! We'll notify you when EventSnag launches."
+      };
+    }
+  } catch (error) {
+    // Document doesn't exist or error checking - proceed to create
+    console.log('Document does not exist, creating new entry');
+  }
+
+  // Create new document
+  const createUrl = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/waitlist?documentId=${encodeURIComponent(normalizedEmail)}&key=${apiKey}`;
+
+  const firestoreDoc = {
+    fields: {
+      email: { stringValue: normalizedEmail },
+      signupDate: { timestampValue: new Date().toISOString() },
+      source: { stringValue: source },
+      app: { stringValue: appName },
+      redeemedBy: { nullValue: null },
+      redeemedAt: { nullValue: null }
+    }
+  };
+
+  const createResponse = await fetch(createUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(firestoreDoc)
+  });
+
+  if (!createResponse.ok) {
+    const errorText = await createResponse.text();
+    throw new Error(`Firestore API error: ${createResponse.status} - ${errorText}`);
+  }
+
+  console.log(`✅ Added to Firestore: ${normalizedEmail}`);
+
+  return {
+    exists: false,
+    redeemed: false,
+    message: 'Successfully added to waitlist'
+  };
 }
 
 /**
@@ -213,40 +254,17 @@ module.exports = async (req, res) => {
 
     const normalizedEmail = email.toLowerCase().trim();
 
-    // Check if email already exists
-    const existingDoc = await db.collection('waitlist').doc(normalizedEmail).get();
+    // Add to Firestore
+    const result = await addToFirestore(normalizedEmail, appName, source);
 
-    if (existingDoc.exists) {
-      const data = existingDoc.data();
-
-      // If already redeemed, inform user
-      if (data.redeemedBy) {
-        return res.status(200).json({
-          success: true,
-          message: 'You\'re already on the waitlist and have claimed your access!',
-          alreadyRedeemed: true
-        });
-      }
-
-      // Already on waitlist but not redeemed yet
+    if (result.exists) {
       return res.status(200).json({
         success: true,
-        message: 'You\'re already on the waitlist! We\'ll notify you when EventSnag launches.',
-        alreadyExists: true
+        message: result.message,
+        alreadyExists: !result.redeemed,
+        alreadyRedeemed: result.redeemed
       });
     }
-
-    // Add to Firestore waitlist collection
-    await db.collection('waitlist').doc(normalizedEmail).set({
-      email: normalizedEmail,
-      signupDate: admin.firestore.FieldValue.serverTimestamp(),
-      source: source,
-      app: appName,
-      redeemedBy: null,
-      redeemedAt: null
-    });
-
-    console.log(`✅ Added to waitlist: ${normalizedEmail}`);
 
     // Send confirmation email to user + notification email to Logan (async, don't wait)
     sendEmails(normalizedEmail, appName, source).catch(console.error);
@@ -262,7 +280,8 @@ module.exports = async (req, res) => {
 
     return res.status(500).json({
       error: 'Internal server error',
-      message: 'Failed to process your request. Please try again later.'
+      message: 'Failed to process your request. Please try again later.',
+      details: error.message
     });
   }
 };
