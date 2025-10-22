@@ -13,7 +13,7 @@ Text:
 
 By downloading, installing, or using the EventSnag mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
 
-EventSnag is operated by Shimmer Labs LLC ("we," "us," or "our"), a company based in the United States.
+EventSnag is operated by Shimmer Labs, operated by Logan Shimmer ("we," "us," or "our"), based in the United States.
 
 **Contact**: eventsnagsupport@shimmerlabs.co
 
@@ -111,7 +111,7 @@ You agree to use EventSnag only for lawful purposes and in accordance with these
 ## Intellectual Property
 
 ### Our Rights
-EventSnag, including all software, designs, logos, and content, is owned by Shimmer Labs LLC and protected by copyright, trademark, and other intellectual property laws.
+EventSnag, including all software, designs, logos, and content, is owned by Shimmer Labs and protected by copyright, trademark, and other intellectual property laws.
 
 You are granted a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes.
 
@@ -119,7 +119,7 @@ You are granted a limited, non-exclusive, non-transferable license to use the Ap
 You retain all rights to the event images and data you upload to EventSnag. We do not claim ownership of your content.
 
 ### Trademarks
-"EventSnag," the EventSnag logo, and other marks are trademarks of Shimmer Labs LLC. You may not use our trademarks without prior written permission.
+"EventSnag," the EventSnag logo, and other marks are trademarks of Shimmer Labs. You may not use our trademarks without prior written permission.
 
 ---
 
@@ -203,7 +203,7 @@ Some jurisdictions do not allow exclusion of certain warranties or limitation of
 
 ## Indemnification
 
-You agree to indemnify, defend, and hold harmless Shimmer Labs LLC and its officers, directors, employees, and agents from any claims, liabilities, damages, losses, or expenses (including reasonable attorneys' fees) arising from:
+You agree to indemnify, defend, and hold harmless Shimmer Labs and its owner, employees, and agents from any claims, liabilities, damages, losses, or expenses (including reasonable attorneys' fees) arising from:
 
 - Your use of EventSnag
 - Your violation of these Terms
@@ -301,7 +301,7 @@ You agree to bring claims against us only in your individual capacity, not as pa
 ## Miscellaneous
 
 ### Entire Agreement
-These Terms, together with our Privacy Policy, constitute the entire agreement between you and Shimmer Labs LLC regarding EventSnag.
+These Terms, together with our Privacy Policy, constitute the entire agreement between you and Shimmer Labs regarding EventSnag.
 
 ### Severability
 If any provision of these Terms is found unenforceable, the remaining provisions will remain in full effect.
@@ -319,11 +319,11 @@ We are not liable for failure to perform due to circumstances beyond our reasona
 These Terms do not create any third-party beneficiary rights except for Apple, Google, Anthropic, and RevenueCat to the extent they provide services integral to the App.
 
 ### Apple-Specific Terms
-- These Terms are between you and Shimmer Labs LLC, not Apple
+- These Terms are between you and Shimmer Labs, not Apple
 - Apple has no obligation to provide support or maintenance for the App
 - Apple is not responsible for the App or its content
 - Apple is not liable for any claims related to the App
-- In the event of any third-party claim that the App infringes intellectual property rights, Shimmer Labs LLC (not Apple) is responsible
+- In the event of any third-party claim that the App infringes intellectual property rights, Shimmer Labs (not Apple) is responsible
 
 ---
 
@@ -331,7 +331,8 @@ These Terms do not create any third-party beneficiary rights except for Apple, G
 
 If you have questions about these Terms:
 
-**Shimmer Labs LLC**
+**Shimmer Labs**
+Operated by Logan Shimmer
 Email: eventsnagsupport@shimmerlabs.co
 Website: https://shimmerlabs.co/projects/eventsnag
 

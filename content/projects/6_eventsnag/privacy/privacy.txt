@@ -11,7 +11,7 @@ Text:
 
 ## Introduction
 
-Shimmer Labs LLC ("we," "us," or "our") operates the EventSnag mobile application ("App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App.
+Shimmer Labs, operated by Logan Shimmer ("we," "us," or "our"), operates the EventSnag mobile application ("App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App.
 
 By using EventSnag, you agree to the collection and use of information in accordance with this policy.
 
@@ -279,7 +279,8 @@ EventSnag does not track users over time or across third-party websites, so we d
 
 If you have questions, concerns, or requests regarding this Privacy Policy or your data:
 
-**Shimmer Labs LLC**
+**Shimmer Labs**
+Operated by Logan Shimmer
 Email: eventsnagsupport@shimmerlabs.co
 Website: https://shimmerlabs.co/projects/eventsnag
 
