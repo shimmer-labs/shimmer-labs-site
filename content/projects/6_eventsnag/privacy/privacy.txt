@@ -6,7 +6,7 @@ Text:
 
 # Privacy Policy for EventSnag
 
-**Last Updated**: October 18, 2025
+**Last Updated**: October 24, 2025
 **Effective Date**: October 18, 2025
 
 ## Introduction
@@ -81,7 +81,27 @@ By using EventSnag, you agree to the collection and use of information in accord
 
 **Your Control**: You can disable crash reporting in iOS Settings → Privacy → Analytics.
 
-### 5. Notification Preferences
+### 5. Analytics and Usage Data
+
+**What We Collect** (via Firebase Analytics):
+- Anonymous user identifier (UUID generated locally on your device)
+- Product interaction data (screen views, button taps, feature usage)
+- Session duration and app opens
+- Device type, iOS version, and app version
+
+**How We Use It**:
+- To understand which features are most popular
+- To improve app performance and user experience
+- To identify and fix bugs
+- To measure engagement and retention
+
+**Third-Party**: Google Firebase Privacy Policy applies: https://firebase.google.com/support/privacy
+
+**Your Control**: Analytics data is anonymized and cannot be traced back to you personally. We use this data solely to improve EventSnag.
+
+**Data Retention**: Firebase retains analytics data for 14 months, then automatically deletes it.
+
+### 6. Notification Preferences
 
 **What We Collect**: Your notification permission status
 
@@ -89,7 +109,7 @@ By using EventSnag, you agree to the collection and use of information in accord
 
 **Your Control**: You can disable notifications in iOS Settings → Notifications → EventSnag
 
-### 6. Subscription Information (Pro Features)
+### 7. Subscription Information (Pro Features)
 
 **What We Collect** (via RevenueCat):
 - Subscription status (active, expired, canceled)
@@ -109,7 +129,8 @@ By using EventSnag, you agree to the collection and use of information in accord
 
 ## Information We Do NOT Collect
 
-- We do not collect your name, phone number, or personal identifiers
+- We do not collect your name, phone number, address, or social security number
+- We collect anonymous user identifiers solely for analytics to improve the app
 - We do not track your location
 - We do not sell your data to third parties
 - We do not use cookies or tracking pixels
@@ -173,6 +194,12 @@ We share your data only with the following third-party services necessary to ope
 - **Purpose**: Deliver weekly roundup notifications
 - **Data Shared**: Device push token
 - **Privacy Policy**: https://www.apple.com/legal/privacy/
+
+### 5. Firebase (Google Analytics)
+- **Purpose**: Measure app usage and improve user experience
+- **Data Shared**: Anonymous user ID, screen views, app interactions, device info
+- **Privacy Policy**: https://firebase.google.com/support/privacy
+- **Your Control**: Analytics data is anonymized and used solely for app improvement
 
 We do NOT:
 - Sell your data to advertisers
