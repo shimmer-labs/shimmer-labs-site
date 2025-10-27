@@ -1,6 +1,6 @@
 Title: EventSnag
 ----
-Badge: Launching Soon
+Badge: Live
 ----
 Summary: Snap it. Snag it. Show up. The iOS app that turns event screenshots into calendar entries instantly, so you actually go to the things you say you will.
 ----
