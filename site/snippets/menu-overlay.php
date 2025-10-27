@@ -10,15 +10,23 @@
       <div class="menu-section">
         <h3>Projects</h3>
         <ul class="menu-links">
-          <?php 
+          <?php
           if ($projectsPage = page('projects')) {
-            foreach ($projectsPage->children()->listed() as $project) {
-              if ($project->badge() == 'Coming Soon') {
-                echo '<li class="coming-soon"><span>' . $project->title() . '</span> <small>(Coming Soon)</small></li>';
-              } else {
-                echo '<li><a href="' . $project->url() . '">' . $project->title() . '</a></li>';
+            // Featured projects in specific order
+            $featuredSlugs = ['eventsnag', 'paidly', 'n8n-taddy-api-nodes'];
+
+            foreach ($featuredSlugs as $slug) {
+              if ($project = $projectsPage->find($slug)) {
+                if ($project->badge() == 'Coming Soon' || $project->badge() == 'Launching Soon') {
+                  echo '<li class="coming-soon"><span>' . $project->title() . '</span> <small>(' . $project->badge() . ')</small></li>';
+                } else {
+                  echo '<li><a href="' . $project->url() . '">' . $project->title() . '</a></li>';
+                }
               }
             }
+
+            // All Projects link
+            echo '<li><a href="' . $projectsPage->url() . '" style="font-weight: 500; margin-top: 8px;">All Projects...</a></li>';
           }
           ?>
         </ul>

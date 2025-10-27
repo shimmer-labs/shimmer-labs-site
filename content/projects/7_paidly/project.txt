@@ -1,0 +1,261 @@
+Title: Paidly
+----
+Badge: Live
+----
+Summary: Invoice smarter, get paid faster. AI-powered invoicing that reads contracts and auto-generates perfect invoices for freelancers.
+----
+Tech_stack: Next.js 14, TypeScript, Supabase, Gemini AI, Stripe Connect, Notion API, Tailwind CSS, Vercel
+----
+Featured: true
+----
+Link: https://paidly.co
+----
+Description:
+
+## The Problem
+You finish a project milestone. You need to invoice the client. So you open your invoicing software, re-type the client name, manually enter the same rate you negotiated three months ago, copy-paste the milestone deliverables from the contract, calculate the amount, pick payment terms you think you remember agreeing to, and finally hit send.
+
+Fifteen minutes later, the client replies: "Can I pay via PayPal instead of Stripe?" Now you have to create a whole new invoice.
+
+**This is busywork. Your contract already knows everything.**
+
+## Paidly Changes That
+Upload your contract PDF. We read it—rates, payment terms, milestones, deliverables—and build the perfect invoice automatically. No re-typing. No copy-pasting. No forgetting what you agreed to.
+
+**From contract to invoice in under 60 seconds.**
+
+## How It Works
+
+### 1. Upload Your Contract
+Drop in a PDF, DOCX, or even a photo of a signed contract. Paidly uses AI (Gemini 2.0 Flash) to extract:
+- Client name and billing details
+- Your hourly rate or project fee
+- Payment terms (net-30, net-15, or "7 business days")
+- Milestones and deliverables
+- Late fee clauses
+- Any special terms
+
+**Cost per parse?** About $0.0002. We optimized it so you're not paying Claude API prices every time.
+
+### 2. Review and Edit
+AI is smart but not perfect. You get an editable breakdown of everything Paidly extracted:
+- Client info
+- All milestones with status tracking (upcoming, in progress, completed, paid)
+- Payment terms and dates
+- Line items with quantities
+
+Make any tweaks, mark milestones as complete, and you're ready to invoice.
+
+### 3. Generate Professional Invoices
+Click "Get Paidly" and boom—professional invoice with:
+- Your business branding (logo, address, contact info)
+- Client billing information
+- Line items with subtotals
+- Auto-calculated due dates from payment terms
+- Invoice number (auto-generated: INV-YYYYMMDD-XXX)
+- Payment instructions
+
+### 4. Let Clients Pay Their Way
+This is where Paidly gets really smart. One invoice, multiple payment options:
+- 💳 Stripe (credit card, ACH)
+- 🅿️ PayPal (coming soon)
+- 🌍 Wise (international transfers, coming soon)
+- 🏦 Direct bank transfer
+
+Client picks their preferred method. You get paid to one account. No recreating invoices for different payment processors.
+
+### 5. Smart Reminders (Coming Soon)
+Generic payment reminders are awkward. "Your invoice is overdue!" feels aggressive on day 8 when you agreed to net-30.
+
+Paidly knows your actual contract terms and sends the right message at the right time:
+- Day 7 of net-30: Gentle reminder
+- Day 30: Firm but polite
+- Day 45: Time to get serious
+- Day 60: Nuclear option (late fees kick in per your contract)
+
+## What Makes Paidly Different
+
+### Contract Intelligence (NO ONE ELSE HAS THIS)
+Every other invoicing tool treats contracts and invoices as separate things. You negotiate terms, sign a contract, then manually re-enter everything into your invoicing software.
+
+**That's insane.** Your contract is the source of truth. Paidly treats it that way.
+
+Competitors (Bonsai, HoneyBook, FreshBooks, Wave) make you do all the work manually. Paidly does the work for you.
+
+### Notion Integration (Workspace-Native)
+Why should invoicing require leaving your workspace? If you manage projects in Notion, you can create invoices directly from Notion databases (Chrome extension coming soon).
+
+No app switching. No context loss. Just your workflow, now with automatic invoicing.
+
+### Unified Payment Rail
+Most freelancers juggle multiple payment processors:
+- US clients want ACH
+- International clients want Wise
+- Corporate clients demand invoices with credit card links
+- Some clients only have PayPal
+
+Paidly connects them all. One invoice. Client picks method. You get paid.
+
+### Built for Freelancers, Not Accountants
+FreshBooks is for accountants. QuickBooks is for enterprises. Wave is free but basic.
+
+Paidly is built for freelancers who just want to get paid without the busywork. Clean UI. Fast workflows. No overwhelming features you'll never use.
+
+## The Tech Stack
+
+**Frontend: Next.js 14 + TypeScript**
+- App Router for modern React patterns
+- Server components for fast page loads
+- Tailwind CSS for clean, professional UI
+- Deployed on Vercel with edge functions
+
+**Backend: Supabase**
+- PostgreSQL database with row-level security
+- User authentication (email + OAuth)
+- File storage for contract PDFs
+- Real-time subscriptions for invoice status updates
+- Edge functions (Deno) for serverless logic
+
+**AI Parsing: Gemini 2.0 Flash-Lite**
+- 43x cheaper than Claude API (~$0.0002 per contract vs $0.01)
+- 95% parsing accuracy (tested over 2+ months in production)
+- Reads PDF, DOCX, and image files
+- Extracts 16 key fields with confidence scoring
+
+**Payment Integration: Stripe Connect**
+- Payment links for credit card and ACH
+- Webhook handling for real-time payment status
+- Multi-currency support (coming soon)
+- Client-side payment method selection
+
+**Future Integrations:**
+- Notion API (database CRUD + Chrome extension)
+- PayPal Business API
+- Wise API (international payments)
+- Resend (transactional emails)
+
+## Why This Works (The Shimmer Labs Angle)
+
+We built Paidly the same way we build automation for business clients—find the friction, eliminate it.
+
+**The friction?** Invoicing is manual, repetitive, and boring. Every freelancer has a contract. Every contract has all the info needed for an invoice. Yet everyone manually re-types it.
+
+**The elimination?** Contract intelligence. Upload once, invoice forever. Milestones auto-populate. Payment terms auto-calculate. Reminders auto-send based on actual contract language.
+
+And here's the kicker: **Contract intelligence is a moat.** Competitors focus on templates and payment processing. We focus on eliminating the entire invoice creation workflow. That's a 10x improvement, not a 10% one.
+
+## Viral Growth Built In
+
+**Notion Marketplace:**
+- Template package for freelancers ("The Ultimate Freelance OS")
+- Chrome extension for one-click invoice creation
+- Tight integration = distribution advantage
+
+**Invoice Branding (Optional):**
+```
+---
+Powered by Paidly
+Invoice smarter, get paid faster: paidly.co
+```
+
+**Referral Program (Coming Soon):**
+- Refer a freelancer, get 1 month free
+- They sign up, you both get credit
+- Built-in word-of-mouth growth
+
+## What's Next
+
+**Phase 1: Payment Integration (In Progress)**
+- Stripe Connect onboarding flow
+- "Pay Now" buttons on invoices
+- Webhook handling for payment status updates
+- Multi-currency support
+
+**Phase 2: Notion Integration**
+- Chrome extension (inject invoice button into Notion)
+- OAuth integration for database CRUD
+- Template package for freelancers
+- Chrome Web Store submission
+
+**Phase 3: Smart Features**
+- Contract-aware payment reminders
+- Client payment reputation tracking
+- Cash flow forecasting
+- Invoice analytics dashboard
+- Logo upload for branded invoices
+
+**Phase 4: Expand Payment Rails**
+- PayPal integration
+- Wise (international transfers)
+- Direct ACH (US bank transfers)
+- Apple Pay / Google Pay
+
+## Perfect For
+
+- **Freelancers** (designers, developers, consultants, writers, coaches)
+- **Solopreneurs** juggling multiple clients and payment methods
+- **Small agencies** (2-10 people) tired of manual invoicing
+- **Notion power users** who want workspace-native invoicing
+- **Anyone who's ever re-typed contract terms into an invoice** and thought "there has to be a better way"
+
+## Technical Highlights
+
+- **95% AI parsing accuracy** (tested over 2+ months via n8n prototype)
+- **43x cheaper AI costs** (Gemini vs Claude API)
+- **Sub-1-minute invoice creation** (from contract upload to ready-to-send)
+- **Milestone status tracking** (7 states: upcoming, in progress, completed, invoiced, paid, overdue, skipped)
+- **Smart date handling** (auto-calculates due dates from "net-30", "7 business days", etc.)
+- **Row-level security** (Supabase multi-tenant architecture)
+- **Real-time updates** (invoice status changes sync instantly)
+
+## Why Shimmer Labs Built This
+
+Paidly is a **productized automation system**. It's the same philosophy we use for client work:
+
+1. Identify repetitive, high-friction task (manual invoice creation)
+2. Build intelligent automation (AI contract parsing + payment orchestration)
+3. Deliver consistent results (perfect invoices every time)
+4. Scale with network effects (Notion marketplace + referrals)
+
+We prototype everything in n8n first. Paidly started as a Telegram bot workflow that ran for 2+ months with 95% accuracy. Once we proved contract intelligence worked, we built the full SaaS product.
+
+**That's the Shimmer Labs way**: Test cheap, build native, scale smart.
+
+## Business Model
+
+**Free Tier:**
+- 3 invoices per month
+- 1 contract parse per month
+- Basic email reminders
+
+**Starter ($29/mo):**
+- Unlimited invoices
+- Unlimited contract parsing
+- Stripe payment integration
+- Remove Paidly branding
+- Invoice analytics
+
+**Professional ($49/mo):**
+- Everything in Starter
+- Smart payment reminders (contract-aware)
+- Client payment reputation tracking
+- Advanced analytics & reporting
+- Priority support (24hr response)
+
+**Agency ($79/mo):**
+- Everything in Professional
+- Multi-user seats (3 included)
+- Team collaboration features
+- Advanced automation
+
+## Get Started
+
+Ready to stop re-typing contracts into invoices?
+
+**Visit paidly.co to start your free trial.**
+
+Upload your first contract. Get your first invoice in under 60 seconds. See why freelancers are switching from Bonsai, FreshBooks, and Wave to Paidly.
+
+----
+Results: Eliminates invoice busywork for freelancers with AI-powered contract intelligence. From contract upload to perfect invoice in under 60 seconds. Currently serving paying customers at paidly.co.
+----
