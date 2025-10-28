@@ -132,8 +132,8 @@ EventSnag integrates with third-party services:
 - You are responsible for your use of Google services
 - We are not responsible for Google's actions or failures
 
-### Anthropic (Claude AI)
-- AI processing subject to Anthropic's Terms: https://www.anthropic.com/legal/terms
+### OpenAI (Vision API)
+- AI processing subject to OpenAI's Terms: https://openai.com/policies/terms-of-use
 - We are not responsible for AI parsing accuracy or errors
 
 ### RevenueCat (Subscriptions)
@@ -147,7 +147,7 @@ EventSnag integrates with third-party services:
 
 ## AI-Generated Content Disclaimer
 
-EventSnag uses artificial intelligence (Claude AI by Anthropic) to extract event information from images.
+EventSnag uses artificial intelligence (OpenAI Vision API) to extract event information from images.
 
 **Important**:
 - AI parsing may contain errors or inaccuracies

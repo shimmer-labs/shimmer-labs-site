@@ -26,9 +26,9 @@ By using EventSnag, you agree to the collection and use of information in accord
 **What We Collect**: Photos or screenshots you capture or upload to EventSnag containing event flyer information.
 
 **How We Use It**:
-- Sent to Anthropic's Claude AI API to extract event details (date, time, venue, description, etc.)
+- Sent to OpenAI's Vision API to extract event details (date, time, venue, description, etc.)
 - Images are processed temporarily and not permanently stored on our servers
-- Anthropic's data retention policy applies (typically 30 days for compliance, then deleted)
+- OpenAI's data retention policy applies (typically 30 days for compliance, then deleted)
 
 **Your Control**: You choose which images to share with the App. You can delete events from the App at any time.
 
@@ -172,11 +172,11 @@ We use your information to:
 
 We share your data only with the following third-party services necessary to operate the App:
 
-### 1. Anthropic (Claude AI)
+### 1. OpenAI (Vision API)
 - **Purpose**: AI-powered event data extraction from images
 - **Data Shared**: Event images you upload
-- **Privacy Policy**: https://www.anthropic.com/legal/privacy
-- **Data Retention**: Anthropic retains data for 30 days for Trust & Safety compliance, then deletes it
+- **Privacy Policy**: https://openai.com/policies/privacy-policy
+- **Data Retention**: OpenAI retains data for 30 days for Trust & Safety compliance, then deletes it
 
 ### 2. Google (Calendar API)
 - **Purpose**: Sync events to your Google Calendar
