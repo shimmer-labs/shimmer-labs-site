@@ -182,15 +182,28 @@
     <div class="app-legal-footer__content">
       <p>Legal & Support</p>
       <ul class="app-legal-links">
-        <?php if ($page->find('privacy')): ?>
-          <li><a href="<?= $page->url() ?>/privacy">Privacy Policy</a></li>
+        <?php
+          // Check for external URL first, fallback to child page
+          $privacyUrl = $page->privacy_url()->isNotEmpty() ? $page->privacy_url()->toString() : ($page->find('privacy') ? $page->url() . '/privacy' : null);
+          if ($privacyUrl):
+        ?>
+          <li><a href="<?= $privacyUrl ?>">Privacy Policy</a></li>
         <?php endif ?>
-        <?php if ($page->find('terms')): ?>
-          <li><a href="<?= $page->url() ?>/terms">Terms of Service</a></li>
+
+        <?php
+          $termsUrl = $page->terms_url()->isNotEmpty() ? $page->terms_url()->toString() : ($page->find('terms') ? $page->url() . '/terms' : null);
+          if ($termsUrl):
+        ?>
+          <li><a href="<?= $termsUrl ?>">Terms of Service</a></li>
         <?php endif ?>
-        <?php if ($page->find('support')): ?>
-          <li><a href="<?= $page->url() ?>/support">Support & FAQ</a></li>
+
+        <?php
+          $supportUrl = $page->support_url()->isNotEmpty() ? $page->support_url()->toString() : ($page->find('support') ? $page->url() . '/support' : null);
+          if ($supportUrl):
+        ?>
+          <li><a href="<?= $supportUrl ?>">Support & FAQ</a></li>
         <?php endif ?>
+
         <li><a href="<?= url('contact') ?>">Contact Us</a></li>
       </ul>
     </div>

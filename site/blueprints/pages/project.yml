@@ -36,6 +36,24 @@ fields:
     label: Is this an iOS/mobile app?
     help: Shows App Store download button and legal links
     default: false
+  privacy_url:
+    type: url
+    label: Privacy Policy URL (external)
+    help: If app has its own domain, link to external privacy page (e.g., https://eventsnag.app/privacy)
+    when:
+      is_app: true
+  terms_url:
+    type: url
+    label: Terms of Service URL (external)
+    help: If app has its own domain, link to external terms page (e.g., https://eventsnag.app/terms)
+    when:
+      is_app: true
+  support_url:
+    type: url
+    label: Support URL (external)
+    help: If app has its own domain, link to external support page (e.g., https://eventsnag.app/support)
+    when:
+      is_app: true
   demo_video:
     type: files
     label: Demo Video/GIF

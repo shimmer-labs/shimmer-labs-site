@@ -10,6 +10,12 @@ Is_app: true
 ----
 Featured: true
 ----
+Privacy_url: https://eventsnag.app/privacy.html
+----
+Terms_url: https://eventsnag.app/terms.html
+----
+Support_url: https://eventsnag.app/support.html
+----
 Demo_video:
 - eventsnag-demo.mp4
 ----
