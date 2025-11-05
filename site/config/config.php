@@ -6,10 +6,9 @@ return [
     : 'https://shimmerlabs.co',
 
   // Analytics Configuration
-  // Choose one or both (Plausible recommended for privacy-first approach)
 
-  // Plausible Analytics (Privacy-friendly, no cookies, GDPR compliant)
-  'analytics.plausible.enabled' => true,
+  // Plausible Analytics (Disabled - no account setup)
+  'analytics.plausible.enabled' => false,
   'analytics.plausible.domain' => 'shimmerlabs.co',
 
   // Google Analytics 4 (GA4)
