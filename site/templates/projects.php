@@ -35,6 +35,14 @@
               </span>
             <?php endif ?>
 
+            <?php if ($project->images()->first()): ?>
+              <?php $thumbnail = $project->images()->first(); ?>
+              <?php $thumbnailAlt = $thumbnail->alt()->or($project->title() . ' - Preview'); ?>
+              <div class="project-card__thumbnail">
+                <img src="<?= $thumbnail->url() ?>" alt="<?= $thumbnailAlt ?>" loading="lazy">
+              </div>
+            <?php endif ?>
+
             <h3 class="project-card__title">
               <a href="<?= $project->url() ?>"><?= $project->title() ?></a>
             </h3>
