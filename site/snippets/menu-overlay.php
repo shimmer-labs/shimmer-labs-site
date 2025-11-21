@@ -13,7 +13,7 @@
           <?php
           if ($projectsPage = page('projects')) {
             // Featured projects in specific order
-            $featuredSlugs = ['eventsnag', 'paidly', 'n8n-taddy-api-nodes'];
+            $featuredSlugs = ['eventsnag', 'paidly', 'n8n_taddy_api_nodes'];
 
             foreach ($featuredSlugs as $slug) {
               if ($project = $projectsPage->find($slug)) {
