@@ -19,7 +19,7 @@ Support_url: https://eventsnag.app/support.html
 Demo_video:
 - eventsnag-demo.mp4
 ----
-App_store_url:
+App_store_url: https://eventsnag.app
 ----
 Video_url:
 ----
@@ -175,6 +175,6 @@ We prototype everything in n8n first. EventSnag started as a Telegram bot → Go
 - **Vercel serverless backend** (keeps API keys secure, no exposed credentials)
 
 ----
-Results: Turning screenshots into real-life experiences. EventSnag launches on the App Store soon—join the waitlist at shimmerlabs.co/projects/eventsnag/support or download when we go live.
+Results: Turning screenshots into real-life experiences. EventSnag is now live on the App Store—download it at eventsnag.app and start snagging events today.
 ----
-Link: https://apps.apple.com/app/eventsnag
+Link: https://eventsnag.app
