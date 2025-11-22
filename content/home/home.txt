@@ -224,11 +224,11 @@ Testimonials:
   role: "Founder, PodcastMetrics"
 -
   quote: >
-    I sent Logan some AI-generated wireframes on a Monday. Three weeks later
-    we had a functioning Next.js app with Stripe payments. No bullshit, no
-    endless meetings. Just shipping.
-  author: Kristen Park
-  role: "TreeBidPro"
+    We were drowning in Shopify + Klaviyo data that didn't sync. Logan set up
+    a custom integration that runs every hour and hasn't broken once in 4 months.
+    Worth every penny.
+  author: Jamie Richardson
+  role: "E-commerce Manager"
 
 ----
 
