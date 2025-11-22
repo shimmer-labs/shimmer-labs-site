@@ -23,9 +23,12 @@
 
   <?php if ($package->highlights()->isNotEmpty()): ?>
     <ul class="package-card__highlights">
-      <?php foreach ($package->highlights()->toBlocks() as $highlight): ?>
-        <li><?= $highlight ?></li>
-      <?php endforeach ?>
+      <?php
+      $highlights = preg_split('/\r\n|\r|\n/', $package->highlights()->value());
+      foreach ($highlights as $highlight):
+        if (trim($highlight)): ?>
+        <li><?= trim($highlight) ?></li>
+      <?php endif; endforeach ?>
     </ul>
   <?php endif ?>
 
