@@ -23,7 +23,7 @@
 
   <?php if ($package->highlights()->isNotEmpty()): ?>
     <ul class="package-card__highlights">
-      <?php foreach ($package->highlights()->split() as $highlight): ?>
+      <?php foreach ($package->highlights()->split("\n") as $highlight): ?>
         <li><?= $highlight ?></li>
       <?php endforeach ?>
     </ul>
