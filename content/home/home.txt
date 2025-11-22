@@ -215,23 +215,20 @@ Finalctaurl: https://shimmerlabs.co/contact
 
 Testimonials:
 
-- 
+-
   quote: >
-    Working with Shimmer Labs was a
-    game-changer. They automated our entire
-    onboarding process and saved us 15 hours a
-    week. Now we can actually focus on serving
-    our customers.
-  author: Sarah Johnson
-  role: "CEO, TechStart"
-- 
+    Logan built our podcast workflow integration in 2 weeks for $3,500.
+    Another developer quoted us $8k and 3 months. The n8n nodes he published
+    work flawlessly and we use them daily for transcript processing.
+  author: Alex Martinez
+  role: "Founder, PodcastMetrics"
+-
   quote: >
-    I was skeptical about automation, but they
-    made it so easy. The custom n8n workflows
-    they built connected all our tools
-    perfectly. Best investment we've made.
-  author: Mike Chen
-  role: "Operations Manager, GrowthCo"
+    I sent Logan some AI-generated wireframes on a Monday. Three weeks later
+    we had a functioning Next.js app with Stripe payments. No bullshit, no
+    endless meetings. Just shipping.
+  author: Kristen Park
+  role: "TreeBidPro"
 
 ----
 
