@@ -1,20 +1,3 @@
-// Page Loading Indicator
-(function() {
-  const loadingBar = document.createElement('div');
-  loadingBar.className = 'page-loading';
-  document.body.appendChild(loadingBar);
-
-  // Show loading bar on page load
-  window.addEventListener('beforeunload', () => {
-    loadingBar.classList.add('active');
-  });
-
-  // Hide loading bar when page is loaded
-  window.addEventListener('load', () => {
-    loadingBar.classList.remove('active');
-  });
-})();
-
 // Lazy Load Images
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img[data-src]');

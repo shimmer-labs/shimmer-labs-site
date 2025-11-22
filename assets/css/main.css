@@ -2046,39 +2046,6 @@ section {
    Loading States & Skeleton Screens
    =================================== */
 
-/* Page Loading Indicator */
-.page-loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--color-gray-light);
-  z-index: 9999;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.page-loading.active {
-  opacity: 1;
-}
-
-.page-loading::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 30%;
-  background: var(--color-gold);
-  animation: loading-bar 1.5s infinite;
-}
-
-@keyframes loading-bar {
-  0% { left: -30%; }
-  100% { left: 100%; }
-}
-
 /* Skeleton Screens */
 .skeleton {
   background: linear-gradient(
