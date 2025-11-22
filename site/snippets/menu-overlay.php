@@ -4,9 +4,27 @@
     <button class="menu-close" aria-label="Close menu">
       Close ✕
     </button>
-    
-    <div class="menu-grid">
-      <!-- Left side: Projects list -->
+
+    <div class="menu-content">
+      <!-- Services Section -->
+      <div class="menu-section">
+        <h3>Services</h3>
+        <ul class="menu-links">
+          <?php if ($homePage = page('home')): ?>
+            <?php foreach ($homePage->packages()->toStructure() as $package): ?>
+              <li>
+                <a href="<?= $package->link() ?>">
+                  <span class="menu-link-icon"><?= $package->icon() ?></span>
+                  <span class="menu-link-title"><?= $package->title() ?></span>
+                  <span class="menu-link-price"><?= $package->price() ?></span>
+                </a>
+              </li>
+            <?php endforeach ?>
+          <?php endif ?>
+        </ul>
+      </div>
+
+      <!-- Projects Section -->
       <div class="menu-section">
         <h3>Projects</h3>
         <ul class="menu-links">
@@ -26,20 +44,15 @@
             }
 
             // All Projects link
-            echo '<li><a href="' . $projectsPage->url() . '" style="font-weight: 500; margin-top: 8px;">All Projects...</a></li>';
+            echo '<li><a href="' . $projectsPage->url() . '" class="menu-link-all">All Projects →</a></li>';
           }
           ?>
         </ul>
       </div>
-      
-      <!-- Right side: CTA -->
-      <div class="menu-cta">
-        <h2>
-          Ready to invest in automation? 
-          <span class="highlight">It starts here.</span>
-          Get in touch to start a conversation.
-        </h2>
-        <a href="/contact" class="cta-button">Contact Us</a>
+
+      <!-- Contact Footer -->
+      <div class="menu-footer">
+        <a href="/contact" class="menu-contact-link">Contact Us</a>
       </div>
     </div>
   </div>
