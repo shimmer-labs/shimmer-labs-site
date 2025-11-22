@@ -22,10 +22,7 @@
       <?php endif ?>
 
       <div class="service-hero__cta">
-        <a href="/contact" class="btn btn--primary">Get Started →</a>
-        <?php if ($page->calend lyUrl()->isNotEmpty()): ?>
-          <a href="<?= $page->calendlyUrl() ?>" class="btn btn--secondary">Book Free Consultation</a>
-        <?php endif ?>
+        <a href="#contact-form" class="btn btn--primary">Get Started →</a>
       </div>
     </div>
   </div>
@@ -63,9 +60,12 @@
 
           <?php if ($tier->features()->isNotEmpty()): ?>
             <ul class="pricing-tier__features">
-              <?php foreach ($tier->features()->split() as $feature): ?>
-                <li><?= $feature ?></li>
-              <?php endforeach ?>
+              <?php
+              $features = preg_split('/\r\n|\r|\n/', $tier->features()->value());
+              foreach ($features as $feature):
+                if (trim($feature)): ?>
+                <li><?= trim($feature) ?></li>
+              <?php endif; endforeach ?>
             </ul>
           <?php endif ?>
 
@@ -150,6 +150,7 @@
     <h2 class="service-portfolio__title">Work Examples</h2>
     <div class="service-portfolio__grid">
       <?php foreach ($page->portfolioProjects()->toPages() as $project): ?>
+        <?php if ($project): ?>
         <a href="<?= $project->url() ?>" class="portfolio-example">
           <?php if ($project->image()): ?>
             <img src="<?= $project->image()->url() ?>" alt="<?= $project->title() ?>">
@@ -157,26 +158,19 @@
           <h3><?= $project->title() ?></h3>
           <p><?= $project->summary()->excerpt(100) ?></p>
         </a>
+        <?php endif ?>
       <?php endforeach ?>
     </div>
   </div>
 </section>
 <?php endif ?>
 
-<!-- Final CTA -->
-<section class="service-cta">
-  <div class="container">
-    <div class="service-cta__content">
-      <h2><?= $page->ctaTitle()->or("Ready to Get Started?") ?></h2>
-      <p><?= $page->ctaDescription()->or("Let's talk about your project and how I can help.") ?></p>
-      <div class="service-cta__buttons">
-        <a href="/contact" class="btn btn--cta">Start Your Project →</a>
-        <?php if ($page->calendlyUrl()->isNotEmpty()): ?>
-          <a href="<?= $page->calendlyUrl() ?>" class="btn btn--secondary">Book Free Consultation</a>
-        <?php endif ?>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Contact Form -->
+<div id="contact-form">
+  <?php snippet('service-contact-form', [
+    'ctaTitle' => $page->ctaTitle()->or("Ready to Get Started?"),
+    'ctaDescription' => $page->ctaDescription()->value()
+  ]) ?>
+</div>
 
 <?php snippet('footer') ?>
