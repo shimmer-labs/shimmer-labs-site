@@ -688,18 +688,9 @@ section {
 
 .package-card__highlights li {
   padding: 0.5rem 0;
-  padding-left: 1.5rem;
-  position: relative;
+  padding-left: 0;
   color: var(--color-navy);
   font-size: 0.95rem;
-}
-
-.package-card__highlights li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--color-teal);
-  font-weight: 700;
 }
 
 .package-card__cta {
