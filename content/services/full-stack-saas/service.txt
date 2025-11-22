@@ -145,7 +145,6 @@ Techstackintro: This stack powers Paidly and thousands of other successful SaaS 
 ----
 
 Portfolioprojects:
--
   - page://7h8i9j0k1l2m3n4o
 
 ----
