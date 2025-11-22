@@ -93,9 +93,9 @@ Packages:
   pricelabel: 'Starting at'
   description: 'Custom n8n, Zapier, or Make integrations that connect your tools. Built 4 production podcast API integrations, published to npm and used by real companies.'
   highlights: |
-    Simple integration (2 apps): $3,500
-    Complex integration: $7,500
-    Custom node/plugin: $8,500-$12k
+    💡 Simple integration (2 apps): $3,500
+    ⚡ Complex integration: $7,500
+    🚀 Custom node/plugin: $8,500-$12k
   featured: false
   link: '/services/api-integrations'
 -
@@ -105,9 +105,9 @@ Packages:
   pricelabel: ''
   description: 'Take your Figma/Subframe designs to production-ready Next.js app. Built TreeBidPro from AI wireframes in 3 weeks. Agencies charge $50k+ and take 4 months, I do it in 6 weeks.'
   highlights: |
-    MVP (5-8 screens): $18,500
-    Pro (10-15 screens + Stripe): $35,000
-    Full Launch (unlimited): $55,000
+    🌱 MVP (5-8 screens): $18,500
+    ⚡ Pro (10-15 screens + Stripe): $35,000
+    🚀 Full Launch (unlimited): $55,000
   featured: true
   link: '/services/wireframe-to-web-app'
 -
@@ -117,9 +117,9 @@ Packages:
   pricelabel: 'From'
   description: '0→1 SaaS product development. Built Paidly (AI invoicing) from zero to processing payments in 6 weeks. Next.js, Supabase, Stripe. Your idea could be live in 8 weeks.'
   highlights: |
-    Starter SaaS: $45,000
-    Growth SaaS: $75,000
-    Enterprise: $125,000+
+    🌱 Starter SaaS: $45,000
+    📈 Growth SaaS: $75,000
+    🏢 Enterprise: $125,000+
   featured: false
   link: '/services/full-stack-saas'
 -
@@ -129,9 +129,9 @@ Packages:
   pricelabel: 'Project-based'
   description: 'Native iOS development in Swift. Built EventSnag (screenshot to calendar with AI). Most web developers outsource this, I build it myself.'
   highlights: |
-    Native Swift development
-    App Store submission support
-    30 days post-launch support
+    ✨ Native Swift development
+    🍎 App Store submission support
+    🛟 30 days post-launch support
   featured: false
   link: '/services/ios-apps'
 
