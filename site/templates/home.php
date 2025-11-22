@@ -41,35 +41,6 @@
 <!-- Social Proof -->
 <?php snippet('social-proof', ['clients' => $page->clients()]) ?>
 
-<!-- Tools Carousel -->
-<?php snippet('tools-carousel') ?>
-
-<!-- Value Proposition -->
-<section class="value-prop">
-  <div class="container">
-    <div class="value-prop__content">
-      <?php if ($page->valueTitle()->isNotEmpty()): ?>
-        <h2 class="value-prop__title"><?= $page->valueTitle() ?></h2>
-      <?php endif ?>
-      
-      <?= $page->valueDescription()->kt() ?>
-    </div>
-  </div>
-</section>
-
-<!-- Case Study Highlight -->
-<?php if ($page->featuredCaseStudy()->isNotEmpty()): ?>
-  <?php snippet('case-study-card', ['case' => $page->featuredCaseStudy()->toPage()]) ?>
-<?php endif ?>
-
-<!-- Founder Section -->
-<?php snippet('founder-intro', [
-  'name' => $page->founderName(),
-  'title' => $page->founderTitle(),
-  'bio' => $page->founderBio(),
-  'image' => $page->founderImage()
-]) ?>
-
 <!-- Packages & Pricing -->
 <?php if ($page->packages()->isNotEmpty()): ?>
 <section class="packages">
@@ -92,33 +63,22 @@
 </section>
 <?php endif ?>
 
-<!-- Services/Process -->
-<section class="services">
-  <div class="container">
-    <?php if ($page->servicesTitle()->isNotEmpty()): ?>
-      <h2 class="services__title"><?= $page->servicesTitle() ?></h2>
-    <?php endif ?>
+<!-- Comparison Table: You vs Agencies -->
+<?php snippet('comparison-table') ?>
 
-    <div class="services__grid">
-      <?php foreach ($page->services()->toStructure() as $service): ?>
-        <?php snippet('service-card', ['service' => $service]) ?>
-      <?php endforeach ?>
-    </div>
-  </div>
-</section>
+<!-- Tools Carousel (moved from earlier) -->
+<?php snippet('tools-carousel') ?>
 
-<!-- Additional Offerings -->
-<?php if ($page->additionalOfferings()->isNotEmpty()): ?>
-<section class="offerings">
-  <div class="container">
-    <div class="offerings__grid">
-      <?php foreach ($page->additionalOfferings()->toStructure() as $offering): ?>
-        <?php snippet('offering-card', ['offering' => $offering]) ?>
-      <?php endforeach ?>
-    </div>
-  </div>
-</section>
+<!-- Process Section -->
+<?php snippet('process-section') ?>
+
+<!-- Featured Case Study -->
+<?php if ($page->featuredCaseStudy()->isNotEmpty()): ?>
+  <?php snippet('case-study-card', ['case' => $page->featuredCaseStudy()->toPage()]) ?>
 <?php endif ?>
+
+<!-- Testimonials -->
+<?php snippet('testimonials-section', ['testimonials' => $page->testimonials()]) ?>
 
 <!-- Projects -->
 <?php if ($projectsPage = page('projects')): ?>

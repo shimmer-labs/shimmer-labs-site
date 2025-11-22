@@ -3,7 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= $page->title() ?> | <?= $site->title() ?></title>
+  <?php
+  // SEO-optimized title tags per page
+  $seoTitle = match($page->intendedTemplate()) {
+    'home' => 'Shimmer Labs - Custom App Development & API Integrations | Next.js, n8n, iOS',
+    'projects' => 'Portfolio - SaaS Apps, API Integrations & iOS Development | Shimmer Labs',
+    'contact' => 'Hire a Developer - Custom Web Apps & Automation | Shimmer Labs',
+    'services' => 'Services & Pricing - Web Apps, APIs, iOS Development | Shimmer Labs',
+    'service' => $page->title() . ' | ' . $page->priceRange() . ' | Shimmer Labs',
+    default => $page->title() . ' | Shimmer Labs'
+  };
+  ?>
+  <title><?= $seoTitle ?></title>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="<?= url('assets/images/apple-touch-icon.png') ?>">

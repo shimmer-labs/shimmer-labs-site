@@ -3018,3 +3018,299 @@ img.loaded {
     justify-content: flex-start;
   }
 }
+
+/* ===================================
+   Comparison Table Section
+   =================================== */
+.comparison {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-white);
+}
+
+.comparison__title {
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.comparison__subtitle {
+  text-align: center;
+  color: var(--color-gray-medium);
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.comparison__table {
+  max-width: 900px;
+  margin: 0 auto var(--spacing-lg);
+  border: 2px solid var(--color-gray-light);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.comparison__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.comparison__row:last-child {
+  border-bottom: none;
+}
+
+.comparison__row--header {
+  background: var(--color-navy);
+  color: white;
+  font-weight: 700;
+}
+
+.comparison__cell {
+  padding: var(--spacing-md);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--color-gray-light);
+}
+
+.comparison__cell:last-child {
+  border-right: none;
+}
+
+.comparison__cell--label {
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-navy);
+  background: rgba(45, 212, 191, 0.05);
+}
+
+.comparison__cell--agencies {
+  background: var(--color-navy);
+  color: white;
+}
+
+.comparison__cell--shimmer {
+  background: linear-gradient(135deg, var(--color-teal) 0%, var(--color-gold) 100%);
+  color: white;
+}
+
+.comparison__cell--highlight {
+  background: rgba(45, 212, 191, 0.1);
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.comparison__cta {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+}
+
+.comparison__cta p {
+  font-size: 1.125rem;
+  color: var(--color-navy);
+  margin-bottom: var(--spacing-md);
+}
+
+/* ===================================
+   Process Section (Homepage)
+   =================================== */
+.process {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-gray-light);
+}
+
+.process__title {
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.process__subtitle {
+  text-align: center;
+  color: var(--color-gray-medium);
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process__step {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: 2px solid transparent;
+  transition: var(--transition);
+  position: relative;
+}
+
+.process__step:hover {
+  border-color: var(--color-teal);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.process__step-number {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--color-teal) 0%, var(--color-gold) 100%);
+  color: white;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--color-gray-light);
+}
+
+.process__step-icon {
+  font-size: 3rem;
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.process__step-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-navy);
+}
+
+.process__step-description {
+  color: var(--color-gray-medium);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.process__step-meta {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-teal);
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+/* ===================================
+   Testimonials Section
+   =================================== */
+.testimonials {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.testimonials__title {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--color-gray-light);
+  transition: var(--transition);
+  position: relative;
+}
+
+.testimonial::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 6rem;
+  color: var(--color-teal);
+  opacity: 0.2;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.testimonial:hover {
+  border-color: var(--color-teal);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial__quote {
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial__quote p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-navy);
+  font-style: italic;
+  margin: 0;
+}
+
+.testimonial__author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-gray-light);
+}
+
+.testimonial__author strong {
+  color: var(--color-navy);
+  font-size: 1.05rem;
+}
+
+.testimonial__role {
+  color: var(--color-gray-medium);
+  font-size: 0.9rem;
+}
+
+/* Mobile responsive for new sections */
+@media (max-width: 768px) {
+  .comparison__table {
+    border: none;
+    border-radius: 0;
+  }
+
+  .comparison__row {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison__cell {
+    border-right: none;
+    border-bottom: 1px solid var(--color-gray-light);
+    padding: var(--spacing-sm);
+  }
+
+  .comparison__cell--label::before {
+    content: attr(data-label) ': ';
+    font-weight: 600;
+  }
+
+  .comparison__row--header .comparison__cell:first-child {
+    display: none;
+  }
+
+  .process__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+}
