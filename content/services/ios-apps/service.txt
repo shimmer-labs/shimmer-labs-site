@@ -1,0 +1,155 @@
+Title: iOS App Development
+
+----
+
+Meta_description: Native iOS development in Swift $35k-75k. Built EventSnag (screenshot to calendar with AI). Most web developers outsource iOS work, I build it myself.
+
+----
+
+Icon: 📱
+
+----
+
+Summary: Native iOS development in Swift. Built EventSnag (screenshot to calendar with AI). Most web developers outsource this, I build it myself.
+
+----
+
+Pricerange: $35,000 - $75,000
+
+----
+
+Text:
+
+## Most Web Developers Outsource iOS. I Build It Myself.
+
+You need a native iOS app. Most developers will:
+- Outsource it to contractors (quality lottery)
+- Suggest React Native or Flutter (not truly native)
+- Quote $100k+ because they don't do iOS regularly
+
+**I'm different:**
+- **Native Swift:** I build real iOS apps, not web wrappers
+- **I've shipped to the App Store:** EventSnag is in review right now
+- **AI integration experience:** EventSnag uses Vision API + AI for screenshot parsing
+- **Fair pricing:** $35k-75k vs $100k+ agencies charge
+
+**Real example:** EventSnag takes event screenshots, uses AI to extract details (date, time, location), and adds them to your calendar. Built from 0→App Store submission in 8 weeks.
+
+If you need truly native iOS with features like camera access, local storage, push notifications, or AI integration, I can build it. If you just need a web app in a wrapper, save money and use a PWA instead.
+
+----
+
+Pricingtiers:
+-
+  name: 'Simple iOS App'
+  price: '$35,000'
+  description: 'Single-purpose app with 3-5 core screens.'
+  features: |
+    Native Swift development
+    3-5 core screens
+    Local data storage
+    Push notifications (optional)
+    App Store submission support
+    30 days post-launch support
+  timeline: '6-8 weeks'
+  featured: false
+-
+  name: 'Full-Featured App'
+  price: '$55,000'
+  description: 'Complex features like camera, AI, or backend integration.'
+  features: |
+    Native Swift + SwiftUI
+    6-10 screens
+    Camera/photo access
+    AI integration (Vision, Core ML)
+    Backend API integration
+    In-app purchases (optional)
+    TestFlight beta distribution
+    60 days post-launch support
+  timeline: '10-12 weeks'
+  featured: true
+-
+  name: 'Enterprise iOS App'
+  price: '$75,000+'
+  description: 'Advanced features, custom requirements, or multi-platform.'
+  features: |
+    Unlimited screens
+    Complex animations
+    Offline-first architecture
+    Advanced security features
+    iPad support
+    Widget extensions
+    App Clip support
+    90 days post-launch support
+  timeline: '12-16 weeks'
+  featured: false
+
+----
+
+Whatsincluded:
+-
+  icon: '📱'
+  title: 'Native Swift Code'
+  description: 'Real iOS development, not React Native or Flutter. Your app feels like an iPhone app.'
+-
+  icon: '🎨'
+  title: 'SwiftUI Interface'
+  description: 'Modern, declarative UI that adapts to iOS 16, 17, and future versions.'
+-
+  icon: '🍎'
+  title: 'App Store Submission'
+  description: 'I handle screenshots, descriptions, and the submission process. You get approved faster.'
+-
+  icon: '🧪'
+  title: 'TestFlight Distribution'
+  description: 'Beta test with real users before launch. Catch bugs early.'
+-
+  icon: '🤖'
+  title: 'AI Integration (Optional)'
+  description: 'Vision API, Core ML, or cloud AI (Claude, Gemini). I've done this with EventSnag.'
+-
+  icon: '📚'
+  title: 'Source Code + Docs'
+  description: 'Full Xcode project, deployment guide, and 30-90 days of support.'
+
+----
+
+Process:
+-
+  title: 'App Concept Review (FREE)'
+  description: 'We talk about your idea, target users, and must-have features. I'll tell you if iOS is the right platform.'
+-
+  title: 'Wireframes & Scoping'
+  description: 'I review your designs (or create simple wireframes), estimate complexity, and give you a fixed price.'
+-
+  title: 'Development (6-16 weeks)'
+  description: 'I build in Swift, send you TestFlight builds every 2 weeks, and iterate based on your feedback.'
+-
+  title: 'App Store Launch'
+  description: 'I submit to the App Store, handle Apple's review process, and stick around for 30-90 days post-launch.'
+
+----
+
+Techstack: Swift, SwiftUI, Core Data, Vision API, Core ML, CloudKit, Firebase, Push Notifications
+
+----
+
+Techstackintro: I build native iOS apps for iPhone. If you need Android too, I can recommend someone, but I focus on iOS to deliver the best quality.
+
+----
+
+Portfolioprojects:
+-
+  - page://6_eventsnag
+
+----
+
+Ctatitle: Your Idea Deserves a Real iOS App
+
+----
+
+Ctadescription: Not a web wrapper. Not React Native. A real, native iOS app built in Swift. Let's build something users will love.
+
+----
+
+Uuid: 3w4x5y6z7a8b9c0d

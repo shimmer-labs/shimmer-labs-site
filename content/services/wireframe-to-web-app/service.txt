@@ -1,0 +1,151 @@
+Title: Wireframe to Web App
+
+----
+
+Meta_description: Figma/Subframe to production Next.js app $18k-55k in 3-6 weeks. Built TreeBidPro from AI wireframes in 3 weeks. Agencies charge $50k+ and take 4 months.
+
+----
+
+Icon: ⚡
+
+----
+
+Summary: Take your Figma/Subframe/AI Studio designs to production-ready Next.js app. Built TreeBidPro from AI wireframes in 3 weeks with Stripe integrated. Agencies charge $50k+ and take 4 months, I do it in 6 weeks.
+
+----
+
+Pricerange: $18,500 - $55,000
+
+----
+
+Text:
+
+## Agencies Quote $50k and 4 Months. I'll Do It in 6 Weeks for $35k.
+
+You've got designs. You need a working app. Most agencies will:
+- Take 8-12 weeks (or longer)
+- Charge $50k-200k
+- Make you talk to account managers instead of developers
+- Overwhelm you with tech stack decisions
+
+**I'm different:**
+- **AI-powered speed:** I use AI agents to move 2-3x faster
+- **Restricted stack:** Next.js, Supabase, Stripe, Vercel. No decision paralysis.
+- **Direct communication:** You talk to me, the developer. No middlemen.
+- **Proven work:** Built TreeBidPro from AI Studio wireframes in 3 weeks
+
+**Real example:** TreeBidPro went from wireframes to production with Stripe payments in 3 weeks. An agency quoted $45k and 3 months. I did it for less, faster.
+
+----
+
+Pricingtiers:
+-
+  name: 'MVP Package'
+  price: '$18,500'
+  description: 'Perfect for validating your idea with early users.'
+  features: |
+    5-8 screens (mobile responsive)
+    User authentication (Supabase)
+    Database setup + RLS
+    Vercel deployment + CI/CD
+    2 weeks post-launch bug fixes
+  timeline: '3-4 weeks'
+  featured: false
+-
+  name: 'Pro Package'
+  price: '$35,000'
+  description: 'Full-featured product ready to charge customers.'
+  features: |
+    10-15 screens (unlimited on request)
+    Auth + multi-user support
+    Stripe payment integration
+    Email automation (Resend)
+    Basic admin dashboard
+    Analytics (PostHog/Plausible)
+    4 weeks post-launch support
+  timeline: '5-6 weeks'
+  featured: true
+-
+  name: 'Full Launch Package'
+  price: '$55,000'
+  description: 'Everything you need to compete with established products.'
+  features: |
+    Unlimited screens
+    Advanced admin dashboard
+    Multi-tenant architecture
+    Custom integrations (APIs, webhooks)
+    SEO optimization
+    Performance monitoring
+    8 weeks post-launch support
+  timeline: '8-10 weeks'
+  featured: false
+
+----
+
+Whatsincluded:
+-
+  icon: '💻'
+  title: 'Production-Grade Code'
+  description: 'TypeScript strict mode, proper component architecture, no spaghetti code. Built to scale.'
+-
+  icon: '📱'
+  title: 'Fully Responsive'
+  description: 'Mobile, tablet, desktop. Your app looks good everywhere.'
+-
+  icon: '🚀'
+  title: 'CI/CD Pipeline'
+  description: 'Push to GitHub, auto-deploy to Vercel. Ship features without fear.'
+-
+  icon: '🗄️'
+  title: 'Database Design'
+  description: 'Supabase with Row-Level Security. Your data is safe and scalable.'
+-
+  icon: '🎨'
+  title: 'Pixel-Perfect Implementation'
+  description: 'Your Figma designs, brought to life exactly as you envisioned.'
+-
+  icon: '📚'
+  title: 'Documentation + Handoff'
+  description: 'Code walkthrough, deployment guide, and 2-8 weeks of support.'
+
+----
+
+Process:
+-
+  title: 'Design Review (FREE)'
+  description: 'Send me your Figma/Subframe files. I'll review for completeness and flag any missing flows or edge cases.'
+-
+  title: 'Scoping & Timeline'
+  description: 'I count screens, estimate complexity, and give you a fixed price + timeline. No surprises.'
+-
+  title: 'Development (3-10 weeks)'
+  description: 'I build in sprints. You get weekly demos and can request changes as we go. Direct Slack/email access to me.'
+-
+  title: 'Launch & Support'
+  description: 'I deploy to production, train you on the admin, and stick around for 2-8 weeks to fix bugs and add polish.'
+
+----
+
+Techstack: Next.js 14+, TypeScript, Supabase, Tailwind CSS, Vercel, Stripe, Resend, PostHog
+
+----
+
+Techstackintro: This is my stack. I don't do WordPress, PHP, or Ruby on Rails. If you need something else, I'm not your guy. But if you're okay with the fastest, most modern web stack, let's talk.
+
+----
+
+Portfolioprojects:
+-
+  - page://7qktlc1wjvwpx5z9
+
+----
+
+Ctatitle: Your Designs Deserve Better Than a Slow Agency
+
+----
+
+Ctadescription: You've already done the hard work (designing). Don't wait 4 months and pay $50k+ to see it live. Let me ship it in 6 weeks.
+
+----
+
+Uuid: 1a2b3c4d5e6f7g8h
