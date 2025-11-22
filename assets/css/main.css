@@ -556,6 +556,187 @@ section {
 }
 
 /* ===================================
+   Packages & Pricing Section
+   =================================== */
+.packages {
+  background: linear-gradient(135deg, rgba(253, 190, 52, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+  padding: var(--spacing-xl) 0;
+}
+
+.packages__header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.packages__title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-navy);
+}
+
+.packages__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-gray-medium);
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.packages__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.package-card {
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-light);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-gold);
+}
+
+.package-card--featured {
+  border-color: var(--color-gold);
+  border-width: 3px;
+}
+
+.package-card--featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-gold) 0%, var(--color-teal) 100%);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.package-card__badge {
+  background: var(--color-gold);
+  color: var(--color-navy);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.package-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.package-card__icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.package-card__title {
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.package-card__pricing {
+  margin-bottom: var(--spacing-md);
+}
+
+.package-card__price-label {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-gray-medium);
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.package-card__price {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1;
+}
+
+.package-card__description {
+  color: var(--color-gray-medium);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+  flex-grow: 1;
+}
+
+.package-card__highlights {
+  list-style: none;
+  margin: 0 0 var(--spacing-md) 0;
+  padding: 0;
+}
+
+.package-card__highlights li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--color-navy);
+  font-size: 0.95rem;
+}
+
+.package-card__highlights li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-teal);
+  font-weight: 700;
+}
+
+.package-card__cta {
+  margin-top: auto;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-gray-light);
+}
+
+.btn--package {
+  width: 100%;
+  background: var(--color-navy);
+  color: var(--color-white);
+  text-align: center;
+  padding: 0.875rem 1.5rem;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.btn--package:hover {
+  background: var(--color-charcoal);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 26, 47, 0.3);
+}
+
+.package-card--featured .btn--package {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-teal) 100%);
+  color: var(--color-navy);
+  font-weight: 700;
+}
+
+.package-card--featured .btn--package:hover {
+  background: linear-gradient(135deg, var(--color-teal) 0%, var(--color-gold) 100%);
+  transform: translateY(-2px);
+}
+
+/* ===================================
    Founder Section
    =================================== */
 .founder {
@@ -1764,21 +1945,38 @@ section {
   
   .services__grid,
   .offerings__grid,
-  .projects__grid {
+  .projects__grid,
+  .packages__grid {
     grid-template-columns: 1fr;
   }
-  
+
   .service-card {
     grid-template-columns: 60px 1fr;
     padding: var(--spacing-md);
   }
-  
+
   .service-card__icon {
     font-size: 2rem;
   }
-  
+
   .service-card__title {
     font-size: 1.5rem;
+  }
+
+  .packages__title {
+    font-size: 2rem;
+  }
+
+  .packages__subtitle {
+    font-size: 1rem;
+  }
+
+  .package-card__title {
+    font-size: 1.25rem;
+  }
+
+  .package-card__price {
+    font-size: 1.75rem;
   }
   
   .founder__content,

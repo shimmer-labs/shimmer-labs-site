@@ -2,6 +2,10 @@ Title: Home
 
 ----
 
+Meta_description: Custom app development $18k-55k in 3-6 weeks. Next.js, Supabase, Stripe, iOS. Built Paidly (SaaS) & EventSnag (iOS). API integrations, wireframe to production. Based in Stillwater, OK.
+
+----
+
 Herosubheading: Small business automation experts
 
 ----
@@ -70,6 +74,66 @@ Founderbio: You'll work directly with Logan Shimmer, who has helped dozens of sm
 ----
 
 Founderimage: []
+
+----
+
+Packagestitle: Packages & Pricing
+
+----
+
+Packagessubtitle: No bullshit. No "contact for quote." Here's what I charge and what you get.
+
+----
+
+Packages:
+-
+  title: 'API Integrations'
+  icon: 🔌
+  price: '$3.5k - $12k'
+  pricelabel: 'Starting at'
+  description: 'Custom n8n, Zapier, or Make integrations that connect your tools. Built 4 production podcast API integrations—published to npm and used by real companies.'
+  highlights: |
+    Simple integration (2 apps): $3,500
+    Complex integration: $7,500
+    Custom node/plugin: $8,500-12k
+  featured: false
+  link: ''
+-
+  title: 'Wireframe → Web App'
+  icon: ⚡
+  price: '$18k - $55k'
+  pricelabel: ''
+  description: 'Take your Figma/Subframe designs to production-ready Next.js app. Built TreeBidPro from AI wireframes in 3 weeks. Agencies charge $50k+ and take 4 months—I do it in 6 weeks.'
+  highlights: |
+    MVP (5-8 screens): $18,500
+    Pro (10-15 screens + Stripe): $35,000
+    Full Launch (unlimited): $55,000
+  featured: true
+  link: ''
+-
+  title: 'Full-Stack SaaS'
+  icon: 💻
+  price: '$45k - $125k'
+  pricelabel: 'From'
+  description: '0→1 SaaS product development. Built Paidly (AI invoicing) from zero to processing payments in 6 weeks. Next.js, Supabase, Stripe—your idea could be live in 8 weeks.'
+  highlights: |
+    Starter SaaS: $45,000
+    Growth SaaS: $75,000
+    Enterprise: $125,000+
+  featured: false
+  link: ''
+-
+  title: 'iOS Apps'
+  icon: 📱
+  price: '$35k - $75k'
+  pricelabel: 'Project-based'
+  description: 'Native iOS development in Swift. Built EventSnag (screenshot to calendar with AI). Most web developers outsource this—I build it myself.'
+  highlights: |
+    Native Swift development
+    App Store submission support
+    30 days post-launch support
+  featured: false
+  link: ''
 
 ----
 

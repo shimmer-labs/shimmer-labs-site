@@ -70,13 +70,35 @@
   'image' => $page->founderImage()
 ]) ?>
 
+<!-- Packages & Pricing -->
+<?php if ($page->packages()->isNotEmpty()): ?>
+<section class="packages">
+  <div class="container">
+    <div class="packages__header">
+      <?php if ($page->packagesTitle()->isNotEmpty()): ?>
+        <h2 class="packages__title"><?= $page->packagesTitle() ?></h2>
+      <?php endif ?>
+      <?php if ($page->packagesSubtitle()->isNotEmpty()): ?>
+        <p class="packages__subtitle"><?= $page->packagesSubtitle() ?></p>
+      <?php endif ?>
+    </div>
+
+    <div class="packages__grid">
+      <?php foreach ($page->packages()->toStructure() as $package): ?>
+        <?php snippet('package-card', ['package' => $package]) ?>
+      <?php endforeach ?>
+    </div>
+  </div>
+</section>
+<?php endif ?>
+
 <!-- Services/Process -->
 <section class="services">
   <div class="container">
     <?php if ($page->servicesTitle()->isNotEmpty()): ?>
       <h2 class="services__title"><?= $page->servicesTitle() ?></h2>
     <?php endif ?>
-    
+
     <div class="services__grid">
       <?php foreach ($page->services()->toStructure() as $service): ?>
         <?php snippet('service-card', ['service' => $service]) ?>

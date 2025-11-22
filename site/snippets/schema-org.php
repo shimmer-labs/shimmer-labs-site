@@ -42,16 +42,15 @@ $schema[] = [
 
 // Page-specific schemas
 if ($page->intendedTemplate() == 'home') {
-  // LocalBusiness Schema for homepage
+  // ProfessionalService Schema for homepage
   $schema[] = [
     '@context' => 'https://schema.org',
-    '@type' => 'LocalBusiness',
-    '@id' => $site->url() . '#localbusiness',
+    '@type' => 'ProfessionalService',
+    '@id' => $site->url() . '#business',
     'name' => 'Shimmer Labs',
     'image' => url('assets/images/shimmer-labs-logo.png'),
-    'description' => 'Automate your business, reclaim your time. Custom automation solutions for small businesses.',
+    'description' => 'Custom app development and automation consulting. Next.js, Supabase, Stripe, iOS development. API integrations, wireframe to production, full-stack SaaS.',
     'url' => $site->url(),
-    'telephone' => '',
     'email' => 'logan@shimmerlabs.co',
     'address' => [
       '@type' => 'PostalAddress',
@@ -59,12 +58,69 @@ if ($page->intendedTemplate() == 'home') {
       'addressRegion' => 'OK',
       'addressCountry' => 'US'
     ],
-    'priceRange' => '$$',
-    'openingHoursSpecification' => [
-      '@type' => 'OpeningHoursSpecification',
-      'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      'opens' => '09:00',
-      'closes' => '17:00'
+    'priceRange' => '$$$',
+    'founder' => [
+      '@type' => 'Person',
+      'name' => 'Logan Shimmer',
+      'jobTitle' => 'Founder & Automation Architect'
+    ],
+    'hasOfferCatalog' => [
+      '@type' => 'OfferCatalog',
+      'name' => 'Development Services',
+      'itemListElement' => [
+        [
+          '@type' => 'Offer',
+          'itemOffered' => [
+            '@type' => 'Service',
+            'name' => 'API Integrations',
+            'description' => 'Custom n8n, Zapier, or Make integrations',
+            'priceSpecification' => [
+              '@type' => 'PriceSpecification',
+              'price' => '3500-12000',
+              'priceCurrency' => 'USD'
+            ]
+          ]
+        ],
+        [
+          '@type' => 'Offer',
+          'itemOffered' => [
+            '@type' => 'Service',
+            'name' => 'Wireframe to Web App',
+            'description' => 'Figma/Subframe to production Next.js app',
+            'priceSpecification' => [
+              '@type' => 'PriceSpecification',
+              'price' => '18500-55000',
+              'priceCurrency' => 'USD'
+            ]
+          ]
+        ],
+        [
+          '@type' => 'Offer',
+          'itemOffered' => [
+            '@type' => 'Service',
+            'name' => 'Full-Stack SaaS Development',
+            'description' => '0→1 SaaS product development with Next.js and Supabase',
+            'priceSpecification' => [
+              '@type' => 'PriceSpecification',
+              'price' => '45000-125000',
+              'priceCurrency' => 'USD'
+            ]
+          ]
+        ],
+        [
+          '@type' => 'Offer',
+          'itemOffered' => [
+            '@type' => 'Service',
+            'name' => 'iOS App Development',
+            'description' => 'Native iOS development in Swift',
+            'priceSpecification' => [
+              '@type' => 'PriceSpecification',
+              'price' => '35000-75000',
+              'priceCurrency' => 'USD'
+            ]
+          ]
+        ]
+      ]
     ]
   ];
 }
