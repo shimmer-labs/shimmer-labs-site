@@ -40,7 +40,8 @@
 
         <!-- Gallery -->
         <?php
-          $hasLocalVideo = $page->demo_video()->isNotEmpty() && $page->demo_video()->toFile();
+          $demoVideo = $page->demo_video()->toFile();
+          $hasLocalVideo = $demoVideo && $page->demo_video()->isNotEmpty();
           $hasYouTubeVideo = $page->video_url()->isNotEmpty();
           $hasVideo = $hasLocalVideo || $hasYouTubeVideo;
         ?>
@@ -50,7 +51,6 @@
 
             <div class="gallery-featured" id="galleryFeatured">
               <?php if ($hasLocalVideo): ?>
-                <?php $demoVideo = $page->demo_video()->toFile(); ?>
                 <video
                   id="featuredVideo"
                   controls
