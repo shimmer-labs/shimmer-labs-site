@@ -1988,6 +1988,57 @@ section {
   .package-card__price {
     font-size: 1.75rem;
   }
+
+  /* Make package cards more contained/prominent on mobile */
+  .package-card {
+    border-width: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: var(--spacing-md);
+  }
+
+  /* Remove line break between icon and title */
+  .package-card__header {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  /* Remove bullets - ensure list styling is completely removed */
+  .package-card__highlights {
+    list-style: none !important;
+    padding-left: 0 !important;
+  }
+
+  .package-card__highlights li {
+    list-style-type: none !important;
+  }
+
+  /* Make CTAs look more like buttons on mobile */
+  .btn--package {
+    display: block;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 1rem 1.5rem;
+    text-decoration: none !important;
+  }
+
+  /* Process cards - add containers and styling */
+  .process__step {
+    border: 2px solid var(--color-gray-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: var(--spacing-md);
+  }
+
+  /* Hide step numbers on mobile (intuitive top-to-bottom) */
+  .process__step-number {
+    display: none;
+  }
+
+  /* Remove line break between emoji and title in process steps */
+  .process__step-icon {
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+  }
   
   .founder__content,
   .case-study-card {
@@ -3268,28 +3319,44 @@ img.loaded {
 
 /* Mobile responsive for new sections */
 @media (max-width: 768px) {
+  /* Comparison table - keep 3 columns but optimize for mobile */
   .comparison__table {
-    border: none;
-    border-radius: 0;
+    border: 2px solid var(--color-gray-light);
+    border-radius: var(--border-radius);
+    font-size: 0.85rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   }
 
+  /* Keep 3-column layout but with adjusted proportions */
   .comparison__row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 0;
   }
 
+  /* Reduce padding for mobile */
   .comparison__cell {
-    border-right: none;
-    border-bottom: 1px solid var(--color-gray-light);
-    padding: var(--spacing-sm);
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+    text-align: center;
   }
 
-  .comparison__cell--label::before {
-    content: attr(data-label) ': ';
-    font-weight: 600;
+  /* Label column - left aligned */
+  .comparison__cell--label {
+    text-align: left;
+    font-size: 0.8rem;
+    padding-left: 0.75rem;
   }
 
-  .comparison__row--header .comparison__cell:first-child {
-    display: none;
+  /* Header cells - make them stand out */
+  .comparison__row--header .comparison__cell {
+    font-size: 0.9rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  /* Ensure agencies and shimmer labs headers are visible */
+  .comparison__cell--agencies,
+  .comparison__cell--shimmer {
+    font-weight: 700;
   }
 
   .process__steps {
