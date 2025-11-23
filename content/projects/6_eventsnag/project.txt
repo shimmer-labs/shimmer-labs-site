@@ -18,6 +18,8 @@ Support_url: https://eventsnag.app/support.html
 ----
 App_store_url: https://eventsnag.app
 ----
+Demo_video: eventsnag-demo.mp4
+----
 Video_url:
 ----
 Description:
