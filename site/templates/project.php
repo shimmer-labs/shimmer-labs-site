@@ -40,8 +40,11 @@
 
         <!-- Gallery -->
         <?php
-          $demoVideo = $page->demo_video()->toFile();
-          $hasLocalVideo = $demoVideo && $page->demo_video()->isNotEmpty();
+          $demoVideo = null;
+          if ($page->demo_video()->isNotEmpty()) {
+            $demoVideo = $page->demo_video()->toFile();
+          }
+          $hasLocalVideo = $demoVideo !== null;
           $hasYouTubeVideo = $page->video_url()->isNotEmpty();
           $hasVideo = $hasLocalVideo || $hasYouTubeVideo;
         ?>
