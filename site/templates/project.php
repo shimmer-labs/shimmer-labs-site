@@ -142,7 +142,7 @@
           <?php endif ?>
           <?php if ($page->link()->isNotEmpty() && $page->is_app()->toBool()): ?>
             <a href="<?= $page->link() ?>" class="btn btn--secondary" target="_blank" rel="noopener">
-              View on GitHub →
+              Visit Website →
             </a>
           <?php endif ?>
           <a href="<?= url('contact') ?>" class="btn btn--secondary">
