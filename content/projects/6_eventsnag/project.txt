@@ -1,3 +1,5 @@
+Template: project
+----
 Title: EventSnag
 ----
 Badge: Live
