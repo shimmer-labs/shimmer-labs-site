@@ -15,6 +15,16 @@ fields:
     label: Featured Project
     help: Show in featured section on projects page (highlight your best work)
     default: false
+  badge:
+    type: select
+    label: Project Badge
+    help: Status badge displayed on project card
+    options:
+      - Live
+      - Coming Soon
+      - Launching Soon
+      - In Development
+    default: Live
   summary: textarea
   description:
     type: textarea
@@ -64,4 +74,8 @@ fields:
       - video/quicktime
       - video/webm
       - image/gif
+  video_url:
+    type: url
+    label: YouTube Video URL
+    help: Embed YouTube video (use format https://www.youtube.com/embed/VIDEO_ID)
   image: files
