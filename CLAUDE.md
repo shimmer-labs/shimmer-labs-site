@@ -74,6 +74,45 @@ This is the main website for Shimmer Labs, a boutique automation consultancy bas
 - Or use Cloudflare Workers, AWS Lambda, or other dedicated serverless platform
 - Keep the Kirby site pure PHP, no mixed runtimes
 
+### PHP 8.4 Type Strictness & Debugging (November 22, 2025)
+**When you see 500 errors, enable debug mode IMMEDIATELY.**
+
+**What happened:**
+- All project pages returning 500 errors after template updates
+- Spent hours trying different fixes (toString(), adding blueprint fields, variable scope changes)
+- Made assumptions about what was wrong instead of seeing the actual error
+- Finally enabled debug mode and saw: "TypeError: Unsupported operand types: string + int" on line 101
+
+**The actual problem:**
+```php
+$page->title()->value() . ' - Screenshot ' . ($index + 1);
+```
+- The issue was `($index + 1)` - NOT the string concatenation
+- In Kirby's `foreach ($page->images() as $index => $image)`, `$index` is a STRING, not int
+- PHP 8.4 is VERY strict - cannot add int to string without explicit casting
+- Error message "string + int" referred to the addition operator `+`, not concatenation `.`
+
+**The fix:**
+```php
+$page->title()->value() . ' - Screenshot ' . ((int)$index + 1);
+```
+
+**Lessons:**
+1. **Enable debug mode FIRST** - Set `'debug' => true` in config.php to see actual PHP errors, don't waste time guessing
+2. **PHP 8.4 type strictness** - Always explicitly cast types when doing math operations: `(int)$index`
+3. **Kirby foreach indexes are strings** - Don't assume array keys are integers, especially in CMS collections
+4. **Use tools immediately** - WebSearch and Playwright should be used early when stuck, not as last resort
+5. **Read error messages carefully** - "string + int" meant addition (`+`), not concatenation (`.`)
+6. **Field object methods** - Use `->value()` to extract string values from Kirby Field objects
+
+**Debugging workflow for future 500 errors:**
+1. Enable debug mode: `'debug' => true` in `site/config/config.php`
+2. Push to production and fetch the error JSON
+3. Read the ACTUAL error message and line number
+4. Search Kirby docs/forum for the specific error
+5. Fix the root cause, not symptoms
+6. Disable debug mode after fixing
+
 ---
 
 ## Directory Structure
