@@ -98,7 +98,7 @@
                   // Safely get alt text with fallback
                   $thumbnailAlt = method_exists($image, 'alt') && $image->alt()->isNotEmpty()
                     ? $image->alt()->value()
-                    : $page->title()->value() . ' - Screenshot ' . ($index + 1);
+                    : $page->title()->value() . ' - Screenshot ' . ((int)$index + 1);
                 ?>
                 <div class="thumbnail <?php e($index === 0 && !$hasVideo, 'thumbnail--active') ?>"
                      data-type="image"
