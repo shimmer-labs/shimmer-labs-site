@@ -13,13 +13,14 @@
 
 $url = $url ?? null;
 $app_name = $app_name ?? 'App';
-$is_live = $url && !$url->isEmpty();
+$is_live = $url && method_exists($url, 'isNotEmpty') && $url->isNotEmpty();
+$url_string = $is_live ? $url->toString() : '';
 ?>
 
 <div class="app-download">
   <?php if ($is_live): ?>
     <!-- Live - Link to App Store -->
-    <a href="<?= $url ?>" class="app-store-badge" target="_blank" rel="noopener" aria-label="Download <?= $app_name ?> on the App Store">
+    <a href="<?= $url_string ?>" class="app-store-badge" target="_blank" rel="noopener" aria-label="Download <?= $app_name ?> on the App Store">
       <img src="<?= url('assets/images/app-store-badge.svg') ?>" alt="Download on the App Store" />
     </a>
   <?php else: ?>

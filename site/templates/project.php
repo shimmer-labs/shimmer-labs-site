@@ -72,7 +72,12 @@
                 </iframe>
               <?php else: ?>
                 <?php $firstImage = $page->images()->first(); ?>
-                <?php $altText = $firstImage->alt()->or($page->title() . ' - Screenshot'); ?>
+                <?php
+                  // Safely get alt text with fallback
+                  $altText = $firstImage && method_exists($firstImage, 'alt') && $firstImage->alt()->isNotEmpty()
+                    ? $firstImage->alt()->toString()
+                    : $page->title() . ' - Screenshot';
+                ?>
                 <img id="featuredImage" src="<?= $firstImage->url() ?>" alt="<?= $altText ?>" class="zoomable">
                 <div class="zoom-hint">🔍 Click to enlarge</div>
               <?php endif ?>
@@ -87,7 +92,10 @@
 
               <?php foreach ($page->images() as $index => $image): ?>
                 <?php
-                  $thumbnailAlt = $image->alt()->or($page->title() . ' - Screenshot ' . ($index + 1));
+                  // Safely get alt text with fallback
+                  $thumbnailAlt = method_exists($image, 'alt') && $image->alt()->isNotEmpty()
+                    ? $image->alt()->toString()
+                    : $page->title() . ' - Screenshot ' . ($index + 1);
                 ?>
                 <div class="thumbnail <?php e($index === 0 && !$hasVideo, 'thumbnail--active') ?>"
                      data-type="image"
