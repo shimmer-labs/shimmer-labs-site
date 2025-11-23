@@ -12,10 +12,10 @@
         <div class="footer-col">
           <h4>Services</h4>
           <ul>
-            <li><a href="<?= url('services/api-wrappers') ?>">API Wrappers</a></li>
-            <li><a href="<?= url('services/business-automation') ?>">Business Automation</a></li>
-            <li><a href="<?= url('services/n8n-workflows') ?>">n8n Workflows</a></li>
-            <li><a href="<?= url('services/saas-integrations') ?>">SaaS Integrations</a></li>
+            <li><a href="<?= url('services/api-integrations') ?>">API Integrations</a></li>
+            <li><a href="<?= url('services/full-stack-saas') ?>">Full-Stack SaaS</a></li>
+            <li><a href="<?= url('services/ios-apps') ?>">iOS App Development</a></li>
+            <li><a href="<?= url('services/wireframe-to-web-app') ?>">Wireframe to Web App</a></li>
           </ul>
         </div>
 
