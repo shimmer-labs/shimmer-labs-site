@@ -135,7 +135,7 @@ Techstackintro: This is my stack. I don't do WordPress, PHP, or Ruby on Rails. I
 ----
 
 Portfolioprojects:
-  - page://7qktlc1wjvwpx5z9
+  - page://projects/off-the-apps-ok
 
 ----
 

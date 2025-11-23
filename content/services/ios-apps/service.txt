@@ -139,7 +139,7 @@ Techstackintro: I build native iOS apps for iPhone. If you need Android too, I c
 ----
 
 Portfolioprojects:
-  - page://6_eventsnag
+  - page://projects/eventsnag
 
 ----
 
