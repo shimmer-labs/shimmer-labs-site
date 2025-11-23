@@ -68,6 +68,25 @@ p {
   margin-bottom: var(--spacing-sm);
 }
 
+/* Code blocks - mobile responsive */
+pre {
+  overflow-x: auto;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: 100%;
+  padding: var(--spacing-sm);
+  background-color: var(--color-gray-light);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-sm);
+}
+
+code {
+  word-break: break-word;
+  word-wrap: break-word;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
 a {
   color: var(--color-navy);
   text-decoration: none;
