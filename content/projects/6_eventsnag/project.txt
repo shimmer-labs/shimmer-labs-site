@@ -16,9 +16,6 @@ Terms_url: https://eventsnag.app/terms.html
 ----
 Support_url: https://eventsnag.app/support.html
 ----
-Demo_video:
-- eventsnag-demo.mp4
-----
 App_store_url: https://eventsnag.app
 ----
 Video_url:
