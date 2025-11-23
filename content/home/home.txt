@@ -36,15 +36,18 @@ Herocircleimage: - 'file://ivckyndgl6sqniun'
 
 Clients:
 
-- 
-  name: Full Stack
-  url: ""
-- 
-  name: API Wrappers
-  url: ""
-- 
-  name: n8n Automations
-  url: ""
+-
+  name: API Integrations
+  url: "#packages"
+-
+  name: Wireframe → Web App
+  url: "#packages"
+-
+  name: Full-Stack SaaS
+  url: "#packages"
+-
+  name: iOS Apps
+  url: "#packages"
 
 
 ----

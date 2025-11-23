@@ -43,7 +43,7 @@
 
 <!-- Packages & Pricing -->
 <?php if ($page->packages()->isNotEmpty()): ?>
-<section class="packages">
+<section id="packages" class="packages">
   <div class="container">
     <div class="packages__header">
       <?php if ($page->packagesTitle()->isNotEmpty()): ?>
