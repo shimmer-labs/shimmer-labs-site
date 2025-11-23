@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Open menu
   menuToggle.addEventListener('click', () => {
-    menuOverlay.style.display = 'block';
+    menuOverlay.style.display = 'flex';
     setTimeout(() => {
       menuOverlay.classList.add('active');
     }, 10);
