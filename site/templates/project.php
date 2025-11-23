@@ -229,7 +229,7 @@
 <!-- Lightbox for images -->
 <div class="lightbox" id="lightbox" style="display: none;">
   <button class="lightbox-close">&times;</button>
-  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="" class="lightbox-image">
+  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Enlarged image view" class="lightbox-image">
 </div>
 
 <?php snippet('footer') ?>
