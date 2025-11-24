@@ -8,8 +8,6 @@ Tech_stack:  n8n, TypeScript, Node.js, GraphQL, Taddy Podcast API, npm
 ----
 Featured: true
 ----
-Video_url: https://www.youtube.com/embed/xSWQKqTwyAA
-----
 Description:
 
 ## The Challenge
