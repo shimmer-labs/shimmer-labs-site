@@ -10,8 +10,17 @@
             <p>"<?= $testimonial->quote() ?>"</p>
           </div>
           <div class="testimonial__author">
-            <strong><?= $testimonial->author() ?></strong>
-            <span class="testimonial__role"><?= $testimonial->role() ?></span>
+            <?php if ($testimonial->avatar()->isNotEmpty()): ?>
+              <img
+                src="<?= url('assets/images/testimonials/' . $testimonial->avatar()) ?>"
+                alt="<?= $testimonial->author() ?>"
+                class="testimonial__avatar"
+              >
+            <?php endif ?>
+            <div class="testimonial__author-info">
+              <strong><?= $testimonial->author() ?></strong>
+              <span class="testimonial__role"><?= $testimonial->role() ?></span>
+            </div>
           </div>
         </div>
       <?php endforeach ?>

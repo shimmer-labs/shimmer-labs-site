@@ -3301,13 +3301,35 @@ img.loaded {
 
 .testimonial__author {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-sm);
   padding-top: var(--spacing-md);
   border-top: 1px solid var(--color-gray-light);
 }
 
-.testimonial__author strong {
+.testimonial__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  flex-shrink: 0;
+}
+
+.testimonial:hover .testimonial__avatar {
+  filter: grayscale(0%);
+}
+
+.testimonial__author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.testimonial__author strong,
+.testimonial__author-info strong {
   color: var(--color-navy);
   font-size: 1.05rem;
 }

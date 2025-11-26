@@ -220,18 +220,12 @@ Testimonials:
 
 -
   quote: >
-    Logan built our podcast workflow integration in 2 weeks for $3,500.
-    Another developer quoted us $8k and 3 months. The n8n nodes he published
-    work flawlessly and we use them daily for transcript processing.
-  author: Alex Martinez
-  role: "Founder, PodcastMetrics"
--
-  quote: >
-    We were drowning in Shopify + Klaviyo data that didn't sync. Logan set up
-    a custom integration that runs every hour and hasn't broken once in 4 months.
-    Worth every penny.
-  author: Jamie Richardson
-  role: "E-commerce Manager"
+    Logan built comprehensive integrations for the Taddy Podcast API across
+    n8n, Zapier, and Make.com. Clean code, thorough documentation, and he
+    responded quickly to any support needed. Solid work.
+  author: Danny Mathews
+  role: "Founder @ Taddy"
+  avatar: danny-mathews.jpg
 
 ----
 
