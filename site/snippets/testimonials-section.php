@@ -4,8 +4,8 @@
     <h2 class="testimonials__title">What Clients Say</h2>
 
     <div class="testimonials__grid">
-      <?php foreach ($testimonials->toStructure() as $testimonial): ?>
-        <div class="testimonial">
+      <?php $index = 0; foreach ($testimonials->toStructure() as $testimonial): ?>
+        <div class="testimonial <?= $index % 2 === 1 ? 'testimonial--reversed' : '' ?>">
           <div class="testimonial__quote">
             <p>"<?= $testimonial->quote() ?>"</p>
           </div>
@@ -23,7 +23,7 @@
             </div>
           </div>
         </div>
-      <?php endforeach ?>
+      <?php $index++; endforeach ?>
     </div>
   </div>
 </section>

@@ -3339,6 +3339,11 @@ img.loaded {
   font-size: 0.9rem;
 }
 
+/* Reversed testimonial - avatar on right */
+.testimonial--reversed .testimonial__author {
+  flex-direction: row-reverse;
+}
+
 /* Mobile responsive for new sections */
 @media (max-width: 768px) {
   /* Comparison table - keep 3 columns but optimize for mobile */

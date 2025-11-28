@@ -226,6 +226,15 @@ Testimonials:
   author: Danny Mathews
   role: "Founder @ Taddy"
   avatar: danny-mathews.jpg
+-
+  quote: >
+    Logan transformed wireframes I'd been sitting on for over a year into
+    a production-ready web app in just two weeks. The AI pricing feature
+    works flawlessly, and he fixes bugs within hours. We're already seeing
+    contractor signups. Game changer for my business.
+  author: Kristen Hadley
+  role: "Founder @ TreeBidPro"
+  avatar: kristen-hadley.jpg
 
 ----
 
