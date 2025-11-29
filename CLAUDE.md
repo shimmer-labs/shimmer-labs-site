@@ -2,7 +2,7 @@
 
 **Last Updated:** October 19, 2025
 **Project:** Shimmer Labs portfolio and business website
-**Stack:** Kirby CMS 5.0 (PHP flat-file), deployed on Vercel
+**Stack:** Kirby CMS 5.0 (PHP flat-file), deployed on Digital Ocean
 **Repository:** https://github.com/shimmer-labs/shimmer-labs-site
 
 ---
@@ -30,9 +30,9 @@ This is the main website for Shimmer Labs, a boutique automation consultancy bas
 - CSS (`/assets/css/main.css`) - Custom CSS, no frameworks
 - No build process - straight HTML/CSS/JS
 
-**Hosting:** Vercel (serverless PHP)
+**Hosting:** Digital Ocean
 - Auto-deploys from `main` branch
-- CDN for static assets
+- App Platform (PHP runtime)
 
 **Forms:** Formspree
 - EventSnag waitlist: `xnngrlnp` → logan@shimmerlabs.co
@@ -315,7 +315,7 @@ Edit `/site/config/config.php`:
 ## Deployment
 
 **Branch:** `main`
-**Auto-deploys:** Push to `main` → Vercel builds and deploys automatically
+**Auto-deploys:** Push to `main` → Digital Ocean builds and deploys automatically
 
 **Commit format:**
 ```bash
