@@ -40,10 +40,7 @@ Clients:
   name: API Integrations
   url: "#packages"
 -
-  name: Wireframe → Web App
-  url: "#packages"
--
-  name: Full-Stack SaaS
+  name: Idea → Web App
   url: "#packages"
 -
   name: iOS Apps
@@ -102,29 +99,18 @@ Packages:
   featured: false
   link: '/services/api-integrations'
 -
-  title: 'Wireframe → Web App'
+  title: 'Idea → Web App'
   icon: ⚡
-  price: '$18k - $55k'
+  price: '$25k - $85k'
   pricelabel: ''
-  description: 'Take your Figma/Subframe designs to production-ready Next.js app. Built TreeBidPro from AI wireframes in 3 weeks. Agencies charge $50k+ and take 4 months, I do it in 6 weeks.'
+  description: 'From wireframes to napkin sketches to "I just have an idea" — I build production-ready web apps. Built TreeBidPro from wireframes in 2 weeks and Paidly from zero to payments in 6 weeks.'
   highlights: |
-    🌱 MVP (5-8 screens): $18,500
-    ⚡ Pro (10-15 screens + Stripe): $35,000
-    🚀 Full Launch (unlimited): $55,000
+    🌱 Build (wireframes ready): $25,000
+    ⚡ Build+ (rough designs): $45,000
+    🚀 Launch (idea + research): $65,000
+    🤝 Partner (just an idea): $85,000+
   featured: true
-  link: '/services/wireframe-to-web-app'
--
-  title: 'Full-Stack SaaS'
-  icon: 💻
-  price: '$45k - $125k'
-  pricelabel: 'From'
-  description: '0→1 SaaS product development. Built Paidly (AI invoicing) from zero to processing payments in 6 weeks. Next.js, Supabase, Stripe. Your idea could be live in 8 weeks.'
-  highlights: |
-    🌱 Starter SaaS: $45,000
-    📈 Growth SaaS: $75,000
-    🏢 Enterprise: $125,000+
-  featured: false
-  link: '/services/full-stack-saas'
+  link: '/services/idea-to-web-app'
 -
   title: 'iOS Apps'
   icon: 📱

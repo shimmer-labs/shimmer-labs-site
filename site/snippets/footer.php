@@ -13,9 +13,8 @@
           <h4>Services</h4>
           <ul>
             <li><a href="<?= url('services/api-integrations') ?>">API Integrations</a></li>
-            <li><a href="<?= url('services/full-stack-saas') ?>">Full-Stack SaaS</a></li>
-            <li><a href="<?= url('services/ios-apps') ?>">iOS App Development</a></li>
-            <li><a href="<?= url('services/wireframe-to-web-app') ?>">Wireframe to Web App</a></li>
+            <li><a href="<?= url('services/idea-to-web-app') ?>">Idea → Web App</a></li>
+            <li><a href="<?= url('services/ios-apps') ?>">iOS Apps</a></li>
           </ul>
         </div>
 
