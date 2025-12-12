@@ -32,6 +32,7 @@
           <ul>
             <li><a href="mailto:logan@shimmerlabs.co">logan@shimmerlabs.co</a></li>
             <li><a href="https://www.linkedin.com/in/loganshimmer/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/shimmer.labs/" target="_blank" rel="noopener">Instagram</a></li>
             <li><a href="https://github.com/shimmer-labs" target="_blank" rel="noopener">GitHub</a></li>
           </ul>
         </div>
