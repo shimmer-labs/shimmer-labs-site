@@ -10,7 +10,7 @@
 
       <!-- Calendly inline widget -->
       <div class="calendly-inline-widget"
-           data-url="https://calendly.com/logan-shimmerlabs/30min"
+           data-url="https://calendly.com/logan-shimmerlabs/30min?background_color=ffffff&text_color=0a1a2f&primary_color=fdbe34"
            style="min-width:320px;height:700px;">
       </div>
       <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
