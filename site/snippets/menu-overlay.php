@@ -10,17 +10,27 @@
       <div class="menu-section">
         <h3>Services</h3>
         <ul class="menu-links">
-          <?php if ($homePage = page('home')): ?>
-            <?php foreach ($homePage->packages()->toStructure() as $package): ?>
-              <li>
-                <a href="<?= $package->link() ?>">
-                  <span class="menu-link-icon"><?= $package->icon() ?></span>
-                  <span class="menu-link-title"><?= $package->title() ?></span>
-                  <span class="menu-link-price"><?= $package->price() ?></span>
-                </a>
-              </li>
-            <?php endforeach ?>
-          <?php endif ?>
+          <li>
+            <a href="/services/api-integrations">
+              <span class="menu-link-icon">🔌</span>
+              <span class="menu-link-title">API Integrations</span>
+              <span class="menu-link-price">$3.5k - $12k</span>
+            </a>
+          </li>
+          <li>
+            <a href="/services/idea-to-web-app">
+              <span class="menu-link-icon">⚡</span>
+              <span class="menu-link-title">Idea → Web App</span>
+              <span class="menu-link-price">$25k - $85k</span>
+            </a>
+          </li>
+          <li>
+            <a href="/services/ios-apps">
+              <span class="menu-link-icon">📱</span>
+              <span class="menu-link-title">iOS Apps</span>
+              <span class="menu-link-price">$35k - $75k</span>
+            </a>
+          </li>
         </ul>
       </div>
 
