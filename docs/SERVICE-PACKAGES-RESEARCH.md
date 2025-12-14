@@ -14,16 +14,11 @@
    - **Timeline:** 0→1 in 6 weeks, soft launched Oct 2025
    - **Status:** Live, processing payments
 
-2. **ai-email-designer**
-   - **Stack:** Next.js 16, Supabase, Radix UI, Tailwind
-   - **Source:** Built from Figma/Subframe designs
-   - **Partner:** Brian (Product/Design)
-   - **Status:** Active development
-
-3. **Ottomate**
+2. **FlowMint** (flowmint.me)
    - **Type:** Shopify App
-   - **Stack:** React Router, Prisma, Stripe, Node.js
-   - **Status:** Built but not launched
+   - **Stack:** React Router v7, SQLite, Prisma, Anthropic Claude, Shopify Admin API, Klaviyo API, Fly.io
+   - **Features:** AI brand analysis, email flow generation, Klaviyo integration
+   - **Status:** Live on Shopify App Store
 
 ### Wireframe to Production
 1. **TreeBidPro**
@@ -33,11 +28,10 @@
    - **Features:** Stripe payments integrated, Google Gemini AI
 
 ### iOS Applications
-1. **EventSnag**
-   - **Stack:** Swift, iOS native
-   - **Features:** Screenshot to calendar via AI, image parsing
-   - **Status:** Pre-launch (App Store approval pending)
-   - **Waitlist:** Live on shimmerlabs.co/projects/eventsnag
+1. **EventSnag** (eventsnag.app)
+   - **Stack:** Swift, SwiftUI, OpenAI Vision API, Google Calendar API
+   - **Features:** Screenshot to calendar via AI, image parsing, weekly roundups
+   - **Status:** Live on App Store
 
 ### API Integrations (4 Total!)
 1. **n8n-nodes-taddy-podcast**
