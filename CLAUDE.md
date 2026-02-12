@@ -404,5 +404,36 @@ Example:
 
 ---
 
+## Session Notes (February 12, 2026)
+
+### Lead Gen / Distribution Strategy Session
+
+**Context:** Logan is shifting away from automation consulting (Zapier/Make/n8n) and toward building custom software for small/niche businesses. Think TreeBidPro, FlowMint (Shopify app), Velvet Fudge (local record store). He's also about to live stream vibe coding the Android version of EventSnag on TikTok.
+
+**What we did:**
+1. Researched freelance/marketplace platforms for Shimmer Labs services
+2. Ranked platforms specifically for "I build custom apps for small businesses" positioning
+3. Decided to set up **Google Business Profile** first (free, low competition in Stillwater)
+4. Also high on the list: **Shopify Partners** (free, 20% recurring referral commission + $500 bonus per referral through Feb 2026, great fit since FlowMint is a Shopify app and Velvet Fudge could be a Shopify lead)
+
+**Where we left off:**
+- Updated Playwright MCP config to `--headed` mode (added `--headed` flag in `~/.claude.json`)
+- Navigated to Google Business Profile signup (`business.google.com/create`) but hit the Google sign-in wall
+- Logan needs to restart Claude Code so Playwright launches in headed mode (visible browser window) so he can type his Google password
+- **Next step:** Navigate to `business.google.com/create`, Logan signs in, then we walk through the GBP setup together
+
+**Platform rankings (for Logan's new positioning):**
+1. Google Business Profile (free, dominate local search in Stillwater)
+2. Shopify Partners (free, referral income, FlowMint angle)
+3. TikTok live vibe coding streams (free, builds trust, direct inbound)
+4. Alignable (free, where local small biz owners network)
+5. Contra (0% commission, great portfolio tools)
+6. Storetasker (Shopify-specific, apply once FlowMint is in App Store)
+7. Chamber of Commerce (~$300/yr, face-to-face local networking)
+
+**Key insight:** Velvet Fudge (local record store) is a perfect Shopify Partners lead — help them get on Shopify, earn 20% recurring + $500 bonus, AND become their go-to dev. Triple dip.
+
+---
+
 **End of Guide**
 *Remember: Logan's tone is informal and slightly silly. Avoid AI corporate speak. Keep it real.*
