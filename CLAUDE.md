@@ -416,12 +416,6 @@ Example:
 3. Decided to set up **Google Business Profile** first (free, low competition in Stillwater)
 4. Also high on the list: **Shopify Partners** (free, 20% recurring referral commission + $500 bonus per referral through Feb 2026, great fit since FlowMint is a Shopify app and Velvet Fudge could be a Shopify lead)
 
-**Where we left off:**
-- Updated Playwright MCP config to `--headed` mode (added `--headed` flag in `~/.claude.json`)
-- Navigated to Google Business Profile signup (`business.google.com/create`) but hit the Google sign-in wall
-- Logan needs to restart Claude Code so Playwright launches in headed mode (visible browser window) so he can type his Google password
-- **Next step:** Navigate to `business.google.com/create`, Logan signs in, then we walk through the GBP setup together
-
 **Platform rankings (for Logan's new positioning):**
 1. Google Business Profile (free, dominate local search in Stillwater)
 2. Shopify Partners (free, referral income, FlowMint angle)
@@ -432,6 +426,39 @@ Example:
 7. Chamber of Commerce (~$300/yr, face-to-face local networking)
 
 **Key insight:** Velvet Fudge (local record store) is a perfect Shopify Partners lead — help them get on Shopify, earn 20% recurring + $500 bonus, AND become their go-to dev. Triple dip.
+
+### Session 2: GBP Setup + Google Ads + Full Site Repositioning (Feb 12, 2026)
+
+**What we did:**
+1. **Google Business Profile** — set up with "Consultant" category, business description, photos uploaded
+2. **Google Ads Smart Campaign** — rewrote all headlines and descriptions for custom software positioning (replaced generic auto-generated copy)
+3. **SSH key for GitHub** — generated ed25519 key, added to GitHub, switched remote from HTTPS to SSH. No more token expiry.
+4. **Full site repositioning** — updated 12 files across the entire site to pivot from "automation consulting" to "custom software for small businesses":
+   - Homepage: hero, value prop, founder bio, 4 service cards (Mobile Apps, Web Apps, Shopify, API Integrations), packages, final CTA
+   - SEO: meta titles, default meta description, schema.org structured data
+   - Contact page: new intro + intake question
+   - Footer: "Let's build something." tagline
+   - Project pages: added origin stories to Paidly (invoicing pain), EventSnag (event discovery in Stillwater), FlowMint (Shopify merchants struggling with email). Demoted Taddy API from featured. Cleaned up OffTheAppsOK summary.
+5. **Created ROADMAP.md** — full site update roadmap with priorities
+6. **Committed and pushed** everything to main (auto-deploys to Digital Ocean)
+
+**Key positioning notes for future sessions:**
+- Logan's background: mechanical engineering → software development → founded Shimmer Labs
+- Founder name is **Logan Shimmer** (not Herr)
+- He builds: mobile apps, web apps, Shopify apps/stores/marketing, API integrations
+- He's a **Shopify Partner** — can set up stores, build custom apps, automate marketing, and fix what merchants wish Shopify could do
+- Pain point angle is key: every project has a real origin story (Paidly = invoicing sucked, EventSnag = missed events, TreeBidPro = contractor couldn't distribute her app)
+- Tone: informal, slightly silly, no corporate speak, no buzzwords
+
+**Where we left off / Next steps:**
+- [ ] **Playwright visual review** — restart Claude Code so Playwright MCP loads, then screenshot the live site (desktop + mobile) and check against design rubric. See plan file at `~/.claude/plans/robust-wobbling-hedgehog.md` for full rubric.
+- [ ] **Google Voice number** — set up a business number so personal phone isn't on the GBP/ads
+- [ ] **Shopify Partners signup** — free, 20% recurring referral commission
+- [ ] **About page** — currently empty, needs Logan's story
+- [ ] **Hero laptop image** — still shows n8n.jpg, should be replaced with something that reflects custom software (app screenshot, code editor, etc.)
+- [ ] **Service detail pages** (`/content/services/*`) — API Integrations page still has heavy automation language
+- [ ] **TikTok live stream prep** — vibe coding EventSnag Android version
+- See `ROADMAP.md` for the full prioritized list
 
 ---
 
