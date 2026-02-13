@@ -41,7 +41,7 @@
           <?php
           if ($projectsPage = page('projects')) {
             // Featured projects in specific order
-            $featuredSlugs = ['eventsnag', 'paidly', 'n8n_taddy_api_nodes'];
+            $featuredSlugs = ['eventsnag', 'paidly', 'treebidpro'];
 
             foreach ($featuredSlugs as $slug) {
               if ($project = $projectsPage->find($slug)) {
