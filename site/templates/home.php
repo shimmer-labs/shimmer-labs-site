@@ -9,7 +9,7 @@
           <p class="hero__subheading"><?= $page->heroSubheading() ?></p>
         <?php endif ?>
         
-        <h1 class="hero__title"><?= $page->heroTitle()->or('Automate Your Business, Reclaim Your Time') ?></h1>
+        <h1 class="hero__title"><?= $page->heroTitle()->or('We Build the Software Your Business Actually Needs') ?></h1>
         
         <?php if ($page->heroDescription()->isNotEmpty()): ?>
           <p class="hero__description"><?= $page->heroDescription() ?></p>
@@ -25,12 +25,12 @@
       <div class="hero__visual">
         <div class="laptop-mockup">
           <?php if ($page->heroLaptopImage()->toFile()): ?>
-            <img src="<?= url('assets/images/n8n.jpg') ?>" alt="n8n workflow automation" class="laptop-screen">
+            <img src="<?= url('assets/images/n8n.jpg') ?>" alt="Custom app development" class="laptop-screen">
           <?php endif ?>
         </div>
         <?php if ($page->heroCircleImage()->toFile()): ?>
           <div class="hero__circle-image">
-            <img src="<?= url('assets/images/hero.jpg') ?>" alt="Automation in action">
+            <img src="<?= url('assets/images/hero.jpg') ?>" alt="Shimmer Labs projects">
           </div>
         <?php endif ?>
       </div>
@@ -98,7 +98,7 @@
 <section class="cta-final">
   <div class="container">
     <div class="cta-final__content">
-      <h2><?= $page->finalCtaTitle()->or("Let's Automate Your Business") ?></h2>
+      <h2><?= $page->finalCtaTitle()->or("Got a Problem? Let's Build the Fix.") ?></h2>
       <?php if ($page->finalCtaDescription()->isNotEmpty()): ?>
         <p><?= $page->finalCtaDescription() ?></p>
       <?php endif ?>

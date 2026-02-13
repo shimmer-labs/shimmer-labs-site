@@ -1,7 +1,7 @@
 Title: Contact
 ----
-Intro: Ready to reclaim your time? Let's talk through what's possible — no pressure, no jargon.
+Intro: Got a project in mind? Let's talk through what you need — no pressure, no jargon.
 ----
-Intake_question: What tool or workflow are you stuck on?
+Intake_question: What are you looking to build?
 ----
 Uuid: c8mcaaheouodjlg6

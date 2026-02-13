@@ -133,7 +133,7 @@ Your Klaviyo API key never leaves our encrypted database. We don't sell, share, 
 **AI**: Anthropic Claude (Sonnet 4) for brand analysis and email generation
 **Integrations**: Shopify Admin API, Klaviyo API, and more coming
 
-We built this the Shimmer Labs way: prototype fast, validate with real users, then polish. FlowMint started as a Python script, became an n8n workflow, and is now a production Shopify app.
+We built this the Shimmer Labs way: prototype fast, validate with real users, then polish until it ships.
 
 ## Pricing
 
@@ -157,15 +157,13 @@ FlowMint is live on the Shopify App Store. We're adding:
 3. **Campaign Calendar** - Seasonal campaigns with pre-built templates
 4. **Analytics Dashboard** - Track revenue attribution by flow
 
-## The Shimmer Labs Angle
+## Why We Built This
 
-FlowMint is what happens when you productize automation expertise.
+Shopify merchants kept telling us the same thing: "I know I need email marketing, but I can't afford an agency and I don't have time to learn Klaviyo." They'd spend hours trying to write one welcome series that sounded nothing like their brand.
 
-We've built email workflows for clients manually—analyzing brands, writing copy, setting up Klaviyo triggers. It works, but it doesn't scale. So we taught an AI to do what we do.
+We saw the same pattern across stores — the setup is always the same steps, just with different brand voices. So we built software that handles the boring part (analyzing your brand, picking the right flows, writing the copy) and lets merchants focus on running their business.
 
-Same philosophy as EventSnag: find the friction (writing emails is painful), build intelligent automation (AI that learns your voice), deliver consistent results (professional campaigns in minutes).
-
-**That's the Shimmer Labs way**: Take manual expertise. Package it as software. Scale it to everyone.
+**That's the Shimmer Labs way**: Find the problem everyone complains about. Build the fix. Ship it.
 
 ----
 Results: Shopify merchants generating professional email campaigns in under 3 minutes. FlowMint is live—visit flowmint.me to get started.

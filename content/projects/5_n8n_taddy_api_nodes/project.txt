@@ -6,7 +6,7 @@ Summary: Custom n8n nodes for the Taddy Podcast API, enabling no-code podcast da
 ----
 Tech_stack:  n8n, TypeScript, Node.js, GraphQL, Taddy Podcast API, npm
 ----
-Featured: true
+Featured: false
 ----
 Description:
 

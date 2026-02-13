@@ -136,13 +136,13 @@ Paidly is built for freelancers who just want to get paid without the busywork. 
 
 ## Why This Works (The Shimmer Labs Angle)
 
-We built Paidly the same way we build automation for business clients—find the friction, eliminate it.
+Logan built Paidly because he was sick of the invoicing dance. As a freelance consultant, every invoice meant digging up the contract, re-reading the payment terms, manually typing line items, and praying he remembered the right rate. It was eating hours every week.
 
 **The friction?** Invoicing is manual, repetitive, and boring. Every freelancer has a contract. Every contract has all the info needed for an invoice. Yet everyone manually re-types it.
 
-**The elimination?** Contract intelligence. Upload once, invoice forever. Milestones auto-populate. Payment terms auto-calculate. Reminders auto-send based on actual contract language.
+**The fix?** Contract intelligence. Upload once, invoice forever. Milestones auto-populate. Payment terms auto-calculate. Reminders auto-send based on actual contract language.
 
-And here's the kicker: **Contract intelligence is a moat.** Competitors focus on templates and payment processing. We focus on eliminating the entire invoice creation workflow. That's a 10x improvement, not a 10% one.
+And here's the kicker: **Contract intelligence is a moat.** Competitors focus on templates and payment processing. We focus on eliminating the entire invoice creation process. That's a 10x improvement, not a 10% one.
 
 ## Viral Growth Built In
 
@@ -200,7 +200,7 @@ Invoice smarter, get paid faster: paidly.co
 
 ## Technical Highlights
 
-- **95% AI parsing accuracy** (tested over 2+ months via n8n prototype)
+- **95% AI parsing accuracy** (tested over 2+ months with early users)
 - **43x cheaper AI costs** (Gemini vs Claude API)
 - **Sub-1-minute invoice creation** (from contract upload to ready-to-send)
 - **Milestone status tracking** (7 states: upcoming, in progress, completed, invoiced, paid, overdue, skipped)
@@ -210,16 +210,11 @@ Invoice smarter, get paid faster: paidly.co
 
 ## Why Shimmer Labs Built This
 
-Paidly is a **productized automation system**. It's the same philosophy we use for client work:
+Paidly exists because Logan got tired of his own invoicing process. As a consultant juggling multiple clients, he was spending hours every week looking up contract terms and building invoice PDFs by hand. The contract already had everything — rates, milestones, payment terms — but every invoicing tool made him re-type it all.
 
-1. Identify repetitive, high-friction task (manual invoice creation)
-2. Build intelligent automation (AI contract parsing + payment orchestration)
-3. Deliver consistent results (perfect invoices every time)
-4. Scale with network effects (Notion marketplace + referrals)
+So he built the tool he wished existed. We validated the idea with early users for 2+ months, proved that AI contract parsing hit 95% accuracy, then built the full SaaS platform.
 
-We prototype everything in n8n first. Paidly started as a Telegram bot workflow that ran for 2+ months with 95% accuracy. Once we proved contract intelligence worked, we built the full SaaS product.
-
-**That's the Shimmer Labs way**: Test cheap, build native, scale smart.
+**That's the Shimmer Labs way**: Solve your own problem first. Then ship it to everyone else who has it too.
 
 ## Business Model
 

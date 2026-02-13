@@ -6,19 +6,19 @@ Meta_description: Custom app development $18k-55k in 3-6 weeks. Next.js, Supabas
 
 ----
 
-Herosubheading: Small business automation experts
+Herosubheading: Custom software for small businesses
 
 ----
 
-Herotitle: Automate Your Business, Reclaim Your Time
+Herotitle: We Build the Software Your Business Actually Needs
 
 ----
 
-Herodescription: From tedious admin tasks to tangled tools, we design automation systems and custom integrations that bring clarity, efficiency, and peace of mind.
+Herodescription: Off-the-shelf tools don't fit. Agencies charge too much and take too long. We build mobile apps, web apps, and Shopify solutions for small businesses — fast, affordable, and built around your actual problem.
 
 ----
 
-Herocta: Let's Build Your Workflow
+Herocta: Tell Us What You Need
 
 ----
 
@@ -49,11 +49,11 @@ Clients:
 
 ----
 
-Valuetitle: Stop Leaving Money on the Table
+Valuetitle: Built Around Your Problem, Not Ours
 
 ----
 
-Valuedescription: Business automation isn't just about saving time, it's about unlocking revenue. Every manual process is a bottleneck. Every disconnected tool is an opportunity missed. We help you build systems that work while you sleep, so you can focus on growth, strategy, and finally taking that vacation.
+Valuedescription: We built Paidly because looking up contract terms and making invoice PDFs was eating our own time. We built EventSnag because event discovery in Stillwater was broken and nobody was showing up. TreeBidPro exists because a contractor had a pricing app she couldn't distribute. Every project starts with a real problem — and ends with software that actually solves it.
 
 ----
 
@@ -65,11 +65,11 @@ Foundername: Logan Shimmer
 
 ----
 
-Foundertitle: Founder & Automation Architect
+Foundertitle: Founder & Developer
 
 ----
 
-Founderbio: You'll work directly with Logan Shimmer, who has helped dozens of small businesses reclaim hundreds of hours through intelligent automation. With expertise in n8n, API integrations, and lifecycle marketing, Logan brings both technical depth and strategic thinking to every project.
+Founderbio: Mechanical engineer turned software developer. Logan started Shimmer Labs to build the tools small businesses can't find off the shelf. He's shipped iOS apps (EventSnag), SaaS platforms (Paidly), Shopify apps (FlowMint), and client projects like TreeBidPro — a web app built from wireframes in two weeks. You work directly with him. No account managers, no handoffs.
 
 ----
 
@@ -91,7 +91,7 @@ Packages:
   icon: 🔌
   price: '$3.5k - $12k'
   pricelabel: 'Starting at'
-  description: 'Custom n8n, Zapier, or Make integrations that connect your tools. Built 4 production podcast API integrations, published to npm and used by real companies.'
+  description: 'Custom integrations that connect your tools and systems. Built 4 production podcast API integrations. We wire up whatever you need — REST APIs, webhooks, third-party platforms.'
   highlights: |
     💡 Simple integration (2 apps): $3,500
     ⚡ Complex integration: $7,500
@@ -132,21 +132,21 @@ Servicestitle: Services We Offer
 
 Services:
 -
-  title: 'API Wrappers'
-  description: 'Your software doesn't play nice together? We build custom API wrappers that make your tools actually talk to each other. Clean code, proper documentation, no janky workarounds.'
-  icon: 🔌
+  title: 'Mobile Apps'
+  description: 'Native iOS and Android development. We built EventSnag from scratch — screenshot to calendar with AI. If your idea lives on a phone, we can build it.'
+  icon: 📱
 -
-  title: 'Business Automation'
-  description: 'Stop doing the same repetitive tasks every day. We automate your workflows end-to-end, from lead capture to invoice generation. You focus on growth, we handle the grunt work.'
+  title: 'Web Apps'
+  description: 'Full-stack web applications from idea to production. TreeBidPro went from wireframes to live in two weeks. Paidly from zero to payments in six.'
   icon: ⚡
 -
-  title: 'n8n Workflows'
-  description: 'Visual automation that actually makes sense. We design and deploy n8n workflows that connect your entire tech stack. No code required on your end, just results.'
-  icon: 🔗
+  title: 'Shopify'
+  description: 'Shopify Partner — we set up stores, build custom apps, and fix the things you wish Shopify could do. FlowMint automates email marketing for Shopify merchants.'
+  icon: 🛍️
 -
-  title: 'SaaS Integrations'
-  description: 'Your SaaS tools live in silos. We integrate them so data flows automatically between platforms. Shopify to your CRM. Your CRM to your email tool. All of it, synced.'
-  icon: 🔄
+  title: 'API Integrations'
+  description: 'Your software doesn't talk to each other? We build the connections. Clean APIs, proper docs, no janky workarounds.'
+  icon: 🔌
 
 ----
 
@@ -186,11 +186,11 @@ Projects:
 
 ----
 
-Finalctatitle: Ready to Automate Your Business?
+Finalctatitle: Got a Problem? Let's Build the Fix.
 
 ----
 
-Finalctadescription: Let's talk about your workflows, your pain points, and how we can help you reclaim your time.
+Finalctadescription: Tell us what's broken, what's missing, or what you wish existed. We'll tell you what it costs and how fast we can ship it.
 
 ----
 

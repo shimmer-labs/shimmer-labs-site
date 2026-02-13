@@ -5,7 +5,7 @@
         <a href="<?= $site->url() ?>" class="footer-logo">
           <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="Shimmer Labs">
         </a>
-        <p class="footer-tagline">Let's automate your business.</p>
+        <p class="footer-tagline">Let's build something.</p>
       </div>
 
       <div class="footer-links">

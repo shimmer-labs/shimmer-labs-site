@@ -6,9 +6,9 @@
   <?php
   // SEO-optimized title tags per page
   $seoTitle = match($page->intendedTemplate()) {
-    'home' => 'Shimmer Labs - Custom App Development & API Integrations | Next.js, n8n, iOS',
+    'home' => 'Shimmer Labs - Custom Software for Small Businesses | Web Apps, iOS, Shopify',
     'projects' => 'Portfolio - SaaS Apps, API Integrations & iOS Development | Shimmer Labs',
-    'contact' => 'Hire a Developer - Custom Web Apps & Automation | Shimmer Labs',
+    'contact' => 'Book a Call - Custom Apps & Software | Shimmer Labs',
     'services' => 'Services & Pricing - Web Apps, APIs, iOS Development | Shimmer Labs',
     'service' => $page->title() . ' | ' . $page->priceRange() . ' | Shimmer Labs',
     default => $page->title() . ' | Shimmer Labs'
@@ -30,7 +30,7 @@
       $page->intro()->or(
         $page->mission()->or(
           $page->heroDescription()->or(
-            'Automate your business, reclaim your time. Custom automation solutions for small businesses.'
+            'Custom software for small businesses. Web apps, mobile apps, and Shopify solutions — built fast. Based in Stillwater, OK.'
           )
         )
       )

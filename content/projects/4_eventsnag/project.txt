@@ -77,11 +77,11 @@ Don't want it in your calendar yet? Tap "Save for Later" and it lives in the app
 
 ## Why This Works (The Shimmer Labs Angle)
 
-We built EventSnag the same way we build automation for businesses—find the friction, eliminate it.
+Logan built EventSnag because he was new in Stillwater and kept missing events. He'd screenshot flyers from Instagram, follow a dozen local accounts, check Facebook groups — but never actually show up to anything. The info was there, scattered across apps, buried in his camera roll.
 
 **The friction?** Event discovery is broken. Facebook Events is a wasteland. Eventbrite is corporate conferences. Instagram has the info but zero infrastructure for "I want to go to this."
 
-**The elimination?** One tap from screenshot to calendar. No typing. No copy-paste. No forgetting.
+**The fix?** One tap from screenshot to calendar. No typing. No copy-paste. No forgetting.
 
 And here's the kicker: **Every calendar event becomes a mini-billboard for EventSnag.** Your friends see "Added via EventSnag" at the bottom of the event. They click the link. They download the app. They share their events. It grows.
 
@@ -96,7 +96,7 @@ And here's the kicker: **Every calendar event becomes a mini-billboard for Event
 **OpenAI Vision API**
 - Reads images like a human would
 - Optimized prompt extracts 16 key fields (down from 31, we cut the fluff)
-- ~95% parsing accuracy based on 2+ months of production testing via our n8n prototype
+- ~95% parsing accuracy based on 2+ months of production testing
 
 **Google Calendar API**
 - OAuth 2.0 persistent sign-in (no re-prompting every time)
@@ -148,16 +148,11 @@ Download: apps.apple.com/app/eventsnag
 
 ## Why Shimmer Labs Built This
 
-EventSnag is a **productized automation system**. It's the same philosophy we use for business clients:
+EventSnag started because Logan was tired of screenshotting events and never going. New in Stillwater, sifting through Instagram accounts, Facebook groups, and coffee shop flyers — but still missing everything. So he built a mobile app he could take with him to scan event flyers and turn them into calendar invites he could share with friends.
 
-1. Identify repetitive, high-friction task (screenshotting events but not attending)
-2. Build intelligent automation (AI + calendar sync)
-3. Deliver consistent results (weekly roundups, never miss events)
-4. Scale with viral loops (calendar branding, share extension, referrals)
+We validated the idea with early users for 2+ months, proved the AI parsing hit 95% accuracy, then built the native iOS app.
 
-We prototype everything in n8n first. EventSnag started as a Telegram bot → Google Sheets workflow that ran for 2+ months with 95% accuracy. Once we proved it worked, we built the iOS app.
-
-**That's the Shimmer Labs way**: Test cheap, build native, scale smart.
+**That's the Shimmer Labs way**: Solve a real problem you actually have. Build the tool. Ship it.
 
 ## Perfect For
 
@@ -168,7 +163,7 @@ We prototype everything in n8n first. EventSnag started as a Telegram bot → Go
 
 ## Technical Highlights
 
-- **95% AI parsing accuracy** (tested over 2+ months in production via n8n workflow)
+- **95% AI parsing accuracy** (tested over 2+ months with early users)
 - **48% token cost reduction** (optimized AI prompt from 31 fields → 16 fields)
 - **Persistent Google OAuth** (no re-authentication headaches)
 - **Year validation logic** (past dates auto-corrected to next occurrence)

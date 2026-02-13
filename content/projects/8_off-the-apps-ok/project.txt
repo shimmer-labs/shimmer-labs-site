@@ -2,7 +2,7 @@ Title: OffTheAppsOK
 ----
 Badge: Live
 ----
-Summary: Local event discovery and Instagram automation powered by n8n + AI.
+Summary: Local event discovery and community curation for Stillwater, OK. Weekly roundups of the best things happening in town.
 ----
 Tech_stack: Telegram, OpenAI OCR, Google Sheets, AI Agent (ChatGPT), n8n, Canva
 ----
@@ -14,19 +14,19 @@ Description:
 Stillwater needed a way to discover local events without relying on dating apps. People wanted authentic, in-person connections.
 
 ## The Solution
-Built an automated content pipeline that:
-- Scrapes event data from multiple sources
-- Uses OCR to extract text from flyers sent via Telegram
-- AI agent (ChatGPT) curates and categorizes events
-- Auto-generates Instagram posts with Canva templates
-- Posts 2x weekly without manual intervention
+Built a content system that curates and publishes local events:
+- Collects event data from multiple sources around Stillwater
+- OCR extracts text from event flyers
+- AI curates, categorizes, and writes engaging captions
+- Auto-generates branded Instagram posts
+- Publishes 2x weekly without manual intervention
 
 ## The Tech
-The entire system runs on n8n workflows connecting:
-1. Telegram bot receives event flyers
-2. OCR extracts details
-3. Google Sheets stores and deduplicates
-4. ChatGPT writes engaging captions
+A custom pipeline connecting event discovery to Instagram publishing:
+1. Event flyers come in via Telegram
+2. OCR extracts details from images
+3. Google Sheets stores and deduplicates events
+4. AI writes engaging captions matching the account's voice
 5. Canva API creates branded graphics
 6. Instagram API publishes automatically
 

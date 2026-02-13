@@ -14,7 +14,7 @@ $schema[] = [
   'name' => 'Shimmer Labs',
   'url' => $site->url(),
   'logo' => url('assets/images/shimmer-labs-logo.png'),
-  'description' => 'Business automation and custom integration solutions for small businesses. We help you automate workflows, build API wrappers, and create n8n automations.',
+  'description' => 'Custom software development for small businesses. Web apps, mobile apps, Shopify apps, and API integrations. Based in Stillwater, OK.',
   'email' => 'logan@shimmerlabs.co',
   'sameAs' => [
     'https://www.linkedin.com/in/loganshimmer/',
@@ -23,7 +23,7 @@ $schema[] = [
   'founder' => [
     '@type' => 'Person',
     'name' => 'Logan Shimmer',
-    'jobTitle' => 'Founder & Automation Architect'
+    'jobTitle' => 'Founder & Developer'
   ]
 ];
 
@@ -49,7 +49,7 @@ if ($page->intendedTemplate() == 'home') {
     '@id' => $site->url() . '#business',
     'name' => 'Shimmer Labs',
     'image' => url('assets/images/shimmer-labs-logo.png'),
-    'description' => 'Custom app development and automation consulting. Next.js, Supabase, Stripe, iOS development. API integrations, wireframe to production, full-stack SaaS.',
+    'description' => 'Custom software for small businesses. Mobile apps, web apps, Shopify development, and API integrations. Stillwater, OK.',
     'url' => $site->url(),
     'email' => 'logan@shimmerlabs.co',
     'address' => [
@@ -62,7 +62,7 @@ if ($page->intendedTemplate() == 'home') {
     'founder' => [
       '@type' => 'Person',
       'name' => 'Logan Shimmer',
-      'jobTitle' => 'Founder & Automation Architect'
+      'jobTitle' => 'Founder & Developer'
     ],
     'hasOfferCatalog' => [
       '@type' => 'OfferCatalog',
@@ -73,7 +73,7 @@ if ($page->intendedTemplate() == 'home') {
           'itemOffered' => [
             '@type' => 'Service',
             'name' => 'API Integrations',
-            'description' => 'Custom n8n, Zapier, or Make integrations',
+            'description' => 'Custom API integrations and backend development',
             'priceSpecification' => [
               '@type' => 'PriceSpecification',
               'price' => '3500-12000',
@@ -137,7 +137,7 @@ if ($page->intendedTemplate() == 'services' || $page->parent()?->intendedTemplat
       'url' => $site->url()
     ],
     'description' => $page->summary()->or($page->intro())->excerpt(200),
-    'serviceType' => 'Business Automation'
+    'serviceType' => 'Software Development'
   ];
 }
 

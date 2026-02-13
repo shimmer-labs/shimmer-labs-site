@@ -5,7 +5,7 @@
     <div class="contact-content">
       <div class="contact-header">
         <h1>Let's Build Something</h1>
-        <p>Book a quick call. We'll talk through your workflow headaches and see if automation can help.</p>
+        <p>Book a quick call. Tell us what you need built — we'll give you a straight answer on cost and timeline.</p>
       </div>
 
       <!-- Calendly inline widget -->
