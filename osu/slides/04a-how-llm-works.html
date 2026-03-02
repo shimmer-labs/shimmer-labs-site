@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Slide — How an LLM Works (Training)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #F8F9FA; color: #0A1A2F;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .side-accent {
+            position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(180deg, #FDBE34, #0A1A2F 30%, #0A1A2F 70%, #FDBE34);
+        }
+        .slide-number {
+            position: absolute; bottom: 40px; right: 60px;
+            font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: #6B7280;
+        }
+
+        .slide-content {
+            width: 100%; height: 100%; display: flex; flex-direction: column;
+            justify-content: center; padding: 56px 120px;
+        }
+        .section-tag {
+            font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase; color: #FDBE34;
+            background: #0A1A2F; display: inline-block; padding: 6px 16px;
+            border-radius: 4px; margin-bottom: 20px; align-self: flex-start;
+        }
+        .slide-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700;
+            color: #0A1A2F; margin-bottom: 12px;
+        }
+        .slide-title .gold { color: #FDBE34; }
+        .slide-subtitle {
+            font-family: 'Inter', sans-serif; font-size: 26px; font-weight: 400;
+            color: #374151; margin-bottom: 44px; font-style: italic;
+        }
+
+        /* Architecture diagram placeholder */
+        .arch-note {
+            background: #0A1A2F; border-radius: 16px; padding: 32px 40px;
+            margin-bottom: 40px; text-align: center;
+        }
+        .arch-note p {
+            font-family: 'Inter', sans-serif; font-size: 22px; color: rgba(255,255,255,0.6);
+        }
+
+        .training-flow {
+            display: flex; align-items: stretch; justify-content: center;
+            gap: 0;
+        }
+        .train-box {
+            flex: 1; border-radius: 16px; padding: 32px 28px;
+            display: flex; flex-direction: column; align-items: center;
+            text-align: center;
+        }
+        .train-icon { margin-bottom: 16px; }
+        .train-label {
+            font-family: 'Space Grotesk', sans-serif; font-size: 28px;
+            font-weight: 700; margin-bottom: 8px;
+        }
+        .train-desc {
+            font-family: 'Inter', sans-serif; font-size: 22px;
+            font-weight: 400; line-height: 1.4;
+        }
+
+        .box-books { background: #EBF4FF; border: 2px solid #4a90d9; }
+        .box-books .train-label { color: #1a5276; }
+        .box-books .train-desc { color: #2c5f7c; }
+
+        .box-code { background: #E8F8EF; border: 2px solid #28a745; }
+        .box-code .train-label { color: #1a6b2d; }
+        .box-code .train-desc { color: #2d5a3a; }
+
+        .box-web { background: #F3EAFF; border: 2px solid #9b59b6; }
+        .box-web .train-label { color: #6a2d8e; }
+        .box-web .train-desc { color: #5a3570; }
+
+        .box-chats { background: #FFF3E0; border: 2px solid #FF6600; }
+        .box-chats .train-label { color: #B54A00; }
+        .box-chats .train-desc { color: #7a4a2a; }
+
+        .flow-arrow {
+            display: flex; align-items: center; padding: 0 12px;
+            font-size: 36px; color: #0A1A2F;
+            font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+        }
+
+        .box-llm {
+            background: #0A1A2F; border: 2px solid #FDBE34;
+            min-width: 200px;
+        }
+        .box-llm .train-label { color: #FDBE34; }
+        .box-llm .train-desc { color: rgba(255,255,255,0.7); }
+
+        .bottom-note {
+            position: absolute; bottom: 60px; left: 120px; right: 120px;
+            text-align: center; font-family: 'Inter', sans-serif;
+            font-size: 24px; color: #6B7280;
+        }
+        .bottom-note strong { color: #0A1A2F; }
+    </style>
+</head>
+<body>
+    <div class="side-accent"></div>
+
+    <div class="slide-content">
+        <div class="section-tag">The Lay of the Land</div>
+        <div class="slide-title">OK, Deep Breaths — <span class="gold">How LLMs Work</span></div>
+        <div class="slide-subtitle">My oversimplified explanation. No PhD required.</div>
+
+        <div class="training-flow">
+            <div class="train-box box-books">
+                <div class="train-icon">
+                    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4a90d9" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <div class="train-label">Books & Text</div>
+                <div class="train-desc">Billions of pages of literature, articles, textbooks</div>
+            </div>
+
+            <div class="train-box box-code">
+                <div class="train-icon">
+                    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div class="train-label">Code</div>
+                <div class="train-desc">Code is language too — GitHub, Stack Overflow</div>
+            </div>
+
+            <div class="train-box box-web">
+                <div class="train-icon">
+                    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#9b59b6" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="train-label">The Web</div>
+                <div class="train-desc">Wikipedia, forums, Reddit, news articles</div>
+            </div>
+
+            <div class="train-box box-chats">
+                <div class="train-icon">
+                    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <div class="train-label">User Chats</div>
+                <div class="train-desc">Yes — your conversations can become training data</div>
+            </div>
+
+            <div class="flow-arrow">&rarr;</div>
+
+            <div class="train-box box-llm">
+                <div class="train-icon">
+                    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#FDBE34" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="4"/><circle cx="8" cy="9" r="1.5" fill="#FDBE34"/><circle cx="16" cy="9" r="1.5" fill="#FDBE34"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+                </div>
+                <div class="train-label">The LLM</div>
+                <div class="train-desc">A next-word prediction machine</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-note">That last one — <strong>user chats as training data</strong> — is why security matters. More on that shortly.</div>
+
+    <div class="slide-number">04</div>
+
+    <script>
+        function scaleSlide() {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            document.body.style.transform = `scale(${scale})`;
+            document.body.style.transformOrigin = 'top left';
+            document.body.style.marginLeft = `${(window.innerWidth - sw * scale) / 2}px`;
+            document.body.style.marginTop = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+        scaleSlide();
+        window.addEventListener('resize', scaleSlide);
+    </script>
+</body>
+</html>

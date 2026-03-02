@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Slide 02 — Agenda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #0A1A2F; color: #FFFFFF;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .gold-bar {
+            position: absolute; top: 0; left: 0; right: 0; height: 6px;
+            background: linear-gradient(90deg, #FDBE34, #FF6600, #FDBE34);
+        }
+        .slide-number {
+            position: absolute; bottom: 40px; right: 60px;
+            font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.4);
+        }
+
+        .slide-content {
+            width: 100%; height: 100%; display: flex; flex-direction: column;
+            justify-content: center; padding: 80px 140px;
+        }
+
+        .slide-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 52px; font-weight: 700;
+            color: #FFFFFF; margin-bottom: 56px;
+        }
+        .slide-title .gold { color: #FDBE34; }
+
+        .agenda {
+            display: flex; flex-direction: column; gap: 12px;
+        }
+
+        .agenda-item {
+            display: flex; align-items: center; gap: 24px;
+            padding: 22px 32px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: background 0.2s;
+        }
+
+        .agenda-num {
+            flex: 0 0 48px; height: 48px; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700;
+            background: rgba(253,190,52,0.15); color: #FDBE34;
+        }
+
+        .agenda-text {
+            flex: 1; display: flex; align-items: center; justify-content: space-between;
+        }
+
+        .agenda-label {
+            font-family: 'Space Grotesk', sans-serif; font-size: 30px;
+            font-weight: 600; color: #FFFFFF;
+        }
+
+        .agenda-desc {
+            font-family: 'Inter', sans-serif; font-size: 22px;
+            font-weight: 400; color: rgba(255,255,255,0.5);
+        }
+
+        .agenda-item.highlight {
+            background: rgba(253,190,52,0.1);
+            border: 1px solid rgba(253,190,52,0.3);
+        }
+        .agenda-item.highlight .agenda-num {
+            background: #FDBE34; color: #0A1A2F;
+        }
+
+        .bottom-note {
+            position: absolute; bottom: 72px; left: 140px;
+            font-family: 'Inter', sans-serif; font-size: 24px;
+            color: rgba(255,255,255,0.4);
+        }
+        .bottom-note strong { color: #FDBE34; }
+    </style>
+</head>
+<body>
+    <div class="gold-bar"></div>
+
+    <div class="slide-content">
+        <div class="slide-title">Today's <span class="gold">Agenda</span></div>
+
+        <div class="agenda">
+            <div class="agenda-item">
+                <div class="agenda-num">1</div>
+                <div class="agenda-text">
+                    <div class="agenda-label">The Lay of the Land</div>
+                    <div class="agenda-desc">What AI actually is, how LLMs work</div>
+                </div>
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-num">2</div>
+                <div class="agenda-text">
+                    <div class="agenda-label">The Real Risks</div>
+                    <div class="agenda-desc">Privacy, failures, higher ed pitfalls</div>
+                </div>
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-num">3</div>
+                <div class="agenda-text">
+                    <div class="agenda-label">Practical Security Tips</div>
+                    <div class="agenda-desc">Checklists, frameworks, deployment tiers</div>
+                </div>
+            </div>
+
+            <div class="agenda-item highlight">
+                <div class="agenda-num">4</div>
+                <div class="agenda-text">
+                    <div class="agenda-label">Live Prompt Engineering</div>
+                    <div class="agenda-desc">Hands-on demos with real examples</div>
+                </div>
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-num">5</div>
+                <div class="agenda-text">
+                    <div class="agenda-label">Q&A + Wrap-Up</div>
+                    <div class="agenda-desc">Resources and next steps</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-note"><strong>~35 minutes</strong> — questions welcome throughout</div>
+
+    <div class="slide-number">02</div>
+
+    <script>
+        function scaleSlide() {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            document.body.style.transform = `scale(${scale})`;
+            document.body.style.transformOrigin = 'top left';
+            document.body.style.marginLeft = `${(window.innerWidth - sw * scale) / 2}px`;
+            document.body.style.marginTop = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+        scaleSlide();
+        window.addEventListener('resize', scaleSlide);
+    </script>
+</body>
+</html>

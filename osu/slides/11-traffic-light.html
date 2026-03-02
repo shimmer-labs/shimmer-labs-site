@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Slide 3.3 — The Traffic Light</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #F8F9FA; color: #0A1A2F;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .side-accent {
+            position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(180deg, #FDBE34, #0A1A2F 30%, #0A1A2F 70%, #FDBE34);
+        }
+        .slide-number {
+            position: absolute; bottom: 40px; right: 60px;
+            font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: #6B7280;
+        }
+
+        .top-section {
+            padding: 64px 120px 0 120px;
+        }
+        .section-tag {
+            font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase; color: #FDBE34;
+            background: #0A1A2F; display: inline-block; padding: 6px 16px;
+            border-radius: 4px; margin-bottom: 24px;
+        }
+        .slide-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700;
+            color: #0A1A2F; margin-bottom: 40px;
+        }
+        .slide-title .gold { color: #FDBE34; }
+
+        .columns {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 32px; padding: 0 120px;
+        }
+        .col {
+            border-radius: 16px; padding: 36px 32px;
+        }
+        .col-header {
+            display: flex; align-items: center; gap: 16px;
+            margin-bottom: 24px; padding-bottom: 16px;
+        }
+        .col-light {
+            width: 52px; height: 52px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .col-label {
+            font-family: 'Space Grotesk', sans-serif; font-size: 32px;
+            font-weight: 700;
+        }
+        .col-items {
+            list-style: none; display: flex; flex-direction: column; gap: 14px;
+        }
+        .col-items li {
+            font-family: 'Inter', sans-serif; font-size: 24px;
+            font-weight: 400; padding-left: 24px; position: relative;
+            line-height: 1.4;
+        }
+        .col-items li::before {
+            content: ''; position: absolute; left: 0; top: 8px;
+            width: 8px; height: 8px; border-radius: 50%;
+        }
+
+        /* Green */
+        .col-green {
+            background: #E8F8EF; border: 2px solid #28a745;
+        }
+        .col-green .col-light { background: #28a745; }
+        .col-green .col-label { color: #1a6b2d; }
+        .col-green .col-header { border-bottom: 2px solid rgba(40,167,69,0.3); }
+        .col-green .col-items li { color: #2d5a3a; }
+        .col-green .col-items li::before { background: #28a745; }
+
+        /* Yellow */
+        .col-yellow {
+            background: #FFF9E6; border: 2px solid #D4A017;
+        }
+        .col-yellow .col-light { background: #D4A017; }
+        .col-yellow .col-label { color: #8B6914; }
+        .col-yellow .col-header { border-bottom: 2px solid rgba(212,160,23,0.3); }
+        .col-yellow .col-items li { color: #5a4a1a; }
+        .col-yellow .col-items li::before { background: #D4A017; }
+
+        /* Red */
+        .col-red {
+            background: #FDEAEA; border: 2px solid #DC3545;
+        }
+        .col-red .col-light { background: #DC3545; }
+        .col-red .col-label { color: #B92D3A; }
+        .col-red .col-header { border-bottom: 2px solid rgba(220,53,69,0.3); }
+        .col-red .col-items li { color: #5a2020; }
+        .col-red .col-items li::before { background: #DC3545; }
+
+        .col-light svg { width: 24px; height: 24px; }
+    </style>
+</head>
+<body>
+    <div class="side-accent"></div>
+
+    <div class="top-section">
+        <div class="section-tag">Practical Security</div>
+        <div class="slide-title">The <span class="gold">Traffic Light</span> Framework</div>
+    </div>
+
+    <div class="columns">
+        <div class="col col-green">
+            <div class="col-header">
+                <div class="col-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="col-label">Go For It</div>
+            </div>
+            <ul class="col-items">
+                <li>Drafting emails or announcements</li>
+                <li>Brainstorming lesson plan ideas</li>
+                <li>Summarizing public information</li>
+                <li>Generating quiz question ideas</li>
+            </ul>
+        </div>
+
+        <div class="col col-yellow">
+            <div class="col-header">
+                <div class="col-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <div class="col-label">Proceed with Caution</div>
+            </div>
+            <ul class="col-items">
+                <li>Anonymized student feedback</li>
+                <li>Aggregate (non-PII) data</li>
+                <li>AI writing on non-confidential docs</li>
+                <li>Creating rubrics or assignments</li>
+            </ul>
+        </div>
+
+        <div class="col col-red">
+            <div class="col-header">
+                <div class="col-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </div>
+                <div class="col-label">Don't Do This</div>
+            </div>
+            <ul class="col-items">
+                <li>Student names + grades in ChatGPT</li>
+                <li>AI making final grading decisions</li>
+                <li>Uploading FERPA-protected records</li>
+                <li>SSNs, financial aid, medical records</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slide-number">11</div>
+
+    <script>
+        function scaleSlide() {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            document.body.style.transform = `scale(${scale})`;
+            document.body.style.transformOrigin = 'top left';
+            document.body.style.marginLeft = `${(window.innerWidth - sw * scale) / 2}px`;
+            document.body.style.marginTop = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+        scaleSlide();
+        window.addEventListener('resize', scaleSlide);
+    </script>
+</body>
+</html>

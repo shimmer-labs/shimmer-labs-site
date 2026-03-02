@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Slide 4.1 — Questions So Far?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #0A1A2F; color: #FFFFFF;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .gold-bar {
+            position: absolute; top: 0; left: 0; right: 0; height: 6px;
+            background: linear-gradient(90deg, #FDBE34, #FF6600, #FDBE34);
+        }
+        .slide-number {
+            position: absolute; bottom: 40px; right: 60px;
+            font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.4);
+        }
+
+        .slide-content {
+            width: 100%; height: 100%; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; text-align: center;
+            padding: 80px 200px;
+        }
+        .section-tag {
+            font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase; color: #FDBE34;
+            margin-bottom: 32px;
+        }
+        .main-question {
+            font-family: 'Space Grotesk', sans-serif; font-size: 72px; font-weight: 700;
+            color: #FFFFFF; margin-bottom: 48px;
+        }
+        .main-question .gold { color: #FDBE34; }
+
+        .divider {
+            width: 120px; height: 4px; background: #FDBE34;
+            border-radius: 2px; margin-bottom: 48px;
+        }
+
+        .joke {
+            font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 400;
+            color: rgba(255,255,255,0.7); max-width: 900px; line-height: 1.5;
+            font-style: italic;
+        }
+        .joke strong {
+            font-style: normal; color: #FDBE34; font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="gold-bar"></div>
+
+    <div class="slide-content">
+        <div class="section-tag">Pulse Check</div>
+        <div class="main-question">Questions <span class="gold">So Far?</span></div>
+        <div class="divider"></div>
+        <div class="joke">
+            "AI is like a <strong>very confident intern</strong>.<br>
+            Fast, eager, and occasionally makes up<br>
+            entire legal precedents."
+        </div>
+    </div>
+
+    <div class="slide-number">12</div>
+
+    <script>
+        function scaleSlide() {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            document.body.style.transform = `scale(${scale})`;
+            document.body.style.transformOrigin = 'top left';
+            document.body.style.marginLeft = `${(window.innerWidth - sw * scale) / 2}px`;
+            document.body.style.marginTop = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+        scaleSlide();
+        window.addEventListener('resize', scaleSlide);
+    </script>
+</body>
+</html>

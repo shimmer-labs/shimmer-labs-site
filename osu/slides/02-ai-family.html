@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Slide 1.1 — AI Is a Big Family</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #F8F9FA; color: #0A1A2F;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .side-accent {
+            position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(180deg, #FDBE34, #0A1A2F 30%, #0A1A2F 70%, #FDBE34);
+        }
+        .slide-number {
+            position: absolute; bottom: 40px; right: 60px;
+            font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: #6B7280;
+        }
+
+        .top-section {
+            padding: 56px 120px 0 120px;
+        }
+        .section-tag {
+            font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase; color: #FDBE34;
+            background: #0A1A2F; display: inline-block; padding: 6px 16px;
+            border-radius: 4px; margin-bottom: 20px;
+        }
+        .slide-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700;
+            color: #0A1A2F; margin-bottom: 36px;
+        }
+        .slide-title .gold { color: #FDBE34; }
+
+        .family-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr);
+            gap: 20px; padding: 0 120px; margin-bottom: 32px;
+        }
+        .member {
+            background: #FFFFFF; border-radius: 14px; padding: 24px 20px;
+            border: 1px solid #E5E7EB; box-shadow: 0 2px 6px rgba(10,26,47,0.04);
+            text-align: center;
+        }
+        .member-icon {
+            width: 52px; height: 52px; border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 12px auto;
+        }
+        .member-name {
+            font-family: 'Space Grotesk', sans-serif; font-size: 24px;
+            font-weight: 700; color: #0A1A2F; margin-bottom: 4px;
+        }
+        .member-example {
+            font-family: 'Inter', sans-serif; font-size: 20px;
+            font-weight: 400; color: #374151; line-height: 1.3;
+        }
+
+        .icon-blue { background: #EBF4FF; }
+        .icon-green { background: #E8F8EF; }
+        .icon-purple { background: #F3EAFF; }
+        .icon-orange { background: #FFF3E0; }
+        .icon-teal { background: #E0F7FA; }
+        .icon-navy { background: #E8EDF4; }
+        .icon-red { background: #FDEAEA; }
+        .icon-gold { background: #FFF8E1; }
+
+        /* Highlight the LLM card */
+        .member.highlight {
+            background: #0A1A2F; border: 2px solid #FDBE34;
+        }
+        .member.highlight .member-name { color: #FDBE34; }
+        .member.highlight .member-example { color: rgba(255,255,255,0.8); }
+        .member.highlight .you-tag {
+            display: inline-block; font-family: 'Space Grotesk', sans-serif;
+            font-size: 13px; font-weight: 600; color: #0A1A2F; background: #FDBE34;
+            padding: 3px 10px; border-radius: 10px; margin-top: 8px;
+            letter-spacing: 0.5px; text-transform: uppercase;
+        }
+
+        .bottom-line {
+            position: absolute; bottom: 60px; left: 120px; right: 120px;
+            text-align: center; font-family: 'Inter', sans-serif;
+            font-size: 26px; color: #374151;
+        }
+        .bottom-line strong { color: #0A1A2F; }
+    </style>
+</head>
+<body>
+    <div class="side-accent"></div>
+
+    <div class="top-section">
+        <div class="section-tag">The Lay of the Land</div>
+        <div class="slide-title">AI Is a <span class="gold">Big Family</span></div>
+    </div>
+
+    <div class="family-grid">
+        <!-- Row 1 -->
+        <div class="member">
+            <div class="member-icon icon-blue">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4a90d9" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="member-name">Predictive Analytics</div>
+            <div class="member-example">Ad targeting, stock forecasts, weather models</div>
+        </div>
+
+        <div class="member">
+            <div class="member-icon icon-green">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div class="member-name">Image Recognition</div>
+            <div class="member-example">iPhone Photos, facial ID, medical scans</div>
+        </div>
+
+        <div class="member">
+            <div class="member-icon icon-purple">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9b59b6" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </div>
+            <div class="member-name">Voice & Speech</div>
+            <div class="member-example">Siri, Alexa, transcription, voice ID</div>
+        </div>
+
+        <div class="member">
+            <div class="member-icon icon-teal">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#17a2b8" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div class="member-name">OCR & Documents</div>
+            <div class="member-example">Scanning receipts, reading handwriting</div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="member">
+            <div class="member-icon icon-orange">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <div class="member-name">Disaggregation</div>
+            <div class="member-example">Sense.com home energy, signal separation</div>
+        </div>
+
+        <div class="member">
+            <div class="member-icon icon-red">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#DC3545" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="member-name">Anomaly Detection</div>
+            <div class="member-example">Fraud alerts, cybersecurity, quality control</div>
+        </div>
+
+        <div class="member">
+            <div class="member-icon icon-navy">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0A1A2F" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><path d="M11 18H8a2 2 0 0 1-2-2V9"/></svg>
+            </div>
+            <div class="member-name">Recommendation</div>
+            <div class="member-example">Netflix, Spotify, Amazon "you might like"</div>
+        </div>
+
+        <div class="member highlight">
+            <div class="member-icon icon-gold">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FDBE34" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="member-name">LLMs / Chatbots</div>
+            <div class="member-example">ChatGPT, Copilot, Claude, Gemini</div>
+            <div class="you-tag">Today's focus</div>
+        </div>
+    </div>
+
+    <div class="bottom-line">We're going to focus on <strong>LLMs</strong> — because that's what you and your students are using most.</div>
+
+    <div class="slide-number">02</div>
+
+    <script>
+        function scaleSlide() {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            document.body.style.transform = `scale(${scale})`;
+            document.body.style.transformOrigin = 'top left';
+            document.body.style.marginLeft = `${(window.innerWidth - sw * scale) / 2}px`;
+            document.body.style.marginTop = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+        scaleSlide();
+        window.addEventListener('resize', scaleSlide);
+    </script>
+</body>
+</html>

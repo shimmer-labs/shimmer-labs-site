@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Slide — Next Word Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #F8F9FA; color: #0A1A2F;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .side-accent {
+            position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(180deg, #FDBE34, #0A1A2F 30%, #0A1A2F 70%, #FDBE34);
+        }
+        .slide-number {
+            position: absolute; bottom: 40px; right: 60px;
+            font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: #6B7280;
+        }
+
+        .slide-content {
+            width: 100%; height: 100%; display: flex; flex-direction: column;
+            justify-content: center; padding: 56px 120px;
+        }
+        .section-tag {
+            font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase; color: #FDBE34;
+            background: #0A1A2F; display: inline-block; padding: 6px 16px;
+            border-radius: 4px; margin-bottom: 20px; align-self: flex-start;
+        }
+        .slide-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700;
+            color: #0A1A2F; margin-bottom: 44px;
+        }
+        .slide-title .gold { color: #FDBE34; }
+
+        /* Sentence area */
+        .sentence-area {
+            background: #FFFFFF; border-radius: 16px; padding: 36px 48px;
+            border: 2px solid #E5E7EB; margin-bottom: 40px;
+            text-align: center;
+        }
+        .sentence {
+            font-family: 'Inter', sans-serif; font-size: 34px; font-weight: 400;
+            color: #0A1A2F; line-height: 1.6;
+        }
+        .sentence .fade {
+            color: #9CA3AF;
+        }
+        .sentence .blank {
+            display: inline-block; min-width: 200px; border-bottom: 4px solid #FDBE34;
+            font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+            color: #FDBE34; font-size: 40px; padding-bottom: 4px;
+            margin: 0 4px;
+        }
+
+        /* Bell curve area */
+        .curve-area {
+            display: flex; align-items: flex-end; justify-content: center;
+            gap: 0; position: relative; height: 320px; padding: 0 80px;
+        }
+
+        /* SVG bell curve */
+        .bell-svg {
+            width: 100%; height: 300px;
+        }
+
+        /* Word labels */
+        .word-labels {
+            display: flex; justify-content: center; gap: 0;
+            padding: 0 80px; margin-top: 8px;
+        }
+        .word-slot {
+            flex: 1; text-align: center; position: relative;
+        }
+        .word-name {
+            font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+            padding: 8px 0;
+        }
+        .word-pct {
+            font-family: 'Inter', sans-serif; font-size: 18px;
+            font-weight: 400; color: #6B7280;
+        }
+        .word-walrus { font-size: 22px; color: #9CA3AF; }
+        .word-hippo { font-size: 26px; color: #6B7280; }
+        .word-elephant { font-size: 36px; color: #FDBE34; }
+        .word-rhino { font-size: 26px; color: #6B7280; }
+        .word-giraffe { font-size: 22px; color: #9CA3AF; }
+
+        .bottom-insight {
+            position: absolute; bottom: 56px; left: 120px; right: 120px;
+            background: #0A1A2F; border-radius: 12px; padding: 24px 40px;
+            text-align: center;
+        }
+        .bottom-insight p {
+            font-family: 'Inter', sans-serif; font-size: 28px;
+            font-weight: 400; color: #FFFFFF;
+        }
+        .bottom-insight strong { color: #FDBE34; }
+    </style>
+</head>
+<body>
+    <div class="side-accent"></div>
+
+    <div class="slide-content">
+        <div class="section-tag">The Lay of the Land</div>
+        <div class="slide-title">It's Predicting the <span class="gold">Most Likely Next Word</span></div>
+
+        <div class="sentence-area">
+            <div class="sentence">
+                "In the African Sahara, on safari, we saw the tusks first and then later the <span class="blank">???</span>"
+            </div>
+        </div>
+
+        <!-- Bell curve as SVG -->
+        <svg class="bell-svg" viewBox="0 0 1000 260" preserveAspectRatio="xMidYMid meet">
+            <!-- Grid line -->
+            <line x1="100" y1="240" x2="900" y2="240" stroke="#E5E7EB" stroke-width="2"/>
+            <!-- Bell curve — mathematically generated Gaussian (sigma=120) -->
+            <path d="M100,239 L110,239 L120,239 L130,238 L140,238 L150,237 L160,237 L170,236 L180,235 L190,234 L200,232 L210,230 L220,228 L230,226 L240,223 L250,219 L260,216 L270,211 L280,206 L290,201 L300,195 L310,189 L320,182 L330,174 L340,166 L350,158 L360,149 L370,140 L380,131 L390,122 L400,113 L410,104 L420,96 L430,88 L440,81 L450,75 L460,70 L470,66 L480,62 L490,61 L500,60 L510,61 L520,62 L530,66 L540,70 L550,75 L560,81 L570,88 L580,96 L590,104 L600,113 L610,122 L620,131 L630,140 L640,149 L650,158 L660,166 L670,174 L680,182 L690,189 L700,195 L710,201 L720,206 L730,211 L740,216 L750,219 L760,223 L770,226 L780,228 L790,230 L800,232 L810,234 L820,235 L830,236 L840,237 L850,237 L860,238 L870,238 L880,239 L890,239 L900,239" fill="none" stroke="#0A1A2F" stroke-width="4"/>
+            <!-- Fill -->
+            <path d="M100,239 L110,239 L120,239 L130,238 L140,238 L150,237 L160,237 L170,236 L180,235 L190,234 L200,232 L210,230 L220,228 L230,226 L240,223 L250,219 L260,216 L270,211 L280,206 L290,201 L300,195 L310,189 L320,182 L330,174 L340,166 L350,158 L360,149 L370,140 L380,131 L390,122 L400,113 L410,104 L420,96 L430,88 L440,81 L450,75 L460,70 L470,66 L480,62 L490,61 L500,60 L510,61 L520,62 L530,66 L540,70 L550,75 L560,81 L570,88 L580,96 L590,104 L600,113 L610,122 L620,131 L630,140 L640,149 L650,158 L660,166 L670,174 L680,182 L690,189 L700,195 L710,201 L720,206 L730,211 L740,216 L750,219 L760,223 L770,226 L780,228 L790,230 L800,232 L810,234 L820,235 L830,236 L840,237 L850,237 L860,238 L870,238 L880,239 L890,239 L900,239 L900,240 L100,240 Z" fill="url(#bellGradient)" opacity="0.15"/>
+            <!-- Peak line -->
+            <line x1="500" y1="18" x2="500" y2="240" stroke="#FDBE34" stroke-width="2" stroke-dasharray="8,6"/>
+            <!-- Gradient -->
+            <defs>
+                <linearGradient id="bellGradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FDBE34"/>
+                    <stop offset="100%" stop-color="#0A1A2F"/>
+                </linearGradient>
+            </defs>
+            <!-- Word labels along bottom -->
+            <text x="200" y="258" text-anchor="middle" font-family="Space Grotesk" font-size="22" fill="#9CA3AF" font-weight="500">Walrus</text>
+            <text x="350" y="258" text-anchor="middle" font-family="Space Grotesk" font-size="26" fill="#6B7280" font-weight="600">Hippo</text>
+            <text x="500" y="258" text-anchor="middle" font-family="Space Grotesk" font-size="34" fill="#FDBE34" font-weight="700">Elephant</text>
+            <text x="650" y="258" text-anchor="middle" font-family="Space Grotesk" font-size="26" fill="#6B7280" font-weight="600">Rhino</text>
+            <text x="800" y="258" text-anchor="middle" font-family="Space Grotesk" font-size="22" fill="#9CA3AF" font-weight="500">Giraffe</text>
+        </svg>
+    </div>
+
+    <div class="bottom-insight">
+        <p>LLMs give you the <strong>average answer</strong>, not the creative one. Great for common tasks. Less great for novelty.</p>
+    </div>
+
+    <div class="slide-number">05</div>
+
+    <script>
+        function scaleSlide() {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            document.body.style.transform = `scale(${scale})`;
+            document.body.style.transformOrigin = 'top left';
+            document.body.style.marginLeft = `${(window.innerWidth - sw * scale) / 2}px`;
+            document.body.style.marginTop = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+        scaleSlide();
+        window.addEventListener('resize', scaleSlide);
+    </script>
+</body>
+</html>

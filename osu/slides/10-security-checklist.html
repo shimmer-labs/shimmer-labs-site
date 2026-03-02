@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Slide 3.2 — Your Security Checklist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #F8F9FA; color: #0A1A2F;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .side-accent {
+            position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(180deg, #FDBE34, #0A1A2F 30%, #0A1A2F 70%, #FDBE34);
+        }
+        .slide-number {
+            position: absolute; bottom: 40px; right: 60px;
+            font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: #6B7280;
+        }
+
+        .slide-content {
+            width: 100%; height: 100%; display: flex; flex-direction: column;
+            justify-content: center; padding: 64px 120px;
+        }
+        .section-tag {
+            font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase; color: #FDBE34;
+            background: #0A1A2F; display: inline-block; padding: 6px 16px;
+            border-radius: 4px; margin-bottom: 24px; align-self: flex-start;
+        }
+        .slide-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700;
+            color: #0A1A2F; margin-bottom: 40px;
+        }
+        .slide-title .gold { color: #FDBE34; }
+
+        .checklist {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 20px 48px;
+        }
+        .check-item {
+            display: flex; align-items: flex-start; gap: 16px;
+            background: #FFFFFF; border-radius: 12px; padding: 20px 24px;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 1px 4px rgba(10,26,47,0.04);
+        }
+        .check-box {
+            flex: 0 0 36px; height: 36px; border-radius: 8px;
+            background: #28a745; display: flex; align-items: center; justify-content: center;
+            margin-top: 2px;
+        }
+        .check-box svg { width: 18px; height: 18px; }
+        .check-text { flex: 1; }
+        .check-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 26px;
+            font-weight: 600; color: #0A1A2F; margin-bottom: 2px;
+        }
+        .check-desc {
+            font-family: 'Inter', sans-serif; font-size: 22px;
+            font-weight: 400; color: #374151;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="side-accent"></div>
+
+    <div class="slide-content">
+        <div class="section-tag">Practical Security</div>
+        <div class="slide-title">Your <span class="gold">Security Checklist</span></div>
+
+        <div class="checklist">
+            <div class="check-item">
+                <div class="check-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="check-text">
+                    <div class="check-title">Anonymize First</div>
+                    <div class="check-desc">Remove names, IDs, SSNs before pasting</div>
+                </div>
+            </div>
+
+            <div class="check-item">
+                <div class="check-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="check-text">
+                    <div class="check-title">Use Institutional Tools</div>
+                    <div class="check-desc">School-provided AI > free ChatGPT</div>
+                </div>
+            </div>
+
+            <div class="check-item">
+                <div class="check-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="check-text">
+                    <div class="check-title">Check the Terms</div>
+                    <div class="check-desc">Does it use your data for training?</div>
+                </div>
+            </div>
+
+            <div class="check-item">
+                <div class="check-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="check-text">
+                    <div class="check-title">Never Paste Raw Grades</div>
+                    <div class="check-desc">Summarize or anonymize grade data</div>
+                </div>
+            </div>
+
+            <div class="check-item">
+                <div class="check-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="check-text">
+                    <div class="check-title">Review All Outputs</div>
+                    <div class="check-desc">AI makes stuff up — always verify</div>
+                </div>
+            </div>
+
+            <div class="check-item">
+                <div class="check-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="check-text">
+                    <div class="check-title">Be Transparent</div>
+                    <div class="check-desc">Students look up to you — set the example</div>
+                </div>
+            </div>
+
+            <div class="check-item">
+                <div class="check-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="check-text">
+                    <div class="check-title">Classify Before You Paste</div>
+                    <div class="check-desc">Is this data public, internal, or confidential?</div>
+                </div>
+            </div>
+            <div class="check-item">
+                <div class="check-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="check-text">
+                    <div class="check-title">Document Your Use</div>
+                    <div class="check-desc">Keep an audit trail for compliance reviews</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-number">10</div>
+
+    <script>
+        function scaleSlide() {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            document.body.style.transform = `scale(${scale})`;
+            document.body.style.transformOrigin = 'top left';
+            document.body.style.marginLeft = `${(window.innerWidth - sw * scale) / 2}px`;
+            document.body.style.marginTop = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+        scaleSlide();
+        window.addEventListener('resize', scaleSlide);
+    </script>
+</body>
+</html>

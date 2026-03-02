@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Slide — Context Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #F8F9FA; color: #0A1A2F;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .side-accent {
+            position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(180deg, #FDBE34, #0A1A2F 30%, #0A1A2F 70%, #FDBE34);
+        }
+        .slide-number {
+            position: absolute; bottom: 40px; right: 60px;
+            font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: #6B7280;
+        }
+
+        .top-section {
+            padding: 56px 120px 0 120px;
+        }
+        .section-tag {
+            font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase; color: #FDBE34;
+            background: #0A1A2F; display: inline-block; padding: 6px 16px;
+            border-radius: 4px; margin-bottom: 20px;
+        }
+        .slide-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 46px; font-weight: 700;
+            color: #0A1A2F; margin-bottom: 8px;
+        }
+        .slide-title .gold { color: #FDBE34; }
+        .slide-subtitle {
+            font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 400;
+            color: #374151; margin-bottom: 32px;
+        }
+
+        .main-content {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 32px; padding: 0 120px;
+        }
+
+        /* Left column — progression + tools */
+        .left-col { display: flex; flex-direction: column; gap: 24px; }
+
+        .progression {
+            display: flex; align-items: center; gap: 0;
+            background: #0A1A2F; border-radius: 12px; padding: 20px 28px;
+        }
+        .prog-step {
+            text-align: center; flex: 1;
+        }
+        .prog-label {
+            font-family: 'Space Grotesk', sans-serif; font-weight: 600;
+            color: rgba(255,255,255,0.5); font-size: 18px;
+        }
+        .prog-sub {
+            font-family: 'Inter', sans-serif; font-size: 14px;
+            color: rgba(255,255,255,0.3); margin-top: 4px;
+        }
+        .prog-step.active .prog-label { color: #FDBE34; font-size: 22px; }
+        .prog-step.active .prog-sub { color: rgba(255,255,255,0.6); }
+        .prog-step.future .prog-label { color: rgba(255,255,255,0.25); }
+        .prog-step.future .prog-sub { color: rgba(255,255,255,0.15); }
+        .prog-arrow {
+            color: rgba(255,255,255,0.2); font-size: 24px; padding: 0 12px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .tools-section { display: flex; flex-direction: column; gap: 16px; }
+        .tool-card {
+            display: flex; gap: 16px; align-items: flex-start;
+            background: #FFFFFF; border-radius: 12px; padding: 20px 24px;
+            border: 2px solid #E5E7EB;
+        }
+        .tool-icon {
+            flex: 0 0 44px; height: 44px; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .tool-icon.chatgpt { background: #10a37f; }
+        .tool-icon.claude { background: #D97706; }
+        .tool-body { flex: 1; }
+        .tool-name {
+            font-family: 'Space Grotesk', sans-serif; font-size: 22px;
+            font-weight: 700; color: #0A1A2F; margin-bottom: 4px;
+        }
+        .tool-desc {
+            font-family: 'Inter', sans-serif; font-size: 19px;
+            font-weight: 400; color: #374151; line-height: 1.4;
+        }
+
+        /* Right column — Logan's example */
+        .right-col { display: flex; flex-direction: column; gap: 0; }
+
+        .example-header {
+            background: #0A1A2F; border-radius: 12px 12px 0 0; padding: 16px 24px;
+            display: flex; align-items: center; gap: 12px;
+        }
+        .example-header-label {
+            font-family: 'Space Grotesk', sans-serif; font-size: 20px;
+            font-weight: 600; color: #FDBE34;
+        }
+        .example-body {
+            background: #FFFFFF; border: 2px solid #E5E7EB; border-top: none;
+            border-radius: 0 0 12px 12px; padding: 24px;
+        }
+        .upload-list { list-style: none; }
+        .upload-list li {
+            display: flex; align-items: center; gap: 12px;
+            font-family: 'Inter', sans-serif; font-size: 19px;
+            color: #374151; padding: 8px 0;
+            border-bottom: 1px solid #F3F4F6;
+        }
+        .upload-list li:last-child { border-bottom: none; }
+        .upload-list li svg { flex-shrink: 0; }
+
+        .result-box {
+            background: #E8F8EF; border: 2px solid #28a745;
+            border-radius: 12px; padding: 20px 24px; margin-top: 16px;
+        }
+        .result-box .label {
+            font-family: 'Space Grotesk', sans-serif; font-size: 18px;
+            font-weight: 600; color: #1a6b2d; margin-bottom: 6px;
+        }
+        .result-box .value {
+            font-family: 'Inter', sans-serif; font-size: 20px;
+            color: #2d5a3a; line-height: 1.4;
+        }
+
+        /* Bottom callout */
+        .your-turn {
+            position: absolute; bottom: 48px; left: 120px; right: 120px;
+            background: #FDBE34; border-radius: 12px; padding: 20px 32px;
+            display: flex; align-items: center; gap: 16px;
+        }
+        .your-turn-icon {
+            flex: 0 0 40px; height: 40px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .your-turn-text {
+            font-family: 'Space Grotesk', sans-serif; font-size: 24px;
+            font-weight: 700; color: #0A1A2F;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-accent"></div>
+
+    <div class="top-section">
+        <div class="section-tag">Prompt Engineering</div>
+        <div class="slide-title">Beyond Prompts: <span class="gold">Context Engineering</span></div>
+        <div class="slide-subtitle">Give AI the right background — not just the right question.</div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-col">
+            <div class="progression">
+                <div class="prog-step">
+                    <div class="prog-label">Prompt Engineering</div>
+                    <div class="prog-sub">Craft the question</div>
+                </div>
+                <div class="prog-arrow">&rarr;</div>
+                <div class="prog-step active">
+                    <div class="prog-label">Context Engineering</div>
+                    <div class="prog-sub">Shape the environment</div>
+                </div>
+                <div class="prog-arrow">&rarr;</div>
+                <div class="prog-step future">
+                    <div class="prog-label">Intent Engineering</div>
+                    <div class="prog-sub">AI agents — another day</div>
+                </div>
+            </div>
+
+            <div class="tools-section">
+                <div class="tool-card">
+                    <div class="tool-icon chatgpt">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div class="tool-body">
+                        <div class="tool-name">ChatGPT Projects</div>
+                        <div class="tool-desc">Shared memory, uploaded docs, custom instructions — all persist across chats.</div>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon claude">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <div class="tool-body">
+                        <div class="tool-name">Claude Projects</div>
+                        <div class="tool-desc">Upload docs + set project knowledge. AI remembers everything you give it.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <div class="example-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FDBE34" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <div class="example-header-label">Real Example: AI Job Hunt</div>
+            </div>
+            <div class="example-body">
+                <ul class="upload-list">
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        Resume
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        LinkedIn profile text
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        Past cover letters
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        Performance reviews
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        Anecdotes & achievements file
+                    </li>
+                </ul>
+
+                <div class="result-box">
+                    <div class="label">Result:</div>
+                    <div class="value">AI graded job eligibility 0-100% and wrote tailored cover letters in seconds.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="your-turn">
+        <div class="your-turn-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0A1A2F" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div class="your-turn-text">Your turn: What repetitive work could YOU build a project for?</div>
+    </div>
+
+    <div class="slide-number">24</div>
+
+    <script>
+        function scaleSlide() {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            document.body.style.transform = `scale(${scale})`;
+            document.body.style.transformOrigin = 'top left';
+            document.body.style.marginLeft = `${(window.innerWidth - sw * scale) / 2}px`;
+            document.body.style.marginTop = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+        scaleSlide();
+        window.addEventListener('resize', scaleSlide);
+    </script>
+</body>
+</html>

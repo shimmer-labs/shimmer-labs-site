@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Slide — Key Terms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #F8F9FA; color: #0A1A2F;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .side-accent {
+            position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(180deg, #FDBE34, #0A1A2F 30%, #0A1A2F 70%, #FDBE34);
+        }
+        .slide-number {
+            position: absolute; bottom: 40px; right: 60px;
+            font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: #6B7280;
+        }
+
+        .slide-content {
+            width: 100%; height: 100%; display: flex; flex-direction: column;
+            justify-content: center; padding: 56px 120px;
+        }
+        .section-tag {
+            font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase; color: #FDBE34;
+            background: #0A1A2F; display: inline-block; padding: 6px 16px;
+            border-radius: 4px; margin-bottom: 20px; align-self: flex-start;
+        }
+        .slide-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700;
+            color: #0A1A2F; margin-bottom: 36px;
+        }
+        .slide-title .gold { color: #FDBE34; }
+
+        .terms-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 20px 48px;
+        }
+        .term {
+            display: flex; gap: 16px; align-items: baseline;
+            background: #FFFFFF; border-radius: 12px; padding: 20px 24px;
+            border: 1px solid #E5E7EB;
+        }
+        .term-word {
+            flex: 0 0 auto;
+            font-family: 'Space Grotesk', sans-serif; font-size: 24px;
+            font-weight: 700; color: #0A1A2F; white-space: nowrap;
+        }
+        .term-dash {
+            font-family: 'Inter', sans-serif; font-size: 24px;
+            color: #FDBE34; font-weight: 700;
+        }
+        .term-def {
+            flex: 1;
+            font-family: 'Inter', sans-serif; font-size: 22px;
+            font-weight: 400; color: #374151; line-height: 1.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-accent"></div>
+
+    <div class="slide-content">
+        <div class="section-tag">The Lay of the Land</div>
+        <div class="slide-title">Quick <span class="gold">Vocab Check</span></div>
+
+        <div class="terms-grid">
+            <div class="term">
+                <div class="term-word">LLM</div>
+                <div class="term-dash">—</div>
+                <div class="term-def">Large Language Model. The tech behind ChatGPT, Copilot, Claude.</div>
+            </div>
+            <div class="term">
+                <div class="term-word">Generative AI</div>
+                <div class="term-dash">—</div>
+                <div class="term-def">AI that creates new content: text, images, code, video.</div>
+            </div>
+            <div class="term">
+                <div class="term-word">Hallucination</div>
+                <div class="term-dash">—</div>
+                <div class="term-def">When AI confidently makes things up. Not a bug — it's how they work.</div>
+            </div>
+            <div class="term">
+                <div class="term-word">Training Data</div>
+                <div class="term-dash">—</div>
+                <div class="term-def">The text an LLM studied to learn. Books, code, web pages, chats.</div>
+            </div>
+            <div class="term">
+                <div class="term-word">Prompt</div>
+                <div class="term-dash">—</div>
+                <div class="term-def">What you type into the AI. Better prompts = better results.</div>
+            </div>
+            <div class="term">
+                <div class="term-word">Prompt Injection</div>
+                <div class="term-dash">—</div>
+                <div class="term-def">Tricking AI into ignoring its safety rules. OWASP #1 LLM risk.</div>
+            </div>
+            <div class="term">
+                <div class="term-word">FERPA</div>
+                <div class="term-dash">—</div>
+                <div class="term-def">Federal law protecting student education records. You're bound by it.</div>
+            </div>
+            <div class="term">
+                <div class="term-word">On-Prem vs. Cloud</div>
+                <div class="term-dash">—</div>
+                <div class="term-def">Running AI on your own servers vs. someone else's. Security tradeoff.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-number">03</div>
+
+    <script>
+        function scaleSlide() {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            document.body.style.transform = `scale(${scale})`;
+            document.body.style.transformOrigin = 'top left';
+            document.body.style.marginLeft = `${(window.innerWidth - sw * scale) / 2}px`;
+            document.body.style.marginTop = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+        scaleSlide();
+        window.addEventListener('resize', scaleSlide);
+    </script>
+</body>
+</html>

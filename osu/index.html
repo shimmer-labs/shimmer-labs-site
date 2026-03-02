@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Security in Higher Education — Shimmer Labs</title>
+    <link rel="icon" href="/assets/favicon_io/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            width: 100%; height: 100%;
+            background: #000;
+            overflow: hidden;
+            cursor: none;
+        }
+        body.show-cursor { cursor: default; }
+
+        /* Slide container */
+        .slide-container {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+        }
+        .slide-container iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 1920px; height: 1080px;
+            border: none;
+            transform-origin: top left;
+        }
+
+        /* Slide counter — bottom right, subtle */
+        .slide-counter {
+            position: fixed;
+            bottom: 16px; right: 24px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 14px; font-weight: 500;
+            color: rgba(255,255,255,0.3);
+            z-index: 1000;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        body.show-ui .slide-counter { opacity: 1; }
+
+        /* Progress bar — bottom, thin */
+        .progress-bar {
+            position: fixed;
+            bottom: 0; left: 0; height: 3px;
+            background: #FDBE34;
+            z-index: 1000;
+            transition: width 0.3s ease;
+        }
+
+        /* Help overlay */
+        .help-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 26, 47, 0.95);
+            z-index: 2000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .help-overlay.visible { display: flex; }
+        .help-content {
+            font-family: 'Inter', sans-serif;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 500px;
+        }
+        .help-content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px; font-weight: 700;
+            color: #FDBE34;
+            margin-bottom: 32px;
+        }
+        .help-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .help-key {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 16px; font-weight: 600;
+            color: #FDBE34;
+            background: rgba(253,190,52,0.1);
+            padding: 4px 12px; border-radius: 6px;
+            border: 1px solid rgba(253,190,52,0.3);
+        }
+        .help-desc {
+            font-size: 16px; color: rgba(255,255,255,0.7);
+        }
+        .help-dismiss {
+            margin-top: 32px;
+            font-size: 14px; color: rgba(255,255,255,0.3);
+        }
+
+        /* Loading state */
+        .loading {
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px; color: rgba(255,255,255,0.3);
+            z-index: 500;
+        }
+    </style>
+</head>
+<body class="show-cursor">
+
+    <div class="slide-container" id="slideContainer"></div>
+    <div class="slide-counter" id="slideCounter"></div>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="loading" id="loading">Loading slides...</div>
+
+    <div class="help-overlay" id="helpOverlay">
+        <div class="help-content">
+            <h2>Presenter Controls</h2>
+            <div class="help-row">
+                <span class="help-key">→ / Space / Click</span>
+                <span class="help-desc">Next slide</span>
+            </div>
+            <div class="help-row">
+                <span class="help-key">← / Backspace</span>
+                <span class="help-desc">Previous slide</span>
+            </div>
+            <div class="help-row">
+                <span class="help-key">F</span>
+                <span class="help-desc">Toggle fullscreen</span>
+            </div>
+            <div class="help-row">
+                <span class="help-key">Home / 0</span>
+                <span class="help-desc">First slide</span>
+            </div>
+            <div class="help-row">
+                <span class="help-key">End</span>
+                <span class="help-desc">Last slide</span>
+            </div>
+            <div class="help-row">
+                <span class="help-key">G + number + Enter</span>
+                <span class="help-desc">Go to slide #</span>
+            </div>
+            <div class="help-row">
+                <span class="help-key">H / ?</span>
+                <span class="help-desc">Toggle this help</span>
+            </div>
+            <p class="help-dismiss">Press any key to dismiss</p>
+        </div>
+    </div>
+
+    <script>
+        // Slide manifest — ordered list of all slide files
+        const SLIDES = [
+            // Section 0: Intro
+            'slides/00-title.html',
+            'slides/01-who-am-i.html',
+            'slides/01b-agenda.html',
+            // Section 1: Lay of the Land
+            'slides/02-ai-family.html',
+            'slides/02b-key-terms.html',
+            'slides/03-already-using-it.html',
+            'slides/04-architecture-real.html',
+            'slides/04a-how-llm-works.html',
+            'slides/04b-next-word.html',
+            'slides/04-why-security-matters.html',
+            // Section 2: The Real Risks
+            'slides/04c-transition-security.html',
+            'slides/05-feels-private.html',
+            'slides/06-ai-failures.html',
+            'slides/07-higher-ed-risks.html',
+            'slides/08-prompt-injection.html',
+            'slides/08b-owasp-top10.html',
+            // Section 3: Practical Security
+            'slides/09-layered-defense.html',
+            'slides/09b-deployment-gradient.html',
+            'slides/10-security-checklist.html',
+            'slides/11-traffic-light.html',
+            // Section 4: Q&A
+            'slides/12-questions.html',
+            // Section 5: Prompt Engineering
+            'slides/15-bad-vs-good.html',
+            'slides/13d-three-levels.html',
+            'slides/13-building-blocks.html',
+            'slides/13b-save-prompts.html',
+            'slides/13c-context-engineering.html',
+            'slides/14-demo-scenarios.html',
+            // Section 6: Wrap-Up
+            'slides/16-takeaways.html',
+            'slides/17-contact.html',
+        ];
+
+        let currentSlide = 0;
+        let iframeCache = {};
+        let gotoBuffer = '';
+        let gotoMode = false;
+        let cursorTimeout;
+        let helpVisible = false;
+
+        const container = document.getElementById('slideContainer');
+        const counter = document.getElementById('slideCounter');
+        const progressBar = document.getElementById('progressBar');
+        const loading = document.getElementById('loading');
+        const helpOverlay = document.getElementById('helpOverlay');
+
+        function scaleIframe(iframe) {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            iframe.style.transform = `scale(${scale})`;
+            iframe.style.left = `${(window.innerWidth - sw * scale) / 2}px`;
+            iframe.style.top = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+
+        function createIframe(index) {
+            if (iframeCache[index]) return iframeCache[index];
+            const iframe = document.createElement('iframe');
+            iframe.src = SLIDES[index];
+            iframe.style.visibility = 'hidden';
+            iframe.setAttribute('loading', 'lazy');
+            scaleIframe(iframe);
+            container.appendChild(iframe);
+            iframeCache[index] = iframe;
+            return iframe;
+        }
+
+        function showSlide(index) {
+            if (index < 0 || index >= SLIDES.length) return;
+            currentSlide = index;
+
+            // Hide all iframes
+            Object.values(iframeCache).forEach(f => f.style.visibility = 'hidden');
+
+            // Show current
+            const iframe = createIframe(index);
+            iframe.style.visibility = 'visible';
+            loading.style.display = 'none';
+
+            // Update counter
+            const num = String(index).padStart(2, '0');
+            counter.textContent = `${num} / ${SLIDES.length - 1}`;
+
+            // Update progress bar
+            const pct = (index / (SLIDES.length - 1)) * 100;
+            progressBar.style.width = `${pct}%`;
+
+            // Preload adjacent slides
+            if (index + 1 < SLIDES.length) createIframe(index + 1);
+            if (index - 1 >= 0) createIframe(index - 1);
+
+            // Save position
+            try { sessionStorage.setItem('osu-slide', index); } catch(e) {}
+        }
+
+        function nextSlide() {
+            if (currentSlide < SLIDES.length - 1) showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) showSlide(currentSlide - 1);
+        }
+
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(() => {});
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        function toggleHelp() {
+            helpVisible = !helpVisible;
+            helpOverlay.classList.toggle('visible', helpVisible);
+        }
+
+        // Keyboard controls
+        document.addEventListener('keydown', (e) => {
+            // If help is visible, any key dismisses it
+            if (helpVisible && e.key !== 'h' && e.key !== '?') {
+                toggleHelp();
+                return;
+            }
+
+            // Goto mode: G + digits + Enter
+            if (gotoMode) {
+                if (e.key >= '0' && e.key <= '9') {
+                    gotoBuffer += e.key;
+                    e.preventDefault();
+                    return;
+                }
+                if (e.key === 'Enter') {
+                    const target = parseInt(gotoBuffer, 10);
+                    if (target >= 0 && target < SLIDES.length) showSlide(target);
+                    gotoMode = false;
+                    gotoBuffer = '';
+                    e.preventDefault();
+                    return;
+                }
+                if (e.key === 'Escape') {
+                    gotoMode = false;
+                    gotoBuffer = '';
+                    e.preventDefault();
+                    return;
+                }
+            }
+
+            switch (e.key) {
+                case 'ArrowRight':
+                case ' ':
+                case 'PageDown':
+                    nextSlide();
+                    e.preventDefault();
+                    break;
+                case 'ArrowLeft':
+                case 'Backspace':
+                case 'PageUp':
+                    prevSlide();
+                    e.preventDefault();
+                    break;
+                case 'f':
+                case 'F':
+                    toggleFullscreen();
+                    e.preventDefault();
+                    break;
+                case 'Home':
+                    showSlide(0);
+                    e.preventDefault();
+                    break;
+                case 'End':
+                    showSlide(SLIDES.length - 1);
+                    e.preventDefault();
+                    break;
+                case '0':
+                    if (!gotoMode) showSlide(0);
+                    e.preventDefault();
+                    break;
+                case 'g':
+                case 'G':
+                    gotoMode = true;
+                    gotoBuffer = '';
+                    e.preventDefault();
+                    break;
+                case 'h':
+                case '?':
+                    toggleHelp();
+                    e.preventDefault();
+                    break;
+            }
+
+            showUI();
+        });
+
+        // Click to advance (right side), go back (left side)
+        document.addEventListener('click', (e) => {
+            if (helpVisible) { toggleHelp(); return; }
+            if (e.clientX > window.innerWidth / 3) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        });
+
+        // Mouse movement shows cursor + UI
+        function showUI() {
+            document.body.classList.add('show-cursor', 'show-ui');
+            clearTimeout(cursorTimeout);
+            cursorTimeout = setTimeout(() => {
+                document.body.classList.remove('show-cursor', 'show-ui');
+            }, 2000);
+        }
+        document.addEventListener('mousemove', showUI);
+
+        // Resize handler
+        window.addEventListener('resize', () => {
+            Object.values(iframeCache).forEach(scaleIframe);
+        });
+
+        // Restore position or start at 0
+        let startSlide = 0;
+        try {
+            const saved = sessionStorage.getItem('osu-slide');
+            if (saved !== null) startSlide = parseInt(saved, 10);
+        } catch(e) {}
+        showSlide(startSlide);
+    </script>
+</body>
+</html>

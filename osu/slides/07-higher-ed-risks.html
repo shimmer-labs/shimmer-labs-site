@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>Slide 2.3 — Higher Ed Specific Risks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #F8F9FA; color: #0A1A2F;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .side-accent {
+            position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(180deg, #FDBE34, #0A1A2F 30%, #0A1A2F 70%, #FDBE34);
+        }
+        .slide-number {
+            position: absolute; bottom: 40px; right: 60px;
+            font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: #6B7280;
+        }
+
+        .top-section {
+            padding: 72px 120px 0 120px;
+        }
+        .section-tag {
+            font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase; color: #FDBE34;
+            background: #0A1A2F; display: inline-block; padding: 6px 16px;
+            border-radius: 4px; margin-bottom: 24px;
+        }
+        .slide-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700;
+            color: #0A1A2F; margin-bottom: 48px;
+        }
+        .slide-title .gold { color: #FDBE34; }
+
+        .risk-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 32px; padding: 0 120px;
+        }
+        .risk-card {
+            background: #FFFFFF; border-radius: 16px; padding: 36px 32px;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 2px 8px rgba(10,26,47,0.05);
+            display: flex; gap: 24px; align-items: flex-start;
+        }
+        .risk-icon {
+            flex: 0 0 64px; height: 64px; border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .risk-icon.red { background: #FDEAEA; }
+        .risk-icon.orange { background: #FFF3E0; }
+        .risk-icon.purple { background: #F3EAFF; }
+        .risk-icon.blue { background: #EBF4FF; }
+
+        .risk-body { flex: 1; }
+        .risk-title {
+            font-family: 'Space Grotesk', sans-serif; font-size: 30px;
+            font-weight: 700; color: #0A1A2F; margin-bottom: 8px;
+        }
+        .risk-desc {
+            font-family: 'Inter', sans-serif; font-size: 24px;
+            font-weight: 400; color: #374151; line-height: 1.4;
+        }
+        .risk-example {
+            font-family: 'Inter', sans-serif; font-size: 22px;
+            font-weight: 500; color: #6B7280; margin-top: 8px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-accent"></div>
+
+    <div class="top-section">
+        <div class="section-tag">The Real Risks</div>
+        <div class="slide-title">Risks <span class="gold">Closer to Home</span></div>
+    </div>
+
+    <div class="risk-grid">
+        <div class="risk-card">
+            <div class="risk-icon red">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#DC3545" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
+            </div>
+            <div class="risk-body">
+                <div class="risk-title">Grading Bias</div>
+                <div class="risk-desc">AI grading tools can penalize non-native English speakers and certain writing styles.</div>
+                <div class="risk-example">Stanford study: 61% of ESL essays falsely flagged</div>
+            </div>
+        </div>
+
+        <div class="risk-card">
+            <div class="risk-icon orange">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6600" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div class="risk-body">
+                <div class="risk-title">Accidental PII Exposure</div>
+                <div class="risk-desc">Copy-pasting student data into ChatGPT sends it to external servers.</div>
+                <div class="risk-example">"One paste = a FERPA violation"</div>
+            </div>
+        </div>
+
+        <div class="risk-card">
+            <div class="risk-icon purple">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#9b59b6" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            </div>
+            <div class="risk-body">
+                <div class="risk-title">Hallucinated Citations</div>
+                <div class="risk-desc">AI generates fake but convincing academic references that don't exist.</div>
+                <div class="risk-example">"Looks real. Sounds real. Isn't real."</div>
+            </div>
+        </div>
+
+        <div class="risk-card">
+            <div class="risk-icon blue">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4a90d9" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+            </div>
+            <div class="risk-body">
+                <div class="risk-title">AI Detection False Positives</div>
+                <div class="risk-desc">Turnitin flags real student work as AI-generated, especially ESL students.</div>
+                <div class="risk-example">"Innocent until proven... algorithmic?"</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-number">07</div>
+
+    <script>
+        function scaleSlide() {
+            const sw = 1920, sh = 1080;
+            const scale = Math.min(window.innerWidth / sw, window.innerHeight / sh);
+            document.body.style.transform = `scale(${scale})`;
+            document.body.style.transformOrigin = 'top left';
+            document.body.style.marginLeft = `${(window.innerWidth - sw * scale) / 2}px`;
+            document.body.style.marginTop = `${(window.innerHeight - sh * scale) / 2}px`;
+        }
+        scaleSlide();
+        window.addEventListener('resize', scaleSlide);
+    </script>
+</body>
+</html>
