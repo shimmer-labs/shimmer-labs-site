@@ -27,6 +27,7 @@
             width: 1920px; height: 1080px;
             border: none;
             transform-origin: top left;
+            pointer-events: none;
         }
 
         /* Slide counter — bottom right, subtle */
@@ -219,6 +220,7 @@
             iframe.src = SLIDES[index];
             iframe.style.visibility = 'hidden';
             iframe.setAttribute('loading', 'lazy');
+            iframe.setAttribute('tabindex', '-1');
             scaleIframe(iframe);
             container.appendChild(iframe);
             iframeCache[index] = iframe;
