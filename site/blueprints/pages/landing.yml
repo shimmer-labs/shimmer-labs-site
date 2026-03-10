@@ -1,0 +1,98 @@
+title: Landing Page
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          hero_label:
+            label: Hero Label
+            type: text
+            placeholder: "Free Guide"
+          hero_title:
+            label: Hero Title
+            type: text
+            placeholder: "Too Many Hats, Not Enough Hours"
+          hero_description:
+            label: Hero Description
+            type: textarea
+            size: small
+          hero_cta:
+            label: CTA Button Text
+            type: text
+            placeholder: "Download the Free Guide →"
+
+          line1:
+            type: line
+
+          bullets_title:
+            label: What You'll Learn Title
+            type: text
+            placeholder: "Inside this guide:"
+          bullets:
+            label: Bullet Points
+            type: structure
+            fields:
+              text:
+                label: Bullet Text
+                type: text
+
+          line2:
+            type: line
+
+          form_heading:
+            label: Form Heading
+            type: text
+            placeholder: "Get Your Free Copy"
+          form_subheading:
+            label: Form Subheading
+            type: text
+            placeholder: "We'll email the guide to you instantly."
+          form_id:
+            label: Formspree Form ID
+            type: text
+            placeholder: "xdkwjykz"
+          form_subject:
+            label: Email Subject Line
+            type: text
+            placeholder: "[Shimmer Labs] New lead: AI Agents Guide"
+          whitepaper_slug:
+            label: Whitepaper Slug
+            type: text
+            help: "Used for tracking which guide was downloaded"
+            placeholder: "ai-agents-small-business"
+
+          line3:
+            type: line
+
+          social_proof_text:
+            label: Social Proof Text
+            type: text
+            placeholder: "Join 200+ business owners using AI responsibly"
+
+          line4:
+            type: line
+
+          thank_you_title:
+            label: Thank You Title
+            type: text
+            placeholder: "Check your inbox!"
+          thank_you_description:
+            label: Thank You Description
+            type: textarea
+            size: small
+
+  - width: 1/3
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta Description
+            type: text
+            maxlength: 160
+          og_image:
+            label: OG Image
+            type: files
+            max: 1

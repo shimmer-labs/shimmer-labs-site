@@ -1,0 +1,77 @@
+Title: Using AI Securely in Your Business — Free Guide
+
+----
+
+hero_label: Free Guide — Business Leaders
+
+----
+
+hero_title: Using AI Securely in Your Business
+
+----
+
+hero_description: Your team is already using AI tools — whether you have a policy or not. This guide gives you a practical framework for using AI without exposing customer data, violating compliance, or creating liability.
+
+----
+
+hero_cta: Download the Free Guide →
+
+----
+
+bullets_title: Inside this guide:
+
+----
+
+bullets:
+-
+  text: "Real case studies: Samsung source code leak, Air Canada chatbot liability"
+-
+  text: "FERPA and HIPAA — what you need to know before using AI"
+-
+  text: "Prompt injection explained in 30 seconds"
+-
+  text: "The full OWASP Top 10 for LLM Applications"
+-
+  text: "A printable security checklist for your team"
+-
+  text: "The Traffic Light Framework — what's safe and what's not"
+
+----
+
+form_heading: Get Your Free Copy
+
+----
+
+form_subheading: We'll email the guide to you instantly.
+
+----
+
+form_id: xdkwjykz
+
+----
+
+form_subject: [Shimmer Labs] New lead: AI Security (Business)
+
+----
+
+whitepaper_slug: ai-security-business
+
+----
+
+social_proof_text:
+
+----
+
+thank_you_title: Check your inbox!
+
+----
+
+thank_you_description: We just sent "Using AI Securely in Your Business" to your email. It's 10 pages covering FERPA, HIPAA, and practical security your team can implement today. If you don't see it in a few minutes, check your spam folder.
+
+----
+
+meta_description: Free guide for business leaders: how to use AI securely without violating HIPAA, FERPA, or client contracts. Includes printable checklist and traffic light framework.
+
+----
+
+og_image:

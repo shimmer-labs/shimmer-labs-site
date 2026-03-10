@@ -1,0 +1,77 @@
+Title: Using AI Securely in Higher Education — Free Guide
+
+----
+
+hero_label: Free Guide — Higher Education
+
+----
+
+hero_title: Using AI Securely in Higher Education
+
+----
+
+hero_description: Your faculty and staff are already using ChatGPT — whether you know it or not. This guide gives you a practical framework for using AI without putting student data or your institution at risk.
+
+----
+
+hero_cta: Download the Free Guide →
+
+----
+
+bullets_title: Inside this guide:
+
+----
+
+bullets:
+-
+  text: "The AI family tree — what's actually behind ChatGPT"
+-
+  text: "Real case studies: Amazon, Clearview AI, and higher ed-specific risks"
+-
+  text: "Prompt injection explained in 30 seconds"
+-
+  text: "The full OWASP Top 10 for LLM Applications"
+-
+  text: "A printable security checklist for your team"
+-
+  text: "The Traffic Light Framework — green, yellow, and red AI uses"
+
+----
+
+form_heading: Get Your Free Copy
+
+----
+
+form_subheading: We'll email the guide to you instantly.
+
+----
+
+form_id: xdkwjykz
+
+----
+
+form_subject: [Shimmer Labs] New lead: AI Security (Education)
+
+----
+
+whitepaper_slug: ai-security-education
+
+----
+
+social_proof_text:
+
+----
+
+thank_you_title: Check your inbox!
+
+----
+
+thank_you_description: We just sent "Using AI Securely in Higher Education" to your email. It's 9 pages of practical security guidance your team can use starting today. If you don't see it in a few minutes, check your spam folder.
+
+----
+
+meta_description: Free guide for higher education: how to use AI securely without violating FERPA or exposing student data. Includes printable checklist and traffic light framework.
+
+----
+
+og_image:

@@ -11,6 +11,7 @@
     'contact' => 'Book a Call - Custom Apps & Software | Shimmer Labs',
     'services' => 'Services & Pricing - Web Apps, APIs, iOS Development | Shimmer Labs',
     'service' => $page->title() . ' | ' . $page->priceRange() . ' | Shimmer Labs',
+    'landing' => $page->title() . ' | Shimmer Labs',
     default => $page->title() . ' | Shimmer Labs'
   };
   ?>
