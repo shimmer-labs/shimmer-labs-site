@@ -73,12 +73,7 @@
             <p class="landing-form__sub"><?= $page->form_subheading() ?></p>
           <?php endif ?>
 
-          <form class="landing-form" method="POST" action="https://formspree.io/f/<?= $page->form_id()->or('xdkwjykz') ?>" accept-charset="UTF-8">
-            <input type="hidden" name="_subject" value="<?= $page->form_subject()->or('[Shimmer Labs] New lead') ?>">
-            <input type="hidden" name="_next" value="<?= $page->url() ?>?success=true">
-            <input type="hidden" name="whitepaper" value="<?= $page->whitepaper_slug() ?>">
-            <input type="hidden" name="source_page" value="<?= $page->uri() ?>">
-
+          <form class="landing-form" id="whitepaper-form">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" name="name" id="name" placeholder="Jane Smith" required>
@@ -86,7 +81,7 @@
 
             <div class="form-group">
               <label for="email">Work Email</label>
-              <input type="email" name="_replyto" id="email" placeholder="jane@company.com" required>
+              <input type="email" name="email" id="email" placeholder="jane@company.com" required>
             </div>
 
             <div class="form-group">
@@ -116,12 +111,56 @@
               </select>
             </div>
 
-            <input type="text" name="_gotcha" style="display:none">
+            <p class="form-error" id="form-error" style="display:none; color:#e74c3c; margin-bottom:1rem;"></p>
 
-            <button type="submit" class="btn btn--cta"><?= $page->hero_cta()->or('Download the Free Guide →') ?></button>
+            <button type="submit" class="btn btn--cta" id="form-submit"><?= $page->hero_cta()->or('Download the Free Guide →') ?></button>
 
             <p class="form-note">No spam. Unsubscribe anytime.</p>
           </form>
+
+          <script>
+          (function() {
+            var form = document.getElementById('whitepaper-form');
+            var btn = document.getElementById('form-submit');
+            var errEl = document.getElementById('form-error');
+
+            form.addEventListener('submit', function(e) {
+              e.preventDefault();
+              btn.disabled = true;
+              btn.textContent = 'Sending...';
+              errEl.style.display = 'none';
+
+              var data = {
+                name: form.name.value,
+                email: form.email.value,
+                industry: form.industry.value,
+                challenge: form.challenge.value,
+                whitepaper: '<?= $page->whitepaper_slug() ?>',
+                source_page: '<?= $page->uri() ?>'
+              };
+
+              fetch('https://ckiguztpbsuxnnhabern.supabase.co/functions/v1/whitepaper-webhook', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+              })
+              .then(function(res) { return res.json().then(function(j) { return { ok: res.ok, data: j }; }); })
+              .then(function(result) {
+                if (result.data.ok || result.ok) {
+                  window.location.href = '<?= $page->url() ?>?success=true';
+                } else {
+                  throw new Error(result.data.error || 'Something went wrong');
+                }
+              })
+              .catch(function(err) {
+                errEl.textContent = 'Something went wrong. Please try again or email logan@shimmerlabs.co directly.';
+                errEl.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = '<?= $page->hero_cta()->or('Download the Free Guide →') ?>';
+              });
+            });
+          })();
+          </script>
         </div>
       </div>
 
