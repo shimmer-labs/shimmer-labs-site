@@ -15,17 +15,6 @@
           <?php endif ?>
         </div>
 
-        <p class="project-detail__summary"><?= $page->summary() ?></p>
-
-        <!-- Waitlist Section (for pre-launch apps) -->
-        <?php if ($page->is_app()->toBool() && $page->badge()->toString() === 'Launching Soon'): ?>
-          <?php snippet('app-waitlist', [
-            'app_name' => $page->title(),
-            'formspree_id' => 'xnngrlnp', // EventSnag waitlist → logan@shimmerlabs.co
-            'launch_date' => 'Late October 2025'
-          ]) ?>
-        <?php endif ?>
-
         <!-- Primary CTAs -->
         <div class="project-hero-cta">
           <?php if ($page->is_app()->toBool()): ?>
@@ -59,6 +48,17 @@
             <?php endif ?>
           <?php endif ?>
         </div>
+
+        <p class="project-detail__summary"><?= $page->summary() ?></p>
+
+        <!-- Waitlist Section (for pre-launch apps) -->
+        <?php if ($page->is_app()->toBool() && $page->badge()->toString() === 'Launching Soon'): ?>
+          <?php snippet('app-waitlist', [
+            'app_name' => $page->title(),
+            'formspree_id' => 'xnngrlnp', // EventSnag waitlist → logan@shimmerlabs.co
+            'launch_date' => 'Late October 2025'
+          ]) ?>
+        <?php endif ?>
 
         <!-- Tech Stack -->
         <?php if ($page->tech_stack()->isNotEmpty()): ?>
