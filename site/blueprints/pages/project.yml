@@ -41,10 +41,14 @@ fields:
     type: url
     label: App Store URL (for iOS apps)
     help: Apple App Store link (optional)
+  shopify_app_url:
+    type: url
+    label: Shopify App Store URL
+    help: Shopify App Store listing link (optional)
   is_app:
     type: toggle
-    label: Is this an iOS/mobile app?
-    help: Shows App Store download button and legal links
+    label: Is this an app product?
+    help: Shows download/store buttons and legal links
     default: false
   privacy_url:
     type: url

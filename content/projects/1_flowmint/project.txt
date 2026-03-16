@@ -18,7 +18,9 @@ Terms_url: https://flowmint.me/terms
 ----
 Support_url: https://flowmint.me/support
 ----
-App_store_url: https://flowmint.me
+App_store_url:
+----
+Shopify_app_url: https://apps.shopify.com/flowmint
 ----
 Demo_video:
 ----
@@ -137,9 +139,10 @@ We built this the Shimmer Labs way: prototype fast, validate with real users, th
 
 ## Pricing
 
-**Free**: Unlimited brand analysis, generate 1 flow to preview
-**Starter ($49/mo)**: Unlimited flows, push to Klaviyo + other platforms, email support
-**Pro ($149/mo)**: Coming soon—automated flow creation, SMS, campaign calendar, analytics
+**Free**: Unlimited brand analysis, generate and preview all flows — no credit card required
+**Single Flow ($29)**: Export 1 complete flow for your brand — one-time purchase
+**Full Campaign ($79)**: Export all 18+ flows for your brand — one-time purchase
+**Unlimited ($149/mo)**: Unlimited brands, unlimited exports, campaign calendar, priority support
 
 ## Perfect For
 

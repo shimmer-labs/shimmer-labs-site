@@ -47,7 +47,8 @@ This is the main website for Shimmer Labs, a boutique automation consultancy bas
 ## ⚠️ Lessons Learned
 
 ### Custom API Routes (October 21, 2025)
-**Don't try to build custom API endpoints in this Kirby+Vercel setup.**
+**Note:** This happened when the site was still hosted on Vercel. Site has since moved to Digital Ocean App Platform.
+**Don't try to build custom API endpoints in a Kirby + mixed-runtime setup.**
 
 **What happened:**
 - Attempted to replace Formspree with a custom waitlist API (Node.js serverless function + Firestore)

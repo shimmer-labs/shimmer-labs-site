@@ -2223,6 +2223,48 @@ img.loaded {
    App Store Badge
    =================================== */
 
+/* Shopify App Store CTA */
+.shopify-app-cta {
+  margin: var(--spacing-lg) 0;
+  text-align: center;
+}
+
+.btn--shopify {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: #96bf48;
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn--shopify:hover {
+  background: #7ba03e;
+  transform: translateY(-2px);
+}
+
+.shopify-app-alt {
+  margin-top: var(--spacing-sm);
+  font-size: 0.95rem;
+  color: var(--color-gray-medium);
+}
+
+.shopify-app-alt a {
+  color: var(--color-teal);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.shopify-app-alt a:hover {
+  text-decoration: underline;
+}
+
 .app-download {
   margin: var(--spacing-xl) 0;
   text-align: center;
