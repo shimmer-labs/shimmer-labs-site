@@ -2223,46 +2223,94 @@ img.loaded {
    App Store Badge
    =================================== */
 
-/* Shopify App Store CTA */
-.shopify-app-cta {
-  margin: var(--spacing-lg) 0;
-  text-align: center;
+/* Project Hero CTA Block */
+.project-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: var(--spacing-md) 0 var(--spacing-lg);
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, rgba(10, 26, 47, 0.04) 0%, rgba(45, 212, 191, 0.06) 100%);
+  border: 1px solid rgba(10, 26, 47, 0.08);
+  border-radius: 12px;
+}
+
+.btn--hero {
+  padding: 0.875rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  gap: 0.5rem;
 }
 
 .btn--shopify {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2rem;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
   background: #96bf48;
   color: #fff;
   font-family: var(--font-heading);
   font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: var(--border-radius);
+  font-weight: 700;
+  border-radius: 10px;
+  border: 2px solid #96bf48;
   text-decoration: none;
   transition: var(--transition);
 }
 
 .btn--shopify:hover {
   background: #7ba03e;
+  border-color: #7ba03e;
   transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(150, 191, 72, 0.4);
 }
 
-.shopify-app-alt {
-  margin-top: var(--spacing-sm);
-  font-size: 0.95rem;
-  color: var(--color-gray-medium);
-}
-
-.shopify-app-alt a {
-  color: var(--color-teal);
+.btn--hero-alt {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.875rem 2rem;
+  background: transparent;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 2px solid var(--color-navy);
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: 500;
+  transition: var(--transition);
 }
 
-.shopify-app-alt a:hover {
-  text-decoration: underline;
+.btn--hero-alt:hover {
+  background: var(--color-navy);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(10, 26, 47, 0.3);
+}
+
+.hero-cta-note {
+  flex-basis: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--color-gray-medium);
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .project-hero-cta {
+    flex-direction: column;
+    padding: 1.25rem 1.25rem;
+  }
+
+  .btn--hero,
+  .btn--shopify,
+  .btn--hero-alt {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .app-download {
