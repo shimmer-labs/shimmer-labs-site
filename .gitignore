@@ -65,3 +65,16 @@ Icon
 .env.local
 .env.production
 serviceAccountKey.json
+
+# Playwright MCP artifacts
+# ---------------
+
+.playwright-mcp/
+
+# Loose screenshots
+# ---------------
+
+*.png
+!/site/assets/**/*.png
+!/content/**/*.png
+!/assets/**/*.png
