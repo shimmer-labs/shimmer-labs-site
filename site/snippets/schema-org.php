@@ -54,9 +54,20 @@ if ($page->intendedTemplate() == 'home') {
     'email' => 'logan@shimmerlabs.co',
     'address' => [
       '@type' => 'PostalAddress',
+      'streetAddress' => '901 S. Main St',
       'addressLocality' => 'Stillwater',
       'addressRegion' => 'OK',
+      'postalCode' => '74074',
       'addressCountry' => 'US'
+    ],
+    'geo' => [
+      '@type' => 'GeoCoordinates',
+      'latitude' => 36.1084,
+      'longitude' => -97.0584
+    ],
+    'areaServed' => [
+      ['@type' => 'City', 'name' => 'Stillwater'],
+      ['@type' => 'State', 'name' => 'Oklahoma']
     ],
     'priceRange' => '$$$',
     'founder' => [

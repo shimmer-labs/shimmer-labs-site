@@ -44,7 +44,11 @@ This is the main website for Shimmer Labs, a boutique automation consultancy bas
 
 ---
 
-See project memory for lessons learned.
+## ⚠️ Lessons Learned
+
+Migrated to Claude Code project memory (2026-03-17). See:
+- `feedback_kirby_routing.md` — Don't build custom API endpoints in Kirby+Vercel
+- `feedback_php84_types.md` — PHP 8.4 type strictness, enable debug mode first
 
 ---
 

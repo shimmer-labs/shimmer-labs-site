@@ -1,0 +1,27 @@
+# Shimmer Labs
+
+> Custom software development agency in Stillwater, Oklahoma specializing in web apps, iOS apps, API integrations, and AI agents.
+
+Shimmer Labs builds custom software for small businesses. Founded by Logan Shimmer, a mechanical engineer turned software developer. We take ideas from wireframe to production — mobile apps, web apps, Shopify development, and API integrations. Based at 901 S. Main St, Stillwater, OK 74074.
+
+## Services
+- [API Integrations](https://shimmerlabs.co/services/api-integrations): Custom API integrations and backend development ($3,500–$12,000)
+- [Wireframe to Web App](https://shimmerlabs.co/services/idea-to-web-app): Figma/Subframe to production Next.js app ($18,500–$55,000)
+- [iOS App Development](https://shimmerlabs.co/services/ios-apps): Native iOS development in Swift ($35,000–$75,000)
+- Full-Stack SaaS Development: 0-to-1 SaaS product development ($45,000–$125,000)
+- AI Agent Development: Custom AI agents for business automation
+
+## Products
+- [Paidly](https://paidly.co): AI-powered invoicing with contract intelligence for freelancers
+- [EventSnag](https://eventsnag.app): iOS app that turns event screenshots into calendar entries
+- [FlowMint](https://flowmint.me): AI email marketing campaigns generated from any website URL
+
+## Portfolio
+- [Projects](https://shimmerlabs.co/projects): Full portfolio including TreeBidPro, n8n/Taddy API Nodes, Amazon Price Tracker, and more
+
+## Company Info
+- [About](https://shimmerlabs.co/about): Our story and approach
+- [Contact](https://shimmerlabs.co/contact): Get in touch for a project consultation
+- Address: 901 S. Main St, Stillwater, OK 74074
+- Email: logan@shimmerlabs.co
+- GitHub: https://github.com/shimmer-labs
