@@ -41,27 +41,58 @@
 <!-- Social Proof -->
 <?php snippet('social-proof', ['clients' => $page->clients()]) ?>
 
-<!-- Packages & Pricing -->
-<?php if ($page->packages()->isNotEmpty()): ?>
-<section id="packages" class="packages">
+<!-- Sidecar Section -->
+<section id="sidecar" class="sidecar-section">
   <div class="container">
-    <div class="packages__header">
-      <?php if ($page->packagesTitle()->isNotEmpty()): ?>
-        <h2 class="packages__title"><?= $page->packagesTitle() ?></h2>
-      <?php endif ?>
-      <?php if ($page->packagesSubtitle()->isNotEmpty()): ?>
-        <p class="packages__subtitle"><?= $page->packagesSubtitle() ?></p>
-      <?php endif ?>
-    </div>
-
-    <div class="packages__grid">
-      <?php foreach ($page->packages()->toStructure() as $package): ?>
-        <?php snippet('package-card', ['package' => $package]) ?>
-      <?php endforeach ?>
+    <div class="sidecar-section__inner">
+      <div class="sidecar-section__brand">
+        <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="sidecar-section__logo">
+        <h2 class="sidecar-section__tagline">Your business, but with a copilot.</h2>
+        <p class="sidecar-section__description">AI agents that handle the admin work you hate — hiring, social media, prospecting, proposals. Runs 24/7 at a fraction of the cost of an employee.</p>
+      </div>
+      <div class="sidecar-section__details">
+        <ul class="sidecar-section__benefits">
+          <li>Screens job applicants</li>
+          <li>Posts to social media</li>
+          <li>Generates & follows up leads</li>
+          <li>Drafts proposals</li>
+          <li>Runs 24/7/365</li>
+          <li>Fraction of an employee's cost</li>
+        </ul>
+        <div class="sidecar-section__cta">
+          <a href="/services/sidecar" class="btn btn--sidecar">Learn More</a>
+          <a href="/contact" class="btn btn--secondary" style="margin-left: 1rem;">Book a Free Call</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<?php endif ?>
+
+<!-- Build Section -->
+<section id="build" class="build-section">
+  <div class="container">
+    <div class="build-section__header">
+      <h2 class="build-section__title">We Also Build Custom Software</h2>
+      <p class="build-section__subtitle">Web apps, iOS apps, and API integrations — built fast by a developer, not an agency.</p>
+    </div>
+    <div class="build-section__grid">
+      <a href="/services/custom-apps" class="build-card">
+        <div class="build-card__icon">⚡</div>
+        <h3 class="build-card__title">Custom Apps</h3>
+        <p class="build-card__description">Web apps and iOS apps — from wireframes to launched product. Built TreeBidPro in 2 weeks, Paidly in 6.</p>
+        <span class="build-card__price">Web apps from $25k · iOS from $35k</span>
+        <span class="build-card__arrow">View Details →</span>
+      </a>
+      <a href="/services/api-integrations" class="build-card">
+        <div class="build-card__icon">🔌</div>
+        <h3 class="build-card__title">API Integrations</h3>
+        <p class="build-card__description">Your software doesn't talk to each other? We build the connections. Clean APIs, proper docs, no janky workarounds.</p>
+        <span class="build-card__price">$3.5k - $12k</span>
+        <span class="build-card__arrow">View Details →</span>
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- Comparison Table: You vs Agencies -->
 <?php snippet('comparison-table') ?>

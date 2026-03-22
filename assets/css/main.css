@@ -12,7 +12,10 @@
   --color-white: #FFFFFF;
   --color-gray-light: #E5E7EB;
   --color-gray-medium: #6B7280;
-  
+  --color-sidecar: #FF6600;
+  --color-sidecar-light: rgba(255, 102, 0, 0.08);
+  --color-sidecar-border: rgba(255, 102, 0, 0.25);
+
   /* Typography */
   --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -260,6 +263,21 @@ section {
   padding: 0;
   border: none;
   background: none;
+}
+
+.btn--sidecar {
+  background: var(--color-sidecar);
+  color: var(--color-white);
+  border-color: var(--color-sidecar);
+  font-weight: 700;
+}
+
+.btn--sidecar:hover {
+  background: transparent;
+  color: var(--color-sidecar);
+  border-color: var(--color-sidecar);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.4);
 }
 
 .btn--link:hover {
@@ -744,6 +762,159 @@ section {
 .package-card--featured .btn--package:hover {
   background: linear-gradient(135deg, var(--color-teal) 0%, var(--color-gold) 100%);
   transform: translateY(-2px);
+}
+
+/* ===================================
+   Sidecar Section (Homepage)
+   =================================== */
+.sidecar-section {
+  background: linear-gradient(135deg, var(--color-sidecar-light) 0%, rgba(255, 255, 255, 1) 100%);
+  border-top: 3px solid var(--color-sidecar);
+  padding: var(--spacing-xl) 0;
+}
+
+.sidecar-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+.sidecar-section__brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.sidecar-section__logo {
+  width: 200px;
+  height: auto;
+}
+
+.sidecar-section__tagline {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.2;
+}
+
+.sidecar-section__description {
+  font-size: 1.125rem;
+  color: var(--color-gray-medium);
+  line-height: 1.6;
+}
+
+.sidecar-section__benefits {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-sm);
+}
+
+.sidecar-section__benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-navy);
+  font-weight: 500;
+}
+
+.sidecar-section__benefits li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--color-sidecar);
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.sidecar-section__cta {
+  margin-top: var(--spacing-sm);
+}
+
+/* Build Section (Homepage) */
+.build-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.build-section__header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.build-section__title {
+  font-size: 2rem;
+  color: var(--color-navy);
+  margin-bottom: var(--spacing-xs);
+}
+
+.build-section__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-gray-medium);
+}
+
+.build-section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+.build-card {
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-light);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.build-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-gold);
+}
+
+.build-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.build-card__title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.build-card__description {
+  color: var(--color-gray-medium);
+  margin-bottom: var(--spacing-sm);
+  flex-grow: 1;
+}
+
+.build-card__price {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-navy);
+  font-size: 0.95rem;
+}
+
+.build-card__arrow {
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-top: var(--spacing-sm);
+}
+
+/* Menu Sidecar accent */
+.menu-link--sidecar .menu-link-title {
+  color: var(--color-sidecar);
+  font-weight: 600;
 }
 
 /* ===================================
@@ -1956,8 +2127,31 @@ section {
   .services__grid,
   .offerings__grid,
   .projects__grid,
-  .packages__grid {
+  .packages__grid,
+  .build-section__grid {
     grid-template-columns: 1fr;
+  }
+
+  .sidecar-section__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .sidecar-section__logo {
+    margin: 0 auto;
+  }
+
+  .sidecar-section__benefits {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .sidecar-section__tagline {
+    font-size: 1.5rem;
+  }
+
+  .sidecar-section__cta {
+    text-align: center;
   }
 
   .service-card {

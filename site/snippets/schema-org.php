@@ -14,7 +14,7 @@ $schema[] = [
   'name' => 'Shimmer Labs',
   'url' => $site->url(),
   'logo' => url('assets/images/shimmer-labs-logo.png'),
-  'description' => 'Custom software development for small businesses. Web apps, mobile apps, Shopify apps, and API integrations. Based in Stillwater, OK.',
+  'description' => 'AI agents for service businesses and custom software development. Sidecar automates hiring, social media, and prospecting. Web apps, iOS apps, and API integrations. Based in Stillwater, OK.',
   'email' => 'logan@shimmerlabs.co',
   'sameAs' => [
     'https://www.linkedin.com/in/loganshimmer/',
@@ -49,7 +49,7 @@ if ($page->intendedTemplate() == 'home') {
     '@id' => $site->url() . '#business',
     'name' => 'Shimmer Labs',
     'image' => url('assets/images/shimmer-labs-logo.png'),
-    'description' => 'Custom software for small businesses. Mobile apps, web apps, Shopify development, and API integrations. Stillwater, OK.',
+    'description' => 'AI agents for service businesses and custom software development. Sidecar automates admin tasks 24/7. Web apps, iOS apps, and API integrations. Stillwater, OK.',
     'url' => $site->url(),
     'email' => 'logan@shimmerlabs.co',
     'address' => [
@@ -77,8 +77,29 @@ if ($page->intendedTemplate() == 'home') {
     ],
     'hasOfferCatalog' => [
       '@type' => 'OfferCatalog',
-      'name' => 'Development Services',
+      'name' => 'Services',
       'itemListElement' => [
+        [
+          '@type' => 'Offer',
+          'itemOffered' => [
+            '@type' => 'Service',
+            'name' => 'Sidecar — AI Agents',
+            'description' => 'AI agents that handle hiring, social media, prospecting, and proposals for service businesses. 24/7 automation.'
+          ]
+        ],
+        [
+          '@type' => 'Offer',
+          'itemOffered' => [
+            '@type' => 'Service',
+            'name' => 'Custom Apps',
+            'description' => 'Web apps and iOS apps from wireframes to launched product',
+            'priceSpecification' => [
+              '@type' => 'PriceSpecification',
+              'price' => '25000-75000',
+              'priceCurrency' => 'USD'
+            ]
+          ]
+        ],
         [
           '@type' => 'Offer',
           'itemOffered' => [
@@ -88,45 +109,6 @@ if ($page->intendedTemplate() == 'home') {
             'priceSpecification' => [
               '@type' => 'PriceSpecification',
               'price' => '3500-12000',
-              'priceCurrency' => 'USD'
-            ]
-          ]
-        ],
-        [
-          '@type' => 'Offer',
-          'itemOffered' => [
-            '@type' => 'Service',
-            'name' => 'Wireframe to Web App',
-            'description' => 'Figma/Subframe to production Next.js app',
-            'priceSpecification' => [
-              '@type' => 'PriceSpecification',
-              'price' => '18500-55000',
-              'priceCurrency' => 'USD'
-            ]
-          ]
-        ],
-        [
-          '@type' => 'Offer',
-          'itemOffered' => [
-            '@type' => 'Service',
-            'name' => 'Full-Stack SaaS Development',
-            'description' => '0→1 SaaS product development with Next.js and Supabase',
-            'priceSpecification' => [
-              '@type' => 'PriceSpecification',
-              'price' => '45000-125000',
-              'priceCurrency' => 'USD'
-            ]
-          ]
-        ],
-        [
-          '@type' => 'Offer',
-          'itemOffered' => [
-            '@type' => 'Service',
-            'name' => 'iOS App Development',
-            'description' => 'Native iOS development in Swift',
-            'priceSpecification' => [
-              '@type' => 'PriceSpecification',
-              'price' => '35000-75000',
               'priceCurrency' => 'USD'
             ]
           ]

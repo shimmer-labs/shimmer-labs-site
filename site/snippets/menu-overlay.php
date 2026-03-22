@@ -11,24 +11,23 @@
         <h3>Services</h3>
         <ul class="menu-links">
           <li>
+            <a href="/services/sidecar" class="menu-link--sidecar">
+              <span class="menu-link-icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" style="width: 24px; height: 24px; display: inline-block; vertical-align: middle;"></span>
+              <span class="menu-link-title">Sidecar &mdash; AI Agents</span>
+            </a>
+          </li>
+          <li>
+            <a href="/services/custom-apps">
+              <span class="menu-link-icon">⚡</span>
+              <span class="menu-link-title">Custom Apps</span>
+              <span class="menu-link-price">from $25k</span>
+            </a>
+          </li>
+          <li>
             <a href="/services/api-integrations">
               <span class="menu-link-icon">🔌</span>
               <span class="menu-link-title">API Integrations</span>
               <span class="menu-link-price">$3.5k - $12k</span>
-            </a>
-          </li>
-          <li>
-            <a href="/services/idea-to-web-app">
-              <span class="menu-link-icon">⚡</span>
-              <span class="menu-link-title">Idea → Web App</span>
-              <span class="menu-link-price">$25k - $85k</span>
-            </a>
-          </li>
-          <li>
-            <a href="/services/ios-apps">
-              <span class="menu-link-icon">📱</span>
-              <span class="menu-link-title">iOS Apps</span>
-              <span class="menu-link-price">$35k - $75k</span>
             </a>
           </li>
         </ul>

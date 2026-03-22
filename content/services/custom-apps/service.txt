@@ -1,0 +1,117 @@
+Title: Custom Apps
+
+----
+
+Meta_description: Web apps and iOS apps from wireframes to launched product. Web apps from $25k, iOS from $35k. Built TreeBidPro in 2 weeks, Paidly from zero to payments in 6 weeks.
+
+----
+
+Icon:
+
+----
+
+Summary: Web apps and iOS apps -- from wireframes to launched product. Built TreeBidPro in 2 weeks, Paidly from zero to payments in 6 weeks, EventSnag from idea to App Store.
+
+----
+
+Pricerange: Web apps from $25k | iOS from $35k
+
+----
+
+Text:
+
+## Your Idea Deserves to Exist. Let's Build It.
+
+Maybe you've got polished Figma files. Maybe you've got rough sketches. Maybe you've just got a problem you want to solve and no idea where to start.
+
+**All of those work.**
+
+Most agencies will:
+- Take 3-6 months (or longer)
+- Charge $50k-200k
+- Make you talk to account managers instead of developers
+- Require you to figure out everything upfront
+
+**I'm different:**
+- **Meet you where you are:** Complete designs? Great. Napkin sketch? Also great.
+- **AI-powered speed:** I use AI agents to move 2-3x faster than traditional development
+- **Direct communication:** You talk to me, the developer. No middlemen.
+- **Web + iOS:** I build both. Most shops outsource one or the other.
+
+**Real examples:**
+- **TreeBidPro:** Wireframes to production with Stripe in 2 weeks
+- **Paidly:** "I have an idea" to SaaS processing real payments in 6 weeks
+- **EventSnag:** Native iOS app, screenshot to calendar with AI, shipped to App Store
+
+----
+
+Whatsincluded:
+-
+  icon: 'code'
+  title: 'Production-Grade Code'
+  description: 'TypeScript strict mode, Swift best practices, proper architecture. Built to scale.'
+-
+  icon: 'phone'
+  title: 'Fully Responsive / Native'
+  description: 'Web apps work on every device. iOS apps are real native Swift, not web wrappers.'
+-
+  icon: 'rocket'
+  title: 'CI/CD Pipeline'
+  description: 'Push to GitHub, auto-deploy. Ship features without fear.'
+-
+  icon: 'database'
+  title: 'Database Design'
+  description: 'Supabase with Row-Level Security or Core Data for iOS. Your data is safe and scalable.'
+-
+  icon: 'credit-card'
+  title: 'Payments Ready'
+  description: 'Stripe integration for subscriptions, one-time payments, or in-app purchases.'
+-
+  icon: 'book'
+  title: 'Documentation + Handoff'
+  description: 'Code walkthrough, deployment guide, App Store submission, and 2-8 weeks of support.'
+
+----
+
+Process:
+-
+  title: 'Discovery Call (FREE)'
+  description: 'Tell me about your idea, show me what you have (designs, sketches, or just words), and I will tell you what is realistic and what it costs.'
+-
+  title: 'Scoping & Proposal'
+  description: 'I define the scope, estimate complexity, and give you a fixed price + timeline. No surprises, no scope creep charges.'
+-
+  title: 'Design (if needed)'
+  description: 'For projects without designs: I create user flows and UI before writing code. You approve before we build.'
+-
+  title: 'Development'
+  description: 'I build in sprints with weekly demos. You see progress, give feedback, and we iterate. Direct Slack/email access to me.'
+-
+  title: 'Launch & Support'
+  description: 'I deploy to production (or submit to the App Store), train you on everything, and stick around for 2-8 weeks to fix bugs.'
+
+----
+
+Techstack: Next.js, TypeScript, Supabase, Tailwind CSS, Vercel, Stripe, Swift, SwiftUI, Core Data, Vision API
+
+----
+
+Techstackintro: I build web apps with Next.js + Supabase and iOS apps in native Swift. No React Native, no Flutter, no WordPress. Modern tools, fast results.
+
+----
+
+Portfolioprojects:
+  - page://projects/paidly
+  - page://projects/eventsnag
+
+----
+
+Ctatitle: Let's Build Your App
+
+----
+
+Ctadescription: Whether you need a web app, an iOS app, or both -- your product could be live in weeks, not months. Let's figure out what you need.
+
+----
+
+Uuid: custom-apps-001

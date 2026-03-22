@@ -1,0 +1,115 @@
+Title: Sidecar -- AI Agents for Your Business
+
+----
+
+Meta_description: AI agents that handle hiring, social media, prospecting, and proposals for service businesses. 24/7 automation at a fraction of the cost of an employee.
+
+----
+
+Icon:
+
+----
+
+Summary: AI agents that handle hiring, social media, prospecting, proposals. 24/7. Do what you love, we automate the boring stuff.
+
+----
+
+Pricerange:
+
+----
+
+Text:
+
+## The Problem
+
+You're a plumber. Or a GC. Or a personal trainer. You're great at what you do -- but half your week gets eaten by admin work that has nothing to do with your craft.
+
+Screening job applicants. Posting on social media. Chasing leads. Writing proposals. Answering the same emails over and over.
+
+You can't afford a $40k/year admin assistant. And you shouldn't have to.
+
+## What Sidecar Does
+
+Sidecar is an AI agent that runs 24/7 handling the admin tasks you hate:
+
+- **Hiring** -- screens applicants, schedules interviews, handles initial outreach
+- **Social media** -- creates and schedules posts, manages engagement
+- **Prospecting** -- finds new customers, generates and follows up on leads
+- **Proposals** -- drafts project proposals to 80% complete so you just review and send
+
+It's not replacing you. It's the assistant you always needed but could never justify hiring.
+
+## Who It's For
+
+Small service businesses with 1-10 employees:
+- Plumbers, electricians, general contractors
+- Barbers, nail salons, personal trainers
+- House cleaners, landscapers, pet groomers
+- Tutors, massage therapists, and more
+
+If you're great at your craft but drowning in paperwork, Sidecar is for you.
+
+## The Math
+
+A $40k/year employee works 2,080 hours per year (40 hrs/week).
+Sidecar runs 8,760 hours per year (24/7) at a fraction of the cost.
+
+----
+
+Whatsincluded:
+-
+  icon: 'phone'
+  title: 'Free Discovery Call'
+  description: 'We learn about your business, your pain points, and figure out which tasks to automate first.'
+-
+  icon: 'bot'
+  title: 'Agent Setup'
+  description: 'We build and configure your AI agents, connect them to your existing tools, and train them on your workflows.'
+-
+  icon: 'eye'
+  title: 'Supervised Rollout'
+  description: 'Your agents run with human oversight for 2 weeks. We catch edge cases and fine-tune before going fully autonomous.'
+-
+  icon: 'wrench'
+  title: 'Ongoing Maintenance'
+  description: 'We monitor performance, update agents as your business evolves, and handle any issues that come up.'
+
+----
+
+Process:
+-
+  title: 'Day 0: Free Discovery Call'
+  description: 'Tell us what eats your time. We figure out what to automate and whether Sidecar is the right fit.'
+-
+  title: 'Week 1: Build'
+  description: 'We build your AI agents, connect them to your existing tools (email, CRM, social accounts), and configure everything.'
+-
+  title: 'Week 2-3: Supervised'
+  description: 'Your agents start handling real tasks with our team watching. We catch edge cases, fine-tune responses, and make sure nothing falls through the cracks.'
+-
+  title: 'Week 4: Running'
+  description: 'Your agents are autonomous. You review a weekly summary, we handle maintenance, and you get your time back.'
+
+----
+
+Techstack: AI Agents, Claude, Custom Integrations, OpenClaw
+
+----
+
+Techstackintro: We use the most capable AI models available and build custom integrations for each client. No cookie-cutter solutions.
+
+----
+
+Portfolioprojects:
+
+----
+
+Ctatitle: Book a Free Discovery Call
+
+----
+
+Ctadescription: Tell us what's eating your time. We'll tell you which tasks Sidecar can handle and what it looks like for your business. No pitch, no pressure.
+
+----
+
+Uuid: sidecar-service-001
