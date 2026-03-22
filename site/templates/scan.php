@@ -150,21 +150,26 @@
   }
   .scan-cta__form {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
-    max-width: 420px;
+    max-width: 360px;
     margin: 0 auto 1rem;
   }
   .scan-cta__input {
-    flex: 1;
+    width: 100%;
     padding: 0.75rem 1rem;
     font-size: 1rem;
     border: 2px solid var(--color-gray-light);
     border-radius: var(--border-radius);
     outline: none;
     font-family: var(--font-body);
+    box-sizing: border-box;
   }
   .scan-cta__input:focus {
     border-color: var(--color-sidecar);
+  }
+  .scan-cta__form .btn {
+    width: 100%;
   }
   .scan-cta__or {
     color: var(--color-gray-medium);
@@ -226,9 +231,6 @@
   @media (max-width: 768px) {
     .scan-agents {
       grid-template-columns: 1fr;
-    }
-    .scan-cta__form {
-      flex-direction: column;
     }
     .scan-results__title {
       font-size: 1.5rem;
@@ -368,11 +370,6 @@
       agentsHtml += '<div class="scan-agent-card">';
       agentsHtml += '<div class="scan-agent-card__icon">' + (agent.icon || '🤖') + '</div>';
       agentsHtml += '<h3 class="scan-agent-card__title">' + escapeHtml(agent.title) + '</h3>';
-
-      if (agent.company_description) {
-        agentsHtml += '<p class="scan-agent-card__section-label">About the Company</p>';
-        agentsHtml += '<p style="font-size:0.9rem;color:var(--color-gray-medium);line-height:1.5;">' + escapeHtml(agent.company_description) + '</p>';
-      }
 
       if (agent.responsibilities && agent.responsibilities.length) {
         agentsHtml += '<p class="scan-agent-card__section-label">Responsibilities</p>';
