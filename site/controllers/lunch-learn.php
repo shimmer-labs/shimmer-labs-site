@@ -62,7 +62,12 @@ return function ($page, $kirby) {
             . "END:VEVENT\r\n"
             . "END:VCALENDAR\r\n";
 
-        // Compose confirmation email HTML
+        // Compose confirmation email HTML (escape all user input)
+        $name      = htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
+        $email     = htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
+        $company   = htmlspecialchars($company ?: '—', ENT_QUOTES, 'UTF-8');
+        $jobTitle  = htmlspecialchars($jobTitle ?: '—', ENT_QUOTES, 'UTF-8');
+        $challenge = htmlspecialchars($challenge ?: '—', ENT_QUOTES, 'UTF-8');
         $firstName = explode(' ', $name)[0];
         $emailHtml = <<<HTML
 <!DOCTYPE html>
@@ -105,6 +110,17 @@ return function ($page, $kirby) {
       <p style="color:#0A1A2F; font-size:14px; line-height:1.6; margin-bottom:24px;">A calendar invite is attached to this email — add it now so you don't forget.</p>
 
       <p style="color:#0A1A2F; font-size:14px; line-height:1.6;">See you there,<br><strong>Logan Shimmer</strong><br><span style="color:#6B7280;">Shimmer Labs &middot; logan@shimmerlabs.co</span></p>
+    </div>
+
+    <div style="background:#f0eee6; padding:20px 40px; border-top:1px solid #e0ddd4;">
+      <p style="color:#6B7280; font-size:11px; margin:0 0 8px 0; text-transform:uppercase; letter-spacing:0.05em;">Registration Details</p>
+      <table style="width:100%; border-collapse:collapse;">
+        <tr><td style="padding:3px 0; color:#6B7280; font-size:13px; width:90px;">Name</td><td style="padding:3px 0; color:#0A1A2F; font-size:13px;">{$name}</td></tr>
+        <tr><td style="padding:3px 0; color:#6B7280; font-size:13px;">Email</td><td style="padding:3px 0; color:#0A1A2F; font-size:13px;">{$email}</td></tr>
+        <tr><td style="padding:3px 0; color:#6B7280; font-size:13px;">Company</td><td style="padding:3px 0; color:#0A1A2F; font-size:13px;">{$company}</td></tr>
+        <tr><td style="padding:3px 0; color:#6B7280; font-size:13px;">Title</td><td style="padding:3px 0; color:#0A1A2F; font-size:13px;">{$jobTitle}</td></tr>
+        <tr><td style="padding:3px 0; color:#6B7280; font-size:13px; vertical-align:top;">Challenge</td><td style="padding:3px 0; color:#0A1A2F; font-size:13px;">{$challenge}</td></tr>
+      </table>
     </div>
 
     <div style="background:#0A1A2F; padding:20px 40px; text-align:center;">
