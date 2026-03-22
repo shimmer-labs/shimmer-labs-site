@@ -2,7 +2,7 @@ Title: Sidecar — AI Agents for Your Business
 
 ----
 
-Meta_description: AI agents that handle hiring, social media, prospecting, and proposals for service businesses. 24/7 automation at a fraction of the cost of an employee.
+Meta_description: You do what you love. The boring stuff rides in the sidecar. AI agents that handle hiring, social media, prospecting, and proposals for service businesses. 24/7.
 
 ----
 
@@ -10,7 +10,7 @@ Icon:
 
 ----
 
-Summary: AI agents that handle hiring, social media, prospecting, proposals. 24/7. Do what you love, we automate the boring stuff.
+Summary: You stay in the driver's seat. Everything else goes in the sidecar. AI agents that handle hiring, social media, prospecting, and proposals so you can get back to the work you love.
 
 ----
 
@@ -20,39 +20,36 @@ Pricerange:
 
 Text:
 
-## The Problem
+## You didn't start your business to do paperwork.
 
-You're a plumber. Or a GC. Or a personal trainer. You're great at what you do —but half your week gets eaten by admin work that has nothing to do with your craft.
+You're a plumber. Or a massage therapist. Or a personal trainer. You got into this because you're great at what you do — not because you love screening job applicants, posting on Instagram, or chasing invoices.
 
-Screening job applicants. Posting on social media. Chasing leads. Writing proposals. Answering the same emails over and over.
+But here you are. Half your week eaten by admin that has nothing to do with your craft. The tasks you procrastinate on pile up. The work you actually love gets squeezed into whatever's left.
 
-You can't afford a $40k/year admin assistant. And you shouldn't have to.
+## That's what the sidecar is for.
 
-## What Sidecar Does
+You stay in the driver's seat. You do the work. Everything else — the boring stuff, the repetitive stuff, the stuff you keep meaning to get to — rides in the sidecar.
 
-Sidecar is an AI agent that runs 24/7 handling the admin tasks you hate:
+- **Hiring** — screens applicants, schedules interviews, handles initial outreach
+- **Social media** — creates and schedules posts, manages engagement
+- **Prospecting** — finds new customers, generates and follows up on leads
+- **Proposals** — drafts project proposals to 80% complete so you just review and send
 
-- **Hiring** —screens applicants, schedules interviews, handles initial outreach
-- **Social media** —creates and schedules posts, manages engagement
-- **Prospecting** —finds new customers, generates and follows up on leads
-- **Proposals** —drafts project proposals to 80% complete so you just review and send
-
-It's not replacing you. It's the assistant you always needed but could never justify hiring.
+Think of it as a tireless intern. Smart, fast, runs 24/7 — but you're always the one calling the shots.
 
 ## Who It's For
 
 Small service businesses with 1-10 employees:
 - Plumbers, electricians, general contractors
-- Barbers, nail salons, personal trainers
-- House cleaners, landscapers, pet groomers
-- Tutors, massage therapists, and more
+- Massage therapists, personal trainers, yoga studios
+- Barbers, nail salons, house cleaners
+- Landscapers, pet groomers, tutors, and more
 
-If you're great at your craft but drowning in paperwork, Sidecar is for you.
+If you're great at your craft but drowning in the stuff that isn't your craft — Sidecar gives you your time back.
 
-## The Math
+## What would you do with 20 extra hours a week?
 
-A $40k/year employee works 2,080 hours per year (40 hrs/week).
-Sidecar runs 8,760 hours per year (24/7) at a fraction of the cost.
+That's the real question. Not "how much does an employee cost" — but what would you do if you could stop wearing every hat and just do the thing you're best at?
 
 ----
 

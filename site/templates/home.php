@@ -47,8 +47,8 @@
     <div class="sidecar-section__inner">
       <div class="sidecar-section__brand">
         <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="sidecar-section__logo">
-        <h2 class="sidecar-section__tagline">Your business, but with a copilot.</h2>
-        <p class="sidecar-section__description">AI agents that handle the admin work you hate — hiring, social media, prospecting, proposals. Runs 24/7 at a fraction of the cost of an employee.</p>
+        <h2 class="sidecar-section__tagline">You drive. The boring stuff rides in the sidecar.</h2>
+        <p class="sidecar-section__description">You started your business to do what you love — not to screen applicants, chase leads, and post on social media. Add an AI sidecar and get back to the work that matters.</p>
       </div>
       <div class="sidecar-section__details">
         <ul class="sidecar-section__benefits">
@@ -57,7 +57,7 @@
           <li>Generates & follows up leads</li>
           <li>Drafts proposals</li>
           <li>Runs 24/7/365</li>
-          <li>Fraction of an employee's cost</li>
+          <li>You stay in the driver's seat</li>
         </ul>
         <div class="sidecar-section__cta">
           <a href="/services/sidecar" class="btn btn--sidecar">Learn More</a>
