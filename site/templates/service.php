@@ -144,12 +144,22 @@
 <?php endif ?>
 
 <!-- Portfolio Examples -->
-<?php if ($page->portfolioProjects()->isNotEmpty()): ?>
+<?php
+$portfolioPages = [];
+if ($page->portfolioProjects()->isNotEmpty()) {
+  try {
+    $portfolioPages = $page->portfolioProjects()->toPages();
+  } catch (TypeError $e) {
+    $portfolioPages = [];
+  }
+}
+?>
+<?php if (count($portfolioPages) > 0): ?>
 <section class="service-portfolio">
   <div class="container">
     <h2 class="service-portfolio__title">Work Examples</h2>
     <div class="service-portfolio__grid">
-      <?php foreach ($page->portfolioProjects()->toPages() as $project): ?>
+      <?php foreach ($portfolioPages as $project): ?>
         <?php if ($project): ?>
         <a href="<?= $project->url() ?>" class="portfolio-example">
           <?php if ($project->image()): ?>
