@@ -101,8 +101,6 @@ Techstackintro: I build web apps with Next.js + Supabase and iOS apps in native 
 ----
 
 Portfolioprojects:
-  - page://projects/paidly
-  - page://projects/eventsnag
 
 ----
 
