@@ -1,3 +1,76 @@
+// Scanner form handler (homepage)
+document.addEventListener('DOMContentLoaded', () => {
+  const scannerForm = document.getElementById('scannerForm');
+  if (!scannerForm) return;
+
+  const SCANNER_API = window.location.hostname === 'localhost'
+    ? 'http://localhost:3001'
+    : 'https://scanner.shimmerlabs.co';
+
+  const loadingMessages = [
+    'Reading your website...',
+    'Identifying opportunities...',
+    'Writing job descriptions...'
+  ];
+
+  scannerForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const urlInput = document.getElementById('scannerUrl');
+    const loadingEl = document.getElementById('scannerLoading');
+    const errorEl = document.getElementById('scannerError');
+    const loadingTextEl = document.getElementById('scannerLoadingText');
+
+    let url = urlInput.value.trim();
+    if (!url) return;
+
+    // Normalize URL
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+      url = 'https://' + url;
+    }
+
+    // Show loading, hide form + error
+    scannerForm.style.display = 'none';
+    loadingEl.style.display = 'flex';
+    errorEl.style.display = 'none';
+
+    // Cycle loading messages
+    let msgIndex = 0;
+    const msgInterval = setInterval(() => {
+      msgIndex = (msgIndex + 1) % loadingMessages.length;
+      loadingTextEl.textContent = loadingMessages[msgIndex];
+    }, 4000);
+
+    // GA4 event
+    if (typeof gtag === 'function') {
+      gtag('event', 'scan_started', { scan_url: url });
+    }
+
+    try {
+      const response = await fetch(SCANNER_API + '/api/scan', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url: url })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Scan failed. Please try again.');
+      }
+
+      clearInterval(msgInterval);
+      window.location.href = '/scan?id=' + data.scanId;
+    } catch (err) {
+      clearInterval(msgInterval);
+      scannerForm.style.display = 'block';
+      loadingEl.style.display = 'none';
+      errorEl.textContent = err.message || 'Something went wrong. Please try again.';
+      errorEl.style.display = 'block';
+    }
+  });
+});
+
 // Lazy Load Images
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img[data-src]');

@@ -38,6 +38,40 @@
   </div>
 </section>
 
+<!-- Sidecar Scanner -->
+<section class="scanner-section" id="scanner">
+  <div class="container">
+    <div class="scanner-section__inner">
+      <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="scanner-section__logo">
+      <h2 class="scanner-section__title">Too many hats? See which ones you can take off.</h2>
+      <p class="scanner-section__subtitle">Enter your website — we'll show you 2-3 AI agents custom-built for your business.</p>
+
+      <form class="scanner-form" id="scannerForm">
+        <div class="scanner-form__input-group">
+          <input
+            type="text"
+            name="url"
+            id="scannerUrl"
+            class="scanner-form__input"
+            placeholder="yourwebsite.com"
+            required
+            autocomplete="url"
+          >
+          <button type="submit" class="btn btn--sidecar scanner-form__button">Scan My Business</button>
+        </div>
+        <p class="scanner-form__note">Free. Takes 15 seconds. No signup required.</p>
+      </form>
+
+      <div class="scanner-form__loading" id="scannerLoading" style="display: none;">
+        <div class="scanner-form__spinner"></div>
+        <p class="scanner-form__loading-text" id="scannerLoadingText">Reading your website...</p>
+      </div>
+
+      <p class="scanner-form__error" id="scannerError" style="display: none;"></p>
+    </div>
+  </div>
+</section>
+
 <!-- Social Proof -->
 <?php snippet('social-proof', ['clients' => $page->clients()]) ?>
 
