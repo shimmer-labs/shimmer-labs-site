@@ -2946,6 +2946,40 @@ img.loaded {
   flex-wrap: wrap;
 }
 
+/* Sidecar-branded service page */
+.service-hero--sidecar {
+  background: linear-gradient(135deg, var(--color-sidecar-light) 0%, rgba(255, 255, 255, 1) 100%);
+  border-bottom: 3px solid var(--color-sidecar);
+}
+
+.service-hero__logo {
+  width: 180px;
+  height: auto;
+  margin: 0 auto var(--spacing-md);
+}
+
+.service-hero--sidecar .service-hero__title {
+  color: var(--color-navy);
+}
+
+.service-form--sidecar .service-contact-form {
+  border-top: 3px solid var(--color-sidecar);
+  background: linear-gradient(135deg, var(--color-sidecar-light) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.service-form--sidecar .btn--cta {
+  background: var(--color-sidecar);
+  border-color: var(--color-sidecar);
+  color: var(--color-white);
+}
+
+.service-form--sidecar .btn--cta:hover {
+  background: transparent;
+  color: var(--color-sidecar);
+  border-color: var(--color-sidecar);
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.4);
+}
+
 .service-description {
   padding: var(--spacing-xl) 0;
   background: var(--color-white);

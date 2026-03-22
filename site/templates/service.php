@@ -1,10 +1,14 @@
 <?php snippet('header') ?>
 
+<?php $isSidecar = $page->slug() === 'sidecar'; ?>
+
 <!-- Service Hero -->
-<section class="service-hero">
+<section class="service-hero<?= $isSidecar ? ' service-hero--sidecar' : '' ?>">
   <div class="container">
     <div class="service-hero__content">
-      <?php if ($page->icon()->isNotEmpty()): ?>
+      <?php if ($isSidecar): ?>
+        <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="service-hero__logo">
+      <?php elseif ($page->icon()->isNotEmpty()): ?>
         <div class="service-hero__icon"><?= $page->icon() ?></div>
       <?php endif ?>
 
@@ -22,7 +26,9 @@
       <?php endif ?>
 
       <div class="service-hero__cta">
-        <a href="#contact-form" class="btn btn--primary">Get Started →</a>
+        <a href="#contact-form" class="btn <?= $isSidecar ? 'btn--sidecar' : 'btn--primary' ?>">
+          <?= $isSidecar ? 'Book a Free Discovery Call' : 'Get Started →' ?>
+        </a>
       </div>
     </div>
   </div>
@@ -176,7 +182,7 @@ if ($page->portfolioProjects()->isNotEmpty()) {
 <?php endif ?>
 
 <!-- Contact Form -->
-<div id="contact-form">
+<div id="contact-form" class="<?= $isSidecar ? 'service-form--sidecar' : '' ?>">
   <?php snippet('service-contact-form', [
     'ctaTitle' => $page->ctaTitle()->or("Ready to Get Started?"),
     'ctaDescription' => $page->ctaDescription()->value()
