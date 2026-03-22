@@ -47,27 +47,27 @@ Most agencies will:
 
 Whatsincluded:
 -
-  icon: 'code'
+  icon: '💻'
   title: 'Production-Grade Code'
   description: 'TypeScript strict mode, Swift best practices, proper architecture. Built to scale.'
 -
-  icon: 'phone'
+  icon: '📱'
   title: 'Fully Responsive / Native'
   description: 'Web apps work on every device. iOS apps are real native Swift, not web wrappers.'
 -
-  icon: 'rocket'
+  icon: '🚀'
   title: 'CI/CD Pipeline'
   description: 'Push to GitHub, auto-deploy. Ship features without fear.'
 -
-  icon: 'database'
+  icon: '🗄️'
   title: 'Database Design'
   description: 'Supabase with Row-Level Security or Core Data for iOS. Your data is safe and scalable.'
 -
-  icon: 'credit-card'
+  icon: '💳'
   title: 'Payments Ready'
   description: 'Stripe integration for subscriptions, one-time payments, or in-app purchases.'
 -
-  icon: 'book'
+  icon: '📚'
   title: 'Documentation + Handoff'
   description: 'Code walkthrough, deployment guide, App Store submission, and 2-8 weeks of support.'
 

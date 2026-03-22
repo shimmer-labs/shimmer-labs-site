@@ -1,4 +1,4 @@
-Title: Sidecar -- AI Agents for Your Business
+Title: Sidecar — AI Agents for Your Business
 
 ----
 
@@ -22,7 +22,7 @@ Text:
 
 ## The Problem
 
-You're a plumber. Or a GC. Or a personal trainer. You're great at what you do -- but half your week gets eaten by admin work that has nothing to do with your craft.
+You're a plumber. Or a GC. Or a personal trainer. You're great at what you do —but half your week gets eaten by admin work that has nothing to do with your craft.
 
 Screening job applicants. Posting on social media. Chasing leads. Writing proposals. Answering the same emails over and over.
 
@@ -32,10 +32,10 @@ You can't afford a $40k/year admin assistant. And you shouldn't have to.
 
 Sidecar is an AI agent that runs 24/7 handling the admin tasks you hate:
 
-- **Hiring** -- screens applicants, schedules interviews, handles initial outreach
-- **Social media** -- creates and schedules posts, manages engagement
-- **Prospecting** -- finds new customers, generates and follows up on leads
-- **Proposals** -- drafts project proposals to 80% complete so you just review and send
+- **Hiring** —screens applicants, schedules interviews, handles initial outreach
+- **Social media** —creates and schedules posts, manages engagement
+- **Prospecting** —finds new customers, generates and follows up on leads
+- **Proposals** —drafts project proposals to 80% complete so you just review and send
 
 It's not replacing you. It's the assistant you always needed but could never justify hiring.
 
@@ -58,19 +58,19 @@ Sidecar runs 8,760 hours per year (24/7) at a fraction of the cost.
 
 Whatsincluded:
 -
-  icon: 'phone'
+  icon: '📞'
   title: 'Free Discovery Call'
   description: 'We learn about your business, your pain points, and figure out which tasks to automate first.'
 -
-  icon: 'bot'
+  icon: '🤖'
   title: 'Agent Setup'
   description: 'We build and configure your AI agents, connect them to your existing tools, and train them on your workflows.'
 -
-  icon: 'eye'
+  icon: '👁️'
   title: 'Supervised Rollout'
   description: 'Your agents run with human oversight for 2 weeks. We catch edge cases and fine-tune before going fully autonomous.'
 -
-  icon: 'wrench'
+  icon: '🔧'
   title: 'Ongoing Maintenance'
   description: 'We monitor performance, update agents as your business evolves, and handle any issues that come up.'
 
