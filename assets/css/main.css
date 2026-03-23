@@ -390,7 +390,7 @@ section {
 .tools-carousel__track {
   display: flex;
   gap: var(--spacing-lg);
-  animation: scroll 30s linear infinite;
+  animation: scroll 60s linear infinite;
 }
 
 .tool-logo {
