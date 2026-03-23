@@ -122,6 +122,50 @@ section {
 }
 
 /* ===================================
+   Event Banner
+   =================================== */
+.event-banner {
+  display: flex;
+  background: linear-gradient(135deg, #503AA8 0%, #7c4ddb 100%);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background 0.2s;
+}
+.event-banner:hover {
+  background: linear-gradient(135deg, #5c42b8 0%, #8b5de5 100%);
+}
+.event-banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.event-banner__text {
+  color: rgba(255,255,255,0.9);
+}
+.event-banner__text strong {
+  color: #FDBE34;
+}
+.event-banner__cta {
+  color: #FDBE34;
+  font-weight: 600;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .event-banner {
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+  }
+  .event-banner .container {
+    gap: 0.5rem;
+  }
+}
+
+/* ===================================
    Header & Navigation
    =================================== */
 .site-header {
@@ -390,7 +434,7 @@ section {
 .tools-carousel__track {
   display: flex;
   gap: var(--spacing-lg);
-  animation: scroll 60s linear infinite;
+  animation: scroll 51s linear infinite;
 }
 
 .tool-logo {

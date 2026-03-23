@@ -80,6 +80,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Event banner click tracking
+document.addEventListener('DOMContentLoaded', () => {
+  const banner = document.getElementById('eventBanner');
+  if (banner && typeof gtag === 'function') {
+    banner.addEventListener('click', () => {
+      gtag('event', 'event_banner_click', {
+        event_category: 'lunch_learn',
+        event_label: 'homepage_banner'
+      });
+    });
+  }
+});
+
 // Lazy Load Images
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img[data-src]');

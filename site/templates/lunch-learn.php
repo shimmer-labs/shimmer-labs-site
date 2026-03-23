@@ -571,4 +571,39 @@
 
 <?php endif ?>
 
+<script>
+(function() {
+  if (typeof gtag !== 'function') return;
+
+  <?php if ($success): ?>
+  // Track successful registration
+  gtag('event', 'lunch_learn_registered', {
+    event_category: 'lunch_learn',
+    event_label: 'april_2026'
+  });
+  <?php else: ?>
+  // Track form interactions
+  var form = document.querySelector('.ll-form');
+  if (!form) return;
+
+  var started = false;
+  form.addEventListener('focusin', function() {
+    if (started) return;
+    started = true;
+    gtag('event', 'lunch_learn_form_start', {
+      event_category: 'lunch_learn',
+      event_label: 'april_2026'
+    });
+  });
+
+  form.addEventListener('submit', function() {
+    gtag('event', 'lunch_learn_form_submit', {
+      event_category: 'lunch_learn',
+      event_label: 'april_2026'
+    });
+  });
+  <?php endif ?>
+})();
+</script>
+
 <?php snippet('footer') ?>

@@ -34,6 +34,14 @@ return [
         // Add all listed pages (excluding error, offline, notes)
         $pages = $site->index()->listed()->not(['error', 'offline', 'notes']);
 
+        // Also include specific unlisted pages we want indexed
+        $extraPages = ['lunch-learn', 'scan'];
+        foreach ($extraPages as $slug) {
+          if ($p = $site->find($slug)) {
+            $pages = $pages->add($p);
+          }
+        }
+
         foreach ($pages as $page) {
           // Set priority based on page depth
           $priority = match($page->depth()) {

@@ -23,6 +23,7 @@
           <ul>
             <li><a href="<?= url('about') ?>">About</a></li>
             <li><a href="<?= url('projects') ?>">Projects</a></li>
+            <li><a href="<?= url('lunch-learn') ?>">Lunch &amp; Learn (Apr 8)</a></li>
             <li><a href="<?= url('contact') ?>">Contact</a></li>
           </ul>
         </div>

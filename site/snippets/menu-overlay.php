@@ -59,6 +59,20 @@
         </ul>
       </div>
 
+      <!-- Event Promo -->
+      <div class="menu-section">
+        <h3>Events</h3>
+        <ul class="menu-links">
+          <li>
+            <a href="/lunch-learn">
+              <span class="menu-link-icon">🍱</span>
+              <span class="menu-link-title">Lunch &amp; Learn — Apr 8</span>
+              <span class="menu-link-price">Free</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <!-- Contact Footer -->
       <div class="menu-footer">
         <a href="/contact" class="menu-contact-link">Contact Us</a>
