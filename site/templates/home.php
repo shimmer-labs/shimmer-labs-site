@@ -60,7 +60,7 @@
     <div class="scanner-how-it-works__cta">
       <a href="#scanner" class="btn btn--sidecar">Scan My Business</a>
       <span style="margin: 0 1rem; color: var(--color-gray-medium);">or</span>
-      <a href="/services/sidecar" class="btn btn--secondary">Learn More About Sidecar</a>
+      <a href="/services/sidecar" class="btn btn--primary">Learn More About Sidecar</a>
     </div>
   </div>
 </section>
