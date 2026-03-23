@@ -46,7 +46,7 @@
       <h2 class="scanner-section__title">Too many hats? See which ones you can take off.</h2>
       <p class="scanner-section__subtitle">Enter your website — we'll show you 2-3 AI agents custom-built for your business.</p>
 
-      <form class="scanner-form" id="scannerForm">
+      <form class="scanner-form" id="scannerForm" action="javascript:void(0)" method="POST" novalidate>
         <div class="scanner-form__input-group">
           <input
             type="text"
@@ -55,7 +55,9 @@
             class="scanner-form__input"
             placeholder="yourwebsite.com"
             required
-            autocomplete="url"
+            inputmode="url"
+            autocomplete="off"
+            enterkeyhint="go"
           >
           <button type="submit" class="btn btn--sidecar scanner-form__button">Scan My Business</button>
         </div>
