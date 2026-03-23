@@ -279,7 +279,7 @@
 
       <form class="scan-cta__form" id="scanLeadForm">
         <input type="text" name="name" placeholder="Your name" class="scan-cta__input">
-        <input type="email" name="email" placeholder="you@company.com" class="scan-cta__input" required>
+        <input type="email" name="email" placeholder="you@yourbusiness.com" class="scan-cta__input" required>
         <button type="submit" class="btn btn--sidecar">Send My Plan</button>
       </form>
 
@@ -408,6 +408,14 @@
       e.preventDefault();
       var email = leadForm.email.value;
       var name = leadForm.name.value;
+
+      // Work email validation
+      var personalDomains = ['gmail.com','yahoo.com','hotmail.com','outlook.com','aol.com','icloud.com','me.com','mac.com','live.com','msn.com','protonmail.com','proton.me','mail.com','ymail.com','comcast.net','att.net','verizon.net','cox.net'];
+      var emailDomain = email.split('@')[1]?.toLowerCase();
+      if (personalDomains.indexOf(emailDomain) !== -1) {
+        alert('Please use your work email so we can send a plan specific to your business.');
+        return;
+      }
 
       var btn = leadForm.querySelector('button');
       btn.disabled = true;
