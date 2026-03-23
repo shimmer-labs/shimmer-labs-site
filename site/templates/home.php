@@ -1,50 +1,12 @@
 <?php snippet('header') ?>
 
-<!-- Hero Section -->
-<section class="hero">
+<!-- Hero: Scanner-First -->
+<section class="hero" id="scanner">
   <div class="container">
-    <div class="hero__wrapper">
-      <div class="hero__content">
-        <?php if ($page->heroSubheading()->isNotEmpty()): ?>
-          <p class="hero__subheading"><?= $page->heroSubheading() ?></p>
-        <?php endif ?>
-        
-        <h1 class="hero__title"><?= $page->heroTitle()->or('We Build the Software Your Business Actually Needs') ?></h1>
-        
-        <?php if ($page->heroDescription()->isNotEmpty()): ?>
-          <p class="hero__description"><?= $page->heroDescription() ?></p>
-        <?php endif ?>
-        
-        <?php if ($page->heroCta()->isNotEmpty()): ?>
-          <a href="<?= $page->heroCtaUrl() ?>" class="btn btn--primary">
-            <?= $page->heroCta() ?>
-          </a>
-        <?php endif ?>
-      </div>
-      
-      <div class="hero__visual">
-        <div class="laptop-mockup">
-          <?php if ($page->heroLaptopImage()->toFile()): ?>
-            <img src="<?= url('assets/images/n8n.jpg') ?>" alt="Custom app development" class="laptop-screen">
-          <?php endif ?>
-        </div>
-        <?php if ($page->heroCircleImage()->toFile()): ?>
-          <div class="hero__circle-image">
-            <img src="<?= url('assets/images/hero.jpg') ?>" alt="Shimmer Labs projects">
-          </div>
-        <?php endif ?>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Sidecar Scanner -->
-<section class="scanner-section" id="scanner">
-  <div class="container">
-    <div class="scanner-section__inner">
-      <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="scanner-section__logo">
-      <h2 class="scanner-section__title">Too many hats? See which ones you can take off.</h2>
-      <p class="scanner-section__subtitle">Enter your website — we'll show you 2-3 AI agents custom-built for your business.</p>
+    <div class="hero__scanner">
+      <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="hero__scanner-logo">
+      <h1 class="hero__title">Too many hats? See which ones you can take off.</h1>
+      <p class="hero__description">Enter your website — we'll show you 2-3 AI agents custom-built for your business.</p>
 
       <form class="scanner-form" id="scannerForm" action="javascript:void(0)" method="POST" novalidate>
         <div class="scanner-form__input-group">
@@ -65,7 +27,7 @@
       </form>
 
       <div class="scanner-form__loading" id="scannerLoading" style="display: none;">
-        <div class="scanner-form__spinner"></div>
+        <div class="scanner-form__progress-bar"><div class="scanner-form__progress-fill" id="scannerProgressFill"></div></div>
         <p class="scanner-form__loading-text" id="scannerLoadingText">Reading your website...</p>
       </div>
 
@@ -77,29 +39,28 @@
 <!-- Social Proof -->
 <?php snippet('social-proof', ['clients' => $page->clients()]) ?>
 
-<!-- Sidecar Section -->
-<section id="sidecar" class="sidecar-section">
+<!-- How It Works (Scanner) -->
+<section class="scanner-how-it-works">
   <div class="container">
-    <div class="sidecar-section__inner">
-      <div class="sidecar-section__brand">
-        <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="sidecar-section__logo">
-        <h2 class="sidecar-section__tagline">You drive. The boring stuff rides in the sidecar.</h2>
-        <p class="sidecar-section__description">You started your business to do what you love — not to screen applicants, chase leads, and post on social media. Add an AI sidecar and get back to the work that matters.</p>
+    <h2 class="scanner-how-it-works__title">How the scan works</h2>
+    <div class="scanner-how-it-works__steps">
+      <div class="scanner-how-it-works__step">
+        <span class="scanner-how-it-works__number">1</span>
+        <p>Enter your website URL</p>
       </div>
-      <div class="sidecar-section__details">
-        <ul class="sidecar-section__benefits">
-          <li>Screens job applicants</li>
-          <li>Posts to social media</li>
-          <li>Generates & follows up leads</li>
-          <li>Drafts proposals</li>
-          <li>Runs 24/7/365</li>
-          <li>You stay in the driver's seat</li>
-        </ul>
-        <div class="sidecar-section__cta">
-          <a href="/services/sidecar" class="btn btn--sidecar">Learn More</a>
-          <a href="/contact" class="btn btn--secondary" style="margin-left: 1rem;">Book a Free Call</a>
-        </div>
+      <div class="scanner-how-it-works__step">
+        <span class="scanner-how-it-works__number">2</span>
+        <p>We read your site and identify opportunities</p>
       </div>
+      <div class="scanner-how-it-works__step">
+        <span class="scanner-how-it-works__number">3</span>
+        <p>You get a custom hiring plan — 3 agents ready to work</p>
+      </div>
+    </div>
+    <div class="scanner-how-it-works__cta">
+      <a href="#scanner" class="btn btn--sidecar">Scan My Business</a>
+      <span style="margin: 0 1rem; color: var(--color-gray-medium);">or</span>
+      <a href="/services/sidecar" class="btn btn--secondary">Learn More About Sidecar</a>
     </div>
   </div>
 </section>

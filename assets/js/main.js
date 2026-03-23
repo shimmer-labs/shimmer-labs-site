@@ -7,10 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     ? 'http://localhost:3001'
     : 'https://scanner.shimmerlabs.co';
 
-  const loadingMessages = [
-    'Reading your website...',
-    'Identifying opportunities...',
-    'Writing job descriptions...'
+  const loadingSteps = [
+    { at: 0, text: 'Reading your website...', progress: 15 },
+    { at: 4000, text: 'Identifying opportunities...', progress: 45 },
+    { at: 8000, text: 'Writing job descriptions...', progress: 75 },
+    { at: 12000, text: 'Almost done — this one\'s a meaty site.', progress: 88 },
   ];
 
   scannerForm.addEventListener('submit', async (e) => {
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadingEl = document.getElementById('scannerLoading');
     const errorEl = document.getElementById('scannerError');
     const loadingTextEl = document.getElementById('scannerLoadingText');
+    const progressFill = document.getElementById('scannerProgressFill');
 
     let url = urlInput.value.trim();
     if (!url) return;
@@ -34,12 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
     loadingEl.style.display = 'flex';
     errorEl.style.display = 'none';
 
-    // Cycle loading messages
-    let msgIndex = 0;
-    const msgInterval = setInterval(() => {
-      msgIndex = (msgIndex + 1) % loadingMessages.length;
-      loadingTextEl.textContent = loadingMessages[msgIndex];
-    }, 4000);
+    // Linear loading steps (no looping)
+    loadingTextEl.textContent = loadingSteps[0].text;
+    progressFill.style.width = loadingSteps[0].progress + '%';
+
+    const stepTimeouts = [];
+    for (let i = 1; i < loadingSteps.length; i++) {
+      stepTimeouts.push(setTimeout(() => {
+        loadingTextEl.textContent = loadingSteps[i].text;
+        progressFill.style.width = loadingSteps[i].progress + '%';
+      }, loadingSteps[i].at));
+    }
 
     // GA4 event
     if (typeof gtag === 'function') {
@@ -59,12 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
         throw new Error(data.error || 'Scan failed. Please try again.');
       }
 
-      clearInterval(msgInterval);
+      stepTimeouts.forEach(clearTimeout);
+      progressFill.style.width = '100%';
       window.location.href = '/scan?id=' + data.scanId;
     } catch (err) {
-      clearInterval(msgInterval);
+      stepTimeouts.forEach(clearTimeout);
       scannerForm.style.display = 'block';
       loadingEl.style.display = 'none';
+      progressFill.style.width = '0%';
       errorEl.textContent = err.message || 'Something went wrong. Please try again.';
       errorEl.style.display = 'block';
     }

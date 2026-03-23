@@ -25,37 +25,75 @@
     font-size: 1.1rem;
   }
 
-  /* Company card */
+  .scan-results__rescan {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--color-sidecar);
+    text-decoration: none;
+    margin-top: 0.5rem;
+  }
+  .scan-results__rescan:hover {
+    text-decoration: underline;
+  }
+
+  /* Company banner (slim) */
   .scan-company {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
     background: var(--color-sidecar-light);
     border: 1px solid var(--color-sidecar-border);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2.5rem;
-    max-width: 800px;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
   .scan-company__name {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: var(--color-navy);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
   }
   .scan-company__badge {
     display: inline-block;
     background: var(--color-sidecar);
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    padding: 0.25rem 0.75rem;
+    padding: 0.15rem 0.6rem;
     border-radius: 100px;
-    margin-bottom: 0.75rem;
     text-transform: capitalize;
   }
   .scan-company__description {
     color: var(--color-gray-medium);
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    flex-basis: 100%;
+  }
+
+  /* Mid-page CTA (mobile) */
+  .scan-mid-cta {
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--color-sidecar-light);
+    border: 1px solid var(--color-sidecar-border);
+    border-radius: 8px;
+  }
+  .scan-mid-cta p {
+    font-weight: 600;
+    color: var(--color-navy);
+    margin-bottom: 0.75rem;
+  }
+
+  /* Inline form error */
+  .scan-cta__form-error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin: 0;
   }
 
   /* Agent cards */
@@ -264,13 +302,20 @@
       <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="scan-results__logo">
       <h1 class="scan-results__title" id="scanResultsTitle">Your AI Agent Team</h1>
       <p class="scan-results__subtitle">Here's who we'd hire for your business.</p>
+      <a href="/" class="scan-results__rescan">Scan another business</a>
     </div>
 
-    <!-- Company profile card -->
+    <!-- Company profile banner -->
     <div class="scan-company" id="scanCompany"></div>
 
     <!-- Agent cards -->
     <div class="scan-agents" id="scanAgents"></div>
+
+    <!-- Mid-page CTA (inserted by JS between cards on mobile) -->
+    <div class="scan-mid-cta" id="scanMidCta" style="display: none;">
+      <p>Want these agents working for you?</p>
+      <a href="" class="btn btn--sidecar" id="scanMidCalendlyLink" target="_blank" rel="noopener">Book a Free Call</a>
+    </div>
 
     <!-- CTA -->
     <div class="scan-cta" id="scanCta">
@@ -279,7 +324,8 @@
 
       <form class="scan-cta__form" id="scanLeadForm">
         <input type="text" name="name" placeholder="Your name" class="scan-cta__input">
-        <input type="email" name="email" placeholder="you@yourbusiness.com" class="scan-cta__input" required>
+        <input type="email" name="email" placeholder="you@company.com" class="scan-cta__input" required>
+        <p class="scan-cta__form-error" id="scanFormError" style="display: none;"></p>
         <button type="submit" class="btn btn--sidecar">Send My Plan</button>
       </form>
 
@@ -398,24 +444,29 @@
     var calendlyUrl = CALENDLY_BASE + '?a1=scan-' + scanId;
     document.getElementById('scanCalendlyLink').href = calendlyUrl;
     document.getElementById('scanCalendlyLinkSuccess').href = calendlyUrl;
+    document.getElementById('scanMidCalendlyLink').href = calendlyUrl;
+
+    // Show mid-CTA on mobile (between agent cards 2 and 3)
+    if (window.innerWidth <= 768 && agents.length >= 3) {
+      var agentCards = document.querySelectorAll('.scan-agent-card');
+      var midCta = document.getElementById('scanMidCta');
+      if (agentCards.length >= 2 && midCta) {
+        agentCards[1].after(midCta);
+        midCta.style.display = 'block';
+      }
+    }
 
     // Lead form
     var leadForm = document.getElementById('scanLeadForm');
     var ctaSection = document.getElementById('scanCta');
     var successSection = document.getElementById('scanCtaSuccess');
+    var formError = document.getElementById('scanFormError');
 
     leadForm.addEventListener('submit', function(e) {
       e.preventDefault();
       var email = leadForm.email.value;
       var name = leadForm.name.value;
-
-      // Work email validation
-      var personalDomains = ['gmail.com','yahoo.com','hotmail.com','outlook.com','aol.com','icloud.com','me.com','mac.com','live.com','msn.com','protonmail.com','proton.me','mail.com','ymail.com','comcast.net','att.net','verizon.net','cox.net'];
-      var emailDomain = email.split('@')[1]?.toLowerCase();
-      if (personalDomains.indexOf(emailDomain) !== -1) {
-        alert('Please use your work email so we can send a plan specific to your business.');
-        return;
-      }
+      formError.style.display = 'none';
 
       var btn = leadForm.querySelector('button');
       btn.disabled = true;
@@ -432,7 +483,14 @@
         body: JSON.stringify({ email: email, name: name })
       })
       .then(function(res) { return res.json(); })
-      .then(function() {
+      .then(function(data) {
+        if (data.error) {
+          formError.textContent = data.message || 'Something went wrong.';
+          formError.style.display = 'block';
+          btn.disabled = false;
+          btn.textContent = 'Send My Plan';
+          return;
+        }
         leadForm.style.display = 'none';
         ctaSection.querySelector('.scan-cta__title').style.display = 'none';
         ctaSection.querySelector('.scan-cta__subtitle').style.display = 'none';
@@ -445,14 +503,15 @@
         }
       })
       .catch(function() {
+        formError.textContent = 'Something went wrong. Please try again.';
+        formError.style.display = 'block';
         btn.disabled = false;
         btn.textContent = 'Send My Plan';
-        alert('Something went wrong. Please try again.');
       });
     });
 
     // Calendly click tracking
-    document.querySelectorAll('[id^="scanCalendly"]').forEach(function(link) {
+    document.querySelectorAll('[id^="scanCalendly"], [id="scanMidCalendlyLink"]').forEach(function(link) {
       link.addEventListener('click', function() {
         if (typeof gtag === 'function') {
           gtag('event', 'scan_calendly_clicked', { scan_id: scanId });
