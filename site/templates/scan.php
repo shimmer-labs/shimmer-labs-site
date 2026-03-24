@@ -301,7 +301,7 @@
     <div class="scan-results__header">
       <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="scan-results__logo">
       <h1 class="scan-results__title" id="scanResultsTitle">Your AI Agent Team</h1>
-      <p class="scan-results__subtitle">Here's who we'd hire for your business.</p>
+      <p class="scan-results__subtitle">Here's what we'd build for your business.</p>
       <a href="/" class="scan-results__rescan">Scan another business</a>
     </div>
 
