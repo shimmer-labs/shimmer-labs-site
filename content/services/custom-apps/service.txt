@@ -32,11 +32,11 @@ Most agencies will:
 - Make you talk to account managers instead of developers
 - Require you to figure out everything upfront
 
-**I'm different:**
+**We're different:**
 - **Meet you where you are:** Complete designs? Great. Napkin sketch? Also great.
-- **AI-powered speed:** I use AI agents to move 2-3x faster than traditional development
-- **Direct communication:** You talk to me, the developer. No middlemen.
-- **Web + iOS:** I build both. Most shops outsource one or the other.
+- **AI-powered speed:** We use AI agents to move 2-3x faster than traditional development
+- **Direct communication:** You talk to Logan, the developer. No middlemen.
+- **Web + iOS:** We build both. Most shops outsource one or the other.
 
 **Real examples:**
 - **TreeBidPro:** Wireframes to production with Stripe in 2 weeks
@@ -49,46 +49,46 @@ Whatsincluded:
 -
   icon: '💻'
   title: 'Production-Grade Code'
-  description: 'TypeScript strict mode, Swift best practices, proper architecture. Built to scale.'
+  description: 'TypeScript strict mode, Swift best practices, proper architecture.'
 -
   icon: '📱'
   title: 'Fully Responsive / Native'
-  description: 'Web apps work on every device. iOS apps are real native Swift, not web wrappers.'
+  description: 'Web apps work on every device. iOS apps are native Swift, not web wrappers.'
 -
   icon: '🚀'
   title: 'CI/CD Pipeline'
-  description: 'Push to GitHub, auto-deploy. Ship features without fear.'
+  description: 'Push to GitHub, auto-deploy. Ship without fear.'
 -
   icon: '🗄️'
   title: 'Database Design'
-  description: 'Supabase with Row-Level Security or Core Data for iOS. Your data is safe and scalable.'
+  description: 'Supabase with Row-Level Security or Core Data for iOS.'
 -
   icon: '💳'
   title: 'Payments Ready'
-  description: 'Stripe integration for subscriptions, one-time payments, or in-app purchases.'
+  description: 'Stripe for subscriptions, one-time payments, or in-app purchases.'
 -
   icon: '📚'
   title: 'Documentation + Handoff'
-  description: 'Code walkthrough, deployment guide, App Store submission, and 2-8 weeks of support.'
+  description: 'Code walkthrough, deployment guide, App Store submission, and 2-8 weeks support.'
 
 ----
 
 Process:
 -
   title: 'Discovery Call (FREE)'
-  description: 'Tell me about your idea, show me what you have (designs, sketches, or just words), and I will tell you what is realistic and what it costs.'
+  description: 'Tell us about your idea, show us what you have (designs, sketches, or just words), and we will tell you what is realistic and what it costs.'
 -
   title: 'Scoping & Proposal'
-  description: 'I define the scope, estimate complexity, and give you a fixed price + timeline. No surprises, no scope creep charges.'
+  description: 'We define the scope, estimate complexity, and give you a fixed price + timeline. No surprises, no scope creep charges.'
 -
   title: 'Design (if needed)'
-  description: 'For projects without designs: I create user flows and UI before writing code. You approve before we build.'
+  description: 'For projects without designs: we create user flows and UI before writing code. You approve before we build.'
 -
   title: 'Development'
-  description: 'I build in sprints with weekly demos. You see progress, give feedback, and we iterate. Direct Slack/email access to me.'
+  description: 'We build in sprints with weekly demos. You see progress, give feedback, and we iterate. Direct Slack/email access to Logan.'
 -
   title: 'Launch & Support'
-  description: 'I deploy to production (or submit to the App Store), train you on everything, and stick around for 2-8 weeks to fix bugs.'
+  description: 'We deploy to production (or submit to the App Store), train you on everything, and stick around for 2-8 weeks to fix bugs.'
 
 ----
 
@@ -96,7 +96,7 @@ Techstack: Next.js, TypeScript, Supabase, Tailwind CSS, Vercel, Stripe, Swift, S
 
 ----
 
-Techstackintro: I build web apps with Next.js + Supabase and iOS apps in native Swift. No React Native, no Flutter, no WordPress. Modern tools, fast results.
+Techstackintro: We build web apps with Next.js + Supabase and iOS apps in native Swift. No React Native, no Flutter, no WordPress. Modern tools, fast results.
 
 ----
 

@@ -1,7 +1,7 @@
 <section class="comparison">
   <div class="container">
-    <h2 class="comparison__title">Why Hire Me?</h2>
-    <p class="comparison__subtitle">Agencies are slow and expensive. I'm fast and transparent.</p>
+    <h2 class="comparison__title">Why Hire Us?</h2>
+    <p class="comparison__subtitle">Same work. Less time. Less money.</p>
 
     <div class="comparison__table">
       <div class="comparison__row comparison__row--header">
@@ -42,7 +42,7 @@
     </div>
 
     <div class="comparison__cta">
-      <p>Stop overpaying agencies. Get production-ready code in weeks, not months.</p>
+      <p>Production-ready code in weeks, not months.</p>
       <a href="/contact" class="btn btn--primary">Get Started →</a>
     </div>
   </div>

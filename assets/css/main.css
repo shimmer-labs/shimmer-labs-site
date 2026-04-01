@@ -4066,3 +4066,341 @@ img.loaded {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===================================
+   About Page
+   =================================== */
+.about-hero {
+  padding: var(--spacing-xl) 0 var(--spacing-lg);
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-charcoal) 100%);
+  color: white;
+}
+
+.about-hero__title {
+  font-size: 3rem;
+  color: white;
+}
+
+.about-content {
+  padding: var(--spacing-xl) 0;
+}
+
+.about-content__body {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-content__body h2 {
+  font-size: 1.75rem;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-content__body h2:first-child {
+  margin-top: 0;
+}
+
+.about-content__body ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content__body ul li {
+  padding: 0.5rem 0;
+  padding-left: 0;
+}
+
+.about-content__body a {
+  color: var(--color-sidecar);
+  font-weight: 600;
+}
+
+.about-content__body a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-hero__title {
+    font-size: 2rem;
+  }
+
+  .about-content__body {
+    font-size: 1rem;
+  }
+}
+
+/* ===================================
+   Sidecar Service Page — Stats Cards
+   =================================== */
+.sidecar-stats {
+  padding: var(--spacing-lg) 0;
+  background: var(--color-sidecar-light);
+  border-top: 1px solid var(--color-sidecar-border);
+  border-bottom: 1px solid var(--color-sidecar-border);
+}
+
+.sidecar-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sidecar-stat {
+  text-align: center;
+  padding: var(--spacing-md);
+  background: white;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-sidecar-border);
+}
+
+.sidecar-stat__number {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-sidecar);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.sidecar-stat__label {
+  font-size: 0.95rem;
+  color: var(--color-gray-medium);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .sidecar-stats__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidecar-stat__number {
+    font-size: 2.5rem;
+  }
+}
+
+/* ===================================
+   Sidecar — Benefit Table (Two-Column)
+   =================================== */
+.benefit-table {
+  padding: var(--spacing-xl) 0;
+}
+
+.benefit-table__title {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.benefit-table__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.benefit-table__column {
+  padding: var(--spacing-md);
+}
+
+.benefit-table__column--sidecar {
+  background: var(--color-sidecar-light);
+}
+
+.benefit-table__column--you {
+  background: white;
+}
+
+.benefit-table__column-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-sidecar);
+}
+
+.benefit-table__column--you .benefit-table__column-title {
+  border-bottom-color: var(--color-teal);
+}
+
+.benefit-table__item {
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  color: var(--color-navy);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.benefit-table__item:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .benefit-table__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===================================
+   Sidecar — For You / Not For You Qualifier
+   =================================== */
+.qualifier {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-gray-light);
+}
+
+.qualifier__title {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.qualifier__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.qualifier__column {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+}
+
+.qualifier__column-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qualifier__column-title--yes {
+  color: #16a34a;
+}
+
+.qualifier__column-title--no {
+  color: #dc2626;
+}
+
+.qualifier__item {
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  color: var(--color-navy);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.qualifier__icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .qualifier__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===================================
+   Sidecar — FAQ Section
+   =================================== */
+.sidecar-faq {
+  padding: var(--spacing-xl) 0;
+}
+
+.sidecar-faq__title {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.sidecar-faq__list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.sidecar-faq__item {
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.sidecar-faq__item:first-child {
+  padding-top: 0;
+}
+
+.sidecar-faq__question {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.sidecar-faq__answer {
+  color: var(--color-gray-medium);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===================================
+   Sidecar — Transformation Statement
+   =================================== */
+.transformation {
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  background: var(--color-navy);
+  color: white;
+}
+
+.transformation__text {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+.transformation__before {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.transformation__after {
+  color: var(--color-sidecar);
+}
+
+@media (max-width: 768px) {
+  .transformation__text {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===================================
+   Sidecar — Scarcity Signal
+   =================================== */
+.scarcity {
+  text-align: center;
+  padding: var(--spacing-md) 0;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-gray-medium);
+  font-weight: 500;
+}
+
+.scarcity strong {
+  color: var(--color-sidecar);
+}
+
+/* ===================================
+   Sidecar — Process Step Orange Numbers
+   =================================== */
+.page--sidecar .process-step__number {
+  background: linear-gradient(135deg, var(--color-sidecar) 0%, #ff8533 100%);
+}

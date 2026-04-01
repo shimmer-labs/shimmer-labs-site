@@ -16,7 +16,7 @@
         <div class="process__step-number">2</div>
         <div class="process__step-icon">⚡</div>
         <h3 class="process__step-title">Build</h3>
-        <p class="process__step-description">I build in my focused stack (Next.js, Supabase, etc.) with AI agents for 2-3x speed.</p>
+        <p class="process__step-description">We build in a focused stack (Next.js, Supabase, etc.) with AI agents for 2-3x speed.</p>
         <p class="process__step-meta">3-6 weeks</p>
       </div>
 

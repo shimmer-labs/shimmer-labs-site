@@ -35,7 +35,7 @@ You stay in the driver's seat. You do the work. Everything else — the boring s
 - **Prospecting** — finds new customers, generates and follows up on leads
 - **Proposals** — drafts project proposals to 80% complete so you just review and send
 
-Think of it as a tireless intern. Smart, fast, runs 24/7 — but you're always the one calling the shots.
+Think of it as a tireless intern. Runs 24/7 — but you're always the one calling the shots.
 
 ## Who It's For
 
@@ -49,7 +49,7 @@ If you're great at your craft but drowning in the stuff that isn't your craft �
 
 ## What would you do with 20 extra hours a week?
 
-That's the real question. Not "how much does an employee cost" — but what would you do if you could stop wearing every hat and just do the thing you're best at?
+Not "how much does an employee cost." What would you do if you could stop wearing every hat?
 
 ----
 
@@ -106,6 +106,97 @@ Ctatitle: Book a Free Discovery Call
 ----
 
 Ctadescription: Tell us what's eating your time. We'll tell you which tasks Sidecar can handle and what it looks like for your business. No pitch, no pressure.
+
+----
+
+Stats:
+-
+  number: '15+'
+  label: 'Hours of admin per week for most owners'
+-
+  number: '$62K'
+  label: 'What a $40K hire really costs'
+-
+  number: '24/7'
+  label: 'Your agents never clock out'
+
+----
+
+Benefitssidecar:
+-
+  item: 'Screen job applicants'
+-
+  item: 'Schedule interviews'
+-
+  item: 'Post to social media'
+-
+  item: 'Follow up on leads'
+-
+  item: 'Draft proposals'
+-
+  item: 'Chase unpaid invoices'
+
+----
+
+Benefitsyou:
+-
+  item: 'Do the work you love'
+-
+  item: 'Meet with clients'
+-
+  item: 'Train your team'
+-
+  item: 'Plan your next move'
+-
+  item: 'Leave at a reasonable hour'
+-
+  item: 'Take a vacation'
+
+----
+
+Qualifieryes:
+-
+  item: 'Service business with 1-10 employees'
+-
+  item: 'Spending 10+ hours/week on admin'
+-
+  item: 'Using 3+ tools that don''t talk to each other'
+-
+  item: 'Ready to delegate to something that doesn''t call in sick'
+
+----
+
+Qualifierno:
+-
+  item: 'Enterprise company (100+ employees)'
+-
+  item: 'Need a full custom software build (see Custom Apps)'
+-
+  item: 'Looking for a chatbot on your website'
+-
+  item: 'Want to replace your whole team with AI'
+
+----
+
+Faq:
+-
+  question: 'What does "AI agent" actually mean?'
+  answer: 'Software that does a specific job for you — like screening resumes or posting to Instagram — without you having to click buttons. You set the rules, the agent does the work.'
+-
+  question: 'Will it make mistakes?'
+  answer: 'Sometimes. That''s why we do a 2-week supervised rollout. Your agents run with our team watching, and we catch edge cases before they go fully autonomous.'
+-
+  question: 'How much does it cost?'
+  answer: 'Less than a part-time hire. We price based on the number of agents and complexity. Book a free call and we''ll give you a straight answer.'
+-
+  question: 'What if I hate it?'
+  answer: 'Cancel anytime. No contracts, no cancellation fees. If it''s not saving you time, you shouldn''t be paying for it.'
+-
+  question: 'How long until it''s running?'
+  answer: 'Most clients are fully live in 4 weeks. Week 1 is build, weeks 2-3 are supervised, week 4 you''re autonomous.'
+-
+  question: 'Do I need to be technical?'
+  answer: 'No. If you can send an email, you can use Sidecar. We handle all the setup and training.'
 
 ----
 

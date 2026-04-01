@@ -1,33 +1,46 @@
 // Scanner form handler (homepage)
-document.addEventListener('DOMContentLoaded', () => {
-  const scannerForm = document.getElementById('scannerForm');
+document.addEventListener('DOMContentLoaded', function() {
+  var scannerForm = document.getElementById('scannerForm');
   if (!scannerForm) return;
 
-  const SCANNER_API = window.location.hostname === 'localhost'
+  var SCANNER_API = window.location.hostname === 'localhost'
     ? 'http://localhost:3001'
     : 'https://scanner.shimmerlabs.co';
 
-  const loadingSteps = [
+  var SCAN_TIMEOUT_MS = 45000; // 45 second timeout
+
+  var loadingSteps = [
     { at: 0, text: 'Reading your website...', progress: 15 },
     { at: 4000, text: 'Identifying opportunities...', progress: 45 },
     { at: 8000, text: 'Writing job descriptions...', progress: 75 },
     { at: 12000, text: 'Almost done — this one\'s a meaty site.', progress: 88 },
   ];
 
-  scannerForm.addEventListener('submit', async (e) => {
+  function showError(msg) {
+    var errorEl = document.getElementById('scannerError');
+    var loadingEl = document.getElementById('scannerLoading');
+    var progressFill = document.getElementById('scannerProgressFill');
+    scannerForm.style.display = '';
+    loadingEl.style.display = 'none';
+    progressFill.style.width = '0%';
+    errorEl.textContent = msg;
+    errorEl.style.display = 'block';
+  }
+
+  scannerForm.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const urlInput = document.getElementById('scannerUrl');
-    const loadingEl = document.getElementById('scannerLoading');
-    const errorEl = document.getElementById('scannerError');
-    const loadingTextEl = document.getElementById('scannerLoadingText');
-    const progressFill = document.getElementById('scannerProgressFill');
+    var urlInput = document.getElementById('scannerUrl');
+    var loadingEl = document.getElementById('scannerLoading');
+    var errorEl = document.getElementById('scannerError');
+    var loadingTextEl = document.getElementById('scannerLoadingText');
+    var progressFill = document.getElementById('scannerProgressFill');
 
-    let url = urlInput.value.trim();
+    var url = urlInput.value.trim();
     if (!url) return;
 
     // Normalize URL
-    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+    if (url.indexOf('http://') !== 0 && url.indexOf('https://') !== 0) {
       url = 'https://' + url;
     }
 
@@ -36,47 +49,79 @@ document.addEventListener('DOMContentLoaded', () => {
     loadingEl.style.display = 'flex';
     errorEl.style.display = 'none';
 
-    // Linear loading steps (no looping)
+    // Linear loading steps
     loadingTextEl.textContent = loadingSteps[0].text;
     progressFill.style.width = loadingSteps[0].progress + '%';
 
-    const stepTimeouts = [];
-    for (let i = 1; i < loadingSteps.length; i++) {
-      stepTimeouts.push(setTimeout(() => {
-        loadingTextEl.textContent = loadingSteps[i].text;
-        progressFill.style.width = loadingSteps[i].progress + '%';
-      }, loadingSteps[i].at));
+    var stepTimeouts = [];
+    for (var i = 1; i < loadingSteps.length; i++) {
+      (function(step) {
+        stepTimeouts.push(setTimeout(function() {
+          loadingTextEl.textContent = step.text;
+          progressFill.style.width = step.progress + '%';
+        }, step.at));
+      })(loadingSteps[i]);
     }
+
+    // Timeout fallback — if scan takes too long, show error
+    var timeoutId = setTimeout(function() {
+      if (aborted) return;
+      aborted = true;
+      if (controller) controller.abort();
+      stepTimeouts.forEach(clearTimeout);
+      showError('Scan timed out. The site may be too large or temporarily unreachable. Please try again.');
+    }, SCAN_TIMEOUT_MS);
+
+    var aborted = false;
+    var controller = null;
 
     // GA4 event
     if (typeof gtag === 'function') {
       gtag('event', 'scan_started', { scan_url: url });
     }
 
-    try {
-      const response = await fetch(SCANNER_API + '/api/scan', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url: url })
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Scan failed. Please try again.');
-      }
-
-      stepTimeouts.forEach(clearTimeout);
-      progressFill.style.width = '100%';
-      window.location.href = '/scan?id=' + data.scanId;
-    } catch (err) {
-      stepTimeouts.forEach(clearTimeout);
-      scannerForm.style.display = 'block';
-      loadingEl.style.display = 'none';
-      progressFill.style.width = '0%';
-      errorEl.textContent = err.message || 'Something went wrong. Please try again.';
-      errorEl.style.display = 'block';
+    // Use AbortController if available (all modern browsers)
+    if (typeof AbortController !== 'undefined') {
+      controller = new AbortController();
     }
+
+    var fetchOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: url })
+    };
+    if (controller) {
+      fetchOptions.signal = controller.signal;
+    }
+
+    fetch(SCANNER_API + '/api/scan', fetchOptions)
+      .then(function(response) {
+        return response.json().then(function(data) {
+          if (!response.ok) {
+            throw new Error(data.error || 'Scan failed. Please try again.');
+          }
+          return data;
+        });
+      })
+      .then(function(data) {
+        if (aborted) return;
+        clearTimeout(timeoutId);
+        stepTimeouts.forEach(clearTimeout);
+        progressFill.style.width = '100%';
+        window.location.href = '/scan?id=' + data.scanId;
+      })
+      .catch(function(err) {
+        if (aborted) return;
+        aborted = true;
+        clearTimeout(timeoutId);
+        stepTimeouts.forEach(clearTimeout);
+        var msg = err.message || 'Something went wrong. Please try again.';
+        // Friendlier message for network/CORS errors
+        if (msg === 'Failed to fetch' || msg.indexOf('NetworkError') !== -1 || msg.indexOf('CORS') !== -1) {
+          msg = 'Could not reach the scanner. Check your connection and try again.';
+        }
+        showError(msg);
+      });
   });
 });
 

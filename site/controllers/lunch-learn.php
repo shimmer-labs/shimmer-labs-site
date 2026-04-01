@@ -11,9 +11,40 @@ return function ($page, $kirby) {
         $jobTitle  = trim($_POST['job_title'] ?? '');
         $challenge = trim($_POST['challenge'] ?? '');
 
+        // Honeypot — if filled, it's a bot. Fake success so they don't retry.
+        if (!empty($_POST['website_url'] ?? '')) {
+            go($page->url() . '?success=true');
+        }
+
         // Basic validation
         if (!$name || !$email || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $error = 'Please fill in your name and a valid work email.';
+            return compact('success', 'error');
+        }
+
+        // --- Rate limiting & duplicate check (file-based) ---
+        $rateLimitDir = $kirby->root('index') . '/site/cache/ratelimit';
+        if (!is_dir($rateLimitDir)) {
+            mkdir($rateLimitDir, 0755, true);
+        }
+
+        // Rate limit by IP: max 3 submissions per hour
+        $ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+        $ipFile = $rateLimitDir . '/ip_' . md5($ip) . '.json';
+        $ipData = file_exists($ipFile) ? json_decode(file_get_contents($ipFile), true) : [];
+        $oneHourAgo = time() - 3600;
+        $ipData = array_filter($ipData, fn($ts) => $ts > $oneHourAgo);
+        if (count($ipData) >= 3) {
+            $error = 'Too many signups from this connection. Please try again later or email logan@shimmerlabs.co directly.';
+            return compact('success', 'error');
+        }
+
+        // Duplicate email check
+        $emailFile = $rateLimitDir . '/emails.json';
+        $registeredEmails = file_exists($emailFile) ? json_decode(file_get_contents($emailFile), true) : [];
+        $emailLower = strtolower($email);
+        if (in_array($emailLower, $registeredEmails)) {
+            $error = "That email is already registered. Check your inbox for the confirmation, or email logan@shimmerlabs.co if you need help.";
             return compact('success', 'error');
         }
 
@@ -163,6 +194,12 @@ HTML;
         curl_close($ch);
 
         if ($httpCode >= 200 && $httpCode < 300) {
+            // Record successful submission for rate limiting
+            $ipData[] = time();
+            file_put_contents($ipFile, json_encode($ipData));
+            $registeredEmails[] = $emailLower;
+            file_put_contents($emailFile, json_encode(array_unique($registeredEmails)));
+
             go($page->url() . '?success=true');
         } else {
             $error = 'Something went wrong sending your confirmation. Please try again or email logan@shimmerlabs.co directly.';

@@ -90,7 +90,7 @@
   <!-- Service Worker Registration -->
   <?= js('assets/js/sw-register.js') ?>
 </head>
-<body>
+<body class="page--<?= $page->intendedTemplate() ?><?= $page->slug() === 'sidecar' ? ' page--sidecar' : '' ?>">
   <header class="site-header">
     <div class="container">
       <nav class="site-nav">

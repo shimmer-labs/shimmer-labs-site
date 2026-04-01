@@ -483,6 +483,12 @@
         <?php endif ?>
 
         <form class="ll-form" method="POST" action="<?= $page->url() ?>#signup">
+          <!-- Honeypot — hidden from humans, bots fill it -->
+          <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+            <label for="website_url">Website</label>
+            <input type="text" name="website_url" id="website_url" tabindex="-1" autocomplete="off" value="">
+          </div>
+
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name *</label>

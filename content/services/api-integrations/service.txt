@@ -10,7 +10,7 @@ Icon: 🔌
 
 ----
 
-Summary: Custom n8n, Zapier, or Make integrations that actually work. I've built 4 production podcast API integrations, published to npm and used by real companies.
+Summary: Custom n8n, Zapier, or Make integrations that actually work. We've built 4 production podcast API integrations, published to npm and used by real companies.
 
 ----
 
@@ -22,14 +22,14 @@ Text:
 
 ## Stop Paying Agencies $10k for API Work
 
-Most agencies charge $7k-15k and take 2 months for custom API integrations. I can deliver in 1-2 weeks for $3.5k-12k because:
+Most agencies charge $7k-15k and take 2 months for custom API integrations. We deliver in 1-2 weeks for $3.5k-12k because:
 
-- **I've done this before:** Built 4 production integrations for the Taddy Podcast API (n8n, Zapier, Make)
+- **We've done this before:** Built 4 production integrations for the Taddy Podcast API (n8n, Zapier, Make)
 - **Published to npm:** Real packages used by real companies
-- **AI-powered speed:** I use AI agents to move 2-3x faster than traditional development
-- **Focused toolset:** I only work with n8n, Zapier, and Make. No learning curve
+- **AI-powered speed:** We use AI agents to move 2-3x faster than traditional development
+- **Focused toolset:** We only work with n8n, Zapier, and Make. No learning curve
 
-Your software doesn't play nice together? I build custom API wrappers that make your tools actually talk to each other. Clean code, proper documentation, no janky workarounds.
+Your software doesn't play nice together? We build custom API wrappers that make your tools actually talk to each other. Clean code, proper documentation, no janky workarounds.
 
 ----
 
@@ -76,43 +76,43 @@ Whatsincluded:
 -
   icon: '✅'
   title: 'Clean, Production-Ready Code'
-  description: 'TypeScript strict mode, proper error handling, tested edge cases. No spaghetti code.'
+  description: 'TypeScript strict mode, proper error handling, tested edge cases.'
 -
   icon: '📚'
   title: 'Documentation'
-  description: 'Setup guides, API references, troubleshooting tips. Your team can maintain it.'
+  description: 'Setup guides, API references, troubleshooting tips.'
 -
   icon: '🧪'
   title: 'Testing'
-  description: 'Jest test coverage for critical paths. I break it before your users do.'
+  description: 'Jest test coverage for critical paths. We break it before your users do.'
 -
   icon: '🛠️'
   title: 'Post-Launch Support'
-  description: '30-90 days of support depending on package. I fix bugs, you focus on growth.'
+  description: '30-90 days of support depending on package. We fix bugs, you focus on growth.'
 -
   icon: '🚀'
   title: 'Source Code Handoff'
-  description: 'Full access to the codebase. No vendor lock-in, no monthly fees.'
+  description: 'Full codebase access. No vendor lock-in.'
 -
   icon: '⚡'
   title: 'Fast Delivery'
-  description: '1-4 weeks depending on complexity. Agencies take 2-3 months for the same work.'
+  description: '1-4 weeks. Agencies take 2-3 months for the same work.'
 
 ----
 
 Process:
 -
   title: 'Discovery Call (30 min, FREE)'
-  description: 'We talk about your workflow, pain points, and what tools you want to connect. I'll tell you if it's possible and give you a rough timeline.'
+  description: 'We talk about your workflow, pain points, and what tools you want to connect. We''ll tell you if it''s possible and give you a rough timeline.'
 -
   title: 'Scoping & Quote'
-  description: 'I document the data flow, edge cases, and API limitations. You get a fixed-price quote, no surprises.'
+  description: 'We document the data flow, edge cases, and API limitations. You get a fixed-price quote, no surprises.'
 -
   title: 'Development (1-4 weeks)'
-  description: 'I build the integration, test it thoroughly, and send you progress updates. You can request changes as we go.'
+  description: 'We build the integration, test it thoroughly, and send you progress updates. You can request changes as we go.'
 -
   title: 'Handoff & Support'
-  description: 'I deploy to production, train your team, and stick around for 30-90 days to fix any issues.'
+  description: 'We deploy to production, train your team, and stick around for 30-90 days to fix any issues.'
 
 ----
 
@@ -120,7 +120,7 @@ Techstack: n8n, Zapier, Make.com, Node.js, TypeScript, REST APIs, GraphQL, Webho
 
 ----
 
-Techstackintro: I restrict my toolset to what I'm expert in. This means faster delivery and fewer bugs. If you need Workato or MuleSoft, I'm not your guy, but I can recommend someone.
+Techstackintro: We restrict our toolset to what we're expert in. Faster delivery, fewer bugs. If you need Workato or MuleSoft, we're probably not your team — but we can point you to someone.
 
 ----
 
@@ -132,7 +132,7 @@ Ctatitle: Stop Doing Manual Work
 
 ----
 
-Ctadescription: If you're copying data between tools every day, you're wasting money. Let me automate it so you can focus on growth.
+Ctadescription: If you're copying data between tools every day, you're wasting money. Let us automate it so you can focus on growth.
 
 ----
 

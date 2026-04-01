@@ -16,9 +16,9 @@
     <div class="hero__scanner">
       <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="hero__scanner-logo">
       <h1 class="hero__title">Too many hats? See which ones you can take off.</h1>
-      <p class="hero__description">Enter your website — we'll show you 2-3 AI agents custom-built for your business.</p>
+      <p class="hero__description">Enter your website. We'll show you what to automate first.</p>
 
-      <form class="scanner-form" id="scannerForm" action="javascript:void(0)" method="POST" novalidate>
+      <form class="scanner-form" id="scannerForm" action="#" method="POST" novalidate>
         <div class="scanner-form__input-group">
           <input
             type="text"
@@ -80,7 +80,7 @@
   <div class="container">
     <div class="build-section__header">
       <h2 class="build-section__title">We Also Build Custom Software</h2>
-      <p class="build-section__subtitle">Web apps, iOS apps, and API integrations — built fast by a developer, not an agency.</p>
+      <p class="build-section__subtitle">Web apps, iOS apps, and API integrations — built fast by a small team, not an agency.</p>
     </div>
     <div class="build-section__grid">
       <a href="/services/custom-apps" class="build-card">
