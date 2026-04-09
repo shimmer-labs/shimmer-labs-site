@@ -58,25 +58,26 @@ return [
 
   // Routes
   'routes' => [
-    // POST /_scan → start a new scan
+    // /_scan — start a new scan (POST) or catch bad GETs
     [
       'pattern' => '_scan',
-      'method'  => 'POST',
+      'method'  => 'GET|POST',
       'action'  => function() {
         return option('scanner.proxy')();
       }
     ],
-    // POST /_scan/{id}/lead — must come before (:any) catch-all
+    // /_scan/{id}/lead — lead capture (POST)
     [
       'pattern' => '_scan/(:any)/lead',
-      'method'  => 'POST',
+      'method'  => 'GET|POST',
       'action'  => function($id) {
         return option('scanner.proxy')($id . '/lead');
       }
     ],
-    // /_scan/{id} — fetch results
+    // /_scan/{id} — fetch results (GET)
     [
       'pattern' => '_scan/(:any)',
+      'method'  => 'GET|POST',
       'action'  => function($id) {
         return option('scanner.proxy')($id);
       }
