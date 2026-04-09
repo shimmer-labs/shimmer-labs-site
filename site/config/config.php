@@ -58,7 +58,7 @@ return [
     // Must come before the (:any) route so it matches first
     [
       'pattern' => '_scan/(:any)/lead',
-      'action'  => function(string $id) {
+      'action'  => function($id) {
         $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id) . '/lead';
         $body = file_get_contents('php://input');
 
@@ -91,7 +91,7 @@ return [
     // Proxy: /api/scan/{id} → scanner microservice (results)
     [
       'pattern' => '_scan/(:any)',
-      'action'  => function(string $id) {
+      'action'  => function($id) {
         $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id);
 
         $ch = curl_init($scannerUrl);
