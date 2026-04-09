@@ -22,9 +22,10 @@ return [
 
   // Routes
   'routes' => [
-    // Proxy: POST /api/scan → scanner microservice
+    // Proxy: POST /_scan → scanner microservice
     [
       'pattern' => '_scan',
+      'method'  => 'POST',
       'action'  => function() {
         $scannerUrl = option('scanner.api.url') . '/api/scan';
         $body = file_get_contents('php://input');
@@ -55,10 +56,11 @@ return [
         return new Kirby\Cms\Response($response, 'application/json', $httpCode);
       }
     ],
-    // Proxy: /api/scan/{id}/lead → scanner microservice (lead capture)
+    // Proxy: POST /_scan/{id}/lead → scanner microservice (lead capture)
     // Must come before the (:any) route so it matches first
     [
       'pattern' => '_scan/(:any)/lead',
+      'method'  => 'POST',
       'action'  => function($id) {
         $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id) . '/lead';
         $body = file_get_contents('php://input');
@@ -89,9 +91,10 @@ return [
         return new Kirby\Cms\Response($response, 'application/json', $httpCode);
       }
     ],
-    // Proxy: /api/scan/{id} → scanner microservice (results)
+    // Proxy: GET /_scan/{id} → scanner microservice (results)
     [
       'pattern' => '_scan/(:any)',
+      'method'  => 'GET',
       'action'  => function($id) {
         $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id);
 
