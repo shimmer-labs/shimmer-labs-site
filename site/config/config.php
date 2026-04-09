@@ -61,13 +61,15 @@ return [
     // POST /_scan → start a new scan
     [
       'pattern' => '_scan',
+      'method'  => 'POST',
       'action'  => function() {
         return option('scanner.proxy')();
       }
     ],
-    // /_scan/{id}/lead — must come before (:any) catch-all
+    // POST /_scan/{id}/lead — must come before (:any) catch-all
     [
       'pattern' => '_scan/(:any)/lead',
+      'method'  => 'POST',
       'action'  => function($id) {
         return option('scanner.proxy')($id . '/lead');
       }
