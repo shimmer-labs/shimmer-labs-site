@@ -22,87 +22,31 @@ return [
 
   // Routes
   'routes' => [
-    // Proxy: POST /_scan → scanner microservice
+    // Scanner proxy — all /_scan routes proxy to scanner.shimmerlabs.co
+    // Single route handler to avoid Kirby method-matching issues
     [
-      'pattern' => '_scan',
-      'method'  => 'POST',
-      'action'  => function() {
-        $scannerUrl = option('scanner.api.url') . '/api/scan';
-        $body = file_get_contents('php://input');
+      'pattern' => '_scan/(:all?)',
+      'action'  => function($path = '') {
+        $base = option('scanner.api.url') . '/api/scan';
+        $scannerUrl = $path ? $base . '/' . $path : $base;
+        $method = $_SERVER['REQUEST_METHOD'];
 
         $ch = curl_init($scannerUrl);
-        curl_setopt_array($ch, [
-          CURLOPT_POST           => true,
-          CURLOPT_POSTFIELDS     => $body,
+        $opts = [
           CURLOPT_RETURNTRANSFER => true,
-          CURLOPT_HTTPHEADER     => [
-            'Content-Type: application/json',
-            'X-Forwarded-For: ' . ($_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? ''),
-          ],
           CURLOPT_TIMEOUT        => 60,
-        ]);
-        $response = curl_exec($ch);
-        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        $error    = curl_error($ch);
-        curl_close($ch);
-
-        if ($error) {
-          return new Kirby\Cms\Response(
-            json_encode(['error' => 'Scanner unavailable']),
-            'application/json',
-            502
-          );
-        }
-        return new Kirby\Cms\Response($response, 'application/json', $httpCode);
-      }
-    ],
-    // Proxy: POST /_scan/{id}/lead → scanner microservice (lead capture)
-    // Must come before the (:any) route so it matches first
-    [
-      'pattern' => '_scan/(:any)/lead',
-      'method'  => 'POST',
-      'action'  => function($id) {
-        $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id) . '/lead';
-        $body = file_get_contents('php://input');
-
-        $ch = curl_init($scannerUrl);
-        curl_setopt_array($ch, [
-          CURLOPT_POST           => true,
-          CURLOPT_POSTFIELDS     => $body,
-          CURLOPT_RETURNTRANSFER => true,
           CURLOPT_HTTPHEADER     => [
             'Content-Type: application/json',
             'X-Forwarded-For: ' . ($_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? ''),
           ],
-          CURLOPT_TIMEOUT        => 30,
-        ]);
-        $response = curl_exec($ch);
-        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        $error    = curl_error($ch);
-        curl_close($ch);
+        ];
 
-        if ($error) {
-          return new Kirby\Cms\Response(
-            json_encode(['error' => 'Scanner unavailable']),
-            'application/json',
-            502
-          );
+        if ($method === 'POST') {
+          $opts[CURLOPT_POST] = true;
+          $opts[CURLOPT_POSTFIELDS] = file_get_contents('php://input');
         }
-        return new Kirby\Cms\Response($response, 'application/json', $httpCode);
-      }
-    ],
-    // Proxy: GET /_scan/{id} → scanner microservice (results)
-    [
-      'pattern' => '_scan/(:any)',
-      'method'  => 'GET',
-      'action'  => function($id) {
-        $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id);
 
-        $ch = curl_init($scannerUrl);
-        curl_setopt_array($ch, [
-          CURLOPT_RETURNTRANSFER => true,
-          CURLOPT_TIMEOUT        => 30,
-        ]);
+        curl_setopt_array($ch, $opts);
         $response = curl_exec($ch);
         $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         $error    = curl_error($ch);
