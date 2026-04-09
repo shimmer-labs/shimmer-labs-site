@@ -9,9 +9,11 @@ onReady(function() {
   var scannerForm = document.getElementById('scannerForm');
   if (!scannerForm) return;
 
+  // Same-origin proxy — avoids Firefox Enhanced Tracking Protection
+  // blocking cross-origin requests to scanner.shimmerlabs.co
   var SCANNER_API = window.location.hostname === 'localhost'
     ? 'http://localhost:3001'
-    : 'https://scanner.shimmerlabs.co';
+    : '';
 
   var SCAN_TIMEOUT_MS = 45000; // 45 second timeout
 

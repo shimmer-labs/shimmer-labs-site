@@ -345,7 +345,8 @@
 
 <script>
 (function() {
-  var SCANNER_API = '<?= $_SERVER['SERVER_NAME'] === 'localhost' ? 'http://localhost:3001' : 'https://scanner.shimmerlabs.co' ?>';
+  // Same-origin proxy — avoids Firefox tracking protection blocking cross-origin fetch
+  var SCANNER_API = '<?= $_SERVER['SERVER_NAME'] === 'localhost' ? 'http://localhost:3001' : '' ?>';
   var CALENDLY_BASE = 'https://calendly.com/logan-shimmerlabs/sidecar-discovery';
 
   var params = new URLSearchParams(window.location.search);

@@ -15,8 +15,108 @@ return [
   'analytics.ga4.enabled' => true,
   'analytics.ga4.measurementId' => 'G-KPVHKHKJJY',
 
-  // SEO: Sitemap.xml Route
+  // Scanner API proxy — routes through same origin so Firefox Enhanced
+  // Tracking Protection doesn't block cross-origin requests to scanner.shimmerlabs.co
+  'scanner.api.url' => 'https://scanner.shimmerlabs.co',
+
+  // Routes
   'routes' => [
+    // Proxy: POST /api/scan → scanner microservice
+    [
+      'pattern' => 'api/scan',
+      'method'  => 'POST',
+      'action'  => function() {
+        $scannerUrl = option('scanner.api.url') . '/api/scan';
+        $body = file_get_contents('php://input');
+
+        $ch = curl_init($scannerUrl);
+        curl_setopt_array($ch, [
+          CURLOPT_POST           => true,
+          CURLOPT_POSTFIELDS     => $body,
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_HTTPHEADER     => [
+            'Content-Type: application/json',
+            'X-Forwarded-For: ' . ($_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? ''),
+          ],
+          CURLOPT_TIMEOUT        => 60,
+        ]);
+        $response = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $error    = curl_error($ch);
+        curl_close($ch);
+
+        if ($error) {
+          return new Kirby\Cms\Response(
+            json_encode(['error' => 'Scanner unavailable']),
+            'application/json',
+            502
+          );
+        }
+        return new Kirby\Cms\Response($response, 'application/json', $httpCode);
+      }
+    ],
+    // Proxy: GET /api/scan/{id} → scanner microservice (results)
+    [
+      'pattern' => 'api/scan/(:any)',
+      'method'  => 'GET',
+      'action'  => function(string $id) {
+        $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id);
+
+        $ch = curl_init($scannerUrl);
+        curl_setopt_array($ch, [
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_TIMEOUT        => 30,
+        ]);
+        $response = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $error    = curl_error($ch);
+        curl_close($ch);
+
+        if ($error) {
+          return new Kirby\Cms\Response(
+            json_encode(['error' => 'Scanner unavailable']),
+            'application/json',
+            502
+          );
+        }
+        return new Kirby\Cms\Response($response, 'application/json', $httpCode);
+      }
+    ],
+    // Proxy: POST /api/scan/{id}/lead → scanner microservice (lead capture)
+    [
+      'pattern' => 'api/scan/(:any)/lead',
+      'method'  => 'POST',
+      'action'  => function(string $id) {
+        $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id) . '/lead';
+        $body = file_get_contents('php://input');
+
+        $ch = curl_init($scannerUrl);
+        curl_setopt_array($ch, [
+          CURLOPT_POST           => true,
+          CURLOPT_POSTFIELDS     => $body,
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_HTTPHEADER     => [
+            'Content-Type: application/json',
+            'X-Forwarded-For: ' . ($_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? ''),
+          ],
+          CURLOPT_TIMEOUT        => 30,
+        ]);
+        $response = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $error    = curl_error($ch);
+        curl_close($ch);
+
+        if ($error) {
+          return new Kirby\Cms\Response(
+            json_encode(['error' => 'Scanner unavailable']),
+            'application/json',
+            502
+          );
+        }
+        return new Kirby\Cms\Response($response, 'application/json', $httpCode);
+      }
+    ],
+    // SEO: Sitemap
     [
       'pattern' => 'sitemap.xml',
       'action'  => function() {
