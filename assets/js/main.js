@@ -9,11 +9,11 @@ onReady(function() {
   var scannerForm = document.getElementById('scannerForm');
   if (!scannerForm) return;
 
-  // Same-origin proxy — avoids Firefox Enhanced Tracking Protection
-  // blocking cross-origin requests to scanner.shimmerlabs.co
-  var SCANNER_API = window.location.hostname === 'localhost'
-    ? 'http://localhost:3001'
-    : '';
+  // Localhost: talk to scanner directly. Prod: same-origin proxy at /_scan
+  // (avoids Firefox Enhanced Tracking Protection blocking cross-origin fetch)
+  var isLocal = window.location.hostname === 'localhost';
+  var SCANNER_API = isLocal ? 'http://localhost:3001' : '';
+  var SCAN_PATH = isLocal ? '/api/scan' : '/_scan';
 
   var SCAN_TIMEOUT_MS = 45000; // 45 second timeout
 
@@ -102,7 +102,7 @@ onReady(function() {
       fetchOptions.signal = controller.signal;
     }
 
-    fetch(SCANNER_API + '/api/scan', fetchOptions)
+    fetch(SCANNER_API + SCAN_PATH, fetchOptions)
       .then(function(response) {
         return response.json().then(function(data) {
           if (!response.ok) {

@@ -23,7 +23,7 @@ return [
   'routes' => [
     // Proxy: POST /api/scan → scanner microservice
     [
-      'pattern' => 'api/scan',
+      'pattern' => '_scan',
       'action'  => function() {
         $scannerUrl = option('scanner.api.url') . '/api/scan';
         $body = file_get_contents('php://input');
@@ -57,7 +57,7 @@ return [
     // Proxy: /api/scan/{id}/lead → scanner microservice (lead capture)
     // Must come before the (:any) route so it matches first
     [
-      'pattern' => 'api/scan/(:any)/lead',
+      'pattern' => '_scan/(:any)/lead',
       'action'  => function(string $id) {
         $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id) . '/lead';
         $body = file_get_contents('php://input');
@@ -90,7 +90,7 @@ return [
     ],
     // Proxy: /api/scan/{id} → scanner microservice (results)
     [
-      'pattern' => 'api/scan/(:any)',
+      'pattern' => '_scan/(:any)',
       'action'  => function(string $id) {
         $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id);
 

@@ -366,8 +366,10 @@
 
 <script>
 (function() {
-  // Same-origin proxy — avoids Firefox tracking protection blocking cross-origin fetch
-  var SCANNER_API = '<?= $_SERVER['SERVER_NAME'] === 'localhost' ? 'http://localhost:3001' : '' ?>';
+  // Localhost: talk to scanner directly. Prod: same-origin proxy
+  var isLocal = <?= $_SERVER['SERVER_NAME'] === 'localhost' ? 'true' : 'false' ?>;
+  var SCANNER_API = isLocal ? 'http://localhost:3001' : '';
+  var SCAN_PATH = isLocal ? '/api/scan/' : '/_scan/';
   var CALENDLY_BASE = 'https://calendly.com/logan-shimmerlabs/sidecar-discovery';
 
   var params = new URLSearchParams(window.location.search);
@@ -384,7 +386,7 @@
   }
 
   // Fetch scan results
-  fetch(SCANNER_API + '/api/scan/' + scanId)
+  fetch(SCANNER_API + SCAN_PATH + scanId)
     .then(function(res) {
       if (!res.ok) throw new Error('Scan not found');
       return res.json();
@@ -507,7 +509,7 @@
       document.getElementById('scanCalendlyLink').href = calUrl;
       document.getElementById('scanCalendlyLinkSuccess').href = calUrl;
 
-      fetch(SCANNER_API + '/api/scan/' + scanId + '/lead', {
+      fetch(SCANNER_API + SCAN_PATH + scanId + '/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: email, name: name })
