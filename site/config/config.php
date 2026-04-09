@@ -24,7 +24,6 @@ return [
     // Proxy: POST /api/scan → scanner microservice
     [
       'pattern' => 'api/scan',
-      'method'  => 'POST',
       'action'  => function() {
         $scannerUrl = option('scanner.api.url') . '/api/scan';
         $body = file_get_contents('php://input');
@@ -55,16 +54,23 @@ return [
         return new Kirby\Cms\Response($response, 'application/json', $httpCode);
       }
     ],
-    // Proxy: GET /api/scan/{id} → scanner microservice (results)
+    // Proxy: /api/scan/{id}/lead → scanner microservice (lead capture)
+    // Must come before the (:any) route so it matches first
     [
-      'pattern' => 'api/scan/(:any)',
-      'method'  => 'GET',
+      'pattern' => 'api/scan/(:any)/lead',
       'action'  => function(string $id) {
-        $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id);
+        $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id) . '/lead';
+        $body = file_get_contents('php://input');
 
         $ch = curl_init($scannerUrl);
         curl_setopt_array($ch, [
+          CURLOPT_POST           => true,
+          CURLOPT_POSTFIELDS     => $body,
           CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_HTTPHEADER     => [
+            'Content-Type: application/json',
+            'X-Forwarded-For: ' . ($_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? ''),
+          ],
           CURLOPT_TIMEOUT        => 30,
         ]);
         $response = curl_exec($ch);
@@ -82,23 +88,15 @@ return [
         return new Kirby\Cms\Response($response, 'application/json', $httpCode);
       }
     ],
-    // Proxy: POST /api/scan/{id}/lead → scanner microservice (lead capture)
+    // Proxy: /api/scan/{id} → scanner microservice (results)
     [
-      'pattern' => 'api/scan/(:any)/lead',
-      'method'  => 'POST',
+      'pattern' => 'api/scan/(:any)',
       'action'  => function(string $id) {
-        $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id) . '/lead';
-        $body = file_get_contents('php://input');
+        $scannerUrl = option('scanner.api.url') . '/api/scan/' . urlencode($id);
 
         $ch = curl_init($scannerUrl);
         curl_setopt_array($ch, [
-          CURLOPT_POST           => true,
-          CURLOPT_POSTFIELDS     => $body,
           CURLOPT_RETURNTRANSFER => true,
-          CURLOPT_HTTPHEADER     => [
-            'Content-Type: application/json',
-            'X-Forwarded-For: ' . ($_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? ''),
-          ],
           CURLOPT_TIMEOUT        => 30,
         ]);
         $response = curl_exec($ch);
