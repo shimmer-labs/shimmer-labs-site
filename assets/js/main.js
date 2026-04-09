@@ -1,5 +1,11 @@
 // Scanner form handler (homepage)
-document.addEventListener('DOMContentLoaded', function() {
+// Use helper that runs immediately if DOM is already ready (fixes Firefox iOS
+// where DOMContentLoaded fires before bottom-of-body scripts parse)
+function onReady(fn) {
+  if (document.readyState !== 'loading') { fn(); }
+  else { document.addEventListener('DOMContentLoaded', fn); }
+}
+onReady(function() {
   var scannerForm = document.getElementById('scannerForm');
   if (!scannerForm) return;
 
@@ -126,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Event banner click tracking
-document.addEventListener('DOMContentLoaded', () => {
+onReady(() => {
   const banner = document.getElementById('eventBanner');
   if (banner && typeof gtag === 'function') {
     banner.addEventListener('click', () => {
@@ -139,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Lazy Load Images
-document.addEventListener('DOMContentLoaded', () => {
+onReady(() => {
   const images = document.querySelectorAll('img[data-src]');
 
   if ('IntersectionObserver' in window) {
@@ -165,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Fade in content on scroll
-document.addEventListener('DOMContentLoaded', () => {
+onReady(() => {
   const fadeElements = document.querySelectorAll('.fade-in-on-scroll');
 
   if ('IntersectionObserver' in window) {
@@ -183,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Menu overlay functionality
-document.addEventListener('DOMContentLoaded', () => {
+onReady(() => {
   const menuToggle = document.querySelector('.menu-toggle');
   const menuOverlay = document.getElementById('menuOverlay');
   const menuClose = document.querySelector('.menu-close');
@@ -233,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Contact form AJAX submission
-document.addEventListener('DOMContentLoaded', () => {
+onReady(() => {
   const contactForm = document.getElementById('contactForm');
   
   if (contactForm) {
@@ -271,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Image lightbox
-document.addEventListener('DOMContentLoaded', () => {
+onReady(() => {
   const galleryItems = document.querySelectorAll('.gallery-item:not(.gallery-item--video)');
   const lightbox = document.getElementById('lightbox');
   const lightboxImage = document.querySelector('.lightbox-image');
@@ -302,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Gallery thumbnail switcher and zoom
-document.addEventListener('DOMContentLoaded', () => {
+onReady(() => {
   const thumbnails = document.querySelectorAll('.thumbnail');
   const galleryFeatured = document.getElementById('galleryFeatured');
   const lightbox = document.getElementById('lightbox');
