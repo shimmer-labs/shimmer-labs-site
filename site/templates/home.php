@@ -42,9 +42,82 @@
       </div>
 
       <p class="scanner-form__error" id="scannerError" style="display: none;"></p>
+
+      <!-- TEMP: Mobile Firefox debug overlay — remove after diagnosing -->
+      <div id="scannerDebug" style="display:none; margin-top:1rem; padding:0.75rem; background:#1a1a2e; border:2px solid #e94560; border-radius:8px; font-family:monospace; font-size:12px; color:#0ff; max-height:200px; overflow-y:auto; text-align:left; word-break:break-all;"></div>
     </div>
   </div>
 </section>
+
+<script>
+// TEMP: Scanner debug logger for mobile Firefox — remove after diagnosing
+(function() {
+  var dbg = document.getElementById('scannerDebug');
+  var ua = navigator.userAgent;
+  var isFirefoxIOS = /FxiOS/.test(ua);
+  if (!isFirefoxIOS) return; // only show on Firefox iOS
+
+  dbg.style.display = 'block';
+  function log(msg) {
+    var line = document.createElement('div');
+    line.style.borderBottom = '1px solid #333';
+    line.style.padding = '2px 0';
+    line.textContent = new Date().toLocaleTimeString() + ' — ' + msg;
+    dbg.appendChild(line);
+    dbg.scrollTop = dbg.scrollHeight;
+  }
+
+  log('Debug active. UA: ' + ua.substring(0, 80));
+
+  var form = document.getElementById('scannerForm');
+  var btn = document.querySelector('.scanner-form__button');
+  var input = document.getElementById('scannerUrl');
+
+  if (!form) { log('ERROR: scannerForm not found'); return; }
+  if (!btn) { log('ERROR: button not found'); return; }
+  if (!input) { log('ERROR: input not found'); return; }
+
+  log('Form, button, input all found OK');
+
+  // Check if the main handler attached
+  log('typeof fetch: ' + typeof fetch);
+  log('typeof AbortController: ' + typeof AbortController);
+
+  btn.addEventListener('click', function() {
+    log('Button CLICK fired. Input value: "' + input.value + '"');
+  });
+
+  form.addEventListener('submit', function() {
+    log('Form SUBMIT fired');
+  });
+
+  // Monkey-patch fetch to log scanner calls
+  var origFetch = window.fetch;
+  window.fetch = function(url, opts) {
+    if (typeof url === 'string' && url.indexOf('scanner') !== -1) {
+      log('fetch() called: ' + url);
+      log('method: ' + (opts && opts.method || 'GET'));
+      return origFetch.apply(this, arguments).then(function(resp) {
+        log('fetch response: ' + resp.status + ' ' + resp.statusText);
+        return resp;
+      }).catch(function(err) {
+        log('fetch ERROR: ' + err.name + ': ' + err.message);
+        throw err;
+      });
+    }
+    return origFetch.apply(this, arguments);
+  };
+
+  // Catch any unhandled errors
+  window.addEventListener('error', function(e) {
+    log('JS ERROR: ' + e.message + ' at ' + (e.filename || '?') + ':' + (e.lineno || '?'));
+  });
+
+  window.addEventListener('unhandledrejection', function(e) {
+    log('PROMISE REJECT: ' + (e.reason && e.reason.message || e.reason || 'unknown'));
+  });
+})();
+</script>
 
 <!-- Social Proof -->
 <?php snippet('social-proof', ['clients' => $page->clients()]) ?>
