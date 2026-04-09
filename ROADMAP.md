@@ -18,6 +18,7 @@ The site still says "automation consulting" everywhere but we're selling custom 
 ## Medium Priority — Missing Content
 
 - [ ] **About page** — basically empty, needs Logan's story + pivot narrative
+- [ ] **Lunch & Learn recording landing page** — update lunch-learn page to offer access to the Apr 8 WorkIT recording instead of sign-up
 - [ ] **Add CurbCheck** project page (even as "In Development")
 - [ ] **Review packages/pricing** — current: API Integrations ($3.5-12k), Idea→Web App ($25-85k), iOS Apps ($35-75k)
 - [ ] **More testimonials** — only have Danny Mathews and Kristen Hadley

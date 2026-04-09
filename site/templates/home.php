@@ -1,15 +1,5 @@
 <?php snippet('header') ?>
 
-<!-- Event Banner -->
-<a href="<?= url('lunch-learn') ?>" class="event-banner" id="eventBanner">
-  <div class="container">
-    <span class="event-banner__text">
-      <strong>Free Lunch &amp; Learn</strong> — Too Many Hats, Not Enough Hours — Apr 8 at WorkIT Stillwater
-    </span>
-    <span class="event-banner__cta">Reserve Your Spot →</span>
-  </div>
-</a>
-
 <!-- Hero: Scanner-First -->
 <section class="hero" id="scanner">
   <div class="container">

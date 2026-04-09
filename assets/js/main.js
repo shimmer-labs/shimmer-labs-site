@@ -133,19 +133,6 @@ onReady(function() {
   });
 });
 
-// Event banner click tracking
-onReady(() => {
-  const banner = document.getElementById('eventBanner');
-  if (banner && typeof gtag === 'function') {
-    banner.addEventListener('click', () => {
-      gtag('event', 'event_banner_click', {
-        event_category: 'lunch_learn',
-        event_label: 'homepage_banner'
-      });
-    });
-  }
-});
-
 // Lazy Load Images
 onReady(() => {
   const images = document.querySelectorAll('img[data-src]');
