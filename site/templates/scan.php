@@ -166,7 +166,7 @@
     font-style: italic;
   }
   .scan-agent-card__pain-point {
-    margin-top: 1.25rem;
+    margin-bottom: 1rem;
     padding: 0.75rem 1rem;
     background: #FFF9E6;
     border: 1px solid #D4A017;
@@ -175,16 +175,6 @@
     font-weight: 500;
     color: #8B6914;
     line-height: 1.4;
-  }
-  .scan-agent-card__time-saved {
-    display: inline-block;
-    margin-top: 0.75rem;
-    background: #E8F8EF;
-    color: #1a6b2d;
-    font-size: 0.85rem;
-    font-weight: 600;
-    padding: 0.25rem 0.75rem;
-    border-radius: 100px;
   }
 
   /* CTA section */
@@ -441,6 +431,10 @@
       agentsHtml += '<div class="scan-agent-card__icon">' + (agent.icon || '🤖') + '</div>';
       agentsHtml += '<h3 class="scan-agent-card__title">' + escapeHtml(agent.title) + '</h3>';
 
+      if (agent.pain_point) {
+        agentsHtml += '<div class="scan-agent-card__pain-point">' + escapeHtml(agent.pain_point) + '</div>';
+      }
+
       if (agent.responsibilities && agent.responsibilities.length) {
         agentsHtml += '<p class="scan-agent-card__section-label">Responsibilities</p>';
         agentsHtml += '<ul class="scan-agent-card__responsibilities">';
@@ -458,14 +452,6 @@
       if (agent.schedule) {
         agentsHtml += '<p class="scan-agent-card__section-label">Schedule</p>';
         agentsHtml += '<p class="scan-agent-card__schedule">' + escapeHtml(agent.schedule) + '</p>';
-      }
-
-      if (agent.pain_point) {
-        agentsHtml += '<div class="scan-agent-card__pain-point">' + escapeHtml(agent.pain_point) + '</div>';
-      }
-
-      if (agent.estimated_time_saved) {
-        agentsHtml += '<span class="scan-agent-card__time-saved">' + escapeHtml(agent.estimated_time_saved) + '</span>';
       }
 
       agentsHtml += '</div>';
