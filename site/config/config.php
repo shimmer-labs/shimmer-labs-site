@@ -20,46 +20,63 @@ return [
   // Tracking Protection doesn't block cross-origin requests to scanner.shimmerlabs.co
   'scanner.api.url' => 'https://scanner.shimmerlabs.co',
 
+  // Scanner proxy helper — forwards requests to scanner.shimmerlabs.co
+  'scanner.proxy' => function($path = '') {
+    $base = option('scanner.api.url') . '/api/scan';
+    $scannerUrl = $path ? $base . '/' . $path : $base;
+
+    $ch = curl_init($scannerUrl);
+    $opts = [
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_TIMEOUT        => 60,
+      CURLOPT_HTTPHEADER     => [
+        'Content-Type: application/json',
+        'X-Forwarded-For: ' . ($_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? ''),
+      ],
+    ];
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      $opts[CURLOPT_POST] = true;
+      $opts[CURLOPT_POSTFIELDS] = file_get_contents('php://input');
+    }
+
+    curl_setopt_array($ch, $opts);
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $error    = curl_error($ch);
+    curl_close($ch);
+
+    if ($error) {
+      return new Kirby\Cms\Response(
+        json_encode(['error' => 'Scanner unavailable']),
+        'application/json',
+        502
+      );
+    }
+    return new Kirby\Cms\Response($response, 'application/json', $httpCode);
+  },
+
   // Routes
   'routes' => [
-    // Scanner proxy — all /_scan routes proxy to scanner.shimmerlabs.co
-    // Single route handler to avoid Kirby method-matching issues
+    // POST /_scan → start a new scan
     [
-      'pattern' => '_scan/(:all?)',
-      'action'  => function($path = '') {
-        $base = option('scanner.api.url') . '/api/scan';
-        $scannerUrl = $path ? $base . '/' . $path : $base;
-        $method = $_SERVER['REQUEST_METHOD'];
-
-        $ch = curl_init($scannerUrl);
-        $opts = [
-          CURLOPT_RETURNTRANSFER => true,
-          CURLOPT_TIMEOUT        => 60,
-          CURLOPT_HTTPHEADER     => [
-            'Content-Type: application/json',
-            'X-Forwarded-For: ' . ($_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? ''),
-          ],
-        ];
-
-        if ($method === 'POST') {
-          $opts[CURLOPT_POST] = true;
-          $opts[CURLOPT_POSTFIELDS] = file_get_contents('php://input');
-        }
-
-        curl_setopt_array($ch, $opts);
-        $response = curl_exec($ch);
-        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        $error    = curl_error($ch);
-        curl_close($ch);
-
-        if ($error) {
-          return new Kirby\Cms\Response(
-            json_encode(['error' => 'Scanner unavailable']),
-            'application/json',
-            502
-          );
-        }
-        return new Kirby\Cms\Response($response, 'application/json', $httpCode);
+      'pattern' => '_scan',
+      'action'  => function() {
+        return option('scanner.proxy')();
+      }
+    ],
+    // /_scan/{id}/lead — must come before (:any) catch-all
+    [
+      'pattern' => '_scan/(:any)/lead',
+      'action'  => function($id) {
+        return option('scanner.proxy')($id . '/lead');
+      }
+    ],
+    // /_scan/{id} — fetch results
+    [
+      'pattern' => '_scan/(:any)',
+      'action'  => function($id) {
+        return option('scanner.proxy')($id);
       }
     ],
     // SEO: Sitemap
