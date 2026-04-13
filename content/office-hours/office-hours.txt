@@ -1,0 +1,9 @@
+Title: AI Office Hours
+
+----
+
+Meta_description: Free drop-in AI office hours at WorkIT Stillwater. Tuesdays & Thursdays, 2–4 PM. Bring your questions about AI, automation, or your next project idea. No RSVP needed.
+
+----
+
+Uuid: office-hours

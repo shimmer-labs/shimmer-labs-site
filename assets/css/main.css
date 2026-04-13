@@ -2111,6 +2111,62 @@ section {
   margin-bottom: 0;
 }
 
+/* Contact Location Cards */
+.contact-location {
+  margin-top: 2rem;
+}
+.contact-location__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+}
+.contact-location__card {
+  background: #FBFAF3;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid #FDBE34;
+}
+.contact-location__label {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #503AA8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+.contact-location__card p {
+  color: #0A1A2F;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.contact-location__card a {
+  color: #503AA8;
+  text-decoration: underline;
+}
+.contact-location__link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.contact-calendly-intro {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.contact-calendly-intro p {
+  font-size: 1.1rem;
+  color: #0A1A2F;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .contact-location__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .form-success {
   background: #d4edda;
   border: 2px solid #28a745;

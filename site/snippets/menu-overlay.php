@@ -59,22 +59,18 @@
         </ul>
       </div>
 
-      <!-- Office Hours -->
+      <!-- Events Section -->
       <div class="menu-section">
         <h3>Events</h3>
-        <div class="menu-office-hours">
-          <img src="<?= url('assets/images/office.jpg') ?>" alt="Shimmer Labs office" class="menu-office-hours__photo">
-          <div class="menu-office-hours__details">
-            <span class="menu-office-hours__title">🤖 AI Office Hours</span>
-            <span class="menu-office-hours__schedule">Tue &amp; Thu, 2–4 PM</span>
-            <span class="menu-office-hours__address">901 S. Main St, Stillwater, OK</span>
-            <span class="menu-office-hours__note">Bring your questions. Come hang.</span>
-            <span class="menu-office-hours__cal-links">
-              <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MHQ5YWMxbHY4N2E4NHIzdjB1OG9lZ2VyNzFfMjAyNjA0MTRUMTkwMDAwWiBsb2dhbkBzaGltbWVybGFicy5jbw&tmsrc=logan%40shimmerlabs.co&scp=ALL" target="_blank" class="menu-office-hours__cta">Add Tue →</a>
-              <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MnVnb290aGU3cjBjaDNvMzE2bXRhNjFzMXYgbG9nYW5Ac2hpbW1lcmxhYnMuY28&tmsrc=logan%40shimmerlabs.co" target="_blank" class="menu-office-hours__cta">Add Thu →</a>
-            </span>
-          </div>
-        </div>
+        <ul class="menu-links">
+          <li>
+            <a href="/office-hours">
+              <span class="menu-link-icon">🤖</span>
+              <span class="menu-link-title">AI Office Hours</span>
+              <span class="menu-link-price">Tue & Thu, 2–4 PM</span>
+            </a>
+          </li>
+        </ul>
       </div>
 
       <!-- Contact Footer -->

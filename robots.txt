@@ -8,7 +8,6 @@ Allow: /
 Sitemap: https://shimmerlabs.co/sitemap.xml
 
 # Disallow admin/panel areas (Kirby CMS)
-User-agent: *
 Disallow: /panel
 Disallow: /kirby
 Disallow: /site
@@ -16,21 +15,71 @@ Disallow: /site
 # Disallow service worker and cache files
 Disallow: /sw.js
 
-# Allow common crawlers explicitly
+# ═══════ Search Engine Crawlers ═══════
 User-agent: Googlebot
+Allow: /
+
 User-agent: Bingbot
+Allow: /
+
 User-agent: DuckDuckBot
 Allow: /
 
-# AI Citation Crawlers
+User-agent: Yandex
+Allow: /
+
+# ═══════ AI / LLM Crawlers ═══════
+# OpenAI
 User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+# Anthropic
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
 User-agent: PerplexityBot
+Allow: /
+
+# Google AI (Gemini)
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Apple AI (Siri, Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft / Copilot
+User-agent: Bytespider
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl (used by many LLM training sets)
+User-agent: CCBot
+Allow: /
+
+# You.com
+User-agent: YouBot
 Allow: /
