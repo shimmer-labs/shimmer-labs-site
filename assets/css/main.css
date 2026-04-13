@@ -1914,6 +1914,61 @@ section {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.menu-office-hours {
+  display: flex;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  overflow: hidden;
+}
+.menu-office-hours__photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.menu-office-hours__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.menu-office-hours__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-gold);
+}
+.menu-office-hours__schedule {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+.menu-office-hours__address {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.menu-office-hours__note {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+.menu-office-hours__cal-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+.menu-office-hours__cta {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-gold);
+  text-decoration: none;
+}
+.menu-office-hours__cta:hover {
+  text-decoration: underline;
+}
+
 .menu-cta {
   display: flex;
   flex-direction: column;
