@@ -39,10 +39,11 @@
   )->excerpt(160);
 
   // Open Graph Image with smart fallbacks
+  // Homepage and non-project pages use the company logo for social sharing
   $ogImage = null;
   if ($page->og_image()->toFile()) {
     $ogImage = $page->og_image()->toFile()->url();
-  } elseif ($page->image()) {
+  } elseif ($page->intendedTemplate() === 'project' && $page->image()) {
     $ogImage = $page->image()->url();
   } else {
     $ogImage = url('assets/images/shimmer-labs-logo.png');
