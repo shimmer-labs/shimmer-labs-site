@@ -15,6 +15,7 @@
             <li><a href="<?= url('services/sidecar') ?>">Sidecar (AI Agents)</a></li>
             <li><a href="<?= url('services/custom-apps') ?>">Custom Apps</a></li>
             <li><a href="<?= url('services/api-integrations') ?>">API Integrations</a></li>
+            <li><a href="<?= url('event-video') ?>">Event Videos</a></li>
           </ul>
         </div>
 

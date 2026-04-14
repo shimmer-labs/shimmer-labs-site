@@ -30,6 +30,12 @@
               <span class="menu-link-price">$3.5k - $12k</span>
             </a>
           </li>
+          <li>
+            <a href="/event-video">
+              <span class="menu-link-icon">🎬</span>
+              <span class="menu-link-title">Event Videos</span>
+            </a>
+          </li>
         </ul>
       </div>
 
