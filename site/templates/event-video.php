@@ -516,9 +516,8 @@
   <div class="container">
     <div class="ev-sample__label">See Our Work</div>
     <h2>This is what we mean by "worth sharing."</h2>
-    <!-- TODO: Logan to replace with final conference video URL once available -->
     <div class="ev-sample__video">
-      <iframe src="https://www.youtube.com/embed/RjPsw_YFVE0?rel=0" title="Sample event recap video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/31U-SAh8NLM?rel=0" title="Sample event recap video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <p class="ev-sample__caption">A recent event recap. Raw footage in, polished video out.</p>
   </div>
