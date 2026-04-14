@@ -285,16 +285,15 @@
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #503AA8 0%, #9B51E0 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-size: 5rem;
-  font-weight: 700;
-  color: #FDBE34;
+  overflow: hidden;
   box-shadow: 0 8px 32px rgba(80,58,168,0.2);
   border: 4px solid #FBFAF3;
+}
+.ev-meet__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .ev-meet__label {
   color: #503AA8;
@@ -489,7 +488,6 @@
   .ev-meet__avatar {
     width: 140px;
     height: 140px;
-    font-size: 3.5rem;
     margin: 0 auto;
   }
   .ev-pricing__compare { grid-template-columns: 1fr; }
@@ -581,16 +579,18 @@
   </div>
 </section>
 
-<!-- ═══════ MEET KARIN ═══════ -->
+<!-- ═══════ MEET LOGAN ═══════ -->
 <section class="ev-meet">
   <div class="container">
     <div class="ev-meet__grid">
-      <div class="ev-meet__avatar" aria-hidden="true">K</div>
+      <div class="ev-meet__avatar">
+        <img src="<?= url('assets/images/hero.jpg') ?>" alt="Logan Shimmer">
+      </div>
       <div class="ev-meet__content">
-        <div class="ev-meet__label">Meet Your Editor</div>
-        <h2>Your project runs through <span>Karin.</span></h2>
-        <p>Karin leads our video work. She writes the script, shapes the arc, and personally hands off the final cut. When you book the intro call, you're talking to the person actually making your video, not an account rep.</p>
-        <p>Which means faster decisions, fewer rounds of telephone, and a finished product that matches what you actually asked for.</p>
+        <div class="ev-meet__label">Who You're Talking To</div>
+        <h2>Your intro call is with <span>Logan.</span></h2>
+        <p>When you book, you're talking to the founder of Shimmer Labs. No account rep, no funnel, no "let me get you with a specialist." Just a direct conversation about what you shot and what you want to do with it.</p>
+        <p>You'll walk away with a clear sense of scope, timeline, and cost. If it's a fit, we move. If not, no hard feelings.</p>
       </div>
     </div>
   </div>
@@ -600,19 +600,8 @@
 <section class="ev-pricing">
   <div class="container">
     <h2>Priced for humans, not agencies.</h2>
-    <div class="ev-pricing__compare">
-      <div class="ev-pricing__card ev-pricing__card--them">
-        <div class="ev-pricing__who">Traditional Production</div>
-        <div class="ev-pricing__amount">$8k &ndash; $25k</div>
-        <div class="ev-pricing__note">6&ndash;10 weeks, crew on site</div>
-      </div>
-      <div class="ev-pricing__card ev-pricing__card--us">
-        <div class="ev-pricing__who">Shimmer Labs</div>
-        <div class="ev-pricing__amount">Starts at $2,500</div>
-        <div class="ev-pricing__note">5&ndash;7 days, you send the clips</div>
-      </div>
-    </div>
-    <p class="ev-pricing__footnote">Exact price depends on length, number of clips, and turnaround. We quote flat before we start. No surprises.</p>
+    <p class="ev-pricing__footnote" style="font-style: normal; font-size: 1.05rem; color: #374151; margin-bottom: 1.5rem;">Traditional production houses run five figures and six-week timelines. We don't. Cost scales with length, number of clips, and how fast you need it. We quote flat before we start. No surprises, no scope-creep games.</p>
+    <p class="ev-pricing__footnote">Short recap? Long-form highlight reel? Multiple cuts for different channels? Tell us on the call and we'll give you the number.</p>
   </div>
 </section>
 
