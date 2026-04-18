@@ -1,5 +1,15 @@
 <?php snippet('header') ?>
 
+<!-- Event Banner -->
+<a href="<?= url('office-hours') ?>" class="event-banner" id="eventBanner">
+  <div class="container">
+    <span class="event-banner__text">
+      <strong>Free AI Office Hours</strong> — Tuesdays &amp; Thursdays, 2–4 PM at WorkIT Stillwater
+    </span>
+    <span class="event-banner__cta">Drop In →</span>
+  </div>
+</a>
+
 <!-- Hero: Scanner-First -->
 <section class="hero" id="scanner">
   <div class="container">

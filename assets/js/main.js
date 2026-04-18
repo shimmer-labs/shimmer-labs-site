@@ -133,6 +133,19 @@ onReady(function() {
   });
 });
 
+// Event banner click tracking
+onReady(() => {
+  const banner = document.getElementById('eventBanner');
+  if (banner && typeof gtag === 'function') {
+    banner.addEventListener('click', () => {
+      gtag('event', 'event_banner_click', {
+        event_category: 'office_hours',
+        event_label: 'homepage_banner'
+      });
+    });
+  }
+});
+
 // Lazy Load Images
 onReady(() => {
   const images = document.querySelectorAll('img[data-src]');
