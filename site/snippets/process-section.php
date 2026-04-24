@@ -11,19 +11,41 @@
         We build the sidecar around your business, not the other way around.
       </p>
 
-      <ul class="how-it-works__stories">
-        <li>
-          <strong>Anna</strong> runs a yoga studio in Stillwater. Her sidecar handles manual membership modifications and seasonal staff scheduling. <strong class="how-it-works__payoff">So she can have dinner uninterrupted with her daughter.</strong>
-        </li>
-        <li>
-          <strong>Danny</strong> runs a podcast and webcomics API for indie creators. His sidecar handles distribution to developers inside the no-code tools they already use. <strong class="how-it-works__payoff">So he can keep building the infrastructure that lets indie creators own their own work.</strong>
-        </li>
-        <li>
-          <strong>Kristen</strong> runs a tree service. Her sidecar handles estimating and invoicing. <strong class="how-it-works__payoff">So she can build a community of entrepreneurs in Stillwater.</strong>
-        </li>
-      </ul>
+      <div class="how-it-works__stories">
 
-      <p class="how-it-works__lead">
+        <div class="how-it-works__story">
+          <div class="how-it-works__story-photo">
+            <img src="<?= url('assets/images/testimonials/anna-moore.jpg') ?>" alt="Anna Moore, Sweat Yoga & Fitness" loading="lazy">
+          </div>
+          <div class="how-it-works__story-text">
+            <p class="how-it-works__story-lead"><strong>Anna</strong> runs a yoga studio in Stillwater. Her sidecar handles manual membership modifications and seasonal staff scheduling.</p>
+            <p class="how-it-works__payoff">So she can have dinner uninterrupted with her daughter.</p>
+          </div>
+        </div>
+
+        <div class="how-it-works__story how-it-works__story--reverse">
+          <div class="how-it-works__story-text">
+            <p class="how-it-works__story-lead"><strong>Danny</strong> runs a podcast and webcomics API for indie creators. His sidecar handles distribution to developers inside the no-code tools they already use.</p>
+            <p class="how-it-works__payoff">So he can keep building the infrastructure that lets indie creators own their own work.</p>
+          </div>
+          <div class="how-it-works__story-photo">
+            <img src="<?= url('assets/images/testimonials/danny-mathews.jpg') ?>" alt="Danny Mathews, Taddy" loading="lazy">
+          </div>
+        </div>
+
+        <div class="how-it-works__story">
+          <div class="how-it-works__story-photo">
+            <img src="<?= url('assets/images/testimonials/kristen-hadley.jpg') ?>" alt="Kristen Hadley, TreeBidPro" loading="lazy">
+          </div>
+          <div class="how-it-works__story-text">
+            <p class="how-it-works__story-lead"><strong>Kristen</strong> runs a tree service. Her sidecar handles estimating and invoicing.</p>
+            <p class="how-it-works__payoff">So she can build a community of entrepreneurs in Stillwater.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="how-it-works__lead how-it-works__close">
         Each one looks different. Each one started with a 30-minute conversation. No pitch. No pressure.
       </p>
 
