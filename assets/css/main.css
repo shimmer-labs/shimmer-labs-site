@@ -4739,19 +4739,19 @@ img.loaded {
 
 .thesis__stat-label {
   font-family: var(--font-body);
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 0.8);
-  max-width: 240px;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 260px;
 }
 
 .thesis__body {
   font-family: var(--font-body);
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 720px;
-  margin: 0 auto var(--spacing-sm) auto;
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 760px;
+  margin: 0 auto var(--spacing-md) auto;
 }
 
 .thesis__body strong {
@@ -4759,10 +4759,21 @@ img.loaded {
   font-weight: 600;
 }
 
+.thesis__tagline {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-gold);
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin: 0 auto var(--spacing-md) auto;
+  line-height: 1.2;
+}
+
 .thesis__sources {
   font-family: var(--font-body);
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
   letter-spacing: 0.02em;
   margin-top: var(--spacing-md);
 }
@@ -4792,7 +4803,7 @@ img.loaded {
 
 .how-it-works__lead {
   font-family: var(--font-body);
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   line-height: 1.7;
   color: #2a2f3a;
   margin: 0 0 var(--spacing-sm) 0;
@@ -4808,10 +4819,17 @@ img.loaded {
 
 .how-it-works__stories li {
   font-family: var(--font-body);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: #2a2f3a;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.how-it-works__payoff {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--color-sidecar);
+  font-weight: 700;
 }
 
 .how-it-works__stories li:last-child {

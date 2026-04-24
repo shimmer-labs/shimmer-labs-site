@@ -12,9 +12,15 @@
       </p>
 
       <ul class="how-it-works__stories">
-        <li><strong>Anna</strong> runs a yoga studio in Stillwater. Her sidecar handles the membership cancellations that used to eat her weekends.</li>
-        <li><strong>Danny</strong> runs a podcast API. His sidecar put the product in front of every developer searching on n8n, Zapier, and Make.com.</li>
-        <li><strong>Kristen</strong> runs a tree service. Her sidecar is a full web app that went from wireframes to production in two weeks.</li>
+        <li>
+          <strong>Anna</strong> runs a yoga studio in Stillwater. Her sidecar handles manual membership modifications and seasonal staff scheduling. <strong class="how-it-works__payoff">So she can have dinner uninterrupted with her daughter.</strong>
+        </li>
+        <li>
+          <strong>Danny</strong> runs a podcast and webcomics API for indie creators. His sidecar handles distribution to developers inside the no-code tools they already use. <strong class="how-it-works__payoff">So he can keep building the infrastructure that lets indie creators own their own work.</strong>
+        </li>
+        <li>
+          <strong>Kristen</strong> runs a tree service. Her sidecar handles estimating and invoicing. <strong class="how-it-works__payoff">So she can build a community of entrepreneurs in Stillwater.</strong>
+        </li>
       </ul>
 
       <p class="how-it-works__lead">

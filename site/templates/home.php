@@ -150,9 +150,18 @@
   <div class="container">
     <h2 class="projects__title">Recent Case Studies</h2>
     <div class="projects__grid">
-      <?php foreach ($caseStudiesPage->children()->listed()->limit(3) as $item): ?>
+      <?php
+      // Explicit slug list so the homepage can feature a different trio
+      // than the /case-studies index top row.
+      $homeFeatured = ['sweat-yoga-fitness', 'taddy-api-integrations', 'paidly'];
+      foreach ($homeFeatured as $slug):
+        if ($item = $caseStudiesPage->find($slug)):
+      ?>
         <?php snippet('project-card', ['project' => $item]) ?>
-      <?php endforeach ?>
+      <?php
+        endif;
+      endforeach
+      ?>
     </div>
     <div class="projects__see-all">
       <a href="<?= $caseStudiesPage->url() ?>" class="btn btn--secondary">See all case studies →</a>
