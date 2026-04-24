@@ -1,0 +1,164 @@
+Title: Taddy API Integrations
+
+----
+
+Meta_description: How Shimmer Labs shipped Taddy's podcast API across n8n, Zapier, and Make.com, putting the data in front of the no-code users who couldn't find it otherwise.
+
+----
+
+Featured: true
+
+----
+
+Badge: Live
+
+----
+
+Summary: Taddy had great podcast data. Nobody on n8n, Zapier, or Make.com could find it. We shipped all three.
+
+----
+
+Client_name: Taddy
+
+----
+
+Client_role: Danny Mathews, Founder
+
+----
+
+Client_person: Danny
+
+----
+
+Client_location: British Columbia, Canada
+
+----
+
+Client_website: https://taddy.org
+
+----
+
+Engagement_type: API Integrations
+
+----
+
+Engagement_timeline: October 2025
+
+----
+
+Platforms: n8n, Zapier, Make.com
+
+----
+
+Hero_image: danny-headshot.jpg
+
+----
+
+Hero_headline: Distribution for a distribution company.
+
+----
+
+Hero_subhead: How we shipped Taddy's podcast API across the three no-code platforms its users actually live in.
+
+----
+
+Problem_intro:
+
+Taddy is a distribution platform. They help indie comic and podcast creators publish once and reach many apps while keeping full rights to their own work. Their API is how developers build on top of that distribution layer. Search, transcripts, charts, episode data, the whole catalog.
+
+The API was solid. That was not the problem.
+
+The problem was that the people who would have loved this API, the newsletter creators, the podcast researchers, the automation tinkerers, live inside n8n, Zapier, and Make.com. Those platforms have integration directories that function like app stores. If someone searches "podcast data" in Zapier and Taddy is not in the list, they do not find Taddy. They find whoever is.
+
+Taddy had the data. They just were not in the list.
+
+----
+
+Problem_pullquote: Small APIs live and die by distribution. Great data that no one can find might as well not exist.
+
+----
+
+Why_hard:
+
+Shipping three official integrations is not one job three times. Each platform is a different build.
+
+- **Three different SDKs, three different UX rules.** Each platform has its own conventions for how nodes behave, how auth works, how errors surface. Getting into the official directory means conforming to each standard, not just "it works on my machine."
+- **GraphQL to no-code.** Taddy's API is GraphQL. The no-code platforms are shaped around REST. A clean wrapper hides the GraphQL layer and turns queries into operations a non-developer can click through.
+- **Real UX for real users.** Pagination, credit management for transcript generation, field selection across 50+ data points, error messaging. All of which a raw API user would handle in code. All of which had to become configuration panels someone could actually use.
+- **Three deployment pipelines.** npm community nodes for n8n. Zapier's Partner Program with its approval flow. Make.com's app submission process. Three different approval processes, three different timelines, three different sets of reviewers.
+
+----
+
+Automations_list:
+
+-
+  title: n8n community node
+  status: Live
+  description: |
+    Published on npm as `n8n-nodes-podcast-data-extractor-taddy`. Eight core operations cover the most common podcast data jobs: search, transcripts, top charts, popular podcasts, latest episodes.
+
+    The GraphQL layer is hidden. Users pick an operation, fill in a few fields, and get structured output. Pagination is automatic for large result sets. A credit toggle protects users from accidentally generating expensive transcripts. Response field selection lets downstream nodes stay lean.
+
+    First-to-market for Taddy on n8n. Install in one command.
+  screenshot:
+    - 03-workflow-canvas.jpg
+    - 04-search-results.jpg
+  screenshot_caption: The community node in the n8n editor, with a live search query returning structured podcast results.
+-
+  title: Zapier app
+  status: Live
+  description: |
+    Live in Zapier's app directory. Triggers and actions covering podcast search, episode retrieval, and on-demand transcripts.
+
+    Built to Zapier's Partner Program standards so it reads as native, not bolted-on. Auth, error handling, and field descriptions all conform to the platform's conventions.
+-
+  title: Make.com app
+  status: Live
+  description: |
+    Live in Make.com's app directory. Modules covering the full Taddy API surface, wired into Make's scenario builder.
+
+    Same approach as Zapier: native feel, clean error surfaces, field mappings that make sense in Make's visual environment.
+
+----
+
+Also_shipped:
+
+Infrastructure decisions that shaped all three integrations:
+
+- **GraphQL-to-REST translation layer** so the no-code surface feels native on every platform.
+- **Field selection across 50+ data points** so downstream workflows only pull what they need.
+- **Credit toggle on transcript operations** because transcripts cost real money and users should never spend it by accident.
+- **Automatic pagination** so large queries do not silently truncate.
+- **Platform research and scope call.** Pipedream was scoped as a fourth platform but we recommended against it. Gumloop got cut for the same reason. Three strong shipped integrations beat four half-baked ones.
+
+----
+
+Human_close_body:
+
+Taddy's data now reaches every developer who has ever typed "podcast" into their no-code platform's search bar. That is not a number we can quote yet. But it is, directly, the reason this project happened.
+
+----
+
+Human_close_pullquote: Logan built comprehensive integrations for the Taddy Podcast API across n8n, Zapier, and Make.com. Clean code, thorough documentation, and he responded quickly to any support needed. Solid work.
+
+----
+
+Human_close_pullquote_attribution: Danny Mathews, Founder @ Taddy
+
+----
+
+Collaborator_paragraph:
+
+**Small APIs live and die by distribution.** Great data that no one can find might as well not exist. This is the kind of work Shimmer Labs does best: meet your users where they already are, ship it through the official channels, and do it cleanly enough that your platform partners respect the work.
+
+----
+
+Tech_stack: TypeScript, Node.js, GraphQL, Taddy Podcast API, npm, Zapier Platform, Make.com Developer Platform, n8n Community Nodes
+
+----
+
+Cta_headline: Need your API where your users already work?
+
+----
+
+Cta_service_link: /services/api-integrations

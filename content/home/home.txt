@@ -172,12 +172,6 @@ Projects:
   image: apify-contracts.jpg
   link: https://github.com/shimmer-labs/apify-contracts-monitor
 -
-  title: 'Taddy API n8n Nodes'
-  description: 'Custom n8n nodes for podcast data extraction. Automates podcast tracking, guest matching, and metadata enrichment for newsletter creators.'
-  badge: 'Coming Soon'
-  image: taddy-api-nodes.jpg
-  link: https://github.com/shimmer-labs/taddy-podcast-actor
--
   title: 'Shopify Store App'
   description: 'Automated inventory sync and order management integration for Shopify stores. Connect your store to the rest of your business.'
   badge: 'Coming Soon'

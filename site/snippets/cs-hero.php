@@ -19,6 +19,8 @@
       <?php if ($page->hero_quote_attribution()->isNotEmpty()): ?>
         <cite class="cs-hero__attribution"><?= $page->hero_quote_attribution() ?></cite>
       <?php endif ?>
+    <?php elseif ($page->hero_headline()->isNotEmpty()): ?>
+      <h1 class="cs-hero__headline"><?= $page->hero_headline() ?></h1>
     <?php else: ?>
       <h1 class="cs-hero__title"><?= $page->title() ?></h1>
     <?php endif ?>

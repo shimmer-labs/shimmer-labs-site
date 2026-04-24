@@ -72,14 +72,18 @@ fields:
   hero_quote:
     type: textarea
     label: Hero Pullquote
-    help: The big opening quote. Rendered huge.
+    help: The big opening quote. Rendered huge. Use this OR hero_headline, not both.
   hero_quote_attribution:
     type: text
     label: Hero Quote Attribution
+  hero_headline:
+    type: textarea
+    label: Hero Headline (alternative to pullquote)
+    help: Thesis-statement hero for cases without a scroll-stopping client quote. Use this OR hero_quote, not both.
   hero_subhead:
     type: text
     label: Hero Subhead
-    help: One line under the hero quote.
+    help: One line under the hero quote or headline.
 
   narrative:
     label: Narrative

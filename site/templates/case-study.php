@@ -132,7 +132,7 @@
         </div>
         <?php if ($page->cta_service_link()->isNotEmpty()): ?>
           <p class="cs-cta-subtext">
-            Curious what Sidecar costs? <a href="<?= $page->cta_service_link() ?>">Learn about the service →</a>
+            Curious what it costs? <a href="<?= $page->cta_service_link() ?>">Learn about the service →</a>
           </p>
         <?php endif ?>
       </div>

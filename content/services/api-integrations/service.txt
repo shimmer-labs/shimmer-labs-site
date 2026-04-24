@@ -24,7 +24,7 @@ Text:
 
 Most agencies charge $7k-15k and take 2 months for custom API integrations. We deliver in 1-2 weeks for $3.5k-12k because:
 
-- **We've done this before:** Built 4 production integrations for the Taddy Podcast API (n8n, Zapier, Make)
+- **We've done this before:** Built 3 production integrations for the Taddy Podcast API (n8n, Zapier, Make.com)
 - **Published to npm:** Real packages used by real companies
 - **AI-powered speed:** We use AI agents to move 2-3x faster than traditional development
 - **Focused toolset:** We only work with n8n, Zapier, and Make. No learning curve

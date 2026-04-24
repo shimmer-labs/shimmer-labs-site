@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php
-  // SEO-optimized title tags per page
-  $seoTitle = match($page->intendedTemplate()) {
+  // SEO-optimized title tags per page.
+  // intendedTemplate() returns a Template object; call ->name() for a string.
+  $templateName = $page->intendedTemplate()->name();
+  $seoTitle = match($templateName) {
     'home' => 'Shimmer Labs - Custom Software for Small Businesses | Web Apps, iOS, Shopify',
     'case-studies' => 'Case Studies - Small Business Automation & Custom Software | Shimmer Labs',
     'case-study' => $page->title() . ' Case Study | Shimmer Labs',
@@ -44,16 +46,16 @@
   $ogImage = null;
   if ($page->og_image()->toFile()) {
     $ogImage = $page->og_image()->toFile()->url();
-  } elseif ($page->intendedTemplate() === 'case-study' && $page->hero_image()->toFile()) {
+  } elseif ($templateName === 'case-study' && $page->hero_image()->toFile()) {
     $ogImage = $page->hero_image()->toFile()->url();
-  } elseif ($page->intendedTemplate() === 'project' && $page->image()) {
+  } elseif ($templateName === 'project' && $page->image()) {
     $ogImage = $page->image()->url();
   } else {
     $ogImage = url('assets/images/shimmer-labs-logo.png');
   }
 
   // Page-specific OG type
-  $ogType = match($page->intendedTemplate()) {
+  $ogType = match($templateName) {
     'case-study' => 'article',
     'project' => 'article',
     'service' => 'article',

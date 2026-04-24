@@ -97,6 +97,14 @@ return [
         exit;
       }
     ],
+    // Case study slug renames
+    [
+      'pattern' => 'case-studies/n8n_taddy_api_nodes',
+      'action'  => function() {
+        header('Location: ' . url('case-studies/taddy-api-integrations'), true, 301);
+        exit;
+      }
+    ],
 
     // SEO: Sitemap
     [
