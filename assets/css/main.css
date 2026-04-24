@@ -4913,6 +4913,22 @@ img.loaded {
   line-height: 1.6;
 }
 
+.cs-section--collaborator ul,
+.cs-section--collaborator ol {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  padding-left: 1.4rem;
+}
+
+.cs-section--collaborator li {
+  margin-bottom: 0.5rem;
+}
+
+.cs-section--collaborator li::marker {
+  color: var(--color-gold);
+}
+
 .cs-section--collaborator strong {
   color: var(--color-gold);
   font-weight: 600;

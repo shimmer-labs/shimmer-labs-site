@@ -1,0 +1,245 @@
+Title: Paidly
+
+----
+
+Meta_description: How Shimmer Labs built and validated a document-parsing capability (unstructured business document in, structured accounting data out, human in the loop) that applies to any business drowning in invoices, contracts, or statements.
+
+----
+
+Featured: true
+
+----
+
+Badge: Live
+
+----
+
+Summary: A small paid SaaS that turned Logan's invoicing pain into a repeatable document-parsing capability. 33 users, 95% accuracy, and a pattern that fits every business drowning in PDFs.
+
+----
+
+Client_name: Paidly
+
+----
+
+Client_role: Logan Shimmer, Founder & Builder
+
+----
+
+Client_person: Logan
+
+----
+
+Client_location: Stillwater, OK
+
+----
+
+Client_website: https://paidly.co
+
+----
+
+Engagement_type: Internal product, live SaaS
+
+----
+
+Engagement_timeline: October 2025 to ongoing
+
+----
+
+Platforms: Contract PDFs, Notion, Chrome, Stripe
+
+----
+
+Hero_image: logan-headshot.png
+
+----
+
+Hero_quote: I was retyping the same contract terms into invoices three times a week. The data was already on the page. That just felt dumb.
+
+----
+
+Hero_quote_attribution: Logan Shimmer, Founder @ Shimmer Labs
+
+----
+
+Hero_subhead: What happens when you ship a small SaaS to solve your own problem, then realize the pattern underneath fits everyone else with a stack of PDFs.
+
+----
+
+Problem_intro:
+
+I was retyping contract terms into invoices three times a week. Client name. Rate I had negotiated months ago. Payment terms. Milestones. Line items. All of it was already there, on a contract I had signed.
+
+Every freelancer I know does the same thing. Every small business owner with a pile of vendor invoices, service bills, or revenue statements does a version of it. Billions of hours of transcription across the economy, and the data is already on the page.
+
+So I built the tool I wished existed. Started with my own contracts. Two months of testing to hit 95 percent parsing accuracy, which was the ship gate. Then live SaaS. Then a Chrome extension. Then a Notion integration. Thirty-three people are now paying for it instead of retyping.
+
+----
+
+Problem_pullquote: The data was already on the page. I was just moving it from one place to another.
+
+----
+
+Problem_pullquote_attribution: Logan Shimmer
+
+----
+
+Why_hard:
+
+Shipping AI document parsing that people will trust with money is not one job. It is four.
+
+- **PDFs come in every layout.** Every vendor has their own template. Every freelancer's contract is a different shape. Template-based extraction breaks the first time a format changes, which is constantly.
+- **LLMs hallucinate when you ask them for structured output.** The industry average for manual AP data entry error is 1 to 4 percent. AI extraction has to beat that to be worth using. Ours had to prove it over two months before we shipped.
+- **AI cost at naive scale makes the unit economics impossible.** Claude at roughly a cent per parse works in a demo. It does not work in a small business SaaS at $29 a month. We worked our way down to Gemini 2.0 Flash-Lite, which parses the same document for about $0.0002.
+- **Nobody trusts AI with money on day one.** The invoice is the final artifact that goes to a client. If the rate is wrong, the client is confused. If the terms are wrong, the client disputes. We needed per-field confidence scoring and a human review step before anything goes out the door, or the whole product is a non-starter.
+
+----
+
+Automations_list:
+
+-
+  title: Contract ingestion
+  status: Live
+  description: |
+    Drop a PDF, DOCX, or photo of a signed contract into Paidly. The parser pulls 16 fields out: client name, billing address, hourly rate or project fee, payment terms (net-30, net-15, "7 business days"), milestones, deliverables, late fee clauses, and a handful of metadata fields you would not think to ask for.
+
+    Under the hood: Gemini 2.0 Flash-Lite. About $0.0002 per document. That number is what makes $29 a month pricing possible. The model selection was not aesthetic. It was unit economics.
+  screenshot:
+    - 1_paidly_parse.gif
+  screenshot_caption: Drop a contract in. Structured data comes out.
+-
+  title: Confidence-scored extraction
+  status: Live
+  description: |
+    Every field the parser extracts carries a confidence score. The fields the model is sure about (client name from a signature block, date from a header) pass through. The ones it is less sure about (a payment term written out in prose, a late fee clause buried in a paragraph) surface to a human for review.
+
+    This is the part that makes the product honest. An AI that says "I am 98 percent sure this rate is $150 an hour" is usable. An AI that just says "$150 an hour" and is confidently wrong is a lawsuit. We ship the uncertainty to the human, where it belongs.
+
+    Current parsing accuracy is 95 percent across two months of pre-launch testing, still holding in production.
+-
+  title: Invoice generation with a human in the loop
+  status: Live
+  description: |
+    Review the extracted fields. Adjust anything flagged low-confidence. Click "Get Paidly." A branded invoice goes out to the client with a Stripe payment link, a clean email, and due dates that match the contract. The whole flow, from contract upload to send-ready invoice, takes under 60 seconds.
+
+    The review step is not optional. It is the guardrail. Nothing reaches a client until a human has signed off on it. That is the pattern we believe in for any AI that touches money: AI extracts, human approves, system delivers.
+  screenshot:
+    - 2_paidly_email.jpg
+  screenshot_caption: The invoice a client receives. Stripe link, alternate payment options, clean.
+-
+  title: AI Invoice Roast
+  status: Live
+  description: |
+    Upload a contract. Paidly tears it apart. Underpriced rates, missing payment terms, scope-creep landmines, IP giveaways, the whole buffet. You get a verdict (undercharging, about right, overcharging), a contract protection score, and a market-reality benchmark telling you what you should actually charge.
+
+    It is the same parsing engine from contract ingestion, pointed at a different question. Not "what does this contract say?" but "should you have signed this thing?"
+
+    Originally built as a joke. Turns out freelancers really want their contracts roasted before they sign them, and small teams use it in negotiations to push back on underpriced scope.
+  screenshot:
+    - 3_paidly_roast.jpg
+  screenshot_caption: The AI pricing consultant. Spicy, specific, free.
+-
+  title: Works where you work
+  status: Live
+  description: |
+    Paidly is a web app at paidly.co, a Chrome extension on the Chrome Web Store, and a Notion integration.
+
+    The web app is home base. The Chrome extension scans a contract from inside any browser tab (a Gmail attachment, a doc in Google Drive, a page in Notion) without breaking flow. The Notion integration lets power users trigger Paidly from a Notion database.
+
+    Distribution matters. A SaaS that lives only on its own URL fights for attention. A SaaS that shows up in the tools you already use is where the friction actually goes away.
+
+----
+
+Also_shipped:
+
+Infrastructure that made the product safe to trust:
+
+- **An eval harness** for measuring parsing accuracy against a known-good dataset. Shipped the product once it hit 95 percent, and kept running evals to catch regressions.
+- **Multi-file-type support** (PDF, DOCX, image). Contracts come in however the vendor sent them.
+- **Supabase row-level security** so every customer's data is isolated at the database layer, not just the application layer.
+- **Stripe Connect integration** for payment links. Clients pay directly. Paidly never holds funds.
+- **Cost engineering.** AI spend per parse dropped from about $0.01 on Claude to $0.0002 on Gemini 2.0 Flash-Lite. That delta is the difference between a SaaS that works and a SaaS that doesn't.
+
+----
+
+Results_intro: Two months of testing before ship. Six months in production. What the numbers look like:
+
+----
+
+Results_headline_stat: 95%
+
+----
+
+Results_headline_label: parsing accuracy across two months of pre-launch testing, still holding in production
+
+----
+
+Results_supporting_stats:
+
+-
+  number: "33"
+  label: paying users
+-
+  number: "6+"
+  label: months live in production
+-
+  number: "43x"
+  label: cheaper AI cost than naive implementation
+
+----
+
+Results_context:
+
+Paidly is a small, validated SaaS, not a rocket ship. Thirty-three users is the point. Real product, real revenue, not a press release. The numbers that matter are the ones that prove the capability works: the AI reads the document, the human stays in the loop, and the unit economics hold at a small-business price. Every one of those is a requirement for the same capability to work on an oil and gas vendor invoice, a landscaper's monthly bill, or a property manager's maintenance statement.
+
+----
+
+Results_pullquote: Anything AI does to an invoice has to beat a human doing the same task, or no one uses it. The ship gate was 95 percent. Anything less, we were not shipping.
+
+----
+
+Results_pullquote_attribution: Logan Shimmer
+
+----
+
+Human_close_body:
+
+I do not retype contracts anymore. Paidly does. Thirty-three other freelancers are paying to have their contracts read instead of reading them themselves. That is what changed for me.
+
+What changed for Shimmer Labs is bigger. We built Paidly to solve one invoicing problem. We learned a repeatable capability along the way: turn any long business document into structured data, with a human in the loop.
+
+----
+
+Human_close_pullquote: Paidly started as my own problem. It ended as a pattern we can apply to anyone else's.
+
+----
+
+Human_close_pullquote_attribution: Logan Shimmer
+
+----
+
+Collaborator_paragraph:
+
+**The pattern is portable.** Unstructured business document in, structured accounting data out, human in the loop. Swap the contract for:
+
+- A vendor invoice coded per well, for an oil and gas operator on WolfePak
+- A monthly service invoice coded per property, for a landscaper on YardBook or LMN
+- A maintenance invoice tagged per building, for a property manager on Buildium or AppFolio
+- A revenue check stub with dozens of owner splits, for an oil and gas accounting team
+- An explanation of benefits, for a medical billing clinic
+
+Same technical spine. Different documents. Different target system. Same human in the loop.
+
+**If you are retyping documents into software every week, the Paidly pattern applies to you.** Shimmer Labs' Sidecar service builds it for you, against your software, with your documents. **You drive. We build the sidecar.**
+
+----
+
+Tech_stack: Next.js, TypeScript, Supabase, Gemini 2.0 Flash-Lite, Stripe Connect, Notion API, Chrome Web Store
+
+----
+
+Cta_headline: Need this for your pile of documents?
+
+----
+
+Cta_service_link: /services/sidecar
