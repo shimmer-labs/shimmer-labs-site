@@ -1,6 +1,6 @@
 Title: Contact
 ----
-Intro: Got a project in mind? Let's talk through what you need — no pressure, no jargon.
+Intro: Got a project in mind? Let's talk through what you need, no pressure, no jargon.
 ----
 Intake_question: What are you looking to build?
 ----

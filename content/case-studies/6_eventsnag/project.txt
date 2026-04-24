@@ -32,7 +32,7 @@ You screenshot that cool event flyer from Instagram. It gets buried in your came
 ## EventSnag Changes That
 **Snap it.** See a flyer? Open your Photos app, tap Share → EventSnag.
 
-**Snag it.** Our AI reads the screenshot and pulls out everything—date, time, venue, price, vibes. You review it (in case AI got creative), make any edits, and save.
+**Snag it.** Our AI reads the screenshot and pulls out everything, date, time, venue, price, vibes. You review it (in case AI got creative), make any edits, and save.
 
 **Show up.** Event syncs to your Google Calendar. Thursday at 6pm? You get a notification: "Weekend Plans Ready! 🎉" with all your upcoming events formatted and ready to share with friends.
 
@@ -77,7 +77,7 @@ Don't want it in your calendar yet? Tap "Save for Later" and it lives in the app
 
 ## Why This Works (The Shimmer Labs Angle)
 
-Logan built EventSnag because he was new in Stillwater and kept missing events. He'd screenshot flyers from Instagram, follow a dozen local accounts, check Facebook groups — but never actually show up to anything. The info was there, scattered across apps, buried in his camera roll.
+Logan built EventSnag because he was new in Stillwater and kept missing events. He'd screenshot flyers from Instagram, follow a dozen local accounts, check Facebook groups, but never actually show up to anything. The info was there, scattered across apps, buried in his camera roll.
 
 **The friction?** Event discovery is broken. Facebook Events is a wasteland. Eventbrite is corporate conferences. Instagram has the info but zero infrastructure for "I want to go to this."
 
@@ -148,7 +148,7 @@ Download: apps.apple.com/app/eventsnag
 
 ## Why Shimmer Labs Built This
 
-EventSnag started because Logan was tired of screenshotting events and never going. New in Stillwater, sifting through Instagram accounts, Facebook groups, and coffee shop flyers — but still missing everything. So he built a mobile app he could take with him to scan event flyers and turn them into calendar invites he could share with friends.
+EventSnag started because Logan was tired of screenshotting events and never going. New in Stillwater, sifting through Instagram accounts, Facebook groups, and coffee shop flyers, but still missing everything. So he built a mobile app he could take with him to scan event flyers and turn them into calendar invites he could share with friends.
 
 We validated the idea with early users for 2+ months, proved the AI parsing hit 95% accuracy, then built the native iOS app.
 
@@ -171,6 +171,6 @@ We validated the idea with early users for 2+ months, proved the AI parsing hit 
 - **Vercel serverless backend** (keeps API keys secure, no exposed credentials)
 
 ----
-Results: Turning screenshots into real-life experiences. EventSnag is now live on the App Store—download it at eventsnag.app and start snagging events today.
+Results: Turning screenshots into real-life experiences. EventSnag is now live on the App Store, download it at eventsnag.app and start snagging events today.
 ----
 Link: https://eventsnag.app

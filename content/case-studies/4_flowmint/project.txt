@@ -30,7 +30,7 @@ Description:
 
 ## The Problem
 
-You're a Shopify merchant. You know you need email marketing—welcome series, abandoned cart flows, post-purchase sequences. But:
+You're a Shopify merchant. You know you need email marketing, welcome series, abandoned cart flows, post-purchase sequences. But:
 
 - **Hiring an agency** costs $2,000-10,000 upfront
 - **DIY templates** sound nothing like your brand
@@ -41,7 +41,7 @@ So your email list collects dust. Money left on the table. Every. Single. Day.
 
 ## FlowMint Changes That
 
-**30 seconds:** Our AI analyzes your store—products, blog posts, brand colors, and voice. It figures out if you're luxury, subscription, consumables, or one of 6 business models.
+**30 seconds:** Our AI analyzes your store, products, blog posts, brand colors, and voice. It figures out if you're luxury, subscription, consumables, or one of 6 business models.
 
 **90 seconds:** FlowMint generates complete email sequences tailored to YOUR brand. Welcome series. Abandoned cart. Post-purchase thank you. VIP flows. Whatever your business model needs.
 
@@ -86,7 +86,7 @@ Each flow contains 3 emails, carefully sequenced:
 2. **Second email**: Reinforces the message, adds value
 3. **Third email**: Creates urgency or offers incentive
 
-The AI writes subject lines, preheaders, and body copy—all in YOUR voice. No generic "Hi {first_name}!" garbage. Real personality. Real brand alignment.
+The AI writes subject lines, preheaders, and body copy, all in YOUR voice. No generic "Hi {first_name}!" garbage. Real personality. Real brand alignment.
 
 ### 4. Push to Klaviyo (or Export Anywhere)
 One click sends your templates to Klaviyo as drafts. They show up in your template library, ready to activate.
@@ -98,7 +98,7 @@ Don't use Klaviyo? No problem. Copy/paste works with Mailchimp, ActiveCampaign, 
 ### Brand Voice That Actually Sounds Like You
 Most AI email tools generate bland, corporate-speak nonsense. FlowMint is different because we analyze YOUR content first.
 
-If your blog posts are casual and funny, your emails will be too. If you write with elegant restraint, we match that. We don't impose a style—we learn yours.
+If your blog posts are casual and funny, your emails will be too. If you write with elegant restraint, we match that. We don't impose a style, we learn yours.
 
 ### Business Model Intelligence
 A subscription box company needs different emails than a luxury handbag brand. FlowMint knows this. We've mapped 18+ email flow types across 6 business models:
@@ -123,7 +123,7 @@ We take data seriously:
 
 - **API keys encrypted at rest** with AES-256-GCM (bank-level encryption)
 - **GDPR compliant** with full data export and deletion
-- **No customer data stored**—we only analyze shop-level info (products, blogs, theme)
+- **No customer data stored**, we only analyze shop-level info (products, blogs, theme)
 - **Data deleted within 48 hours** of uninstalling
 
 Your Klaviyo API key never leaves our encrypted database. We don't sell, share, or monetize your data. Period.
@@ -139,9 +139,9 @@ We built this the Shimmer Labs way: prototype fast, validate with real users, th
 
 ## Pricing
 
-**Free**: Unlimited brand analysis, generate and preview all flows — no credit card required
-**Single Flow ($29)**: Export 1 complete flow for your brand — one-time purchase
-**Full Campaign ($79)**: Export all 18+ flows for your brand — one-time purchase
+**Free**: Unlimited brand analysis, generate and preview all flows, no credit card required
+**Single Flow ($29)**: Export 1 complete flow for your brand, one-time purchase
+**Full Campaign ($79)**: Export all 18+ flows for your brand, one-time purchase
 **Unlimited ($149/mo)**: Unlimited brands, unlimited exports, campaign calendar, priority support
 
 ## Perfect For
@@ -164,11 +164,11 @@ FlowMint is live on the Shopify App Store. We're adding:
 
 Shopify merchants kept telling us the same thing: "I know I need email marketing, but I can't afford an agency and I don't have time to learn Klaviyo." They'd spend hours trying to write one welcome series that sounded nothing like their brand.
 
-We saw the same pattern across stores — the setup is always the same steps, just with different brand voices. So we built software that handles the boring part (analyzing your brand, picking the right flows, writing the copy) and lets merchants focus on running their business.
+We saw the same pattern across stores, the setup is always the same steps, just with different brand voices. So we built software that handles the boring part (analyzing your brand, picking the right flows, writing the copy) and lets merchants focus on running their business.
 
 **That's the Shimmer Labs way**: Find the problem everyone complains about. Build the fix. Ship it.
 
 ----
-Results: Shopify merchants generating professional email campaigns in under 3 minutes. FlowMint is live—visit flowmint.me to get started.
+Results: Shopify merchants generating professional email campaigns in under 3 minutes. FlowMint is live, visit flowmint.me to get started.
 ----
 Link: https://flowmint.me

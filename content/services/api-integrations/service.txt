@@ -120,7 +120,7 @@ Techstack: n8n, Zapier, Make.com, Node.js, TypeScript, REST APIs, GraphQL, Webho
 
 ----
 
-Techstackintro: We restrict our toolset to what we're expert in. Faster delivery, fewer bugs. If you need Workato or MuleSoft, we're probably not your team — but we can point you to someone.
+Techstackintro: We restrict our toolset to what we're expert in. Faster delivery, fewer bugs. If you need Workato or MuleSoft, we're probably not your team, but we can point you to someone.
 
 ----
 

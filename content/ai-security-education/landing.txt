@@ -1,8 +1,8 @@
-Title: Using AI Securely in Higher Education — Free Guide
+Title: Using AI Securely in Higher Education, Free Guide
 
 ----
 
-hero_label: Free Guide — Higher Education
+hero_label: Free Guide, Higher Education
 
 ----
 
@@ -10,7 +10,7 @@ hero_title: Using AI Securely in Higher Education
 
 ----
 
-hero_description: Your faculty and staff are already using ChatGPT — whether you know it or not. This guide gives you a practical framework for using AI without putting student data or your institution at risk.
+hero_description: Your faculty and staff are already using ChatGPT, whether you know it or not. This guide gives you a practical framework for using AI without putting student data or your institution at risk.
 
 ----
 
@@ -24,7 +24,7 @@ bullets_title: Inside this guide:
 
 bullets:
 -
-  text: "The AI family tree — what's actually behind ChatGPT"
+  text: "The AI family tree, what's actually behind ChatGPT"
 -
   text: "Real case studies: Amazon, Clearview AI, and higher ed-specific risks"
 -
@@ -34,7 +34,7 @@ bullets:
 -
   text: "A printable security checklist for your team"
 -
-  text: "The Traffic Light Framework — green, yellow, and red AI uses"
+  text: "The Traffic Light Framework, green, yellow, and red AI uses"
 
 ----
 

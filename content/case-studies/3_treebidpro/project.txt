@@ -20,7 +20,7 @@ TreeBidPro was built for Kristen Hadley, founder and tree service operator, who 
 
 ## The Problem
 
-Tree service contractors face a constant challenge: pricing jobs accurately. Price too high, you lose the bid. Price too low, you leave money on the table—or worse, lose money on the job.
+Tree service contractors face a constant challenge: pricing jobs accurately. Price too high, you lose the bid. Price too low, you leave money on the table, or worse, lose money on the job.
 
 Most contractors rely on gut instinct, rough mental math, or years of experience. New contractors especially struggle, often underpricing dangerous jobs or overpricing simple ones.
 
@@ -53,11 +53,11 @@ Generate polished PDF estimates to send to customers. No more scribbled quotes o
 ### Pricing Intelligence
 The app learns from completed jobs. When you mark a job as complete and enter what you actually charged, TreeBidPro compares it to the AI suggestion. Over time, this feedback loop makes the pricing recommendations even smarter.
 
-The dashboard even flags jobs where pricing deviated significantly—helping contractors understand when they're leaving money on the table.
+The dashboard even flags jobs where pricing deviated significantly, helping contractors understand when they're leaving money on the table.
 
 ## The Build
 
-Kristen came to Shimmer Labs with detailed wireframes and a clear vision. She knew exactly what she wanted—she just needed someone who could execute quickly and ship a production-ready product.
+Kristen came to Shimmer Labs with detailed wireframes and a clear vision. She knew exactly what she wanted, she just needed someone who could execute quickly and ship a production-ready product.
 
 **Timeline:** 2 weeks from kickoff to launch
 
@@ -74,9 +74,9 @@ Kristen came to Shimmer Labs with detailed wireframes and a clear vision. She kn
 
 ## Client Testimonial
 
-> "I couldn't be more thrilled with Logan's work on bringing my vision for TreeBidPro to life! Starting from wireframes I'd been sitting on for over a year, he transformed my vibe-coded idea into a fully production-ready web app in just two weeks. The AI pricing feature works flawlessly, and he's been incredibly responsive—fixing bugs within hours to keep everything running smoothly. Thanks to his expertise, we're already seeing contractor signups coming in."
+> "I couldn't be more thrilled with Logan's work on bringing my vision for TreeBidPro to life! Starting from wireframes I'd been sitting on for over a year, he transformed my vibe-coded idea into a fully production-ready web app in just two weeks. The AI pricing feature works flawlessly, and he's been incredibly responsive, fixing bugs within hours to keep everything running smoothly. Thanks to his expertise, we're already seeing contractor signups coming in."
 
-**— Kristen Hadley, Founder @ TreeBidPro**
+**Kristen Hadley, Founder @ TreeBidPro**
 
 ## Pricing
 
@@ -84,10 +84,6 @@ TreeBidPro uses a freemium model:
 - **Free:** Limited estimates per month
 - **Pro ($29/mo):** Unlimited estimates, full job tracking, PDF exports
 
-## Results
-
-TreeBidPro is live and accepting contractor signups. The AI pricing feature is helping tree service professionals bid more confidently and win more jobs.
-
 ----
-Results: Delivered a production-ready AI estimating app in 2 weeks. Client already seeing contractor signups with the AI pricing feature working flawlessly in production.
+Results: TreeBidPro is live and accepting contractor signups. Delivered a production-ready AI estimating app in 2 weeks. The AI pricing feature is helping tree service professionals bid more confidently and win more jobs.
 ----

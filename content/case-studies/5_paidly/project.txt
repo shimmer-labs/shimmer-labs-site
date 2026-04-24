@@ -20,7 +20,7 @@ Fifteen minutes later, the client replies: "Can I pay via PayPal instead of Stri
 **This is busywork. Your contract already knows everything.**
 
 ## Paidly Changes That
-Upload your contract PDF. We read it—rates, payment terms, milestones, deliverables—and build the perfect invoice automatically. No re-typing. No copy-pasting. No forgetting what you agreed to.
+Upload your contract PDF. We read it, rates, payment terms, milestones, deliverables, and build the perfect invoice automatically. No re-typing. No copy-pasting. No forgetting what you agreed to.
 
 **From contract to invoice in under 60 seconds.**
 
@@ -47,7 +47,7 @@ AI is smart but not perfect. You get an editable breakdown of everything Paidly 
 Make any tweaks, mark milestones as complete, and you're ready to invoice.
 
 ### 3. Generate Professional Invoices
-Click "Get Paidly" and boom—professional invoice with:
+Click "Get Paidly" and boom, professional invoice with:
 - Your business branding (logo, address, contact info)
 - Client billing information
 - Line items with subtotals
@@ -210,7 +210,7 @@ Invoice smarter, get paid faster: paidly.co
 
 ## Why Shimmer Labs Built This
 
-Paidly exists because Logan got tired of his own invoicing process. As a consultant juggling multiple clients, he was spending hours every week looking up contract terms and building invoice PDFs by hand. The contract already had everything — rates, milestones, payment terms — but every invoicing tool made him re-type it all.
+Paidly exists because Logan got tired of his own invoicing process. As a consultant juggling multiple clients, he was spending hours every week looking up contract terms and building invoice PDFs by hand. The contract already had everything, rates, milestones, payment terms, but every invoicing tool made him re-type it all.
 
 So he built the tool he wished existed. We validated the idea with early users for 2+ months, proved that AI contract parsing hit 95% accuracy, then built the full SaaS platform.
 

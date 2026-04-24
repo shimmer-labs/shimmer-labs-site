@@ -72,7 +72,7 @@ Valuetitle: Stop Leaving Money on the Table
 
 ----
 
-Valuedescription: Business automation isn't just about saving time—it's about unlocking revenue. Every manual process is a bottleneck. Every disconnected tool is an opportunity missed. We help you build systems that work while you sleep, so you can focus on growth, strategy, and finally taking that vacation.
+Valuedescription: Business automation isn't just about saving time, it's about unlocking revenue. Every manual process is a bottleneck. Every disconnected tool is an opportunity missed. We help you build systems that work while you sleep, so you can focus on growth, strategy, and finally taking that vacation.
 
 ----
 
@@ -88,7 +88,7 @@ Services:
     We dig deep into your workflows to
     identify where automation can save you
     time and eliminate bottlenecks. No cookie
-    cutter solutions—just what works for your
+    cutter solutions, just what works for your
     business.
   icon: 🔍
 - 
@@ -143,13 +143,13 @@ Additionalofferings:
     optimization, troubleshooting, and new
     workflow development.
   status: ""
-- 
+-
   title: Training & Workshops
   description: >
     Learn to build and maintain your own
     automations. Empower your team with
     automation skills.
-  status: Coming Soon
+  status: ""
 
 ----
 

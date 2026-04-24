@@ -14,7 +14,7 @@ Herotitle: We Build the Software Your Business Actually Needs
 
 ----
 
-Herodescription: Off-the-shelf tools don't fit. Agencies charge too much. We build mobile apps, web apps, and Shopify solutions — fast and built around your actual problem.
+Herodescription: Off-the-shelf tools don't fit. Agencies charge too much. We build mobile apps, web apps, and Shopify solutions, fast and built around your actual problem.
 
 ----
 
@@ -69,7 +69,7 @@ Foundertitle: Founder & Developer
 
 ----
 
-Founderbio: Mechanical engineer turned software developer. Logan started Shimmer Labs to build the tools small businesses can't find off the shelf. He's shipped iOS apps (EventSnag), SaaS platforms (Paidly), Shopify apps (FlowMint), and client projects like TreeBidPro — a web app built from wireframes in two weeks. You work directly with him. No account managers, no handoffs.
+Founderbio: Mechanical engineer turned software developer. Logan started Shimmer Labs to build the tools small businesses can't find off the shelf. He's shipped iOS apps (EventSnag), SaaS platforms (Paidly), Shopify apps (FlowMint), and client projects like TreeBidPro, a web app built from wireframes in two weeks. You work directly with him. No account managers, no handoffs.
 
 ----
 
@@ -91,7 +91,7 @@ Packages:
   icon: 🔌
   price: '$3.5k - $12k'
   pricelabel: 'Starting at'
-  description: 'Connect your tools and systems. We built 4 production podcast API integrations — REST APIs, webhooks, third-party platforms. We wire up whatever you need.'
+  description: 'Connect your tools and systems. We built 3 production podcast API integrations, REST APIs, webhooks, third-party platforms. We wire up whatever you need.'
   highlights: |
     💡 Simple integration (2 apps): $3,500
     ⚡ Complex integration: $7,500
@@ -103,7 +103,7 @@ Packages:
   icon: ⚡
   price: '$25k - $85k'
   pricelabel: ''
-  description: 'From wireframes to napkin sketches to "we just have an idea" — we build production-ready web apps. TreeBidPro: wireframes to production in 2 weeks. Paidly: zero to payments in 6.'
+  description: 'From wireframes to napkin sketches to "we just have an idea", we build production-ready web apps. TreeBidPro: wireframes to production in 2 weeks. Paidly: zero to payments in 6.'
   highlights: |
     🌱 Build (wireframes ready): $25,000
     ⚡ Build+ (rough designs): $45,000
@@ -116,7 +116,7 @@ Packages:
   icon: 📱
   price: '$35k - $75k'
   pricelabel: 'Project-based'
-  description: 'Native iOS development in Swift. Built EventSnag (screenshot to calendar with AI). Most shops outsource mobile — we build it in-house.'
+  description: 'Native iOS development in Swift. Built EventSnag (screenshot to calendar with AI). Most shops outsource mobile, we build it in-house.'
   highlights: |
     ✨ Native Swift development
     🍎 App Store submission support
@@ -133,7 +133,7 @@ Servicestitle: Services We Offer
 Services:
 -
   title: 'Mobile Apps'
-  description: 'Native iOS and Android development. We built EventSnag from scratch — screenshot to calendar with AI. If your idea lives on a phone, we can build it.'
+  description: 'Native iOS and Android development. We built EventSnag from scratch, screenshot to calendar with AI. If your idea lives on a phone, we can build it.'
   icon: 📱
 -
   title: 'Web Apps'
@@ -141,7 +141,7 @@ Services:
   icon: ⚡
 -
   title: 'Shopify'
-  description: 'Shopify Partner — we set up stores, build custom apps, and fix the things you wish Shopify could do. FlowMint automates email marketing for Shopify merchants.'
+  description: 'Shopify Partner, we set up stores, build custom apps, and fix the things you wish Shopify could do. FlowMint automates email marketing for Shopify merchants.'
   icon: 🛍️
 -
   title: 'API Integrations'
@@ -171,13 +171,6 @@ Projects:
   badge: 'Live'
   image: apify-contracts.jpg
   link: https://github.com/shimmer-labs/apify-contracts-monitor
--
-  title: 'Shopify Store App'
-  description: 'Automated inventory sync and order management integration for Shopify stores. Connect your store to the rest of your business.'
-  badge: 'Coming Soon'
-  image: shopify-app.jpg
-  link: '#'
-
 ----
 
 Finalctatitle: Got a Problem? Let's Build the Fix.

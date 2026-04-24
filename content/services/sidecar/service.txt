@@ -1,4 +1,4 @@
-Title: Sidecar — AI Agents for Your Business
+Title: Sidecar, AI Agents for Your Business
 
 ----
 
@@ -22,20 +22,20 @@ Text:
 
 ## You didn't start your business to do paperwork.
 
-You're a plumber. Or a massage therapist. Or a personal trainer. You got into this because you're great at what you do — not because you love screening job applicants, posting on Instagram, or chasing invoices.
+You're a plumber. Or a massage therapist. Or a personal trainer. You got into this because you're great at what you do, not because you love screening job applicants, posting on Instagram, or chasing invoices.
 
 But here you are. Half your week eaten by admin that has nothing to do with your craft. The tasks you procrastinate on pile up. The work you actually love gets squeezed into whatever's left.
 
 ## That's what the sidecar is for.
 
-You stay in the driver's seat. You do the work. Everything else — the boring stuff, the repetitive stuff, the stuff you keep meaning to get to — rides in the sidecar.
+You stay in the driver's seat. You do the work. Everything else, the boring stuff, the repetitive stuff, the stuff you keep meaning to get to, rides in the sidecar.
 
-- **Hiring** — screens applicants, schedules interviews, handles initial outreach
-- **Social media** — creates and schedules posts, manages engagement
-- **Prospecting** — finds new customers, generates and follows up on leads
-- **Proposals** — drafts project proposals to 80% complete so you just review and send
+- **Hiring**, screens applicants, schedules interviews, handles initial outreach
+- **Social media**, creates and schedules posts, manages engagement
+- **Prospecting**, finds new customers, generates and follows up on leads
+- **Proposals**, drafts project proposals to 80% complete so you just review and send
 
-Think of it as a tireless intern. Runs 24/7 — but you're always the one calling the shots.
+Think of it as a tireless intern. Runs 24/7, but you're always the one calling the shots.
 
 ## Who It's For
 
@@ -45,7 +45,7 @@ Small service businesses with 1-10 employees:
 - Barbers, nail salons, house cleaners
 - Landscapers, pet groomers, tutors, and more
 
-If you're great at your craft but drowning in the stuff that isn't your craft — Sidecar gives you your time back.
+If you're great at your craft but drowning in the stuff that isn't your craft, Sidecar gives you your time back.
 
 ## What would you do with 20 extra hours a week?
 
@@ -181,7 +181,7 @@ Qualifierno:
 Faq:
 -
   question: 'What does "AI agent" actually mean?'
-  answer: 'Software that does a specific job for you — like screening resumes or posting to Instagram — without you having to click buttons. You set the rules, the agent does the work.'
+  answer: 'Software that does a specific job for you, like screening resumes or posting to Instagram, without you having to click buttons. You set the rules, the agent does the work.'
 -
   question: 'Will it make mistakes?'
   answer: 'Sometimes. That''s why we do a 2-week supervised rollout. Your agents run with our team watching, and we catch edge cases before they go fully autonomous.'

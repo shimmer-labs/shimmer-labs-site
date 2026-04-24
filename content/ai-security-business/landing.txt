@@ -1,8 +1,8 @@
-Title: Using AI Securely in Your Business — Free Guide
+Title: Using AI Securely in Your Business, Free Guide
 
 ----
 
-hero_label: Free Guide — Business Leaders
+hero_label: Free Guide, Business Leaders
 
 ----
 
@@ -10,7 +10,7 @@ hero_title: Using AI Securely in Your Business
 
 ----
 
-hero_description: Your team is already using AI tools — whether you have a policy or not. This guide gives you a practical framework for using AI without exposing customer data, violating compliance, or creating liability.
+hero_description: Your team is already using AI tools, whether you have a policy or not. This guide gives you a practical framework for using AI without exposing customer data, violating compliance, or creating liability.
 
 ----
 
@@ -26,7 +26,7 @@ bullets:
 -
   text: "Real case studies: Samsung source code leak, Air Canada chatbot liability"
 -
-  text: "FERPA and HIPAA — what you need to know before using AI"
+  text: "FERPA and HIPAA, what you need to know before using AI"
 -
   text: "Prompt injection explained in 30 seconds"
 -
@@ -34,7 +34,7 @@ bullets:
 -
   text: "A printable security checklist for your team"
 -
-  text: "The Traffic Light Framework — what's safe and what's not"
+  text: "The Traffic Light Framework, what's safe and what's not"
 
 ----
 

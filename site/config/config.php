@@ -105,6 +105,14 @@ return [
         exit;
       }
     ],
+    // Services index has no real content yet; send to the flagship service
+    [
+      'pattern' => 'services',
+      'action'  => function() {
+        header('Location: ' . url('services/sidecar'), true, 301);
+        exit;
+      }
+    ],
 
     // SEO: Sitemap
     [

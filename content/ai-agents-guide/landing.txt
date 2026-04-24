@@ -1,4 +1,4 @@
-Title: AI Agents for Small Business — Free Guide
+Title: AI Agents for Small Business, Free Guide
 
 ----
 
@@ -10,7 +10,7 @@ hero_title: Too Many Hats, Not Enough Hours
 
 ----
 
-hero_description: Most small businesses are using AI like a search engine — ask a question, get an answer, close the tab. This guide shows you what's actually possible: AI that works for you 24/7, no prompting required.
+hero_description: Most small businesses are using AI like a search engine, ask a question, get an answer, close the tab. This guide shows you what's actually possible: AI that works for you 24/7, no prompting required.
 
 ----
 
@@ -32,7 +32,7 @@ bullets:
 -
   text: "A practical framework for deciding what to automate"
 -
-  text: "The rejection skill — knowing when NOT to use AI"
+  text: "The rejection skill, knowing when NOT to use AI"
 
 ----
 
@@ -64,7 +64,7 @@ thank_you_title: Check your inbox!
 
 ----
 
-thank_you_description: We just sent "Too Many Hats, Not Enough Hours" to your email. It's a quick read — 7 pages, no fluff. If you don't see it in a few minutes, check your spam folder.
+thank_you_description: We just sent "Too Many Hats, Not Enough Hours" to your email. It's a quick read, 7 pages, no fluff. If you don't see it in a few minutes, check your spam folder.
 
 ----
 

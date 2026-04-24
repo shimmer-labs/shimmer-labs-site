@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Meta_description: Shimmer Labs is a small software shop in Stillwater, OK. Founded by Logan Shimmer — OSU alum, two decades in tech, building the tools small businesses can't find off the shelf.
+Meta_description: Shimmer Labs is a small software shop in Stillwater, OK. Founded by Logan Shimmer, OSU alum, two decades in tech, building the tools small businesses can't find off the shelf.
 
 ----
 
@@ -12,7 +12,7 @@ Text:
 
 Shimmer Labs is a small software shop in Stillwater, Oklahoma. We build mobile apps, web apps, and AI agents for small businesses.
 
-Founded by **Logan Shimmer** — OSU alum, two decades in tech. He came back to Stillwater to build the tools that small businesses need but can't find off the shelf.
+Founded by **Logan Shimmer**, OSU alum, two decades in tech. He came back to Stillwater to build the tools that small businesses need but can't find off the shelf.
 
 ## Why We Exist
 
@@ -24,23 +24,23 @@ So we build the fix. Custom software, built fast, priced for real businesses.
 
 ## What We've Shipped
 
-- **Paidly** — AI invoicing for freelancers. Scan a contract, generate an invoice. Built because invoicing was eating our own time.
-- **EventSnag** — iOS app that turns event screenshots into calendar entries. Built because nobody could find events in Stillwater.
-- **TreeBidPro** — Web app for a tree service contractor. Wireframes to production with Stripe in 2 weeks.
-- **Sidecar** — AI agents that handle hiring, social media, and proposals for service businesses.
-- **FlowMint** — Shopify app for automated email marketing.
+- **Paidly**, AI invoicing for freelancers. Scan a contract, generate an invoice. Built because invoicing was eating our own time.
+- **EventSnag**, iOS app that turns event screenshots into calendar entries. Built because nobody could find events in Stillwater.
+- **TreeBidPro**, Web app for a tree service contractor. Wireframes to production with Stripe in 2 weeks.
+- **Sidecar**, AI agents that handle hiring, social media, and proposals for service businesses.
+- **FlowMint**, Shopify app for automated email marketing.
 
 ## Why Stillwater
 
 Logan grew up here. Left for tech jobs. Came back.
 
-Stillwater doesn't have a lot of software shops. Most small businesses here hire agencies in Dallas or Austin and pay accordingly. We think local businesses deserve a local team that actually understands their problems — and charges fairly for the work.
+Stillwater doesn't have a lot of software shops. Most small businesses here hire agencies in Dallas or Austin and pay accordingly. We think local businesses deserve a local team that actually understands their problems, and charges fairly for the work.
 
 ## How We Work
 
 You talk to Logan directly. No account managers, no handoffs, no weekly status calls that could've been an email.
 
-We use AI tools to move 2-3x faster than traditional development. That means lower costs and shorter timelines — without cutting corners on quality.
+We use AI tools to move 2-3x faster than traditional development. That means lower costs and shorter timelines, without cutting corners on quality.
 
 Want to see what we can build for you? <a href="/contact">Let's talk.</a>
 

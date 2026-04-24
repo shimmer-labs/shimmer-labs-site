@@ -125,9 +125,12 @@
   <div class="container">
     <h2 class="projects__title">Recent Case Studies</h2>
     <div class="projects__grid">
-      <?php foreach ($caseStudiesPage->children()->listed() as $item): ?>
+      <?php foreach ($caseStudiesPage->children()->listed()->limit(3) as $item): ?>
         <?php snippet('project-card', ['project' => $item]) ?>
       <?php endforeach ?>
+    </div>
+    <div class="projects__see-all">
+      <a href="<?= $caseStudiesPage->url() ?>" class="btn btn--secondary">See all case studies →</a>
     </div>
   </div>
 </section>
