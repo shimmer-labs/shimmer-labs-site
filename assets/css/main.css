@@ -956,8 +956,10 @@ section {
 
 .build-section__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--spacing-md);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .build-card {
@@ -4644,6 +4646,13 @@ img.loaded {
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.home-hero__trust {
+  margin-top: var(--spacing-md);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.02em;
 }
 
 .home-hero__btn-secondary {

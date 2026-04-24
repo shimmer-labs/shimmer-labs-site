@@ -15,9 +15,8 @@
   <div class="container">
     <div class="home-hero__inner">
       <div class="home-hero__pain">
-        <p>Drowning in admin?</p>
-        <p>Running five tools that don't talk to each other?</p>
-        <p>Paying agency prices for software you use 10% of?</p>
+        <p>You didn't start your business to answer emails at midnight.</p>
+        <p>Most small business owners lose 15+ hours a week to admin that has nothing to do with the work they love.</p>
       </div>
       <h1 class="home-hero__headline">We build custom software for small businesses.</h1>
       <p class="home-hero__tagline">You drive. We build the sidecar.</p>
@@ -25,6 +24,7 @@
         <a href="<?= url('case-studies') ?>" class="btn btn--cta">See the Work</a>
         <a href="<?= url('contact') ?>" class="btn btn--secondary home-hero__btn-secondary">Book a Call</a>
       </div>
+      <p class="home-hero__trust">No pitch. No pressure. Just a 30-minute conversation.</p>
     </div>
   </div>
 </section>
@@ -36,10 +36,17 @@
 <section id="build" class="build-section">
   <div class="container">
     <div class="build-section__header">
-      <h2 class="build-section__title">We Also Build Custom Software</h2>
-      <p class="build-section__subtitle">Web apps, iOS apps, and API integrations, built fast by a small team, not an agency.</p>
+      <h2 class="build-section__title">What We Build</h2>
+      <p class="build-section__subtitle">AI agents, custom apps, and API integrations, built fast by a small team, not an agency.</p>
     </div>
     <div class="build-section__grid">
+      <a href="/services/sidecar" class="build-card">
+        <div class="build-card__icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" style="width: 48px; height: 48px; display: block;"></div>
+        <h3 class="build-card__title">Sidecar (AI Agents)</h3>
+        <p class="build-card__description">Narrow AI agents that handle the work you hate. Runs 24/7. No sick days, no turnover. A pilot so you see results before you commit.</p>
+        <span class="build-card__price">2-3 month pilot. No commitment.</span>
+        <span class="build-card__arrow">View Details →</span>
+      </a>
       <a href="/services/custom-apps" class="build-card">
         <div class="build-card__icon">⚡</div>
         <h3 class="build-card__title">Custom Apps</h3>
