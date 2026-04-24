@@ -83,7 +83,7 @@ if ($page->intendedTemplate() == 'home') {
           '@type' => 'Offer',
           'itemOffered' => [
             '@type' => 'Service',
-            'name' => 'Sidecar — AI Agents',
+            'name' => 'Sidecar, AI Agents',
             'description' => 'AI agents that handle hiring, social media, prospecting, and proposals for service businesses. 24/7 automation.'
           ]
         ],

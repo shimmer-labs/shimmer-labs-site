@@ -2,7 +2,25 @@
 
 <section class="about-hero">
   <div class="container">
-    <h1 class="about-hero__title"><?= $page->title() ?></h1>
+    <div class="about-hero__inner">
+      <div class="about-hero__text">
+        <span class="cs-tag">About</span>
+        <h1 class="about-hero__headline">
+          <?= $page->headline()->or("Hi, I'm Logan.") ?>
+        </h1>
+        <?php if ($page->tagline()->isNotEmpty()): ?>
+          <p class="about-hero__tagline"><?= $page->tagline() ?></p>
+        <?php endif ?>
+      </div>
+      <?php if ($page->headshot()->isNotEmpty()): ?>
+        <?php $headshot = $page->image($page->headshot()); ?>
+        <?php if ($headshot): ?>
+          <div class="about-hero__portrait">
+            <img src="<?= $headshot->url() ?>" alt="Logan Shimmer, Founder of Shimmer Labs">
+          </div>
+        <?php endif ?>
+      <?php endif ?>
+    </div>
   </div>
 </section>
 

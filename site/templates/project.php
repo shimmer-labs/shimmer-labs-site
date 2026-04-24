@@ -32,7 +32,7 @@
                 <a href="<?= $page->link() ?>" class="btn btn--hero-alt" target="_blank" rel="noopener">
                   Try the Web App
                 </a>
-                <p class="hero-cta-note">Don't have a Shopify store? Use flowmint.me instead — same AI, no Shopify required.</p>
+                <p class="hero-cta-note">Don't have a Shopify store? Use flowmint.me instead, same AI, no Shopify required.</p>
               <?php endif ?>
             <?php elseif ($hasAppStore): ?>
               <?php snippet('app-download', [

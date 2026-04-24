@@ -13,12 +13,12 @@
       <div class="landing-thankyou__ctas">
         <div class="landing-thankyou__cta-card">
           <h3>Free Consultation</h3>
-          <p>30 minutes. No pitch, no pressure — just practical advice.</p>
+          <p>30 minutes. No pitch, no pressure, just practical advice.</p>
           <a href="https://calendly.com/logan-shimmerlabs/free-consultation" class="btn btn--cta" target="_blank" rel="noopener">Book a Call →</a>
         </div>
         <div class="landing-thankyou__cta-card">
           <h3>Have Questions?</h3>
-          <p>Reply to the email we just sent — it goes straight to Logan.</p>
+          <p>Reply to the email we just sent, it goes straight to Logan.</p>
           <a href="mailto:logan@shimmerlabs.co" class="btn btn--primary">Email Us →</a>
         </div>
       </div>
@@ -176,7 +176,7 @@
   var slug = '<?= $page->whitepaper_slug() ?>';
 
   <?php if (get('success')): ?>
-  // generate_lead — fires on thank you page load
+  // generate_lead, fires on thank you page load
   if (typeof gtag === 'function') {
     gtag('event', 'generate_lead', {
       whitepaper_slug: slug,
@@ -184,7 +184,7 @@
     });
   }
 
-  // calendly_click — track Calendly CTA clicks
+  // calendly_click, track Calendly CTA clicks
   document.querySelectorAll('a[href*="calendly.com"]').forEach(function(link) {
     link.addEventListener('click', function() {
       if (typeof gtag === 'function') {
@@ -197,7 +197,7 @@
   });
 
   <?php else: ?>
-  // form_start — fires once when user focuses first form field
+  // form_start, fires once when user focuses first form field
   var formStarted = false;
   var form = document.querySelector('.landing-form');
   if (form) {

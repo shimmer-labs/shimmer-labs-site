@@ -35,7 +35,7 @@
       $page->intro()->or(
         $page->mission()->or(
           $page->heroDescription()->or(
-            'Custom software for small businesses. Web apps, mobile apps, and Shopify solutions — built fast. Based in Stillwater, OK.'
+            'Custom software for small businesses. Web apps, mobile apps, and Shopify solutions, built fast. Based in Stillwater, OK.'
           )
         )
       )

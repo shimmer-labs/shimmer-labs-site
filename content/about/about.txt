@@ -6,6 +6,18 @@ Meta_description: Shimmer Labs is a small software shop in Stillwater, OK. Found
 
 ----
 
+Headline: Hi, I'm Logan.
+
+----
+
+Tagline: Founder of Shimmer Labs. I build software for small businesses out of Stillwater, Oklahoma.
+
+----
+
+Headshot: logan-headshot.png
+
+----
+
 Text:
 
 ## The Short Version

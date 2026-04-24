@@ -410,11 +410,11 @@
     <div class="ll-thankyou__card">
       <div class="ll-thankyou__icon">&#10003;</div>
       <h1>You're in!</h1>
-      <p>Check your inbox — we just sent a confirmation with a calendar invite attached. If you don't see it in a few minutes, check spam.</p>
+      <p>Check your inbox, we just sent a confirmation with a calendar invite attached. If you don't see it in a few minutes, check spam.</p>
       <div class="highlight">
         <strong>Come prepared:</strong> Think about 2-3 repetitive tasks that eat up too much of your week. We'll be doing a hands-on exercise, and you might win a free consultation + custom action plan ($500 value).
       </div>
-      <p>See you April 8th at Noon.<br><strong>— Logan</strong></p>
+      <p>See you April 8th at Noon.<br><strong>Logan</strong></p>
     </div>
   </div>
 </section>
@@ -438,7 +438,7 @@
       </div>
       <div class="ll-hero__flyer">
         <?php if ($flyer = $page->image('flyer.png')): ?>
-          <img src="<?= $flyer->url() ?>" alt="WorkIT Lunch & Learn — Too Many Hats, Not Enough Hours: Winning with Agentic AI — Speaker: Logan Shimmer" loading="lazy">
+          <img src="<?= $flyer->url() ?>" alt="WorkIT Lunch & Learn, Too Many Hats, Not Enough Hours: Winning with Agentic AI, Speaker: Logan Shimmer" loading="lazy">
         <?php endif ?>
       </div>
     </div>
@@ -483,7 +483,7 @@
         <?php endif ?>
 
         <form class="ll-form" method="POST" action="<?= $page->url() ?>#signup">
-          <!-- Honeypot — hidden from humans, bots fill it -->
+          <!-- Honeypot, hidden from humans, bots fill it -->
           <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
             <label for="website_url">Website</label>
             <input type="text" name="website_url" id="website_url" tabindex="-1" autocomplete="off" value="">
@@ -563,8 +563,8 @@
   <div class="container">
     <div class="ll-presenter__inner">
       <h2>About <span>Logan Shimmer</span></h2>
-      <p>Logan is the founder of Shimmer Labs, a boutique AI and automation consultancy based right here in Stillwater. He builds AI agents, custom software, and automation systems for small businesses — the kind of tools that handle your busywork so you can get back to the thing you actually started your business to do.</p>
-      <p>He's built agent systems for companies like Supabase, taught AI security workshops at OSU, and runs his own team of AI agents that handle everything from data processing to outreach. He's not here to sell you hype — he's here to show you what actually works.</p>
+      <p>Logan is the founder of Shimmer Labs, a boutique AI and automation consultancy based right here in Stillwater. He builds AI agents, custom software, and automation systems for small businesses, the kind of tools that handle your busywork so you can get back to the thing you actually started your business to do.</p>
+      <p>He's built agent systems for companies like Supabase, taught AI security workshops at OSU, and runs his own team of AI agents that handle everything from data processing to outreach. He's not here to sell you hype, he's here to show you what actually works.</p>
       <div class="presenter-cred">
         <span class="cred-tag">Shimmer Labs Founder</span>
         <span class="cred-tag">OSU AI Instructor</span>

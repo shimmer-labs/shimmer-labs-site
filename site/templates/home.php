@@ -4,19 +4,76 @@
 <a href="<?= url('office-hours') ?>" class="event-banner" id="eventBanner">
   <div class="container">
     <span class="event-banner__text">
-      <strong>Free AI Office Hours</strong> — Tuesdays &amp; Thursdays, 2–4 PM at WorkIT Stillwater
+      <strong>Free AI Office Hours</strong>, Tuesdays &amp; Thursdays, 2–4 PM at WorkIT Stillwater
     </span>
     <span class="event-banner__cta">Drop In →</span>
   </div>
 </a>
 
-<!-- Hero: Scanner-First -->
-<section class="hero" id="scanner">
+<!-- Hero: Problem-statement -->
+<section class="home-hero">
+  <div class="container">
+    <div class="home-hero__inner">
+      <div class="home-hero__pain">
+        <p>Drowning in admin?</p>
+        <p>Running five tools that don't talk to each other?</p>
+        <p>Paying agency prices for software you use 10% of?</p>
+      </div>
+      <h1 class="home-hero__headline">We build custom software for small businesses.</h1>
+      <p class="home-hero__tagline">You drive. We build the sidecar.</p>
+      <div class="home-hero__ctas">
+        <a href="<?= url('case-studies') ?>" class="btn btn--cta">See the Work</a>
+        <a href="<?= url('contact') ?>" class="btn btn--secondary home-hero__btn-secondary">Book a Call</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Proof -->
+<?php snippet('social-proof', ['clients' => $page->clients()]) ?>
+
+<!-- Build Section -->
+<section id="build" class="build-section">
+  <div class="container">
+    <div class="build-section__header">
+      <h2 class="build-section__title">We Also Build Custom Software</h2>
+      <p class="build-section__subtitle">Web apps, iOS apps, and API integrations, built fast by a small team, not an agency.</p>
+    </div>
+    <div class="build-section__grid">
+      <a href="/services/custom-apps" class="build-card">
+        <div class="build-card__icon">⚡</div>
+        <h3 class="build-card__title">Custom Apps</h3>
+        <p class="build-card__description">Web apps and iOS apps, from wireframes to launched product. Built TreeBidPro in 2 weeks, Paidly in 6.</p>
+        <span class="build-card__price">Web apps from $25k · iOS from $35k</span>
+        <span class="build-card__arrow">View Details →</span>
+      </a>
+      <a href="/services/api-integrations" class="build-card">
+        <div class="build-card__icon">🔌</div>
+        <h3 class="build-card__title">API Integrations</h3>
+        <p class="build-card__description">Your software doesn't talk to each other? We build the connections. Clean APIs, proper docs, no janky workarounds.</p>
+        <span class="build-card__price">$3.5k - $12k</span>
+        <span class="build-card__arrow">View Details →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Comparison Table: You vs Agencies -->
+<?php snippet('comparison-table') ?>
+
+<!-- Tools Carousel (moved from earlier) -->
+<?php snippet('tools-carousel') ?>
+
+<!-- Process Section -->
+<?php snippet('process-section') ?>
+
+<!-- Sidecar Scanner (moved here from hero) -->
+<section class="hero hero--inline" id="scanner">
   <div class="container">
     <div class="hero__scanner">
       <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="hero__scanner-logo">
-      <h1 class="hero__title">Too many hats? See which ones you can take off.</h1>
-      <p class="hero__description">Enter your website. We'll show you what to automate first.</p>
+      <h2 class="hero__title">Try the Sidecar scanner.</h2>
+      <p class="hero__description">Enter your website. We'll show you what to automate first. Free, 15 seconds, no signup.</p>
 
       <form class="scanner-form" id="scannerForm" action="#" method="POST" novalidate>
         <div class="scanner-form__input-group">
@@ -42,15 +99,11 @@
       </div>
 
       <p class="scanner-form__error" id="scannerError" style="display: none;"></p>
-
     </div>
   </div>
 </section>
 
-<!-- Social Proof -->
-<?php snippet('social-proof', ['clients' => $page->clients()]) ?>
-
-<!-- How It Works (Scanner) -->
+<!-- How the Sidecar scanner works -->
 <section class="scanner-how-it-works">
   <div class="container">
     <h2 class="scanner-how-it-works__title">How the scan works</h2>
@@ -65,51 +118,16 @@
       </div>
       <div class="scanner-how-it-works__step">
         <span class="scanner-how-it-works__number">3</span>
-        <p>You get a custom hiring plan — 3 agents ready to work</p>
+        <p>You get a custom hiring plan, 3 agents ready to work</p>
       </div>
     </div>
     <div class="scanner-how-it-works__cta">
       <a href="#scanner" class="btn btn--sidecar">Scan My Business</a>
       <span style="margin: 0 1rem; color: var(--color-gray-medium);">or</span>
-      <a href="/services/sidecar" class="btn btn--primary">Learn More About Sidecar</a>
+      <a href="<?= url('services/sidecar') ?>" class="btn btn--primary">Learn More About Sidecar</a>
     </div>
   </div>
 </section>
-
-<!-- Build Section -->
-<section id="build" class="build-section">
-  <div class="container">
-    <div class="build-section__header">
-      <h2 class="build-section__title">We Also Build Custom Software</h2>
-      <p class="build-section__subtitle">Web apps, iOS apps, and API integrations — built fast by a small team, not an agency.</p>
-    </div>
-    <div class="build-section__grid">
-      <a href="/services/custom-apps" class="build-card">
-        <div class="build-card__icon">⚡</div>
-        <h3 class="build-card__title">Custom Apps</h3>
-        <p class="build-card__description">Web apps and iOS apps — from wireframes to launched product. Built TreeBidPro in 2 weeks, Paidly in 6.</p>
-        <span class="build-card__price">Web apps from $25k · iOS from $35k</span>
-        <span class="build-card__arrow">View Details →</span>
-      </a>
-      <a href="/services/api-integrations" class="build-card">
-        <div class="build-card__icon">🔌</div>
-        <h3 class="build-card__title">API Integrations</h3>
-        <p class="build-card__description">Your software doesn't talk to each other? We build the connections. Clean APIs, proper docs, no janky workarounds.</p>
-        <span class="build-card__price">$3.5k - $12k</span>
-        <span class="build-card__arrow">View Details →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Comparison Table: You vs Agencies -->
-<?php snippet('comparison-table') ?>
-
-<!-- Tools Carousel (moved from earlier) -->
-<?php snippet('tools-carousel') ?>
-
-<!-- Process Section -->
-<?php snippet('process-section') ?>
 
 <!-- Featured Case Study -->
 <?php if ($page->featuredCaseStudy()->isNotEmpty()): ?>

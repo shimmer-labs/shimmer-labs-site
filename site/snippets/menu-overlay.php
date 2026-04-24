@@ -13,7 +13,7 @@
           <li>
             <a href="/services/sidecar" class="menu-link--sidecar">
               <span class="menu-link-icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" style="width: 24px; height: 24px; display: inline-block; vertical-align: middle;"></span>
-              <span class="menu-link-title">Sidecar — AI Agents</span>
+              <span class="menu-link-title">Sidecar, AI Agents</span>
             </a>
           </li>
           <li>
