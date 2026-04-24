@@ -65,13 +65,19 @@
   </div>
 </section>
 
-<!-- Comparison Table: You vs Agencies -->
+<!-- Thesis: The technology works. Nobody designed the system. -->
 <?php snippet('comparison-table') ?>
 
-<!-- Tools Carousel (moved from earlier) -->
+<!-- Hook Questions: What's in your sidecar? -->
+<?php snippet('hook-questions') ?>
+
+<!-- Tools Carousel -->
 <?php snippet('tools-carousel') ?>
 
-<!-- Process Section -->
+<!-- Supabase proof: Sarah Gold -->
+<?php snippet('supabase-story') ?>
+
+<!-- How this actually works (sidecar metaphor + client stories) -->
 <?php snippet('process-section') ?>
 
 <!-- Sidecar Scanner (moved here from hero) -->

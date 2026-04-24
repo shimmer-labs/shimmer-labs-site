@@ -4846,6 +4846,204 @@ img.loaded {
 }
 
 /* ===================================
+   Hook Questions
+   =================================== */
+.hook-questions {
+  background: linear-gradient(135deg, #FFF7E6 0%, #FFEFD5 100%);
+  padding: var(--spacing-xl) 0;
+}
+
+.hook-questions__inner {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+  text-align: center;
+}
+
+.hook-questions__headline {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0 0 var(--spacing-sm) 0;
+  letter-spacing: -0.01em;
+}
+
+.hook-questions__lead {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: #2a2f3a;
+  margin: 0 auto var(--spacing-md) auto;
+  max-width: 620px;
+  line-height: 1.5;
+}
+
+.hook-questions__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto var(--spacing-md) auto;
+  text-align: left;
+  max-width: 720px;
+}
+
+.hook-questions__list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-sm);
+  padding: var(--spacing-sm) 1.25rem;
+  background: var(--color-white);
+  border-left: 4px solid var(--color-sidecar);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(10, 26, 47, 0.05);
+}
+
+.hook-questions__num {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-sidecar);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 2rem;
+}
+
+.hook-questions__q {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--color-navy);
+  font-weight: 500;
+}
+
+.hook-questions__cta {
+  margin-top: var(--spacing-md);
+}
+
+.hook-questions__note {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--color-gray-medium);
+}
+
+/* ===================================
+   External Proof (Supabase / Sarah)
+   =================================== */
+.external-proof {
+  background: var(--color-white);
+  padding: var(--spacing-xl) 0;
+  border-top: 1px solid var(--color-gray-light);
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.external-proof__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.external-proof__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.external-proof__logo {
+  height: 22px;
+  opacity: 0.75;
+}
+
+.external-proof__headline {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.external-proof__body {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--spacing-md);
+  align-items: start;
+}
+
+.external-proof__photo-col {
+  text-align: center;
+}
+
+.external-proof__photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--color-gold);
+  box-shadow: 0 4px 16px rgba(10, 26, 47, 0.12);
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.external-proof__caption {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--color-gray-medium);
+}
+
+.external-proof__caption strong {
+  display: block;
+  color: var(--color-navy);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+}
+
+.external-proof__text p {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #2a2f3a;
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.external-proof__result {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.2rem !important;
+  color: var(--color-navy) !important;
+  padding: 1rem 1.25rem;
+  background: #FAFBFC;
+  border-left: 4px solid var(--color-gold);
+  border-radius: 6px;
+}
+
+.external-proof__note {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--color-gray-light);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--color-gray-medium);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .external-proof__body {
+    grid-template-columns: 1fr;
+  }
+
+  .external-proof__photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* ===================================
    Case Study — Magazine Layout
    =================================== */
 
