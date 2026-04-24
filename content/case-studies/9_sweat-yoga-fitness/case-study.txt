@@ -1,0 +1,239 @@
+Title: Sweat Yoga & Fitness
+
+----
+
+Meta_description: How Shimmer Labs built membership, scheduling, and DM automations for a Stillwater yoga studio where the booking platform had no API and the owner was burning out.
+
+----
+
+Featured: true
+
+----
+
+Badge: Live
+
+----
+
+Summary: Anna Moore was burning out. Her booking platform had no API. We built her a sidecar anyway.
+
+----
+
+Client_name: Sweat Yoga & Fitness
+
+----
+
+Client_role: Anna Moore, Owner
+
+----
+
+Client_person: Anna
+
+----
+
+Client_location: Stillwater, OK
+
+----
+
+Client_website: https://sweatyogafitness.com
+
+----
+
+Engagement_type: Sidecar Pilot
+
+----
+
+Engagement_timeline: March 2026 to ongoing
+
+----
+
+Platforms: WellnessLiving, Gmail, Instagram, When I Work
+
+----
+
+Hero_image: anna-headshot.jpg
+
+----
+
+Hero_quote: I hated this place. I was actively looking for someone to buy it.
+
+----
+
+Hero_quote_attribution: Anna Moore, Sweat Yoga & Fitness
+
+----
+
+Hero_subhead: How a Stillwater yoga studio got its evenings, its Sundays, and its owner back.
+
+----
+
+Problem_intro:
+
+Anna Moore runs a yoga studio across the street from our office. A yoga instructor, marathon runner, and former military officer. She did not start Sweat so she could do paperwork at 10 PM.
+
+By the time we sat down, she was. Cancellation emails came in at all hours. Membership changes piled up every Monday. Instagram DMs ate her evenings on the couch. Stillwater is a college town, so the admin load is not steady. It comes in waves.
+
+Anna was not thinking about growth. She was thinking about getting out.
+
+----
+
+Problem_pullquote: I kind of feel like we were just programmed to feel like we always should be stressed out.
+
+----
+
+Problem_pullquote_attribution: Anna Moore
+
+----
+
+Why_hard:
+
+Anna's booking platform is WellnessLiving. It runs her schedule, her memberships, her billing. It is good at what it is built for. It is not built for what she needed.
+
+- **No API for membership actions.** WellnessLiving exposes client lookups and purchase history. It does not expose endpoints for membership cancellation or freeze. A developer cannot build a clean integration against functions that are not published.
+- **An API agreement priced for enterprises, not studios.** $19 a month for access, plus a $150 per hour change fee with no scope cap. For a small business, that is a non-starter.
+- **Zapier and n8n cannot help.** They connect APIs that exist. They cannot navigate a web UI and perform actions the way a person does.
+
+This is exactly the kind of problem AI-driven browser automation is built for. An agent that logs in, reads context, fills in forms, validates against business rules, and flags anything unusual for a human. That is what we built.
+
+----
+
+Automations_list:
+
+-
+  title: Membership cancellation and freeze
+  status: Live
+  description: |
+    Anna forwards a client email or a Modify Membership form submission to the agent. The agent reads context, picks the right PDF (cancellation with a 30 day notice, or freeze with a 30 to 90 day window), and sends it to the client.
+
+    When the completed PDF comes back, the agent validates against Sweat's rules:
+
+    - Cancellations require at least 3 months of payment history
+    - Freezes must fall between 30 and 90 days
+    - Start dates in the past default to today
+    - End dates past 90 days get capped at the max
+
+    If everything checks out, the agent updates WellnessLiving and sends a confirmation email. If anything is off, say a member only has 2 months paid or dates fall outside the window, the agent stops and flags both Anna and Logan for review.
+
+    Anna is always in the driver's seat. The agent does not do anything consequential without her eyes on it first.
+  screenshot:
+    - wellnessliving-cancel.gif
+  screenshot_caption: The agent doing what a human used to do, in real time.
+  pullquote: If I were to sit and do the cancellations myself, it would eat up an entire day.
+  pullquote_attribution: Anna Moore
+-
+  title: Instagram DM responder
+  status: In Progress
+  description: |
+    About 95% of Sweat's Instagram DMs are the same five questions. Pricing. Schedule. How to book. What to bring the first time. Late-cancel sob stories.
+
+    The agent reads the DM, classifies the intent, answers in Sweat's voice and Sweat's policies, and pushes the app download when it makes sense. Anything it cannot handle routes to a human inbox with context attached.
+
+    Built on ManyChat Pro with the AI Add-on. Meta-approved, running on the official Instagram Graph API. No password sharing, no account suspension risk.
+
+    During the supervised rollout, Anna reviews suggested responses before they go out. Once trust is built, the agent sends directly. That trust is earned, not assumed.
+-
+  title: Monthly employee scheduling
+  status: In Progress
+  description: |
+    Anna's team is 5 to 10 interchangeable hourly employees, many of them OSU students with shifting availability. Building next month's schedule is tedious, constraint-heavy, and the kind of thing humans get wrong and AI gets right.
+
+    The agent runs once a month, 7 days before the 1st of the following month. It pulls availability from When I Work, respects a hard 29 hour weekly cap per employee, and distributes shifts fairly based on the prior month's actual hours. Anything it cannot fully cover, it flags.
+
+    The agent drafts shifts as **unpublished** in When I Work. Anna reviews and publishes. A coverage gap email listing unfilled shifts is prepped as a draft for Anna to approve before it sends.
+
+    The AI enjoys this kind of problem. Anna did not.
+
+----
+
+Also_shipped:
+
+Infrastructure that quietly supports the automations:
+
+- **WellnessLiving duplicate profile cleanup** so every downstream automation operates on clean data.
+- **Website updates** to support the new workflows.
+- **API research across WellnessLiving and When I Work**, so every decision on what to automate was informed by what was actually possible.
+
+----
+
+Results_intro: Under one month of the cancellation and freeze automation being live. Before finals week, which is the annual peak.
+
+----
+
+Results_headline_stat: 16
+
+----
+
+Results_headline_label: membership actions handled end to end, without Anna touching WellnessLiving
+
+----
+
+Results_supporting_stats:
+
+-
+  number: "14"
+  label: cancellations processed
+-
+  number: "2"
+  label: freezes processed
+-
+  number: "0"
+  label: times Anna had to log in to do it herself
+
+----
+
+Results_context:
+
+Sweat runs on a college-town calendar. Membership changes come in waves, not a steady drip. The cancellation wave hits at finals. Students leave. Students graduate. New members arrive. The automation does not just save Anna a few minutes here and there. It absorbs the biggest spikes in her admin load at exactly the moments she is most likely to be buried in them.
+
+----
+
+Results_pullquote: It feels weird that I don't have to be monitoring my email constantly.
+
+----
+
+Results_pullquote_attribution: Anna Moore
+
+----
+
+Human_close_body:
+
+Anna now spends her evenings off her phone and with her daughter. She is refocusing Sweat on being an active presence in the Stillwater community and a rejuvenating place for her clients. That is the work she started the business to do.
+
+The automation is not the win. The win is that Anna gets to go back to being who she is.
+
+----
+
+Human_close_pullquote: You can hire less people, but you just have peace of mind that things are getting done.
+
+----
+
+Human_close_pullquote_attribution: Anna Moore
+
+----
+
+Collaborator_paragraph:
+
+**Shimmer Labs does not sell you a tool and walk away.** Anna knows her business. We know how to build sidecars. Together, we figured out what to automate first, what to automate next, and what should always stay in her hands. **You drive. We build the sidecar.**
+
+----
+
+Tech_stack: Perplexity Computer, ManyChat Pro + AI, Claude Desktop, Claude in Chrome, Gmail, WellnessLiving, When I Work, Instagram, WordPress
+
+----
+
+Video_placeholder_image: anna-headshot.jpg
+
+----
+
+Video_status: Coming Soon
+
+----
+
+Video_url:
+
+----
+
+Cta_headline: Let's build your business a sidecar.
+
+----
+
+Cta_service_link: /services/sidecar

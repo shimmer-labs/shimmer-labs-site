@@ -1,0 +1,13 @@
+Title: Case Studies
+
+----
+
+Intro: Real small businesses, real outcomes. The work we've been doing to give owners their time back.
+
+----
+
+Meta_description: Case studies from Shimmer Labs. AI agents, custom software, and API integrations built for Main Street small businesses.
+
+----
+
+Uuid: i73qq3jygsqbrqzm

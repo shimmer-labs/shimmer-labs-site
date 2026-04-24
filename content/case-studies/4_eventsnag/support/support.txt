@@ -42,7 +42,7 @@ A: EventSnag is free to use with unlimited event capture, AI extraction, and Goo
 A: EventSnag requires iOS 16.6 or later. We recommend iOS 17+ for the best experience.
 
 **Q: Is my data private?**
-A: Yes! Event data is stored locally on your device. Images are processed temporarily by AI (Anthropic Claude) and not permanently stored. See our [Privacy Policy](https://shimmerlabs.co/projects/eventsnag/privacy) for details.
+A: Yes! Event data is stored locally on your device. Images are processed temporarily by AI (Anthropic Claude) and not permanently stored. See our [Privacy Policy](https://shimmerlabs.co/case-studies/eventsnag/privacy) for details.
 
 **Q: Can I use EventSnag without Google Calendar?**
 A: Absolutely! You can save events locally without connecting Google Calendar. Calendar sync is optional.
@@ -296,7 +296,7 @@ A: We'll announce beta testing opportunities via in-app notifications and email.
 ### Privacy & Data
 
 **Q: Do you sell my data?**
-A: No. We do not sell your data to anyone. See our [Privacy Policy](https://shimmerlabs.co/projects/eventsnag/privacy).
+A: No. We do not sell your data to anyone. See our [Privacy Policy](https://shimmerlabs.co/case-studies/eventsnag/privacy).
 
 **Q: Can I export my event data?**
 A: Currently, you can share event roundups as text. Full data export (CSV, JSON) is on our roadmap.
@@ -314,7 +314,7 @@ A: We collect:
 - Google OAuth tokens (if you connect Google Calendar)
 - Subscription status (via RevenueCat)
 
-We do NOT collect your name, location, contacts, or unnecessary personal data. See our [Privacy Policy](https://shimmerlabs.co/projects/eventsnag/privacy).
+We do NOT collect your name, location, contacts, or unnecessary personal data. See our [Privacy Policy](https://shimmerlabs.co/case-studies/eventsnag/privacy).
 
 ---
 
@@ -361,13 +361,13 @@ Include "Privacy Request" in the subject line with:
 ## Additional Resources
 
 ### Privacy Policy
-https://shimmerlabs.co/projects/eventsnag/privacy
+https://shimmerlabs.co/case-studies/eventsnag/privacy
 
 ### Terms of Service
-https://shimmerlabs.co/projects/eventsnag/terms
+https://shimmerlabs.co/case-studies/eventsnag/terms
 
 ### Project Page
-https://shimmerlabs.co/projects/eventsnag
+https://shimmerlabs.co/case-studies/eventsnag
 
 ### Shimmer Labs (Parent Company)
 https://shimmerlabs.co

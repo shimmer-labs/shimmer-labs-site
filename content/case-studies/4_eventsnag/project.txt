@@ -115,7 +115,7 @@ And here's the kicker: **Every calendar event becomes a mini-billboard for Event
 ---
 📅 Added via EventSnag
 Never miss local events just snap a flyer, we'll add it to your calendar!
-Download: shimmerlabs.co/projects/eventsnag
+Download: shimmerlabs.co/case-studies/eventsnag
 ```
 
 **Shareable Roundups**: Weekly roundup notifications let you share formatted event lists via text:

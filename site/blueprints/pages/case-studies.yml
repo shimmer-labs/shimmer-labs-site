@@ -1,0 +1,10 @@
+title: Case Studies
+fields:
+  intro:
+    type: textarea
+    label: Intro text
+    help: Short blurb under the page title.
+  meta_description:
+    label: Meta Description (SEO)
+    type: textarea
+    maxlength: 160

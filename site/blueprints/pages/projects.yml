@@ -1,6 +1,0 @@
-title: Projects
-fields:
-  intro: textarea
-  projects: pages
-    query: page.children
-    multiple: true

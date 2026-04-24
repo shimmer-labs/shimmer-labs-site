@@ -71,6 +71,9 @@ serviceAccountKey.json
 
 .playwright-mcp/
 
+# Local dev router for php -S (not used in production)
+router.dev.php
+
 # Loose screenshots
 # ---------------
 

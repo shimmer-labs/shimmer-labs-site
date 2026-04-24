@@ -7,6 +7,8 @@
   // SEO-optimized title tags per page
   $seoTitle = match($page->intendedTemplate()) {
     'home' => 'Shimmer Labs - Custom Software for Small Businesses | Web Apps, iOS, Shopify',
+    'case-studies' => 'Case Studies - Small Business Automation & Custom Software | Shimmer Labs',
+    'case-study' => $page->title() . ' Case Study | Shimmer Labs',
     'projects' => 'Portfolio - SaaS Apps, API Integrations & iOS Development | Shimmer Labs',
     'contact' => 'Book a Call - Custom Apps & Software | Shimmer Labs',
     'services' => 'Services & Pricing - Web Apps, APIs, iOS Development | Shimmer Labs',
@@ -39,10 +41,11 @@
   )->excerpt(160);
 
   // Open Graph Image with smart fallbacks
-  // Homepage and non-project pages use the company logo for social sharing
   $ogImage = null;
   if ($page->og_image()->toFile()) {
     $ogImage = $page->og_image()->toFile()->url();
+  } elseif ($page->intendedTemplate() === 'case-study' && $page->hero_image()->toFile()) {
+    $ogImage = $page->hero_image()->toFile()->url();
   } elseif ($page->intendedTemplate() === 'project' && $page->image()) {
     $ogImage = $page->image()->url();
   } else {
@@ -51,6 +54,7 @@
 
   // Page-specific OG type
   $ogType = match($page->intendedTemplate()) {
+    'case-study' => 'article',
     'project' => 'article',
     'service' => 'article',
     default => 'website'

@@ -194,10 +194,10 @@ tabs:
             help: e.g., "Coming soon"
 
   projects:
-    label: Projects
+    label: Case Studies
     fields:
       projects:
-        label: Featured Projects
+        label: Featured Case Studies
         type: structure
         fields:
           title:

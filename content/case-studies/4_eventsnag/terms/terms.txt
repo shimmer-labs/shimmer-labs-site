@@ -215,7 +215,7 @@ You agree to indemnify, defend, and hold harmless Shimmer Labs and its owner, em
 
 ## Data Privacy
 
-Your privacy is important to us. Please review our Privacy Policy at https://shimmerlabs.co/projects/eventsnag/privacy to understand how we collect, use, and protect your information.
+Your privacy is important to us. Please review our Privacy Policy at https://shimmerlabs.co/case-studies/eventsnag/privacy to understand how we collect, use, and protect your information.
 
 By using EventSnag, you agree to our Privacy Policy.
 
@@ -334,7 +334,7 @@ If you have questions about these Terms:
 **Shimmer Labs**
 Operated by Logan Shimmer
 Email: eventsnagsupport@shimmerlabs.co
-Website: https://shimmerlabs.co/projects/eventsnag
+Website: https://shimmerlabs.co/case-studies/eventsnag
 
 For legal inquiries: Include "Legal" in your email subject line.
 

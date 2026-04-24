@@ -170,7 +170,7 @@
 <!-- Sidebar -->
 <aside class="project-sidebar">
   <div class="sidebar-sticky">
-    <h3>Other Projects</h3>
+    <h3>More Case Studies</h3>
     <div class="sidebar-projects">
       <?php 
       $otherProjects = $page->parent()

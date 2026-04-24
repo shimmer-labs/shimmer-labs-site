@@ -119,14 +119,14 @@
 <!-- Testimonials -->
 <?php snippet('testimonials-section', ['testimonials' => $page->testimonials()]) ?>
 
-<!-- Projects -->
-<?php if ($projectsPage = page('projects')): ?>
+<!-- Case Studies -->
+<?php if ($caseStudiesPage = page('case-studies')): ?>
 <section class="projects">
   <div class="container">
-    <h2 class="projects__title">Recent Projects</h2>
+    <h2 class="projects__title">Recent Case Studies</h2>
     <div class="projects__grid">
-      <?php foreach ($projectsPage->children() as $project): ?>
-        <?php snippet('project-card', ['project' => $project]) ?>
+      <?php foreach ($caseStudiesPage->children()->listed() as $item): ?>
+        <?php snippet('project-card', ['project' => $item]) ?>
       <?php endforeach ?>
     </div>
   </div>

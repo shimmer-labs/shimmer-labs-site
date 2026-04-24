@@ -1,0 +1,229 @@
+title: Case Study
+fields:
+  meta_description:
+    label: Meta Description (SEO)
+    type: textarea
+    maxlength: 160
+    help: Search result snippet. If empty, falls back to summary.
+  og_image:
+    label: Open Graph Image
+    type: files
+    max: 1
+    help: 1200x630 recommended. Falls back to hero image.
+  featured:
+    type: toggle
+    label: Featured on Case Studies index
+    default: true
+  badge:
+    type: select
+    label: Status Badge
+    options:
+      - Live
+      - In Progress
+      - Paused
+    default: Live
+  summary:
+    type: textarea
+    label: Card Summary
+    help: One liner used on the Case Studies index card.
+
+  client:
+    label: Client
+    type: headline
+  client_name:
+    type: text
+    label: Business Name
+    help: e.g., "Sweat Yoga & Fitness"
+  client_role:
+    type: text
+    label: Primary Contact Line
+    help: e.g., "Anna Moore, Owner"
+  client_person:
+    type: text
+    label: Person's First Name
+    help: Used in inline copy like "What changed for Anna". Usually the owner's first name.
+  client_location:
+    type: text
+    label: City, State
+    help: e.g., "Stillwater, OK"
+  client_website:
+    type: url
+    label: Client Website
+    help: Link from the snapshot band (opens in new tab). SEO goodwill for the client.
+  engagement_type:
+    type: text
+    label: Engagement Type
+    help: e.g., "Sidecar Pilot"
+  engagement_timeline:
+    type: text
+    label: Engagement Timeline
+    help: e.g., "March 2026 to ongoing"
+  platforms:
+    type: tags
+    label: Platforms We Touched
+
+  hero:
+    label: Hero
+    type: headline
+  hero_image:
+    type: files
+    label: Hero Image (full bleed)
+    max: 1
+  hero_quote:
+    type: textarea
+    label: Hero Pullquote
+    help: The big opening quote. Rendered huge.
+  hero_quote_attribution:
+    type: text
+    label: Hero Quote Attribution
+  hero_subhead:
+    type: text
+    label: Hero Subhead
+    help: One line under the hero quote.
+
+  narrative:
+    label: Narrative
+    type: headline
+  problem_intro:
+    type: textarea
+    label: The Problem
+    size: large
+    help: Markdown. Opens the story.
+  problem_pullquote:
+    type: textarea
+    label: Problem Pullquote
+    help: Pulls between problem and why-this-was-hard.
+  problem_pullquote_attribution:
+    type: text
+  why_hard:
+    type: textarea
+    label: Why This Was Hard
+    size: large
+    help: Markdown. Technical constraint explainer.
+
+  automations:
+    label: Automations
+    type: headline
+  automations_list:
+    type: structure
+    label: Automations Built
+    fields:
+      title:
+        type: text
+        label: Automation Title
+      status:
+        type: select
+        label: Status
+        options:
+          - Live
+          - In Progress
+          - Scoped
+        default: Live
+      description:
+        type: textarea
+        label: What the agent does
+        help: Markdown
+      screenshot:
+        type: files
+        label: Screenshots (up to 2)
+        max: 2
+        help: Email thread, UI screenshot, GIF. Two for before/after pairs.
+      screenshot_caption:
+        type: text
+        label: Screenshot Caption
+      pullquote:
+        type: textarea
+        label: Pullquote (optional)
+      pullquote_attribution:
+        type: text
+
+  also_shipped:
+    type: textarea
+    label: Also Shipped Along the Way
+    help: Markdown bullet list.
+
+  results:
+    label: Results
+    type: headline
+  results_intro:
+    type: textarea
+    label: Results Intro
+  results_headline_stat:
+    type: text
+    label: Headline Stat
+    help: Big number. e.g., "16"
+  results_headline_label:
+    type: text
+    label: Headline Stat Label
+    help: e.g., "membership actions handled end to end"
+  results_supporting_stats:
+    type: structure
+    label: Supporting Stats
+    fields:
+      number:
+        type: text
+      label:
+        type: text
+  results_context:
+    type: textarea
+    label: Seasonal / Supporting Context
+    help: Markdown.
+  results_pullquote:
+    type: textarea
+  results_pullquote_attribution:
+    type: text
+
+  human_close:
+    label: Human Close
+    type: headline
+  human_close_body:
+    type: textarea
+    label: What Changed
+    size: large
+    help: Markdown. The human story close.
+  human_close_pullquote:
+    type: textarea
+  human_close_pullquote_attribution:
+    type: text
+
+  collaborator:
+    label: Collaborator Framing
+    type: headline
+  collaborator_paragraph:
+    type: textarea
+    label: Collaborator Paragraph
+    help: Markdown. Brand beat.
+
+  techstack:
+    label: Tech & Video
+    type: headline
+  tech_stack:
+    type: tags
+    label: Tech Stack
+  video_placeholder_image:
+    type: files
+    label: Video Placeholder Image
+    max: 1
+  video_status:
+    type: select
+    label: Video Status
+    options:
+      - Coming Soon
+      - Live
+    default: Coming Soon
+  video_url:
+    type: url
+    label: Video URL (when live)
+
+  cta:
+    label: CTA
+    type: headline
+  cta_headline:
+    type: text
+    label: CTA Headline
+    default: "Let's build your business a sidecar."
+  cta_service_link:
+    type: url
+    label: Service Link
+    default: /services/sidecar
+    help: Link to the relevant service (sidecar, custom-apps, api-integrations).

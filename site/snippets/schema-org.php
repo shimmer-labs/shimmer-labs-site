@@ -155,6 +155,50 @@ if ($page->intendedTemplate() == 'project') {
   ];
 }
 
+if ($page->intendedTemplate() == 'case-study') {
+  // Article schema with Case Study section
+  $articleSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Article',
+    'headline' => $page->title() . ' Case Study',
+    'articleSection' => 'Case Study',
+    'description' => $page->summary()->or($page->meta_description())->excerpt(200),
+    'url' => $page->url(),
+    'datePublished' => $page->modified('c'),
+    'dateModified' => $page->modified('c'),
+    'author' => [
+      '@type' => 'Organization',
+      'name' => 'Shimmer Labs',
+      'url' => $site->url()
+    ],
+    'publisher' => [
+      '@type' => 'Organization',
+      'name' => 'Shimmer Labs',
+      'logo' => [
+        '@type' => 'ImageObject',
+        'url' => url('assets/images/shimmer-labs-logo.png')
+      ]
+    ],
+    'mainEntityOfPage' => [
+      '@type' => 'WebPage',
+      '@id' => $page->url()
+    ]
+  ];
+  if ($page->hero_image()->toFile()) {
+    $articleSchema['image'] = $page->hero_image()->toFile()->url();
+  }
+  if ($page->client_name()->isNotEmpty()) {
+    $articleSchema['about'] = [
+      '@type' => 'LocalBusiness',
+      'name' => $page->client_name()->value()
+    ];
+    if ($page->client_location()->isNotEmpty()) {
+      $articleSchema['about']['address'] = $page->client_location()->value();
+    }
+  }
+  $schema[] = $articleSchema;
+}
+
 // Output JSON-LD
 foreach ($schema as $item):
 ?>

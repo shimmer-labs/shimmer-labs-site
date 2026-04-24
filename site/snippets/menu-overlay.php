@@ -39,27 +39,26 @@
         </ul>
       </div>
 
-      <!-- Projects Section -->
+      <!-- Case Studies Section -->
       <div class="menu-section">
-        <h3>Projects</h3>
+        <h3>Case Studies</h3>
         <ul class="menu-links">
           <?php
-          if ($projectsPage = page('projects')) {
-            // Featured projects in specific order
-            $featuredSlugs = ['eventsnag', 'paidly', 'treebidpro'];
+          if ($caseStudiesPage = page('case-studies')) {
+            // Featured items in specific order
+            $featuredSlugs = ['sweat-yoga-fitness', 'eventsnag', 'paidly', 'treebidpro'];
 
             foreach ($featuredSlugs as $slug) {
-              if ($project = $projectsPage->find($slug)) {
-                if ($project->badge() == 'Coming Soon' || $project->badge() == 'Launching Soon') {
-                  echo '<li class="coming-soon"><span>' . $project->title() . '</span> <small>(' . $project->badge() . ')</small></li>';
+              if ($item = $caseStudiesPage->find($slug)) {
+                if ($item->badge() == 'Coming Soon' || $item->badge() == 'Launching Soon') {
+                  echo '<li class="coming-soon"><span>' . $item->title() . '</span> <small>(' . $item->badge() . ')</small></li>';
                 } else {
-                  echo '<li><a href="' . $project->url() . '">' . $project->title() . '</a></li>';
+                  echo '<li><a href="' . $item->url() . '">' . $item->title() . '</a></li>';
                 }
               }
             }
 
-            // All Projects link
-            echo '<li><a href="' . $projectsPage->url() . '" class="menu-link-all">All Projects →</a></li>';
+            echo '<li><a href="' . $caseStudiesPage->url() . '" class="menu-link-all">All Case Studies →</a></li>';
           }
           ?>
         </ul>

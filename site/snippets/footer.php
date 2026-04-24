@@ -23,7 +23,7 @@
           <h4>Company</h4>
           <ul>
             <li><a href="<?= url('about') ?>">About</a></li>
-            <li><a href="<?= url('projects') ?>">Projects</a></li>
+            <li><a href="<?= url('case-studies') ?>">Case Studies</a></li>
             <li><a href="<?= url('office-hours') ?>">AI Office Hours</a></li>
             <li><a href="<?= url('lunch-learn') ?>">Lunch &amp; Learn</a></li>
             <li><a href="<?= url('contact') ?>">Contact</a></li>

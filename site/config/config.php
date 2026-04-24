@@ -82,6 +82,22 @@ return [
         return option('scanner.proxy')($id);
       }
     ],
+    // Legacy redirect: /projects -> /case-studies
+    [
+      'pattern' => 'projects',
+      'action'  => function() {
+        header('Location: ' . url('case-studies'), true, 301);
+        exit;
+      }
+    ],
+    [
+      'pattern' => 'projects/(:all)',
+      'action'  => function($path) {
+        header('Location: ' . url('case-studies/' . $path), true, 301);
+        exit;
+      }
+    ],
+
     // SEO: Sitemap
     [
       'pattern' => 'sitemap.xml',
@@ -92,7 +108,7 @@ return [
         // Add homepage
         $sitemap[] = [
           'url' => $site->url(),
-          'lastmod' => $site->modified('c'),
+          'lastmod' => $site->modified('Y-m-d'),
           'priority' => '1.0',
           'changefreq' => 'weekly'
         ];
@@ -118,7 +134,7 @@ return [
 
           $sitemap[] = [
             'url' => $page->url(),
-            'lastmod' => $page->modified('c'),
+            'lastmod' => $page->modified('Y-m-d'),
             'priority' => $priority,
             'changefreq' => $page->isHomePage() ? 'weekly' : 'monthly'
           ];
@@ -131,7 +147,7 @@ return [
         foreach ($sitemap as $item) {
           $xml .= '  <url>' . PHP_EOL;
           $xml .= '    <loc>' . htmlspecialchars($item['url']) . '</loc>' . PHP_EOL;
-          $xml .= '    <lastmod>' . date('Y-m-d', $item['lastmod']) . '</lastmod>' . PHP_EOL;
+          $xml .= '    <lastmod>' . $item['lastmod'] . '</lastmod>' . PHP_EOL;
           $xml .= '    <changefreq>' . $item['changefreq'] . '</changefreq>' . PHP_EOL;
           $xml .= '    <priority>' . $item['priority'] . '</priority>' . PHP_EOL;
           $xml .= '  </url>' . PHP_EOL;
