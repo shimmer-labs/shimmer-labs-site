@@ -1242,6 +1242,44 @@ section {
   border-color: var(--color-gold);
 }
 
+/* Desktop-only stretched link pattern: make the whole card clickable
+   while keeping mobile button-driven so touch targets stay explicit. */
+@media (min-width: 769px) {
+  .project-card--featured,
+  .project-card--compact {
+    position: relative;
+  }
+
+  .project-card--featured .project-card__title a::before,
+  .project-card--compact .project-card__title a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  /* Keep the bottom button visually a button and let it own its own
+     click (same URL anyway, but cursor/hover stay crisp on the button). */
+  .project-card--featured .btn,
+  .project-card--compact .btn,
+  .project-card--featured .project-card__tech,
+  .project-card--compact .project-card__tech {
+    position: relative;
+    z-index: 2;
+  }
+
+  .project-card--featured {
+    cursor: pointer;
+  }
+
+  .project-card--compact {
+    cursor: pointer;
+  }
+}
+
 .project-card--featured .project-card__badge {
   position: absolute;
   top: var(--spacing-md);
@@ -4827,9 +4865,15 @@ img.loaded {
 
 .how-it-works__payoff {
   display: block;
-  margin-top: 0.4rem;
-  color: var(--color-sidecar);
+  margin-top: 0.75rem;
+  padding: 0.7rem 1rem;
+  background: rgba(253, 190, 52, 0.18);
+  border-left: 3px solid var(--color-gold);
+  border-radius: 0 6px 6px 0;
+  color: var(--color-navy);
   font-weight: 700;
+  font-style: italic;
+  line-height: 1.45;
 }
 
 .how-it-works__stories li:last-child {
