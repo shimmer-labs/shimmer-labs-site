@@ -5756,6 +5756,12 @@ img.loaded {
   position: relative;
 }
 
+.cs-video--portrait,
+.cs-video-placeholder--portrait {
+  aspect-ratio: 9 / 16;
+  max-width: 380px;
+}
+
 .cs-video iframe {
   width: 100%;
   height: 100%;

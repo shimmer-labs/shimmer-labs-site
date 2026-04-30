@@ -89,15 +89,17 @@
     <?php endif ?>
 
     <?php if ($page->video_placeholder_image()->isNotEmpty() || $page->video_url()->isNotEmpty()): ?>
+      <?php $videoOrientation = $page->video_orientation()->or('landscape')->toString(); ?>
+      <?php $orientationClass = $videoOrientation === 'portrait' ? ' cs-video--portrait' : ''; ?>
       <section class="cs-section cs-section--video">
         <div class="cs-content-column">
           <h2 class="cs-section-title">Hear it from <?= $page->client_person()->or($page->client_name())->or('the client') ?></h2>
           <?php if ($page->video_status()->toString() === 'Live' && $page->video_url()->isNotEmpty()): ?>
-            <div class="cs-video">
-              <iframe src="<?= $page->video_url() ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="cs-video<?= $orientationClass ?>">
+              <iframe src="<?= html($page->video_url()) ?>" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
             </div>
           <?php else: ?>
-            <div class="cs-video-placeholder">
+            <div class="cs-video-placeholder<?= $videoOrientation === 'portrait' ? ' cs-video-placeholder--portrait' : '' ?>">
               <?php if ($img = $page->video_placeholder_image()->toFile()): ?>
                 <img src="<?= $img->url() ?>" alt="Testimonial video coming soon">
               <?php endif ?>

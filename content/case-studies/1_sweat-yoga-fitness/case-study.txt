@@ -224,11 +224,15 @@ Video_placeholder_image: anna-headshot.jpg
 
 ----
 
-Video_status: Coming Soon
+Video_status: Live
 
 ----
 
-Video_url:
+Video_url: https://player.vimeo.com/video/1188212057?badge=0&autopause=0&player_id=0&app_id=58479
+
+----
+
+Video_orientation: portrait
 
 ----
 

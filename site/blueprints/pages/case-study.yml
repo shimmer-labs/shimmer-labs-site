@@ -218,6 +218,13 @@ fields:
   video_url:
     type: url
     label: Video URL (when live)
+  video_orientation:
+    type: select
+    label: Video Orientation
+    options:
+      landscape: Landscape (16:9)
+      portrait: Portrait (9:16, phone)
+    default: landscape
 
   cta:
     label: CTA
