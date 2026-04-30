@@ -236,6 +236,22 @@ Video_orientation: portrait
 
 ----
 
+Video_eyebrow: 59 seconds with Anna
+
+----
+
+Video_heading: Anna in her own words
+
+----
+
+Video_body: The numbers tell the story. Anna tells the rest.
+
+----
+
+Video_cta_label: See what a Sidecar costs
+
+----
+
 Cta_headline: Let's build your business a sidecar.
 
 ----

@@ -64,6 +64,47 @@
       ]) ?>
     <?php endif ?>
 
+    <?php if ($page->video_placeholder_image()->isNotEmpty() || $page->video_url()->isNotEmpty()): ?>
+      <?php $videoOrientation = $page->video_orientation()->or('landscape')->toString(); ?>
+      <?php $orientationClass = $videoOrientation === 'portrait' ? ' cs-video--portrait' : ''; ?>
+      <?php $videoHeading = $page->video_heading()->or('Hear it from ' . $page->client_person()->or($page->client_name())->or('the client'))->toString(); ?>
+      <section class="cs-section cs-section--video">
+        <div class="cs-video-feature">
+          <div class="cs-video-feature__copy">
+            <?php if ($page->video_eyebrow()->isNotEmpty()): ?>
+              <p class="cs-video-feature__eyebrow"><?= $page->video_eyebrow() ?></p>
+            <?php endif ?>
+            <h2 class="cs-video-feature__title"><?= $videoHeading ?></h2>
+            <?php if ($page->video_body()->isNotEmpty()): ?>
+              <div class="cs-video-feature__body"><?= $page->video_body()->kt() ?></div>
+            <?php endif ?>
+            <?php if ($page->video_cta_label()->isNotEmpty() && $page->cta_service_link()->isNotEmpty()): ?>
+              <p class="cs-video-feature__cta">
+                <a href="<?= $page->cta_service_link() ?>"><?= $page->video_cta_label() ?> &rarr;</a>
+              </p>
+            <?php endif ?>
+          </div>
+          <div class="cs-video-feature__player">
+            <?php if ($page->video_status()->toString() === 'Live' && $page->video_url()->isNotEmpty()): ?>
+              <div class="cs-video<?= $orientationClass ?>">
+                <iframe src="<?= html($page->video_url()) ?>" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+              </div>
+            <?php else: ?>
+              <div class="cs-video-placeholder<?= $videoOrientation === 'portrait' ? ' cs-video-placeholder--portrait' : '' ?>">
+                <?php if ($img = $page->video_placeholder_image()->toFile()): ?>
+                  <img src="<?= $img->url() ?>" alt="Testimonial video coming soon">
+                <?php endif ?>
+                <div class="cs-video-placeholder__overlay">
+                  <span class="cs-video-placeholder__play">▶</span>
+                  <p>Full video coming soon</p>
+                </div>
+              </div>
+            <?php endif ?>
+          </div>
+        </div>
+      </section>
+    <?php endif ?>
+
     <?php if ($page->human_close_body()->isNotEmpty()): ?>
       <section class="cs-section cs-section--narrative cs-section--human">
         <div class="cs-content-column">
@@ -84,31 +125,6 @@
       <section class="cs-section cs-section--collaborator">
         <div class="cs-content-column">
           <?= $page->collaborator_paragraph()->kt() ?>
-        </div>
-      </section>
-    <?php endif ?>
-
-    <?php if ($page->video_placeholder_image()->isNotEmpty() || $page->video_url()->isNotEmpty()): ?>
-      <?php $videoOrientation = $page->video_orientation()->or('landscape')->toString(); ?>
-      <?php $orientationClass = $videoOrientation === 'portrait' ? ' cs-video--portrait' : ''; ?>
-      <section class="cs-section cs-section--video">
-        <div class="cs-content-column">
-          <h2 class="cs-section-title">Hear it from <?= $page->client_person()->or($page->client_name())->or('the client') ?></h2>
-          <?php if ($page->video_status()->toString() === 'Live' && $page->video_url()->isNotEmpty()): ?>
-            <div class="cs-video<?= $orientationClass ?>">
-              <iframe src="<?= html($page->video_url()) ?>" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
-            </div>
-          <?php else: ?>
-            <div class="cs-video-placeholder<?= $videoOrientation === 'portrait' ? ' cs-video-placeholder--portrait' : '' ?>">
-              <?php if ($img = $page->video_placeholder_image()->toFile()): ?>
-                <img src="<?= $img->url() ?>" alt="Testimonial video coming soon">
-              <?php endif ?>
-              <div class="cs-video-placeholder__overlay">
-                <span class="cs-video-placeholder__play">▶</span>
-                <p>Full video coming soon</p>
-              </div>
-            </div>
-          <?php endif ?>
         </div>
       </section>
     <?php endif ?>

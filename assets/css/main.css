@@ -5742,11 +5742,88 @@ img.loaded {
 
 /* Video placeholder */
 .cs-section--video {
-  padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+  padding: var(--spacing-lg) 0;
+  background: var(--color-sidecar-light);
+  border-top: 1px solid var(--color-sidecar-border);
+  border-bottom: 1px solid var(--color-sidecar-border);
+}
+
+.cs-video-feature {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.cs-video-feature__copy {
+  max-width: 480px;
+  padding-top: var(--spacing-sm);
+}
+
+.cs-video-feature__eyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-sidecar);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.cs-video-feature__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-navy);
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.cs-video-feature__body {
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: var(--color-navy);
+}
+
+.cs-video-feature__body p {
+  margin: 0 0 0.75rem 0;
+}
+
+.cs-video-feature__body p:last-child {
+  margin-bottom: 0;
+}
+
+.cs-video-feature__cta {
+  margin: var(--spacing-sm) 0 0 0;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cs-video-feature__cta a {
+  color: var(--color-sidecar);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-sidecar-border);
+  padding-bottom: 2px;
+  transition: border-color 0.15s ease;
+}
+
+.cs-video-feature__cta a:hover {
+  border-bottom-color: var(--color-sidecar);
+}
+
+.cs-video-feature__player {
+  display: flex;
+  justify-content: center;
 }
 
 .cs-video,
 .cs-video-placeholder {
+  width: 100%;
   max-width: 860px;
   margin: 0 auto;
   aspect-ratio: 16 / 9;
@@ -5760,6 +5837,19 @@ img.loaded {
 .cs-video-placeholder--portrait {
   aspect-ratio: 9 / 16;
   max-width: 380px;
+}
+
+@media (max-width: 768px) {
+  .cs-video-feature {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    text-align: center;
+  }
+
+  .cs-video-feature__copy {
+    max-width: none;
+    margin: 0 auto;
+  }
 }
 
 .cs-video iframe {

@@ -225,6 +225,23 @@ fields:
       landscape: Landscape (16:9)
       portrait: Portrait (9:16, phone)
     default: landscape
+  video_eyebrow:
+    type: text
+    label: Video Eyebrow
+    help: Small uppercase label above the heading. e.g., "59 seconds with Anna"
+  video_heading:
+    type: text
+    label: Video Heading
+    help: Section heading. Falls back to "Hear it from {first name}" if empty.
+  video_body:
+    type: textarea
+    label: Video Body
+    help: One or two sentences of framing copy next to the video.
+    size: small
+  video_cta_label:
+    type: text
+    label: Video CTA Label
+    help: Soft text-link below the body, e.g. "See what a Sidecar costs". Uses Cta Service Link as the destination.
 
   cta:
     label: CTA
