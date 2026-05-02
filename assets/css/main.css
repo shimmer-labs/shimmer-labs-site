@@ -252,7 +252,7 @@ section {
 
 .nav-dropdown {
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 0;
   min-width: 240px;
   background: var(--color-white);
