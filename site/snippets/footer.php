@@ -13,7 +13,7 @@
           <h4>Services</h4>
           <ul>
             <li><a href="<?= url('services/custom-apps') ?>">Custom Apps</a></li>
-            <li><a href="<?= url('services/sidecar') ?>">Sidecar (AI Agents)</a></li>
+            <li><a href="<?= url('services/sidecar') ?>">Sidecar</a></li>
             <li><a href="<?= url('services/api-integrations') ?>">API Integrations</a></li>
             <li><a href="<?= url('event-video') ?>">Event Videos</a></li>
           </ul>
@@ -33,9 +33,9 @@
         <div class="footer-col">
           <h4>Free Guides</h4>
           <ul>
-            <li><a href="<?= url('ai-agents-guide') ?>">AI Agents for Small Business</a></li>
-            <li><a href="<?= url('ai-security-business') ?>">AI Security for Business</a></li>
-            <li><a href="<?= url('ai-security-education') ?>">AI Security for Higher Ed</a></li>
+            <li><a href="<?= url('ai-agents-guide') ?>">AI Agents Guide</a></li>
+            <li><a href="<?= url('ai-security-business') ?>">Security for Business</a></li>
+            <li><a href="<?= url('ai-security-education') ?>">Security for Higher Ed</a></li>
           </ul>
         </div>
 
