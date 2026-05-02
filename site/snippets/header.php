@@ -111,17 +111,37 @@
   <?php endif ?>
 </a>
         
-        <ul class="nav-menu">
-          <?php foreach ($site->children()->listed() as $item): ?>
-            <li>
-              <a href="<?= $item->url() ?>" <?php e($item->isOpen(), 'class="active"') ?>>
-                <?= $item->title() ?>
-              </a>
-            </li>
-          <?php endforeach ?>
+        <?php $isServicesActive = $page->parent()?->id() === 'services' || $page->id() === 'event-video'; ?>
+        <ul class="nav-menu" role="menubar">
+          <li class="nav-menu__item nav-menu__item--has-dropdown" role="none">
+            <button type="button" class="nav-menu__trigger<?= $isServicesActive ? ' active' : '' ?>" role="menuitem" aria-haspopup="true" aria-expanded="false">
+              Services
+              <span class="nav-menu__caret" aria-hidden="true">▾</span>
+            </button>
+            <ul class="nav-dropdown" role="menu">
+              <li role="none"><a href="<?= url('services/custom-apps') ?>" role="menuitem">Custom Apps</a></li>
+              <li role="none"><a href="<?= url('services/sidecar') ?>" role="menuitem">Sidecar &mdash; AI Agents</a></li>
+              <li role="none"><a href="<?= url('services/api-integrations') ?>" role="menuitem">API Integrations</a></li>
+              <li role="none"><a href="<?= url('event-video') ?>" role="menuitem">Event Videos</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu__item" role="none">
+            <a href="<?= url('case-studies') ?>" role="menuitem" <?php e($page->id() === 'case-studies' || $page->parent()?->id() === 'case-studies', 'class="active"') ?>>Case Studies</a>
+          </li>
+          <li class="nav-menu__item" role="none">
+            <a href="<?= url('about') ?>" role="menuitem" <?php e($page->id() === 'about', 'class="active"') ?>>About</a>
+          </li>
+          <li class="nav-menu__item" role="none">
+            <a href="<?= url('office-hours') ?>" role="menuitem" <?php e($page->id() === 'office-hours', 'class="active"') ?>>Office Hours</a>
+          </li>
+          <li class="nav-menu__item" role="none">
+            <a href="<?= url('lunch-learn') ?>" role="menuitem" <?php e($page->id() === 'lunch-learn', 'class="active"') ?>>Lunch &amp; Learn</a>
+          </li>
         </ul>
-        
-        <button class="menu-toggle" aria-label="Open menu">
+
+        <a href="<?= url('contact') ?>" class="nav-cta btn btn--cta">Tell Us What You Need <span aria-hidden="true">&rarr;</span></a>
+
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menuOverlay">
   Menu <span class="menu-icon">≡</span>
 </button>
       </nav>

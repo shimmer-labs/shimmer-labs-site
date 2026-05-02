@@ -34,6 +34,11 @@
   </div>
 </section>
 
+<!-- Sidecar: Free Scanner Tool -->
+<?php if ($isSidecar): ?>
+  <?php snippet('sidecar-scanner') ?>
+<?php endif ?>
+
 <!-- Sidecar: Stats Cards -->
 <?php if ($isSidecar && $page->stats()->isNotEmpty()): ?>
 <section class="sidecar-stats">
