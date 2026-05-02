@@ -56,6 +56,8 @@ We use AI tools to move 2-3x faster than traditional development. That means low
 
 Want to see what we can build for you? <a href="/contact">Let's talk.</a>
 
+*Working in higher ed? Logan's an OSU alum, and we wrote a free guide for you: [Using AI Securely in Higher Education →](/ai-security-education).*
+
 ----
 
 Uuid: o2gegafhfruerlxw

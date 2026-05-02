@@ -60,21 +60,15 @@
         </ul>
       </div>
 
-      <!-- Events -->
+      <!-- Office Hours -->
       <div class="menu-section">
-        <h3>Events</h3>
+        <h3>Office Hours</h3>
         <ul class="menu-links">
           <li>
             <a href="<?= url('office-hours') ?>">
               <span class="menu-link-icon">🤖</span>
               <span class="menu-link-title">AI Office Hours</span>
               <span class="menu-link-price">Tue &amp; Thu, 2–4 PM</span>
-            </a>
-          </li>
-          <li>
-            <a href="<?= url('lunch-learn') ?>">
-              <span class="menu-link-icon">🥪</span>
-              <span class="menu-link-title">Lunch &amp; Learn</span>
             </a>
           </li>
         </ul>

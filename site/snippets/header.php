@@ -134,9 +134,6 @@
           <li class="nav-menu__item" role="none">
             <a href="<?= url('office-hours') ?>" role="menuitem" <?php e($page->id() === 'office-hours', 'class="active"') ?>>Office Hours</a>
           </li>
-          <li class="nav-menu__item" role="none">
-            <a href="<?= url('lunch-learn') ?>" role="menuitem" <?php e($page->id() === 'lunch-learn', 'class="active"') ?>>Lunch &amp; Learn</a>
-          </li>
         </ul>
 
         <a href="<?= url('contact') ?>" class="nav-cta btn btn--cta">Tell Us What You Need <span aria-hidden="true">&rarr;</span></a>

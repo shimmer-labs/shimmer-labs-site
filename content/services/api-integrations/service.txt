@@ -31,6 +31,8 @@ Most agencies charge $7k-15k and take 2 months for custom API integrations. We d
 
 Your software doesn't play nice together? We build custom API wrappers that make your tools actually talk to each other. Clean code, proper documentation, no janky workarounds.
 
+*Connecting tools means handling credentials, customer data, and access scopes. We wrote a free guide on getting it right: [AI Security for Your Business →](/ai-security-business).*
+
 ----
 
 Pricingtiers:

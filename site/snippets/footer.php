@@ -31,6 +31,15 @@
         </div>
 
         <div class="footer-col">
+          <h4>Free Guides</h4>
+          <ul>
+            <li><a href="<?= url('ai-agents-guide') ?>">AI Agents for Small Business</a></li>
+            <li><a href="<?= url('ai-security-business') ?>">AI Security for Business</a></li>
+            <li><a href="<?= url('ai-security-education') ?>">AI Security for Higher Ed</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
           <h4>Connect</h4>
           <ul>
             <li><a href="mailto:logan@shimmerlabs.co">logan@shimmerlabs.co</a></li>
