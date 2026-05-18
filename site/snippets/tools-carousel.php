@@ -110,5 +110,6 @@
         </div>
       </div>
     </div>
+    <p class="tools-carousel__list">We integrate Claude, n8n, Supabase, Stripe, Mindbody, WellnessLiving, ServiceTitan, Jobber, Housecall Pro, Shopify, and a dozen more. Don&rsquo;t see yours? It&rsquo;s probably on the list — <a href="<?= url('contact') ?>">ask</a>.</p>
   </div>
 </section>

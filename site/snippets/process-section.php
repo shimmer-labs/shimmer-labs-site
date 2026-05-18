@@ -20,6 +20,7 @@
           <div class="how-it-works__story-text">
             <blockquote class="how-it-works__story-quote">&ldquo;I hated this place. I was actively looking for someone to buy it.&rdquo;<cite> &mdash; Anna Moore, Sweat Yoga &amp; Fitness</cite></blockquote>
             <p class="how-it-works__story-lead"><strong>Anna</strong> runs a yoga studio in Stillwater. Her sidecar handles manual membership modifications and seasonal staff scheduling. MVP live in week one, autonomous by week four. 50+ cancellations and freezes processed to date, including graduation rush.</p>
+            <p class="how-it-works__capability"><strong>When the vendor&rsquo;s API doesn&rsquo;t exist, we build anyway.</strong> Sweat&rsquo;s booking platform had no membership-action endpoints. We built browser automation that drives the UI like a person would, with Anna in the loop on anything customer-facing.</p>
             <p class="how-it-works__payoff">So she can have dinner uninterrupted with her daughter.</p>
           </div>
         </div>

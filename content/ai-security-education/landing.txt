@@ -58,6 +58,12 @@ whitepaper_slug: ai-security-education
 
 ----
 
+summary_text:
+
+This guide is for higher-ed administrators and faculty whose students and staff are already using ChatGPT, whether the institution has a policy or not. It starts with the AI family tree — what's actually behind ChatGPT and the models like it — then walks through real cautionary case studies (Amazon's hiring algorithm, Clearview AI's facial recognition rollout, higher-ed-specific data exposures), prompt injection explained in 30 seconds, and the full **OWASP Top 10 for LLM Applications**. Ends with a printable security checklist and a Traffic Light Framework for green, yellow, and red AI uses. Written for the person who actually has to decide institutional policy, not for the vendor selling them the model.
+
+----
+
 social_proof_text:
 
 ----

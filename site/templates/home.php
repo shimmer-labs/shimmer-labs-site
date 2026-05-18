@@ -20,6 +20,7 @@
       </div>
       <h1 class="home-hero__headline">We build custom software for small businesses.</h1>
       <p class="home-hero__tagline">You drive. We build the sidecar.</p>
+      <p class="home-hero__credential">Built by a systems engineer with a decade across <a href="<?= url('about') ?>">National Instruments, Iterable, WeaveGrid, and Sense</a> — making complex systems behave, before AI was the hammer.</p>
       <div class="home-hero__ctas">
         <a href="<?= url('case-studies') ?>" class="btn btn--cta">See the Work</a>
         <a href="<?= url('contact') ?>" class="btn btn--secondary home-hero__btn-secondary">Book a Call</a>

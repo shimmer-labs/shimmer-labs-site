@@ -58,6 +58,13 @@
           </div>
         <?php endif ?>
 
+        <?php if ($page->summary_text()->isNotEmpty()): ?>
+          <div class="landing-hero__summary">
+            <h3>What&rsquo;s in the guide</h3>
+            <?= $page->summary_text()->kt() ?>
+          </div>
+        <?php endif ?>
+
         <?php if ($page->social_proof_text()->isNotEmpty()): ?>
           <p class="landing-hero__proof"><?= $page->social_proof_text() ?></p>
         <?php endif ?>

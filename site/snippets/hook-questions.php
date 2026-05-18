@@ -21,6 +21,15 @@
         <a href="<?= url('contact') ?>" class="btn btn--cta">Book a 30-minute call</a>
         <p class="hook-questions__note">No pitch. No pressure. Bring your list.</p>
       </div>
+
+      <p class="hook-questions__guides">
+        Not ready to talk? Read first:
+        <a href="<?= url('ai-agents-guide') ?>">AI Agents for Small Business</a>
+        &middot;
+        <a href="<?= url('ai-security-business') ?>">Security for Business</a>
+        &middot;
+        <a href="<?= url('ai-security-education') ?>">Security for Higher Ed</a>
+      </p>
     </div>
   </div>
 </section>

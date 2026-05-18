@@ -58,6 +58,12 @@ whitepaper_slug: ai-security-business
 
 ----
 
+summary_text:
+
+This guide is for business leaders whose teams are already using AI tools, whether or not there's a policy in place. It covers the real incidents that should shape your policy — Samsung's source code leak through ChatGPT, Air Canada's chatbot liability ruling — and what FERPA and HIPAA actually require before you let a language model near customer or patient data. It explains prompt injection in 30 seconds, walks through the full **OWASP Top 10 for LLM Applications**, and ends with a printable security checklist and a Traffic Light Framework for distinguishing safe from unsafe AI uses. Written for a small or mid-sized business, not an enterprise compliance team.
+
+----
+
 social_proof_text:
 
 ----

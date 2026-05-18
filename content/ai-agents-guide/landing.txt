@@ -56,6 +56,12 @@ whitepaper_slug: ai-agents-small-business
 
 ----
 
+summary_text:
+
+This guide is for small business owners spending too much of the week on admin work that has nothing to do with their craft. It explains why 74% of companies report no tangible value from AI yet — the missing piece is workflow design, not the technology. It walks through the three evolutions from prompt engineering to AI agents, what makes an AI agent different from a chatbot, a practical framework for deciding what to automate first, and the rejection skill of knowing when **not** to use AI. Written for someone running a 1-10 person business who needs working examples, not hype.
+
+----
+
 social_proof_text:
 
 ----

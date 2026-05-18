@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Meta_description: Shimmer Labs is a small software shop in Stillwater, OK. Founded by Logan Shimmer, OSU alum, two decades in tech, building the tools small businesses can't find off the shelf.
+Meta_description: Logan Shimmer — systems engineer with a decade across National Instruments, Iterable, WeaveGrid, and Sense. Now building AI-assisted operational workflows for small businesses out of Stillwater, Oklahoma. OSU alum, AI for Industry microcredential through OSU CEAT.
 
 ----
 
@@ -10,7 +10,7 @@ Headline: Hi, I'm Logan.
 
 ----
 
-Tagline: Founder of Shimmer Labs. I build software for small businesses out of Stillwater, Oklahoma.
+Tagline: Logan Shimmer is a systems engineer who builds AI-assisted operational workflows for small businesses.
 
 ----
 
@@ -20,41 +20,40 @@ Headshot: logan-headshot.png
 
 Text:
 
-## The Short Version
+## The short version
 
-Shimmer Labs is a small software shop in Stillwater, Oklahoma. We build mobile apps, web apps, and AI agents for small businesses.
+Logan Shimmer is a systems engineer who builds AI-assisted operational workflows for small businesses. Shimmer Labs is the consultancy he runs out of Stillwater, Oklahoma.
 
-Founded by **Logan Shimmer**, OSU alum, two decades in tech. He came back to Stillwater to build the tools that small businesses need but can't find off the shelf.
+The work that became Shimmer Labs was the work Logan was already doing — making complex systems behave, designing the operational glue between tools, shipping reliable infrastructure — before AI became the hammer.
 
-## Why We Exist
+## The career arc
 
-Most software is built for big companies. The tools that exist for small businesses are either too generic, too expensive, or both.
+About a decade of systems engineering and operations work, in production, before AI was the category it is now:
 
-We started Shimmer Labs because we kept running into the same problem: small business owners drowning in admin work, using five different apps that don't talk to each other, and paying enterprise prices for tools they use 10% of.
+- <a href="https://www.ni.com" rel="noopener" target="_blank">**National Instruments**</a> — test & measurement systems.
+- <a href="https://iterable.com" rel="noopener" target="_blank">**Iterable**</a> — marketing infrastructure at scale.
+- <a href="https://www.weavegrid.com" rel="noopener" target="_blank">**WeaveGrid**</a> — clean energy / utility grid platforms.
+- <a href="https://sense.com" rel="noopener" target="_blank">**Sense**</a> — clean energy / home energy monitoring.
 
-So we build the fix. Custom software, built fast, priced for real businesses.
+A deeper interview-led narrative is in progress.
 
-## What We've Shipped
+## OSU connection
 
-- **Paidly**, AI invoicing for freelancers. Scan a contract, generate an invoice. Built because invoicing was eating our own time.
-- **EventSnag**, iOS app that turns event screenshots into calendar entries. Built because nobody could find events in Stillwater.
-- **TreeBidPro**, Web app for a tree service contractor. Wireframes to production with Stripe in 2 weeks.
-- **Sidecar**, AI agents that handle hiring, social media, and proposals for service businesses.
-- **FlowMint**, Shopify app for automated email marketing.
+OSU class of '09 alum. AI for Industry microcredential through <a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">**OSU CEAT Professional Development**</a>.
+
+## Pre-Shimmer client work is the credential
+
+The Supabase and Taddy work that anchors the case studies happened **before Shimmer Labs had its own shingle.** Same pattern. Same human in the loop. Same production-grade work. Pre-shingle isn't a footnote — it's the proof the engineering didn't change when the brand showed up.
 
 ## Why Stillwater
 
-Logan grew up here. Left for tech jobs. Came back.
+Logan returned from California to build a rooted business here. Office Hours runs every Tuesday and Thursday, 2-4 PM, at WorkIT Stillwater. Walk-in, free, in person.
 
-Stillwater doesn't have a lot of software shops. Most small businesses here hire agencies in Dallas or Austin and pay accordingly. We think local businesses deserve a local team that actually understands their problems, and charges fairly for the work.
+## What we do and don't do
 
-## How We Work
+We build for owner-operators of service businesses and indie SaaS founders. We don't pretend to be an enterprise vendor, build chatbots, or replace teams. We bring systems engineering, not just prompt engineering.
 
-You talk to Logan directly. No account managers, no handoffs, no weekly status calls that could've been an email.
-
-We use AI tools to move 2-3x faster than traditional development. That means lower costs and shorter timelines, without cutting corners on quality.
-
-Want to see what we can build for you? <a href="/contact">Let's talk.</a>
+Want to see what that looks like for your business? <a href="/contact">Let's talk.</a>
 
 *Working in higher ed? Logan's an OSU alum, and we wrote a free guide for you: [Using AI Securely in Higher Education →](/ai-security-education).*
 
