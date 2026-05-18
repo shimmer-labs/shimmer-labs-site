@@ -22,14 +22,14 @@
           <span class="engagement__num">3</span>
           <div class="engagement__body">
             <h3 class="engagement__step-title">We build it, you watch</h3>
-            <p>Four weeks from kickoff to live. Two weeks of supervised rollout where you review everything the agent does. We tune against your real data, not a generic playbook.</p>
+            <p>Most clients see their first agent live in a week. Two weeks of supervised rollout where you review everything the agent does. Fully autonomous by week four.</p>
           </div>
         </li>
         <li class="engagement__step">
           <span class="engagement__num">4</span>
           <div class="engagement__body">
             <h3 class="engagement__step-title">Live and looked-after</h3>
-            <p>Your agent runs. We monitor it, update it, handle the maintenance. Flat monthly fee. Less than a part-time hire. Cancel anytime.</p>
+            <p>Your agent runs. We monitor it, update it, handle the maintenance. From $1,000/mo. Cancel anytime. No contracts.</p>
           </div>
         </li>
       </ol>

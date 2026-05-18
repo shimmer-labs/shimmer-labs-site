@@ -6,6 +6,8 @@ Badge: Live
 ----
 Summary: Snap it. Snag it. Show up. The iOS app that turns event screenshots into calendar entries instantly, so you actually go to the things you say you will.
 ----
+Index_metric: Native iOS app shipped with OpenAI Vision API parsing screenshots into calendar events.
+----
 Tech_stack: Swift, SwiftUI, OpenAI Vision API, Google Calendar API, iOS Share Extension, Core Data, Push Notifications
 ----
 Is_app: true

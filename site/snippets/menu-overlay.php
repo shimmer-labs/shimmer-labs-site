@@ -13,20 +13,21 @@
             <a href="<?= url('services/custom-apps') ?>">
               <span class="menu-link-icon">⚡</span>
               <span class="menu-link-title">Custom Apps</span>
-              <span class="menu-link-price">from $25k</span>
+              <span class="menu-link-price">Web from $15k · iOS from $20k</span>
             </a>
           </li>
           <li>
             <a href="<?= url('services/sidecar') ?>" class="menu-link--sidecar">
               <span class="menu-link-icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="" style="width: 24px; height: 24px; display: inline-block; vertical-align: middle;"></span>
               <span class="menu-link-title">Sidecar, AI Agents</span>
+              <span class="menu-link-price">from $1,000/mo</span>
             </a>
           </li>
           <li>
             <a href="<?= url('services/api-integrations') ?>">
               <span class="menu-link-icon">🔌</span>
               <span class="menu-link-title">API Integrations</span>
-              <span class="menu-link-price">$3.5k - $12k</span>
+              <span class="menu-link-price">$2,500 – $7,000</span>
             </a>
           </li>
           <li>

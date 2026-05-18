@@ -2,7 +2,7 @@ Title: Custom Apps
 
 ----
 
-Meta_description: Web apps and iOS apps from wireframes to launched product. Web apps from $25k, iOS from $35k. Built TreeBidPro in 2 weeks, Paidly from zero to payments in 6 weeks.
+Meta_description: Web apps and iOS apps from wireframes to launched product. Web from $15k, iOS from $20k. Flat-priced per scope. Built TreeBidPro in 2 weeks, Paidly from zero to payments in 6.
 
 ----
 
@@ -14,7 +14,7 @@ Summary: Web apps and iOS apps -- from wireframes to launched product. Built Tre
 
 ----
 
-Pricerange: Web apps from $25k | iOS from $35k
+Pricerange: Web from $15k | iOS from $20k
 
 ----
 

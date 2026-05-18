@@ -2,7 +2,7 @@ Title: Sweat Yoga & Fitness
 
 ----
 
-Meta_description: How Shimmer Labs built membership, scheduling, and DM automations for a Stillwater yoga studio where the booking platform had no API and the owner was burning out.
+Meta_description: MVP live in week one, autonomous by week four. 50+ cancellations and freezes handled to date, including graduation rush. How Shimmer Labs built membership, scheduling, and DM automations for a Stillwater yoga studio whose booking platform had no API.
 
 ----
 
@@ -15,6 +15,10 @@ Badge: Live
 ----
 
 Summary: Anna Moore was burning out. Her booking platform had no API. We built her a sidecar anyway.
+
+----
+
+Index_metric: MVP live in week 1, autonomous by week 4. 50+ cancellations and freezes processed to date.
 
 ----
 
@@ -154,29 +158,29 @@ Infrastructure that quietly supports the automations:
 
 ----
 
-Results_intro: Under one month of the cancellation and freeze automation being live. Before finals week, which is the annual peak.
+Results_intro: One month from kickoff to fully autonomous. Still running.
 
 ----
 
-Results_headline_stat: 16
+Results_headline_stat: 50+
 
 ----
 
-Results_headline_label: membership actions handled end to end, without Anna touching WellnessLiving
+Results_headline_label: cancellations and freezes processed seamlessly to date — including the graduation rush, the highest-volume window of the year for a college-town studio
 
 ----
 
 Results_supporting_stats:
 
 -
-  number: "14"
-  label: cancellations processed
+  number: "1"
+  label: week from kickoff to MVP, handling real work with supervision
 -
-  number: "2"
-  label: freezes processed
+  number: "4"
+  label: weeks to fully autonomous, no supervision required
 -
   number: "0"
-  label: times Anna had to log in to do it herself
+  label: times Anna had to log in to WellnessLiving herself
 
 ----
 

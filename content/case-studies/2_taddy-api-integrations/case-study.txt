@@ -18,6 +18,10 @@ Summary: Taddy had great podcast data. Nobody on n8n, Zapier, or Make.com could 
 
 ----
 
+Index_metric: Live on n8n, Zapier, and Make.com — three platforms, one shipment.
+
+----
+
 Client_name: Taddy
 
 ----

@@ -18,6 +18,10 @@ Summary: A small paid SaaS that turned Logan's invoicing pain into a repeatable 
 
 ----
 
+Index_metric: 33 paying users, 95% parsing accuracy on production invoices.
+
+----
+
 Client_name: Paidly
 
 ----

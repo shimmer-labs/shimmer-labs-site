@@ -49,6 +49,10 @@
 
             <p class="project-card__summary"><?= $item->summary() ?></p>
 
+            <?php if ($item->index_metric()->isNotEmpty()): ?>
+              <p class="project-card__metric"><strong><?= $item->index_metric() ?></strong></p>
+            <?php endif ?>
+
             <?php if ($item->tech_stack()->isNotEmpty()): ?>
               <div class="project-card__tech">
                 <?php foreach ($item->tech_stack()->split(',') as $tech): ?>

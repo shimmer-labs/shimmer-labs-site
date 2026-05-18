@@ -2,7 +2,7 @@ Title: API Integrations
 
 ----
 
-Meta_description: Custom n8n, Zapier, and Make integrations $3,500-12,000. Published 4 production podcast API integrations to npm. Fast delivery, clean code, proper documentation.
+Meta_description: Custom n8n, Zapier, and Make integrations. $2,500-$7,000 per integration. Published 4 production podcast API integrations to npm. Fast delivery, clean code, proper documentation.
 
 ----
 
@@ -14,7 +14,7 @@ Summary: Custom n8n, Zapier, or Make integrations that actually work. We've buil
 
 ----
 
-Pricerange: $3,500 - $12,000
+Pricerange: $2,500 - $7,000 per integration
 
 ----
 
@@ -22,12 +22,12 @@ Text:
 
 ## Stop Paying Agencies $10k for API Work
 
-Most agencies charge $7k-15k and take 2 months for custom API integrations. We deliver in 1-2 weeks for $3.5k-12k because:
+Most agencies charge $7k-15k and take 2 months for custom API integrations. We deliver in 1-2 weeks for **$2,500-$7,000** because:
 
-- **We've done this before:** Built 3 production integrations for the Taddy Podcast API (n8n, Zapier, Make.com)
-- **Published to npm:** Real packages used by real companies
-- **AI-powered speed:** We use AI agents to move 2-3x faster than traditional development
-- **Focused toolset:** We only work with n8n, Zapier, and Make. No learning curve
+- **We've done this before:** Taddy is live on n8n, Zapier, and Make.com — three platforms, one shipment.
+- **Published to npm:** Real packages used by real companies.
+- **AI-assisted speed:** We use AI agents in our own dev workflow to move 2-3x faster than traditional development.
+- **Focused toolset:** We only work with n8n, Zapier, and Make. No learning curve.
 
 Your software doesn't play nice together? We build custom API wrappers that make your tools actually talk to each other. Clean code, proper documentation, no janky workarounds.
 
@@ -38,7 +38,7 @@ Your software doesn't play nice together? We build custom API wrappers that make
 Pricingtiers:
 -
   name: 'Simple Integration'
-  price: '$3,500'
+  price: '$2,500'
   description: 'Perfect for connecting 2 platforms with basic data flow.'
   features: |
     Data sync between 2 apps
@@ -49,7 +49,7 @@ Pricingtiers:
   featured: false
 -
   name: 'Complex Integration'
-  price: '$7,500'
+  price: '$5,000'
   description: 'For multi-platform workflows with custom logic.'
   features: |
     3+ platforms connected
@@ -61,7 +61,7 @@ Pricingtiers:
   featured: true
 -
   name: 'Custom Node/Plugin'
-  price: '$8,500 - $12,000'
+  price: '$7,000'
   description: 'Published integration for n8n, Zapier, or Make marketplaces.'
   features: |
     Full marketplace integration

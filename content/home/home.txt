@@ -2,7 +2,7 @@ Title: Home
 
 ----
 
-Meta_description: You do what you love. The boring stuff rides in the sidecar. AI agents for service businesses + custom app development. Web apps from $25k, iOS from $35k. Stillwater, OK.
+Meta_description: Custom software for small businesses. AI-assisted Sidecar workflows from $1,000/mo, custom web apps from $15k, iOS from $20k, API integrations $2,500-$7,000. Live in a week, autonomous in a month. Stillwater, OK.
 
 ----
 

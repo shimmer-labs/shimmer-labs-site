@@ -18,7 +18,8 @@
             <img src="<?= url('assets/images/testimonials/anna-moore.jpg') ?>" alt="Anna Moore, Sweat Yoga & Fitness" loading="lazy">
           </div>
           <div class="how-it-works__story-text">
-            <p class="how-it-works__story-lead"><strong>Anna</strong> runs a yoga studio in Stillwater. Her sidecar handles manual membership modifications and seasonal staff scheduling.</p>
+            <blockquote class="how-it-works__story-quote">&ldquo;I hated this place. I was actively looking for someone to buy it.&rdquo;<cite> &mdash; Anna Moore, Sweat Yoga &amp; Fitness</cite></blockquote>
+            <p class="how-it-works__story-lead"><strong>Anna</strong> runs a yoga studio in Stillwater. Her sidecar handles manual membership modifications and seasonal staff scheduling. MVP live in week one, autonomous by week four. 50+ cancellations and freezes processed to date, including graduation rush.</p>
             <p class="how-it-works__payoff">So she can have dinner uninterrupted with her daughter.</p>
           </div>
         </div>

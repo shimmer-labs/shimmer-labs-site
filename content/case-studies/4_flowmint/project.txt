@@ -4,7 +4,9 @@ Title: FlowMint
 ----
 Badge: Live
 ----
-Summary: AI-powered email marketing for Shopify. Analyze your brand, generate personalized email flows, and push to Klaviyo in under 3 minutes.
+Summary: AI-assisted email marketing for Shopify. Analyze your brand, generate personalized email flows, and push to Klaviyo in under 3 minutes.
+----
+Index_metric: Under 3 minutes from brand analysis to Klaviyo push.
 ----
 Tech_stack: React Router v7, SQLite, Prisma, Anthropic Claude, Shopify Admin API, Klaviyo API, Fly.io
 ----

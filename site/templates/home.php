@@ -43,22 +43,22 @@
       <a href="/services/sidecar" class="build-card">
         <div class="build-card__icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" style="width: 48px; height: 48px; display: block;"></div>
         <h3 class="build-card__title">Sidecar (AI Agents)</h3>
-        <p class="build-card__description">Narrow AI agents that handle the work you hate. Runs 24/7. No sick days, no turnover. A pilot so you see results before you commit.</p>
-        <span class="build-card__price">2-3 month pilot. No commitment.</span>
+        <p class="build-card__description">Narrow AI-assisted workflows that handle one job each. Live for Sweat Yoga and Supabase. Live in a week, autonomous in a month.</p>
+        <span class="build-card__price">From $1,000/mo + implementation from $1,000</span>
         <span class="build-card__arrow">View Details →</span>
       </a>
       <a href="/services/custom-apps" class="build-card">
         <div class="build-card__icon">⚡</div>
         <h3 class="build-card__title">Custom Apps</h3>
-        <p class="build-card__description">Web apps and iOS apps, from wireframes to launched product. Built TreeBidPro in 2 weeks, Paidly in 6.</p>
-        <span class="build-card__price">Web apps from $25k · iOS from $35k</span>
+        <p class="build-card__description">Web apps and iOS apps, from wireframes to launched product. TreeBidPro shipped in 2 weeks, Paidly in 6.</p>
+        <span class="build-card__price">Web from $15k · iOS from $20k</span>
         <span class="build-card__arrow">View Details →</span>
       </a>
       <a href="/services/api-integrations" class="build-card">
         <div class="build-card__icon">🔌</div>
         <h3 class="build-card__title">API Integrations</h3>
-        <p class="build-card__description">Your software doesn't talk to each other? We build the connections. Clean APIs, proper docs, no janky workarounds.</p>
-        <span class="build-card__price">$3.5k - $12k</span>
+        <p class="build-card__description">Your software doesn't talk to each other? We build the connections. Taddy live on n8n, Zapier, and Make.com.</p>
+        <span class="build-card__price">$2,500 – $7,000 per integration</span>
         <span class="build-card__arrow">View Details →</span>
       </a>
     </div>

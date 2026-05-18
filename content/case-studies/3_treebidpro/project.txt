@@ -2,9 +2,11 @@ Title: TreeBidPro
 ----
 Badge: Live
 ----
-Summary: AI-powered estimating for tree service contractors. Enter job details, get instant pricing recommendations, and generate professional bids in seconds.
+Summary: Pricing-rule engine with LLM-assisted bid generation. Tree service contractors get fast, defensible bids without guessing.
 ----
-Tech_stack: React, Vite, Supabase, AI/ML Pricing Engine, PDF Generation
+Index_metric: Wireframes to production-ready web app in 2 weeks.
+----
+Tech_stack: React, Vite, Supabase, Pricing-rule engine, LLM-assisted bid generation, PDF Generation
 ----
 Featured: true
 ----
@@ -28,10 +30,10 @@ Most contractors rely on gut instinct, rough mental math, or years of experience
 
 ## What TreeBidPro Does
 
-TreeBidPro is an AI-powered estimating tool that helps tree service contractors price jobs accurately and professionally.
+TreeBidPro is a pricing-rule engine with LLM-assisted bid generation that helps tree service contractors price jobs accurately and professionally.
 
-### Instant AI Pricing
-Enter the tree species, height, circumference, job type (removal vs. trimming), and site conditions. The AI analyzes comparable jobs and market data to suggest a competitive bid price.
+### Instant Pricing
+Enter the tree species, height, circumference, job type (removal vs. trimming), and site conditions. The pricing engine applies the rule set, the LLM drafts the bid copy, and you get a competitive quote you can defend in conversation.
 
 The demo account shows real results:
 - **21 jobs completed**
@@ -64,7 +66,7 @@ Kristen came to Shimmer Labs with detailed wireframes and a clear vision. She kn
 **What we delivered:**
 - Full React/Vite frontend with dark mode UI
 - Supabase backend for auth and data persistence
-- AI pricing engine trained on tree service market data
+- Pricing-rule engine with LLM-assisted bid generation, tuned to tree service market data
 - Job management system with status workflows
 - PDF estimate generation
 - Subscription billing integration
@@ -85,5 +87,5 @@ TreeBidPro uses a freemium model:
 - **Pro ($29/mo):** Unlimited estimates, full job tracking, PDF exports
 
 ----
-Results: TreeBidPro is live and accepting contractor signups. Delivered a production-ready AI estimating app in 2 weeks. The AI pricing feature is helping tree service professionals bid more confidently and win more jobs.
+Results: TreeBidPro is live and accepting contractor signups. Delivered a production-ready bid-generation app in 2 weeks. The pricing engine plus LLM-drafted bids help tree service professionals quote more confidently and win more jobs.
 ----

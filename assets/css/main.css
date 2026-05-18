@@ -1405,6 +1405,17 @@ section {
   color: var(--color-gray-medium);
   font-size: 1.05rem;
   line-height: 1.6;
+}
+
+.project-card--featured .project-card__metric {
+  color: var(--color-navy);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.6rem 0.9rem;
+  background: rgba(255, 179, 0, 0.08);
+  border-left: 3px solid var(--color-gold);
+  border-radius: 4px;
   flex-grow: 1;
 }
 
@@ -4994,6 +5005,26 @@ img.loaded {
 .how-it-works__story-text {
   font-family: var(--font-body);
   color: #2a2f3a;
+}
+
+.how-it-works__story-quote {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  line-height: 1.35;
+  font-style: italic;
+  color: var(--color-navy);
+  margin: 0 0 0.8rem 0;
+  padding: 0 0 0 1rem;
+  border-left: 3px solid var(--color-gold);
+}
+
+.how-it-works__story-quote cite {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-style: normal;
+  color: var(--color-gray-medium);
+  margin-top: 0.4rem;
 }
 
 .how-it-works__story-lead {

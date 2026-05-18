@@ -2,7 +2,7 @@ Title: Sidecar, AI Agents for Your Business
 
 ----
 
-Meta_description: You do what you love. The boring stuff rides in the sidecar. AI agents that handle hiring, social media, prospecting, and proposals for service businesses. 24/7.
+Meta_description: AI-assisted workflows for small service businesses. Shipped for Sweat Yoga, Supabase, Paidly, and Taddy. Live in a week, autonomous in a month. From $1,000/mo + implementation from $1,000. Cancel anytime.
 
 ----
 
@@ -14,7 +14,7 @@ Summary: You stay in the driver's seat. Everything else goes in the sidecar. AI 
 
 ----
 
-Pricerange:
+Pricerange: $1,000/mo + implementation from $1,000
 
 ----
 
@@ -30,12 +30,13 @@ But here you are. Half your week eaten by admin that has nothing to do with your
 
 You stay in the driver's seat. You do the work. Everything else, the boring stuff, the repetitive stuff, the stuff you keep meaning to get to, rides in the sidecar.
 
-- **Hiring**, screens applicants, schedules interviews, handles initial outreach
-- **Social media**, creates and schedules posts, manages engagement
-- **Prospecting**, finds new customers, generates and follows up on leads
-- **Proposals**, drafts project proposals to 80% complete so you just review and send
+- **Membership operations**, cancellations, freezes, and modifications against platforms with no API (shipped for Sweat Yoga)
+- **Creator outreach**, finds prospects, drafts personalized messages, you approve in Slack before send (shipped for Supabase)
+- **Document parsing**, contracts and invoices into structured data with measurable accuracy (shipped on Paidly)
+- **Scheduling**, constraint-aware monthly shift drafts for hourly teams (shipped for Sweat Yoga)
+- **Lead-to-SMS**, inbound leads triaged and responded to without you watching the inbox
 
-Think of it as a tireless intern. Runs 24/7, but you're always the one calling the shots.
+Coming next: hiring, proposals. We build a sidecar for one job at a time. Think of it as a tireless intern. Runs on a schedule, always with you calling the shots.
 
 ## Who It's For
 
@@ -66,8 +67,8 @@ Whatsincluded:
   description: 'We build and configure your AI agents, connect them to your existing tools, and train them on your workflows.'
 -
   icon: '👁️'
-  title: 'Supervised Rollout'
-  description: 'Your agents run with human oversight for 2 weeks. We catch edge cases and fine-tune before going fully autonomous.'
+  title: 'Live in a Week'
+  description: 'Your agent ships into production in week one, handling real work with you watching. Two weeks of supervised tuning. Fully autonomous by week four.'
 -
   icon: '🔧'
   title: 'Ongoing Maintenance'
@@ -80,22 +81,22 @@ Process:
   title: 'Day 0: Free Discovery Call'
   description: 'Tell us what eats your time. We figure out what to automate and whether Sidecar is the right fit.'
 -
-  title: 'Week 1: Build'
-  description: 'We build your AI agents, connect them to your existing tools (email, CRM, social accounts), and configure everything.'
+  title: 'Week 1: MVP live, handling real work with supervision'
+  description: 'We build, connect to your existing tools, and ship the first version into production. Anna at Sweat Yoga had her membership-ops sidecar handling real customer requests in week one.'
 -
-  title: 'Week 2-3: Supervised'
-  description: 'Your agents start handling real tasks with our team watching. We catch edge cases, fine-tune responses, and make sure nothing falls through the cracks.'
+  title: 'Weeks 2-3: Tuning against your real data'
+  description: 'You review everything the agent does. We catch edge cases, fine-tune responses, and adjust to how your business actually behaves.'
 -
-  title: 'Week 4: Running'
-  description: 'Your agents are autonomous. You review a weekly summary, we handle maintenance, and you get your time back.'
+  title: 'Week 4: Fully autonomous'
+  description: 'No supervision needed. Agent runs, we monitor and maintain, you get a weekly summary. Anna ran this exact timeline.'
 
 ----
 
-Techstack: AI Agents, Claude, Custom Integrations, OpenClaw
+Techstack: Claude, Gemini, n8n, ManyChat, Browser Automation, Custom Integrations
 
 ----
 
-Techstackintro: We use the most capable AI models available and build custom integrations for each client. No cookie-cutter solutions.
+Techstackintro: Claude as the default. We pick the right model per job — Gemini for high-volume document parsing (Paidly), Claude for long-context judgment work. When the vendor's API doesn't exist, we build browser automation against the UI instead (Sweat Yoga).
 
 ----
 
@@ -113,30 +114,30 @@ Ctadescription: Tell us what's eating your time. We'll tell you which tasks Side
 
 Stats:
 -
-  number: '15+'
-  label: 'Hours of admin per week for most owners'
+  number: '5x'
+  label: 'Creator outreach output for Sarah Gold at Supabase — 15 hrs/week back'
 -
-  number: '$62K'
-  label: 'What a $40K hire really costs'
+  number: '50+'
+  label: 'Cancellations and freezes handled to date for Sweat Yoga, including graduation rush'
 -
-  number: '24/7'
-  label: 'Your agents never clock out'
+  number: '95%'
+  label: 'Document parsing accuracy on Paidly across 33 paying users'
 
 ----
 
 Benefitssidecar:
 -
-  item: 'Screen job applicants'
+  item: 'Handle membership cancellations and freezes'
 -
-  item: 'Schedule interviews'
+  item: 'Draft creator outreach for your approval'
 -
-  item: 'Post to social media'
+  item: 'Parse invoices and contracts into clean data'
 -
-  item: 'Follow up on leads'
+  item: 'Draft monthly shift schedules'
 -
-  item: 'Draft proposals'
+  item: 'Triage inbound leads to SMS or email'
 -
-  item: 'Chase unpaid invoices'
+  item: 'Auto-respond to repeat questions in DMs'
 
 ----
 
@@ -189,13 +190,13 @@ Faq:
   answer: 'Sometimes. That''s why we do a 2-week supervised rollout. Your agents run with our team watching, and we catch edge cases before they go fully autonomous.'
 -
   question: 'How much does it cost?'
-  answer: 'Less than a part-time hire. We price based on the number of agents and complexity. Book a free call and we''ll give you a straight answer.'
+  answer: 'Sidecar starts at $1,000/mo. Implementation from $1,000, scoped to your build. Model API costs are pass-through — we absorb them during build and test, you take them on once running. Cancel anytime. No contracts.'
 -
   question: 'What if I hate it?'
   answer: 'Cancel anytime. No contracts, no cancellation fees. If it''s not saving you time, you shouldn''t be paying for it.'
 -
   question: 'How long until it''s running?'
-  answer: 'Most clients are fully live in 4 weeks. Week 1 is build, weeks 2-3 are supervised, week 4 you''re autonomous.'
+  answer: 'Live in a week, autonomous in a month. Most clients see their first agent handling real work with supervision in week one, tuning against real data in weeks two and three, and running fully autonomously by week four.'
 -
   question: 'Do I need to be technical?'
   answer: 'No. If you can send an email, you can use Sidecar. We handle all the setup and training.'

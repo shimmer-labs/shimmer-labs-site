@@ -283,10 +283,10 @@ if ($page->portfolioProjects()->isNotEmpty()) {
 </section>
 <?php endif ?>
 
-<!-- Sidecar: Scarcity + Pricing Anchor -->
+<!-- Sidecar: Capacity + Pricing Anchor -->
 <?php if ($isSidecar): ?>
 <div class="scarcity">
-  <p>We onboard <strong>5 businesses per month</strong>. Less than the cost of a part-time hire.</p>
+  <p>We have capacity for <strong>5 new Sidecar partners per month</strong>. From $1,000/mo + implementation from $1,000.</p>
 </div>
 <?php endif ?>
 
