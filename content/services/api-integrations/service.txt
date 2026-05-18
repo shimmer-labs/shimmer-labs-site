@@ -2,7 +2,7 @@ Title: API Integrations
 
 ----
 
-Meta_description: Custom n8n, Zapier, and Make integrations. $2,500-$7,000 per integration. Published 4 production podcast API integrations to npm. Fast delivery, clean code, proper documentation.
+Meta_description: Custom n8n, Zapier, and Make integrations. $2,500-$7,000 per integration. Shipped Taddy on all three platforms — n8n, Zapier, Make.com. Fast delivery, clean code, proper documentation.
 
 ----
 
@@ -10,7 +10,7 @@ Icon: 🔌
 
 ----
 
-Summary: Custom n8n, Zapier, or Make integrations that actually work. We've built 4 production podcast API integrations, published to npm and used by real companies.
+Summary: Custom n8n, Zapier, or Make integrations that actually work. Shipped the Taddy Podcast API across all three platforms — three production integrations, one shipment.
 
 ----
 

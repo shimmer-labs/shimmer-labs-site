@@ -2,35 +2,41 @@ Title: OffTheAppsOK
 ----
 Badge: Live
 ----
-Summary: Local event discovery and community curation for Stillwater, OK. Weekly roundups of the best things happening in town.
+Summary: A live iOS app shipped in 2 months that finds events anywhere — blurry flyers, sideways Instagram screenshots, anything — and gets them on your calendar so you actually show up. No vendor lock-in.
 ----
-Tech_stack: Telegram, OpenAI OCR, Google Sheets, AI Agent (ChatGPT), n8n, Canva
+Index_metric: iOS app shipped in 2 months. 98% event accuracy on blurry flyers and Instagram screenshots, proven in an n8n prototype first.
+----
+Featured: true
+----
+Tech_stack: Swift, SwiftUI, OpenAI Vision, n8n, OpenAI OCR, Google Sheets, Instagram, Canva
 ----
 Video_url: https://www.youtube.com/embed/xSWQKqTwyAA
 ----
 Description:
 
-## The Challenge
-Stillwater needed a way to discover local events without relying on dating apps. People wanted authentic, in-person connections.
+## The problem
 
-## The Solution
-Built a content system that curates and publishes local events:
-- Collects event data from multiple sources around Stillwater
-- OCR extracts text from event flyers
-- AI curates, categorizes, and writes engaging captions
-- Auto-generates branded Instagram posts
-- Publishes 2x weekly without manual intervention
+Most event apps want to own where you find events. You can only pull from their feed, only share to their network, only RSVP through their wall. That works for them. It does not work for someone who just wants to actually show up to the thing on the flyer at the coffee shop.
 
-## The Tech
-A custom pipeline connecting event discovery to Instagram publishing:
-1. Event flyers come in via Telegram
-2. OCR extracts details from images
-3. Google Sheets stores and deduplicates events
-4. AI writes engaging captions matching the account's voice
-5. Canva API creates branded graphics
-6. Instagram API publishes automatically
+People miss events because the path from "I saw a flyer" or "I saw an Instagram story" to "it's on my calendar" is too long.
+
+## The arc
+
+OffTheAppsOK started as a Stillwater event-discovery channel — flyers and Instagram stories curated into weekly roundups for locals trying to actually leave the house. Running that channel turned into a real engineering problem: parsing details out of blurry photos of flyers and screenshots of Instagram stories with consistent enough accuracy that the curation was trustworthy.
+
+Prototyped the parsing pipeline in n8n first to prove it could hit **98% event accuracy** on the worst-case inputs (low-light flyer photos, Instagram screenshots cropped wrong, handwritten chalkboards). Once the accuracy held up, the pipeline became the engine for a native iOS app.
+
+## What was shipped
+
+- **Stillwater event curation channel** — weekly roundups published to Instagram, sourced from real flyers, screenshots, and submissions.
+- **n8n parsing prototype** — Telegram intake → OpenAI Vision OCR → Google Sheets dedup → AI-written captions → Canva graphics → Instagram publish. Hit 98% event extraction accuracy on blurry, real-world inputs.
+- **Native iOS app** — Swift / SwiftUI built around the same parsing engine. Shipped to the App Store in 2 months. Snap a flyer, snap a screenshot, get the event on your calendar.
+
+## The point
+
+The anti-lock-in framing matters: events should live where you can act on them, which means your calendar. Not someone else's feed. The iOS app proves the curation engine works wherever the source is.
 
 ----
-Results: Curates 20+ events weekly, automates content creation, and supports a growing community of local explorers in Stillwater, OK looking to connect Off The Apps.
+Results: 2 months from start to live iOS app. 98% event extraction accuracy proven in the n8n prototype phase, then carried into the shipped app. Stillwater event channel still running weekly.
 ----
 Link: https://www.instagram.com/offtheappsok
