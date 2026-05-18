@@ -125,33 +125,6 @@ tabs:
             type: text
             help: e.g., "Coming soon"
 
-  projects:
-    label: Case Studies
-    fields:
-      projects:
-        label: Featured Case Studies
-        type: structure
-        fields:
-          title:
-            label: Project Name
-            type: text
-          description:
-            label: Description
-            type: textarea
-          icon:
-            label: Icon/Emoji
-            type: text
-            help: e.g., 🛒, 📊, 💬, 🔌
-          url:
-            label: Project URL (optional)
-            type: url
-          status:
-            label: Status
-            type: select
-            options:
-              active: Active
-              coming-soon: Coming Soon
-            default: active
 
   finalCta:
     label: Final CTA

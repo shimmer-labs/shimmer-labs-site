@@ -79,27 +79,6 @@ Founderimage: []
 
 
 
-Projects:
--
-  title: 'Amazon Price Tracker'
-  description: 'Automated price monitoring across multiple products with instant Telegram alerts. Saves hours of manual checking and never misses a deal.'
-  badge: 'Live'
-  image: amazon-price-tracker.jpg
-  link: https://github.com/shimmer-labs/amazon-price-tracker
--
-  title: 'OffTheAppsOK'
-  description: 'Local event curation and Instagram automation for Stillwater, OK. AI-powered content creation that posts 20+ events weekly without lifting a finger.'
-  badge: 'Live'
-  image: off-the-apps-ok.jpg
-  link: https://www.instagram.com/offtheappsok
--
-  title: 'Government Contracts Monitor'
-  description: 'Scrapes state and federal procurement sites, aggregates 100+ opportunities weekly, and filters them into a single source of truth. No more manual hunting.'
-  badge: 'Live'
-  image: apify-contracts.jpg
-  link: https://github.com/shimmer-labs/apify-contracts-monitor
-----
-
 Finalctatitle: Got a Problem? Let's Build the Fix.
 
 ----

@@ -2,15 +2,15 @@ Title: About
 
 ----
 
-Meta_description: Logan Shimmer — systems engineer with a decade across National Instruments, Iterable, WeaveGrid, and Sense. Now building AI-assisted operational workflows for small businesses out of Stillwater, Oklahoma. OSU alum, AI for Industry microcredential through OSU CEAT.
+Meta_description: Logan Shimmer — systems engineer with two decades across National Instruments, Iterable, WeaveGrid, and Sense. Now building AI-assisted operational workflows for small businesses out of Stillwater, Oklahoma. OSU alum. Teaches the AI & Marketing course at the Stillwater Chamber's Small Business University.
 
 ----
 
-Headline: Hi, I'm Logan.
+Headline: Logan Shimmer is a systems engineer who builds AI-assisted operational workflows for small businesses.
 
 ----
 
-Tagline: Logan Shimmer is a systems engineer who builds AI-assisted operational workflows for small businesses.
+Tagline: Hi, I'm Logan. Two decades across National Instruments, Iterable, WeaveGrid, and Sense. Now running Shimmer Labs out of Stillwater, Oklahoma.
 
 ----
 
@@ -28,7 +28,7 @@ The work that became Shimmer Labs was the work Logan was already doing — makin
 
 ## The career arc
 
-About a decade of systems engineering and operations work, in production, before AI was the category it is now:
+Two decades of systems engineering and operations work, in production, before AI was the category it is now:
 
 - <a href="https://www.ni.com" rel="noopener" target="_blank">**National Instruments**</a> — test & measurement systems.
 - <a href="https://iterable.com" rel="noopener" target="_blank">**Iterable**</a> — marketing infrastructure at scale.
@@ -37,9 +37,11 @@ About a decade of systems engineering and operations work, in production, before
 
 A deeper interview-led narrative is in progress.
 
-## OSU connection
+## Teaching and credentials
 
-OSU class of '09 alum. AI for Industry microcredential through <a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">**OSU CEAT Professional Development**</a>.
+OSU class of '09 alum. AI for Industry microcredential through <a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">**OSU CEAT Professional Development**</a> — an applied course on using AI inside technical organizations.
+
+Currently teaching **AI & Marketing** in the <a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">**Stillwater Chamber of Commerce's Small Business University**</a> program. Local owners learn what AI can actually do for their shop — without the hype, vendor lock-in, or the security mistakes that show up in the headlines.
 
 ## Pre-Shimmer client work is the credential
 
@@ -47,7 +49,7 @@ The Supabase and Taddy work that anchors the case studies happened **before Shim
 
 ## Why Stillwater
 
-Logan returned from California to build a rooted business here. Office Hours runs every Tuesday and Thursday, 2-4 PM, at WorkIT Stillwater. Walk-in, free, in person.
+Logan returned to Stillwater after **17 years in California** to build a rooted business at home. Office Hours runs every Tuesday and Thursday, 2-4 PM, at WorkIT Stillwater. Walk-in, free, in person.
 
 ## What we do and don't do
 
