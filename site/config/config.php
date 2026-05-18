@@ -133,7 +133,21 @@ return [
         $pages = $site->index()->listed()->not(['error', 'offline', 'notes']);
 
         // Also include specific unlisted pages we want indexed
-        $extraPages = ['lunch-learn', 'scan', 'office-hours', 'event-video'];
+        $extraPages = [
+          'about',
+          'contact',
+          'case-studies',
+          'services/sidecar',
+          'services/custom-apps',
+          'services/api-integrations',
+          'ai-agents-guide',
+          'ai-security-business',
+          'ai-security-education',
+          'lunch-learn',
+          'scan',
+          'office-hours',
+          'event-video',
+        ];
         foreach ($extraPages as $slug) {
           if ($p = $site->find($slug)) {
             $pages = $pages->add($p);

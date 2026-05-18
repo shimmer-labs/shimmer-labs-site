@@ -15,7 +15,7 @@
 
         <div class="how-it-works__story">
           <div class="how-it-works__story-photo">
-            <img src="<?= url('assets/images/testimonials/anna-moore.jpg') ?>" alt="Anna Moore, Sweat Yoga & Fitness" loading="lazy">
+            <img src="<?= url('assets/images/testimonials/anna-moore.jpg') ?>" alt="Anna Moore, Owner of Sweat Yoga & Fitness in Stillwater, Oklahoma" loading="lazy">
           </div>
           <div class="how-it-works__story-text">
             <blockquote class="how-it-works__story-quote">&ldquo;I hated this place. I was actively looking for someone to buy it.&rdquo;<cite> &mdash; Anna Moore, Sweat Yoga &amp; Fitness</cite></blockquote>
@@ -31,13 +31,13 @@
             <p class="how-it-works__payoff">So he can keep building the infrastructure that lets indie creators own their own work.</p>
           </div>
           <div class="how-it-works__story-photo">
-            <img src="<?= url('assets/images/testimonials/danny-mathews.jpg') ?>" alt="Danny Mathews, Taddy" loading="lazy">
+            <img src="<?= url('assets/images/testimonials/danny-mathews.jpg') ?>" alt="Danny Mathews, Founder of Taddy (podcast and webcomics API for indie creators)" loading="lazy">
           </div>
         </div>
 
         <div class="how-it-works__story">
           <div class="how-it-works__story-photo">
-            <img src="<?= url('assets/images/testimonials/kristen-hadley.jpg') ?>" alt="Kristen Hadley, TreeBidPro" loading="lazy">
+            <img src="<?= url('assets/images/testimonials/kristen-hadley.jpg') ?>" alt="Kristen Hadley, Founder of TreeBidPro (tree service estimating software)" loading="lazy">
           </div>
           <div class="how-it-works__story-text">
             <p class="how-it-works__story-lead"><strong>Kristen</strong> runs a tree service. Her sidecar handles estimating and invoicing.</p>

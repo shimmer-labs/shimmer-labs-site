@@ -1,27 +1,55 @@
 # Shimmer Labs
 
-> Custom software development agency in Stillwater, Oklahoma specializing in web apps, iOS apps, API integrations, and AI agents.
-
-Shimmer Labs builds custom software for small businesses. Founded by Logan Shimmer, a mechanical engineer turned software developer. We take ideas from wireframe to production — mobile apps, web apps, Shopify development, and API integrations. Based at 901 S. Main St, Stillwater, OK 74074.
+> Custom software for small businesses. AI-assisted operational workflows, web and iOS apps, and API integrations. Based in Stillwater, Oklahoma. Built by a systems engineer with two decades across National Instruments, Iterable, WeaveGrid, and Sense.
 
 ## Services
-- [API Integrations](https://shimmerlabs.co/services/api-integrations): Custom API integrations and backend development ($3,500–$12,000)
-- [Wireframe to Web App](https://shimmerlabs.co/services/idea-to-web-app): Figma/Subframe to production Next.js app ($18,500–$55,000)
-- [iOS App Development](https://shimmerlabs.co/services/ios-apps): Native iOS development in Swift ($35,000–$75,000)
-- Full-Stack SaaS Development: 0-to-1 SaaS product development ($45,000–$125,000)
-- AI Agent Development: Custom AI agents for business automation
 
-## Products
-- [Paidly](https://paidly.co): AI-powered invoicing with contract intelligence for freelancers
-- [EventSnag](https://eventsnag.app): iOS app that turns event screenshots into calendar entries
-- [FlowMint](https://flowmint.me): AI email marketing campaigns generated from any website URL
+- [Sidecar](https://shimmerlabs.co/services/sidecar): Narrow AI-assisted operational workflows that handle one job each, with a human in the loop on anything customer-facing. From $1,000/mo + implementation from $1,000, scoped. Model API costs pass-through. Cancel anytime, no contracts. Live in a week, autonomous in a month. Shipped verticals: membership operations, creator outreach, document parsing, scheduling, lead-to-SMS.
+- [Custom Apps](https://shimmerlabs.co/services/custom-apps): Web and iOS apps, wireframes to launched product. Web from $15,000. iOS from $20,000. Flat-priced per scope.
+- [API Integrations](https://shimmerlabs.co/services/api-integrations): Point-to-point integrations for n8n, Zapier, and Make.com. $2,500 - $7,000 per integration.
 
-## Portfolio
-- [Projects](https://shimmerlabs.co/projects): Full portfolio including TreeBidPro, n8n/Taddy API Nodes, Amazon Price Tracker, and more
+## Case studies
 
-## Company Info
-- [About](https://shimmerlabs.co/about): Our story and approach
-- [Contact](https://shimmerlabs.co/contact): Get in touch for a project consultation
-- Address: 901 S. Main St, Stillwater, OK 74074
+- [Sweat Yoga & Fitness](https://shimmerlabs.co/case-studies/sweat-yoga-fitness): Membership-operations sidecar for a Stillwater yoga studio whose booking platform (WellnessLiving) had no API for cancellations or freezes. Built browser automation that drives the UI. MVP live in week 1, fully autonomous by week 4. 50+ cancellations and freezes processed to date, including the graduation rush.
+- Supabase: Creator-outreach sidecar built for Sarah Gold (Marketing Program Manager at Supabase) as a subcontractor before Shimmer Labs existed. 5x output, 100+ creators shipped, 15 hours per week returned. Featured on the homepage.
+- [Paidly](https://shimmerlabs.co/case-studies/paidly): Document-parsing SaaS for invoice processing. 33 paying users, 95% parsing accuracy on production invoices. Stack: Next.js, Supabase, Gemini 2.0 Flash-Lite, Stripe Connect.
+- [Taddy API Integrations](https://shimmerlabs.co/case-studies/taddy-api-integrations): Distributed the Taddy Podcast API across n8n, Zapier, and Make.com - three platforms, one shipment.
+- [FlowMint](https://shimmerlabs.co/case-studies/flowmint): AI-assisted email marketing for Shopify merchants. Brand analysis to Klaviyo push in under 3 minutes.
+- [TreeBidPro](https://shimmerlabs.co/case-studies/treebidpro): Pricing-rule engine with LLM-assisted bid generation for tree service contractors. Wireframes to production-ready web app in 2 weeks.
+- [EventSnag](https://shimmerlabs.co/case-studies/eventsnag): Native iOS app that turns event screenshots into calendar entries. Shipped to the App Store.
+
+## Founder
+
+Logan Shimmer is a systems engineer who builds AI-assisted operational workflows for small businesses. Two decades across [National Instruments](https://www.ni.com), [Iterable](https://iterable.com), [WeaveGrid](https://www.weavegrid.com), and [Sense](https://sense.com) - test & measurement, marketing infrastructure, and clean energy. OSU class of '09 alum. AI for Industry microcredential through [OSU CEAT Professional Development](https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals). Currently teaching the AI & Marketing course in the [Stillwater Chamber of Commerce's Small Business University](https://www.stillwaterchamber.org/economic-development/small-business-university) program.
+
+Returned to Stillwater after 17 years in California to build a rooted business at home.
+
+## Pricing summary
+
+- Sidecar: from $1,000/month + implementation from $1,000. Cancel anytime, no contracts. Model API costs pass-through.
+- Custom Apps - Web: from $15,000 flat-priced per scope.
+- Custom Apps - iOS: from $20,000 flat-priced per scope.
+- API Integrations: $2,500 - $7,000 per integration.
+
+## Audience
+
+Owner-operators of service businesses with 1-10 employees doing $15-25/hr admin work themselves: trades (plumbing, electrical, HVAC, tree, landscaping), wellness (yoga, massage, training), personal services (barbers, nails, cleaning). Also indie SaaS founders who need a developer-shaped partner without an agency relationship.
+
+## Not for
+
+Enterprises with procurement. Businesses looking for a website chatbot. Anyone wanting to replace their team with AI. Anyone wanting build-it-and-walk-away pricing on something that requires maintenance.
+
+## Free guides
+
+- [AI Agents for Small Business](https://shimmerlabs.co/ai-agents-guide): Why most businesses see no value from AI yet, three evolutions from prompt engineering to AI agents, framework for deciding what to automate, the rejection skill of knowing when not to use AI.
+- [AI Security for Business](https://shimmerlabs.co/ai-security-business): Real incidents (Samsung source code leak, Air Canada chatbot liability), FERPA/HIPAA basics, prompt injection, OWASP Top 10 for LLM Applications, printable security checklist, Traffic Light Framework.
+- [AI Security for Higher Education](https://shimmerlabs.co/ai-security-education): AI family tree, higher-ed-specific case studies (Amazon hiring algorithm, Clearview AI), prompt injection, OWASP Top 10 for LLM Applications, printable checklist, Traffic Light Framework.
+
+## Contact
+
 - Email: logan@shimmerlabs.co
+- Book a call: https://shimmerlabs.co/contact
+- Office Hours: Tuesdays and Thursdays, 2-4 PM, WorkIT, 901 S Main St Suite 86, Stillwater OK. Walk-in, free, in person.
+- LinkedIn: https://www.linkedin.com/in/loganshimmer
 - GitHub: https://github.com/shimmer-labs
+- Instagram: https://www.instagram.com/shimmer.labs
