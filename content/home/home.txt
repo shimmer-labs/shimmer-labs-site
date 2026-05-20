@@ -61,22 +61,6 @@ Featuredcasestudy: []
 
 ----
 
-Foundername: Logan Shimmer
-
-----
-
-Foundertitle: Founder & Developer
-
-----
-
-Founderbio: Mechanical engineer turned software developer. Logan started Shimmer Labs to build the tools small businesses can't find off the shelf. He's shipped iOS apps (EventSnag), SaaS platforms (Paidly), Shopify apps (FlowMint), and client projects like TreeBidPro, a web app built from wireframes in two weeks. You work directly with him. No account managers, no handoffs.
-
-----
-
-Founderimage: []
-
-----
-
 
 
 Finalctatitle: Got a Problem? Let's Build the Fix.

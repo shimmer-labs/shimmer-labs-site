@@ -1,0 +1,46 @@
+Title: What we've shipped
+
+----
+
+Meta_description: Inventory of everything Shimmer Labs has shipped — Sidecar workflows, custom apps, and API integrations — with year, stack, outcome, and links.
+
+----
+
+Intro: One page. Every project. Year, stack, outcome, link. The fastest way to see if we've shipped something close to your problem before.
+
+----
+
+Text:
+
+## Sidecar workflows
+
+| Project | Year | Stack | Outcome | Link |
+|---|---|---|---|---|
+| Sweat Yoga membership operations | 2026 | WellnessLiving (browser automation), Perplexity Computer, Claude, Gmail, ManyChat | MVP live in week 1, autonomous by week 4. 50+ cancellations and freezes processed to date, including graduation rush. | [Read the case study](/case-studies/sweat-yoga-fitness) |
+| Supabase creator outreach | 2025 (pre-shingle) | Claude, YouTube + 6-platform contact scraping, Slack approval, Gmail | 5x output. 100+ creators shipped in months. 15 hours/week returned. | Featured on [homepage](/) |
+| Paidly invoice parsing pipeline | 2026 | Next.js, Supabase, Gemini 2.0 Flash-Lite, Stripe Connect | 33 paying users, 95% parsing accuracy on production invoices. | [Read the case study](/case-studies/paidly) |
+
+## Custom apps (web + iOS)
+
+| Project | Year | Stack | Outcome | Link |
+|---|---|---|---|---|
+| TreeBidPro | 2026 | React, Vite, Supabase, pricing-rule engine, LLM-assisted bid generation, PDF generation | Wireframes to production-ready web app in 2 weeks. Live, accepting contractor signups. | [Read the case study](/case-studies/treebidpro) |
+| Paidly | 2025-2026 | Next.js 14, TypeScript, Supabase, Gemini 2.0 Flash-Lite, Stripe Connect, Notion API, Chrome Web Store | Zero to payments in 6 weeks. Live SaaS with paying users. | [Read the case study](/case-studies/paidly) |
+| FlowMint | 2025-2026 | React Router v7, SQLite, Prisma, Anthropic Claude, Shopify Admin API, Klaviyo API, Fly.io | Brand analysis to Klaviyo push in under 3 minutes. Shopify app. | [Read the case study](/case-studies/flowmint) |
+| EventSnag | 2025-2026 | Swift, SwiftUI, OpenAI Vision, Google Calendar, iOS Share Extension, Core Data, Push Notifications | Native iOS app. Ships event screenshots into your calendar. | [Read the case study](/case-studies/eventsnag) |
+
+## API integrations
+
+| Project | Year | Stack | Outcome | Link |
+|---|---|---|---|---|
+| Taddy on n8n + Zapier + Make.com | 2025 | TypeScript, Node.js, GraphQL, Taddy Podcast API, Zapier Platform, Make.com Developer Platform, n8n Community Nodes, npm | Distributed the Taddy Podcast API across three no-code platforms simultaneously. Live and in use. | [Read the case study](/case-studies/taddy-api-integrations) |
+
+## What's not here
+
+Older side projects (Amazon Price Tracker, Apify government contracts monitor, OffTheAppsOK Instagram curation pipeline) have been retired from the portfolio. They were real, they shipped, they're just not the work we're selling now. EventSnag is the descendant of OffTheAppsOK; the rest are deprecated.
+
+If you're curious about something not listed here, the [Office Hours](/office-hours) door is open Tuesdays and Thursdays.
+
+----
+
+Uuid: work-page-001

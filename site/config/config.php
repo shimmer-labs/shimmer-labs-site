@@ -137,6 +137,8 @@ return [
           'about',
           'contact',
           'case-studies',
+          'comparison',
+          'work',
           'services/sidecar',
           'services/custom-apps',
           'services/api-integrations',
