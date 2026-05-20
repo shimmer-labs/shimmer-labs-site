@@ -34,14 +34,14 @@ Most agencies will:
 
 **We're different:**
 - **Meet you where you are:** Complete designs? Great. Napkin sketch? Also great.
-- **AI-powered speed:** We use AI agents to move 2-3x faster than traditional development
-- **Direct communication:** You talk to Logan, the developer. No middlemen.
+- **Anchored speed:** TreeBidPro shipped in **2 weeks** from wireframes to production with Stripe live, where agencies typically quote 3-6 months for the same scope. Paidly went from "I have an idea" to a live SaaS processing real payments in **6 weeks**.
+- **Direct communication:** You talk to Logan, the developer who built TreeBidPro, Paidly, and EventSnag. No account managers, no offshore subcontracting, no handoffs.
 - **Web + iOS:** We build both. Most shops outsource one or the other.
 
-**Real examples:**
-- **TreeBidPro:** Wireframes to production with Stripe in 2 weeks
-- **Paidly:** "I have an idea" to SaaS processing real payments in 6 weeks
-- **EventSnag:** Native iOS app, screenshot to calendar with AI, shipped to App Store
+**Real examples with real numbers:**
+- **TreeBidPro:** Wireframes to production with Stripe in 2 weeks. Live, accepting contractor signups.
+- **Paidly:** Zero to SaaS processing real payments in 6 weeks. 33 paying users, 95% parsing accuracy on production invoices.
+- **EventSnag:** Native iOS app, OpenAI Vision parsing event screenshots into calendar entries at 98% accuracy on blurry inputs. Shipped to the App Store.
 
 ----
 

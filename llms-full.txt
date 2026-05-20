@@ -1,0 +1,371 @@
+# Shimmer Labs — Full Site Reference
+
+> Long-form companion to `/llms.txt`. Everything an AI crawler or shortlist tool would want to know about Shimmer Labs in a single file: services with pricing, case studies with full outcomes, founder background, free guides with table-of-contents, audience, and contact. Companion to the structured site at https://shimmerlabs.co.
+
+Last updated: 2026-05-20. When pricing or claims change on the site, this file is updated too.
+
+---
+
+## What Shimmer Labs is
+
+Shimmer Labs is a two-line software consultancy in Stillwater, Oklahoma. It builds three kinds of things for small service businesses and indie SaaS founders:
+
+1. **Sidecar** — narrow AI-assisted operational workflows that handle one job each, with a human in the loop on anything that leaves the building.
+2. **Custom Apps** — web and iOS apps from wireframes to launched product.
+3. **API Integrations** — point-to-point integrations between SaaS tools that don't talk to each other natively.
+
+Operated by Logan Shimmer. The work is delivered by one engineer, not an agency.
+
+## Who built this and why it matters
+
+Logan Shimmer is a systems engineer with about two decades of experience across test & measurement, marketing infrastructure, and clean energy:
+
+- **National Instruments** (https://www.ni.com) — test & measurement systems.
+- **Iterable** (https://iterable.com) — marketing infrastructure at scale.
+- **WeaveGrid** (https://www.weavegrid.com) — clean energy / utility grid platforms.
+- **Sense** (https://sense.com) — clean energy / home energy monitoring.
+
+The work that became Shimmer Labs is the work he was already doing — making complex systems behave, designing the operational glue between tools, shipping reliable infrastructure — before AI became the dominant frame for that work.
+
+**OSU class of '09 alum.** Returned to Stillwater after 17 years in California to build a rooted business at home.
+
+**AI for Industry microcredential** through OSU CEAT Professional Development: https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals — an applied course on using AI inside technical organizations, not on writing better prompts.
+
+**Currently teaching** the AI & Marketing course in the Stillwater Chamber of Commerce's Small Business University program: https://www.stillwaterchamber.org/economic-development/small-business-university.
+
+This matters because "AI consultant" is a category with no barrier to entry. "Systems engineer who builds AI-assisted operational workflows" is a category with a barrier to entry. Shimmer Labs is the second thing.
+
+---
+
+## Sidecar (the productized service)
+
+URL: https://shimmerlabs.co/services/sidecar
+
+### What it is, in plain terms
+
+A small set of scheduled or event-triggered automations, each scoped to one job (cancel a membership, draft an outreach email, post to social, monitor reviews, parse an invoice, draft a monthly shift schedule), built using off-the-shelf LLMs (Claude is the default, Gemini for high-volume document parsing) plus the client's existing tools (Gmail, WellnessLiving, ManyChat, n8n, Slack, browser automation when an API doesn't exist), with a human-in-the-loop approval step for anything that goes to a customer.
+
+It is not a single agent. It is not fully autonomous out of the gate. Most flows go live with supervision in week one and reach fully autonomous operation by week four. That timeline is real — Anna Moore at Sweat Yoga ran it exactly.
+
+### Pricing
+
+- **$1,000/month flat fee.** Covers monitoring, maintenance, model upgrades, edge-case work, and the engineer-on-Slack relationship.
+- **Implementation from $1,000.** Scoped to the custom software work, systems engineering, and operations planning each build needs. Larger or higher-stakes scopes cost more.
+- **Model API costs are pass-through.** Shimmer Labs absorbs them during build and test. The client takes them on once the workflow is running. Typical workflow consumes $20-$100/month in Claude / Gemini API spend.
+- **Cancel anytime. No contracts. No cancellation fees.** If the workflow stops paying for itself, the client stops paying.
+- **No SOC 2, no procurement, no MSAs.** Explicitly sized for 1-10 employee service businesses.
+
+### Capabilities shipped to date
+
+| Capability | Shipped example | Specific outcome |
+|---|---|---|
+| Browser automation against a SaaS platform with no public API | Sweat Yoga / WellnessLiving membership cancel and freeze | 50+ cancellations and freezes processed to date, including the post-graduation rush — the highest-volume window of the year for a college-town studio |
+| LLM-drafted outreach with human Slack approval before send | Supabase creator outreach | 5x output, 100+ creators shipped in months, 15 hours per week returned |
+| Document-parsing pipelines with measurable accuracy | Paidly | 33 paying users, 95% parsing accuracy on production invoices |
+| Multi-platform API distribution | Taddy | Shipped to n8n, Zapier, and Make.com simultaneously |
+| Constraint-aware monthly scheduling for hourly teams | Sweat Yoga staff scheduling | 5-10 hourly employees, 29-hour cap respected, drafts unpublished for human approval |
+| AI-assisted email flow generation against Shopify + Klaviyo | FlowMint | Brand analysis to Klaviyo push in under 3 minutes |
+
+### What Sidecar is NOT
+
+- Not a chatbot on your website.
+- Not autonomous decision-making for anything that touches money, customers, or compliance without a human in the loop.
+- Not a team replacement.
+- Not enterprise — explicitly sized for 1-10 employee service businesses.
+- Not "set it and forget it" — there is an ongoing maintenance fee because models drift, APIs change, and edge cases appear.
+
+### Process / timeline
+
+- **Day 0:** Free 30-minute discovery call. Figure out what to automate and whether Sidecar is the right fit. No pitch, no pressure. We'll route you to a Fiverr freelancer if that's a better fit.
+- **Week 1:** MVP live in production, handling real work with supervision. Anna Moore at Sweat Yoga had her membership-ops sidecar handling real customer requests within the first week.
+- **Weeks 2-3:** Tuning against your real data. You review everything the agent does. We catch edge cases and adjust to how your business actually behaves.
+- **Week 4:** Fully autonomous. No supervision needed. The agent runs, we monitor and maintain, you get a weekly summary.
+
+### Sidecar FAQ (flattened)
+
+**Q: What does "AI agent" actually mean?**
+A: Software that does a specific job for you — like screening resumes, posting to Instagram, or parsing an invoice — without you having to click buttons. You set the rules and the boundaries; the agent does the work, with a human in the loop on outbound.
+
+**Q: Will it make mistakes?**
+A: Sometimes. That's why we do a supervised rollout in weeks two and three before going autonomous in week four. Your agents run with our team watching, and we catch edge cases before they reach a customer.
+
+**Q: How much does it cost?**
+A: Sidecar starts at $1,000/mo. Implementation from $1,000, scoped to your build. Model API costs are pass-through — we absorb them during build and test, you take them on once running. Cancel anytime. No contracts.
+
+**Q: What if I hate it?**
+A: Cancel anytime. No contracts, no cancellation fees. If it's not saving you time, you shouldn't be paying for it.
+
+**Q: How long until it's running?**
+A: Live in a week, autonomous in a month. Most clients see their first agent handling real work with supervision in week one, tuning against real data in weeks two and three, and running fully autonomously by week four.
+
+**Q: Do I need to be technical?**
+A: No. If you can send an email, you can use Sidecar. We handle all the setup, training, and ongoing maintenance.
+
+### Tech stack
+
+Claude (default), Gemini (high-volume document parsing), n8n, ManyChat, browser automation (Perplexity Computer, Claude in Chrome), and custom integrations against whatever the client already uses. When the vendor's API doesn't exist, we build browser automation against the UI instead.
+
+### Audience for Sidecar
+
+Owner-operators of service businesses with 1-10 employees doing $15-25/hr admin work themselves:
+- Trades: plumbing, electrical, HVAC, tree, landscaping
+- Wellness: yoga, massage, training
+- Personal services: barbers, nails, cleaning
+- Indie SaaS founders who need a developer-shaped partner without an agency relationship
+
+### Not the right fit for Sidecar
+
+Enterprises with procurement. Businesses looking for a chatbot on their website. Anyone wanting to replace their team with AI. Anyone wanting build-it-and-walk-away pricing on something that requires maintenance. Anyone whose total automation budget caps under $1,000/mo.
+
+---
+
+## Custom Apps
+
+URL: https://shimmerlabs.co/services/custom-apps
+
+### Pricing
+
+- **Web apps from $15,000.** Flat-priced per scope.
+- **iOS apps from $20,000.** Flat-priced per scope.
+
+### Proof
+
+- **TreeBidPro:** Wireframes Kristen Hadley had been sitting on for over a year, shipped as a production-ready web app in 2 weeks. React, Vite, Supabase, pricing-rule engine, LLM-assisted bid generation, PDF generation, Stripe billing.
+- **Paidly:** Zero to live SaaS processing payments in 6 weeks. 33 paying users at audit time, 95% parsing accuracy on production invoices. Next.js 14, TypeScript, Supabase, Gemini 2.0 Flash-Lite, Stripe Connect, Notion API, Chrome Web Store.
+- **EventSnag:** Native iOS app, App Store published. Swift, SwiftUI, OpenAI Vision API, Google Calendar, iOS Share Extension, Core Data, Push Notifications.
+
+### What's included
+
+- Production-grade code: TypeScript strict mode, Swift best practices, proper architecture.
+- Fully responsive web, native iOS in Swift (no React Native, no Flutter web wrappers).
+- CI/CD pipeline. Push to GitHub, auto-deploy.
+- Database design: Supabase with Row-Level Security on web, Core Data on iOS.
+- Payments-ready: Stripe (subscriptions, one-time, in-app purchases).
+- Code walkthrough, deployment guide, App Store submission, and 2-8 weeks post-launch bug-fix support.
+
+---
+
+## API Integrations
+
+URL: https://shimmerlabs.co/services/api-integrations
+
+### Pricing
+
+- **$2,500 - $7,000 per integration.** Flat-priced.
+- Tiers: Simple Integration (2 platforms, basic data flow) $2,500. Complex Integration (3+ platforms, custom logic, retry, webhooks) $5,000. Custom Node/Plugin (full marketplace integration, npm-published, tested, documented) $7,000.
+
+### Proof
+
+- **Taddy:** Shipped the Taddy Podcast API across n8n, Zapier, and Make.com simultaneously — three production integrations, one shipment. TypeScript, Node.js, GraphQL, npm-published, Zapier Platform, Make.com Developer Platform, n8n Community Nodes.
+
+### What's included
+
+Clean production-ready code. Documentation. Jest test coverage on critical paths. 30-90 days post-launch support depending on scope. Full source code handoff — no vendor lock-in.
+
+### Restricted toolset (by design)
+
+We work with n8n, Zapier, and Make.com. Not Workato, not MuleSoft. The focus is faster delivery and fewer bugs. If you need an enterprise integration platform, we'll point you to someone else.
+
+---
+
+## Case studies (full detail)
+
+### Sweat Yoga & Fitness
+
+URL: https://shimmerlabs.co/case-studies/sweat-yoga-fitness
+
+- **Client:** Anna Moore, Owner of Sweat Yoga & Fitness in Stillwater, Oklahoma. Yoga instructor, marathon runner, former military officer.
+- **Engagement:** Sidecar Pilot. March 2026 to ongoing.
+- **The opening line that anchors the case study:** "I hated this place. I was actively looking for someone to buy it."
+- **Why it was hard:** Anna's booking platform, WellnessLiving, has no API for membership cancellation or freeze actions. Zapier and n8n can't help — they connect APIs that exist. WellnessLiving's enterprise API agreement is $19/month plus $150/hour change fees with no scope cap, a non-starter for a single-location studio.
+- **What was built:** Browser-automation agent that logs into WellnessLiving, reads context from a forwarded email, picks the right PDF (cancellation with 30-day notice, or freeze with 30-90 day window), validates against Sweat's business rules (cancellations require 3+ months payment history; freezes must fall between 30 and 90 days), updates the membership in WellnessLiving, and sends a confirmation email. If anything is off, the agent stops and flags both Anna and Logan for review. Plus: an Instagram DM responder for the five repeating questions, and a monthly staff scheduling agent for the 5-10 hourly employees.
+- **Timeline:** MVP live in week one. Fully autonomous by week four.
+- **Outcome:** 50+ cancellations and freezes processed seamlessly to date, including the graduation rush — the highest-volume window of the year for a college-town studio. Zero times Anna had to log into WellnessLiving herself.
+- **Anna's quote on the result:** "It feels weird that I don't have to be monitoring my email constantly."
+- **Tech stack:** Perplexity Computer, ManyChat Pro + AI, Claude Desktop, Claude in Chrome, Gmail, WellnessLiving, When I Work, Instagram, WordPress.
+
+### Supabase (Sarah Gold)
+
+Featured on homepage at https://shimmerlabs.co/.
+
+- **Client:** Sarah Gold, Marketing Program Manager at Supabase. Engagement happened pre-Shimmer-Labs-shingle — Logan worked it as a subcontractor for the Supabase developer-tools team.
+- **The problem:** Sarah's job is creator outreach. The work was entirely manual: find developers mentioning Supabase in YouTube videos, hunt down their contact info across six platforms, draft personalized messages, ship them Supabase merchandise. Twenty shirts a year.
+- **What was built:** Agent scouts YouTube twice a week, hunts contacts across six platforms, drafts ten messages at a time. Sarah approves in Slack before send.
+- **Outcome:** 5x output. 100+ creators shipped in months. 15 hours per week returned. Sarah went from YouTube detective to leading creative campaigns.
+- **Why the pre-shingle framing matters:** Same engineering pattern. Same human-in-the-loop guardrails. Same production-grade work. Pre-shingle isn't a footnote — it's the proof the engineering didn't change when the brand showed up.
+
+### Paidly
+
+URL: https://shimmerlabs.co/case-studies/paidly
+
+- **What it is:** Small paid SaaS that started as Logan's own invoicing problem and became a repeatable document-parsing capability.
+- **Outcome:** 33 paying users. 95% parsing accuracy on production invoices.
+- **Tech stack:** Next.js 14, TypeScript, Supabase, Gemini 2.0 Flash-Lite (chosen specifically for the high-volume document-parsing job, not Claude), Stripe Connect, Notion API, Chrome Web Store.
+- **The pattern:** Fits any business drowning in PDFs (invoices, contracts, statements). The same document-parsing pipeline is part of Sidecar's shipped vertical inventory.
+
+### Taddy API Integrations
+
+URL: https://shimmerlabs.co/case-studies/taddy-api-integrations
+
+- **Client:** Danny Mathews, founder of Taddy (podcast and webcomics API for indie creators).
+- **The problem:** Taddy had great podcast data. Nobody on n8n, Zapier, or Make.com could find it. Three platforms; nobody had built integrations.
+- **What was built:** Three production integrations, shipped in parallel.
+- **Outcome:** Live on n8n, Zapier, and Make.com simultaneously — three platforms, one shipment.
+- **Tech stack:** TypeScript, Node.js, GraphQL, Taddy Podcast API, npm, Zapier Platform, Make.com Developer Platform, n8n Community Nodes.
+
+### TreeBidPro
+
+URL: https://shimmerlabs.co/case-studies/treebidpro
+
+- **Client:** Kristen Hadley, founder and tree service operator.
+- **The problem:** Pricing jobs accurately. Price too high, lose the bid. Price too low, lose money on the job. New contractors underprice dangerous jobs or overprice simple ones.
+- **What was built:** Pricing-rule engine plus LLM-assisted bid generation. Enter tree species, height, circumference, job type, and site conditions; the rule engine applies the math, the LLM drafts the bid copy.
+- **Timeline:** Wireframes Kristen had been sitting on for over a year, shipped as production-ready web app in 2 weeks.
+- **Tech stack:** React, Vite, Supabase, pricing-rule engine, LLM-assisted bid generation, PDF generation, Stripe billing.
+- **Pricing model on TreeBidPro itself:** Freemium. Free tier with limited estimates. Pro tier at $29/month for unlimited estimates, full job tracking, PDF exports.
+
+### FlowMint
+
+URL: https://shimmerlabs.co/case-studies/flowmint
+
+- **What it is:** AI-assisted email marketing app for Shopify merchants. Analyzes brand, generates personalized email flows, pushes to Klaviyo.
+- **Outcome:** Brand analysis to Klaviyo push in under 3 minutes.
+- **Tech stack:** React Router v7, SQLite, Prisma, Anthropic Claude, Shopify Admin API, Klaviyo API, Fly.io.
+
+### EventSnag
+
+URL: https://shimmerlabs.co/case-studies/eventsnag
+
+- **What it is:** Native iOS app that turns event screenshots into calendar entries. Snap a flyer, snap an Instagram story, get the event on your calendar.
+- **Outcome:** Shipped to the App Store. Uses OpenAI Vision API to parse blurry flyers and Instagram screenshots at high accuracy.
+- **Tech stack:** Swift, SwiftUI, OpenAI Vision API, Google Calendar API, iOS Share Extension, Core Data, Push Notifications.
+
+---
+
+## Differentiators that are real and provable
+
+1. **Systems engineering background**, not "I learned prompting last year." Two decades across NI, Iterable, WeaveGrid, Sense — the work was always making complex systems behave.
+2. **We build when the off-the-shelf vendor's API doesn't exist.** Sweat Yoga's browser automation against WellnessLiving is the proof.
+3. **Live in a week, autonomous in a month.** Anna's timeline, not aspirational.
+4. **Pre-shingle work for known companies.** Supabase and Taddy were Logan's clients before Shimmer Labs existed.
+5. **Flat-priced, cancel anytime, no contracts.** Rare at small-shop scale.
+6. **Local + present.** Office Hours twice a week at WorkIT Stillwater — a real, recurring, free, in-person surface that no remote competitor can match for Oklahoma businesses.
+
+---
+
+## How Shimmer Labs compares (honest take)
+
+URL: https://shimmerlabs.co/comparison
+
+Quick version of the comparison page, for retrievability:
+
+- **vs n8n consultants:** Sidecar wins when you don't have an in-house technical person to babysit a flow. n8n consultants win when you do.
+- **vs Make/Zapier shops:** Sidecar wins when the work needs LLM judgment, browser automation against API-less platforms, or human approval gates. Make/Zapier shops win for clean A-to-B integrations.
+- **vs full-service agencies:** Sidecar wins on time-to-first-value (week 1) and one-engineer accountability. Agencies win when you need strategy across multiple channels with a $50k+ budget.
+- **vs Fiverr freelancers:** Sidecar wins when the failure mode is "a customer gets the wrong message." Fiverr wins for genuinely simple one-off builds.
+- **vs hiring a part-time admin:** Sidecar wins on rules-based repetitive work; a human wins on judgment calls requiring in-room presence.
+
+First-year cost comparison: Sidecar ~$13,000 (one workflow, maintained). Make/Zapier shop $2,000-$5,000 (no maintenance). Fiverr $500-$2,000 (debugging on you). Part-time admin ~$22,000 + payroll burden. Full-service agency $50,000-$150,000. n8n consultant project $4,000-$15,000 (flow on your instance, you run it).
+
+---
+
+## Free guides
+
+URL pattern: https://shimmerlabs.co/{slug}. Each is a downloadable PDF gated behind an email opt-in.
+
+### AI Agents for Small Business — "Too Many Hats, Not Enough Hours"
+
+URL: https://shimmerlabs.co/ai-agents-guide
+
+For small business owners spending too much of the week on admin work that has nothing to do with their craft. Covers:
+
+- Why 74% of companies report no tangible value from AI yet (McKinsey 2026) — the missing piece is workflow design, not the technology.
+- Three evolutions from prompt engineering to AI agents.
+- What makes an AI agent different from a chatbot.
+- A practical framework for deciding what to automate.
+- The rejection skill: knowing when *not* to use AI.
+
+Audience: someone running a 1-10 person business who needs working examples, not hype.
+
+### AI Security for Business
+
+URL: https://shimmerlabs.co/ai-security-business
+
+For business leaders whose teams are already using AI tools, whether or not there's a policy in place. Covers:
+
+- Real incidents that should shape your policy: Samsung's source code leak through ChatGPT, Air Canada's chatbot liability ruling.
+- FERPA and HIPAA basics before letting a language model near customer or patient data.
+- Prompt injection in 30 seconds.
+- Full OWASP Top 10 for LLM Applications.
+- Printable security checklist.
+- Traffic Light Framework for distinguishing safe from unsafe AI use.
+
+Audience: small or mid-sized business, not enterprise compliance teams.
+
+### AI Security for Higher Education
+
+URL: https://shimmerlabs.co/ai-security-education
+
+For higher-ed administrators and faculty whose students and staff are already using ChatGPT. Covers:
+
+- The AI family tree — what's actually behind ChatGPT and the models like it.
+- Higher-ed-specific cautionary case studies: Amazon hiring algorithm, Clearview AI facial recognition.
+- Prompt injection in 30 seconds.
+- Full OWASP Top 10 for LLM Applications.
+- Printable security checklist.
+- Traffic Light Framework for green/yellow/red AI uses.
+
+Audience: the person who actually has to decide institutional policy.
+
+---
+
+## Office Hours
+
+A real, recurring, free, in-person surface:
+
+- **When:** Tuesdays and Thursdays, 2-4 PM.
+- **Where:** WorkIT, 901 S Main St Suite 86, Stillwater, OK 74074.
+- **Format:** Walk-in. No appointment needed. Bring the workflow that's eating your week.
+- **What you get:** 20 minutes with Logan. We'll tell you whether Sidecar is the right answer or whether you should hire a Fiverr freelancer instead. Sometimes the honest answer is "you don't need us yet."
+
+Office Hours is the lowest-cost way to test fit. It is not a sales appointment. We've sent people to other vendors when that was the right call.
+
+---
+
+## Audience and "not for"
+
+### Right fit
+
+- Owner-operators of service businesses with 1-10 employees doing $15-25/hr admin work themselves.
+- Indie SaaS founders who need a developer-shaped partner without an agency relationship.
+- Stillwater-area businesses who want a local engineer they can meet in person.
+
+### Wrong fit
+
+- Enterprises with procurement, MSAs, SOC 2 audits, RFPs.
+- Businesses looking for a chatbot on their website.
+- Anyone wanting to replace their team with AI.
+- Anyone wanting "set it and forget it" pricing on something that requires maintenance.
+- Total automation budget under $1,000/mo.
+
+---
+
+## Contact
+
+- **Email:** logan@shimmerlabs.co
+- **Book a 30-minute call:** https://shimmerlabs.co/contact
+- **Office Hours:** Tuesdays and Thursdays, 2-4 PM, WorkIT, 901 S Main St Suite 86, Stillwater OK. Walk-in, free.
+- **LinkedIn:** https://www.linkedin.com/in/loganshimmer
+- **GitHub:** https://github.com/shimmer-labs
+- **Instagram:** https://www.instagram.com/shimmer.labs
+
+---
+
+## How this file relates to the rest of the site
+
+- `/llms.txt` — the short version of this file. Used by AI shortlist tools that want a quick overview.
+- `/llms-full.txt` — this file. Used by AI tools that want the comprehensive picture without crawling 20+ HTML pages.
+- `/sitemap.xml` — list of every indexable page.
+- `/robots.txt` — explicit allow rules for major AI crawlers (GPTBot, ClaudeBot, Claude-Web, anthropic-ai, PerplexityBot, Google-Extended, CCBot, Applebot-Extended, and others).
+
+When the site changes, this file is updated. The site is the source of truth; this file is the AI-readable mirror.

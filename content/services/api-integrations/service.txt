@@ -24,10 +24,10 @@ Text:
 
 Most agencies charge $7k-15k and take 2 months for custom API integrations. We deliver in 1-2 weeks for **$2,500-$7,000** because:
 
-- **We've done this before:** Taddy is live on n8n, Zapier, and Make.com — three platforms, one shipment.
-- **Published to npm:** Real packages used by real companies.
-- **AI-assisted speed:** We use AI agents in our own dev workflow to move 2-3x faster than traditional development.
-- **Focused toolset:** We only work with n8n, Zapier, and Make. No learning curve.
+- **We've done this before:** Taddy went live on **n8n, Zapier, AND Make.com simultaneously** — three production integrations, one shipment, while most shops still ship one platform at a time.
+- **Published to npm:** Real packages, real install counts, real companies using them.
+- **Tight scope, anchored speed:** Simple integration in 1 week. Complex multi-platform integration in 2 weeks. Custom node/plugin in 3-4 weeks. No "give us 60 days" hand-waving.
+- **Focused toolset:** We only work with n8n, Zapier, and Make. No learning curve, no Workato detour.
 
 Your software doesn't play nice together? We build custom API wrappers that make your tools actually talk to each other. Clean code, proper documentation, no janky workarounds.
 
