@@ -101,15 +101,9 @@
   <header class="site-header">
     <div class="container">
       <nav class="site-nav">
-        <a href="<?= $site->url() ?>" class="site-logo">
-  <?php if ($site->logo()->toFile()): ?>
-    <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="<?= $site->title() ?>">
-<span class="logo-text"><?= $site->title() ?></span>
-
-  <?php else: ?>
-    <span class="logo-text"><?= $site->title() ?></span>
-  <?php endif ?>
-</a>
+        <a href="<?= $site->url() ?>" class="site-logo" aria-label="<?= $site->title() ?>">
+          <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="<?= $site->title() ?>">
+        </a>
         
         <?php $isServicesActive = $page->parent()?->id() === 'services' || $page->id() === 'event-video'; ?>
         <ul class="nav-menu" role="menubar">
