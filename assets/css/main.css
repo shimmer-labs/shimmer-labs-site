@@ -573,6 +573,62 @@ section {
 }
 
 /* ===================================
+   Local map section
+   =================================== */
+.local-map {
+  padding: var(--spacing-lg) 0 var(--spacing-xl);
+  background: var(--color-cream);
+}
+
+.local-map__title {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  color: var(--color-navy);
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.local-map__address {
+  text-align: center;
+  color: var(--color-gray-medium);
+  margin: 0 0 1.2rem;
+  font-size: 1rem;
+}
+
+.local-map__address a {
+  color: var(--color-navy);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 179, 0, 0.5);
+  text-underline-offset: 3px;
+}
+
+.local-map__address a:hover {
+  text-decoration-color: var(--color-gold);
+}
+
+.local-map__embed {
+  max-width: 920px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 16px rgba(10, 26, 47, 0.08);
+}
+
+.local-map__embed iframe {
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .local-map__title {
+    font-size: 1.5rem;
+  }
+  .local-map__embed iframe {
+    height: 360px;
+  }
+}
+
+/* ===================================
    Social Proof
    =================================== */
 .social-proof {
