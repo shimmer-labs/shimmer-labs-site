@@ -41,11 +41,11 @@ A deeper interview-led narrative is in progress.
 
 OSU class of '09 alum. AI for Industry microcredential through <a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">**OSU CEAT Professional Development**</a> — an applied course on using AI inside technical organizations.
 
-Currently teaching **AI & Marketing** in the <a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">**Stillwater Chamber of Commerce's Small Business University**</a> program. Local owners learn what AI can actually do for their shop — without the hype, vendor lock-in, or the security mistakes that show up in the headlines.
+Currently teaching **AI & Marketing** in the <a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">**Stillwater Chamber of Commerce's Small Business University**</a> program. Local owners learn what AI can actually do for their shop — without the hype, without getting stuck with one company's product, and without the security mistakes that keep showing up in the headlines.
 
-## Pre-Shimmer client work is the credential
+## Work that came before the brand
 
-The Supabase and <a href="/case-studies/taddy-api-integrations">Taddy</a> work that anchors the case studies happened **before Shimmer Labs had its own shingle.** Same pattern. Same human in the loop. Same production-grade work. Pre-shingle isn't a footnote — it's the proof the engineering didn't change when the brand showed up.
+The Supabase and <a href="/case-studies/taddy-api-integrations">Taddy</a> projects that anchor our case studies happened **before Shimmer Labs existed.** Same pattern. Same human checking everything before it goes out. Same real, working code in front of real customers. The work didn't change when the brand showed up — that's the proof it was solid all along.
 
 ## Why Stillwater
 
@@ -53,7 +53,7 @@ Logan returned to Stillwater after **17 years in California** to build a rooted 
 
 ## What we do and don't do
 
-We build for owner-operators of service businesses and indie SaaS founders. We don't pretend to be an enterprise vendor, build chatbots, or replace teams. We bring systems engineering, not just prompt engineering.
+We build for owner-operators of service businesses and indie SaaS founders. We don't pretend to be a big-company software vendor, we don't build chat bots, and we don't replace teams. We've been building real software for two decades. AI is a new tool we picked up, not our whole skill set.
 
 Want to see what that looks like for your business? <a href="/contact">Let's talk.</a>
 

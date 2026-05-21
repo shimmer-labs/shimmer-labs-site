@@ -12,67 +12,67 @@ Intro: If you run a 1-10 person business in Stillwater or anywhere in north-cent
 
 Text:
 
-## I'm the local one.
+## We're the local ones.
 
-I'm <a href="/about">Logan Shimmer</a>. OSU class of '09 alum. I returned to Stillwater after 17 years in California — most of it spent as a systems engineer at companies like <a href="https://www.ni.com" rel="noopener" target="_blank">National Instruments</a>, <a href="https://iterable.com" rel="noopener" target="_blank">Iterable</a>, <a href="https://www.weavegrid.com" rel="noopener" target="_blank">WeaveGrid</a>, and <a href="https://sense.com" rel="noopener" target="_blank">Sense</a>. I came home to build a software consultancy that serves Stillwater small businesses the way I'd want one to serve mine.
+Shimmer Labs is the local software shop. <a href="/about">Logan Shimmer</a> runs it. OSU class of '09 alum. He came back to Stillwater after 17 years in California — most of that time spent as a systems engineer at companies like <a href="https://www.ni.com" rel="noopener" target="_blank">National Instruments</a>, <a href="https://iterable.com" rel="noopener" target="_blank">Iterable</a>, <a href="https://www.weavegrid.com" rel="noopener" target="_blank">WeaveGrid</a>, and <a href="https://sense.com" rel="noopener" target="_blank">Sense</a> — to build a software consultancy that serves Stillwater small businesses the way he'd want one to serve his.
 
-That consultancy is <a href="/">Shimmer Labs</a>. We're a two-line operation. I'm the engineer. You talk to me directly — no account managers, no offshore subcontracting, no handoffs.
+We're a two-line shop. You talk to Logan directly — no account managers, no offshore subcontracting, no handoffs.
 
 ## Why local matters for AI work
 
-Most "AI consultants" your business will find on Google are in Dallas, Austin, Atlanta, or a Slack channel six time zones away. They charge agency prices, send you to an account manager, and the engineer doing the work has never set foot in Oklahoma.
+Most "AI consultants" you'll find on Google are in Dallas, Austin, Atlanta, or a Slack channel six time zones away. They charge agency prices, send you to an account manager, and the person doing the actual building has never set foot in Oklahoma.
 
-That works for some businesses. It does not work for most of the ones we work with. If your workflow is going to use AI to handle real customer-facing decisions — membership cancellations, outreach drafts, document parsing, invoicing — you want the person building it to be reachable, accountable, and ideally in the room.
+That works for some businesses. It does not work for most of the ones we work with. If you're going to use AI to handle real customer-facing work — membership cancellations, outreach drafts, invoice parsing, scheduling — you want the person building it to be reachable, accountable, and ideally in the room.
 
-That's the difference. **I do <a href="/office-hours">Office Hours every Tuesday and Thursday, 2-4 PM, at WorkIT in downtown Stillwater</a>.** Walk in, ask whatever you want, no appointment needed, no pitch.
+That's the difference. **We hold <a href="/office-hours">free Office Hours every Tuesday and Thursday, 2-4 PM, at WorkIT in downtown Stillwater</a>.** Walk in. Ask whatever you want. No appointment, no pitch.
 
-## What I do, in Stillwater terms
+## What we do, in Stillwater terms
 
-Three services, anchored in things I've already shipped for businesses you might know.
+Three services, anchored in real work we've already shipped for businesses you might know.
 
-### Sidecar — AI-assisted operational workflows
+### Sidecar — AI-assisted workflows
 
-Narrow automations, each scoped to one job, with a human in the loop on anything that touches a customer. We built one for <a href="/case-studies/sweat-yoga-fitness">Anna Moore at Sweat Yoga & Fitness</a> here in Stillwater — her booking platform (WellnessLiving) had no API for membership cancellations or freezes, so we built browser automation that drives the UI like a person would. MVP live in week one, fully autonomous by week four. 50+ cancellations and freezes processed to date, including the post-graduation rush.
+Small, focused automations. Each one does one job, and a person reviews anything that goes to a customer. We built one for <a href="/case-studies/sweat-yoga-fitness">Anna Moore at Sweat Yoga & Fitness</a> right here in Stillwater. Her booking platform (WellnessLiving) doesn't let outside software cancel or freeze memberships, so we built a workaround that clicks through the website the same way a person would. It was running real customer requests in the first week and ran on its own by week four. More than 50 cancellations and freezes processed so far, including the post-graduation rush.
 
-From **$1,000/month + implementation from $1,000**, scoped to your build. Cancel anytime, no contracts. <a href="/services/sidecar">More on Sidecar →</a>
+From **$1,000/month + setup from $1,000**, priced to what your build actually needs. Cancel anytime. No contracts. <a href="/services/sidecar">More on Sidecar →</a>
 
 ### Custom Apps — web and iOS
 
-Web apps from $15,000, iOS apps from $20,000, flat-priced per scope. <a href="/case-studies/treebidpro">TreeBidPro</a> went from a year-old stack of wireframes to a production-ready web app with Stripe billing in 2 weeks. <a href="/case-studies/paidly">Paidly</a> went from "I have an idea" to a live SaaS with paying users in 6 weeks. <a href="/services/custom-apps">More on Custom Apps →</a>
+Web apps from $15,000, iOS apps from $20,000, one flat price per project. <a href="/case-studies/treebidpro">TreeBidPro</a> went from a year-old stack of wireframes to a live web app with Stripe payments in 2 weeks. <a href="/case-studies/paidly">Paidly</a> went from "I have an idea" to a live SaaS taking real payments in 6 weeks. <a href="/services/custom-apps">More on Custom Apps →</a>
 
 ### API Integrations — n8n, Zapier, Make.com
 
-$2,500–$7,000 per integration. We shipped <a href="/case-studies/taddy-api-integrations">Taddy's podcast API</a> across all three platforms simultaneously — three production integrations, one shipment. <a href="/services/api-integrations">More on API Integrations →</a>
+$2,500–$7,000 per integration. We shipped <a href="/case-studies/taddy-api-integrations">Taddy's podcast data</a> on all three platforms at once — three working integrations, one project. <a href="/services/api-integrations">More on API Integrations →</a>
 
 ## Local proof and local connection
 
-- **<a href="/case-studies/sweat-yoga-fitness">Sweat Yoga & Fitness</a>** — yoga studio across the street from our office. Anna Moore's membership-operations sidecar runs in production today.
-- **<a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">Stillwater Chamber Small Business University</a>** — I'm currently teaching the AI & Marketing course in the SBU program. Local owners learn what AI can actually do for their shop without the hype or the vendor lock-in.
-- **<a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">OSU CEAT AI for Industry microcredential</a>** — completed through OSU CEAT Professional Development. An applied course on using AI inside technical organizations.
-- **Free AI Office Hours at WorkIT** — Tuesdays and Thursdays, 2-4 PM, 901 S Main Street Suite 86, Stillwater OK 74074. Walk in. I'll tell you whether AI can actually help your business or whether you should skip it. Sometimes the honest answer is "skip it for now."
+- **<a href="/case-studies/sweat-yoga-fitness">Sweat Yoga & Fitness</a>** — yoga studio across the street from our office. Anna Moore's membership-handling workflow runs in production today.
+- **<a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">Stillwater Chamber Small Business University</a>** — we teach the AI & Marketing course in the SBU program. Local owners learn what AI can actually do for their shop without the hype.
+- **<a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">OSU CEAT AI for Industry microcredential</a>** — completed through OSU CEAT Professional Development. A hands-on course on using AI inside technical organizations.
+- **Free AI Office Hours at WorkIT** — Tuesdays and Thursdays, 2-4 PM, 901 S Main Street Suite 86, Stillwater OK 74074. Walk in. We'll tell you whether AI can actually help your business or whether you should skip it. Sometimes the honest answer is "skip it for now."
 
 ## Who this is for
 
 Owner-operators of service businesses in Stillwater, Payne County, and north-central Oklahoma with 1-10 employees:
 
-- Trades (plumbing, electrical, HVAC, tree, landscaping)
+- Trades (plumbing, electrical, HVAC, tree work, landscaping)
 - Wellness (yoga, massage, training, fitness)
 - Personal services (barbers, nails, cleaning)
 - Indie SaaS founders and OSU-connected operators who want a local engineer
 
-If you're already paying a Dallas or Austin agency $50k+ a year for a strategy retainer and it's working, you don't need me. If you've been quoted $25k for a website that you suspect should cost half that, or you've been told an automation isn't possible because "the vendor doesn't have an API" — that's exactly where I work.
+If you're already paying a Dallas or Austin agency $50,000+ a year for a marketing retainer and it's working, you don't need us. If you've been quoted $25,000 for a website that should cost half that, or you've been told an automation isn't possible because "the vendor doesn't have an API" — that's exactly where we work.
 
-## What I don't do
+## What we don't do
 
-- Build chatbots for your website.
+- Build chat bots for your website.
 - Replace your team with AI.
 - Sell "set it and forget it" maintenance contracts.
-- Quote $50k for projects that should cost $15k.
-- Pretend to be an enterprise vendor with procurement, SOC 2, and MSAs.
+- Quote $50,000 for projects that should cost $15,000.
+- Pretend to be a big-enterprise vendor with procurement contracts and yearlong audits.
 
-## The fastest way to figure out if I can help
+## The fastest way to figure out if we can help
 
-**Walk in to Office Hours.** Tuesdays and Thursdays, 2-4 PM, WorkIT, 901 S Main Street Suite 86, Stillwater. Bring the workflow that's eating your week. I'll tell you in 20 minutes whether Sidecar is the right answer, whether you need a custom app, whether a Zapier flow could do it for $50, or whether you should hire a part-time admin instead.
+**Walk in to Office Hours.** Tuesdays and Thursdays, 2-4 PM, WorkIT, 901 S Main Street Suite 86, Stillwater. Bring the workflow that's eating your week. We'll tell you in 20 minutes whether Sidecar is the right answer, whether you need a custom app, whether a Zapier flow could do it for $50, or whether you should hire a part-time admin instead.
 
 No pitch. No pressure. Sometimes the honest answer is "you don't need a consultant yet."
 

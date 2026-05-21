@@ -32,8 +32,8 @@ You stay in the driver's seat. You do the work. Everything else, the boring stuf
 
 - **Membership operations**, cancellations, freezes, and modifications against platforms with no API (shipped for [Sweat Yoga](/case-studies/sweat-yoga-fitness))
 - **Creator outreach**, finds prospects, drafts personalized messages, you approve in Slack before send (shipped for Supabase)
-- **Document parsing**, contracts and invoices into structured data with measurable accuracy (shipped on [Paidly](/case-studies/paidly))
-- **Scheduling**, constraint-aware monthly shift drafts for hourly teams (shipped for Sweat Yoga)
+- **Document parsing**, pulling the right numbers off contracts and invoices, with the accuracy actually measured (shipped on [Paidly](/case-studies/paidly))
+- **Scheduling**, monthly shift drafts for hourly teams that respect your rules (hour caps, availability, fairness) (shipped for Sweat Yoga)
 - **Lead-to-SMS**, inbound leads triaged and responded to without you watching the inbox
 
 Coming next: hiring, proposals. We build a sidecar for one job at a time. Think of it as a tireless intern. Runs on a schedule, always with you calling the shots.
@@ -85,7 +85,7 @@ Process:
   description: 'We build, connect to your existing tools, and ship the first version into production. Anna at Sweat Yoga had her membership-ops sidecar handling real customer requests in week one.'
 -
   title: 'Weeks 2-3: Tuning against your real data'
-  description: 'You review everything the agent does. We catch edge cases, fine-tune responses, and adjust to how your business actually behaves.'
+  description: 'You review everything the agent does. We catch the weird situations, fine-tune responses, and adjust to how your business actually behaves.'
 -
   title: 'Week 4: Fully autonomous'
   description: 'No supervision needed. Agent runs, we monitor and maintain, you get a weekly summary. Anna ran this exact timeline.'
@@ -187,10 +187,10 @@ Faq:
   answer: 'Software that does a specific job for you, like screening resumes or posting to Instagram, without you having to click buttons. You set the rules, the agent does the work.'
 -
   question: 'Will it make mistakes?'
-  answer: 'Sometimes. That''s why we do a 2-week supervised rollout. Your agents run with our team watching, and we catch edge cases before they go fully autonomous.'
+  answer: 'Sometimes. That''s why we do a 2-week supervised rollout. Your agents run with our team watching, and we catch the weird situations before they go fully autonomous.'
 -
   question: 'How much does it cost?'
-  answer: 'Sidecar starts at $1,000/mo. Implementation from $1,000, scoped to your build. Model API costs are pass-through — we absorb them during build and test, you take them on once running. Cancel anytime. No contracts.'
+  answer: 'Sidecar starts at $1,000/month. Setup from $1,000, sized to what your build actually needs. There''s also a small AI usage fee (usually $20-$100/month) that we cover while we''re building and testing, then hand over to you once it''s live. Cancel anytime. No contracts.'
 -
   question: 'What if I hate it?'
   answer: 'Cancel anytime. No contracts, no cancellation fees. If it''s not saving you time, you shouldn''t be paying for it.'

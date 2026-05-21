@@ -27,7 +27,7 @@ Text:
 | What you get | An engineer who builds the workflow, runs it on your account, and maintains it | Someone who builds an n8n flow and hands you the keys |
 | Pricing | $1,000/mo (covers maintenance, model upgrades, edge-case work) | $75-200/hr or flat per flow, no maintenance |
 | When it breaks | We see it, we fix it, you find out via a Slack message | You see it, you call them, you wait |
-| LLM choice | Claude default, Gemini for high-volume parsing, swap as models evolve | Whatever was current when they built it |
+| Which AI we use | Claude by default, Gemini for high-volume document work, we swap as the models keep improving | Whatever AI was the popular one when they built it |
 | Best for | Owner-operators who want the engineering AND the operations | Buyers who want to own the flow long-term and have someone in-house to run it |
 
 **They win when** you have an in-house technical person who'll babysit the flow forever. **We win when** you're the in-house technical person and you'd rather not.
@@ -36,12 +36,12 @@ Text:
 
 | | Sidecar (Shimmer Labs) | Make/Zapier agency |
 |---|---|---|
-| Scope | Workflows that need real engineering: browser automation, LLM judgment, document parsing, human-in-the-loop approval | Connect-A-to-B integrations between SaaS tools with public APIs |
+| Scope | Workflows that need real engineering: software that clicks through websites when there's no other way, AI making judgment calls, parsing documents, a person reviewing before anything goes out | Plug-and-play connections between two tools that already let outsiders connect |
 | When the vendor has no API | We build browser automation that drives the UI like a person would ([Sweat Yoga](/case-studies/sweat-yoga-fitness): WellnessLiving has no membership-action endpoints; we shipped anyway) | They tell you it can't be done |
-| LLM-in-the-loop | Native. Claude or Gemini called inside the workflow, with approval gates | Possible but bolted-on, often via OpenAI's $20/mo plugin |
+| AI doing the judgment work | Built in. Claude or Gemini is part of the workflow, and you approve anything that goes to a customer | Possible but tacked on later, usually through OpenAI's $20/mo add-on |
 | Pricing | $1,000/mo flat, includes maintenance | $50-150/mo for the Make/Zapier subscription PLUS $1k-5k build fee, no maintenance |
 
-**They win when** the integration is two SaaS tools with clean public APIs and no need for AI judgment. **We win when** the work needs an LLM in the loop, browser automation against an API-less platform, or a human approval gate before anything leaves the building.
+**They win when** the integration is two tools that already talk to each other cleanly and AI judgment isn't needed. **We win when** the work needs AI making real decisions, software that has to click through a website that won't let outsiders connect, or a person approving anything before it goes to a customer.
 
 ### Sidecar vs. full-service agencies (HubSpot partners, etc.)
 
@@ -92,8 +92,8 @@ Text:
 **Where Shimmer Labs is the right call.**
 
 - You run a 1-10 person service business and 10+ hours of your week is admin work that has nothing to do with your craft.
-- You've tried a Zapier or a Make.com flow and watched it break when an edge case showed up.
-- You need an LLM in the loop because the work requires judgment (drafting outreach, parsing a non-standard invoice, classifying customer questions).
+- You've tried a Zapier or a Make.com flow and watched it break the first time something unusual came up.
+- You need AI making real decisions because the work requires judgment (drafting outreach, parsing an invoice that isn't standardized, sorting customer questions).
 - The vendor's API doesn't exist for the action you actually need taken.
 
 **Where we won't pretend.**

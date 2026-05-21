@@ -48,7 +48,7 @@ Most agencies will:
 Whatsincluded:
 -
   icon: '💻'
-  title: 'Production-Grade Code'
+  title: 'Real, Production-Ready Code'
   description: 'TypeScript strict mode, Swift best practices, proper architecture.'
 -
   icon: '📱'

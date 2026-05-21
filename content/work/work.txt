@@ -17,7 +17,7 @@ Text:
 | Project | Year | Stack | Outcome | Link |
 |---|---|---|---|---|
 | Sweat Yoga membership operations | 2026 | WellnessLiving (browser automation), Perplexity Computer, Claude, Gmail, ManyChat | MVP live in week 1, autonomous by week 4. 50+ cancellations and freezes processed to date, including graduation rush. | [Read the case study](/case-studies/sweat-yoga-fitness) |
-| Supabase creator outreach | 2025 (pre-shingle) | Claude, YouTube + 6-platform contact scraping, Slack approval, Gmail | 5x output. 100+ creators shipped in months. 15 hours/week returned. | Featured on [homepage](/) |
+| Supabase creator outreach | 2025 (before Shimmer Labs existed) | Claude, YouTube + 6-platform contact scraping, Slack approval, Gmail | 5x output. 100+ creators shipped in months. 15 hours/week returned. | Featured on [homepage](/) |
 | Paidly invoice parsing pipeline | 2026 | Next.js, Supabase, Gemini 2.0 Flash-Lite, Stripe Connect | 33 paying users, 95% parsing accuracy on production invoices. | [Read the case study](/case-studies/paidly) |
 
 ## Custom apps (web + iOS)

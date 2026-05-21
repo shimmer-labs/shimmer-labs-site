@@ -78,7 +78,7 @@ Whatsincluded:
 -
   icon: '✅'
   title: 'Clean, Production-Ready Code'
-  description: 'TypeScript strict mode, proper error handling, tested edge cases.'
+  description: 'TypeScript with strict checking, proper error handling, tested against the weird situations that break flaky code.'
 -
   icon: '📚'
   title: 'Documentation'
@@ -94,7 +94,7 @@ Whatsincluded:
 -
   icon: '🚀'
   title: 'Source Code Handoff'
-  description: 'Full codebase access. No vendor lock-in.'
+  description: 'You own the code. You can take it to another developer anytime. No getting stuck with us.'
 -
   icon: '⚡'
   title: 'Fast Delivery'
@@ -108,7 +108,7 @@ Process:
   description: 'We talk about your workflow, pain points, and what tools you want to connect. We''ll tell you if it''s possible and give you a rough timeline.'
 -
   title: 'Scoping & Quote'
-  description: 'We document the data flow, edge cases, and API limitations. You get a fixed-price quote, no surprises.'
+  description: 'We document how data moves between the tools, where things can go sideways, and what each tool will and won''t do. You get a flat-price quote, no surprises.'
 -
   title: 'Development (1-4 weeks)'
   description: 'We build the integration, test it thoroughly, and send you progress updates. You can request changes as we go.'
