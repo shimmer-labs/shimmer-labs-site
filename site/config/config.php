@@ -139,6 +139,7 @@ return [
           'case-studies',
           'comparison',
           'work',
+          'stillwater-ai-consultant',
           'services/sidecar',
           'services/custom-apps',
           'services/api-integrations',

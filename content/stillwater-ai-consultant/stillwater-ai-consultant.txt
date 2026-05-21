@@ -1,0 +1,83 @@
+Title: AI Consultant in Stillwater, Oklahoma
+
+----
+
+Meta_description: Stillwater, OK's local AI consultant. Shimmer Labs builds AI-assisted workflows, custom apps, and API integrations for small Oklahoma businesses. OSU '09 alum. Free Office Hours every Tuesday and Thursday at WorkIT.
+
+----
+
+Intro: If you run a 1-10 person business in Stillwater or anywhere in north-central Oklahoma and you want AI that actually works for you — not the hype version — this is the page.
+
+----
+
+Text:
+
+## I'm the local one.
+
+I'm <a href="/about">Logan Shimmer</a>. OSU class of '09 alum. I returned to Stillwater after 17 years in California — most of it spent as a systems engineer at companies like <a href="https://www.ni.com" rel="noopener" target="_blank">National Instruments</a>, <a href="https://iterable.com" rel="noopener" target="_blank">Iterable</a>, <a href="https://www.weavegrid.com" rel="noopener" target="_blank">WeaveGrid</a>, and <a href="https://sense.com" rel="noopener" target="_blank">Sense</a>. I came home to build a software consultancy that serves Stillwater small businesses the way I'd want one to serve mine.
+
+That consultancy is <a href="/">Shimmer Labs</a>. We're a two-line operation. I'm the engineer. You talk to me directly — no account managers, no offshore subcontracting, no handoffs.
+
+## Why local matters for AI work
+
+Most "AI consultants" your business will find on Google are in Dallas, Austin, Atlanta, or a Slack channel six time zones away. They charge agency prices, send you to an account manager, and the engineer doing the work has never set foot in Oklahoma.
+
+That works for some businesses. It does not work for most of the ones we work with. If your workflow is going to use AI to handle real customer-facing decisions — membership cancellations, outreach drafts, document parsing, invoicing — you want the person building it to be reachable, accountable, and ideally in the room.
+
+That's the difference. **I do <a href="/office-hours">Office Hours every Tuesday and Thursday, 2-4 PM, at WorkIT in downtown Stillwater</a>.** Walk in, ask whatever you want, no appointment needed, no pitch.
+
+## What I do, in Stillwater terms
+
+Three services, anchored in things I've already shipped for businesses you might know.
+
+### Sidecar — AI-assisted operational workflows
+
+Narrow automations, each scoped to one job, with a human in the loop on anything that touches a customer. We built one for <a href="/case-studies/sweat-yoga-fitness">Anna Moore at Sweat Yoga & Fitness</a> here in Stillwater — her booking platform (WellnessLiving) had no API for membership cancellations or freezes, so we built browser automation that drives the UI like a person would. MVP live in week one, fully autonomous by week four. 50+ cancellations and freezes processed to date, including the post-graduation rush.
+
+From **$1,000/month + implementation from $1,000**, scoped to your build. Cancel anytime, no contracts. <a href="/services/sidecar">More on Sidecar →</a>
+
+### Custom Apps — web and iOS
+
+Web apps from $15,000, iOS apps from $20,000, flat-priced per scope. <a href="/case-studies/treebidpro">TreeBidPro</a> went from a year-old stack of wireframes to a production-ready web app with Stripe billing in 2 weeks. <a href="/case-studies/paidly">Paidly</a> went from "I have an idea" to a live SaaS with paying users in 6 weeks. <a href="/services/custom-apps">More on Custom Apps →</a>
+
+### API Integrations — n8n, Zapier, Make.com
+
+$2,500–$7,000 per integration. We shipped <a href="/case-studies/taddy-api-integrations">Taddy's podcast API</a> across all three platforms simultaneously — three production integrations, one shipment. <a href="/services/api-integrations">More on API Integrations →</a>
+
+## Local proof and local connection
+
+- **<a href="/case-studies/sweat-yoga-fitness">Sweat Yoga & Fitness</a>** — yoga studio across the street from our office. Anna Moore's membership-operations sidecar runs in production today.
+- **<a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">Stillwater Chamber Small Business University</a>** — I'm currently teaching the AI & Marketing course in the SBU program. Local owners learn what AI can actually do for their shop without the hype or the vendor lock-in.
+- **<a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">OSU CEAT AI for Industry microcredential</a>** — completed through OSU CEAT Professional Development. An applied course on using AI inside technical organizations.
+- **Free AI Office Hours at WorkIT** — Tuesdays and Thursdays, 2-4 PM, 901 S Main Street Suite 86, Stillwater OK 74074. Walk in. I'll tell you whether AI can actually help your business or whether you should skip it. Sometimes the honest answer is "skip it for now."
+
+## Who this is for
+
+Owner-operators of service businesses in Stillwater, Payne County, and north-central Oklahoma with 1-10 employees:
+
+- Trades (plumbing, electrical, HVAC, tree, landscaping)
+- Wellness (yoga, massage, training, fitness)
+- Personal services (barbers, nails, cleaning)
+- Indie SaaS founders and OSU-connected operators who want a local engineer
+
+If you're already paying a Dallas or Austin agency $50k+ a year for a strategy retainer and it's working, you don't need me. If you've been quoted $25k for a website that you suspect should cost half that, or you've been told an automation isn't possible because "the vendor doesn't have an API" — that's exactly where I work.
+
+## What I don't do
+
+- Build chatbots for your website.
+- Replace your team with AI.
+- Sell "set it and forget it" maintenance contracts.
+- Quote $50k for projects that should cost $15k.
+- Pretend to be an enterprise vendor with procurement, SOC 2, and MSAs.
+
+## The fastest way to figure out if I can help
+
+**Walk in to Office Hours.** Tuesdays and Thursdays, 2-4 PM, WorkIT, 901 S Main Street Suite 86, Stillwater. Bring the workflow that's eating your week. I'll tell you in 20 minutes whether Sidecar is the right answer, whether you need a custom app, whether a Zapier flow could do it for $50, or whether you should hire a part-time admin instead.
+
+No pitch. No pressure. Sometimes the honest answer is "you don't need a consultant yet."
+
+If you can't make Office Hours, <a href="/contact">book a 30-minute call</a>.
+
+----
+
+Uuid: stillwater-ai-consultant-001

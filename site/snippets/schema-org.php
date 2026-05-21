@@ -426,6 +426,63 @@ if ($page->intendedTemplate()->name() === 'case-study') {
 }
 
 // ─────────────────────────────────────────────────────────────
+// Stillwater AI consultant landing page: LocalBusiness schema
+// ─────────────────────────────────────────────────────────────
+if ($page->intendedTemplate()->name() === 'stillwater-ai-consultant') {
+  $schema[] = [
+    '@context' => 'https://schema.org',
+    '@type' => 'LocalBusiness',
+    '@id' => $site->url() . '#stillwater-local',
+    'name' => 'Shimmer Labs — AI Consultant in Stillwater, OK',
+    'description' => 'Local AI consultant and software shop serving Stillwater and north-central Oklahoma small businesses. AI-assisted workflows, custom web and iOS apps, API integrations. Free Office Hours every Tuesday and Thursday at WorkIT.',
+    'url' => $page->url(),
+    'telephone' => '+1-650-554-8615',
+    'email' => 'logan@shimmerlabs.co',
+    'image' => url('assets/images/shimmer-labs-logo.png'),
+    'address' => [
+      '@type' => 'PostalAddress',
+      'streetAddress' => '901 S Main St, Suite 86',
+      'addressLocality' => 'Stillwater',
+      'addressRegion' => 'OK',
+      'postalCode' => '74074',
+      'addressCountry' => 'US'
+    ],
+    'geo' => [
+      '@type' => 'GeoCoordinates',
+      'latitude' => 36.1122,
+      'longitude' => -97.0583
+    ],
+    'areaServed' => [
+      ['@type' => 'City', 'name' => 'Stillwater'],
+      ['@type' => 'AdministrativeArea', 'name' => 'Payne County'],
+      ['@type' => 'State', 'name' => 'Oklahoma']
+    ],
+    'openingHoursSpecification' => [
+      [
+        '@type' => 'OpeningHoursSpecification',
+        'dayOfWeek' => ['Tuesday', 'Thursday'],
+        'opens' => '14:00',
+        'closes' => '16:00',
+        'name' => 'AI Office Hours (walk-in)'
+      ]
+    ],
+    'founder' => [
+      '@id' => $site->url() . '#logan'
+    ],
+    'parentOrganization' => [
+      '@id' => $site->url() . '#organization'
+    ],
+    'priceRange' => '$1,000+',
+    'sameAs' => [
+      'https://www.linkedin.com/in/loganshimmer/',
+      'https://github.com/shimmer-labs',
+      'https://www.instagram.com/shimmer.labs/',
+      'https://www.stillwaterchamber.org/membership/business-directory'
+    ]
+  ];
+}
+
+// ─────────────────────────────────────────────────────────────
 // Free-guide landing pages: Article schema
 // ─────────────────────────────────────────────────────────────
 if ($page->intendedTemplate()->name() === 'landing') {

@@ -37,7 +37,7 @@ Text:
 | | Sidecar (Shimmer Labs) | Make/Zapier agency |
 |---|---|---|
 | Scope | Workflows that need real engineering: browser automation, LLM judgment, document parsing, human-in-the-loop approval | Connect-A-to-B integrations between SaaS tools with public APIs |
-| When the vendor has no API | We build browser automation that drives the UI like a person would (Sweat Yoga: WellnessLiving has no membership-action endpoints; we shipped anyway) | They tell you it can't be done |
+| When the vendor has no API | We build browser automation that drives the UI like a person would ([Sweat Yoga](/case-studies/sweat-yoga-fitness): WellnessLiving has no membership-action endpoints; we shipped anyway) | They tell you it can't be done |
 | LLM-in-the-loop | Native. Claude or Gemini called inside the workflow, with approval gates | Possible but bolted-on, often via OpenAI's $20/mo plugin |
 | Pricing | $1,000/mo flat, includes maintenance | $50-150/mo for the Make/Zapier subscription PLUS $1k-5k build fee, no maintenance |
 

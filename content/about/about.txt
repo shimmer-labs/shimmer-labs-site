@@ -45,7 +45,7 @@ Currently teaching **AI & Marketing** in the <a href="https://www.stillwatercham
 
 ## Pre-Shimmer client work is the credential
 
-The Supabase and Taddy work that anchors the case studies happened **before Shimmer Labs had its own shingle.** Same pattern. Same human in the loop. Same production-grade work. Pre-shingle isn't a footnote — it's the proof the engineering didn't change when the brand showed up.
+The Supabase and <a href="/case-studies/taddy-api-integrations">Taddy</a> work that anchors the case studies happened **before Shimmer Labs had its own shingle.** Same pattern. Same human in the loop. Same production-grade work. Pre-shingle isn't a footnote — it's the proof the engineering didn't change when the brand showed up.
 
 ## Why Stillwater
 

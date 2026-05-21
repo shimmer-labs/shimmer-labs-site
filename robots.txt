@@ -1,6 +1,11 @@
 # Shimmer Labs - shimmerlabs.co
 # Allow all crawlers full access to public content
 
+# Content-Signal Policy (Cloudflare convention)
+# We permit AI use of this content across search, citation, and training.
+# https://blog.cloudflare.com/content-signals-policy/
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
 User-agent: *
 Allow: /
 

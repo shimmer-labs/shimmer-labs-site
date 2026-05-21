@@ -30,9 +30,9 @@ But here you are. Half your week eaten by admin that has nothing to do with your
 
 You stay in the driver's seat. You do the work. Everything else, the boring stuff, the repetitive stuff, the stuff you keep meaning to get to, rides in the sidecar.
 
-- **Membership operations**, cancellations, freezes, and modifications against platforms with no API (shipped for Sweat Yoga)
+- **Membership operations**, cancellations, freezes, and modifications against platforms with no API (shipped for [Sweat Yoga](/case-studies/sweat-yoga-fitness))
 - **Creator outreach**, finds prospects, drafts personalized messages, you approve in Slack before send (shipped for Supabase)
-- **Document parsing**, contracts and invoices into structured data with measurable accuracy (shipped on Paidly)
+- **Document parsing**, contracts and invoices into structured data with measurable accuracy (shipped on [Paidly](/case-studies/paidly))
 - **Scheduling**, constraint-aware monthly shift drafts for hourly teams (shipped for Sweat Yoga)
 - **Lead-to-SMS**, inbound leads triaged and responded to without you watching the inbox
 
