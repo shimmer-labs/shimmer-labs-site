@@ -619,6 +619,15 @@ section {
   display: block;
 }
 
+.local-map--contact {
+  background: transparent;
+  padding: var(--spacing-md) 0;
+}
+
+.local-map--contact .local-map__embed {
+  max-width: 100%;
+}
+
 @media (max-width: 720px) {
   .local-map__title {
     font-size: 1.5rem;

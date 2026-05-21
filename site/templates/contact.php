@@ -37,6 +37,22 @@
         </div>
       </div>
 
+      <!-- Map -->
+      <section class="local-map local-map--contact">
+        <div class="local-map__embed">
+          <iframe
+            src="https://www.google.com/maps?q=Shimmer+Labs,901+S+Main+St+Suite+86,Stillwater,OK+74074&output=embed"
+            width="100%"
+            height="380"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map of Shimmer Labs at WorkIT, 901 S Main St Suite 86, Stillwater, OK">
+          </iframe>
+        </div>
+      </section>
+
       <!-- Calendly transition -->
       <div class="contact-calendly-intro">
         <p>Want to talk it through first? Grab 30 minutes and we'll figure out what makes sense.</p>
