@@ -46,6 +46,7 @@
           <h4>Connect</h4>
           <ul>
             <li><a href="mailto:logan@shimmerlabs.co">logan@shimmerlabs.co</a></li>
+            <li><a href="tel:+14058806674">(405) 880-6674</a></li>
             <li><a href="https://www.linkedin.com/in/loganshimmer/" target="_blank" rel="noopener">LinkedIn</a></li>
             <li><a href="https://www.instagram.com/shimmer.labs/" target="_blank" rel="noopener">Instagram</a></li>
             <li><a href="https://github.com/shimmer-labs" target="_blank" rel="noopener">GitHub</a></li>

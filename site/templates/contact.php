@@ -34,6 +34,12 @@
               <a href="mailto:logan@shimmerlabs.co">logan@shimmerlabs.co</a>
             </p>
           </div>
+          <div class="contact-location__card">
+            <div class="contact-location__label">Call</div>
+            <p>
+              <a href="tel:+14058806674">(405) 880-6674</a>
+            </p>
+          </div>
         </div>
       </div>
 

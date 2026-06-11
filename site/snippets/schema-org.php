@@ -20,6 +20,7 @@ $schema[] = [
   'logo' => url('assets/images/shimmer-labs-logo.png'),
   'description' => 'Custom software for small businesses. AI-assisted operational workflows, web and iOS apps, and API integrations. Based in Stillwater, Oklahoma.',
   'email' => 'logan@shimmerlabs.co',
+  'telephone' => '+1-405-880-6674',
   'address' => [
     '@type' => 'PostalAddress',
     'streetAddress' => '901 S Main St, Suite 86',
@@ -67,6 +68,7 @@ if ($page->intendedTemplate()->name() === 'home') {
     'description' => 'Custom software for small businesses. Sidecar (AI-assisted operational workflows from $1,000/mo), Custom Apps (web from $15k, iOS from $20k), API Integrations ($2,500-$7,000). Based in Stillwater, Oklahoma.',
     'url' => $site->url(),
     'email' => 'logan@shimmerlabs.co',
+    'telephone' => '+1-405-880-6674',
     'address' => [
       '@type' => 'PostalAddress',
       'streetAddress' => '901 S Main St, Suite 86',
@@ -436,7 +438,7 @@ if ($page->intendedTemplate()->name() === 'stillwater-ai-consultant') {
     'name' => 'Shimmer Labs — AI Consultant in Stillwater, OK',
     'description' => 'Local AI consultant and software shop serving Stillwater and north-central Oklahoma small businesses. AI-assisted workflows, custom web and iOS apps, API integrations. Free Office Hours every Tuesday and Thursday at WorkIT.',
     'url' => $page->url(),
-    'telephone' => '+1-650-554-8615',
+    'telephone' => '+1-405-880-6674',
     'email' => 'logan@shimmerlabs.co',
     'image' => url('assets/images/shimmer-labs-logo.png'),
     'address' => [
