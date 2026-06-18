@@ -56,6 +56,166 @@ return [
     return new Kirby\Cms\Response($response, 'application/json', $httpCode);
   },
 
+  // ─── GHL guide-lead intake ────────────────────────────────────────
+  // Reads an env var (getenv first, then the .env file). Inbound-webhook
+  // URLs live in .env so they stay out of git.
+  'ghl.env' => function (string $key, string $default = '') {
+    $val = getenv($key);
+    if ($val !== false && $val !== '') {
+      return $val;
+    }
+    $envFile = kirby()->root('index') . '/.env';
+    if (is_file($envFile)) {
+      foreach (file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+        if ($line === '' || $line[0] === '#') {
+          continue;
+        }
+        if (str_starts_with($line, $key . '=')) {
+          return trim(substr($line, strlen($key) + 1));
+        }
+      }
+    }
+    return $default;
+  },
+
+  // Each guide maps to its own GHL inbound webhook (env var) and tag.
+  'ghl.guides' => [
+    'ai-agents-small-business' => [
+      'env'   => 'GHL_WEBHOOK_AI_AGENTS',
+      'tag'   => 'guide-ai-agents',
+      'label' => 'AI Agents for Small Business',
+    ],
+    'ai-security-business' => [
+      'env'   => 'GHL_WEBHOOK_AI_SECURITY_BUSINESS',
+      'tag'   => 'guide-ai-security-business',
+      'label' => 'AI Security for Business',
+    ],
+    'ai-security-education' => [
+      'env'   => 'GHL_WEBHOOK_AI_SECURITY_EDUCATION',
+      'tag'   => 'guide-ai-security-education',
+      'label' => 'AI Security for Higher Education',
+    ],
+  ],
+
+  'ghl.teamSizes' => ['Just me', '2-5', '6-15', '16+'],
+
+  // Validates a guide-form submission and forwards it to the matching GHL
+  // inbound webhook. Always returns a JSON response.
+  'ghl.lead' => function () {
+    $json = fn($data, $code = 200) => new Kirby\Cms\Response(json_encode($data), 'application/json', $code);
+
+    $body = json_decode(file_get_contents('php://input'), true);
+    if (!is_array($body)) {
+      return $json(['ok' => false, 'error' => 'Invalid request.'], 400);
+    }
+
+    // Honeypot: a real user never fills this. Silently accept so bots stop.
+    if (trim((string)($body['company_url'] ?? '')) !== '') {
+      return $json(['ok' => true]);
+    }
+
+    $clean = fn($v) => trim(preg_replace('/[\x00-\x1F\x7F]+/u', ' ', (string)($v ?? '')));
+    $firstName  = $clean($body['first_name'] ?? '');
+    $email      = strtolower($clean($body['email'] ?? ''));
+    $business   = $clean($body['business'] ?? '');
+    $teamSize   = $clean($body['team_size'] ?? '');
+    $intent     = $clean($body['intent'] ?? '');
+    $guideSlug  = $clean($body['guide'] ?? '');
+    $sourcePage = substr(preg_replace('~[^a-z0-9/_-]~i', '', (string)($body['source_page'] ?? '')), 0, 120);
+
+    // Required-field + format validation.
+    $errors = [];
+    if ($firstName === '' || mb_strlen($firstName) > 100) {
+      $errors[] = 'first_name';
+    }
+    if ($email === '' || mb_strlen($email) > 254 || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $errors[] = 'email';
+    }
+    if (mb_strlen($business) < 2 || mb_strlen($business) > 200) {
+      $errors[] = 'business';
+    }
+    if (!in_array($teamSize, option('ghl.teamSizes'), true)) {
+      $errors[] = 'team_size';
+    }
+    if ($intent === '' || mb_strlen($intent) > 200) {
+      $errors[] = 'intent';
+    }
+    $guides = option('ghl.guides');
+    if (!isset($guides[$guideSlug])) {
+      $errors[] = 'guide';
+    }
+    if (!empty($errors)) {
+      return $json(['ok' => false, 'error' => 'Please double-check the form and try again.', 'fields' => $errors], 422);
+    }
+
+    // Rate limit by IP: 5 per hour.
+    $dir = kirby()->root('index') . '/site/cache/ratelimit';
+    if (!is_dir($dir)) {
+      @mkdir($dir, 0755, true);
+    }
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+    $ip = trim(explode(',', $ip)[0]);
+    $ipFile = $dir . '/lead_ip_' . md5($ip) . '.json';
+    $hits = is_file($ipFile) ? (json_decode(file_get_contents($ipFile), true) ?: []) : [];
+    $cutoff = time() - 3600;
+    $hits = array_values(array_filter($hits, fn($t) => $t > $cutoff));
+    if (count($hits) >= 5) {
+      return $json(['ok' => false, 'error' => 'Too many submissions from this connection. Please try again later or email logan@shimmerlabs.co.'], 429);
+    }
+
+    // Resolve the destination webhook.
+    $guide   = $guides[$guideSlug];
+    $webhook = option('ghl.env')($guide['env']);
+    if (!str_starts_with($webhook, 'https://')) {
+      error_log('[ghl.lead] Missing/invalid webhook for ' . $guideSlug . ' (' . $guide['env'] . ')');
+      return $json(['ok' => false, 'error' => 'We could not process that just now. Please email logan@shimmerlabs.co and we will send the guide.'], 503);
+    }
+
+    // A single token that looks like a domain/URL is treated as the website.
+    $website = '';
+    if (strpos($business, ' ') === false &&
+        preg_match('~^(https?://)?(www\.)?[a-z0-9-]+(\.[a-z0-9-]+)+([/?#].*)?$~i', $business)) {
+      $website = preg_match('~^https?://~i', $business) ? $business : 'https://' . $business;
+    }
+
+    $payload = [
+      'first_name'    => mb_substr($firstName, 0, 100),
+      'email'         => $email,
+      'business_name' => mb_substr($business, 0, 200),
+      'website'       => $website,
+      'team_size'     => $teamSize,
+      'lead_intent'   => mb_substr($intent, 0, 200),
+      'guide'         => $guideSlug,
+      'guide_label'   => $guide['label'],
+      'guide_tag'     => $guide['tag'],
+      'source_page'   => $sourcePage,
+      'source'        => 'Website guide: ' . $guide['label'],
+    ];
+
+    $ch = curl_init($webhook);
+    curl_setopt_array($ch, [
+      CURLOPT_POST           => true,
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_TIMEOUT        => 10,
+      CURLOPT_HTTPHEADER     => ['Content-Type: application/json'],
+      CURLOPT_POSTFIELDS     => json_encode($payload),
+    ]);
+    $resp = curl_exec($ch);
+    $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $cErr = curl_error($ch);
+    curl_close($ch);
+
+    if ($cErr || $code < 200 || $code >= 300) {
+      error_log('[ghl.lead] Webhook ' . $code . ' for ' . $guideSlug . ': ' . $cErr . ' ' . substr((string)$resp, 0, 200));
+      return $json(['ok' => false, 'error' => 'Something went wrong sending your guide. Please email logan@shimmerlabs.co and we will get it to you.'], 502);
+    }
+
+    $hits[] = time();
+    @file_put_contents($ipFile, json_encode($hits));
+
+    return $json(['ok' => true]);
+  },
+
   // Routes
   'routes' => [
     // /_scan — start a new scan (POST) or catch bad GETs
@@ -80,6 +240,14 @@ return [
       'method'  => 'GET|POST',
       'action'  => function($id) {
         return option('scanner.proxy')($id);
+      }
+    ],
+    // /_lead — guide-form intake, validates then forwards to GHL
+    [
+      'pattern' => '_lead',
+      'method'  => 'POST',
+      'action'  => function() {
+        return option('ghl.lead')();
       }
     ],
     // Legacy redirect: /projects -> /case-studies

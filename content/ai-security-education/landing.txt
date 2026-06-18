@@ -46,11 +46,16 @@ form_subheading: We'll email the guide to you instantly.
 
 ----
 
-form_id: xdkwjykz
+intent_label: What's your role?
 
 ----
 
-form_subject: [Shimmer Labs] New lead: AI Security (Education)
+intent_options:
+IT / Security
+Faculty
+Administration
+Student-facing staff
+Other
 
 ----
 

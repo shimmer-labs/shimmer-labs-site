@@ -14,7 +14,7 @@
         <div class="landing-thankyou__cta-card">
           <h3>Free Consultation</h3>
           <p>30 minutes. No pitch, no pressure, just practical advice.</p>
-          <a href="https://calendly.com/logan-shimmerlabs/free-consultation" class="btn btn--cta" target="_blank" rel="noopener">Book a Call →</a>
+          <a href="https://api.leadconnectorhq.com/widget/booking/tCHB0sj6MoYpJYWJyVqd" class="btn btn--cta" target="_blank" rel="noopener">Book a Call →</a>
         </div>
         <div class="landing-thankyou__cta-card">
           <h3>Have Questions?</h3>
@@ -80,42 +80,55 @@
             <p class="landing-form__sub"><?= $page->form_subheading() ?></p>
           <?php endif ?>
 
-          <form class="landing-form" id="whitepaper-form">
+          <?php
+          $intentLabel   = $page->intent_label()->or('What can we help with?');
+          $intentOptions = $page->intent_options()->isNotEmpty()
+            ? array_values(array_filter(array_map('trim', explode("\n", $page->intent_options()->value()))))
+            : [];
+          ?>
+          <form class="landing-form" id="whitepaper-form" novalidate>
             <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" placeholder="Jane Smith" required>
+              <label for="first_name">First name</label>
+              <input type="text" name="first_name" id="first_name" placeholder="Jane" autocomplete="given-name" required>
             </div>
 
             <div class="form-group">
-              <label for="email">Work Email</label>
-              <input type="email" name="email" id="email" placeholder="jane@company.com" required>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="jane@business.com" autocomplete="email" required>
             </div>
 
             <div class="form-group">
-              <label for="industry">Industry</label>
-              <select name="industry" id="industry" required>
-                <option value="" disabled selected>Select your industry</option>
-                <option value="Higher Education">Higher Education</option>
-                <option value="Healthcare">Healthcare</option>
-                <option value="Construction">Construction</option>
-                <option value="Professional Services">Professional Services</option>
-                <option value="Retail / E-commerce">Retail / E-commerce</option>
-                <option value="Nonprofit">Nonprofit</option>
-                <option value="Other">Other</option>
+              <label for="business">Your business (name or website)</label>
+              <input type="text" name="business" id="business" placeholder="Acme Plumbing or acmeplumbing.com" autocomplete="organization" required>
+            </div>
+
+            <div class="form-group">
+              <label for="team_size">Team size</label>
+              <select name="team_size" id="team_size" required>
+                <option value="" disabled selected>How many of you?</option>
+                <option value="Just me">Just me</option>
+                <option value="2-5">2-5</option>
+                <option value="6-15">6-15</option>
+                <option value="16+">16+</option>
               </select>
             </div>
 
+            <?php if (!empty($intentOptions)): ?>
             <div class="form-group">
-              <label for="challenge">Biggest Challenge</label>
-              <select name="challenge" id="challenge" required>
-                <option value="" disabled selected>What's keeping you up at night?</option>
-                <option value="Too many manual tasks">Too many manual tasks</option>
-                <option value="AI security concerns">AI security / compliance concerns</option>
-                <option value="Don't know where to start with AI">Don't know where to start with AI</option>
-                <option value="Team is resistant to AI">Team is resistant to AI</option>
-                <option value="Need help with AI strategy">Need help building an AI strategy</option>
-                <option value="Other">Other</option>
+              <label for="intent"><?= esc($intentLabel) ?></label>
+              <select name="intent" id="intent" required>
+                <option value="" disabled selected>Pick one</option>
+                <?php foreach ($intentOptions as $opt): ?>
+                  <option value="<?= esc($opt) ?>"><?= esc($opt) ?></option>
+                <?php endforeach ?>
               </select>
+            </div>
+            <?php endif ?>
+
+            <!-- Honeypot: hidden from people, catches bots -->
+            <div aria-hidden="true" style="position:absolute; left:-9999px; top:-9999px; height:0; overflow:hidden;">
+              <label for="company_url">Company URL</label>
+              <input type="text" name="company_url" id="company_url" tabindex="-1" autocomplete="off">
             </div>
 
             <p class="form-error" id="form-error" style="display:none; color:#e74c3c; margin-bottom:1rem;"></p>
@@ -130,40 +143,56 @@
             var form = document.getElementById('whitepaper-form');
             var btn = document.getElementById('form-submit');
             var errEl = document.getElementById('form-error');
+            var ctaText = btn.textContent;
+
+            function showError(msg) {
+              errEl.textContent = msg;
+              errEl.style.display = 'block';
+              btn.disabled = false;
+              btn.textContent = ctaText;
+            }
 
             form.addEventListener('submit', function(e) {
               e.preventDefault();
-              btn.disabled = true;
-              btn.textContent = 'Sending...';
               errEl.style.display = 'none';
 
+              // Light client-side guardrails. The server does the real validation.
+              if (!form.first_name.value.trim() || !form.email.value.trim() ||
+                  !form.business.value.trim() || !form.team_size.value ||
+                  (form.intent && !form.intent.value)) {
+                showError('Please fill in every field.');
+                return;
+              }
+
+              btn.disabled = true;
+              btn.textContent = 'Sending...';
+
               var data = {
-                name: form.name.value,
+                first_name: form.first_name.value,
                 email: form.email.value,
-                industry: form.industry.value,
-                challenge: form.challenge.value,
-                whitepaper: '<?= $page->whitepaper_slug() ?>',
-                source_page: '<?= $page->uri() ?>'
+                business: form.business.value,
+                team_size: form.team_size.value,
+                intent: form.intent ? form.intent.value : '',
+                guide: '<?= $page->whitepaper_slug() ?>',
+                source_page: '<?= $page->uri() ?>',
+                company_url: form.company_url.value
               };
 
-              fetch('https://ckiguztpbsuxnnhabern.supabase.co/functions/v1/whitepaper-webhook', {
+              fetch('<?= url('_lead') ?>', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
               })
               .then(function(res) { return res.json().then(function(j) { return { ok: res.ok, data: j }; }); })
               .then(function(result) {
-                if (result.data.ok || result.ok) {
+                if (result.data && result.data.ok) {
                   window.location.href = '<?= $page->url() ?>?success=true';
                 } else {
-                  throw new Error(result.data.error || 'Something went wrong');
+                  showError((result.data && result.data.error) || 'Something went wrong. Please try again or email logan@shimmerlabs.co directly.');
                 }
               })
-              .catch(function(err) {
-                errEl.textContent = 'Something went wrong. Please try again or email logan@shimmerlabs.co directly.';
-                errEl.style.display = 'block';
-                btn.disabled = false;
-                btn.textContent = '<?= $page->hero_cta()->or('Download the Free Guide →') ?>';
+              .catch(function() {
+                showError('Something went wrong. Please try again or email logan@shimmerlabs.co directly.');
               });
             });
           })();
@@ -191,8 +220,8 @@
     });
   }
 
-  // calendly_click, track Calendly CTA clicks
-  document.querySelectorAll('a[href*="calendly.com"]').forEach(function(link) {
+  // book_call click, track consult CTA clicks (GHL booking + legacy Calendly)
+  document.querySelectorAll('a[href*="calendly.com"], a[href*="leadconnectorhq.com/widget/booking"]').forEach(function(link) {
     link.addEventListener('click', function() {
       if (typeof gtag === 'function') {
         gtag('event', 'calendly_click', {

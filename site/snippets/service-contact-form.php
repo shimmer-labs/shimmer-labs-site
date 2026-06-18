@@ -10,11 +10,11 @@
         <?php endif ?>
       </div>
 
-      <div class="calendly-inline-widget"
-           data-url="https://calendly.com/logan-shimmerlabs/30min?background_color=ffffff&text_color=0a1a2f&primary_color=fdbe34"
-           style="min-width:320px;height:700px;">
-      </div>
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- GHL booking widget (Consultation calendar) -->
+      <iframe src="https://api.leadconnectorhq.com/widget/booking/tCHB0sj6MoYpJYWJyVqd"
+              style="width:100%; min-height:700px; border:none; overflow:hidden;"
+              scrolling="no" id="ghl-booking-service" title="Book a free consultation with Shimmer Labs"></iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
     </div>
   </div>
 </section>

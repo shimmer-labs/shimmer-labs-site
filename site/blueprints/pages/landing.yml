@@ -49,14 +49,16 @@ columns:
             label: Form Subheading
             type: text
             placeholder: "We'll email the guide to you instantly."
-          form_id:
-            label: Formspree Form ID
+          intent_label:
+            label: Intent Question
             type: text
-            placeholder: "xdkwjykz"
-          form_subject:
-            label: Email Subject Line
-            type: text
-            placeholder: "[Shimmer Labs] New lead: AI Agents Guide"
+            help: "The one qualifying question on the form (varies per guide)"
+            placeholder: "What eats up most of your week?"
+          intent_options:
+            label: Intent Answer Options
+            type: textarea
+            size: small
+            help: "One answer per line. Rendered as a dropdown."
           whitepaper_slug:
             label: Whitepaper Slug
             type: text

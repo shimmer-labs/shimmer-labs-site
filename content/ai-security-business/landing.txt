@@ -46,11 +46,16 @@ form_subheading: We'll email the guide to you instantly.
 
 ----
 
-form_id: xdkwjykz
+intent_label: What's driving your interest?
 
 ----
 
-form_subject: [Shimmer Labs] New lead: AI Security (Business)
+intent_options:
+Protecting customer data
+Staff using AI tools unsupervised
+Compliance pressure
+Setting an AI policy
+Just doing my homework
 
 ----
 

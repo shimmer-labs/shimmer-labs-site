@@ -44,11 +44,17 @@ form_subheading: We'll email the guide to you instantly.
 
 ----
 
-form_id: xdkwjykz
+intent_label: What eats up most of your week?
 
 ----
 
-form_subject: [Shimmer Labs] New lead: AI Agents Guide
+intent_options:
+Chasing leads and following up
+Social media and marketing
+Quotes, proposals, and invoices
+Scheduling and admin
+Hiring and onboarding
+Not sure yet
 
 ----
 
