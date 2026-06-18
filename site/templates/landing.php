@@ -107,9 +107,11 @@
               <select name="team_size" id="team_size" required>
                 <option value="" disabled selected>How many of you?</option>
                 <option value="Just me">Just me</option>
-                <option value="2-5">2-5</option>
-                <option value="6-15">6-15</option>
-                <option value="16+">16+</option>
+                <option value="2-10">2-10</option>
+                <option value="11-25">11-25</option>
+                <option value="26-50">26-50</option>
+                <option value="51-100">51-100</option>
+                <option value="100+">100+</option>
               </select>
             </div>
 

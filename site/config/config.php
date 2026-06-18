@@ -97,13 +97,15 @@ return [
     ],
   ],
 
-  'ghl.teamSizes' => ['Just me', '2-5', '6-15', '16+'],
+  'ghl.teamSizes' => ['Just me', '2-10', '11-25', '26-50', '51-100', '100+'],
 
   // Validates a guide-form submission and forwards it to the matching GHL
   // inbound webhook. Always returns a JSON response.
   'ghl.lead' => function () {
     $json = fn($data, $code = 200) => new Kirby\Cms\Response(json_encode($data), 'application/json', $code);
+    $diag = (($_GET['diag'] ?? '') === 'sl-diag');
 
+    try {
     $body = json_decode(file_get_contents('php://input'), true);
     if (!is_array($body)) {
       return $json(['ok' => false, 'error' => 'Invalid request.'], 400);
@@ -196,7 +198,8 @@ return [
     curl_setopt_array($ch, [
       CURLOPT_POST           => true,
       CURLOPT_RETURNTRANSFER => true,
-      CURLOPT_TIMEOUT        => 10,
+      CURLOPT_TIMEOUT        => 8,
+      CURLOPT_CONNECTTIMEOUT => 4,
       CURLOPT_HTTPHEADER     => ['Content-Type: application/json'],
       CURLOPT_POSTFIELDS     => json_encode($payload),
     ]);
@@ -207,13 +210,17 @@ return [
 
     if ($cErr || $code < 200 || $code >= 300) {
       error_log('[ghl.lead] Webhook ' . $code . ' for ' . $guideSlug . ': ' . $cErr . ' ' . substr((string)$resp, 0, 200));
-      return $json(['ok' => false, 'error' => 'Something went wrong sending your guide. Please email logan@shimmerlabs.co and we will get it to you.'], 502);
+      return $json(array_merge(['ok' => false, 'error' => 'Something went wrong sending your guide. Please email logan@shimmerlabs.co and we will get it to you.'], $diag ? ['debug' => 'curl=' . $cErr . ' http=' . $code] : []), 502);
     }
 
     $hits[] = time();
     @file_put_contents($ipFile, json_encode($hits));
 
     return $json(['ok' => true]);
+    } catch (\Throwable $e) {
+      error_log('[ghl.lead] EXCEPTION ' . $e->getMessage());
+      return $json(array_merge(['ok' => false, 'error' => 'Something went wrong. Please email logan@shimmerlabs.co.'], $diag ? ['debug' => get_class($e) . ': ' . $e->getMessage()] : []), 500);
+    }
   },
 
   // Routes
