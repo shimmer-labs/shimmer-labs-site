@@ -103,7 +103,6 @@ return [
   // inbound webhook. Always returns a JSON response.
   'ghl.lead' => function () {
     $json = fn($data, $code = 200) => new Kirby\Cms\Response(json_encode($data), 'application/json', $code);
-    $diag = (($_GET['diag'] ?? '') === 'sl-diag');
 
     try {
     $body = json_decode(file_get_contents('php://input'), true);
@@ -210,7 +209,7 @@ return [
 
     if ($cErr || $code < 200 || $code >= 300) {
       error_log('[ghl.lead] Webhook ' . $code . ' for ' . $guideSlug . ': ' . $cErr . ' ' . substr((string)$resp, 0, 200));
-      return $json(array_merge(['ok' => false, 'error' => 'Something went wrong sending your guide. Please email logan@shimmerlabs.co and we will get it to you.'], $diag ? ['debug' => 'curl=' . $cErr . ' http=' . $code] : []), 502);
+      return $json(['ok' => false, 'error' => 'Something went wrong sending your guide. Please email logan@shimmerlabs.co and we will get it to you.'], 502);
     }
 
     $hits[] = time();
@@ -219,7 +218,7 @@ return [
     return $json(['ok' => true]);
     } catch (\Throwable $e) {
       error_log('[ghl.lead] EXCEPTION ' . $e->getMessage());
-      return $json(array_merge(['ok' => false, 'error' => 'Something went wrong. Please email logan@shimmerlabs.co.'], $diag ? ['debug' => get_class($e) . ': ' . $e->getMessage()] : []), 500);
+      return $json(['ok' => false, 'error' => 'Something went wrong. Please email logan@shimmerlabs.co.'], 500);
     }
   },
 
