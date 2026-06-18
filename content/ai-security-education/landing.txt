@@ -86,3 +86,54 @@ meta_description: Free guide for higher education: how to use AI securely withou
 ----
 
 og_image:
+
+----
+
+seo_title: AI in Higher Ed Without Breaking FERPA (Free Guide)
+
+----
+
+who_for: This guide is for the people who actually decide how AI gets used on campus: higher-ed IT and security staff, administrators, and faculty, especially at smaller colleges and universities in Oklahoma and beyond. If students and instructors are already using ChatGPT and you are responsible for student data and policy, it is for you. It is practical, not a vendor pitch.
+
+----
+
+key_takeaways:
+-
+  text: "What FERPA actually requires before a language model touches student data, and where faculty most often cross the line without realizing it."
+  source_name: "FERPA, 20 U.S.C. 1232g"
+-
+  text: "Real cautionary cases, from hiring algorithms to facial recognition rollouts, and the higher-ed-specific risks they point to."
+-
+  text: "Prompt injection explained in 30 seconds, plus the full **OWASP Top 10 for LLM Applications** in plain language."
+  source_name: "OWASP GenAI Security Project"
+-
+  text: "A Traffic Light Framework (green, yellow, red) for AI in coursework, so faculty know what is allowed without a three-hour training."
+-
+  text: "A printable security checklist you can hand to a department or put in front of a committee."
+
+----
+
+pull_quote: The two easy answers are both wrong. 'Use whatever you want' exposes student data; 'AI is banned' just pushes it underground. The workable middle is clear, specific guardrails.
+
+----
+
+pull_quote_attribution: Logan Shimmer, Shimmer Labs
+
+----
+
+faq:
+-
+  question: "Is it a FERPA violation to put student work into ChatGPT?"
+  answer: "It can be. Student records and personally identifiable information are protected under FERPA, and pasting them into a consumer AI tool may count as an unauthorized disclosure. De-identifying the work or using an approved, contracted tool are safer paths. The guide explains where the lines are."
+-
+  question: "Can professors use ChatGPT to grade or give feedback on student work?"
+  answer: "Carefully. Running identifiable student work through a consumer AI tool raises FERPA concerns. Feedback workflows can be done safely by removing identifying details or using institution-approved tools with the right agreements in place. The guide walks through both."
+-
+  question: "How should faculty be allowed to use AI without violating student privacy?"
+  answer: "With clear, specific rules rather than a blanket yes or no. The guide's Traffic Light Framework spells out green (fine), yellow (be careful), and red (off-limits) uses, and gives a checklist departments can adopt quickly."
+-
+  question: "Does a small college need an AI policy?"
+  answer: "Yes. Faculty and students are already using these tools. A short, specific institutional policy, plus a few approved tools, protects student data far better than leaving every instructor to decide on their own."
+-
+  question: "What is the OWASP Top 10 for LLM Applications?"
+  answer: "It is the security community's list of the top ten risks in AI language-model apps, from prompt injection to data leakage. The guide translates it from engineer-speak into risks and safeguards that make sense for a campus."

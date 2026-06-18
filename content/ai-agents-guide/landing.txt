@@ -80,8 +80,58 @@ thank_you_description: We just sent "Too Many Hats, Not Enough Hours" to your em
 
 ----
 
-meta_description: Free guide for small business owners: how to use AI agents to get time back without adding headcount. Practical tips, no hype.
+meta_description: Free guide for Stillwater and Oklahoma small business owners: use AI assistants to win back time on admin, quotes, scheduling, and lead follow-up. No hype.
 
 ----
 
 og_image:
+
+----
+
+seo_title: AI for Small Business in Stillwater, OK (Free Guide)
+
+----
+
+who_for: This guide is for owner-operators of small, hands-on businesses in Stillwater and across Oklahoma, roughly 1 to 50 people: trades and home services, fitness studios, salons, clinics, retail shops, and local service providers. If you are great at your craft but losing nights and weekends to admin, quotes, scheduling, and chasing down leads, it was written for you. If you run a 200-person company with a full IT department, it will feel too basic.
+
+----
+
+key_takeaways:
+-
+  text: "Why most companies (around 3 in 4) still report no tangible value from AI, and why the missing piece is workflow design, not the technology."
+  source_name: "BCG AI adoption study, 2024"
+-
+  text: "The difference between a chatbot and an actual AI **assistant** that does a job for you, with a human approving anything a customer sees."
+-
+  text: "A simple framework for deciding which task to automate first (hint: start with the one you keep putting off)."
+-
+  text: "Where AI quietly saves a small business the most time: lead follow-up, quotes and invoices, scheduling, and social media."
+-
+  text: "The rejection skill, knowing when not to use AI, so you skip the expensive and embarrassing mistakes."
+
+----
+
+pull_quote: The goal isn't to replace you. It's to hand off one annoying job so you stop being the one who has to remember to do it.
+
+----
+
+pull_quote_attribution: Logan Shimmer, Shimmer Labs
+
+----
+
+faq:
+-
+  question: "Is AI actually worth it for a small business?"
+  answer: "For most small businesses, yes, but only if you point it at a specific, repetitive task instead of trying to use AI in general. The wins come from automating one workflow at a time (follow-ups, quotes, scheduling), not from a magic do-everything bot. The guide walks through how to pick the first one."
+-
+  question: "What is the difference between a chatbot and an AI agent?"
+  answer: "A chatbot answers when you talk to it. An AI agent, what we call an assistant, watches for a trigger, does the work, and waits for your approval before anything goes out. One is a search box; the other is like a junior employee who handles a single job for you."
+-
+  question: "What can a small business automate with AI first?"
+  answer: "The best first candidates are tasks you keep putting off that follow a pattern: following up with leads, drafting quotes and invoices, answering common customer questions, and posting to social media. Start with the one that costs you the most time or the most missed revenue."
+-
+  question: "Do I need technical skills to use AI in my business?"
+  answer: "No. The point of a well-built assistant is that you do not become your own IT department. You approve the work and the system handles the steps. If you can use email and your phone, you can run one."
+-
+  question: "Where can I get help with this in Stillwater?"
+  answer: "Shimmer Labs builds these assistants for local businesses and runs free AI Office Hours at WorkIT in Stillwater every Tuesday and Thursday, 2 to 4 PM. Bring the task that is driving you nuts and we will tell you straight whether AI helps."

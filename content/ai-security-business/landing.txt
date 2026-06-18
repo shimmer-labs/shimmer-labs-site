@@ -86,3 +86,54 @@ meta_description: Free guide for business leaders: how to use AI securely withou
 ----
 
 og_image:
+
+----
+
+seo_title: Using AI Securely in Your Business (Free SMB Guide)
+
+----
+
+who_for: This guide is for owners and leaders of small and mid-sized businesses whose teams are already using AI tools like ChatGPT, whether or not a policy is in place. If you are worried about staff pasting customer data into a chatbot, about compliance like HIPAA or client confidentiality, or you just want clear rules your team will actually follow, it is for you. It is written in plain language, not for an enterprise compliance department.
+
+----
+
+key_takeaways:
+-
+  text: "Real incidents that should shape your policy, like Samsung engineers leaking source code into ChatGPT and Air Canada being held liable for its chatbot's answer."
+  source_name: "Samsung (2023), Moffatt v. Air Canada (2024)"
+-
+  text: "What HIPAA and client confidentiality actually require before a language model touches customer data."
+-
+  text: "Prompt injection explained in 30 seconds, so you understand the one attack everyone is worried about."
+-
+  text: "The full **OWASP Top 10 for LLM Applications**, translated out of security jargon into things a business owner can act on."
+  source_name: "OWASP GenAI Security Project"
+-
+  text: "A printable security checklist and a Traffic Light Framework (green, yellow, red) for what is safe to put into an AI tool."
+
+----
+
+pull_quote: Your team is already using AI, with or without a policy. A 'just don't use it' rule fails because people route around it. The fix is clear rules they can follow in the moment.
+
+----
+
+pull_quote_attribution: Logan Shimmer, Shimmer Labs
+
+----
+
+faq:
+-
+  question: "Is it safe to put company data into ChatGPT?"
+  answer: "It depends on the data and the settings. Public, non-sensitive information is usually fine. Customer records, financials, source code, and anything covered by a contract or regulation should not go into a consumer AI tool. The guide's Traffic Light Framework gives you a simple green, yellow, red rule for each."
+-
+  question: "What should employees never share with an AI tool?"
+  answer: "As a baseline: customer personal data, health or financial records, passwords and API keys, unreleased product or source code, and anything under an NDA or a compliance rule like HIPAA. The guide includes a printable checklist you can hand to your team."
+-
+  question: "Is ChatGPT HIPAA compliant?"
+  answer: "The standard consumer version is not, and putting protected health information into it can be a violation. There are paths to compliant AI use, including business agreements, approved tools, and de-identifying data, which the guide covers for small clinics and practices."
+-
+  question: "Does my small business need an AI policy?"
+  answer: "Yes, even a one-page one. Without it, staff make their own calls and sensitive data ends up in places you cannot control. A short, specific policy plus a couple of approved tools beats a vague be-careful every time."
+-
+  question: "What is the OWASP Top 10 for LLM Applications?"
+  answer: "It is the security community's list of the ten biggest risks when using AI language models, from prompt injection to data leakage. It is written for engineers; the guide translates it into plain-language risks and fixes a business owner can actually use."

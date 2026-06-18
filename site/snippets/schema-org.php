@@ -497,7 +497,7 @@ if ($page->intendedTemplate()->name() === 'landing') {
     'datePublished' => $page->modified('c'),
     'dateModified' => $page->modified('c'),
     'author' => [
-      '@id' => $site->url() . '#organization'
+      '@id' => $site->url() . '#logan'
     ],
     'publisher' => [
       '@id' => $site->url() . '#organization'

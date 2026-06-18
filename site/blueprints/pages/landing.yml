@@ -85,11 +85,57 @@ columns:
             type: textarea
             size: small
 
+          line5:
+            type: line
+
+          who_for:
+            label: Who This Guide Is For
+            type: textarea
+            size: small
+            help: "Ungated content shown below the form. Aids SEO + LLM understanding."
+          key_takeaways:
+            label: Key Takeaways
+            type: structure
+            help: "3-5 takeaways. Add a source for any stat (helps AI citations)."
+            fields:
+              text:
+                label: Takeaway
+                type: text
+              source_name:
+                label: Source name (optional)
+                type: text
+              source_url:
+                label: Source URL (optional)
+                type: url
+          pull_quote:
+            label: Pull Quote / Stat Callout
+            type: text
+          pull_quote_attribution:
+            label: Pull Quote Attribution
+            type: text
+          faq:
+            label: FAQ
+            type: structure
+            help: "Questions phrased the way people search. Rendered as plain HTML."
+            fields:
+              question:
+                label: Question
+                type: text
+              answer:
+                label: Answer
+                type: textarea
+                size: small
+
   - width: 1/3
     sections:
       meta:
         type: fields
         fields:
+          seo_title:
+            label: SEO Title
+            type: text
+            maxlength: 65
+            help: "Overrides the page <title>. Keyword-front-loaded, ~55-60 chars."
           meta_description:
             label: Meta Description
             type: text

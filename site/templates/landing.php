@@ -206,6 +206,71 @@
   </div>
 </section>
 
+<!-- ═══════ UNGATED CONTENT (SEO + LLM readability) ═══════ -->
+<section class="landing-content">
+  <div class="container landing-content__inner">
+
+    <?php if ($page->who_for()->isNotEmpty()): ?>
+      <div class="landing-content__block">
+        <h2>Who this guide is for</h2>
+        <?= $page->who_for()->kt() ?>
+      </div>
+    <?php endif ?>
+
+    <?php if ($page->key_takeaways()->isNotEmpty()): ?>
+      <div class="landing-content__block">
+        <h2>What you&rsquo;ll take away</h2>
+        <ul class="landing-takeaways">
+          <?php foreach ($page->key_takeaways()->toStructure() as $t): ?>
+            <li>
+              <?= $t->text()->kt() ?>
+              <?php if ($t->source_name()->isNotEmpty()): ?>
+                <span class="landing-takeaways__src">
+                  <?php if ($t->source_url()->isNotEmpty()): ?>
+                    <a href="<?= $t->source_url() ?>" target="_blank" rel="noopener nofollow">Source: <?= $t->source_name() ?></a>
+                  <?php else: ?>
+                    Source: <?= $t->source_name() ?>
+                  <?php endif ?>
+                </span>
+              <?php endif ?>
+            </li>
+          <?php endforeach ?>
+        </ul>
+      </div>
+    <?php endif ?>
+
+    <?php if ($page->pull_quote()->isNotEmpty()): ?>
+      <blockquote class="landing-pullquote">
+        <p><?= $page->pull_quote() ?></p>
+        <?php if ($page->pull_quote_attribution()->isNotEmpty()): ?>
+          <cite><?= $page->pull_quote_attribution() ?></cite>
+        <?php endif ?>
+      </blockquote>
+    <?php endif ?>
+
+    <?php if ($page->faq()->isNotEmpty()): ?>
+      <div class="landing-content__block landing-faq">
+        <h2>Questions people ask</h2>
+        <?php foreach ($page->faq()->toStructure() as $item): ?>
+          <div class="landing-faq__item">
+            <h3 class="landing-faq__q"><?= $item->question() ?></h3>
+            <div class="landing-faq__a"><?= $item->answer()->kt() ?></div>
+          </div>
+        <?php endforeach ?>
+      </div>
+    <?php endif ?>
+
+    <div class="landing-byline">
+      <p>Written by <strong>Logan Shimmer</strong>, founder of Shimmer Labs, a software and AI studio in Stillwater, Oklahoma. <a href="<?= url('about') ?>">More about Logan &rarr;</a></p>
+    </div>
+
+    <div class="landing-content__cta">
+      <a href="#whitepaper-form" class="btn btn--cta">Get the free guide &rarr;</a>
+    </div>
+
+  </div>
+</section>
+
 <?php endif ?>
 
 <!-- GA4 Event Tracking -->
