@@ -256,6 +256,16 @@ return [
         return option('ghl.lead')();
       }
     ],
+    // /sql-guide — serve the standalone SQL reference page
+    [
+      'pattern' => 'sql-guide',
+      'action'  => function() {
+        $file = kirby()->root('index') . '/assets/sql-reference.html';
+        return is_file($file)
+          ? new Kirby\Cms\Response(file_get_contents($file), 'text/html')
+          : false;
+      }
+    ],
     // Legacy redirect: /projects -> /case-studies
     [
       'pattern' => 'projects',

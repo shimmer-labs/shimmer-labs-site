@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Practical SQL Reference</title>
+<meta name="description" content="A working reference for everyday SQL: the query skeleton, joins, subqueries, window functions, and the patterns and gotchas that come up most.">
+<style>
+  :root{
+    --paper:#f6f6f2;
+    --panel:#ffffff;
+    --ink:#15181d;
+    --muted:#5c6571;
+    --line:#e3e3db;
+    --accent:#1f6feb;
+    --accent-soft:#e7f0ff;
+    --warn:#9a5b00;
+    --warn-bg:#fbf0dd;
+    --code-bg:#14171c;
+    --code-fg:#e9ebee;
+    --kw:#7aa2f7;
+    --str:#9ece6a;
+    --cm:#7c8597;
+    --mono:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--sans);font-size:15px;line-height:1.55;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  code{font-family:var(--mono);}
+
+  header{
+    position:sticky;top:0;z-index:20;background:rgba(246,246,242,.93);
+    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);
+  }
+  .bar{max-width:1180px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+  .brand{font-weight:700;font-size:17px;letter-spacing:-.01em;white-space:nowrap;}
+  .brand span{color:var(--accent);}
+  .tag{font-size:12.5px;color:var(--muted);white-space:nowrap;}
+  .search{flex:1;min-width:220px;position:relative;}
+  .search input{
+    width:100%;padding:9px 13px 9px 34px;border:1px solid var(--line);border-radius:8px;
+    font-family:var(--mono);font-size:13.5px;background:var(--panel);color:var(--ink);
+  }
+  .search input:focus{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent);}
+  .search::before{content:"\2315";position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:16px;}
+  .count{font-size:12px;color:var(--muted);white-space:nowrap;}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 22px 60px;display:grid;grid-template-columns:230px 1fr;gap:34px;}
+  nav.toc{position:sticky;top:74px;align-self:start;max-height:calc(100vh - 96px);overflow:auto;font-size:13.5px;}
+  nav.toc h4{margin:0 0 8px;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);}
+  nav.toc a{display:block;padding:4px 9px;border-radius:6px;color:var(--ink);}
+  nav.toc a:hover{background:var(--accent-soft);text-decoration:none;}
+  nav.toc a.hide{display:none;}
+
+  main{min-width:0;}
+  .lead{margin:0 0 26px;color:var(--muted);max-width:64ch;}
+  .lead strong{color:var(--ink);}
+
+  section.card{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:20px 22px;margin-bottom:18px;scroll-margin-top:84px;
+  }
+  section.card.hide{display:none;}
+  .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:600;margin-bottom:4px;}
+  .card h2{margin:0 0 10px;font-size:20px;letter-spacing:-.01em;}
+  .card h3{margin:18px 0 7px;font-size:15px;}
+  .card p{margin:9px 0;}
+  .muted{color:var(--muted);}
+
+  pre{
+    background:var(--code-bg);color:var(--code-fg);border-radius:9px;
+    padding:13px 15px;overflow:auto;margin:11px 0;font-size:13px;line-height:1.5;
+  }
+  pre code{font-family:var(--mono);white-space:pre;}
+  .kw{color:var(--kw);font-weight:600;}
+  .str{color:var(--str);}
+  .cm{color:var(--cm);font-style:italic;}
+
+  .note,.warn{border-radius:9px;padding:11px 14px;margin:12px 0;font-size:14px;}
+  .note{background:var(--accent-soft);border:1px solid #cfe0ff;}
+  .warn{background:var(--warn-bg);border:1px solid #f0dcb4;color:#5b3b07;}
+  .warn b,.note b{font-weight:700;}
+
+  table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px;}
+  th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top;}
+  th{background:#f0f0ea;font-weight:600;}
+  td code{font-size:12.5px;}
+
+  .ex{font-size:14px;background:#f4f6fb;border-left:3px solid var(--accent);padding:9px 13px;border-radius:0 8px 8px 0;margin:13px 0 4px;}
+  .ex b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:3px;}
+
+  ul,ol{margin:9px 0;padding-left:22px;}
+  li{margin:4px 0;}
+
+  .empty{display:none;padding:40px;text-align:center;color:var(--muted);}
+  .empty.show{display:block;}
+
+  footer{max-width:1180px;margin:0 auto;padding:0 22px 50px;color:var(--muted);font-size:12.5px;}
+  footer hr{border:0;border-top:1px solid var(--line);margin:0 0 16px;}
+
+  @media (max-width:820px){
+    .wrap{grid-template-columns:1fr;gap:18px;}
+    nav.toc{position:static;max-height:none;border-bottom:1px solid var(--line);padding-bottom:10px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">SQL <span>Reference</span></div>
+    <div class="tag">PostgreSQL &middot; standard SQL</div>
+    <div class="search">
+      <input id="filter" type="text" placeholder="Filter: left join, window function, coalesce, nth highest&hellip;" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="toc" id="toc">
+    <h4>Contents</h4>
+  </nav>
+
+  <main>
+    <p class="lead">A working reference for everyday SQL: the query skeleton, joins, subqueries, window functions, and the patterns and pitfalls that come up most. Examples use <strong>PostgreSQL</strong> syntax; dialect differences are noted where they matter. Use the filter above to jump straight to a pattern.</p>
+
+    <section class="card" id="schema">
+      <div class="eyebrow">Sample tables</div>
+      <h2>Tables used in examples</h2>
+      <p class="muted">A small e-commerce / HR schema that the queries below run against.</p>
+<pre><code class="sql">customers (customer_id, name, email, region, created_at)
+orders    (order_id, customer_id, order_date, amount, status)
+employees (employee_id, name, email, manager_id, department, salary, hire_date)
+
+orders.customer_id   -> customers.customer_id
+employees.manager_id -> employees.employee_id   -- self-reference</code></pre>
+    </section>
+
+    <section class="card" id="skeleton">
+      <div class="eyebrow">Foundations</div>
+      <h2>The skeleton &amp; execution order</h2>
+      <p>Every SELECT is the same clauses in the same written order. Drop the ones you don't need; never reorder.</p>
+<pre><code class="sql">SELECT     [DISTINCT] columns / aggregates
+FROM       table
+JOIN       other ON condition
+WHERE      row filter
+GROUP BY   columns
+HAVING     group filter           -- aggregates live here
+ORDER BY   columns
+LIMIT      n;</code></pre>
+      <h3>Execution order (different from written order)</h3>
+<pre><code class="sql">FROM/JOIN -> WHERE -> GROUP BY -> HAVING -> SELECT -> DISTINCT -> ORDER BY -> LIMIT</code></pre>
+      <div class="warn"><b>The alias wall.</b> SELECT runs late, so a column alias you create there does not exist yet in WHERE, GROUP BY, or HAVING. It does exist in ORDER BY (which runs last). In HAVING, repeat the expression: <code>HAVING SUM(amount) &gt; 1000</code>, not <code>HAVING total &gt; 1000</code>. An alias only becomes a usable column name once the value crosses out into a CTE or subquery.</div>
+    </section>
+
+    <section class="card" id="operators">
+      <div class="eyebrow">Reading the wording</div>
+      <h2>Comparison words to operators</h2>
+      <p>Map the phrase to the operator before writing the query. A surprising share of "right logic, wrong result" bugs are <code>&gt;</code> vs <code>&gt;=</code>.</p>
+      <table>
+        <tr><th>Phrase</th><th>Operator</th></tr>
+        <tr><td>more than &middot; greater than &middot; over &middot; above &middot; exceeds</td><td><code>&gt;</code></td></tr>
+        <tr><td>at least &middot; X or more &middot; no fewer than</td><td><code>&gt;=</code></td></tr>
+        <tr><td>less than &middot; under &middot; below &middot; fewer than</td><td><code>&lt;</code></td></tr>
+        <tr><td>at most &middot; no more than &middot; up to</td><td><code>&lt;=</code></td></tr>
+      </table>
+    </section>
+
+    <section class="card" id="basics">
+      <div class="eyebrow">Selecting &amp; sorting</div>
+      <h2>SELECT, WHERE, sort, trim</h2>
+      <p>String matches are case-sensitive and use single quotes: <code>'East'</code>, not <code>"East"</code>. <code>ORDER BY ... DESC</code> for newest/highest first; <code>LIMIT n</code> slices after sorting; <code>DISTINCT</code> collapses duplicate rows.</p>
+<pre><code class="sql">SELECT name, email
+FROM customers
+WHERE region = 'East';</code></pre>
+      <div class="ex"><b>Example</b>The 5 most recent orders (order_id, order_date, amount):</div>
+<pre><code class="sql">SELECT order_id, order_date, amount
+FROM orders
+ORDER BY order_date DESC
+LIMIT 5;</code></pre>
+      <p class="muted">DESC = newest. ASC would return the 5 oldest.</p>
+    </section>
+
+    <section class="card" id="groupby">
+      <div class="eyebrow">Aggregating</div>
+      <h2>Aggregates, GROUP BY, WHERE vs HAVING</h2>
+      <p>Aggregates (<code>COUNT, SUM, AVG, MIN, MAX</code>) crush many rows into one. <code>GROUP BY</code> makes it one number <em>per group</em>. Every non-aggregated column in SELECT must appear in GROUP BY.</p>
+      <div class="note"><b>WHERE filters rows before grouping. HAVING filters groups after.</b> Aggregates can only go in HAVING. "Regions whose total spend exceeds X" is HAVING. "Only completed orders" is WHERE.</div>
+<pre><code class="sql">SELECT region, COUNT(*) AS num, SUM(amount) AS total
+FROM customers c
+JOIN orders o ON o.customer_id = c.customer_id
+WHERE o.status = 'completed'      <span class="cm">-- rows, before grouping</span>
+GROUP BY region
+HAVING SUM(amount) &gt; 10000        <span class="cm">-- groups, after aggregating</span>
+ORDER BY total DESC;</code></pre>
+      <div class="ex"><b>Example</b>Average order amount per region, completed orders only, regions averaging over 200, highest first:</div>
+<pre><code class="sql">SELECT c.region, AVG(o.amount) AS avg_order
+FROM customers c
+JOIN orders o ON o.customer_id = c.customer_id
+WHERE o.status = 'completed'
+GROUP BY c.region
+HAVING AVG(o.amount) &gt; 200
+ORDER BY avg_order DESC;</code></pre>
+    </section>
+
+    <section class="card" id="joins">
+      <div class="eyebrow">Combining tables</div>
+      <h2>JOINs</h2>
+      <p><b>INNER (<code>JOIN</code>):</b> only rows that match in both tables. <b>LEFT JOIN:</b> every row from the left table, with NULLs where the right has no match.</p>
+      <div class="warn"><b>Join direction.</b> LEFT JOIN keeps all of the <em>left</em> table. The table you want to preserve (e.g. all customers, even those with no orders) goes on the left. Reverse it and rows disappear silently, with no error.</div>
+<pre><code class="sql"><span class="cm">-- count orders per customer; zero-order customers show 0</span>
+SELECT c.name, COUNT(o.order_id) AS order_count
+FROM customers c
+LEFT JOIN orders o ON o.customer_id = c.customer_id
+GROUP BY c.customer_id, c.name;</code></pre>
+      <div class="note"><b>COUNT trap.</b> <code>COUNT(o.order_id)</code> counts non-nulls, so no-order customers read 0. <code>COUNT(*)</code> would read 1, because the LEFT-join row still exists (padded with NULLs).</div>
+      <h3>Anti-join (rows with no match)</h3>
+<pre><code class="sql">SELECT c.name
+FROM customers c
+LEFT JOIN orders o ON o.customer_id = c.customer_id
+WHERE o.order_id IS NULL;          <span class="cm">-- null-check the key</span></code></pre>
+      <p class="muted">The same shape on a self-reference finds, for instance, employees who are not managers (no one reports up to them).</p>
+      <h3>Self-join (employee to manager)</h3>
+<pre><code class="sql">SELECT e.name AS employee, m.name AS manager
+FROM employees e
+LEFT JOIN employees m ON m.employee_id = e.manager_id;  <span class="cm">-- LEFT so the top of the org still shows</span></code></pre>
+      <div class="ex"><b>Example</b>Total spend per customer, showing 0 rather than NULL for those with no orders:</div>
+<pre><code class="sql">SELECT c.name, COALESCE(SUM(o.amount), 0) AS total_spend
+FROM customers c
+LEFT JOIN orders o ON o.customer_id = c.customer_id
+GROUP BY c.customer_id, c.name;</code></pre>
+      <p class="muted">SUM over no rows returns NULL, so wrap it in COALESCE. (COUNT over no rows is already 0.)</p>
+    </section>
+
+    <section class="card" id="nulls">
+      <div class="eyebrow">Always-on</div>
+      <h2>NULLs, COUNT, COALESCE</h2>
+      <ul>
+        <li><b>NULL equals nothing,</b> not even NULL. Use <code>IS NULL</code> / <code>IS NOT NULL</code>, never <code>= NULL</code>.</li>
+        <li><code>COUNT(*)</code> counts rows; <code>COUNT(col)</code> skips NULLs. They give different answers.</li>
+        <li><code>COALESCE(expr, 0)</code> returns the first non-NULL argument. Turns a NULL sum into 0. (This is null-substitution, not casting.)</li>
+        <li><b>Integer division:</b> <code>5/2</code> can be <code>2</code>. Force float: <code>amount * 1.0 / n</code> or <code>CAST(x AS FLOAT)</code>.</li>
+        <li><code>UNION</code> removes duplicates (slower); <code>UNION ALL</code> keeps everything (faster).</li>
+      </ul>
+    </section>
+
+    <section class="card" id="subqueries">
+      <div class="eyebrow">Nesting</div>
+      <h2>Subqueries &amp; CTEs</h2>
+      <p>A subquery is a query whose result feeds another. Three flavors:</p>
+<pre><code class="sql"><span class="cm">-- scalar: returns one value</span>
+WHERE salary &gt; (SELECT AVG(salary) FROM employees)
+
+<span class="cm">-- list: pair with IN (auto-dedupes; ideal for "has at least one")</span>
+WHERE customer_id IN (SELECT customer_id FROM orders WHERE amount &gt; 500)
+
+<span class="cm">-- correlated: inner references the outer row, re-runs per row</span>
+WHERE e.salary = (SELECT MAX(salary) FROM employees x WHERE x.department = e.department)</code></pre>
+      <div class="note"><b>Why a scalar subquery for "above average":</b> you cannot write <code>WHERE salary &gt; AVG(salary)</code>, because WHERE runs before aggregation. The subquery computes the average separately first, then each row is compared to that one constant.</div>
+      <h3>CTE (WITH) &mdash; reusable and readable</h3>
+<pre><code class="sql">WITH big_spenders AS (
+    SELECT customer_id, SUM(amount) AS total
+    FROM orders
+    GROUP BY customer_id
+)
+SELECT * FROM big_spenders WHERE total &gt;= 1000;   <span class="cm">-- total is a column here</span></code></pre>
+      <p class="muted">Once named, a CTE is used like a table: <code>FROM big_spenders</code>. Reuse it rather than rebuilding its logic.</p>
+      <div class="ex"><b>Example</b>Customers with at least one order over 500 (names only):</div>
+<pre><code class="sql">SELECT name
+FROM customers
+WHERE customer_id IN (SELECT customer_id FROM orders WHERE amount &gt; 500);</code></pre>
+      <p class="muted">IN keeps the grain at one row per customer. A JOIN would fan out to one row per qualifying order and need DISTINCT.</p>
+      <div class="ex"><b>Example</b>Employees earning more than their own department's average (correlated):</div>
+<pre><code class="sql">SELECT e.name, e.department, e.salary
+FROM employees e
+WHERE e.salary &gt; (SELECT AVG(salary) FROM employees x WHERE x.department = e.department);</code></pre>
+      <p class="muted">"More than" is strictly <code>&gt;</code>. A one-person department equals its own average, so <code>&gt;</code> excludes that person while <code>&gt;=</code> would include them.</p>
+    </section>
+
+    <section class="card" id="window">
+      <div class="eyebrow">Window functions</div>
+      <h2>Window functions</h2>
+      <p>Compute across related rows <em>without collapsing</em> them. <code>PARTITION BY</code> is "GROUP BY that keeps every row," and it is optional (omit it and the whole table is one window). The inner <code>ORDER BY</code> sets the sequence for ranks and running totals.</p>
+<pre><code class="sql">function() OVER (PARTITION BY group ORDER BY sort frame)</code></pre>
+      <h3>Ranking &mdash; the three differ only on ties</h3>
+      <table>
+        <tr><th>Function</th><th>Ties</th><th>Sequence</th></tr>
+        <tr><td><code>ROW_NUMBER()</code></td><td>never ties</td><td>1, 2, 3, 4 (arbitrary tiebreak)</td></tr>
+        <tr><td><code>RANK()</code></td><td>ties share, then <b>skips</b></td><td>1, 2, 2, 4</td></tr>
+        <tr><td><code>DENSE_RANK()</code></td><td>ties share, <b>no skip</b></td><td>1, 2, 2, 3</td></tr>
+      </table>
+      <p class="muted">RANK is race medals (two silvers, no bronze). DENSE_RANK is grade tiers (no gaps). ROW_NUMBER is a queue ticket.</p>
+<pre><code class="sql">SELECT name, department, salary,
+       ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS rn,
+       RANK()       OVER (PARTITION BY department ORDER BY salary DESC) AS rnk,
+       DENSE_RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS d_rnk
+FROM employees;</code></pre>
+      <h3>Running total</h3>
+<pre><code class="sql">SELECT order_date, amount,
+       SUM(amount) OVER (ORDER BY order_date
+                         ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS running_total
+FROM orders
+ORDER BY order_date;</code></pre>
+      <p class="muted">No PARTITION BY means one continuous total. The inner ORDER BY is what makes it accumulate; the last row equals the grand total.</p>
+      <h3>LAG / LEAD &mdash; compare to another row</h3>
+<pre><code class="sql">LAG(amount)        OVER (ORDER BY order_date)   <span class="cm">-- value from the previous row</span>
+LAG(amount, 1, 0)  OVER (ORDER BY order_date)   <span class="cm">-- offset 1 (previous), default 0 if none</span>
+LEAD(amount)       OVER (ORDER BY order_date)   <span class="cm">-- looks forward instead</span></code></pre>
+      <div class="warn"><b>Offset vs default.</b> In <code>LAG(amount, 1, 0)</code> the middle argument is how many rows back (1 = previous; 0 means the current row, a common bug). The third argument replaces the first row's NULL. Without a default, the first row's LAG is NULL.</div>
+    </section>
+
+    <section class="card" id="patterns">
+      <div class="eyebrow">Common patterns</div>
+      <h2>Frequently asked patterns</h2>
+
+      <h3>Nth highest (e.g. 2nd highest salary)</h3>
+<pre><code class="sql">WITH ranked AS (
+    SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS rnk
+    FROM employees
+)
+SELECT DISTINCT salary FROM ranked WHERE rnk = 2;</code></pre>
+      <p class="muted">DENSE_RANK so ties count as one rank. DISTINCT is insurance: harmless when there is no tie, essential when two people share that rank. Rank in a CTE, filter outside, since a window function cannot live in WHERE.</p>
+
+      <h3>Top-N per group</h3>
+<pre><code class="sql">WITH ranked AS (
+    SELECT name, department, salary,
+           ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS rn
+    FROM employees
+)
+SELECT name, department, salary FROM ranked WHERE rn &lt;= 2;</code></pre>
+      <div class="note"><b>The function depends on the noun.</b> "Top N <em>employees</em>" counts people, so ROW_NUMBER gives exactly N. "Top N <em>salaries / tiers</em>, ties included" uses DENSE_RANK and can exceed N. If you must pick exactly N and a tie sits on the boundary, add a tiebreaker so the choice is deterministic: <code>ORDER BY salary DESC, hire_date ASC</code>.</div>
+
+      <h3>Find duplicates</h3>
+<pre><code class="sql">SELECT email, COUNT(*) AS cnt
+FROM customers
+GROUP BY email
+HAVING COUNT(*) &gt; 1;</code></pre>
+
+      <h3>Remove duplicates (keep one per key)</h3>
+<pre><code class="sql">WITH d AS (
+    SELECT *, ROW_NUMBER() OVER (PARTITION BY email ORDER BY created_at) AS rn
+    FROM customers
+)
+SELECT * FROM d WHERE rn = 1;   <span class="cm">-- ORDER BY decides which row survives</span></code></pre>
+      <p class="muted">Select the whole surviving record, not just the dedup key. ASC keeps the oldest; DESC keeps the newest.</p>
+
+      <h3>Monthly rollup &amp; period-over-period</h3>
+<pre><code class="sql">WITH monthly AS (
+    SELECT DATE_TRUNC('month', order_date) AS month,
+           SUM(amount) AS total
+    FROM orders
+    GROUP BY DATE_TRUNC('month', order_date)
+)
+SELECT month, total,
+       total - LAG(total) OVER (ORDER BY month) AS change_from_prev
+FROM monthly
+ORDER BY month;</code></pre>
+      <p class="muted"><code>DATE_TRUNC('month', d)</code> flattens every date to the first of its month so they group together. The pattern for "this period vs last" is: aggregate first in a CTE, apply the window (LAG) second. The first month's change is NULL.</p>
+    </section>
+
+    <section class="card" id="dml">
+      <div class="eyebrow">Modifying data</div>
+      <h2>DML &mdash; change the rows</h2>
+      <div class="warn"><b>Always include a WHERE</b> on UPDATE and DELETE, or you hit every row in the table.</div>
+<pre><code class="sql"><span class="cm">-- add rows</span>
+INSERT INTO customers (customer_id, name, region)
+VALUES (101, 'Acme Co', 'West');
+
+<span class="cm">-- change rows; a range filter is common ("rows with id between X and Y")</span>
+UPDATE orders
+SET status = 'completed'
+WHERE order_id BETWEEN 20 AND 100;
+
+<span class="cm">-- remove rows</span>
+DELETE FROM orders
+WHERE status = 'cancelled';</code></pre>
+      <p class="muted">Shape to remember: <code>UPDATE table SET col = val WHERE ...</code>. The WHERE is the same row filter as in SELECT.</p>
+    </section>
+
+    <section class="card" id="ddl">
+      <div class="eyebrow">Defining tables</div>
+      <h2>DDL &mdash; define the structure</h2>
+<pre><code class="sql">CREATE TABLE users_roles (
+    user_id INTEGER REFERENCES users(id),
+    role_id INTEGER REFERENCES roles(id),
+    PRIMARY KEY (user_id, role_id)      <span class="cm">-- composite key: each pair once</span>
+);
+
+ALTER TABLE customers ADD COLUMN phone VARCHAR(20);
+
+DROP TABLE customers;</code></pre>
+    </section>
+
+    <section class="card" id="case">
+      <div class="eyebrow">Conditional logic</div>
+      <h2>CASE &amp; filtered counts</h2>
+<pre><code class="sql">SELECT name,
+       CASE WHEN salary &gt;= 100000 THEN 'high'
+            WHEN salary &gt;= 60000  THEN 'mid'
+            ELSE 'entry' END AS band
+FROM employees;</code></pre>
+      <p>Counting or summing a subset with CASE:</p>
+<pre><code class="sql">SELECT
+  COUNT(*) AS total_orders,
+  COUNT(CASE WHEN status = 'completed' THEN 1 END) AS completed,
+  SUM(CASE WHEN status = 'completed' THEN amount ELSE 0 END) AS completed_revenue,
+  100.0 * COUNT(CASE WHEN status = 'completed' THEN 1 END) / COUNT(*) AS pct_completed
+FROM orders;</code></pre>
+      <p class="muted">The <code>100.0</code> forces float division so the percentage is not flattened to 0 by integer math.</p>
+    </section>
+
+    <section class="card" id="checks">
+      <div class="eyebrow">Before you run</div>
+      <h2>Quick sanity checks</h2>
+      <ol>
+        <li><b>Grain:</b> one row per <em>what</em>? A fanned-out JOIN silently doubles SUMs.</li>
+        <li><b>NULL:</b> using <code>IS NULL</code>, not <code>= NULL</code>? <code>COUNT(col)</code> vs <code>COUNT(*)</code>?</li>
+        <li><b>Operator:</b> did "more than" become <code>&gt;</code> and not <code>&gt;=</code>?</li>
+        <li><b>Integer division:</b> any ratio needs <code>* 1.0</code> or a cast.</li>
+        <li><b>Only what's asked:</b> no extra columns, no filters the question did not request.</li>
+        <li><b>Alias placement:</b> not used in WHERE / HAVING / GROUP BY (repeat the expression there).</li>
+        <li><b>Tiny example:</b> three rows in your head, does the logic give the right answer?</li>
+      </ol>
+    </section>
+
+    <div class="empty" id="empty">No section matches that filter. Try a shorter keyword.</div>
+  </main>
+</div>
+
+<footer>
+  <hr>
+  PostgreSQL syntax throughout; SQL Server and MySQL differ on a few items (<code>LIMIT</code> vs <code>TOP</code>, <code>DATE_TRUNC</code> vs <code>DATETRUNC</code>, alias visibility in HAVING). Last reviewed June 2026.
+</footer>
+
+<script>
+(function(){
+  var KW = ["UNBOUNDED PRECEDING","CURRENT ROW","ROWS BETWEEN","PARTITION BY","DENSE_RANK","ROW_NUMBER","GROUP BY","ORDER BY","LEFT JOIN","INNER JOIN","RIGHT JOIN","FULL JOIN","CREATE TABLE","ALTER TABLE","DROP TABLE","ADD COLUMN","INSERT INTO","PRIMARY KEY","FOREIGN KEY","REFERENCES","IF EXISTS","UNION ALL","DATE_TRUNC","COALESCE","DISTINCT","BETWEEN","HAVING","SELECT","UPDATE","DELETE","VALUES","EXISTS","WINDOW","VARCHAR","INTEGER","NUMERIC","FLOAT","WITH","FROM","WHERE","JOIN","LIMIT","UNION","COUNT","CASE","WHEN","THEN","ELSE","END","OVER","RANK","LEAD","LAG","SUM","AVG","MIN","MAX","CAST","DESC","ASC","SET","AND","OR","NOT","IN","IS","ON","AS","NULL","DATE","TEXT","INT"];
+  KW.sort(function(a,b){return b.length-a.length;});
+  var kwRe = new RegExp("\\b(" + KW.join("|").replace(/ /g,"[ ]") + ")\\b","gi");
+  function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  function hl(raw){
+    var out = "", i = 0, n = raw.length;
+    while(i < n){
+      if(raw[i] === "-" && raw[i+1] === "-"){
+        var j = raw.indexOf("\n", i); if(j === -1) j = n;
+        out += '<span class="cm">' + esc(raw.slice(i,j)) + '</span>'; i = j; continue;
+      }
+      if(raw[i] === "'"){
+        var k = i+1; while(k < n && raw[k] !== "'") k++;
+        out += '<span class="str">' + esc(raw.slice(i, k+1)) + '</span>'; i = k+1; continue;
+      }
+      var s = i;
+      while(i < n && !(raw[i] === "-" && raw[i+1] === "-") && raw[i] !== "'") i++;
+      out += esc(raw.slice(s,i)).replace(kwRe, function(m){return '<span class="kw">'+m+'</span>';});
+    }
+    return out;
+  }
+  try{
+    document.querySelectorAll("pre code.sql").forEach(function(c){ c.innerHTML = hl(c.textContent); });
+  }catch(e){}
+
+  var toc = document.getElementById("toc");
+  var sections = Array.prototype.slice.call(document.querySelectorAll("section.card"));
+  sections.forEach(function(sec){
+    var h = sec.querySelector("h2");
+    var a = document.createElement("a");
+    a.href = "#" + sec.id; a.textContent = h.textContent; a.dataset.id = sec.id;
+    toc.appendChild(a);
+  });
+
+  var input = document.getElementById("filter");
+  var count = document.getElementById("count");
+  var empty = document.getElementById("empty");
+  var links = Array.prototype.slice.call(toc.querySelectorAll("a"));
+  function update(){
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    sections.forEach(function(sec){
+      var match = !q || sec.textContent.toLowerCase().indexOf(q) !== -1;
+      sec.classList.toggle("hide", !match);
+      if(match) shown++;
+    });
+    links.forEach(function(a){
+      var sec = document.getElementById(a.dataset.id);
+      a.classList.toggle("hide", sec.classList.contains("hide"));
+    });
+    empty.classList.toggle("show", shown === 0);
+    count.textContent = q ? (shown + " / " + sections.length) : "";
+  }
+  input.addEventListener("input", update);
+  input.addEventListener("keydown", function(e){ if(e.key === "Escape"){ input.value=""; update(); } });
+})();
