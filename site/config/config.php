@@ -298,6 +298,31 @@ return [
       }
     ],
 
+    // QR redirects for printed collateral (Chamber bag drop cards).
+    // 302 on purpose: destinations may change and scanners cache 301s.
+    // Clicks append to site/logs/qr-clicks.log since server-side redirects
+    // never reach GA4.
+    [
+      'pattern' => 'chamber',
+      'action'  => function() {
+        $log = kirby()->root('site') . '/logs/qr-clicks.log';
+        @mkdir(dirname($log), 0755, true);
+        @file_put_contents($log, date('c') . " chamber\n", FILE_APPEND);
+        header('Location: https://calendly.com/logan-shimmerlabs/30-min-consult?utm_source=chamber-bag-drop&utm_medium=qr&utm_campaign=new-member-bag', true, 302);
+        exit;
+      }
+    ],
+    [
+      'pattern' => 'skool',
+      'action'  => function() {
+        $log = kirby()->root('site') . '/logs/qr-clicks.log';
+        @mkdir(dirname($log), 0755, true);
+        @file_put_contents($log, date('c') . " skool\n", FILE_APPEND);
+        header('Location: https://www.skool.com/main-street-ai-2900/about?utm_source=chamber-bag-drop&utm_medium=qr', true, 302);
+        exit;
+      }
+    ],
+
     // SEO: Sitemap
     [
       'pattern' => 'sitemap.xml',

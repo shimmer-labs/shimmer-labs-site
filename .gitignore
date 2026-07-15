@@ -81,3 +81,6 @@ router.dev.php
 !/site/assets/**/*.png
 !/content/**/*.png
 !/assets/**/*.png
+
+# QR click logs (runtime, not content)
+site/logs/
