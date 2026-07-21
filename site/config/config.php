@@ -95,9 +95,30 @@ return [
       'tag'   => 'guide-ai-security-education',
       'label' => 'AI Security for Higher Education',
     ],
+    // Front door for Main Street AI (the free Skool community). The give is
+    // the "Map Your Marketing Loop" worksheet; the nurture invites into Skool.
+    // Uses the API method (not an inbound webhook) to avoid the now-premium
+    // inbound-webhook trigger: upsert the contact, then a SEPARATE add-tag call
+    // so the "Contact Tag" workflow trigger fires reliably.
+    'main-street-ai' => [
+      'method' => 'api',
+      'tag'    => 'main-street-ai',
+      'label'  => 'Map Your Marketing Loop',
+    ],
   ],
 
   'ghl.teamSizes' => ['Just me', '2-10', '11-25', '26-50', '51-100', '100+'],
+
+  // GHL API (Private Integration Token) config for the API-method guides.
+  // Base host + the contacts API version. Templates use a different version.
+  'ghl.api.base'    => 'https://services.leadconnectorhq.com',
+  'ghl.api.version' => '2021-07-28',
+  // SideCar location custom-field IDs (created via API, see project memory).
+  'ghl.api.fields' => [
+    'team_size'   => 'mUbO71djwygUP4YT2Jgw', // SINGLE_OPTIONS
+    'intent'      => 'qu6lBuyn2XsvkaxZFMhF', // TEXT
+    'source_page' => 'CoMg5UbbiwG1iAtunQDS', // TEXT
+  ],
 
   // Validates a guide-form submission and forwards it to the matching GHL
   // inbound webhook. Always returns a JSON response.
@@ -164,19 +185,94 @@ return [
       return $json(['ok' => false, 'error' => 'Too many submissions from this connection. Please try again later or email logan@shimmerlabs.co.'], 429);
     }
 
-    // Resolve the destination webhook.
-    $guide   = $guides[$guideSlug];
-    $webhook = option('ghl.env')($guide['env']);
-    if (!str_starts_with($webhook, 'https://')) {
-      error_log('[ghl.lead] Missing/invalid webhook for ' . $guideSlug . ' (' . $guide['env'] . ')');
-      return $json(['ok' => false, 'error' => 'We could not process that just now. Please email logan@shimmerlabs.co and we will send the guide.'], 503);
-    }
+    $guide = $guides[$guideSlug];
 
     // A single token that looks like a domain/URL is treated as the website.
     $website = '';
     if (strpos($business, ' ') === false &&
         preg_match('~^(https?://)?(www\.)?[a-z0-9-]+(\.[a-z0-9-]+)+([/?#].*)?$~i', $business)) {
       $website = preg_match('~^https?://~i', $business) ? $business : 'https://' . $business;
+    }
+
+    // ── API method (PIT): upsert the contact + custom fields, then a SEPARATE
+    // add-tag call so the "Contact Tag" workflow trigger fires reliably. Used by
+    // the Main Street AI front door to avoid the now-premium inbound-webhook
+    // trigger. (Legacy guides keep the webhook path below.)
+    if (($guide['method'] ?? '') === 'api') {
+      $pit = option('ghl.env')('GHL_PIT_TOKEN');
+      $loc = option('ghl.env')('GHL_LOCATION_ID');
+      if (!str_starts_with($pit, 'pit-') || $loc === '') {
+        error_log('[ghl.lead] Missing GHL_PIT_TOKEN/GHL_LOCATION_ID for ' . $guideSlug);
+        return $json(['ok' => false, 'error' => 'We could not process that just now. Please email logan@shimmerlabs.co and we will send the worksheet.'], 503);
+      }
+      $base   = option('ghl.api.base');
+      $fields = option('ghl.api.fields');
+      $hdr = [
+        'Authorization: Bearer ' . $pit,
+        'Version: ' . option('ghl.api.version'),
+        'Content-Type: application/json',
+        'Accept: application/json',
+      ];
+      $api = function (string $path, array $body) use ($base, $hdr) {
+        $ch = curl_init($base . $path);
+        curl_setopt_array($ch, [
+          CURLOPT_POST           => true,
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_TIMEOUT        => 8,
+          CURLOPT_CONNECTTIMEOUT => 4,
+          CURLOPT_HTTPHEADER     => $hdr,
+          CURLOPT_POSTFIELDS     => json_encode($body),
+        ]);
+        $resp = curl_exec($ch);
+        $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $err  = curl_error($ch);
+        curl_close($ch);
+        return [$code, $resp, $err];
+      };
+
+      // 1) Upsert the contact (dedupes on email) with custom fields.
+      $upsertBody = [
+        'locationId'   => $loc,
+        'firstName'    => mb_substr($firstName, 0, 100),
+        'email'        => $email,
+        'companyName'  => mb_substr($business, 0, 200),
+        'customFields' => [
+          ['id' => $fields['team_size'],   'field_value' => $teamSize],
+          ['id' => $fields['intent'],      'field_value' => mb_substr($intent, 0, 500)],
+          ['id' => $fields['source_page'], 'field_value' => $sourcePage],
+        ],
+      ];
+      if ($website !== '') { $upsertBody['website'] = $website; }
+      [$c1, $r1, $e1] = $api('/contacts/upsert', $upsertBody);
+      if ($e1 || $c1 < 200 || $c1 >= 300) {
+        error_log('[ghl.lead] upsert ' . $c1 . ' for ' . $guideSlug . ': ' . $e1 . ' ' . substr((string)$r1, 0, 200));
+        return $json(['ok' => false, 'error' => 'Something went wrong saving your details. Please email logan@shimmerlabs.co and we will send the worksheet.'], 502);
+      }
+      $decoded   = json_decode((string)$r1, true);
+      $contactId = $decoded['contact']['id'] ?? ($decoded['id'] ?? '');
+      if ($contactId === '') {
+        error_log('[ghl.lead] upsert returned no contact id for ' . $guideSlug . ': ' . substr((string)$r1, 0, 200));
+        return $json(['ok' => false, 'error' => 'Something went wrong. Please email logan@shimmerlabs.co.'], 502);
+      }
+
+      // 2) SEPARATE add-tag call — this discrete "tag added" event is what
+      // reliably fires the Contact Tag workflow trigger.
+      [$c2, $r2, $e2] = $api('/contacts/' . rawurlencode($contactId) . '/tags', ['tags' => [$guide['tag']]]);
+      if ($e2 || $c2 < 200 || $c2 >= 300) {
+        error_log('[ghl.lead] add-tag ' . $c2 . ' for ' . $guideSlug . ' (' . $contactId . '): ' . $e2 . ' ' . substr((string)$r2, 0, 200));
+        return $json(['ok' => false, 'error' => 'Almost there. We saved your details but could not start delivery. Please email logan@shimmerlabs.co.'], 502);
+      }
+
+      $hits[] = time();
+      @file_put_contents($ipFile, json_encode($hits));
+      return $json(['ok' => true]);
+    }
+
+    // ── Webhook method (legacy guides): forward to the per-guide inbound webhook.
+    $webhook = option('ghl.env')($guide['env']);
+    if (!str_starts_with($webhook, 'https://')) {
+      error_log('[ghl.lead] Missing/invalid webhook for ' . $guideSlug . ' (' . ($guide['env'] ?? '?') . ')');
+      return $json(['ok' => false, 'error' => 'We could not process that just now. Please email logan@shimmerlabs.co and we will send the guide.'], 503);
     }
 
     $payload = [

@@ -1,0 +1,149 @@
+Title: Map Your Marketing Loop, Free Worksheet
+
+----
+
+hero_label: Free Worksheet
+
+----
+
+hero_title: Stop Running Your Marketing on Vibes
+
+----
+
+hero_description: Most small businesses market by guessing. This one-page worksheet maps the real path a stranger takes to becoming a repeat customer who sends you referrals, so you can see exactly where you are leaking business and fix it.
+
+----
+
+hero_cta: Get the Free Worksheet →
+
+----
+
+bullets_title: What you'll figure out:
+
+----
+
+bullets:
+-
+  text: "The five stages every customer moves through (most owners skip two of them)"
+-
+  text: "The one stage where you are quietly losing the most business"
+-
+  text: "What to actually do at each step, in plain language"
+-
+  text: "One goal per stage, so your marketing stops feeling scattered"
+-
+  text: "Where a simple assistant can carry the boring parts for you"
+
+----
+
+form_heading: Get Your Free Worksheet
+
+----
+
+form_subheading: We'll email it to you right now. Print it, fill it in, done.
+
+----
+
+intent_label: What's the weak spot in your marketing right now?
+
+----
+
+intent_options:
+Getting found by new people
+Turning followers into customers
+Following up with leads
+Repeat business and referrals
+Honestly, all of it
+
+----
+
+whitepaper_slug: main-street-ai
+
+----
+
+summary_text:
+
+A funnel sounds complicated. A loop is simple: stranger, follower, first sale, repeat, referral. This worksheet walks you through all five stages for your own business, one goal per stage, so you can spot the exact place people fall off. It is the same map used in the Small Business University session with the Stillwater Chamber and Meridian Technology Center. Built for an owner who is great at the work but tired of marketing that feels like shouting into the void.
+
+----
+
+social_proof_text: Taught at Small Business University with the Stillwater Chamber and Meridian Technology Center.
+
+----
+
+thank_you_title: Check your inbox!
+
+----
+
+thank_you_description: We just sent the Map Your Marketing Loop worksheet to your email. Print it, grab a coffee, fill it in. If it's not there in a couple minutes, check your spam folder.
+
+----
+
+thankyou_cta_title: Join the free community
+
+----
+
+thankyou_cta_text: Main Street AI is where owners like you figure this out together. The full workshop, every worksheet, and weekly office hours. Free, forever.
+
+----
+
+thankyou_cta_label: Join Main Street AI →
+
+----
+
+thankyou_cta_url: https://www.skool.com/main-street-ai-2900
+
+----
+
+meta_description: Free one-page worksheet for small business owners: map the loop from stranger to repeat customer and see exactly where you are losing business. Taught at Small Business University in Stillwater, OK.
+
+----
+
+og_image:
+
+----
+
+seo_title: Map Your Marketing Loop, Free Worksheet for Small Business
+
+----
+
+who_for: This worksheet is for owner-operators of small, hands-on businesses, roughly 1 to 50 people: trades and home services, restaurants and food trucks, salons, studios, shops, coaches, and local service providers. If you are great at the work but your marketing feels scattered and you are not sure where new customers actually come from, it was written for you.
+
+----
+
+key_takeaways:
+-
+  text: "The five stages of the loop: stranger, follower, first sale, repeat, and referral, and why thinking in a loop beats thinking in a funnel."
+-
+  text: "How to set one clear goal for each stage so your posts, emails, and follow-ups all pull in the same direction."
+-
+  text: "How to spot the single stage where you are leaking the most business, usually follow-up or repeat, and what to do about it."
+-
+  text: "Which boring, repeatable parts of the loop a simple assistant can quietly handle for you, so you stop being the one who has to remember."
+
+----
+
+pull_quote: A funnel sounds complicated. A loop is just stranger, follower, first sale, repeat, referral. Once you can see it, you can fix it.
+
+----
+
+pull_quote_attribution: Logan Shimmer, Shimmer Labs
+
+----
+
+faq:
+-
+  question: "What is a marketing loop?"
+  answer: "It is the path a person takes from never having heard of you to becoming a repeat customer who refers their friends: stranger, follower, first sale, repeat, referral. Unlike a funnel that ends at the sale, a loop keeps going, because happy customers feed the top of it by sending you new people. The worksheet maps all five stages for your business."
+-
+  question: "Is this worksheet really free?"
+  answer: "Yes. We email it to you the moment you fill in the form, no cost and no catch. It also lives inside Main Street AI, our free community, along with the full workshop it came from."
+-
+  question: "What is Main Street AI?"
+  answer: "It is a free community for small business owners who keep hearing they should use AI and have no idea where to start. Plain answers, short lessons, and weekly office hours, run by Logan Shimmer of Shimmer Labs. No jargon and no hype. You can join right after you grab the worksheet."
+-
+  question: "Do I need any tech skills to use this?"
+  answer: "No. The worksheet is pen and paper simple. The point is to see your marketing clearly first. If you later want an assistant to handle the repetitive parts, the community walks you through it in plain language."
+-
+  question: "Where can I get help with this in person?"
+  answer: "Shimmer Labs runs free office hours in Stillwater. Bring the part of your marketing that is driving you nuts and we will tell you straight where to start. Details are inside the community."

@@ -11,10 +11,19 @@
       <p><?= $page->thank_you_description()->or("We just sent the guide to your email. If you don't see it in a few minutes, check your spam folder.") ?></p>
 
       <div class="landing-thankyou__ctas">
+        <?php
+        // First CTA card is page-driven. Defaults preserve the consultation
+        // booking for existing guides; a community page (e.g. /sbu) overrides
+        // these fields to invite people into Main Street AI instead.
+        $tyTitle = $page->thankyou_cta_title()->or('Free Consultation');
+        $tyText  = $page->thankyou_cta_text()->or('30 minutes. No pitch, no pressure, just practical advice.');
+        $tyLabel = $page->thankyou_cta_label()->or('Book a Call →');
+        $tyUrl   = $page->thankyou_cta_url()->or('https://api.leadconnectorhq.com/widget/booking/tCHB0sj6MoYpJYWJyVqd');
+        ?>
         <div class="landing-thankyou__cta-card">
-          <h3>Free Consultation</h3>
-          <p>30 minutes. No pitch, no pressure, just practical advice.</p>
-          <a href="https://api.leadconnectorhq.com/widget/booking/tCHB0sj6MoYpJYWJyVqd" class="btn btn--cta" target="_blank" rel="noopener">Book a Call →</a>
+          <h3><?= $tyTitle ?></h3>
+          <p><?= $tyText ?></p>
+          <a href="<?= $tyUrl ?>" class="btn btn--cta" target="_blank" rel="noopener"><?= $tyLabel ?></a>
         </div>
         <div class="landing-thankyou__cta-card">
           <h3>Have Questions?</h3>
