@@ -54,7 +54,7 @@ Platforms: Contract PDFs, Notion, Chrome, Stripe
 
 ----
 
-Hero_image: logan-headshot.png
+Hero_image: logan-headshot-2026.jpg
 
 ----
 

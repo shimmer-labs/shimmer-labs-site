@@ -8,7 +8,7 @@
         <?= $bio->kt() ?>
       </div>
       <div class="founder__image">
-        <img src="<?= url('assets/images/hero.jpg') ?>" alt="<?= $name ?>" class="founder__photo">
+        <img src="<?= url('assets/images/logan-headshot-sq.jpg') ?>" alt="<?= $name ?>" class="founder__photo">
         <span class="founder__name"><?= $name ?></span>
       </div>
     </div>

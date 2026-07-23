@@ -13,19 +13,25 @@
 <!-- Hero: Problem-statement -->
 <section class="home-hero">
   <div class="container">
-    <div class="home-hero__inner">
-      <div class="home-hero__pain">
-        <p>You didn't start your business to answer emails at midnight.</p>
-        <p>Most small business owners lose 15+ hours a week to admin that has nothing to do with the work they love.</p>
+    <div class="home-hero__inner home-hero__inner--with-photo">
+      <div class="home-hero__copy">
+        <div class="home-hero__pain">
+          <p>You didn't start your business to answer emails at midnight.</p>
+          <p>Most small business owners lose 15+ hours a week to admin that has nothing to do with the work they love.</p>
+        </div>
+        <h1 class="home-hero__headline">We build custom software for small businesses.</h1>
+        <p class="home-hero__tagline">You drive. We build the sidecar.</p>
+        <p class="home-hero__credential">Built by a systems engineer with two decades across <a href="<?= url('about') ?>">National Instruments, Iterable, WeaveGrid, and Sense</a> — making complex systems behave, before AI was the hammer.</p>
+        <div class="home-hero__ctas">
+          <a href="<?= url('case-studies') ?>" class="btn btn--cta">See the Work</a>
+          <a href="<?= url('contact') ?>" class="btn btn--secondary home-hero__btn-secondary">Book a Call</a>
+        </div>
+        <p class="home-hero__trust">No pitch. No pressure. Just a 30-minute conversation.</p>
       </div>
-      <h1 class="home-hero__headline">We build custom software for small businesses.</h1>
-      <p class="home-hero__tagline">You drive. We build the sidecar.</p>
-      <p class="home-hero__credential">Built by a systems engineer with two decades across <a href="<?= url('about') ?>">National Instruments, Iterable, WeaveGrid, and Sense</a> — making complex systems behave, before AI was the hammer.</p>
-      <div class="home-hero__ctas">
-        <a href="<?= url('case-studies') ?>" class="btn btn--cta">See the Work</a>
-        <a href="<?= url('contact') ?>" class="btn btn--secondary home-hero__btn-secondary">Book a Call</a>
+      <div class="home-hero__photo">
+        <img src="<?= url('assets/images/logan-presenting.jpg') ?>" alt="Logan Shimmer teaching an AI workshop at Meridian Technology Center in Stillwater">
+        <span class="home-hero__photo-caption">Teaching "AI for the Boring Parts of Your Business" at Meridian Technology Center in Stillwater</span>
       </div>
-      <p class="home-hero__trust">No pitch. No pressure. Just a 30-minute conversation.</p>
     </div>
   </div>
 </section>

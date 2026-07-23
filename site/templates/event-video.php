@@ -583,7 +583,7 @@
   <div class="container">
     <div class="ev-meet__grid">
       <div class="ev-meet__avatar">
-        <img src="<?= url('assets/images/hero.jpg') ?>" alt="Logan Shimmer">
+        <img src="<?= url('assets/images/logan-headshot-sq.jpg') ?>" alt="Logan Shimmer">
       </div>
       <div class="ev-meet__content">
         <div class="ev-meet__label">Who You're Talking To</div>
