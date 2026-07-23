@@ -283,10 +283,15 @@ if ($page->portfolioProjects()->isNotEmpty()) {
 </section>
 <?php endif ?>
 
+<!-- Sidecar: Walkthrough front-door offer -->
+<?php if ($isSidecar): ?>
+<?php snippet('walkthrough-cta') ?>
+<?php endif ?>
+
 <!-- Sidecar: Capacity + Pricing Anchor -->
 <?php if ($isSidecar): ?>
 <div class="scarcity">
-  <p>We have capacity for <strong>5 new Sidecar partners per month</strong>. From $1,000/mo + implementation from $1,000.</p>
+  <p>We have capacity for <strong>5 new Sidecar partners per month</strong>. $2,000 setup + $1,000/mo to run.</p>
 </div>
 <?php endif ?>
 

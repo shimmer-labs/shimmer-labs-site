@@ -51,7 +51,7 @@
         <div class="build-card__icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" style="width: 48px; height: 48px; display: block;"></div>
         <h3 class="build-card__title">Sidecar (AI Agents)</h3>
         <p class="build-card__description">Narrow AI-assisted workflows that handle one job each. Live for Sweat Yoga and Supabase. Live in a week, autonomous in a month.</p>
-        <span class="build-card__price">From $1,000/mo + implementation from $1,000</span>
+        <span class="build-card__price">$2,000 setup + $1,000/mo to run</span>
         <span class="build-card__arrow">View Details →</span>
       </a>
       <a href="/services/custom-apps" class="build-card">
@@ -71,6 +71,9 @@
     </div>
   </div>
 </section>
+
+<!-- The Walkthrough: front-door offer -->
+<?php snippet('walkthrough-cta') ?>
 
 <!-- Thesis: The technology works. Nobody designed the system. -->
 <?php snippet('comparison-table') ?>

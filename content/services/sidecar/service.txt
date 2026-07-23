@@ -2,7 +2,7 @@ Title: Sidecar, AI Agents for Your Business
 
 ----
 
-Meta_description: AI-assisted workflows for small service businesses. Shipped for Sweat Yoga, Supabase, Paidly, and Taddy. Live in a week, autonomous in a month. From $1,000/mo + implementation from $1,000. Cancel anytime.
+Meta_description: AI-assisted workflows for small service businesses. Shipped for Sweat Yoga, Supabase, Paidly, and Taddy. Live in a week, autonomous in a month. $2,000 setup + $1,000/mo to run. Cancel anytime.
 
 ----
 
@@ -14,7 +14,7 @@ Summary: You stay in the driver's seat. Everything else goes in the sidecar. AI 
 
 ----
 
-Pricerange: $1,000/mo + implementation from $1,000
+Pricerange: $2,000 setup + $1,000/mo to run
 
 ----
 
@@ -190,7 +190,7 @@ Faq:
   answer: 'Sometimes. That''s why we do a 2-week supervised rollout. Your agents run with our team watching, and we catch the weird situations before they go fully autonomous.'
 -
   question: 'How much does it cost?'
-  answer: 'Sidecar starts at $1,000/month. Setup from $1,000, sized to what your build actually needs. There''s also a small AI usage fee (usually $20-$100/month) that we cover while we''re building and testing, then hand over to you once it''s live. Cancel anytime. No contracts.'
+  answer: 'Setup is $2,000 and it''s $1,000 a month to run. Smaller, simpler builds get smaller quotes. There''s a small usage cost (usually $20-$100/month) that we cover while we''re building and testing, then hand over to you once it''s live. Cancel anytime. No contracts.'
 -
   question: 'What if I hate it?'
   answer: 'Cancel anytime. No contracts, no cancellation fees. If it''s not saving you time, you shouldn''t be paying for it.'

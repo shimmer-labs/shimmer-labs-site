@@ -14,7 +14,7 @@ Text:
 
 ## TL;DR
 
-**Pick Shimmer Labs Sidecar if** you're running a 1-10 person service business, your back-office work is bleeding hours every week, and you want one engineer who's accountable end-to-end. From $1,000/mo + implementation from $1,000. Live in a week. Cancel anytime.
+**Pick Shimmer Labs Sidecar if** you're running a 1-10 person service business, your back-office work is bleeding hours every week, and you want one engineer who's accountable end-to-end. $2,000 setup + $1,000/mo to run. Live in a week. Cancel anytime.
 
 **Pick something else if** you're an enterprise with procurement, you only need a Zapier between two SaaS tools, you want a chatbot for your website, or your budget caps out below $1,000/mo total.
 
@@ -62,8 +62,8 @@ Text:
 | What you get | A working production system, owned by you, maintained by us | A starter workflow you'll need to debug yourself |
 | Communication | Phone, Slack, in-person at Office Hours | Fiverr DMs, often across time zones |
 | Accountability | One US-based engineer responsible end-to-end | A freelancer who'll move on to the next gig |
-| Pricing | $1,000/mo + implementation from $1,000 | $50-500 for the build, nothing after |
-| Total cost over 12 months | ~$13,000 including maintenance | $500 to start + your time fixing it forever |
+| Pricing | $2,000 setup + $1,000/mo to run | $50-500 for the build, nothing after |
+| Total cost over 12 months | ~$14,000 including maintenance | $500 to start + your time fixing it forever |
 
 **They win when** the workflow is genuinely simple, you have time to debug, and the failure mode is "I lose a few hours." **We win when** the failure mode is "a customer gets the wrong message" and the workflow needs to actually keep working.
 
@@ -106,7 +106,7 @@ Text:
 
 | Option | First-year cost | What you get |
 |---|---|---|
-| Sidecar (Shimmer Labs) | $13,000 ($1k impl. + $1k × 12) | One workflow, live in a week, maintained, with the engineer who built it on Slack |
+| Sidecar (Shimmer Labs) | $14,000 ($2k setup + $1k × 12) | One workflow, live in a week, maintained, with the engineer who built it on Slack |
 | Make/Zapier shop | $2,000-$5,000 | The flow, no maintenance. You own the breakage. |
 | Fiverr freelancer | $500-$2,000 | A starting point. You finish it. |
 | Part-time admin ($20/hr × 20 hrs/wk) | ~$22,000 + payroll burden | A person, when they're at work |

@@ -5083,6 +5083,60 @@ img.loaded {
 }
 
 /* ===================================
+   Walkthrough CTA (the front-door offer)
+   =================================== */
+.walkthrough {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-charcoal) 100%);
+  color: var(--color-white);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  border-top: 4px solid var(--color-gold);
+}
+
+.walkthrough__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.walkthrough__tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  border: 1px solid rgba(253, 190, 52, 0.4);
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.walkthrough__headline {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  margin-bottom: var(--spacing-sm);
+}
+
+.walkthrough__body {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.6;
+}
+
+.walkthrough__terms {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.walkthrough__terms strong {
+  color: var(--color-gold);
+}
+
+/* ===================================
    Home Hero (problem-statement)
    =================================== */
 .home-hero {

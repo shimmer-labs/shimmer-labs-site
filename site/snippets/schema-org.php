@@ -282,7 +282,7 @@ if ($page->intendedTemplate()->name() === 'service') {
         'priceCurrency' => 'USD',
         'unitText' => 'MONTH'
       ],
-      'description' => 'From $1,000/month + implementation from $1,000. Model API costs pass-through. Cancel anytime, no contracts.'
+      'description' => '$2,000 setup + $1,000/month to run. Model API costs pass-through. Cancel anytime, no contracts.'
     ];
   } elseif ($slug === 'custom-apps') {
     $serviceSchema['offers'] = [
