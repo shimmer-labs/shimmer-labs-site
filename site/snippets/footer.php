@@ -61,6 +61,6 @@
   </div>
 </footer>
 
-<?= js(['assets/js/main.js']) ?>
+<script src="<?= url('assets/js/main.js') ?>?v=<?= substr(md5_file(kirby()->root('index') . '/assets/js/main.js'), 0, 8) ?>"></script>
 </body>
 </html>

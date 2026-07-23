@@ -88,8 +88,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   
-  <?= css([
-    'assets/css/main.css']) ?>
+  <?php // Version param busts browser heuristic caching (DO serves last-modified 1980, no max-age) ?>
+  <link rel="stylesheet" href="<?= url('assets/css/main.css') ?>?v=<?= substr(md5_file(kirby()->root('index') . '/assets/css/main.css'), 0, 8) ?>">
 
   <?php snippet('analytics') ?>
   <?php snippet('schema-org') ?>
