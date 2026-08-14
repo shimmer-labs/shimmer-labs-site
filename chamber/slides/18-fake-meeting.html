@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>13 Fake Meeting</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+  .row{display:flex;gap:60px;margin-top:132px;align-items:center;}
+  .grid{flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .p{height:212px;border-radius:12px;background:#2a3b52;position:relative;display:flex;align-items:flex-end;padding:12px 14px;}
+  .p .nm{color:rgba(255,255,255,.85);font-size:23px;background:rgba(0,0,0,.45);padding:4px 12px;border-radius:6px;}
+  .p svg{position:absolute;top:34px;left:50%;transform:translateX(-50%);}
+  .p.fake{outline:4px solid var(--red);}
+  .p.real{outline:4px solid var(--green);}
+  .p .badge{position:absolute;top:12px;right:12px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;padding:4px 12px;border-radius:6px;color:#fff;}
+  .p.fake .badge{background:var(--red);}
+  .p.real .badge{background:var(--green);}
+  .story{flex:1;display:flex;flex-direction:column;gap:32px;}
+  .story .big{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:84px;color:var(--navy);line-height:1;}
+  .story p{font-size:37px;line-height:1.45;color:var(--ink);}
+  .story p b{color:var(--navy);}
+</style></head>
+<body class="light">
+<div class="stripe"></div>
+<div class="tag">The Downside · The Fake Meeting</div>
+<h1 class="slide-title">Every face on the call was fake. <span class="gold">Except his.</span></h1>
+<div class="row">
+  <div class="grid">
+    <div class="p fake"><span class="badge">FAKE</span><svg width="74" height="74" viewBox="0 0 70 70"><circle cx="35" cy="24" r="15" fill="#8fa1b8"/><path d="M8 68 Q35 40 62 68" fill="#8fa1b8"/></svg><span class="nm">&ldquo;The CFO&rdquo;</span></div>
+    <div class="p fake"><span class="badge">FAKE</span><svg width="74" height="74" viewBox="0 0 70 70"><circle cx="35" cy="24" r="15" fill="#8fa1b8"/><path d="M8 68 Q35 40 62 68" fill="#8fa1b8"/></svg><span class="nm">&ldquo;A director&rdquo;</span></div>
+    <div class="p fake"><span class="badge">FAKE</span><svg width="74" height="74" viewBox="0 0 70 70"><circle cx="35" cy="24" r="15" fill="#8fa1b8"/><path d="M8 68 Q35 40 62 68" fill="#8fa1b8"/></svg><span class="nm">&ldquo;A coworker&rdquo;</span></div>
+    <div class="p fake"><span class="badge">FAKE</span><svg width="74" height="74" viewBox="0 0 70 70"><circle cx="35" cy="24" r="15" fill="#8fa1b8"/><path d="M8 68 Q35 40 62 68" fill="#8fa1b8"/></svg><span class="nm">&ldquo;A coworker&rdquo;</span></div>
+    <div class="p real"><span class="badge">REAL</span><svg width="74" height="74" viewBox="0 0 70 70"><circle cx="35" cy="24" r="15" fill="#d9a441"/><path d="M8 68 Q35 40 62 68" fill="#d9a441"/></svg><span class="nm">The employee</span></div>
+    <div class="p fake"><span class="badge">FAKE</span><svg width="74" height="74" viewBox="0 0 70 70"><circle cx="35" cy="24" r="15" fill="#8fa1b8"/><path d="M8 68 Q35 40 62 68" fill="#8fa1b8"/></svg><span class="nm">&ldquo;A coworker&rdquo;</span></div>
+  </div>
+  <div class="story">
+    <div class="big">$25 million</div>
+    <p>A worker joined a normal video call with his boss and coworkers. He knew every face. He knew every voice.</p>
+    <p><b>Every one of them was a deepfake.</b> He wired the money. It was gone.</p>
+  </div>
+</div>
+<div class="takeaway">Seeing is no longer believing. <b>A face on a screen is not proof.</b></div>
+<div class="num">18</div>
+</body></html>
