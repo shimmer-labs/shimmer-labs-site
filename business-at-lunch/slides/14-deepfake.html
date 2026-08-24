@@ -9,39 +9,29 @@
     color:rgba(255,255,255,.9);margin-bottom:34px;
   }
   .player{
-    width:1240px;border-radius:18px;overflow:hidden;background:#000;
-    border:1px solid rgba(255,255,255,.18);position:relative;cursor:pointer;
+    width:1160px;border-radius:18px;overflow:hidden;background:#000;
+    border:1px solid rgba(255,255,255,.18);position:relative;
   }
-  .player video{display:block;width:100%;}
+  .player img{display:block;width:100%;}
   .player .playbtn{
     position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-    width:130px;height:130px;border-radius:50%;background:rgba(10,26,47,.75);
+    width:120px;height:120px;border-radius:50%;background:rgba(10,26,47,.7);
     border:4px solid #fff;display:flex;align-items:center;justify-content:center;
-    transition:opacity .2s;pointer-events:none;
   }
-  .player .playbtn svg{margin-left:10px;}
-  .player.playing .playbtn{opacity:0;}
+  .player .playbtn svg{margin-left:9px;}
+  .caption{
+    font-size:27px;color:rgba(255,255,255,.72);margin-top:26px;max-width:1120px;
+    text-align:center;line-height:1.4;
+  }
+  .caption b{color:#fff;font-weight:600;}
 </style></head>
 <body class="dark">
 <div class="accent"></div>
 <div class="setup">Before we go on... a quick thank-you from Alane and the Chamber.</div>
-<div class="player" id="player">
-  <video id="alane" poster="../assets/deepfake-poster.jpg" preload="metadata" playsinline controls>
-    <source src="../assets/alane-deepfake.mp4" type="video/mp4">
-  </video>
-  <div class="playbtn"><svg width="52" height="52" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>
+<div class="player">
+  <img src="../assets/deepfake-poster.jpg" alt="A video thank-you from Alane">
+  <div class="playbtn"><svg width="48" height="48" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>
 </div>
+<div class="caption">Played live: a video of Alane, the director everyone in that room knows, thanking folks for coming. Then she asked everyone to write down their favorite child&rsquo;s name, just one, and said <b>security would escort out anyone who refused.</b> It looked completely real.</div>
 <div class="num">14</div>
-<script>
-  (function(){
-    var p = document.getElementById('player'), v = document.getElementById('alane');
-    p.addEventListener('click', function(e){
-      // let native control clicks (bottom bar) behave normally; big-target click toggles
-      if (v.paused) { v.play(); } else { v.pause(); }
-    });
-    v.addEventListener('play',  function(){ p.classList.add('playing'); });
-    v.addEventListener('pause', function(){ p.classList.remove('playing'); });
-    v.addEventListener('ended', function(){ p.classList.remove('playing'); });
-  })();
-</script>
 </body></html>
