@@ -563,7 +563,7 @@
   <div class="container">
     <div class="ll-presenter__inner">
       <h2>About <span>Logan Shimmer</span></h2>
-      <p>Logan is the founder of Shimmer Labs, a boutique AI and automation consultancy based right here in Stillwater. He builds AI agents, custom software, and automation systems for small businesses, the kind of tools that handle your busywork so you can get back to the thing you actually started your business to do.</p>
+      <p>Logan is the founder of Shimmer Labs, a small software studio based right here in Stillwater. He builds AI agents, custom software, and automation systems for small businesses, the kind of tools that handle your busywork so you can get back to the thing you actually started your business to do.</p>
       <p>He's built agent systems for companies like Supabase, taught AI security workshops at OSU, and runs his own team of AI agents that handle everything from data processing to outreach. He's not here to sell you hype, he's here to show you what actually works.</p>
       <div class="presenter-cred">
         <span class="cred-tag">Shimmer Labs Founder</span>

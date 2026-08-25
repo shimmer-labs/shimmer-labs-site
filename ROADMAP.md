@@ -59,3 +59,18 @@ The site still says "automation consulting" everywhere but we're selling custom 
 - [ ] TikTok live coding streams
 - [ ] Alignable profile
 - [ ] Contra portfolio
+
+---
+
+## August 25, 2026 — Post Alex Evers session (pricing reset + trade pages)
+
+Shipped this session: $1k/$250 pricing floor with half-up-front terms, landscaper case study, /landscapers /plumbers /roofers trade pages, /notes articles, FAQPage schema everywhere, canonical tags, sitemap + llms.txt updates.
+
+### Follow-ups
+- [ ] **Buy automatepaperwork.com** (~$12/yr, confirmed available at check time; stopthepaperwork.com, automatemyinvoices.com, okpaperwork.com also looked free). Point it at shimmerlabs.co/plumbers or a picker page via Cloudflare redirect. Skip oklahomaai.com / stillwaterai.com (parked at Afternic, aftermarket priced).
+- [ ] **Landscaper permission** — ask him to be named + quoted, then upgrade the anonymous case study (photos, name, testimonial)
+- [ ] **Postmortem asks** — the roofer/HVAC church prospect and Heritage Petroleum ("help me understand where it lost you")
+- [ ] **Home & garden show / state fair vendor calendar** within ~100 miles; go early morning, reverse-prospect (Alex's play)
+- [ ] **Short Loom-style sales video** behind a QR code for in-person events
+- [ ] **Sweep Desktop sell sheets / decks** still carrying $5k-era pricing
+- [ ] **Watch trade page traffic** in GA4; whichever trade gets traction graduates to a standalone microsite on its own domain (Alex's stillwaterkids.com play)

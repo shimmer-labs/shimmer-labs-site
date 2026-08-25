@@ -15,7 +15,7 @@
           <span class="engagement__num">2</span>
           <div class="engagement__body">
             <h3 class="engagement__step-title">Scope and a flat price</h3>
-            <p>You get a written scope and a flat price for the first agent. No hourly billing. No surprise invoices. You decide before we start building.</p>
+            <p>You get a written scope and a flat price for the first agent. Half up front, half when it goes live. No hourly billing. No surprise invoices. You decide before we start building.</p>
           </div>
         </li>
         <li class="engagement__step">
@@ -29,7 +29,7 @@
           <span class="engagement__num">4</span>
           <div class="engagement__body">
             <h3 class="engagement__step-title">Live and looked-after</h3>
-            <p>Your agent runs. We monitor it, update it, handle the maintenance. From $1,000/mo. Cancel anytime. No contracts.</p>
+            <p>Your agent runs. We monitor it, update it, handle the maintenance. From $250/mo. Cancel anytime. No contracts.</p>
           </div>
         </li>
       </ol>

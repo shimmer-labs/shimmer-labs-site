@@ -1,0 +1,57 @@
+Title: Can AI read handwritten job sheets and invoices?
+
+----
+
+Meta_description: Yes. Modern AI reads handwriting, mixed languages, and margin notes, and understands what they mean. How a Stillwater landscaper's route sheet became one photo.
+
+----
+
+Date: 2026-08-25
+
+----
+
+Intro: Yes, including messy handwriting, Spanish and English on the same page, and notes crammed in the margins. Here's how it actually works.
+
+----
+
+Text:
+
+## The clipboard test
+
+The best test we know is a real one. A Stillwater landscaping crew ends every day with a route sheet: handwritten, different crew members' handwriting, part English, part Spanish, notes squeezed into the margins. For years, somebody typed that into the customer database every night. About two hours, at the end of a ten-hour day.
+
+Now the owner takes one photo. The AI reads all of it. <a href="/case-studies/stillwater-landscaper">Here's the full story with the actual route sheet</a>.
+
+## Reading is the easy part. Understanding is the point.
+
+Old-school scanning software (OCR) turns pen strokes into letters, and that's where it stops. Modern AI language models do something more useful: they understand what the words mean in context.
+
+On that route sheet, "cut the hedges, pulled weeds" isn't just text. It's an upsell that needs to go on an invoice. "Sprinklers were on, skipped it" isn't just a note. It's a yard that needs rescheduling. The AI makes those calls the way the person at the keyboard used to, and anything it can't read with confidence gets flagged for a human instead of guessed at.
+
+## What this means for your paperwork
+
+If your business runs on paper that a human currently retypes, that job is probably automatable:
+
+- Handwritten job sheets and work orders
+- Vendor invoices, printed or PDF
+- Receipts from the supply house
+- Notes from a site walkaround that become an estimate
+
+The rule we use: if the task is reading something, understanding it, and writing it down somewhere else, a computer does it better now. The judgment calls stay with you. The typing doesn't have to.
+
+----
+
+Faq:
+
+-
+  question: How accurate is AI at reading handwriting?
+  answer: >
+    Good enough that the failure mode matters more than the accuracy number. We build systems to flag anything they can't read with confidence rather than guess. In practice that means a human looks at a handful of items instead of typing all of them.
+-
+  question: Can it handle Spanish or mixed languages?
+  answer: >
+    Yes. The Stillwater route sheet system reads Spanish and English on the same page and writes clean English entries into the database. No separate translation step.
+-
+  question: Do I need a scanner?
+  answer: >
+    No. A phone photo is fine. Crooked, shadowed, taken in a truck at 6 PM: all fine.

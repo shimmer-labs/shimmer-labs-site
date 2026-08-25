@@ -1,0 +1,54 @@
+Title: Do I need new software to automate my paperwork?
+
+----
+
+Meta_description: No. The best automation usually works with the software you already have: QuickBooks, spreadsheets, even old desktop programs. Here's how, and why we build it that way.
+
+----
+
+Date: 2026-08-25
+
+----
+
+Intro: No. And if someone's answer to your paperwork problem starts with "first, migrate everything to our platform," ask more questions.
+
+----
+
+Text:
+
+## The trap: solving typing with more software
+
+Search for help with business paperwork and you'll find a wall of apps: field service platforms, invoicing suites, CRMs. Some are genuinely good. But they all share a cost nobody puts on the pricing page: your whole crew has to learn them, your history has to migrate into them, and your business now runs on their roadmap.
+
+If the actual problem is "a human spends hours retyping things," you may not need new software at all. You need the retyping to stop.
+
+## Automation that fits what you already run
+
+The systems we build sit alongside your existing tools instead of replacing them:
+
+- A gym owner kept her booking platform, which famously has no API for the things she needed. <a href="/case-studies/sweat-yoga-fitness">The AI operates it through the same screens she used</a>, following her rules, with her approval on anything customer-facing.
+- A landscaper kept his customer database. <a href="/case-studies/stillwater-landscaper">The photo-reading system writes into it</a> exactly like the person at the keyboard did.
+- Shops on QuickBooks stay on QuickBooks. The AI does the entry; a human approves before anything posts.
+
+Your crew changes nothing about how they work. That matters more than any feature list, because the tool your team actually uses beats the better tool they resist.
+
+## When new software IS the right answer
+
+Sometimes the honest answer is an off-the-shelf app. If you're starting from zero with no system at all, a purpose-built tool like QuickBooks or a field service app is the right first move, and we'll say so. Automation shines when you already have systems that mostly work and a human bridging the gaps between them by hand.
+
+----
+
+Faq:
+
+-
+  question: What if my software doesn't have an API?
+  answer: >
+    That's our favorite problem. When a vendor has no API, or prices it like ransom, we build AI browser automation that uses the software through the same screens a person does. That's exactly how the Sweat Yoga system works.
+-
+  question: Will automation break when my software updates?
+  answer: >
+    Sometimes things drift, which is why our monthly fee exists. We monitor the system, catch changes, and fix them. That's our job, not yours.
+-
+  question: Can you work with spreadsheets?
+  answer: >
+    Absolutely. Plenty of solid businesses run on spreadsheets. The AI can read them, write them, and keep them tidy without anyone changing tools.

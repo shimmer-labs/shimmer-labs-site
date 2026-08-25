@@ -14,9 +14,9 @@ Text:
 
 ## TL;DR
 
-**Pick Shimmer Labs Sidecar if** you're running a 1-10 person service business, your back-office work is bleeding hours every week, and you want one engineer who's accountable end-to-end. $2,000 setup + $1,000/mo to run. Live in a week. Cancel anytime.
+**Pick Shimmer Labs Sidecar if** you're running a 1-10 person service business, your back-office work is bleeding hours every week, and you want one engineer who's accountable end-to-end. Builds from $1,000 + from $250/mo to run, scoped before we start. Live in a week. Cancel anytime.
 
-**Pick something else if** you're an enterprise with procurement, you only need a Zapier between two SaaS tools, you want a chatbot for your website, or your budget caps out below $1,000/mo total.
+**Pick something else if** you're an enterprise with procurement, you only need a Zapier between two SaaS tools, you want a chatbot for your website, or your budget caps out below $250/mo total.
 
 ## Honest comparison
 
@@ -25,7 +25,7 @@ Text:
 | | Sidecar (Shimmer Labs) | n8n consultant |
 |---|---|---|
 | What you get | An engineer who builds the workflow, runs it on your account, and maintains it | Someone who builds an n8n flow and hands you the keys |
-| Pricing | $1,000/mo (covers maintenance, model upgrades, edge-case work) | $75-200/hr or flat per flow, no maintenance |
+| Pricing | From $250/mo (covers maintenance, model upgrades, edge-case work) | $75-200/hr or flat per flow, no maintenance |
 | When it breaks | We see it, we fix it, you find out via a Slack message | You see it, you call them, you wait |
 | Which AI we use | Claude by default, Gemini for high-volume document work, we swap as the models keep improving | Whatever AI was the popular one when they built it |
 | Best for | Owner-operators who want the engineering AND the operations | Buyers who want to own the flow long-term and have someone in-house to run it |
@@ -39,7 +39,7 @@ Text:
 | Scope | Workflows that need real engineering: software that clicks through websites when there's no other way, AI making judgment calls, parsing documents, a person reviewing before anything goes out | Plug-and-play connections between two tools that already let outsiders connect |
 | When the vendor has no API | We build browser automation that drives the UI like a person would ([Sweat Yoga](/case-studies/sweat-yoga-fitness): WellnessLiving has no membership-action endpoints; we shipped anyway) | They tell you it can't be done |
 | AI doing the judgment work | Built in. Claude or Gemini is part of the workflow, and you approve anything that goes to a customer | Possible but tacked on later, usually through OpenAI's $20/mo add-on |
-| Pricing | $1,000/mo flat, includes maintenance | $50-150/mo for the Make/Zapier subscription PLUS $1k-5k build fee, no maintenance |
+| Pricing | From $250/mo, includes maintenance | $50-150/mo for the Make/Zapier subscription PLUS $1k-5k build fee, no maintenance |
 
 **They win when** the integration is two tools that already talk to each other cleanly and AI judgment isn't needed. **We win when** the work needs AI making real decisions, software that has to click through a website that won't let outsiders connect, or a person approving anything before it goes to a customer.
 
@@ -62,8 +62,8 @@ Text:
 | What you get | A working production system, owned by you, maintained by us | A starter workflow you'll need to debug yourself |
 | Communication | Phone, Slack, in-person at Office Hours | Fiverr DMs, often across time zones |
 | Accountability | One US-based engineer responsible end-to-end | A freelancer who'll move on to the next gig |
-| Pricing | $2,000 setup + $1,000/mo to run | $50-500 for the build, nothing after |
-| Total cost over 12 months | ~$14,000 including maintenance | $500 to start + your time fixing it forever |
+| Pricing | From $1,000 setup + from $250/mo to run | $50-500 for the build, nothing after |
+| Total cost over 12 months | $4,000-$14,000 including maintenance, scoped to the job | $500 to start + your time fixing it forever |
 
 **They win when** the workflow is genuinely simple, you have time to debug, and the failure mode is "I lose a few hours." **We win when** the failure mode is "a customer gets the wrong message" and the workflow needs to actually keep working.
 
@@ -71,7 +71,7 @@ Text:
 
 | | Sidecar (Shimmer Labs) | Part-time admin |
 |---|---|---|
-| Hourly cost | ~$1.40/hour, runs 24/7 (math: $1,000/mo ÷ 730 hours) | $15-25/hour, 20 hours/week max |
+| Hourly cost | $0.35-$1.40/hour, runs 24/7 (math: $250-$1,000/mo ÷ 730 hours) | $15-25/hour, 20 hours/week max |
 | True cost of a $40K hire | N/A | ~$67K/year (salary + payroll tax + benefits + overhead + ramp) |
 | Availability | Always | 9-5, weekdays, when not sick or on vacation |
 | Errors | Approval gates catch them before send | Depends on the human |
@@ -87,7 +87,7 @@ Text:
 - You're an enterprise with procurement. We don't do RFPs, MSAs, or SOC 2 audits.
 - Your job is two SaaS tools with public APIs that just need to talk. Hire a Zapier shop for $500. We'll route you to one.
 - You want a chatbot on your homepage. We don't build chatbots. We build agents that handle one specific job each.
-- Your total budget for back-office automation is under $1,000/mo. We're not the right match yet. Read the [free AI Agents Guide](/ai-agents-guide) and start with DIY.
+- Your total budget for back-office automation is under $250/mo. We're not the right match yet. Read the [free AI Agents Guide](/ai-agents-guide) and start with DIY.
 
 **Where Shimmer Labs is the right call.**
 
@@ -106,7 +106,7 @@ Text:
 
 | Option | First-year cost | What you get |
 |---|---|---|
-| Sidecar (Shimmer Labs) | $14,000 ($2k setup + $1k × 12) | One workflow, live in a week, maintained, with the engineer who built it on Slack |
+| Sidecar (Shimmer Labs) | $4,000-$14,000 (build + 12 months, scoped to the job) | One workflow, live in a week, maintained, with the engineer who built it on Slack |
 | Make/Zapier shop | $2,000-$5,000 | The flow, no maintenance. You own the breakage. |
 | Fiverr freelancer | $500-$2,000 | A starting point. You finish it. |
 | Part-time admin ($20/hr × 20 hrs/wk) | ~$22,000 + payroll burden | A person, when they're at work |

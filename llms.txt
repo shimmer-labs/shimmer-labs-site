@@ -4,9 +4,19 @@
 
 ## Services
 
-- [Sidecar](https://shimmerlabs.co/services/sidecar): Narrow AI-assisted operational workflows that handle one job each, with a human in the loop on anything customer-facing. From $1,000/mo + implementation from $1,000, scoped. Model API costs pass-through. Cancel anytime, no contracts. Live in a week, autonomous in a month. Shipped verticals: membership operations, creator outreach, document parsing, scheduling, lead-to-SMS.
+- [Sidecar](https://shimmerlabs.co/services/sidecar): Narrow AI-assisted operational workflows that handle one job each, with a human in the loop on anything customer-facing. Builds from $1,000, scoped to the job, paid half up front and half at go-live. Running from $250/mo, sized with the client to a fraction of what the hours cost them. Model API costs pass-through. Cancel anytime, no contracts. Live in a week, autonomous in a month. Shipped verticals: membership operations, creator outreach, document parsing, scheduling, lead-to-SMS.
 - [Custom Apps](https://shimmerlabs.co/services/custom-apps): Web and iOS apps, wireframes to launched product. Web from $15,000. iOS from $20,000. Flat-priced per scope.
 - [API Integrations](https://shimmerlabs.co/services/api-integrations): Point-to-point integrations for n8n, Zapier, and Make.com. $2,500 - $7,000 per integration.
+
+## Trade pages
+- [AI for Landscaping Businesses](https://shimmerlabs.co/landscapers): Job sheets to database from one photo, invoicing, scheduling. Real shipped example: a Stillwater landscaper's two hours of nightly typing became one photo (handwritten sheets, Spanish included).
+- [AI for Plumbing and HVAC Businesses](https://shimmerlabs.co/plumbers): Vendor invoices into QuickBooks without typing, estimates, job paperwork, receipts.
+- [AI for Roofing Companies](https://shimmerlabs.co/roofers): Supplier invoices, estimates and follow-ups, job photo filing, insurance paperwork checks.
+
+## Notes (plain-answer articles)
+- [What does it cost to automate invoicing for a small business?](https://shimmerlabs.co/notes/cost-to-automate-invoicing)
+- [Can AI read handwritten job sheets and invoices?](https://shimmerlabs.co/notes/can-ai-read-handwriting)
+- [Do I need new software to automate my paperwork?](https://shimmerlabs.co/notes/automate-without-new-software)
 
 ## Case studies
 
@@ -26,7 +36,7 @@ Returned to Stillwater after 17 years in California to build a rooted business a
 
 ## Pricing summary
 
-- Sidecar: from $1,000/month + implementation from $1,000. Cancel anytime, no contracts. Model API costs pass-through.
+- Sidecar: builds from $1,000 (half up front, half at go-live) + running from $250/month, both scoped to the job. Cancel anytime, no contracts. Model API costs pass-through.
 - Custom Apps - Web: from $15,000 flat-priced per scope.
 - Custom Apps - iOS: from $20,000 flat-priced per scope.
 - API Integrations: $2,500 - $7,000 per integration.

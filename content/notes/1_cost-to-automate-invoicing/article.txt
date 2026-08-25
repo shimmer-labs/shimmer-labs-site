@@ -1,0 +1,56 @@
+Title: What does it cost to automate invoicing for a small business?
+
+----
+
+Meta_description: Real numbers: automating invoice entry starts around $1,000 to build and $250/month to run. Here's the math, a real example, and when automation is NOT worth it.
+
+----
+
+Date: 2026-08-25
+
+----
+
+Intro: Real numbers, a real example, and the honest cases where automation is not worth your money.
+
+----
+
+Text:
+
+## The short answer
+
+At Shimmer Labs, builds start at $1,000 and get scoped to the job, so you know your number before we start. You pay half up front and half when it goes live. Running it starts at $250 a month, which covers monitoring, maintenance, and the engineer who built it staying on the hook. There's also a small AI usage cost, usually $20 to $100 a month, that passes through to you once it's live.
+
+Whether that's cheap or expensive depends entirely on one thing: what the typing costs you today.
+
+## Do the math on your own paperwork
+
+We sat with a plumbing and HVAC shop near Stillwater and timed it. One vendor invoice took an hour to get out of a PDF and into QuickBooks. Their guy spent about 40 hours a month on it. At $24 an hour, that's roughly $1,000 a month of wages spent retyping, before you count what he wasn't doing instead, which was sending estimates.
+
+Against that, a build that costs $1,000 once and a few hundred a month pays for itself in the first several weeks. That's the good case.
+
+## When automation is NOT worth it
+
+Here's the part most automation companies won't tell you. We priced a job for a shop where the invoice pile only took about four hours a month to type up. Annoying? Yes. Worth automating? Honestly, no. Once we put the numbers side by side, paying us would have roughly matched what the typing already cost. The juice wasn't worth the squeeze, and we said so.
+
+Rule of thumb: if a task eats less than a few hours a month, live with it or batch it. If it eats hours every week, or it lands at the worst time of day, or it's the reason invoices go out late, that's when automation math starts working hard in your favor.
+
+## Why the monthly fee exists
+
+The AI models change. Your vendors change their invoice formats. Edge cases show up. The monthly covers a human engineer watching the system, fixing what drifts, and improving it, so it keeps working without becoming your problem. Cancel anytime. If it stops earning its keep, stop paying for it. That's the deal.
+
+----
+
+Faq:
+
+-
+  question: Is there a cheaper way to automate invoices?
+  answer: >
+    Sometimes. If your two tools both have good APIs and the job is a straight copy from A to B, a Zapier flow might cost $50 a month and an afternoon. We'll tell you when that's your answer and point you at it. Where we earn our fee is the messy middle: PDFs, photos, handwriting, judgment calls, and software without APIs.
+-
+  question: What's included in the build fee?
+  answer: >
+    Scoping the workflow with you, building it, testing it against your real paperwork, and running it supervised until it's trustworthy. Half is due up front, half when it goes live and you're happy with it.
+-
+  question: Are there contracts or minimums?
+  answer: >
+    No contracts. The monthly is cancel-anytime. We'd rather earn the renewal every month than lock you in.

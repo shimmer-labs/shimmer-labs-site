@@ -65,7 +65,7 @@ if ($page->intendedTemplate()->name() === 'home') {
     '@id' => $site->url() . '#business',
     'name' => 'Shimmer Labs',
     'image' => url('assets/images/shimmer-labs-logo.png'),
-    'description' => 'Custom software for small businesses. Sidecar (AI-assisted operational workflows from $1,000/mo), Custom Apps (web from $15k, iOS from $20k), API Integrations ($2,500-$7,000). Based in Stillwater, Oklahoma.',
+    'description' => 'Custom software for small businesses. Sidecar (AI-assisted operational workflows, builds from $1,000 + from $250/mo), Custom Apps (web from $15k, iOS from $20k), API Integrations ($2,500-$7,000). Based in Stillwater, Oklahoma.',
     'url' => $site->url(),
     'email' => 'logan@shimmerlabs.co',
     'telephone' => '+1-405-880-6674',
@@ -87,7 +87,7 @@ if ($page->intendedTemplate()->name() === 'home') {
       ['@type' => 'State', 'name' => 'Oklahoma'],
       ['@type' => 'Country', 'name' => 'United States']
     ],
-    'priceRange' => '$1,000+',
+    'priceRange' => '$250+',
     'founder' => [
       '@id' => $site->url() . '#logan'
     ],
@@ -104,7 +104,7 @@ if ($page->intendedTemplate()->name() === 'home') {
           ],
           'priceSpecification' => [
             '@type' => 'UnitPriceSpecification',
-            'price' => '1000',
+            'minPrice' => '250',
             'priceCurrency' => 'USD',
             'unitText' => 'MONTH',
             'referenceQuantity' => [
@@ -278,11 +278,11 @@ if ($page->intendedTemplate()->name() === 'service') {
       '@type' => 'Offer',
       'priceSpecification' => [
         '@type' => 'UnitPriceSpecification',
-        'price' => '1000',
+        'minPrice' => '250',
         'priceCurrency' => 'USD',
         'unitText' => 'MONTH'
       ],
-      'description' => '$2,000 setup + $1,000/month to run. Model API costs pass-through. Cancel anytime, no contracts.'
+      'description' => 'Builds from $1,000 (half up front, half at go-live) + from $250/month to run. Model API costs pass-through. Cancel anytime, no contracts.'
     ];
   } elseif ($slug === 'custom-apps') {
     $serviceSchema['offers'] = [
@@ -474,7 +474,7 @@ if ($page->intendedTemplate()->name() === 'stillwater-ai-consultant') {
     'parentOrganization' => [
       '@id' => $site->url() . '#organization'
     ],
-    'priceRange' => '$1,000+',
+    'priceRange' => '$250+',
     'sameAs' => [
       'https://www.linkedin.com/in/loganshimmer/',
       'https://github.com/shimmer-labs',
@@ -512,6 +512,56 @@ if ($page->intendedTemplate()->name() === 'landing') {
     ]
   ];
   $schema[] = $landingSchema;
+}
+
+// ─────────────────────────────────────────────────────────────
+// Trade pages + articles: Article schema
+// ─────────────────────────────────────────────────────────────
+if (in_array($page->intendedTemplate()->name(), ['trade', 'article'])) {
+  $schema[] = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Article',
+    'headline' => $page->hero_title()->or($page->title())->value(),
+    'description' => $page->meta_description()->or($page->intro())->excerpt(300)->value(),
+    'url' => $page->url(),
+    'datePublished' => $page->modified('c'),
+    'dateModified' => $page->modified('c'),
+    'author' => [
+      '@id' => $site->url() . '#logan'
+    ],
+    'publisher' => [
+      '@id' => $site->url() . '#organization'
+    ],
+    'mainEntityOfPage' => [
+      '@type' => 'WebPage',
+      '@id' => $page->url()
+    ]
+  ];
+}
+
+// ─────────────────────────────────────────────────────────────
+// FAQPage schema wherever structured FAQ content exists
+// (trade pages, guide landings, articles)
+// ─────────────────────────────────────────────────────────────
+if (in_array($page->intendedTemplate()->name(), ['trade', 'landing', 'article']) && $page->faq()->isNotEmpty()) {
+  $faqItems = [];
+  foreach ($page->faq()->toStructure() as $item) {
+    $faqItems[] = [
+      '@type' => 'Question',
+      'name' => $item->question()->value(),
+      'acceptedAnswer' => [
+        '@type' => 'Answer',
+        'text' => $item->answer()->value()
+      ]
+    ];
+  }
+  if (!empty($faqItems)) {
+    $schema[] = [
+      '@context' => 'https://schema.org',
+      '@type' => 'FAQPage',
+      'mainEntity' => $faqItems
+    ];
+  }
 }
 
 // ─────────────────────────────────────────────────────────────

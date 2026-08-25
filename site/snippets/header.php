@@ -16,6 +16,8 @@
     'services' => 'Services & Pricing - Web Apps, APIs, iOS Development | Shimmer Labs',
     'service' => $page->title() . ($page->priceRange()->isNotEmpty() ? ' | ' . $page->priceRange() : '') . ' | Shimmer Labs',
     'landing' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
+    'trade' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
+    'article' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
     default => $page->title() . ' | Shimmer Labs'
   };
   ?>
@@ -27,6 +29,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="<?= url('assets/images/favicon-16x16.png') ?>">
   <link rel="manifest" href="<?= url('site.webmanifest') ?>">
   <link rel="shortcut icon" href="<?= url('favicon.ico') ?>">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="<?= $page->url() ?>">
 
   <?php
   // Meta Description with smart fallbacks
@@ -50,6 +55,8 @@
     $ogImage = $page->hero_image()->toFile()->url();
   } elseif ($templateName === 'project' && $page->image()) {
     $ogImage = $page->image()->url();
+  } elseif ($templateName === 'trade' && $page->hero_image()->toFile()) {
+    $ogImage = $page->hero_image()->toFile()->url();
   } else {
     $ogImage = url('assets/images/shimmer-labs-logo.png');
   }

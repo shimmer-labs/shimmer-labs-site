@@ -1,0 +1,77 @@
+Title: AI for Landscaping Businesses
+
+----
+
+Seo_title: Automate Landscaping Paperwork and Invoicing
+
+----
+
+Meta_description: A Stillwater landscaper turned two hours of nightly typing into one photo. We automate job sheets, invoicing, and scheduling for landscaping and lawn care businesses. Builds from $1,000.
+
+----
+
+Eyebrow: For landscapers and lawn care crews
+
+----
+
+Hero_title: Stop typing up job sheets. Take a photo instead.
+
+----
+
+Hero_image: hero-landscaper.jpg
+
+----
+
+Intro: You already worked ten hours in the sun. The paperwork at the end of the day is work a computer does better now. We build it for you, and we're local.
+
+----
+
+Text:
+
+## The clipboard problem
+
+Every landscaping day ends the same way. The route sheet comes back from the crew covered in notes. Which yards got done. Which got skipped because the sprinklers were running. What extra work got picked up along the way. And somebody has to type all of it into the customer database before invoices can go out.
+
+We built the fix for <a href="/case-studies/stillwater-landscaper">a landscaper right here in Stillwater</a>. Now he takes one photo of the day's sheet. The AI reads it, handwriting and all, Spanish included. It logs the completed yards, flags the upsells for invoicing, and marks the skipped yards for rescheduling. Two hours of typing became one photo. He's out on the lake with his kid.
+
+## Is there a way to automate invoicing for a landscaping business?
+
+Yes, and you probably don't need to buy another app to do it. Modern AI can read a handwritten job sheet, understand what happened on the job, and put the right numbers in the right place. If a task is reading, understanding, or writing, it can usually be automated. That covers most of the office side of a landscaping business:
+
+- **Job sheets to database.** Photo in, customer records updated.
+- **Invoicing.** Completed work and upsells turned into draft invoices for your approval.
+- **Scheduling.** Skipped and rescheduled yards back on the calendar without a sticky note.
+- **Estimates.** Notes from a walkaround turned into a clean quote in your voice.
+
+## What about Jobber, Yardbook, and the other apps?
+
+They're fine tools, and if one of them fits how you already work, use it. But most crews we meet don't want new software the whole team has to learn. They want the typing to stop. That's what we build: automation that fits the tools you already use, whether that's QuickBooks, a spreadsheet, or a program you've had for ten years. Your crew keeps doing exactly what they do today. The keyboard part just goes away.
+
+## Local, and accountable
+
+Shimmer Labs is in Stillwater, Oklahoma. You'll work directly with <a href="/about">Logan Shimmer</a>, a systems engineer who builds these himself. When something needs a tweak, he comes to you. No ticket queue, no offshore support line.
+
+----
+
+Faq:
+
+-
+  question: What is the best invoicing software for landscaping?
+  answer: >
+    Honestly, it depends on how you already work. Jobber, Square, and Yardbook are solid apps if you're ready to move your whole operation into one. But if the real problem is the typing, not the software, you may not need a new app at all. We build automation that reads your existing paperwork and puts the data into whatever you already use. No new logins for the crew.
+-
+  question: My crew writes job sheets by hand, some in Spanish. Can AI really read that?
+  answer: >
+    Yes. That's exactly what we built for a Stillwater landscaping crew. The AI reads handwriting, mixed English and Spanish, and margin notes, and it understands what the notes mean. An upsell gets flagged for invoicing. A skipped yard gets marked for rescheduling. Anything it can't read with confidence gets flagged for a human look instead of guessed at.
+-
+  question: What does it cost?
+  answer: >
+    Builds start at $1,000, scoped to the job, so you know your number before we start. Half up front, half when it goes live. Running it starts at $250 a month, and we do that math with you so it's a fraction of what the office hours cost you today. Cancel anytime. No contracts.
+-
+  question: Do I have to change the software I already use?
+  answer: >
+    No. That's the point. We build around your current setup, whether it's QuickBooks, spreadsheets, or an old desktop program. The automation does the typing a person used to do, in the same system.
+-
+  question: How do I know if my paperwork can be automated?
+  answer: >
+    Quick test: does the task mostly involve reading something, understanding it, and writing it down somewhere else? Then yes, probably. Bring a real example to our free AI Office Hours at WorkIT in Stillwater, Tuesdays and Thursdays 2 to 4 PM, and we'll tell you straight.

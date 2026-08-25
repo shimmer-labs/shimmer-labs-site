@@ -28,13 +28,15 @@ That's the difference. **We hold <a href="/office-hours">free Office Hours every
 
 ## What we do, in Stillwater terms
 
+In the trades? Start with the page written for you: <a href="/landscapers">landscapers</a>, <a href="/plumbers">plumbers and HVAC</a>, or <a href="/roofers">roofers</a>.
+
 Three services, anchored in real work we've already shipped for businesses you might know.
 
 ### Sidecar — AI-assisted workflows
 
 Small, focused automations. Each one does one job, and a person reviews anything that goes to a customer. We built one for <a href="/case-studies/sweat-yoga-fitness">Anna Moore at Sweat Yoga & Fitness</a> right here in Stillwater. Her booking platform (WellnessLiving) doesn't let outside software cancel or freeze memberships, so we built a workaround that clicks through the website the same way a person would. It was running real customer requests in the first week and ran on its own by week four. More than 50 cancellations and freezes processed so far, including the post-graduation rush.
 
-**$2,000 setup + $1,000/month to run**, sized to what your build actually needs. Cancel anytime. No contracts. <a href="/services/sidecar">More on Sidecar →</a>
+**Builds from $1,000, running from $250/month**, sized to what your build actually needs. Half up front, half when it goes live. Cancel anytime. No contracts. <a href="/services/sidecar">More on Sidecar →</a>
 
 ### Custom Apps — web and iOS
 

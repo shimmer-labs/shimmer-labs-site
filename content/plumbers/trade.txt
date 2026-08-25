@@ -1,0 +1,77 @@
+Title: AI for Plumbing and HVAC Businesses
+
+----
+
+Seo_title: Automate Plumbing and HVAC Paperwork, Invoices, and QuickBooks Entry
+
+----
+
+Meta_description: One vendor invoice shouldn't take an hour to type into QuickBooks. We automate invoice entry, estimates, and office paperwork for plumbing and HVAC shops. Builds from $1,000.
+
+----
+
+Eyebrow: For plumbing and HVAC shops
+
+----
+
+Hero_title: Still running the office on paper?
+
+----
+
+Hero_image: hero-plumber.jpg
+
+----
+
+Intro: Your best people should be on jobs and sending estimates, not retyping vendor invoices into QuickBooks. We automate the office work so the crew can do the work that pays.
+
+----
+
+Text:
+
+## We did the math with a local shop
+
+We sat with a Stillwater-area plumbing and HVAC shop for a morning and just watched the office work happen. Their guy was spending about 40 hours a month getting vendor invoices out of PDFs and into QuickBooks. One invoice took an hour. At $24 an hour, that's roughly $1,000 a month of skilled labor spent typing.
+
+And here's the part that stung: when we asked what he'd be doing instead, the answer was "sending estimates and talking to customers." The typing wasn't just costing wages. It was costing the jobs he never got to quote.
+
+## What we automate for plumbing and HVAC shops
+
+- **Vendor invoices into QuickBooks.** The invoice arrives by email or gets snapped with a phone. The AI reads it, codes it, and enters it. A human approves before anything posts.
+- **Estimates.** Job notes and photos turned into a clean, priced estimate in your format, ready to send the same day.
+- **Job paperwork.** Work orders, service records, and warranty info filed against the right customer without anyone retyping.
+- **Receipts.** Parts runs to the supply house, snapped at the register, sorted straight into the bookkeeper's hands.
+
+Each supplier or workflow is one build. Once the first one is running, adding another supplier is usually half the work, because the plumbing is already in place. Yes, we said plumbing.
+
+## The proof
+
+We've shipped this pattern before. <a href="/case-studies/stillwater-landscaper">A Stillwater landscaper's</a> two hours of nightly typing became one photo. <a href="/case-studies/sweat-yoga-fitness">A local gym owner</a> got her evenings back from membership paperwork. Different trades, same shape: read, understand, type. Computers do that part better now.
+
+## Local, and accountable
+
+Shimmer Labs is in Stillwater, Oklahoma. You work directly with <a href="/about">Logan Shimmer</a>, the engineer who builds it. If something breaks, he comes to your shop and fixes it in person. Support is included in the monthly, not sold as a ticket queue.
+
+----
+
+Faq:
+
+-
+  question: Is there a way to get vendor invoices into QuickBooks without typing them?
+  answer: >
+    Yes. The AI reads the PDF or a photo of the invoice, pulls the line items, codes them, and enters them into QuickBooks. You or your office person approves before anything posts. What took an hour per invoice takes a couple of minutes of review.
+-
+  question: We do almost everything on paper. Where do we even start?
+  answer: >
+    Start with the one task that makes you groan. For most shops that's vendor invoices or estimates. We automate that one thing first, prove it works with your real paperwork, and only then talk about what's next. You don't have to digitize your whole operation to get your evenings back.
+-
+  question: What does office help cost for a small plumbing business?
+  answer: >
+    A part-time admin runs around $22,000 a year plus payroll burden, and they're only helping while they're at work. Our builds start at $1,000 with running costs from $250 a month, and the automation works nights and weekends. It doesn't replace your office person. It gives them their hours back for the work that actually needs a human.
+-
+  question: Will this replace my office person?
+  answer: >
+    No, and we wouldn't build it that way. The goal is to take the retyping off their plate so they can send estimates, answer the phone, and chase the money. The businesses we work with use the freed-up hours to close more work, not cut people.
+-
+  question: What does it cost?
+  answer: >
+    Builds start at $1,000, scoped to the job, so you know your number before we start. Half up front, half when it goes live. Running it starts at $250 a month, sized together so it's a fraction of what those hours cost you today. Cancel anytime. No contracts.

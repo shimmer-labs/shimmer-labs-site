@@ -1,0 +1,75 @@
+Title: AI for Roofing Companies
+
+----
+
+Seo_title: Automate Roofing Paperwork, Estimates, and Supplier Invoices
+
+----
+
+Meta_description: You're on a roof all day. We automate estimates, supplier invoices, job photos, and follow-ups for roofing companies, built local in Stillwater, OK. Builds from $1,000.
+
+----
+
+Eyebrow: For roofing companies
+
+----
+
+Hero_title: You're on a roof all day. The paperwork can handle itself.
+
+----
+
+Hero_image: hero-roofer.jpg
+
+----
+
+Intro: Roofing runs on paperwork: estimates, supplier invoices, job photos, insurance documents. Most of it is reading and retyping. That's exactly what AI does well now, and we build it for you.
+
+----
+
+Text:
+
+## The office work behind every roof
+
+A roofing job isn't done when the last shingle goes on. There's the supplier invoice to get into the books. Job photos to file where you can find them again. The estimate follow-up you meant to send. The insurance paperwork that has to match the scope exactly. None of it is hard. All of it eats your evening.
+
+Here's the pattern: if a task is mostly reading something, understanding it, and writing it down somewhere else, a computer does it better now. That's most of a roofing office.
+
+## What we automate for roofers
+
+- **Supplier invoices.** ABC, SRS, Beacon, whoever you buy from. The invoice hits your email or gets snapped with a phone, and it lands in QuickBooks coded and ready to approve.
+- **Estimates and follow-ups.** Measurements and notes turned into a clean quote in your format, and the follow-up that actually goes out three days later without you remembering.
+- **Job photos.** Before, during, and after shots filed to the right job automatically, so the one photo you need for a claim isn't lost in a camera roll of 4,000.
+- **Insurance paperwork.** Claim documents read and checked against your scope, with mismatches flagged before they cost you a supplement.
+
+## The proof
+
+We've shipped this same shape for other trades in town. <a href="/case-studies/stillwater-landscaper">A Stillwater landscaper</a> turned two hours of nightly typing into one photo of his route sheet. <a href="/case-studies/sweat-yoga-fitness">A local gym owner's</a> membership paperwork now handles itself while she sleeps. Roofing paperwork is the same job: read, understand, type. We just point it at your stack instead.
+
+## Local, and accountable
+
+Shimmer Labs is in Stillwater, Oklahoma. You work directly with <a href="/about">Logan Shimmer</a>, the engineer who builds it. When storm season hits and volume triples, the system doesn't call in sick, and if anything needs fixing, Logan shows up in person.
+
+----
+
+Faq:
+
+-
+  question: Can AI write roofing estimates?
+  answer: >
+    It can draft them, and that's the right division of labor. You provide the measurements, photos, and your pricing. The AI turns that into a clean, formatted estimate in your voice, ready for your review. You stay the roofer. It's just the typing and formatting that disappears.
+-
+  question: How do roofing companies keep up with paperwork during storm season?
+  answer: >
+    Mostly they don't, and that's when money leaks. The advantage of automation over hiring is that it scales instantly. Whether ten invoices come in this week or a hundred, they get read, coded, and filed the same day. The busiest weeks are exactly when the system earns its keep.
+-
+  question: Do I need to switch software?
+  answer: >
+    No. We build around whatever you already use, whether that's QuickBooks, AccuLynx, JobNimbus, or a filing cabinet and a spreadsheet. The automation does the retyping between systems that a person does today.
+-
+  question: What does it cost?
+  answer: >
+    Builds start at $1,000, scoped to the job, so you know your number before we start. Half up front, half when it goes live. Running it starts at $250 a month, and we do that math together so it's a fraction of what those hours cost you today. Cancel anytime. No contracts.
+-
+  question: How fast can this be live?
+  answer: >
+    Our builds typically go live within a week or two, running with supervision, and get more autonomous as trust is earned. Your first automation is handling real paperwork the same month you say go.

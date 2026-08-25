@@ -2,7 +2,7 @@ Title: Sidecar, AI Agents for Your Business
 
 ----
 
-Meta_description: AI-assisted workflows for small service businesses. Shipped for Sweat Yoga, Supabase, Paidly, and Taddy. Live in a week, autonomous in a month. $2,000 setup + $1,000/mo to run. Cancel anytime.
+Meta_description: AI-assisted workflows for small service businesses. Shipped for Sweat Yoga, a Stillwater landscaper, Supabase, and Paidly. Live in a week, autonomous in a month. Builds from $1,000, running from $250/mo. Cancel anytime.
 
 ----
 
@@ -14,7 +14,7 @@ Summary: You stay in the driver's seat. Everything else goes in the sidecar. AI 
 
 ----
 
-Pricerange: $2,000 setup + $1,000/mo to run
+Pricerange: Builds from $1,000 + from $250/mo to run
 
 ----
 
@@ -34,7 +34,10 @@ You stay in the driver's seat. You do the work. Everything else, the boring stuf
 - **Creator outreach**, finds prospects, drafts personalized messages, you approve in Slack before send (shipped for Supabase)
 - **Document parsing**, pulling the right numbers off contracts and invoices, with the accuracy actually measured (shipped on [Paidly](/case-studies/paidly))
 - **Scheduling**, monthly shift drafts for hourly teams that respect your rules (hour caps, availability, fairness) (shipped for Sweat Yoga)
+- **Photo-to-database paperwork**, snap a photo of a handwritten job sheet, Spanish included, and the day's work lands in the customer database (shipped for [a Stillwater landscaper](/case-studies/stillwater-landscaper))
 - **Lead-to-SMS**, inbound leads triaged and responded to without you watching the inbox
+
+Smaller wins we've shipped too: receipts snapped into the bookkeeper's hands, hundreds of social comments boiled down to the few that need answering, and yard-sign photos turned into tomorrow's call list.
 
 Coming next: hiring, proposals. We build a sidecar for one job at a time. Think of it as a tireless intern. Runs on a schedule, always with you calling the shots.
 
@@ -47,6 +50,8 @@ Small service businesses with 1-10 employees:
 - Landscapers, pet groomers, tutors, and more
 
 If you're great at your craft but drowning in the stuff that isn't your craft, Sidecar gives you your time back.
+
+In the trades? We wrote pages in your language: [landscapers](/landscapers), [plumbers and HVAC](/plumbers), [roofers](/roofers).
 
 ## What would you do with 15 hours a week back?
 
@@ -190,7 +195,7 @@ Faq:
   answer: 'Sometimes. That''s why we do a 2-week supervised rollout. Your agents run with our team watching, and we catch the weird situations before they go fully autonomous.'
 -
   question: 'How much does it cost?'
-  answer: 'Setup is $2,000 and it''s $1,000 a month to run. Smaller, simpler builds get smaller quotes. There''s a small usage cost (usually $20-$100/month) that we cover while we''re building and testing, then hand over to you once it''s live. Cancel anytime. No contracts.'
+  answer: 'Builds start at $1,000 and get scoped to the job, so you know your number before we start. You pay half up front and half when it goes live. Running it starts at $250 a month, and we do that math with you so it lands at a fraction of what those hours cost you today. There''s a small usage cost (usually $20-$100/month) that we cover while we''re building and testing, then hand over to you once it''s live. Cancel anytime. No contracts.'
 -
   question: 'What if I hate it?'
   answer: 'Cancel anytime. No contracts, no cancellation fees. If it''s not saving you time, you shouldn''t be paying for it.'

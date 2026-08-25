@@ -1,0 +1,33 @@
+title: Article
+preset: page
+fields:
+  meta_description:
+    label: Meta Description (SEO)
+    type: textarea
+    maxlength: 160
+  seo_title:
+    label: SEO Title
+    type: text
+  eyebrow:
+    label: Eyebrow Tag
+    type: text
+  date:
+    label: Date
+    type: date
+  intro:
+    label: Intro / dek
+    type: textarea
+  text:
+    label: Body
+    type: textarea
+    size: large
+  faq:
+    label: Related Questions (FAQ schema)
+    type: structure
+    fields:
+      question:
+        label: Question
+        type: text
+      answer:
+        label: Answer
+        type: textarea

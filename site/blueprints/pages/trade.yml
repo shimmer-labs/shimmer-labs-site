@@ -1,0 +1,40 @@
+title: Trade Landing Page
+preset: page
+fields:
+  meta_description:
+    label: Meta Description (SEO)
+    type: textarea
+    maxlength: 160
+  seo_title:
+    label: SEO Title
+    type: text
+    help: Overrides the browser tab / search result title.
+  eyebrow:
+    label: Eyebrow Tag
+    type: text
+    help: Small tag above the H1. Defaults to "Stillwater, OK".
+  hero_title:
+    label: Hero Title (H1)
+    type: text
+    help: Defaults to the page title.
+  intro:
+    label: Intro Line
+    type: textarea
+  hero_image:
+    label: Hero Image (full bleed, optional)
+    type: files
+    max: 1
+  text:
+    label: Body
+    type: textarea
+    size: large
+  faq:
+    label: FAQ
+    type: structure
+    fields:
+      question:
+        label: Question
+        type: text
+      answer:
+        label: Answer
+        type: textarea

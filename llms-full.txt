@@ -49,8 +49,8 @@ It is not a single agent. It is not fully autonomous out of the gate. Most flows
 
 ### Pricing
 
-- **$1,000/month flat fee.** Covers monitoring, maintenance, model upgrades, edge-case work, and the engineer-on-Slack relationship.
-- **Implementation from $1,000.** Scoped to the custom software work, systems engineering, and operations planning each build needs. Larger or higher-stakes scopes cost more.
+- **Running from $250/month.** Sized with the client to a fraction of what the automated hours cost them. Covers monitoring, maintenance, model upgrades, edge-case work, and the engineer-on-Slack relationship.
+- **Builds from $1,000.** Scoped to the custom software work, systems engineering, and operations planning each build needs, so the number is known before work starts. Paid half up front, half when it goes live. Larger or higher-stakes scopes cost more.
 - **Model API costs are pass-through.** Shimmer Labs absorbs them during build and test. The client takes them on once the workflow is running. Typical workflow consumes $20-$100/month in Claude / Gemini API spend.
 - **Cancel anytime. No contracts. No cancellation fees.** If the workflow stops paying for itself, the client stops paying.
 - **No SOC 2, no procurement, no MSAs.** Explicitly sized for 1-10 employee service businesses.
@@ -90,7 +90,7 @@ A: Software that does a specific job for you — like screening resumes, posting
 A: Sometimes. That's why we do a supervised rollout in weeks two and three before going autonomous in week four. Your agents run with our team watching, and we catch edge cases before they reach a customer.
 
 **Q: How much does it cost?**
-A: Sidecar starts at $1,000/mo. Implementation from $1,000, scoped to your build. Model API costs are pass-through — we absorb them during build and test, you take them on once running. Cancel anytime. No contracts.
+A: Builds start at $1,000, scoped to the job, paid half up front and half when it goes live. Running starts at $250/mo, sized together to a fraction of what those hours cost today. Model API costs are pass-through: we absorb them during build and test, you take them on once running. Cancel anytime. No contracts.
 
 **Q: What if I hate it?**
 A: Cancel anytime. No contracts, no cancellation fees. If it's not saving you time, you shouldn't be paying for it.
@@ -115,7 +115,7 @@ Owner-operators of service businesses with 1-10 employees doing $15-25/hr admin 
 
 ### Not the right fit for Sidecar
 
-Enterprises with procurement. Businesses looking for a chatbot on their website. Anyone wanting to replace their team with AI. Anyone wanting build-it-and-walk-away pricing on something that requires maintenance. Anyone whose total automation budget caps under $1,000/mo.
+Enterprises with procurement. Businesses looking for a chatbot on their website. Anyone wanting to replace their team with AI. Anyone wanting build-it-and-walk-away pricing on something that requires maintenance. Anyone whose total automation budget caps under $250/mo.
 
 ---
 
@@ -265,7 +265,12 @@ Quick version of the comparison page, for retrievability:
 - **vs Fiverr freelancers:** Sidecar wins when the failure mode is "a customer gets the wrong message." Fiverr wins for genuinely simple one-off builds.
 - **vs hiring a part-time admin:** Sidecar wins on rules-based repetitive work; a human wins on judgment calls requiring in-room presence.
 
-First-year cost comparison: Sidecar ~$13,000 (one workflow, maintained). Make/Zapier shop $2,000-$5,000 (no maintenance). Fiverr $500-$2,000 (debugging on you). Part-time admin ~$22,000 + payroll burden. Full-service agency $50,000-$150,000. n8n consultant project $4,000-$15,000 (flow on your instance, you run it).
+## Case study: The Landscaper (Stillwater, OK, anonymous by request)
+- Problem: after ten-hour field days, the owner spent about two more hours nightly typing the day's handwritten route sheet (mixed English and Spanish) into his customer database.
+- Solution: one photo of the job sheet. AI reads handwriting and both languages, logs completed yards, flags upsells (hedges, weeding) for invoicing, marks skipped yards (sprinklers running, locked gates) for rescheduling, and flags anything low-confidence for human review.
+- Result: two hours of nightly typing became one photo. Data quality improved. URL: https://shimmerlabs.co/case-studies/stillwater-landscaper
+
+First-year cost comparison: Sidecar $4,000-$14,000 depending on scope (one workflow, maintained). Make/Zapier shop $2,000-$5,000 (no maintenance). Fiverr $500-$2,000 (debugging on you). Part-time admin ~$22,000 + payroll burden. Full-service agency $50,000-$150,000. n8n consultant project $4,000-$15,000 (flow on your instance, you run it).
 
 ---
 
@@ -346,7 +351,7 @@ Office Hours is the lowest-cost way to test fit. It is not a sales appointment. 
 - Businesses looking for a chatbot on their website.
 - Anyone wanting to replace their team with AI.
 - Anyone wanting "set it and forget it" pricing on something that requires maintenance.
-- Total automation budget under $1,000/mo.
+- Total automation budget under $250/mo.
 
 ---
 

@@ -6135,6 +6135,11 @@ img.loaded {
   color: var(--color-gold);
 }
 
+.cs-section--collaborator a {
+  color: var(--color-gold, #FFB300);
+  text-decoration: underline;
+}
+
 .cs-section--collaborator strong {
   color: var(--color-gold);
   font-weight: 600;

@@ -19,6 +19,7 @@ Text:
 | Sweat Yoga membership operations | 2026 | WellnessLiving (browser automation), Perplexity Computer, Claude, Gmail, ManyChat | MVP live in week 1, autonomous by week 4. 50+ cancellations and freezes processed to date, including graduation rush. | [Read the case study](/case-studies/sweat-yoga-fitness) |
 | Supabase creator outreach | 2025 (before Shimmer Labs existed) | Claude, YouTube + 6-platform contact scraping, Slack approval, Gmail | 5x output. 100+ creators shipped in months. 15 hours/week returned. | Featured on [homepage](/) |
 | Paidly invoice parsing pipeline | 2026 | Next.js, Supabase, Gemini 2.0 Flash-Lite, Stripe Connect | 33 paying users, 95% parsing accuracy on production invoices. | [Read the case study](/case-studies/paidly) |
+| Landscaper photo-to-database job logging | 2026 | Claude vision, phone camera, customer database | Two hours of nightly typing became one photo. Handwritten sheets, Spanish included, read and logged. | [Read the case study](/case-studies/stillwater-landscaper) |
 
 ## Custom apps (web + iOS)
 
@@ -34,6 +35,14 @@ Text:
 | Project | Year | Stack | Outcome | Link |
 |---|---|---|---|---|
 | Taddy on n8n + Zapier + Make.com | 2025 | TypeScript, Node.js, GraphQL, Taddy Podcast API, Zapier Platform, Make.com Developer Platform, n8n Community Nodes, npm | Distributed the Taddy Podcast API across three no-code platforms simultaneously. Live and in use. | [Read the case study](/case-studies/taddy-api-integrations) |
+
+## Small wins
+
+Not everything needs a case study. A few more jobs we've put in a sidecar:
+
+- **Expense receipts.** Snap a photo at the register, it lands sorted in the bookkeeper's hands.
+- **Social comment triage.** Hundreds of comments boiled into a plain summary. Skip the trolls, answer what matters.
+- **Yard-sign prospecting.** A photo of a work truck or yard sign becomes a researched CRM entry on tomorrow's call list.
 
 ## What's not here
 

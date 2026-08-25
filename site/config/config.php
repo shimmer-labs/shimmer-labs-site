@@ -453,6 +453,14 @@ return [
           'ai-security-education',
           'lunch-learn',
           'scan',
+          'landscapers',
+          'plumbers',
+          'roofers',
+          'sbu',
+          'notes',
+          'notes/cost-to-automate-invoicing',
+          'notes/can-ai-read-handwriting',
+          'notes/automate-without-new-software',
           'office-hours',
           'event-video',
         ];
@@ -477,6 +485,14 @@ return [
             'changefreq' => $page->isHomePage() ? 'weekly' : 'monthly'
           ];
         }
+
+        // Static (non-Kirby) pages served from webroot directories
+        $sitemap[] = [
+          'url' => $site->url() . '/business-at-lunch/',
+          'lastmod' => date('Y-m-d'),
+          'priority' => '0.4',
+          'changefreq' => 'monthly'
+        ];
 
         // Generate XML
         $xml = '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;
