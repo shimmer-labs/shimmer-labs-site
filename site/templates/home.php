@@ -107,7 +107,7 @@
       <?php
       // Explicit slug list so the homepage can feature a different trio
       // than the /case-studies index top row.
-      $homeFeatured = ['sweat-yoga-fitness', 'taddy-api-integrations', 'paidly'];
+      $homeFeatured = ['sweat-yoga-fitness', 'stillwater-landscaper', 'taddy-api-integrations'];
       foreach ($homeFeatured as $slug):
         if ($item = $caseStudiesPage->find($slug)):
       ?>

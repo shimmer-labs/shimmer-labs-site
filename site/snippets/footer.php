@@ -34,11 +34,23 @@
         </div>
 
         <div class="footer-col">
+          <h4>For Your Trade</h4>
+          <ul>
+            <li><a href="<?= url('landscapers') ?>">Landscapers</a></li>
+            <li><a href="<?= url('plumbers') ?>">Plumbers &amp; HVAC</a></li>
+            <li><a href="<?= url('roofers') ?>">Roofers</a></li>
+            <li><a href="<?= url('scan') ?>">Scan Your Website</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
           <h4>Free Guides</h4>
           <ul>
             <li><a href="<?= url('ai-agents-guide') ?>">AI Agents Guide</a></li>
             <li><a href="<?= url('ai-security-business') ?>">Security for Business</a></li>
             <li><a href="<?= url('ai-security-education') ?>">Security for Higher Ed</a></li>
+            <li><a href="<?= url('notes') ?>">Notes</a></li>
+            <li><a href="<?= url('sbu') ?>">Main Street AI</a></li>
           </ul>
         </div>
 

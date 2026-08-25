@@ -13,6 +13,7 @@
       <?php endif ?>
     </div>
     <?php if ($page->hero_quote()->isNotEmpty()): ?>
+      <h1 class="visually-hidden"><?= $page->title() ?></h1>
       <blockquote class="cs-hero__quote">
         <?= $page->hero_quote() ?>
       </blockquote>

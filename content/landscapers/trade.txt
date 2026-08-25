@@ -47,6 +47,8 @@ Yes, and you probably don't need to buy another app to do it. Modern AI can read
 
 They're fine tools, and if one of them fits how you already work, use it. But most crews we meet don't want new software the whole team has to learn. They want the typing to stop. That's what we build: automation that fits the tools you already use, whether that's QuickBooks, a spreadsheet, or a program you've had for ten years. Your crew keeps doing exactly what they do today. The keyboard part just goes away.
 
+Want the full cost breakdown, including when automation is NOT worth it? [We wrote it up honestly here](/notes/cost-to-automate-invoicing).
+
 ## Local, and accountable
 
 Shimmer Labs is in Stillwater, Oklahoma. You'll work directly with <a href="/about">Logan Shimmer</a>, a systems engineer who builds these himself. When something needs a tweak, he comes to you. No ticket queue, no offshore support line.

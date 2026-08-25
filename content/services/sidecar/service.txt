@@ -2,6 +2,10 @@ Title: Sidecar, AI Agents for Your Business
 
 ----
 
+Seo_title: Sidecar AI Agents, From $1,000 + $250/mo
+
+----
+
 Meta_description: AI-assisted workflows for small service businesses. Shipped for Sweat Yoga, a Stillwater landscaper, Supabase, and Paidly. Live in a week, autonomous in a month. Builds from $1,000, running from $250/mo. Cancel anytime.
 
 ----

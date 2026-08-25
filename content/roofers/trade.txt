@@ -2,7 +2,7 @@ Title: AI for Roofing Companies
 
 ----
 
-Seo_title: Automate Roofing Paperwork, Estimates, and Supplier Invoices
+Seo_title: Automate Roofing Paperwork and Estimates
 
 ----
 
@@ -44,6 +44,8 @@ Here's the pattern: if a task is mostly reading something, understanding it, and
 ## The proof
 
 We've shipped this same shape for other trades in town. <a href="/case-studies/stillwater-landscaper">A Stillwater landscaper</a> turned two hours of nightly typing into one photo of his route sheet. <a href="/case-studies/sweat-yoga-fitness">A local gym owner's</a> membership paperwork now handles itself while she sleeps. Roofing paperwork is the same job: read, understand, type. We just point it at your stack instead.
+
+Want the full cost breakdown, including when automation is NOT worth it? [We wrote it up honestly here](/notes/cost-to-automate-invoicing).
 
 ## Local, and accountable
 

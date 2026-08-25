@@ -2,7 +2,7 @@ Title: AI for Plumbing and HVAC Businesses
 
 ----
 
-Seo_title: Automate Plumbing and HVAC Paperwork, Invoices, and QuickBooks Entry
+Seo_title: Automate Plumbing & HVAC Paperwork and Invoices
 
 ----
 
@@ -46,6 +46,8 @@ Each supplier or workflow is one build. Once the first one is running, adding an
 ## The proof
 
 We've shipped this pattern before. <a href="/case-studies/stillwater-landscaper">A Stillwater landscaper's</a> two hours of nightly typing became one photo. <a href="/case-studies/sweat-yoga-fitness">A local gym owner</a> got her evenings back from membership paperwork. Different trades, same shape: read, understand, type. Computers do that part better now.
+
+Want the full cost breakdown, including when automation is NOT worth it? [We wrote it up honestly here](/notes/cost-to-automate-invoicing).
 
 ## Local, and accountable
 

@@ -8,13 +8,13 @@
   // intendedTemplate() returns a Template object; call ->name() for a string.
   $templateName = $page->intendedTemplate()->name();
   $seoTitle = match($templateName) {
-    'home' => 'Shimmer Labs - Custom Software for Small Businesses | Web Apps, iOS, Shopify',
-    'case-studies' => 'Case Studies - Small Business Automation & Custom Software | Shimmer Labs',
+    'home' => 'Shimmer Labs | Custom Software & AI for Small Businesses',
+    'case-studies' => 'Small Business AI Case Studies | Shimmer Labs',
     'case-study' => $page->title() . ' Case Study | Shimmer Labs',
     'projects' => 'Portfolio - SaaS Apps, API Integrations & iOS Development | Shimmer Labs',
     'contact' => 'Book a Call - Custom Apps & Software | Shimmer Labs',
     'services' => 'Services & Pricing - Web Apps, APIs, iOS Development | Shimmer Labs',
-    'service' => $page->title() . ($page->priceRange()->isNotEmpty() ? ' | ' . $page->priceRange() : '') . ' | Shimmer Labs',
+    'service' => $page->seo_title()->or($page->title() . ($page->priceRange()->isNotEmpty() ? ' | ' . $page->priceRange() : ''))->toString() . ' | Shimmer Labs',
     'landing' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
     'trade' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
     'article' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',

@@ -39,6 +39,31 @@
         </ul>
       </div>
 
+      <!-- For Your Trade -->
+      <div class="menu-section">
+        <h3>For Your Trade</h3>
+        <ul class="menu-links">
+          <li>
+            <a href="<?= url('landscapers') ?>">
+              <span class="menu-link-icon">🌱</span>
+              <span class="menu-link-title">Landscapers</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?= url('plumbers') ?>">
+              <span class="menu-link-icon">🔧</span>
+              <span class="menu-link-title">Plumbers &amp; HVAC</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?= url('roofers') ?>">
+              <span class="menu-link-icon">🏠</span>
+              <span class="menu-link-title">Roofers</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <!-- Case Studies -->
       <div class="menu-section">
         <h3>Case Studies</h3>
