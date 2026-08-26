@@ -461,6 +461,7 @@ return [
           'notes/cost-to-automate-invoicing',
           'notes/can-ai-read-handwriting',
           'notes/automate-without-new-software',
+          'notes/stop-re-explaining-to-ai',
           'office-hours',
           'event-video',
         ];

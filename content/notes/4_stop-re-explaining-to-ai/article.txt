@@ -1,0 +1,74 @@
+Title: How do I stop re-explaining everything to my AI?
+
+----
+
+Seo_title: Stop Re-Explaining Everything to Your AI: Use Projects
+
+----
+
+Meta_description: Most people one-and-done their AI and re-type the same context every time. Projects fix that. What they are, how we use them for client work, and a prompt that finds where you need one.
+
+----
+
+Date: 2026-08-26
+
+----
+
+Intro: Most people use AI like a vending machine: one question, one answer, walk away. Then they type the same background all over again tomorrow. There's a fix built into the tool, and almost nobody at our office hours has heard of it.
+
+----
+
+Text:
+
+## The one-and-done problem
+
+Here's the pattern we see constantly. Someone uses ChatGPT or Claude for a task they do every single week. Every time, they start a fresh chat and re-type the whole setup: who they are, what the business does, what format they want, what to avoid. Five minutes of throat-clearing before the actual work starts. Every. Single. Time.
+
+At office hours, when we say "we trained our AI for this task," heads cock to the side. There's no actual training involved. We're just using a feature that's been sitting in the tool the whole time: **projects**.
+
+## What a project actually is
+
+A project is a folder inside your AI with three things attached:
+
+- **Standing instructions.** The role, the boundaries, the format you want. Written once.
+- **Reference files.** Documents the AI reads every time you ask something in that project.
+- **Its own memory.** Chats inside the project build on each other, and they don't leak into your other work.
+
+ChatGPT calls them Projects. Claude calls them Projects. Gemini calls them Gems. Same idea everywhere: stop re-explaining, start where you left off.
+
+## How we actually use them
+
+**One project per client.** Each one has the signed contract uploaded, so the AI always knows the scope, the deliverables, and what's out of bounds. When we ask "is this request covered?", it answers from the actual agreement, not from vibes. And each client's history stays in its own lane. Nothing intermingles.
+
+**One project for social media.** It knows which channels we post on, what we own versus what we share, our writing style, our core calls to action, and even the platform-specific versions of them. "Write the LinkedIn version of this" now takes one line instead of a page of setup.
+
+You don't need to be a consultant for this to work. A project for meal planning that knows your family's allergies and the grocery store you shop at. A project for your kid's team that knows the roster and the league rules. A project for quotes that knows your pricing.
+
+## Find your project in five minutes
+
+Here's the shortcut. Paste this into the AI you already use:
+
+> Look back through our past conversations and find a task I keep coming back to you for. For that task: 1) list everything I re-explain each time, like context, preferences, rules, or formats, 2) tell me how a dedicated project for it would help, 3) list the documents or details I should add to that project so you do the task better, and 4) draft the project instructions for me to paste in. If you can't see our past chats, say so and ask me to describe the task instead.
+
+That's it. Your own AI will tell you where a project pays off and build the starting kit for it. Set up the project, paste in what it drafted, drop in the files it suggested, and tomorrow you skip the throat-clearing.
+
+----
+
+Faq:
+
+-
+  question: What's the difference between a project and just a long chat?
+  answer: >
+    A long chat gets slow, drifts, and eventually you start a new one and lose everything. A project keeps the instructions and reference files permanent while each chat inside it stays short and focused. The setup survives; the clutter doesn't.
+-
+  question: Which AI tools have projects?
+  answer: >
+    ChatGPT and Claude both call them Projects; Gemini calls them Gems. All three let you attach standing instructions and files. Most need a paid plan, which for the time a project saves is usually the easiest twenty bucks a small business spends.
+-
+  question: Is it safe to upload a client contract or business documents?
+  answer: >
+    Treat it like any other cloud service decision. Use a paid business-tier account, check the setting that controls whether your data trains the model (the paid tiers let you turn that off, and business plans exclude it by default), and when in doubt, redact what a bookkeeper wouldn't need to see. Same judgment you'd apply to putting a contract in Google Drive.
+-
+  question: What should go in a project's instructions?
+  answer: >
+    Three things: the role (what hat the AI wears), the boundaries (what it should never do or assume), and the format (what good output looks like, ideally with a real example pasted in). If you find yourself correcting the AI the same way twice, that correction belongs in the instructions.
