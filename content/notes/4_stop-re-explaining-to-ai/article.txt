@@ -34,7 +34,7 @@ A project is a folder inside your AI with three things attached:
 - **Reference files.** Documents the AI reads every time you ask something in that project.
 - **Its own memory.** Chats inside the project build on each other, and they don't leak into your other work.
 
-ChatGPT calls them Projects. Claude calls them Projects. Gemini calls them Gems. Same idea everywhere: stop re-explaining, start where you left off.
+ChatGPT calls them Projects. Claude calls them Projects. Gemini calls them Gems. Microsoft 365 Copilot calls them Notebooks. Same idea everywhere: stop re-explaining, start where you left off.
 
 ## How we actually use them
 
@@ -63,7 +63,11 @@ Faq:
 -
   question: Which AI tools have projects?
   answer: >
-    ChatGPT and Claude both call them Projects; Gemini calls them Gems. All three let you attach standing instructions and files. Most need a paid plan, which for the time a project saves is usually the easiest twenty bucks a small business spends.
+    ChatGPT and Claude both call them Projects; Gemini calls them Gems; Microsoft 365 Copilot calls them Notebooks. All of them let you attach reference files and keep grounded, on-topic chats. Most need a paid plan, which for the time a project saves is usually the easiest twenty bucks a small business spends.
+-
+  question: My work only gives me Microsoft Copilot. Can I still do this?
+  answer: >
+    Yes, if it's the Microsoft 365 Copilot that comes with a work account, which is what most big local employers run. Look for Copilot Notebooks: you attach the files for a recurring task and every chat in that notebook works from them. Bonus for work accounts: enterprise data protection is on by default, so your prompts and files aren't used to train the model. The free consumer Copilot doesn't have a real projects feature yet, so there the paste-in prompt above is your starting point instead.
 -
   question: Is it safe to upload a client contract or business documents?
   answer: >
