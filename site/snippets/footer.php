@@ -6,6 +6,7 @@
           <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="Shimmer Labs">
         </a>
         <p class="footer-tagline">We automate the boring stuff.</p>
+        <div google-add-preferred-source-btn data-theme="dark" class="footer-preferred-source"></div>
       </div>
 
       <div class="footer-links">
@@ -73,6 +74,7 @@
   </div>
 </footer>
 
+<script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
 <script src="<?= url('assets/js/main.js') ?>?v=<?= substr(md5_file(kirby()->root('index') . '/assets/js/main.js'), 0, 8) ?>"></script>
 </body>
 </html>

@@ -6135,6 +6135,11 @@ img.loaded {
   color: var(--color-gold);
 }
 
+.footer-preferred-source {
+  margin-top: 0.75rem;
+  min-height: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
