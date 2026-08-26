@@ -42,7 +42,7 @@ ChatGPT calls them Projects. Claude calls them Projects. Gemini calls them Gems.
 
 **One project for social media.** It knows which channels we post on, what we own versus what we share, our writing style, our core calls to action, and even the platform-specific versions of them. "Write the LinkedIn version of this" now takes one line instead of a page of setup.
 
-You don't need to be a consultant for this to work. A project for meal planning that knows your family's allergies and the grocery store you shop at. A project for your kid's team that knows the roster and the league rules. A project for quotes that knows your pricing.
+You don't need to be a consultant for this to work. A project for meal planning that knows your family's allergies and the grocery store you shop at. A project for your rec-league team that knows the lineup and the league rules. A project for quotes that knows your pricing.
 
 ## Find your project in five minutes
 
