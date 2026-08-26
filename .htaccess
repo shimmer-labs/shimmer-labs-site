@@ -35,6 +35,12 @@ RewriteRule ^site/(.*) index.php [L]
 # block direct access to Kirby and the Panel sources
 RewriteRule ^kirby/(.*) index.php [L]
 
+# forgive mangled /business-at-lunch links (trailing dots, brackets, missing slash)
+# printed + shared QR links get punctuation glued on; send them all to the deck
+RewriteCond %{REQUEST_URI} !^/business-at-lunch/$
+RewriteRule ^business-at-lunch[./%<>,;:!)\]]*$ https://shimmerlabs.co/business-at-lunch/ [R=301,L]
+RewriteRule ^business-at-lunch/[<>%][^/]*$ https://shimmerlabs.co/business-at-lunch/ [R=301,L]
+
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
