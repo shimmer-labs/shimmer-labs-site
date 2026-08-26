@@ -6140,6 +6140,22 @@ img.loaded {
   min-height: 0;
 }
 
+.footer-preferred-caption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 300px;
+}
+
+.oh-cta__subtext {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  opacity: 0.75;
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

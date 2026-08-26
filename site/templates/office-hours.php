@@ -316,6 +316,7 @@
   <div class="container">
     <p class="oh-cta__text">Got something that needs more than two hours on a Tuesday?</p>
     <a href="/contact" class="oh-cta__btn">Let's Talk About Building It &rarr;</a>
+    <p class="oh-cta__subtext">And if office hours ever helped you out, tap "Add to Preferred Sources" in the footer. Google will show you more of what we publish. Costs you nothing.</p>
   </div>
 </section>
 

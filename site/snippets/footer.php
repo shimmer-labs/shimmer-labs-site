@@ -7,6 +7,7 @@
         </a>
         <p class="footer-tagline">We automate the boring stuff.</p>
         <div google-add-preferred-source-btn data-theme="dark" class="footer-preferred-source"></div>
+        <p class="footer-preferred-caption">One tap, and Google starts showing you more of our stuff.</p>
       </div>
 
       <div class="footer-links">
