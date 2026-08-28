@@ -18,6 +18,7 @@
 - [Can AI read handwritten job sheets and invoices?](https://shimmerlabs.co/notes/can-ai-read-handwriting)
 - [Do I need new software to automate my paperwork?](https://shimmerlabs.co/notes/automate-without-new-software)
 - [How do I stop re-explaining everything to my AI? (use projects)](https://shimmerlabs.co/notes/stop-re-explaining-to-ai)
+- [Can AI build my employee schedule?](https://shimmerlabs.co/notes/ai-employee-schedule)
 
 ## Case studies
 

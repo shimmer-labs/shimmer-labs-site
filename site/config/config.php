@@ -462,6 +462,7 @@ return [
           'notes/can-ai-read-handwriting',
           'notes/automate-without-new-software',
           'notes/stop-re-explaining-to-ai',
+          'notes/ai-employee-schedule',
           'office-hours',
           'event-video',
         ];

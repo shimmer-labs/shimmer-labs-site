@@ -1,0 +1,70 @@
+Title: Can AI build my employee schedule?
+
+----
+
+Seo_title: Can AI Build My Employee Schedule? A 15-Minute Real Example
+
+----
+
+Meta_description: A local shop manager spent 90 minutes a month on the crew schedule. AI built it in 15, then we automated it monthly. How it worked, and the prompt to try it yourself.
+
+----
+
+Date: 2026-08-28
+
+----
+
+Intro: A manager of a ten-person crew walked into our free office hours with a 90-minute-a-month chore. Here's exactly how it went away, and the prompt to try it on your own schedule.
+
+----
+
+Text:
+
+## The problem in his head
+
+Every month, the manager of a local oil change shop builds the crew schedule by hand. Ten people. A target number of hours to stay under. Headcount that changes by day of the week. Rotating Sunday shifts. And a pile of rules that live nowhere but his head: who can open alone, who shouldn't close back to back, who's part time.
+
+About 90 minutes a month, every month. Not a crisis. Just a chore that never goes away.
+
+## What 15 minutes actually looked like
+
+**Five minutes of talking.** We sat down with the AI listening and just talked through how scheduling works at his shop. I asked a few questions. Then we did the step most people skip: **we asked the AI what it wanted to know.** It came back with questions neither of us had thought of. What happens when someone requests a day off? Is Sunday rotation strict or best effort? That step alone is worth stealing.
+
+**First draft.** A few minutes later there was a schedule on screen. Printable, postable, formatted like something you'd actually hang in a break room.
+
+**The edit, out loud.** This is the part that makes it stick. He marked up the draft and explained every change while the AI listened. "This guy can't open alone." "Never these two together on a Sunday." Each correction became a permanent rule. The rules in his head are the real product. The spreadsheet is just where they land.
+
+**Make it repeat.** Then we baked the whole thing, rules and all, into an automation that runs every month. He reviews it, prints it, posts it. The 90 minutes is now about five, and those five are review, not building.
+
+## Try it on your own schedule
+
+Paste this into the AI you use, then just answer its questions:
+
+> I build a recurring schedule by hand (employees, shifts, whatever mine is). Interview me about it: how many people, what limits I work within, which days are different, and every unwritten rule I follow when I make it. Ask me questions one batch at a time until you could build it yourself. Then build next period's schedule in a table I can print, and list the rules you learned so I can correct any you got wrong.
+
+The corrections are the point. Every rule it gets wrong and you fix becomes a rule it gets right forever after. Save the whole thing in a project so next month starts where this month ended.
+
+## The honest caveats
+
+A person still reviews the schedule before it goes on the wall. That's not a limitation, it's the design: the AI does the 85 minutes of assembly, the human does the five minutes of judgment. And if your scheduling involves union rules, minor work permits, or anything with legal teeth, those rules go in writing first and get double checked by you, every time.
+
+----
+
+Faq:
+
+-
+  question: Can ChatGPT or Claude really make a work schedule?
+  answer: >
+    Yes. Scheduling is constraint juggling, which is exactly what these tools are good at: hour caps, daily headcount, rotations, and who-can't-work-with-whom rules. The catch is that it only knows the rules you tell it, so the interview step matters more than the tool you pick.
+-
+  question: What information does the AI need to build a schedule?
+  answer: >
+    Your people, your shifts, your hour limits, headcount by day, and the unwritten rules in your head. You don't need to write it all down first. Have the AI interview you, then correct its drafts out loud. The corrections become the rulebook.
+-
+  question: Should I just buy scheduling software instead?
+  answer: >
+    If a tool like When I Work already fits how you run, use it. But most small shops we meet don't want another subscription and another login for the crew. An AI that knows your rules and outputs a printable schedule costs almost nothing and changes nothing about how your team already works.
+-
+  question: Do I still have to check the schedule it makes?
+  answer: >
+    Yes, and you should want to. The pattern that works is AI assembles, human approves. Five minutes of review beats ninety minutes of building, and the mistakes you catch become permanent rules so there's less to catch every month.
