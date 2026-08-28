@@ -6156,6 +6156,17 @@ img.loaded {
   margin-right: auto;
 }
 
+.build-section__more {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--color-gray, #666);
+}
+
+.build-section__more a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

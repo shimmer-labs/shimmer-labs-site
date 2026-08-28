@@ -39,36 +39,37 @@
 <!-- Social Proof -->
 <?php snippet('social-proof', ['clients' => $page->clients()]) ?>
 
-<!-- Build Section -->
+<!-- Build Section: the engagement ladder -->
 <section id="build" class="build-section">
   <div class="container">
     <div class="build-section__header">
-      <h2 class="build-section__title">What We Build</h2>
-      <p class="build-section__subtitle">AI agents, custom apps, and API integrations, built fast by a small team, not an agency.</p>
+      <h2 class="build-section__title">Three Ways to Work With Us</h2>
+      <p class="build-section__subtitle">Start free, learn with a partner, or hand it off entirely. Every rung is a small yes.</p>
     </div>
     <div class="build-section__grid">
+      <a href="/office-hours" class="build-card">
+        <div class="build-card__icon">☕</div>
+        <h3 class="build-card__title">Start Free</h3>
+        <p class="build-card__description">Walk into AI Office Hours at WorkIT, Tuesdays and Thursdays. Or join Main Street AI, our free community for local business owners. Bring your weirdest question.</p>
+        <span class="build-card__price">Free. Genuinely.</span>
+        <span class="build-card__arrow">Come Say Hi →</span>
+      </a>
+      <a href="/services/concierge" class="build-card">
+        <div class="build-card__icon">🤝</div>
+        <h3 class="build-card__title">AI Concierge</h3>
+        <p class="build-card__description">Done WITH you. Two working sessions a month, text us when you're stuck, and every automation built on your screen so you own it and understand it.</p>
+        <span class="build-card__price">$750/mo · no build fee, no contracts</span>
+        <span class="build-card__arrow">View Details →</span>
+      </a>
       <a href="/services/sidecar" class="build-card">
         <div class="build-card__icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" style="width: 48px; height: 48px; display: block;"></div>
-        <h3 class="build-card__title">Sidecar (AI Agents)</h3>
-        <p class="build-card__description">Narrow AI-assisted workflows that handle one job each. Live for Sweat Yoga and Supabase. Live in a week, autonomous in a month.</p>
-        <span class="build-card__price">Builds from $1,000 + $250/mo to run</span>
-        <span class="build-card__arrow">View Details →</span>
-      </a>
-      <a href="/services/custom-apps" class="build-card">
-        <div class="build-card__icon">⚡</div>
-        <h3 class="build-card__title">Custom Apps</h3>
-        <p class="build-card__description">Web apps and iOS apps, from wireframes to launched product. TreeBidPro shipped in 2 weeks, Paidly in 6.</p>
-        <span class="build-card__price">Web from $15k · iOS from $20k</span>
-        <span class="build-card__arrow">View Details →</span>
-      </a>
-      <a href="/services/api-integrations" class="build-card">
-        <div class="build-card__icon">🔌</div>
-        <h3 class="build-card__title">API Integrations</h3>
-        <p class="build-card__description">Your software doesn't talk to each other? We build the connections. Taddy live on n8n, Zapier, and Make.com.</p>
-        <span class="build-card__price">$2,500 – $7,000 per integration</span>
+        <h3 class="build-card__title">Sidecar</h3>
+        <p class="build-card__description">Done FOR you. We build the automation, run it, and maintain it while you stay in the driver's seat. Live for Sweat Yoga and a Stillwater landscaper.</p>
+        <span class="build-card__price">Scoped to your build, sized to fit</span>
         <span class="build-card__arrow">View Details →</span>
       </a>
     </div>
+    <p class="build-section__more">Also in the shop: <a href="/services/custom-apps">custom web and iOS apps</a> and <a href="/services/api-integrations">API integrations</a>, for when the fix is a product, not a process.</p>
   </div>
 </section>
 
