@@ -530,6 +530,13 @@ return [
         return option('scanner.proxy')($id);
       }
     ],
+    // /lunch-learn — page retired Aug 2026; old links go to office hours
+    [
+      'pattern' => 'lunch-learn',
+      'action'  => function() {
+        go(url('office-hours'), 301);
+      }
+    ],
     // /_lead — guide-form intake, validates then forwards to GHL
     [
       'pattern' => '_lead',
@@ -649,7 +656,6 @@ return [
           'ai-agents-guide',
           'ai-security-business',
           'ai-security-education',
-          'lunch-learn',
           'scan',
           'landscapers',
           'plumbers',

@@ -31,7 +31,6 @@
             <li><a href="<?= url('comparison') ?>">How We Compare</a></li>
             <li><a href="<?= url('stillwater-ai-consultant') ?>">Stillwater AI Consultant</a></li>
             <li><a href="<?= url('office-hours') ?>">AI Office Hours</a></li>
-            <li><a href="<?= url('lunch-learn') ?>">Lunch &amp; Learn</a></li>
             <li><a href="<?= url('contact') ?>">Contact</a></li>
           </ul>
         </div>
