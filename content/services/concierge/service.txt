@@ -1,0 +1,157 @@
+Title: AI Concierge
+
+----
+
+Seo_title: AI Concierge for Small Businesses | From $750/mo
+
+----
+
+Meta_description: Done-with-you AI consulting. Two working sessions a month, text Logan directly between calls, and a shared hub of everything built. $750/mo remote, $1,500/mo on-site in OKC and Tulsa.
+
+----
+
+Summary: A standing appointment with someone who builds this stuff for a living. We fix your processes and automate them together, so you understand every piece you own.
+
+----
+
+Pricerange: From $750/mo
+
+----
+
+Icon: 🤝
+
+----
+
+Text:
+
+## You don't need another app. You need a partner.
+
+Here's who we keep meeting: a business owner who knows AI could save them hours, tried ChatGPT a few times, and stalled out. Not because they're bad at computers. Because nobody sat down with them and fixed the underlying process first.
+
+Courses don't fix that. You don't have time for a course. Agencies don't fix it either. They disappear into a black box, install something, and leave you with a system you don't understand and can't maintain.
+
+The AI Concierge is the third option: a partner in the seat next to you. Twice a month we get on a working session, you share your screen, and we turn your manual processes into automations together. You watch every step. You understand everything we build. And between calls, you text us when you're stuck.
+
+## How we work: Audit, Optimize, Automate
+
+Every manual task goes through the same three steps, in order:
+
+1. **Audit.** You show us how you actually do it today. Every click.
+2. **Optimize.** We cut the fat first. Most 15-step processes only need nine.
+3. **Automate.** Then, and only then, we turn the clean process into an automation.
+
+Skipping straight to automate is the classic mistake. Automating a broken process just speeds up the mess. Fixing it first is why this works.
+
+## How this fits with everything else we do
+
+- **Free AI Office Hours** (Tuesdays and Thursdays at WorkIT): come anytime, ask anything, no charge. The concierge is for when you want guaranteed time, a standing plan, and someone on the hook for your progress.
+- **[Sidecar](/services/sidecar)**: we build and run the automation FOR you. The concierge builds it WITH you, so the skills stay in your hands. Plenty of clients do both.
+
+We have room for **6 concierge clients** total, so the service never gets thin. When the seats are full, they're full.
+
+----
+
+Whatsincluded:
+
+-
+  title: The intake form
+  icon: 📋
+  description: Before your first session you fill out one form about your business, your tools, and the tasks eating your week. It's required. It means we start working on minute one of call one instead of spending it fact-finding.
+-
+  title: Two working sessions a month
+  icon: 🖥️
+  description: 45 minutes each, every two weeks. You share your screen, we work on your real processes together. The first session is pure setup, getting your AI foundation in place, so everything after moves fast.
+-
+  title: Text Logan directly
+  icon: 💬
+  description: Stuck between sessions? Text the business line. We answer within one business day, usually a lot faster. No ticket queue, no support portal, just a text to a person you know.
+-
+  title: Your progress hub
+  icon: 📒
+  description: A shared page that logs every session, what we built, the top takeaways, and who owes what next. At any moment you can see exactly what your membership has produced.
+
+----
+
+Pricingtiers:
+
+-
+  name: Remote, or in person in Stillwater
+  price: $750/mo
+  description: Sessions over video from anywhere, or across the table if you're in Stillwater. Same service, hometown perk.
+  features: |
+    Two 45-minute working sessions per month
+    Direct text access between sessions
+    Shared progress hub
+    Intake and setup included
+    Cancel anytime, no contracts
+  featured: true
+-
+  name: On-site, serving OKC and Tulsa
+  price: $1,500/mo
+  description: We come to your shop once a month for a longer on-site session, plus one remote session. Best when the process we're fixing lives in the building.
+  features: |
+    One on-site working session at your business
+    One remote session per month
+    Direct text access between sessions
+    Shared progress hub
+    Cancel anytime, no contracts
+  featured: false
+
+----
+
+Qualifieryes:
+
+-
+  item: You run a small business and lose hours every week to tasks a computer should be doing
+-
+  item: You want to understand what gets built, not just have it installed
+-
+  item: You'll actually show up to two sessions a month and do the in-between homework
+-
+  item: You've tried AI tools on your own and stalled out
+
+----
+
+Qualifierno:
+
+-
+  item: You want someone to build it all FOR you and never think about it (that's Sidecar, and we're happy to talk)
+-
+  item: You're looking for a cheap course or a library of videos
+-
+  item: You can't commit an hour and a half a month to working on your own business
+
+----
+
+Faq:
+
+-
+  question: What is an AI concierge?
+  answer: 'Done-with-you AI consulting. Instead of a course you never finish or an agency that builds in a black box, you get a standing partner: two working sessions a month where we fix and automate your processes together on your screen, direct text access between sessions, and a shared hub tracking everything we build. You end up with automations you understand and own.'
+-
+  question: What actually happens on the calls?
+  answer: 'You share your screen and we work on a real task from your list. First we watch how you do it today, then we cut the unnecessary steps, then we automate what''s left. One process at a time, permanent progress every session. The first call is setup: getting your AI workspace, connections, and context in place so the rest of the engagement moves fast.'
+-
+  question: How is this different from Sidecar?
+  answer: 'Sidecar is done FOR you: we build and run the automation, you approve the output. The concierge is done WITH you: we build together and the skills stay in your hands. Concierge starts at $750/mo with no build fee. Sidecar builds start at $1,000 plus a monthly to run. Some clients start concierge, find a beast of a process, and hand that one to Sidecar.'
+-
+  question: Why is the intake form required?
+  answer: 'Because it makes your first paid minute count. The form surfaces the tasks eating your week and the one process you''d pay the most to never do again. We read it before we ever get on a call, so session one starts with a plan instead of an interview. No form, no call. We''re strict about it because it works.'
+-
+  question: What does it cost, and is there a contract?
+  answer: '$750 a month for remote sessions from anywhere, or in-person if you''re in Stillwater. $1,500 a month for the on-site tier serving Oklahoma City and Tulsa, where we come to your business monthly. No contracts, cancel anytime. If a month didn''t earn its keep, stop paying. The hub makes it easy to judge.'
+-
+  question: Do you really drive to OKC and Tulsa?
+  answer: 'Yes. The on-site tier exists because some processes can''t be fixed over a screen share: the paper on the counter, the whiteboard schedule, the way jobs actually flow through the shop. One long on-site session a month, plus a remote session, plus text access in between.'
+
+----
+
+Ctatitle: Start with the intake form
+
+----
+
+Ctadescription: Ten minutes of honest answers about what eats your week. We read every one and reply within a business day.
+
+----
+
+Uuid: concierge-service-001

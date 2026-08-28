@@ -1,0 +1,13 @@
+title: Concierge Intake
+preset: page
+fields:
+  meta_description:
+    label: Meta Description (SEO)
+    type: textarea
+    maxlength: 160
+  seo_title:
+    label: SEO Title
+    type: text
+  intro:
+    label: Intro Line
+    type: textarea

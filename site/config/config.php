@@ -108,6 +108,7 @@ return [
   ],
 
   'ghl.teamSizes' => ['Just me', '2-10', '11-25', '26-50', '51-100', '100+'],
+  'ghl.conciergeTiers' => ['remote-750', 'onsite-1500'],
 
   // GHL API (Private Integration Token) config for the API-method guides.
   // Base host + the contacts API version. Templates use a different version.
@@ -118,6 +119,7 @@ return [
     'team_size'   => 'mUbO71djwygUP4YT2Jgw', // SINGLE_OPTIONS
     'intent'      => 'qu6lBuyn2XsvkaxZFMhF', // TEXT
     'source_page' => 'CoMg5UbbiwG1iAtunQDS', // TEXT
+    'concierge_intake' => 'mXuS6PLqIggCQfvb23Vt', // LARGE_TEXT, created 2026-08-28
   ],
 
   // Validates a guide-form submission and forwards it to the matching GHL
@@ -318,6 +320,190 @@ return [
     }
   },
 
+  // Validates an AI Concierge intake submission and upserts it into GHL with
+  // the full intake answers in one custom field, then tags 'concierge-intake'.
+  'ghl.intake' => function () {
+    $json = fn($data, $code = 200) => new Kirby\Cms\Response(json_encode($data), 'application/json', $code);
+
+    try {
+    $body = json_decode(file_get_contents('php://input'), true);
+    if (!is_array($body)) {
+      return $json(['ok' => false, 'error' => 'Invalid request.'], 400);
+    }
+
+    // Honeypot: a real user never fills this. Silently accept so bots stop.
+    if (trim((string)($body['company_url'] ?? '')) !== '') {
+      return $json(['ok' => true]);
+    }
+
+    $clean = fn($v) => trim(preg_replace('/[\x00-\x1F\x7F]+/u', ' ', (string)($v ?? '')));
+    $firstName  = $clean($body['first_name'] ?? '');
+    $email      = strtolower($clean($body['email'] ?? ''));
+    $phone      = $clean($body['phone'] ?? '');
+    $business   = $clean($body['business'] ?? '');
+    $teamSize   = $clean($body['team_size'] ?? '');
+    $tasks      = $clean($body['tasks'] ?? '');
+    $payToNever = $clean($body['pay_to_never'] ?? '');
+    $tools      = $clean($body['tools'] ?? '');
+    $triedAi    = $clean($body['tried_ai'] ?? '');
+    $tier       = $clean($body['tier'] ?? '');
+    $sourcePage = substr(preg_replace('~[^a-z0-9/_-]~i', '', (string)($body['source_page'] ?? '')), 0, 120);
+
+    $errors = [];
+    if ($firstName === '' || mb_strlen($firstName) > 100) { $errors[] = 'first_name'; }
+    if ($email === '' || mb_strlen($email) > 254 || !filter_var($email, FILTER_VALIDATE_EMAIL)) { $errors[] = 'email'; }
+    if ($phone === '' || mb_strlen($phone) > 30 || !preg_match('/^[0-9+()\s.-]{7,}$/', $phone)) { $errors[] = 'phone'; }
+    if (mb_strlen($business) < 2 || mb_strlen($business) > 200) { $errors[] = 'business'; }
+    if (!in_array($teamSize, option('ghl.teamSizes'), true)) { $errors[] = 'team_size'; }
+    if ($tasks === '' || mb_strlen($tasks) > 1000) { $errors[] = 'tasks'; }
+    if ($payToNever === '' || mb_strlen($payToNever) > 500) { $errors[] = 'pay_to_never'; }
+    if (mb_strlen($tools) > 300) { $errors[] = 'tools'; }
+    if (mb_strlen($triedAi) > 500) { $errors[] = 'tried_ai'; }
+    if (!in_array($tier, option('ghl.conciergeTiers'), true)) { $errors[] = 'tier'; }
+    if (!empty($errors)) {
+      return $json(['ok' => false, 'error' => 'Please double-check the form and try again.', 'fields' => $errors], 422);
+    }
+
+    // Rate limit by IP: 5 per hour (shared style with ghl.lead, separate files).
+    $dir = kirby()->root('index') . '/site/cache/ratelimit';
+    if (!is_dir($dir)) { @mkdir($dir, 0755, true); }
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+    $ip = trim(explode(',', $ip)[0]);
+    $ipFile = $dir . '/intake_ip_' . md5($ip) . '.json';
+    $hits = is_file($ipFile) ? (json_decode(file_get_contents($ipFile), true) ?: []) : [];
+    $cutoff = time() - 3600;
+    $hits = array_values(array_filter($hits, fn($t) => $t > $cutoff));
+    if (count($hits) >= 5) {
+      return $json(['ok' => false, 'error' => 'Too many submissions from this connection. Please try again later or email logan@shimmerlabs.co.'], 429);
+    }
+
+    $pit = option('ghl.env')('GHL_PIT_TOKEN');
+    $loc = option('ghl.env')('GHL_LOCATION_ID');
+    if (!str_starts_with($pit, 'pit-') || $loc === '') {
+      error_log('[ghl.intake] Missing GHL_PIT_TOKEN/GHL_LOCATION_ID');
+      return $json(['ok' => false, 'error' => 'We could not process that just now. Please email logan@shimmerlabs.co with your answers.'], 503);
+    }
+    $base   = option('ghl.api.base');
+    $fields = option('ghl.api.fields');
+    $hdr = [
+      'Authorization: Bearer ' . $pit,
+      'Version: ' . option('ghl.api.version'),
+      'Content-Type: application/json',
+      'Accept: application/json',
+    ];
+    $api = function (string $path, array $body) use ($base, $hdr) {
+      $ch = curl_init($base . $path);
+      curl_setopt_array($ch, [
+        CURLOPT_POST           => true,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 8,
+        CURLOPT_CONNECTTIMEOUT => 4,
+        CURLOPT_HTTPHEADER     => $hdr,
+        CURLOPT_POSTFIELDS     => json_encode($body),
+      ]);
+      $resp = curl_exec($ch);
+      $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+      $err  = curl_error($ch);
+      curl_close($ch);
+      return [$code, $resp, $err];
+    };
+
+    $tierLabel = $tier === 'onsite-1500'
+      ? 'On-site (OKC / Tulsa), $1,500/mo'
+      : 'Remote or Stillwater in-person, $750/mo';
+    $intakeBlock =
+      "TIER: " . $tierLabel . "\n" .
+      "TASKS EATING THE WEEK:\n" . mb_substr($tasks, 0, 1000) . "\n\n" .
+      "WOULD PAY MOST TO NEVER DO AGAIN:\n" . mb_substr($payToNever, 0, 500) . "\n\n" .
+      "CURRENT TOOLS: " . ($tools !== '' ? mb_substr($tools, 0, 300) : '(not given)') . "\n" .
+      "TRIED WITH AI SO FAR: " . ($triedAi !== '' ? mb_substr($triedAi, 0, 500) : '(not given)') . "\n" .
+      "SUBMITTED: " . date('Y-m-d H:i') . " from /" . $sourcePage;
+
+    $upsertBody = [
+      'locationId'   => $loc,
+      'firstName'    => mb_substr($firstName, 0, 100),
+      'email'        => $email,
+      'phone'        => $phone,
+      'companyName'  => mb_substr($business, 0, 200),
+      'customFields' => [
+        ['id' => $fields['team_size'],        'field_value' => $teamSize],
+        ['id' => $fields['source_page'],      'field_value' => $sourcePage],
+        ['id' => $fields['concierge_intake'], 'field_value' => $intakeBlock],
+      ],
+    ];
+    [$c1, $r1, $e1] = $api('/contacts/upsert', $upsertBody);
+    if ($e1 || $c1 < 200 || $c1 >= 300) {
+      error_log('[ghl.intake] upsert ' . $c1 . ': ' . $e1 . ' ' . substr((string)$r1, 0, 200));
+      return $json(['ok' => false, 'error' => 'Something went wrong saving your answers. Please email logan@shimmerlabs.co.'], 502);
+    }
+    $decoded   = json_decode((string)$r1, true);
+    $contactId = $decoded['contact']['id'] ?? ($decoded['id'] ?? '');
+    if ($contactId === '') {
+      error_log('[ghl.intake] upsert returned no contact id: ' . substr((string)$r1, 0, 200));
+      return $json(['ok' => false, 'error' => 'Something went wrong. Please email logan@shimmerlabs.co.'], 502);
+    }
+
+    [$c2, $r2, $e2] = $api('/contacts/' . rawurlencode($contactId) . '/tags', ['tags' => ['concierge-intake']]);
+    if ($e2 || $c2 < 200 || $c2 >= 300) {
+      error_log('[ghl.intake] add-tag ' . $c2 . ' (' . $contactId . '): ' . $e2 . ' ' . substr((string)$r2, 0, 200));
+      return $json(['ok' => false, 'error' => 'Almost there. We saved your answers but hit a snag. Please email logan@shimmerlabs.co.'], 502);
+    }
+
+    // Auto-reply to the client, CC Logan with the full intake answers.
+    // Best effort: an email hiccup never loses the lead (it's already in GHL).
+    $resendKey = option('ghl.env')('RESEND_API_KEY');
+    if ($resendKey !== '') {
+      $esc = fn($v) => htmlspecialchars($v, ENT_QUOTES, 'UTF-8');
+      $emailHtml =
+        '<div style="font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 560px; margin: 0 auto; color: #1a1a2e;">' .
+        '<p>Hey ' . $esc($firstName) . ',</p>' .
+        '<p>Got your AI Concierge intake. This is exactly what we build the first call around, so thank you for the detail.</p>' .
+        '<p><strong>What happens next:</strong> Logan reads every one of these personally and will reach out within one business day. Want to skip ahead? Grab your first call now:</p>' .
+        '<p><a href="https://api.leadconnectorhq.com/widget/booking/tCHB0sj6MoYpJYWJyVqd" style="display:inline-block;background:#FDBE34;color:#0A1A2F;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">Book your first session</a></p>' .
+        '<hr style="border:none;border-top:1px solid #eee;margin:24px 0;">' .
+        '<p style="font-size:14px;color:#555;"><strong>Your answers, for the record:</strong></p>' .
+        '<p style="font-size:14px;color:#555;white-space:pre-line;">' . $esc($intakeBlock) . '</p>' .
+        '<p style="font-size:14px;color:#555;">Business: ' . $esc($business) . ' &middot; Team: ' . $esc($teamSize) . ' &middot; Phone: ' . $esc($phone) . '</p>' .
+        '<p>Talk soon,<br>Logan Shimmer<br>Shimmer Labs &middot; Stillwater, OK<br>(405) 880-6674</p>' .
+        '</div>';
+      $mailPayload = json_encode([
+        'from'    => 'Logan Shimmer <logan@shimmerlabs.co>',
+        'to'      => [$email],
+        'cc'      => ['logan@shimmerlabs.co'],
+        'subject' => 'Got your AI Concierge intake, ' . mb_substr($firstName, 0, 50),
+        'html'    => $emailHtml,
+      ]);
+      $ch = curl_init('https://api.resend.com/emails');
+      curl_setopt_array($ch, [
+        CURLOPT_POST           => true,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 10,
+        CURLOPT_HTTPHEADER     => [
+          'Authorization: Bearer ' . $resendKey,
+          'Content-Type: application/json',
+        ],
+        CURLOPT_POSTFIELDS     => $mailPayload,
+      ]);
+      $mailResp = curl_exec($ch);
+      $mailCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+      curl_close($ch);
+      if ($mailCode < 200 || $mailCode >= 300) {
+        error_log('[ghl.intake] resend ' . $mailCode . ': ' . substr((string)$mailResp, 0, 200));
+      }
+    } else {
+      error_log('[ghl.intake] RESEND_API_KEY missing, intake email skipped');
+    }
+
+    $hits[] = time();
+    @file_put_contents($ipFile, json_encode($hits));
+    return $json(['ok' => true]);
+    } catch (\Throwable $e) {
+      error_log('[ghl.intake] EXCEPTION ' . $e->getMessage());
+      return $json(['ok' => false, 'error' => 'Something went wrong. Please email logan@shimmerlabs.co.'], 500);
+    }
+  },
+
+
   // Routes
   'routes' => [
     // /_scan — start a new scan (POST) or catch bad GETs
@@ -350,6 +536,14 @@ return [
       'method'  => 'POST',
       'action'  => function() {
         return option('ghl.lead')();
+      }
+    ],
+    // /_intake — AI Concierge intake form, validates then upserts into GHL
+    [
+      'pattern' => '_intake',
+      'method'  => 'POST',
+      'action'  => function() {
+        return option('ghl.intake')();
       }
     ],
     // /sql-guide — serve the standalone SQL reference page
@@ -446,6 +640,10 @@ return [
           'work',
           'stillwater-ai-consultant',
           'services/sidecar',
+          'services/concierge',
+          'intake',
+          'oklahoma-city-ai-consultant',
+          'tulsa-ai-consultant',
           'services/custom-apps',
           'services/api-integrations',
           'ai-agents-guide',

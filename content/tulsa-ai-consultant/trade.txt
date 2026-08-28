@@ -1,0 +1,81 @@
+Title: AI Consultant in Tulsa
+
+----
+
+Seo_title: AI Consultant in Tulsa Who Shows Up In Person
+
+----
+
+Meta_description: An AI consultant who drives to your Tulsa business monthly. Done-with-you sessions at your shop, $1,500/mo, no contracts. From Shimmer Labs in Stillwater, OK.
+
+----
+
+Eyebrow: Serving Tulsa
+
+----
+
+Cta_type: intake
+
+----
+
+Hero_image: hero-tulsa.jpg
+
+----
+
+Hero_title: An AI consultant who shows up at your shop. In person.
+
+----
+
+Intro: Most AI consultants are a Zoom call in another time zone. We drive to Tulsa once a month, sit in your office, and fix your processes with you at the counter where they actually happen.
+
+----
+
+Text:
+
+## Why in person matters for AI work
+
+Some processes can't be fixed over a screen share. The paper on the counter. The whiteboard schedule. The way a job actually moves through your shop, hand to hand. Watching it happen in the building is worth ten discovery calls.
+
+That's the whole idea behind our on-site AI Concierge tier: once a month, we come to your Tulsa business for a long working session. We watch how the work really flows, cut the steps that don't need to exist, and automate what's left, with you at the keyboard so you understand every piece. Between visits you get a remote session and you can text us directly whenever you're stuck.
+
+## What we work on
+
+The same things eating every small business's week:
+
+- Invoices and receipts that a person retypes into QuickBooks
+- Estimates and follow-ups that go out late or not at all
+- Scheduling that lives in one person's head
+- Paperwork between the field and the office
+
+If a task is mostly reading, understanding, and typing, a computer does it better now. Our job is finding those tasks in your business and handing them off, one per session, permanently.
+
+## The proof
+
+We do this every week in Stillwater. <a href="/case-studies/stillwater-landscaper">A landscaper's two hours of nightly typing became one photo</a>. <a href="/case-studies/sweat-yoga-fitness">A gym owner's membership paperwork now runs itself while she sleeps</a>. A shop manager's 90-minute monthly schedule became a 5-minute review. Different businesses, same pattern.
+
+## The plain math
+
+The on-site tier is $1,500 a month. No contracts, cancel anytime. Two sessions a month plus text access. If we can't find and kill enough wasted hours to cover that several times over, fire us. The shared progress hub we keep makes that judgment easy: every session, everything built, in one place.
+
+Prefer remote? The <a href="/services/concierge">$750/mo remote tier</a> is the same service over video.
+
+----
+
+Faq:
+
+-
+  question: Do you actually come to Tulsa?
+  answer: >
+    Yes, monthly, as part of the on-site AI Concierge tier. We're based in Stillwater, about an hour west on Highway 51. One long on-site working session at your business each month, one remote session, and direct text access in between.
+-
+  question: What does an AI consultant cost in Tulsa?
+  answer: >
+    Agencies quote retainers from $5,000 a month and up, mostly remote. Our on-site tier is $1,500 a month with no contract: monthly in-person session, a second remote session, and text access. Remote-only is $750. We keep it simple on purpose.
+-
+  question: What happens at the first session?
+  answer: >
+    Before we ever make the drive, you fill out our intake form covering your tools and the tasks eating your week. The first session sets up your AI foundation and starts on the process you said you'd pay the most to never do again. No generic audit deck, just work.
+-
+  question: We're not technical. Is that a problem?
+  answer: >
+    It's the point. This is done-with-you consulting: you drive, we sit next to you, and nothing gets built that you don't understand. Most of our clients are trades and service businesses, not tech companies.

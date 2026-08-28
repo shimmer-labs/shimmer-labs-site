@@ -7,6 +7,7 @@
 - [Sidecar](https://shimmerlabs.co/services/sidecar): Narrow AI-assisted operational workflows that handle one job each, with a human in the loop on anything customer-facing. Builds from $1,000, scoped to the job, paid half up front and half at go-live. Running from $250/mo, sized with the client to a fraction of what the hours cost them. Model API costs pass-through. Cancel anytime, no contracts. Live in a week, autonomous in a month. Shipped verticals: membership operations, creator outreach, document parsing, scheduling, lead-to-SMS.
 - [Custom Apps](https://shimmerlabs.co/services/custom-apps): Web and iOS apps, wireframes to launched product. Web from $15,000. iOS from $20,000. Flat-priced per scope.
 - [API Integrations](https://shimmerlabs.co/services/api-integrations): Point-to-point integrations for n8n, Zapier, and Make.com. $2,500 - $7,000 per integration.
+- [AI Concierge](https://shimmerlabs.co/services/concierge): Done-with-you AI consulting. Two 45-minute working sessions a month, direct text access between sessions, shared progress hub, required intake form. Methodology: Audit, Optimize, Automate (never automate a broken process). $750/month remote or in-person in Stillwater; $1,500/month on-site serving Oklahoma City and Tulsa. No contracts, cancel anytime. Capacity capped at 6 clients. Intake: https://shimmerlabs.co/intake
 
 ## Trade pages
 - [AI for Landscaping Businesses](https://shimmerlabs.co/landscapers): Job sheets to database from one photo, invoicing, scheduling. Real shipped example: a Stillwater landscaper's two hours of nightly typing became one photo (handwritten sheets, Spanish included).
@@ -38,6 +39,7 @@ Returned to Stillwater after 17 years in California to build a rooted business a
 
 ## Pricing summary
 
+- AI Concierge: $750/month remote or Stillwater in-person; $1,500/month on-site (OKC and Tulsa). No contracts.
 - Sidecar: builds from $1,000 (half up front, half at go-live) + running from $250/month, both scoped to the job. Cancel anytime, no contracts. Model API costs pass-through.
 - Custom Apps - Web: from $15,000 flat-priced per scope.
 - Custom Apps - iOS: from $20,000 flat-priced per scope.

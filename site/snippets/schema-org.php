@@ -284,6 +284,17 @@ if ($page->intendedTemplate()->name() === 'service') {
       ],
       'description' => 'Builds from $1,000 (half up front, half at go-live) + from $250/month to run. Model API costs pass-through. Cancel anytime, no contracts.'
     ];
+  } elseif ($slug === 'concierge') {
+    $serviceSchema['offers'] = [
+      '@type' => 'Offer',
+      'priceSpecification' => [
+        '@type' => 'UnitPriceSpecification',
+        'minPrice' => '750',
+        'priceCurrency' => 'USD',
+        'unitText' => 'MONTH'
+      ],
+      'description' => 'Done-with-you AI consulting. $750/month remote or in-person in Stillwater; $1,500/month on-site serving Oklahoma City and Tulsa. Two working sessions a month, direct text access, shared progress hub.'
+    ];
   } elseif ($slug === 'custom-apps') {
     $serviceSchema['offers'] = [
       [
@@ -319,8 +330,8 @@ if ($page->intendedTemplate()->name() === 'service') {
 
   $schema[] = $serviceSchema;
 
-  // FAQPage schema on the Sidecar page only
-  if ($slug === 'sidecar' && $page->faq()->isNotEmpty()) {
+  // FAQPage schema on any service page with FAQ content
+  if ($page->faq()->isNotEmpty()) {
     $faqItems = [];
     foreach ($page->faq()->toStructure() as $item) {
       $faqItems[] = [

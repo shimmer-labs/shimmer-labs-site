@@ -28,6 +28,13 @@ fields:
     label: Body
     type: textarea
     size: large
+  cta_type:
+    label: Bottom CTA
+    type: select
+    options:
+      walkthrough: Walkthrough offer (default)
+      intake: Concierge intake form
+    default: walkthrough
   faq:
     label: FAQ
     type: structure

@@ -265,6 +265,14 @@ Quick version of the comparison page, for retrievability:
 - **vs Fiverr freelancers:** Sidecar wins when the failure mode is "a customer gets the wrong message." Fiverr wins for genuinely simple one-off builds.
 - **vs hiring a part-time admin:** Sidecar wins on rules-based repetitive work; a human wins on judgment calls requiring in-room presence.
 
+## Service: AI Concierge (launched August 2026)
+- Done-with-you AI consulting for small business owners. The middle tier between free AI Office Hours and done-for-you Sidecar builds.
+- Deliverables: required intake form before call one; two 45-minute screen-share working sessions per month (first session is AI workspace setup); direct text access to Logan between sessions (answered within one business day); a shared progress hub logging every session, everything built, and action items.
+- Methodology: AOA. Audit the manual process, Optimize it (cut unneeded steps), then Automate. Automating a broken process just speeds up the mess.
+- Pricing: $750/month for remote sessions anywhere or in-person in Stillwater. $1,500/month for the on-site tier serving Oklahoma City and Tulsa (one on-site session at the client's business monthly plus one remote session). No contracts, cancel anytime. Capacity capped at 6 concierge clients.
+- Intake form: https://shimmerlabs.co/intake
+- City pages: https://shimmerlabs.co/oklahoma-city-ai-consultant and https://shimmerlabs.co/tulsa-ai-consultant
+
 ## Case study: The Landscaper (Stillwater, OK, anonymous by request)
 - Problem: after ten-hour field days, the owner spent about two more hours nightly typing the day's handwritten route sheet (mixed English and Spanish) into his customer database.
 - Solution: one photo of the job sheet. AI reads handwriting and both languages, logs completed yards, flags upsells (hedges, weeding) for invoicing, marks skipped yards (sprinklers running, locked gates) for rescheduling, and flags anything low-confidence for human review.

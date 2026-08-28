@@ -46,6 +46,18 @@
   <?php endif ?>
 </main>
 
+<?php if ($page->cta_type()->toString() === 'intake'): ?>
+<section class="cta-final">
+  <div class="container">
+    <div class="cta-final__content">
+      <h2>Start with the intake form</h2>
+      <p>Ten minutes of honest answers about what eats your week. Logan reads every one and replies within a business day.</p>
+      <a href="<?= url('intake') ?>" class="btn btn--cta">Fill Out the Intake →</a>
+    </div>
+  </div>
+</section>
+<?php else: ?>
 <?php snippet('walkthrough-cta') ?>
+<?php endif ?>
 
 <?php snippet('footer') ?>
