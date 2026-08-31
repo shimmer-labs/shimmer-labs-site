@@ -1,0 +1,95 @@
+Title: Can AI tell me what to delegate?
+
+----
+
+Seo_title: Can AI Tell Me What to Delegate? A Weekly Priorities Audit
+
+----
+
+Meta_description: A fractional economic developer walked into office hours wearing every hat. She walked out with an AI that sorts her week into Protect, Hand off, Systematize, and Trim. Here's the framework and the prompt.
+
+----
+
+Date: 2026-09-01
+
+----
+
+Intro: A classmate from Small Business University walked into office hours just to say hi. She's a fractional economic developer for chambers of commerce, and a former chamber president on top of it. If anyone knows about wearing every hat, it's her. She walked out with an AI that tells her which hats to take off.
+
+----
+
+Text:
+
+## "You know I use AI to help me prioritize my time, right?"
+
+She came in to connect as classmates, and we got to talking about what a normal week looks like in her world. Business attraction. Retention visits. Ribbon cuttings. Board reports. Social media. Member questions. Funder updates. Every one of them important, every one of them competing for the same 40 hours.
+
+So we mentioned the thing we do for ourselves: we use AI to help decide where our time actually goes. Her eyes lit up. "That could be really helpful for my clients too."
+
+An hour later she had two things, and the difference between them is worth understanding.
+
+## Skills vs. prompts (this matters)
+
+**A skill** is a playbook you save into your own AI. It lives there permanently, knows your context, and runs whenever you invoke it. It's for you, the person who uses AI every day. She left with a skill that audits her own week: she dumps in what's on her plate, and it scores and sorts everything using a framework she now runs weekly.
+
+**A prompt** is portable. It's a block of text anyone can paste into any AI, no setup, no account with you, no experience needed. You can text it to someone, post it online, or attach it to an email.
+
+Her clients and prospects are busy chamber directors who mostly haven't touched AI. They're not going to build a skill. But they will paste one thing into ChatGPT if someone they trust hands it to them. So we built her a prompt version to share: it walks a chamber director through a friendly conversation about their week, then hands them a report.
+
+## The framework: four buckets for every task
+
+Both versions sort every task in your week onto two scales, effort and impact, and then into four buckets:
+
+- **Protect:** high impact, and something only you can really do. Guard this time with your life.
+- **Hand off:** it matters, but it doesn't have to be you. A teammate, a tool, or an outside helper could carry it.
+- **Systematize:** repeatable work that a template, checklist, or automation could speed up.
+- **Trim:** low impact for the effort. Shrink it, batch it, or let it go.
+
+The question that unlocks the whole exercise, straight from her prompt:
+
+> If I handed you five hours back next week, what would you actually do with them?
+
+Almost nobody has a ready answer. That's the problem in one sentence: we're so deep in the hats we're wearing that we've stopped imagining the work we'd rather be doing.
+
+## The quietly brilliant part
+
+Here's what she figured out, and honestly, it's the smartest piece of the whole thing. The report her prospects get ends with a section called "Things That Could Come Off Your Plate."
+
+Read that again from her side of the table. Her prospect runs the audit, gets genuine value, sees their week clearly for the first time, and the report ends with a specific list of tasks someone else could carry. She's a fractional economic developer. Carrying exactly those tasks is her job. The audit isn't a sales pitch; it's real help. But the last page is a shopping list, and she's the store.
+
+We'd call it sneaky if it weren't so honest. The help is real either way. It worked, too.
+
+## Run it on your own week
+
+We rewrote her chamber version for any small business owner. Paste this into whatever AI you use:
+
+> You are a sharp, warm operations strategist. Help me see where my week actually goes, what's worth protecting, and what could come off my plate. Be candid and brief, no jargon, no lecturing. Run this as a short conversation, not a survey: ask one or two questions at a time, about five rounds total. First get to know me: my name, my business, and my role. Then find out where my week goes: up to ten things I do most weeks with rough hours for each, which ones actually move revenue or my real goals, which drain me and which energize me, and what I'd do with five hours back. Then score each task 1 to 5 on effort and impact, and sort every task into four buckets: Protect (high impact, only I can do it), Hand off (matters, but doesn't have to be me), Systematize (repeatable, a template or automation could speed it up), and Trim (low impact for the effort). Give me a report: my week at a glance, a table of every task with hours, effort, impact, and bucket, the buckets with one-line reasons, one or two concrete moves for this week, and three to five specific tasks from Hand off and Systematize that someone or something else could carry.
+
+Ten minutes, and you'll have the most honest picture of your week you've had in years.
+
+And if the Hand off and Systematize buckets come back full? That's the list we work from. Bring it to office hours at WorkIT, Tuesdays and Thursdays 2 to 4, and we'll automate the first one together.
+
+----
+
+Faq:
+
+-
+  question: What's the difference between an AI skill and an AI prompt?
+  answer: >
+    A skill is a saved playbook inside your own AI that knows your context and runs on demand; it's built for someone who uses AI regularly. A prompt is a portable block of text anyone can paste into any AI with zero setup. Rule of thumb: build skills for yourself, hand prompts to people you want to help.
+-
+  question: What are the four buckets?
+  answer: >
+    Protect (high impact work only you can do), Hand off (important, but a person or tool could carry it), Systematize (repeatable work a template or automation could speed up), and Trim (low impact for the effort; shrink it or drop it). Score every weekly task on effort and impact, and each one lands in a bucket.
+-
+  question: Does this work in the free version of ChatGPT?
+  answer: >
+    Yes. The prompt runs as a plain conversation, so any of the major AI tools handle it, free or paid. The paid tiers just remember more and let you save the framework as a reusable skill or project so you can rerun it monthly without pasting.
+-
+  question: How is this different from a to-do list app?
+  answer: >
+    A to-do app tracks what you've already decided to do. This audit questions whether you should be doing it at all. The effort and impact scoring surfaces the tasks you're good at, get thanked for, and still shouldn't be doing, which is exactly the stuff a list app never flags.
+-
+  question: What do I do with the "hand off" list once I have it?
+  answer: >
+    Pick the one that costs you the most hours and find its carrier: a teammate, a freelancer, or an automation. If you think it might be automatable, that's literally what our free office hours are for. Bring the list, we'll pick one task, and the goal is to walk out an hour later with it handled.
