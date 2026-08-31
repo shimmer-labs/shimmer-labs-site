@@ -186,6 +186,8 @@ if ($page->intendedTemplate()->name() === 'home') {
       '@context' => 'https://schema.org',
       '@type' => 'Review',
       'itemReviewed' => [
+        '@type' => 'ProfessionalService',
+        'name' => 'Shimmer Labs',
         '@id' => $site->url() . '#business'
       ],
       'author' => [
@@ -422,6 +424,8 @@ if ($page->intendedTemplate()->name() === 'case-study') {
       '@context' => 'https://schema.org',
       '@type' => 'Review',
       'itemReviewed' => [
+        '@type' => 'ProfessionalService',
+        'name' => 'Shimmer Labs',
         '@id' => $site->url() . '#business'
       ],
       'author' => [
