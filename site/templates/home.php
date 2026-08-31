@@ -58,7 +58,7 @@
         <div class="build-card__icon">🤝</div>
         <h3 class="build-card__title">AI Concierge</h3>
         <p class="build-card__description">Done WITH you. Two working sessions a month, text us when you're stuck, and every automation built on your screen so you own it and understand it.</p>
-        <span class="build-card__price">$750/mo · no build fee, no contracts</span>
+        <span class="build-card__price">$1,000/mo · first 5 clients: $750/mo</span>
         <span class="build-card__arrow">View Details →</span>
       </a>
       <a href="/services/sidecar" class="build-card">

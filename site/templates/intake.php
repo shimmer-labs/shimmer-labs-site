@@ -6,14 +6,14 @@
     <div class="container">
       <span class="cs-tag">Got it</span>
       <h1 class="hero__title">Your intake is in.</h1>
-      <p class="hero__intro">Logan reads every one of these personally and will reach out within one business day. A copy just landed in your inbox. Want to skip the wait?</p>
+      <p class="hero__intro">Logan reads every one of these personally and will text or email you within one business day to set up your first session. A copy just landed in your inbox.</p>
     </div>
   </section>
   <section class="long-form">
     <div class="container">
       <div class="long-form__body" style="text-align:center;">
-        <p><a class="btn btn--cta" href="https://api.leadconnectorhq.com/widget/booking/tCHB0sj6MoYpJYWJyVqd">Book your first session now →</a></p>
-        <p>Or just come say hi first: free AI Office Hours, Tuesdays and Thursdays, 2 to 4 PM at <a href="<?= url('office-hours') ?>">WorkIT in Stillwater</a>.</p>
+        <p>No phone trees, no scheduling links, just a person reaching out.</p>
+        <p>Can't wait? Come say hi in person: free AI Office Hours, Tuesdays and Thursdays, 2 to 4 PM at <a href="<?= url('office-hours') ?>">WorkIT in Stillwater</a>.</p>
       </div>
     </div>
   </section>
@@ -86,11 +86,11 @@
           </div>
 
           <div class="form-group">
-            <label for="tier">Which fits you?</label>
+            <label for="tier">How do you prefer to meet?</label>
             <select name="tier" id="tier" required>
               <option value="" disabled selected>Pick one</option>
-              <option value="remote-750">Remote, or in person in Stillwater ($750/mo)</option>
-              <option value="onsite-1500">On-site at my business, OKC or Tulsa ($1,500/mo)</option>
+              <option value="video">Video sessions</option>
+              <option value="in-person">In person (we're in Stillwater and get around Oklahoma)</option>
             </select>
           </div>
 
@@ -104,7 +104,7 @@
 
           <button type="submit" class="btn btn--cta" id="form-submit">Send my intake →</button>
 
-          <p class="form-note">Logan reads every submission personally. No spam, no drip campaigns you didn't ask for.</p>
+          <p class="form-note">The AI Concierge is $1,000/mo. Right now the next 5 clients get $750/mo, locked in, because we're trying something new. Logan reads every submission personally. No spam, no drip campaigns you didn't ask for.</p>
         </form>
       </div>
     </div>

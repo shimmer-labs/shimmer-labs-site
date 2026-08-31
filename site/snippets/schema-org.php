@@ -293,7 +293,7 @@ if ($page->intendedTemplate()->name() === 'service') {
         'priceCurrency' => 'USD',
         'unitText' => 'MONTH'
       ],
-      'description' => 'Done-with-you AI consulting. $750/month remote or in-person in Stillwater; $1,500/month on-site serving Oklahoma City and Tulsa. Two working sessions a month, direct text access, shared progress hub.'
+      'description' => 'Done-with-you AI consulting. $1,000/month, with introductory founding pricing of $750/month for the first 5 clients. Two working sessions a month, direct text access, shared progress hub. Video or in person across Oklahoma.'
     ];
   } elseif ($slug === 'custom-apps') {
     $serviceSchema['offers'] = [

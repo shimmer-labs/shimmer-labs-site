@@ -108,7 +108,8 @@ return [
   ],
 
   'ghl.teamSizes' => ['Just me', '2-10', '11-25', '26-50', '51-100', '100+'],
-  'ghl.conciergeTiers' => ['remote-750', 'onsite-1500'],
+  'ghl.conciergeTiers' => ['video', 'in-person'],
+  'ghl.pipeline' => ['id' => '416qDXyImHwG7lcm3cEC', 'leadStageId' => '032fa7d2-53bc-4cb3-887b-348e696c67e5'],
 
   // GHL API (Private Integration Token) config for the API-method guides.
   // Base host + the contacts API version. Templates use a different version.
@@ -408,11 +409,11 @@ return [
       return [$code, $resp, $err];
     };
 
-    $tierLabel = $tier === 'onsite-1500'
-      ? 'On-site (OKC / Tulsa), $1,500/mo'
-      : 'Remote or Stillwater in-person, $750/mo';
+    $tierLabel = $tier === 'in-person'
+      ? 'Prefers in-person sessions'
+      : 'Prefers video sessions';
     $intakeBlock =
-      "TIER: " . $tierLabel . "\n" .
+      "MEETING PREFERENCE: " . $tierLabel . "\n" .
       "TASKS EATING THE WEEK:\n" . mb_substr($tasks, 0, 1000) . "\n\n" .
       "WOULD PAY MOST TO NEVER DO AGAIN:\n" . mb_substr($payToNever, 0, 500) . "\n\n" .
       "CURRENT TOOLS: " . ($tools !== '' ? mb_substr($tools, 0, 300) : '(not given)') . "\n" .
@@ -449,6 +450,22 @@ return [
       return $json(['ok' => false, 'error' => 'Almost there. We saved your answers but hit a snag. Please email logan@shimmerlabs.co.'], 502);
     }
 
+    // Drop the lead into the sales pipeline so it shows up in GHL's
+    // opportunity view. Best effort: a pipeline hiccup never loses the lead.
+    $pipe = option('ghl.pipeline');
+    [$c3, $r3, $e3] = $api('/opportunities/', [
+      'locationId'      => $loc,
+      'pipelineId'      => $pipe['id'],
+      'pipelineStageId' => $pipe['leadStageId'],
+      'contactId'       => $contactId,
+      'name'            => 'AI Concierge - ' . mb_substr($firstName, 0, 50) . ' (' . mb_substr($business, 0, 80) . ')',
+      'status'          => 'open',
+      'monetaryValue'   => 750,
+    ]);
+    if ($e3 || $c3 < 200 || $c3 >= 300) {
+      error_log('[ghl.intake] opportunity ' . $c3 . ' (' . $contactId . '): ' . $e3 . ' ' . substr((string)$r3, 0, 200));
+    }
+
     // Auto-reply to the client, CC Logan with the full intake answers.
     // Best effort: an email hiccup never loses the lead (it's already in GHL).
     $resendKey = option('ghl.env')('RESEND_API_KEY');
@@ -458,8 +475,7 @@ return [
         '<div style="font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 560px; margin: 0 auto; color: #1a1a2e;">' .
         '<p>Hey ' . $esc($firstName) . ',</p>' .
         '<p>Got your AI Concierge intake. This is exactly what we build the first call around, so thank you for the detail.</p>' .
-        '<p><strong>What happens next:</strong> Logan reads every one of these personally and will reach out within one business day. Want to skip ahead? Grab your first call now:</p>' .
-        '<p><a href="https://api.leadconnectorhq.com/widget/booking/tCHB0sj6MoYpJYWJyVqd" style="display:inline-block;background:#FDBE34;color:#0A1A2F;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:bold;">Book your first session</a></p>' .
+        '<p><strong>What happens next:</strong> Logan reads every one of these personally and will text or email you within one business day to set up your first session. No phone trees, no scheduling links, just a person.</p>' .
         '<hr style="border:none;border-top:1px solid #eee;margin:24px 0;">' .
         '<p style="font-size:14px;color:#555;"><strong>Your answers, for the record:</strong></p>' .
         '<p style="font-size:14px;color:#555;white-space:pre-line;">' . $esc($intakeBlock) . '</p>' .
