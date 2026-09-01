@@ -1,0 +1,93 @@
+Title: What is an AI concierge?
+
+----
+
+Seo_title: What Is an AI Concierge? The Chatbot vs. the Real Thing
+
+----
+
+Meta_description: "AI concierge" means two very different things: a hotel chatbot, or a monthly done-with-you service where a real person helps you automate your business. What each one is, what the service costs, and the questions to ask before you pay anyone.
+
+----
+
+Date: 2026-09-01
+
+----
+
+Intro: You're going to start hearing the phrase "AI concierge" a lot. The trouble is, it means two completely different things, and the one Google shows you first is not the one that matters for your business.
+
+----
+
+Text:
+
+## The name means two different things
+
+**Meaning one: a chatbot.** Hotels and online stores have used "AI concierge" for years to mean a digital assistant that answers guest questions or recommends products. Software. You've chatted with one. This is the meaning most of the internet still uses.
+
+**Meaning two: a person, on retainer, who does AI with you.** This is the new meaning, and it's the one spreading through the small business world right now. An AI concierge in this sense is a monthly service where someone who works with AI every day sits down with you, regularly, and automates your business alongside you. Not a chatbot. Not a course. Not an agency that disappears into a black box and hands you an invoice.
+
+This article is about meaning two, because that's the one worth understanding before someone sells it to you.
+
+## What the service actually includes
+
+The shape is pretty consistent wherever you find it:
+
+- **Standing working sessions.** Usually two a month. You share your screen, bring a real task that eats your week, and fix it together. You're at the keyboard.
+- **Direct access between sessions.** Text or message the consultant when you're stuck mid-week, instead of saving up problems for a monthly meeting.
+- **A shared record.** A running log of every session, everything built, and what's next, so you can judge at any moment whether the service is earning its keep.
+- **A process-first approach.** The good ones fix the process before automating it. Automating a broken process just makes the mess faster.
+
+The defining feature is the word WITH. You understand and own every automation you build, because you built it. If the relationship ends, the automations keep working and they're yours.
+
+## Why it's suddenly everywhere
+
+Small business owners spent two years hearing they should "use AI," tried a chatbot for a weekend, and stalled. Courses didn't fix it, because nobody finishes courses. Done-for-you agencies didn't fix it either, because owners ended up with automations they didn't understand, couldn't change, and lost the day they stopped paying.
+
+Done-with-you closes that gap, and consultants have noticed. There are now playbooks circulating that teach consultants how to launch this exact offer. That's not a bad thing, but it does mean the quality is about to get uneven. Which brings us to the important part.
+
+## What it costs
+
+Across the markets where this model has taken off, the going rate runs from about $750 to $2,000 a month, typically with no contracts. Ours is $1,000 a month, and while we prove the model out here in Oklahoma, the first 5 founding clients get $750 a month locked in. Details on the <a href="/services/concierge">AI Concierge page</a>.
+
+## Five questions to ask before you pay anyone for this
+
+Ask these of any AI concierge, including us. The answers separate the real thing from a subscription trap.
+
+1. **Whose accounts do the automations live in?** Correct answer: yours. If everything runs through the consultant's accounts, you're renting your own business processes.
+2. **What happens when I cancel?** Correct answer: everything keeps working, and you understand it well enough to maintain it. If cancellation means losing your automations, that's a hostage situation with a monthly fee.
+3. **Will I be at the keyboard?** Correct answer: yes, most of the time. If they do everything while you watch, you're buying an agency with extra meetings.
+4. **What happens between sessions?** Correct answer: you can reach a human directly when you're stuck. Two calls a month with silence in between is a coaching program, not a concierge.
+5. **Can I see a record of what my money produced?** Correct answer: yes, a shared log of every session and everything built. If they can't show receipts, the value gets fuzzy fast.
+
+## The cheapest way to find out if it's for you
+
+Before paying anyone a monthly rate, test the working style. We host free AI office hours at <a href="/office-hours">WorkIT in Stillwater</a> every Tuesday and Thursday, 2 to 4 PM. Bring your biggest time suck, and the goal is to walk out an hour later with it automated. That hour is exactly what the paid service feels like, month after month. If it clicks, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: What is an AI concierge?
+  answer: >
+    The phrase has two meanings. The older one is a chatbot: a digital assistant used by hotels and online stores to answer customer questions. The newer one is a done-with-you service: a monthly engagement where an AI practitioner works alongside a business owner in regular sessions, fixing processes and building automations the owner understands and keeps. The second meaning is the one spreading through the small business world.
+-
+  question: How is an AI concierge different from a chatbot?
+  answer: >
+    A chatbot is software your customers talk to. An AI concierge (in the service sense) is a person you work with on a monthly basis who helps you automate your own business. Confusingly, an AI concierge might help you build a chatbot, but the service itself is human help, not software.
+-
+  question: What does an AI concierge cost?
+  answer: >
+    In the markets where the model has taken off, roughly $750 to $2,000 a month, usually without contracts. Shimmer Labs charges $1,000 a month, with founding pricing of $750 a month locked in for the first 5 clients while we prove the model in Oklahoma.
+-
+  question: How is this different from hiring an automation agency?
+  answer: >
+    An agency builds FOR you: you describe the problem, they deliver a system, and you depend on them to change it. A concierge builds WITH you: you're in the sessions, the automations live in your accounts, and the skills stay in your head. Agencies make sense for big builds; the concierge makes sense for steadily handing your busywork to AI without losing control of it.
+-
+  question: What should I watch out for before signing up with anyone?
+  answer: >
+    Three red flags: automations that live in the provider's accounts instead of yours, cancellation terms where you lose what was built, and engagements where you never touch the keyboard. Any of those means you're renting outcomes instead of building capability. Ask whose accounts, what happens on cancellation, and whether you'll understand what you own.
+-
+  question: How do I try the model before paying for it?
+  answer: >
+    Find a provider who will work with you once for free. We run free AI office hours in Stillwater every Tuesday and Thursday where you bring one task and we automate it together in an hour. That's the whole service in miniature, and it costs nothing to find out if the working style fits you.
