@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>13 How Easy</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+  body{display:flex;flex-direction:column;justify-content:center;}
+  .eyebrow{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:27px;color:rgba(255,255,255,.6);margin-bottom:20px;max-width:1360px;}
+  .fakethumb{position:absolute;top:60px;right:90px;width:300px;border-radius:14px;overflow:hidden;border:2px solid rgba(255,255,255,.28);box-shadow:0 12px 34px rgba(0,0,0,.4);}
+  .fakethumb img{display:block;width:100%;}
+  .fakethumb .lab{position:absolute;top:10px;left:10px;background:var(--red);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:1px;padding:3px 12px;border-radius:6px;}
+  .fakethumb .play{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(10,26,47,.62);border:3px solid #fff;display:flex;align-items:center;justify-content:center;}
+  .fakethumb .play svg{margin-left:4px;}
+  .fakethumb .cap{position:absolute;bottom:0;left:0;right:0;background:rgba(10,26,47,.85);color:#fff;font-size:18px;padding:7px 10px;text-align:center;}
+  h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:78px;line-height:1.08;}
+  h1 .gold{color:var(--gold);}
+  .how{font-size:34px;font-weight:300;color:rgba(255,255,255,.85);margin-top:30px;max-width:1500px;line-height:1.45;}
+  .how b{color:#fff;font-weight:600;}
+  .tools{display:flex;align-items:center;gap:24px;margin-top:40px;}
+  .tools .chip{background:#fff;color:var(--navy);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:34px;padding:14px 34px;border-radius:12px;}
+  .tools .note{font-size:28px;color:rgba(255,255,255,.7);}
+  .tools .note b{color:var(--gold);}
+</style></head>
+<body class="dark">
+<div class="accent"></div>
+<div class="fakethumb">
+  <img src="../assets/deepfake-poster.jpg" alt="Still from the fake video of the Chamber President">
+  <span class="lab">FAKE</span>
+  <span class="play"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></span>
+  <span class="cap">The &ldquo;Chamber President&rdquo;</span>
+</div>
+<div class="eyebrow">Everything so far came by email or text. But that&rsquo;s not the only way in.</div>
+<h1>It&rsquo;s not just email. <span class="gold">Hackers can fake your face and voice in 2 min.</span></h1>
+<div class="how">I faked the Chamber President &mdash; a short video of her saying whatever I typed. It was hilarious, and terrifying. All I needed was a couple photos and a description of her voice. No real video, no audio clips. The scary part is <b>what I used to build it:</b></div>
+<div class="tools">
+  <div class="chip">OpenAI</div>
+  <div class="chip">Grok</div>
+  <div class="note">Not shady deepfake apps. <b>Two of the most popular AI tools on earth</b> &mdash; the ones you already use.</div>
+</div>
+<div class="takeaway">Seeing and hearing used to be proof. <b>Not anymore.</b></div>
+<div class="num">15</div>
+</body></html>

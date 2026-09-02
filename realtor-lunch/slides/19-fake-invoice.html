@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>19 Fake Invoice</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+  .row{display:flex;gap:52px;margin-top:96px;align-items:center;}
+  .mail{flex:1.15;background:#fff;border:1px solid #E5E7EB;border-radius:16px;overflow:hidden;}
+  .mail .hdr{background:#F1F3F5;padding:22px 32px;font-size:28px;color:var(--ink);line-height:1.6;}
+  .mail .hdr b{color:var(--navy);}
+  .mail .hdr .flag{display:inline-block;background:var(--red);color:#fff;font-size:22px;font-weight:700;border-radius:8px;padding:3px 12px;margin-left:12px;vertical-align:3px;}
+  .mail .body{padding:32px 34px;font-size:33px;line-height:1.55;color:var(--ink);}
+  .mail .body .hot{background:#FDEAEA;border-bottom:4px solid var(--red);font-weight:600;}
+  .facts{flex:1;display:flex;flex-direction:column;gap:34px;}
+  .fact .n{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:68px;color:var(--navy);line-height:1;}
+  .fact .l{font-size:31px;color:var(--ink);margin-top:8px;line-height:1.38;}
+  .fact .l b{color:var(--navy);}
+  .fact.how .l{font-size:34px;margin-top:0;}
+</style></head>
+<body class="light">
+<div class="stripe"></div>
+<div class="tag">The Downside · The Fake Invoice</div>
+<h1 class="slide-title">Now the scam wears <span class="gold">your name.</span></h1>
+<div class="row">
+  <div class="mail">
+    <div class="hdr">
+      From: <b>billing@your-c0mpany.com</b><span class="flag">that&rsquo;s a ZERO, not an O</span><br>
+      To: <b>your customer</b>
+    </div>
+    <div class="body">
+      Hi Dave — thanks again for your business. Quick note: <span class="hot">we&rsquo;ve switched banks this quarter</span>, so please send this month&rsquo;s payment to the <span class="hot">new account below.</span> Everything else is the same. Appreciate you — go Pokes!
+    </div>
+  </div>
+  <div class="facts">
+    <div class="fact how"><div class="l">This one isn&rsquo;t aimed at <b>you.</b> It&rsquo;s aimed at <b>your customers.</b> With a lookalike address, or by breaking into accounts-payable, the AI studies how you write, your invoices, your customer list, then strikes while you&rsquo;re on vacation.</div></div>
+    <div class="fact"><div class="n">$3 billion</div><div class="l">lost last year to these fake-invoice scams. <b>#2 on the FBI&rsquo;s entire list.</b></div></div>
+  </div>
+</div>
+<div class="takeaway">Tell your customers up front: <b>if our bank details ever change, call us first</b> on the number you already have.</div>
+<div class="num">19</div>
+</body></html>
