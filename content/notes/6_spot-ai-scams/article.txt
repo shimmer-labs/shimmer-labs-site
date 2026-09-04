@@ -1,0 +1,107 @@
+Title: How do I spot an AI scam before it costs me?
+
+----
+
+Seo_title: How to Spot an AI Scam: The 3-Move Pattern Every Scam Uses
+
+----
+
+Meta_description: The Nigerian prince got a PhD. AI scams now sound exactly like your vendor, your boss, even your family. The three-move pattern every scam still uses, and the habits that beat them.
+
+----
+
+Date: 2026-09-02
+
+----
+
+Intro: We just gave a talk to a room of 80 realtors, bankers, and title folks called "AI for Every Business: The Upside, the Scams, and How Not to Get Got." The scam half of that talk is too important to leave in a slide deck, so here it is.
+
+----
+
+Text:
+
+## The Nigerian prince got a PhD
+
+You remember the old scam emails. ALL CAPS, broken English, a barrister with an inheritance. You could spot them from across the room.
+
+Those days are over. Today's version reads like this: "Hi Sarah, following up on invoice #4471, the Henderson job. We switched banks this quarter, new payment details attached. Appreciate you as always. Go Pokes!"
+
+Right name. Right job. Right invoice number. Even the right small talk. AI writes it, and AI wrote it after studying how your actual vendor actually writes. You cannot spot it by reading anymore. The typos were never the scam; they were just the tell. The tell is gone.
+
+The FBI says $20.9 billion was reported lost to internet crime in the U.S. last year, up 26 percent in one year. That works out to about $40,000 every minute, around the clock. And that's only what got reported.
+
+## This one came for my own family
+
+During a real estate closing in our own family, an email arrived mid-deal. It used the actual broker's name, referenced the actual property, and asked for the purchase price to be wired to an overseas account. The only tells: a free Gmail address where the broker's real domain should have been, and wiring instructions to a bank on another continent. It was one careful read away from working.
+
+That's why we told this story to a room full of realtors. Wire fraud isn't a hypothetical in your industry; it's aimed at your closings, your clients, and the money moving between them. And the scammer doesn't need to fool you. They just need to fool one buyer, once, on the most stressful financial day of their life.
+
+## Seeing is no longer believing
+
+It's not just email. A worker at a multinational firm joined a video call with his CFO and several coworkers. He knew every face. He knew every voice. Every single person on that call except him was an AI deepfake. He wired $25 million. It was gone.
+
+We know how easy this is because we tried it. For a Chamber talk earlier this year, with her okay, we made a short video of a local leader saying words we typed. It took about two minutes, from a few photos and a description of her voice. No real video, no audio clips. The scary part is what we built it with: not shady dark-web apps, but two of the most popular AI tools on earth, the ones already open in your browser. A face or a voice on a screen is no longer proof it's really them.
+
+## Every scam is the same three moves
+
+Here's the good news. Pull apart the prince, the fake invoice, the deepfake CFO, or the wire-fraud email, and it's the exact same play every time:
+
+1. **Authority.** A name, face, or voice you trust. Your vendor, your banker, your boss, your grandkid.
+2. **The ask.** Something you'd never normally do. Wire to a new account, move a payment, hand over a login, buy gift cards.
+3. **Urgency.** Do it now, before it's too late. The rush is on purpose. It exists to stop you from thinking.
+
+The words change. The technology changes. The three moves never do. Spot one, look for the other two. When you see all three lined up, stop and verify. That pressure you feel was engineered to manipulate you. And when you catch one, tell your people; see it, say it. Every scam somebody shares is one their neighbor doesn't fall for.
+
+Every trade has its own costume for the same three moves. <a href="/roofers">Roofers</a> know the storm chaser who materializes after every hail storm, authority borrowed from a crisis. <a href="/plumbers">Plumbers'</a> office managers see the supplier invoice with "updated bank details." Realtors get the closing-day wire. Same play, different wardrobe.
+
+## Three habits that beat a million-dollar firewall
+
+Kevin Mitnick, once America's most-wanted hacker, broke into dozens of companies mostly by talking his way in on the phone. His line: the human factor is security's weakest link. Verizon's breach report backs him up: 62 percent of real breaches involve a person being fooled. So the cheapest fixes are habits, not hardware.
+
+**Have the talk with your team.** Out loud, this week: "The boss will NEVER call or text asking for passwords, account numbers, or gift cards. That business happens face to face."
+
+**Hang up and call the number you know.** If an unknown number claims to be the bank, the boss, or the grandkid, hang up and call back on the number already in your phone. Scammers control the channel they opened. They don't control the one you open.
+
+**Pick a safe word.** For your family and your office. If a panicked voice on the phone needs money, work the word into the conversation. A voice clone doesn't know it.
+
+## The cheap tech side
+
+Four things, mostly free, that close the other doors:
+
+- **A password manager.** Strong, different password for every account. You remember one.
+- **Two-factor login** on anything with money, customer data, or company secrets. And on your email, because email can reset everything else.
+- **A backup ransomware can't reach.** Offline or in a separate cloud. Then actually test that you can restore it.
+- **A break-glass account.** One emergency login you never use, sealed in a safe place, for the day you're locked out of everything.
+
+## A five-minute scam drill
+
+Want to train the reflex? Paste this into the AI you already use and run it with your team over coffee:
+
+> Run a scam-spotting drill with me. Show me 5 short messages one at a time, a realistic mix of scams and legitimate business messages (emails and texts). After I guess scam or legit on each one, tell me if I was right and point out the tells using this framework: Authority (a trusted name or face), the Ask (something I'd never normally do), and Urgency (pressure to act before thinking). Make the scams modern and well-written, no typos or obvious giveaways. Keep score and give me a verdict at the end.
+
+The tools that make these scams possible are the same tools we use every day to save businesses hours. The tech isn't the villain; the pressure is. Learn the three moves and you can't unsee them.
+
+----
+
+Faq:
+
+-
+  question: Can AI really fake someone's voice or face?
+  answer: >
+    Yes, with a few photos or seconds of audio, using mainstream tools rather than anything exotic. That's why verification has to move off the screen: hang up and call back on a number you already have, use a safe word, and treat a face on a video call as unverified until proven otherwise for any money request.
+-
+  question: What's the fastest way to check if a message is a scam?
+  answer: >
+    Look for the three moves together: a trusted authority, an unusual ask (new bank account, gift cards, a login), and urgency. Any two of those together should slow you down. All three together means stop and verify through a channel you open yourself, like calling the number you already have on file.
+-
+  question: I already sent money. What do I do?
+  answer: >
+    Act fast and skip the embarrassment; speed matters more than anything. Call your bank immediately and ask for the wire to be recalled, then report it at ic3.gov (the FBI's Internet Crime Complaint Center) and to local police. Recovery is most possible in the first hours.
+-
+  question: If AI is powering these scams, should my business avoid AI?
+  answer: >
+    No. The same tools writing scam emails also answer your phones, draft your invoices, and save you hours a week. Criminals adopted AI faster than most businesses, and the answer is to catch up, not sit out. The defenses that work (call-backs, safe words, two-factor) work no matter how good the fakes get.
+-
+  question: Do you teach this to teams?
+  answer: >
+    Yes. The scam material comes from our talk "AI for Every Business: The Upside, the Scams, and How Not to Get Got," and we cover the habits at our free AI office hours at WorkIT in Stillwater every Tuesday and Thursday, 2 to 4 PM. Bring your team and your questions.
