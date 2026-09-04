@@ -64,6 +64,16 @@ Kevin Mitnick, once America's most-wanted hacker, broke into dozens of companies
 
 **Pick a safe word.** For your family and your office. If a panicked voice on the phone needs money, work the word into the conversation. A voice clone doesn't know it.
 
+## The question from the room: what about the calls?
+
+Best question of the talk came from a raised hand: "I get WhatsApp calls from the FDIC that aren't really the FDIC. And even more plain spam calls. What can I do?"
+
+Two answers.
+
+**Fake government calls (FDIC, IRS, Social Security, whoever): don't answer.** The government does not call you, and it definitely does not WhatsApp you. If a government agency genuinely needs you, they'll mail you a letter. Voice on the phone claiming to be a federal agency = all three moves at once, hang up.
+
+**Plain spam calls: answer, then mute yourself immediately.** The autodialer on the other end hears silence, decides your number is disconnected, and over time you get fewer calls. Two cautions: don't do this in a loud place and don't do it in the car, because that microphone is listening, and background noise tells the system there's a live human on the line. Quiet room or don't bother.
+
 ## The cheap tech side
 
 Four things, mostly free, that close the other doors:
@@ -93,6 +103,10 @@ Faq:
   question: What's the fastest way to check if a message is a scam?
   answer: >
     Look for the three moves together: a trusted authority, an unusual ask (new bank account, gift cards, a login), and urgency. Any two of those together should slow you down. All three together means stop and verify through a channel you open yourself, like calling the number you already have on file.
+-
+  question: How do I get fewer spam calls?
+  answer: >
+    Answer the call and mute yourself immediately. The autodialer hears silence, marks your number as disconnected, and call volume drops over time. Only do it somewhere quiet, because background noise tells the system a live human answered. And for fake government calls (FDIC, IRS, Social Security), don't answer at all: the government doesn't call or WhatsApp you, it mails you.
 -
   question: I already sent money. What do I do?
   answer: >
