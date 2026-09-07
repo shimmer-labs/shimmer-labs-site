@@ -63,6 +63,7 @@
               <option value="51-100">51-100</option>
               <option value="100+">100+</option>
             </select>
+            <small id="team_size_hint" class="form-hint" hidden></small>
           </div>
 
           <div class="form-group">
@@ -122,6 +123,16 @@
       btn.disabled = false;
       btn.textContent = 'Send my intake →';
     }
+    var tierHints = <?= json_encode(array_map(fn($t) => match ($t['name']) {
+      'Custom' => 'Custom pricing, starts at $3,000/mo. We\'ll talk.',
+      'Solo'   => 'Solo tier: $750/mo. That\'s already the founding price.',
+      default  => $t['name'] . ' tier: $' . number_format($t['price']) . '/mo. Founding offer: next 5 clients get one tier down.',
+    }, option('concierge.tiers'))) ?>;
+    var hintEl = document.getElementById('team_size_hint');
+    form.team_size.addEventListener('change', function () {
+      hintEl.textContent = tierHints[form.team_size.value] || '';
+      hintEl.hidden = !hintEl.textContent;
+    });
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       errEl.style.display = 'none';

@@ -6,7 +6,7 @@ Seo_title: AI Consultant in Tulsa Who Shows Up In Person
 
 ----
 
-Meta_description: An AI consultant who shows up in person in Tulsa. Done-with-you sessions at your shop when the work calls for it, $1,000/mo, no contracts. From Shimmer Labs in Stillwater, OK.
+Meta_description: An AI consultant who shows up in person in Tulsa. Done-with-you sessions at your shop when the work calls for it, priced by team size from $750/mo, no contracts. From Shimmer Labs in Stillwater, OK.
 
 ----
 
@@ -55,7 +55,7 @@ We do this every week in Stillwater. <a href="/case-studies/stillwater-landscape
 
 ## The plain math
 
-The AI Concierge is $1,000 a month, and right now the next 5 clients get $750 a month, locked in, because we're trying something new. No contracts, cancel anytime. Two working sessions a month plus text access, over video or in person when the process we're fixing lives in the building. If we can't find and kill enough wasted hours to cover that several times over, fire us. The shared progress hub we keep makes that judgment easy: every session, everything built, in one place.
+The AI Concierge is priced by team size: $750 a month if it's just you, $1,000 for a crew of 2 to 10, $1,500 for a shop of 11 to 25, $2,250 for a company of 26 to 50. Right now the next 5 clients get one tier down, locked in, because we're trying something new. No contracts, cancel anytime. Two working sessions a month plus text access, over video or in person when the process we're fixing lives in the building. If we can't find and kill enough wasted hours to cover that several times over, fire us. The shared progress hub we keep makes that judgment easy: every session, everything built, in one place.
 
 Full details on the <a href="/services/concierge">AI Concierge page</a>. Same price whether we meet over video or across the counter.
 
@@ -70,7 +70,7 @@ Faq:
 -
   question: What does an AI consultant cost in Tulsa?
   answer: >
-    Agencies quote retainers from $5,000 a month and up, mostly remote. Our AI Concierge is $1,000 a month with no contract: two working sessions a month, in person when it helps, and direct text access in between. The next 5 clients get $750 a month, locked in. We keep it simple on purpose.
+    Agencies quote retainers from $5,000 a month and up, mostly remote. Our AI Concierge runs $750 to $2,250 a month depending on team size, with no contract: two working sessions a month, in person when it helps, and direct text access in between. A crew of 2 to 10 is $1,000 a month, and the next 5 clients get one tier down, locked in. We keep it simple on purpose.
 -
   question: What happens at the first session?
   answer: >

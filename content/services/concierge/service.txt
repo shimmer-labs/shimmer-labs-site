@@ -2,11 +2,11 @@ Title: AI Concierge
 
 ----
 
-Seo_title: AI Concierge for Small Businesses | $1,000/mo
+Seo_title: AI Concierge for Small Businesses | From $750/mo, Priced by Team Size
 
 ----
 
-Meta_description: Done-with-you AI consulting. Two working sessions a month, text Logan directly between calls, and a shared hub of everything built. $1,000/mo, and the first 5 clients get $750/mo.
+Meta_description: Done-with-you AI consulting priced by team size, $750 to $2,250 a month. Two working sessions a month, text Logan directly between calls, and a shared hub of everything built. First 5 clients get one tier down, locked in.
 
 ----
 
@@ -14,7 +14,7 @@ Summary: A standing appointment with someone who builds this stuff for a living.
 
 ----
 
-Pricerange: $1,000/mo (first 5 clients: $750/mo)
+Pricerange: $750 to $2,250/mo, by team size
 
 ----
 
@@ -42,12 +42,18 @@ Every manual task goes through the same three steps, in order:
 
 Skipping straight to automate is the classic mistake. Automating a broken process just speeds up the mess. Fixing it first is why this works.
 
+## Priced by team size
+
+One service, four prices, and the price follows how many people you have. A solo operator gets their own hours back. A 30-person shop gets 30 people's hours back from the same two sessions, so it pays more and still gets the lowest per-person price of anything on its books. Count everyone on payroll who touches a computer or a phone for work, regular 1099 help included. We take your word for it on the intake form.
+
+Your rate locks for 12 months. If you grow past your band, we re-tier at your anniversary with 30 days notice. Hiring never costs you mid-year. We did the math on <a href="/notes/ai-consultant-cost-per-employee">what this works out to per employee</a> if you want to check our work.
+
 ## How this fits with everything else we do
 
 - **Free AI Office Hours** (Tuesdays and Thursdays at WorkIT): come anytime, ask anything, no charge. The concierge is for when you want guaranteed time, a standing plan, and someone on the hook for your progress.
 - **[Sidecar](/services/sidecar)**: we build and run the automation FOR you. The concierge builds it WITH you, so the skills stay in your hands. Plenty of clients do both.
 
-We have room for **6 concierge clients** total, so the service never gets thin. When the seats are full, they're full.
+We have room for **6 concierge clients** total, so the service never gets thin. A Company-size client takes two of those seats. When the seats are full, they're full.
 
 ----
 
@@ -75,17 +81,47 @@ Whatsincluded:
 Pricingtiers:
 
 -
-  name: The AI Concierge
-  price: $1,000/mo
-  description: One price, one service. We're trying something new, so the next 5 clients get founding pricing at $750/mo, and that rate stays locked as long as you stay. Sessions over video, or in person when the process we're fixing lives in the building. We're based in Stillwater and get around Oklahoma.
+  name: Solo
+  price: $750/mo
+  description: Just you. Every hour we hand back is an owner hour, which is the most expensive hour in the building. This is already the founding price, so it doesn't drop further.
   features: |
     Two 45-minute working sessions per month
     Direct text access between sessions
     Shared progress hub
     Intake and setup included
-    In person when it makes sense (Stillwater, OKC, Tulsa)
+    Video, or in person around Stillwater
     Cancel anytime, no contracts
+  featured: false
+-
+  name: Crew
+  price: $1,000/mo
+  description: 2 to 10 people. The shop where the owner still does the books, the scheduling, and the follow-ups. At ten people that's $100 a head, less than most of them pay their IT guy per seat.
+  features: |
+    Everything in Solo
+    Automations built for the whole crew, not just the owner
+    Video, or in person in Stillwater, OKC, and Tulsa
+    Founding offer: next 5 clients pay the Solo price, locked
   featured: true
+-
+  name: Shop
+  price: $1,500/mo
+  description: 11 to 25 people. The owner isn't the only one who has to adopt what we build, so one of your two monthly sessions can be a team session with staff in the room.
+  features: |
+    Everything in Crew
+    One session a month can be a team session
+    Rollout help so the automations actually get used
+    $60 a head at 25 people
+  featured: false
+-
+  name: Company
+  price: $2,250/mo
+  description: 26 to 50 people. Enough people that getting them all working the same way is the project. Quarterly half-day on site with the team. Takes two of our six seats.
+  features: |
+    Everything in Shop
+    Quarterly half-day on-site working session with your team
+    Department-by-department rollout plan
+    $45 a head at 50 people
+  featured: false
 
 ----
 
@@ -129,7 +165,13 @@ Faq:
   answer: 'Because it makes your first paid minute count. The form surfaces the tasks eating your week and the one process you''d pay the most to never do again. We read it before we ever get on a call, so session one starts with a plan instead of an interview. No form, no call. We''re strict about it because it works.'
 -
   question: What does it cost, and is there a contract?
-  answer: '$1,000 a month. Right now the next 5 clients get founding pricing at $750 a month, locked in for as long as they stay, because we''re trying something new and want early clients to prove it with us. No contracts, cancel anytime. If a month didn''t earn its keep, stop paying. The hub makes it easy to judge.'
+  answer: 'It depends on how many of you there are. Solo is $750 a month, Crew (2 to 10 people) is $1,000, Shop (11 to 25) is $1,500, Company (26 to 50) is $2,250, and past 50 we talk. Right now the next 5 clients get one tier down, locked in for as long as they stay, because we''re trying something new and want early clients to prove it with us. No contracts, cancel anytime. If a month didn''t earn its keep, stop paying. The hub makes it easy to judge.'
+-
+  question: Why does the price go up with team size?
+  answer: 'Because the payoff does. The two sessions cost us about the same whether you have 3 people or 30, but every automation we build together saves hours for every person who touches that process. Thirty people saving one hour a week is 130 hours a month. So bigger teams pay more in total and less per person. A Company client at 50 people pays $45 a head; a Solo client pays $750 for one very expensive head, their own. Small shops get the deal, big shops get the leverage.'
+-
+  question: How do you count team size, and what if we grow?
+  answer: 'Count everyone on payroll who touches a computer or a phone for work, including regular 1099 help. Owners count. Seasonal crew that never opens a laptop doesn''t. You tell us on the intake form and we take your word for it. Your rate locks for 12 months. If you hire past your band, we re-tier at your anniversary with 30 days notice, never mid-year. Growing should feel like a win, not a rate hike.'
 -
   question: Do you really drive to OKC and Tulsa?
   answer: 'Yes. Some processes can''t be fixed over a screen share: the paper on the counter, the whiteboard schedule, the way jobs actually flow through the shop. When that''s your situation, we come to you. We''re based in Stillwater and regularly work on site in Oklahoma City and Tulsa. Same price either way.'

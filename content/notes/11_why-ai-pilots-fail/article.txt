@@ -1,0 +1,94 @@
+Title: Why do most AI pilots never make it out of pilot?
+
+----
+
+Seo_title: Why 95% of AI Pilots Fail, and Why a Small Business Can Beat That Number
+
+----
+
+Meta_description: MIT says 95% of generative AI pilots show no measurable return. McKinsey says 80% of people feel more productive while 63% of companies see nothing. Here's what's actually going wrong, and why a 12-person shop in Oklahoma has an advantage over a Fortune 500.
+
+----
+
+Date: 2026-09-07
+
+----
+
+Intro: The AI numbers from big companies are brutal, and they explain something we see every week at office hours: a business buys the tool, a couple of people get faster, and nothing changes for the business. Here's what the research says is going wrong, and why being small is the way out.
+
+----
+
+Text:
+
+## The numbers
+
+Four sources, none of them selling AI, all pointing the same direction.
+
+- **MIT, 2025.** Project NANDA looked at 300 public AI deployments and interviewed over 150 leaders. **95% of generative AI pilots** produced no measurable impact on profit and loss. The 5% that worked were built into a specific workflow and kept learning from feedback.
+- **McKinsey, August 2026.** In their global survey, **80% of respondents said AI improved their own productivity.** Only 37% could point to any impact on company earnings, meaning **63% saw none.**
+- **Gartner, June 2025.** Of companies that finished a Microsoft Copilot pilot, **only 5%** moved on to a larger rollout.
+- **Deloitte, 2026.** Just **6% of leaders** say they're making real progress on designing how people and AI work together.
+
+Read those together and the story writes itself. Adoption is high. Individuals feel faster. Companies see nothing. And almost nobody has redesigned the actual work.
+
+As we say in our lunch and learn talks: the problem isn't the technology. Nobody designed the system.
+
+## You're using a Ferrari as a go-kart
+
+Here's the pattern, and if it stings a little, you're in good company.
+
+Someone buys the seats. Everybody gets a login. A few curious people use it to draft emails and summarize things. Everyone else tries it twice, gets a mediocre answer, and goes back to how they always did it. Six months later, the pilot "didn't show ROI" and the seats quietly get cancelled.
+
+That's hiring a full-time employee and only asking them to Google things. The tool was never the problem. The work was never rearranged so the tool had a job to do.
+
+UC Berkeley researchers followed one company for eight months after it rolled out AI, and found the work got **more** intense, not less. People used the time savings to do more of the same work faster, with nobody deciding what should change. The industrial revolution didn't pay off until factories rearranged the shop floor around the machines. Same thing here, smaller scale.
+
+## Why a small shop has the advantage
+
+This is the part the big-company research misses. Everything that makes a Fortune 500 pilot fail is something a 12-person business doesn't have.
+
+- **No committee.** The owner can decide on Tuesday that quotes go out a new way, and they go out that way on Wednesday.
+- **No process archaeology.** In a 5,000-person company, nobody knows how the process actually works. In your shop, the person who does it is standing right there.
+- **Short feedback loops.** If the automation is wrong, you hear about it the same day, from someone whose name you know.
+- **Real stakes per hour.** When there are ten of you, one hour a week each is a part-time employee's worth of time. That's visible. In a big company it's a rounding error.
+
+The MIT study found the successful 5% embedded AI into one specific workflow and kept improving it. Small businesses do that naturally, because there isn't budget to do it any other way.
+
+## What we do differently, in one line each
+
+We run every task through the same three steps, in order, and we refuse to skip ahead.
+
+1. **Audit.** Watch how the work is actually done today. Every click.
+2. **Optimize.** Cut the fat first. Most 15-step processes only need nine.
+3. **Automate.** Then, and only then, turn the clean process into an automation.
+
+Automating a broken process just speeds up the mess. That's the 95%. And when the team is bigger than a handful of people, one more step: the rollout is the project, not an afterthought. Someone has to sit with the staff and make the new way the easy way. That's why the larger tiers of our <a href="/services/concierge">AI Concierge</a> include team sessions instead of just more of the owner's time.
+
+## Find out if you're in the 95% right now
+
+Paste this into the AI you already use:
+
+> Be honest with me. Based on how I've used you so far, am I using you for real recurring work or mostly one-off questions? List the tasks I've brought you more than once. For each one, tell me whether it's set up to run the same way every time (a project, a saved prompt, a template) or whether I start from scratch each time. Then suggest the one task where setting it up properly would save the most time per week.
+
+If the answer is "mostly one-off questions," congratulations, you've found your pilot. Bring it to <a href="/office-hours">office hours</a> and we'll get it out of pilot in an afternoon.
+
+----
+
+Faq:
+
+-
+  question: Is the 95% number real or marketing?
+  answer: >
+    Real, with a caveat. It comes from MIT's Project NANDA report on the state of AI in business in 2025, based on 300 public deployments and 150-plus interviews. The caveat is that it measures profit-and-loss impact at large companies. Individual time savings were common. Business results were not. That gap is the whole point.
+-
+  question: We're a small business. Do these big-company stats even apply to us?
+  answer: >
+    The failure pattern applies, buying tools without changing the work. The scale doesn't. A small business can redesign a process in a week and see the result in the next one, which is exactly what the successful 5% did. Being small is the advantage here, not the handicap.
+-
+  question: What's the single most common reason a small business pilot dies?
+  answer: >
+    The owner gets faster and nobody else does. The tool becomes the owner's personal assistant, the staff never adopt it, and the business-level result never shows up. The fix is boring: pick one process the team shares, fix it together, and make the automated way the easy way.
+-
+  question: How long should a pilot take before you know?
+  answer: >
+    One process, one month. If a single repetitive task isn't clearly faster and being used by everyone who touches it within a month, something about the setup is wrong and adding more tools won't fix it. Fix that one before starting the next.

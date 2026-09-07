@@ -107,7 +107,7 @@
 <section class="service-pricing">
   <div class="container">
     <h2 class="service-pricing__title">Pricing & Packages</h2>
-    <div class="service-pricing__grid">
+    <div class="service-pricing__grid<?= $page->pricingTiers()->toStructure()->count() >= 4 ? ' service-pricing__grid--four' : '' ?>">
       <?php foreach ($page->pricingTiers()->toStructure() as $tier): ?>
         <div class="pricing-tier<?= $tier->featured()->toBool() ? ' pricing-tier--featured' : '' ?>">
           <?php if ($tier->featured()->toBool()): ?>

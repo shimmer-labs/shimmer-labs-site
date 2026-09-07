@@ -108,6 +108,15 @@ return [
   ],
 
   'ghl.teamSizes' => ['Just me', '2-10', '11-25', '26-50', '51-100', '100+'],
+  // AI Concierge pricing by team size (Sep 2026). Keys match ghl.teamSizes.
+  'concierge.tiers' => [
+    'Just me' => ['name' => 'Solo',    'price' => 750],
+    '2-10'    => ['name' => 'Crew',    'price' => 1000],
+    '11-25'   => ['name' => 'Shop',    'price' => 1500],
+    '26-50'   => ['name' => 'Company', 'price' => 2250],
+    '51-100'  => ['name' => 'Custom',  'price' => 3000],
+    '100+'    => ['name' => 'Custom',  'price' => 3000],
+  ],
   'ghl.conciergeTiers' => ['video', 'in-person'],
   'ghl.pipeline' => ['id' => '416qDXyImHwG7lcm3cEC', 'leadStageId' => '032fa7d2-53bc-4cb3-887b-348e696c67e5'],
 
@@ -412,7 +421,9 @@ return [
     $tierLabel = $tier === 'in-person'
       ? 'Prefers in-person sessions'
       : 'Prefers video sessions';
+    $priceTier = option('concierge.tiers')[$teamSize] ?? ['name' => 'Crew', 'price' => 1000];
     $intakeBlock =
+      "TIER: " . $priceTier['name'] . " ($" . number_format($priceTier['price']) . "/mo, team " . $teamSize . ")\n" .
       "MEETING PREFERENCE: " . $tierLabel . "\n" .
       "TASKS EATING THE WEEK:\n" . mb_substr($tasks, 0, 1000) . "\n\n" .
       "WOULD PAY MOST TO NEVER DO AGAIN:\n" . mb_substr($payToNever, 0, 500) . "\n\n" .
@@ -460,7 +471,7 @@ return [
       'contactId'       => $contactId,
       'name'            => 'AI Concierge - ' . mb_substr($firstName, 0, 50) . ' (' . mb_substr($business, 0, 80) . ')',
       'status'          => 'open',
-      'monetaryValue'   => 750,
+      'monetaryValue'   => $priceTier['price'],
     ]);
     if ($e3 || $c3 < 200 || $c3 >= 300) {
       error_log('[ghl.intake] opportunity ' . $c3 . ' (' . $contactId . '): ' . $e3 . ' ' . substr((string)$r3, 0, 200));

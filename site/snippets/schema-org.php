@@ -247,10 +247,11 @@ if ($page->intendedTemplate()->name() === 'service') {
       'priceSpecification' => [
         '@type' => 'UnitPriceSpecification',
         'minPrice' => '750',
+        'maxPrice' => '2250',
         'priceCurrency' => 'USD',
         'unitText' => 'MONTH'
       ],
-      'description' => 'Done-with-you AI consulting. $1,000/month, with introductory founding pricing of $750/month for the first 5 clients. Two working sessions a month, direct text access, shared progress hub. Video or in person across Oklahoma.'
+      'description' => 'Done-with-you AI consulting priced by team size: Solo $750/month, Crew (2-10 people) $1,000/month, Shop (11-25) $1,500/month, Company (26-50) $2,250/month, 51+ custom. Founding offer: first 5 clients get one tier down, locked in. Two working sessions a month, direct text access, shared progress hub. Video or in person across Oklahoma.'
     ];
   } elseif ($slug === 'custom-apps') {
     $serviceSchema['offers'] = [

@@ -1,0 +1,92 @@
+Title: How many hours does AI actually save per employee?
+
+----
+
+Seo_title: How Many Hours Does AI Save Per Employee? Real Numbers, Not Vendor Math
+
+----
+
+Meta_description: The honest answer, from the Federal Reserve and Microsoft's own tracking, is about 2 hours a week for people who use it and far less for the average team. Here's the math on why, and what that looks like for a 10-person Oklahoma business.
+
+----
+
+Date: 2026-09-07
+
+----
+
+Intro: Every AI vendor has a slide claiming their tool saves 10 hours a week. The people who measured it without selling anything found a smaller, more useful number. Here it is, plus what it means for a real team in Oklahoma.
+
+----
+
+Text:
+
+## The numbers nobody is selling you
+
+Two studies matter here because neither one is trying to sell you software.
+
+**The Federal Reserve Bank of St. Louis** surveyed American workers in 2024 on generative AI use. People who use it at work save about 5.4% of their hours, which is roughly **2.2 hours a week** on a 40-hour schedule. Across the whole workforce, including everyone who never touches it, the savings drop to **1.4%**, a bit over half an hour a week.
+
+**Microsoft** tracked 1,300 Copilot users for 11 weeks. Average saving: about 11 minutes a day, call it **55 minutes a week**. Two-thirds said it gave them more time for higher-value work.
+
+So the honest range is one to two hours a week per person who uses it, and the average team gets a fraction of that because most of the team doesn't use it for anything real. If you remember one thing, remember that the gap between 2.2 hours and 0.5 hours is not the software. It's whether anyone set the work up so the software gets used.
+
+## The multiplier is the team
+
+Here's why this matters more for a business than for a person. Time saved per employee is small. Time saved per employee times employees is not.
+
+Take a 10-person business in Oklahoma City. Fully loaded, the average employee there runs about $40 an hour once you add taxes, insurance, and the desk they sit at.
+
+| Hours saved, per person, per week | Team hours, per month | Value at $40/hr |
+|---|---|---|
+| 0.5 (the workforce average) | 22 | $870 |
+| 1 (a modest, well-run rollout) | 43 | $1,730 |
+| 2.2 (the Fed's number for real users) | 95 | $3,810 |
+
+Same ten people. The only thing that changed between the first row and the last is whether the whole team actually uses what got built. That's the entire job of a good rollout, and it's why we price the <a href="/services/concierge">AI Concierge</a> by team size: the value scales with headcount and the price should too.
+
+## What the hours are made of
+
+At our free office hours in Stillwater, the same tasks come up every single week. They're boring, which is the point. Boring is automatable.
+
+- **Re-typing.** The landscaper who spent two hours a night typing up the day's jobs. <a href="/case-studies/stillwater-landscaper">Now it's one photo.</a>
+- **Follow-ups.** Quotes that went out and never got chased. Invoices that never got a reminder.
+- **Scheduling.** A 90-minute monthly schedule that became a five-minute review.
+- **Paperwork with a deadline.** Membership freezes, cancellations, onboarding packets. <a href="/case-studies/sweat-yoga-fitness">The gym that runs it while the owner sleeps.</a>
+- **Answering the same question.** Hours, pricing, "did you get my form," over and over.
+
+None of those are glamorous. All of them add up to the hour a week that makes the table above work.
+
+## Why the owner's hour breaks the math in a good way
+
+Everything above uses an average wage. The owner's hour isn't average. As we put it in our talks, your time is worth $100, $200, $500 an hour when you're doing the thing you started the business for, and you're spending it on work worth $15 an hour. You wouldn't hire someone to do that work. They'd quit. You won't quit. You own the place.
+
+So when a Solo client gets four hours a week back, the spreadsheet says $640 a month. The truth is closer to whatever a new customer is worth to you, because that's what those hours turn into. We don't put that number in a table because it's yours, not ours.
+
+## Measure your own team in five minutes
+
+Paste this into the AI you already use:
+
+> I want to estimate how much time my team could save with AI. Ask me, one at a time: how many people work here, roughly what each one earns per hour, and the three most repetitive tasks each person does in a week with a rough time for each. Then build me a table showing hours per month spent on those tasks, what they cost fully loaded (multiply wages by 1.3), and which three tasks to automate first based on time and how repetitive they are. Keep it plain and skip the jargon.
+
+Bring the result to <a href="/office-hours">office hours</a>. That's usually where the first one gets automated on the spot.
+
+----
+
+Faq:
+
+-
+  question: Why do vendors claim 10 hours a week if the real number is 2?
+  answer: >
+    Because they measure the best case for a heavy user on a task the tool is great at, and then round up. The Fed and Microsoft numbers measure everyone, including the people who tried it twice and stopped. Both are true. Only one predicts what your team will get without help.
+-
+  question: Does a bigger team really save more per person?
+  answer: >
+    Not per person. The per-person number stays in the same range. A bigger team saves more in total because the same automation, built once, runs for more people. That's why our tiers climb with headcount but the price per head falls.
+-
+  question: What if my team won't use it?
+  answer: >
+    Then you'll get the half-hour-a-week number and wonder what the fuss was about. This is the most common outcome and it's fixable, which is why the Shop and Company tiers of the concierge include team sessions and a rollout plan. We wrote about the pattern in why most AI pilots never make it out of pilot.
+-
+  question: Where do the wage numbers come from?
+  answer: >
+    Bureau of Labor Statistics county wage data for the fourth quarter of 2025. Payne County averages about $26 an hour, Oklahoma and Tulsa counties about $33 to $34, and the national average about $39. Multiply by roughly 1.3 for fully loaded cost.

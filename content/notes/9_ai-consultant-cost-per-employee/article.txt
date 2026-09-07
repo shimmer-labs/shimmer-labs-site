@@ -1,0 +1,100 @@
+Title: What does an AI consultant cost per employee?
+
+----
+
+Seo_title: AI Consultant Cost Per Employee: The Math for Oklahoma Small Businesses
+
+----
+
+Meta_description: We priced our AI Concierge by team size, so here's the math behind it. What it works out to per employee, what an Oklahoma hour actually costs, and how many hours a month it has to save to pay for itself.
+
+----
+
+Date: 2026-09-07
+
+----
+
+Intro: We just changed how we price the AI Concierge, and instead of hiding the spreadsheet we're publishing it. Here's what done-with-you AI consulting costs per employee, and how many saved hours a month it takes to break even in Stillwater, Oklahoma City, and Tulsa.
+
+----
+
+Text:
+
+## Why price by team size at all
+
+The two working sessions we run every month cost us about the same whether you have three people or thirty. What changes is the payoff. Every process we fix together saves time for every person who touches it. A scheduling automation for a two-person shop saves two people's hours. The same automation for a 30-person shop saves thirty. So the bigger the team, the more total time comes back, and the price should follow that. It also means the smallest shops get the best deal in absolute dollars, which we think is exactly right for where most Oklahoma businesses are.
+
+## The price per head
+
+Here's the tier table and what it works out to per person at the top of each band. Real teams land somewhere in the middle, so your number is a little higher.
+
+| Tier | Team size | Per month | Per head, top of band |
+|---|---|---|---|
+| Solo | Just you | $750 | $750 |
+| Crew | 2 to 10 | $1,000 | $100 |
+| Shop | 11 to 25 | $1,500 | $60 |
+| Company | 26 to 50 | $2,250 | $45 |
+
+For comparison, here's what those same businesses already pay per seat for things nobody questions:
+
+- **Managed IT in OKC and Tulsa:** $95 to $200 per user per month, per 2026 pricing guides from local providers.
+- **Outsourced HR or a PEO:** most full-service plans land between $100 and $150 per employee per month.
+- **ChatGPT Team, Claude Team, or Microsoft Copilot:** $20 to $30 per seat per month, on top of whatever else you're paying.
+
+So at Crew and up, the concierge costs less per head than the IT contract. The difference is that IT keeps the computers running. This makes the people faster.
+
+## What an Oklahoma hour actually costs
+
+Here's where "remember this is Oklahoma" matters. Coastal consultants price against coastal wages. We don't.
+
+The Bureau of Labor Statistics publishes average weekly wages by county. As of the end of 2025:
+
+| Area | Weekly wage | Per hour |
+|---|---|---|
+| Payne County (Stillwater) | $1,057 | $26 |
+| Oklahoma County (OKC) | $1,349 | $34 |
+| Tulsa County | $1,314 | $33 |
+| National average | $1,569 | $39 |
+
+That's wages, not cost. Payroll tax, insurance, workers comp, the desk, the laptop, and the training all sit on top. We walk through this in our lunch and learn talks: a $40,000 employee really costs about $67,000 a year, and after vacation, sick days, holidays, and meetings they put in roughly 1,700 productive hours. Call it $40 an hour fully loaded for an OKC or Tulsa employee, and about $33 for Stillwater.
+
+## The break-even math
+
+Take a Crew client at $1,000 a month with eight people in Stillwater. At $33 an hour loaded, the concierge has to save 30 hours a month across the whole team to pay for itself. That's under one hour per person per week.
+
+The Federal Reserve Bank of St. Louis surveyed workers in 2024 and found the ones who actually use generative AI save about 2.2 hours a week. Our job is turning "actually use" into "everybody on the team, for the tasks that matter." Even at half the Fed's number, one hour a week, that eight-person crew gets back 35 hours a month. Break-even with change left over, and that's before you count the owner's hours, which are worth a lot more than $33.
+
+Now run it at Shop. Twenty people in Tulsa at $40 an hour. $1,500 a month is 38 hours. One hour a week each is 87 hours. The bigger the team, the sillier the comparison gets, which is the whole reason the price climbs. You're paying more and getting a wildly better ratio.
+
+## The catch, stated plainly
+
+None of this happens if the automations don't get used. That's the part most AI spending gets wrong, and it's why the Shop and Company tiers include team sessions and rollout help instead of just more of the owner's time. We wrote up <a href="/notes/why-ai-pilots-fail">why most AI pilots never make it out of pilot</a> if you want the ugly numbers on that.
+
+## Run your own numbers
+
+Paste this into whatever AI you already use:
+
+> I run a small business in Oklahoma with [NUMBER] employees. Our average wage is about $[AMOUNT] an hour. Assume fully loaded cost is 1.3 times that. If I hire a consultant for $[PRICE] a month to help my team automate repetitive work, how many hours per month does the team need to save for it to break even? Then show me what happens if each person saves 1 hour a week, and 2.2 hours a week. Show the math in a simple table.
+
+If the answer makes you wince in the good way, the <a href="/services/concierge">AI Concierge page</a> has the tiers and the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: How do you count employees for the tier?
+  answer: >
+    Everyone on payroll who touches a computer or a phone for work, owners included, plus regular 1099 help. Seasonal crew that never opens a laptop doesn't count. You tell us on the intake form and we take your word for it. The rate locks for 12 months and only re-tiers at your anniversary if you've grown.
+-
+  question: Why is Solo more per person than every other tier?
+  answer: >
+    Because it's the owner's hour, and the owner's hour is the most expensive one in the building. Solo clients also tend to have the most tangled processes, since one person has been holding all of it in their head. $750 is already our founding price, so it doesn't go lower.
+-
+  question: What if our wages are lower than the county average?
+  answer: >
+    Then your break-even is a few more hours a month, and the math still works. Most of the time we save comes from admin, follow-up, scheduling, and re-typing, which happens at every wage level. And the owner's time, which is usually where the biggest wins are, isn't priced at the county average.
+-
+  question: Is this cheaper than just buying everyone ChatGPT?
+  answer: >
+    Buying seats is cheaper. Getting value out of them is the expensive part. McKinsey's 2026 survey found 80% of people say AI helps them personally while 63% of companies see no earnings impact. The seats aren't the problem. Nobody redesigned the work. That's the gap the concierge fills, and you should still buy the seats.
