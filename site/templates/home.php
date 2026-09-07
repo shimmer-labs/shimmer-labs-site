@@ -19,7 +19,7 @@
           <p>You didn't start your business to answer emails at midnight.</p>
           <p>Most small business owners lose 15+ hours a week to admin that has nothing to do with the work they love.</p>
         </div>
-        <h1 class="home-hero__headline">We build custom software for small businesses.</h1>
+        <h1 class="home-hero__headline">We put AI to work on the boring parts of your business.</h1>
         <p class="home-hero__tagline">You drive. We build the sidecar.</p>
         <p class="home-hero__credential">Built by a systems engineer with two decades across <a href="<?= url('about') ?>">National Instruments, Iterable, WeaveGrid, and Sense</a> — making complex systems behave, before AI was the hammer.</p>
         <div class="home-hero__ctas">

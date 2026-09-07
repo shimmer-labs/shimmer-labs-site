@@ -2,7 +2,7 @@ Title: Home
 
 ----
 
-Meta_description: Custom software for small businesses. AI-assisted Sidecar workflows from $1,000 to build + $250/mo to run, custom web apps from $15k, iOS from $20k, API integrations $2,500-$7,000. Live in a week, autonomous in a month. Stillwater, OK.
+Meta_description: Done-with-you AI consulting for Oklahoma small businesses. Free AI office hours in Stillwater, an AI Concierge priced by team size from $750/mo, and Sidecar builds from $1,000 when a process is too big to build together. Stillwater, OKC, Tulsa.
 
 ----
 

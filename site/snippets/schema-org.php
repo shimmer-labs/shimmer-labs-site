@@ -18,7 +18,7 @@ $schema[] = [
   'name' => 'Shimmer Labs',
   'url' => $site->url(),
   'logo' => url('assets/images/shimmer-labs-logo.png'),
-  'description' => 'Custom software for small businesses. AI-assisted operational workflows, web and iOS apps, and API integrations. Based in Stillwater, Oklahoma.',
+  'description' => 'AI consultant for small businesses in Oklahoma. Done-with-you AI Concierge, free AI office hours, and Sidecar automation builds. Based in Stillwater, Oklahoma.',
   'email' => 'logan@shimmerlabs.co',
   'telephone' => '+1-405-880-6674',
   'address' => [
@@ -65,7 +65,7 @@ if ($page->intendedTemplate()->name() === 'home') {
     '@id' => $site->url() . '#business',
     'name' => 'Shimmer Labs',
     'image' => url('assets/images/shimmer-labs-logo.png'),
-    'description' => 'Custom software for small businesses. Sidecar (AI-assisted operational workflows, builds from $1,000 + from $250/mo), Custom Apps (web from $15k, iOS from $20k), API Integrations ($2,500-$7,000). Based in Stillwater, Oklahoma.',
+    'description' => 'AI consulting for Oklahoma small businesses. AI Concierge (done-with-you, $750 to $2,250/mo by team size), Sidecar (AI-assisted workflows built for you, from $1,000 + from $250/mo), Custom Apps and API Integrations. Based in Stillwater, Oklahoma.',
     'url' => $site->url(),
     'email' => 'logan@shimmerlabs.co',
     'telephone' => '+1-405-880-6674',
