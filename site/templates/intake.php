@@ -105,7 +105,7 @@
 
           <button type="submit" class="btn btn--cta" id="form-submit">Send my intake →</button>
 
-          <p class="form-note">The AI Concierge is $1,000/mo. Right now the next 5 clients get $750/mo, locked in, because we're trying something new. Logan reads every submission personally. No spam, no drip campaigns you didn't ask for.</p>
+          <p class="form-note">The AI Concierge is priced by team size, $750 to $2,250/mo (pick your team size above to see yours). Right now the next 5 clients get one tier down, locked in, because we're trying something new. Logan reads every submission personally. No spam, no drip campaigns you didn't ask for.</p>
         </form>
       </div>
     </div>
