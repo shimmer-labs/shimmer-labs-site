@@ -40,6 +40,8 @@ RewriteRule ^kirby/(.*) index.php [L]
 RewriteCond %{REQUEST_URI} !^/business-at-lunch/
 RewriteRule ^business-at-lunch([^/].*)?$ https://shimmerlabs.co/business-at-lunch/ [R=301,L]
 RewriteRule ^business-at-lunch/[<>%][^/]*$ https://shimmerlabs.co/business-at-lunch/ [R=301,L]
+RewriteCond %{REQUEST_URI} !^/realtor-lunch/
+RewriteRule ^realtor-lunch([^/].*)?$ https://shimmerlabs.co/realtor-lunch/ [R=301,L]
 
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f

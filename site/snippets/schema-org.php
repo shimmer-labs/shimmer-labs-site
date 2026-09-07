@@ -158,51 +158,6 @@ if ($page->intendedTemplate()->name() === 'home') {
     ]
   ];
 
-  // Reviews for the portrait quad — Sarah, Anna, Danny, Kristen
-  $portraits = [
-    [
-      'author' => 'Sarah Gold',
-      'role' => 'Marketing Program Manager, Supabase',
-      'body' => '5x output. 100+ creators shipped in months. 15 hours a week back. Sarah went from YouTube detective to leading creative campaigns.'
-    ],
-    [
-      'author' => 'Anna Moore',
-      'role' => 'Owner, Sweat Yoga & Fitness',
-      'body' => 'I hated this place. I was actively looking for someone to buy it. MVP live in week one, fully autonomous by week four. 50+ cancellations and freezes handled to date, including the graduation rush.'
-    ],
-    [
-      'author' => 'Danny Mathews',
-      'role' => 'Founder, Taddy',
-      'body' => 'Logan built comprehensive integrations for the Taddy Podcast API across n8n, Zapier, and Make.com. Clean code, thorough documentation, and he responded quickly to any support needed.'
-    ],
-    [
-      'author' => 'Kristen Hadley',
-      'role' => 'Founder, TreeBidPro',
-      'body' => 'From wireframes I had been sitting on for over a year to a fully production-ready web app in just two weeks. The pricing-rule engine with LLM-assisted bid generation works flawlessly.'
-    ]
-  ];
-  foreach ($portraits as $p) {
-    $schema[] = [
-      '@context' => 'https://schema.org',
-      '@type' => 'Review',
-      'itemReviewed' => [
-        '@type' => 'ProfessionalService',
-        'name' => 'Shimmer Labs',
-        '@id' => $site->url() . '#business'
-      ],
-      'author' => [
-        '@type' => 'Person',
-        'name' => $p['author'],
-        'jobTitle' => $p['role']
-      ],
-      'reviewBody' => $p['body'],
-      'reviewRating' => [
-        '@type' => 'Rating',
-        'ratingValue' => '5',
-        'bestRating' => '5'
-      ]
-    ];
-  }
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -418,28 +373,6 @@ if ($page->intendedTemplate()->name() === 'case-study') {
   }
   $schema[] = $articleSchema;
 
-  // Embedded Review schema if there's a client hero quote
-  if ($page->hero_quote()->isNotEmpty() && $page->client_role()->isNotEmpty()) {
-    $schema[] = [
-      '@context' => 'https://schema.org',
-      '@type' => 'Review',
-      'itemReviewed' => [
-        '@type' => 'ProfessionalService',
-        'name' => 'Shimmer Labs',
-        '@id' => $site->url() . '#business'
-      ],
-      'author' => [
-        '@type' => 'Person',
-        'name' => $page->client_role()->value()
-      ],
-      'reviewBody' => $page->hero_quote()->value(),
-      'reviewRating' => [
-        '@type' => 'Rating',
-        'ratingValue' => '5',
-        'bestRating' => '5'
-      ]
-    ];
-  }
 }
 
 // ─────────────────────────────────────────────────────────────

@@ -590,7 +590,27 @@ return [
     [
       'pattern' => 'projects/(:all)',
       'action'  => function($path) {
-        header('Location: ' . url('case-studies/' . $path), true, 301);
+        // Old project slugs that became case studies under a different name.
+        $renamed = [
+          'taddy-api'           => 'taddy-api-integrations',
+          'taddy-api-nodes'     => 'taddy-api-integrations',
+          'n8n-taddy-api'       => 'taddy-api-integrations',
+          '_n8n-taddy-api'      => 'taddy-api-integrations',
+          'n8n_taddy_api_nodes' => 'taddy-api-integrations',
+          'shopify-store-app'   => 'flowmint',
+        ];
+        $slug = $renamed[$path] ?? $path;
+        // Only redirect to a case study that actually exists; otherwise the index.
+        $target = page('case-studies/' . $slug) ? 'case-studies/' . $slug : 'case-studies';
+        header('Location: ' . url($target), true, 301);
+        exit;
+      }
+    ],
+    // Retired service pages (pre-2026 positioning) -> current custom-apps page
+    [
+      'pattern' => 'services/(full-stack-saas|idea-to-web-app|ios-apps|wireframe-to-web-app|mobile-apps|web-apps|shopify)',
+      'action'  => function() {
+        header('Location: ' . url('services/custom-apps'), true, 301);
         exit;
       }
     ],
