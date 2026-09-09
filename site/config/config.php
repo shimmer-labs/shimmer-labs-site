@@ -25,6 +25,8 @@ return [
     $base = option('scanner.api.url') . '/api/scan';
     $scannerUrl = $path ? $base . '/' . $path : $base;
 
+    // Scans run 15-30s; don't let PHP's own limit cut the proxy off first.
+    @set_time_limit(120);
     $ch = curl_init($scannerUrl);
     $opts = [
       CURLOPT_RETURNTRANSFER => true,
