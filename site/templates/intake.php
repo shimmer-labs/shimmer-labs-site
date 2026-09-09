@@ -128,7 +128,7 @@
     var scanId = new URLSearchParams(window.location.search).get('scan');
     if (scanId && /^[0-9a-f-]{20,40}$/i.test(scanId)) {
       form.scan_id.value = scanId;
-      fetch('<?= url('_scan') ?>/' + encodeURIComponent(scanId))
+      fetch('/_scan/' + encodeURIComponent(scanId))
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (scan) {
           if (!scan || !scan.agents || !scan.agents.length) return;
