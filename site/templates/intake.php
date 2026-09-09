@@ -95,6 +95,7 @@
             </select>
           </div>
 
+          <input type="hidden" name="scan_id" id="scan_id" value="">
           <!-- Honeypot: hidden from people, catches bots -->
           <div aria-hidden="true" style="position:absolute; left:-9999px; top:-9999px; height:0; overflow:hidden;">
             <label for="company_url">Company URL</label>
@@ -123,6 +124,32 @@
       btn.disabled = false;
       btn.textContent = 'Send my intake →';
     }
+    // Arriving from the website scanner: prefill the tasks from the scan.
+    var scanId = new URLSearchParams(window.location.search).get('scan');
+    if (scanId && /^[0-9a-f-]{20,40}$/i.test(scanId)) {
+      form.scan_id.value = scanId;
+      fetch('<?= url('_scan') ?>/' + encodeURIComponent(scanId))
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (scan) {
+          if (!scan || !scan.agents || !scan.agents.length) return;
+          if (!form.business.value && scan.company_name) form.business.value = scan.company_name;
+          if (!form.tasks.value) {
+            form.tasks.value = scan.agents.map(function (a, i) {
+              var t = (a.title || '').replace(/\s+for\s+.+$/, '');
+              return (i + 1) + '. ' + t + (a.pain_point ? ' (' + a.pain_point + ')' : '');
+            }).join('\n');
+          }
+          if (!form.tools.value && scan.detected_tools && scan.detected_tools.length) {
+            form.tools.value = scan.detected_tools.join(', ');
+          }
+          var note = document.createElement('p');
+          note.className = 'form-hint';
+          note.textContent = 'We filled in the three tasks from your website scan. Edit anything that\'s off.';
+          form.tasks.parentNode.appendChild(note);
+        })
+        .catch(function () {});
+    }
+
     var tierHints = <?= json_encode(array_map(fn($t) => match ($t['name']) {
       'Custom' => 'Custom pricing, starts at $3,000/mo. We\'ll talk.',
       'Solo'   => 'Solo tier: $750/mo. That\'s already the founding price.',
@@ -156,6 +183,7 @@
         tools: form.tools.value,
         tried_ai: form.tried_ai.value,
         tier: form.tier.value,
+        scan_id: form.scan_id.value,
         source_page: '<?= $page->uri() ?>',
         company_url: form.company_url.value
       };

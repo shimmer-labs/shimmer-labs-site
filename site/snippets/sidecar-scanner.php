@@ -1,10 +1,17 @@
-<!-- Sidecar Scanner -->
-<section class="hero hero--inline" id="scanner">
+<?php
+// Website scanner. $variant: 'sidecar' keeps the Sidecar branding, anything else is neutral.
+$variant = $variant ?? 'neutral';
+$isSidecarVariant = $variant === 'sidecar';
+?>
+<!-- Website scanner: what should you automate first? -->
+<section class="hero hero--inline<?= $isSidecarVariant ? '' : ' hero--inline-neutral' ?>" id="scanner">
   <div class="container">
     <div class="hero__scanner">
-      <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="hero__scanner-logo">
-      <h2 class="hero__title">Try the Sidecar scanner.</h2>
-      <p class="hero__description">Enter your website. We'll show you what to automate first. Free, 15 seconds, no signup.</p>
+      <?php if ($isSidecarVariant): ?>
+        <img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" class="hero__scanner-logo">
+      <?php endif ?>
+      <h2 class="hero__title">What should you automate first?</h2>
+      <p class="hero__description">Enter your website. We read it and pick the three tasks most worth getting off your plate, each with a prompt you can run this week, a version we build together, and a hands-off option. Free, 15 seconds, no signup.</p>
 
       <form class="scanner-form" id="scannerForm" action="#" method="POST" novalidate>
         <div class="scanner-form__input-group">
@@ -19,9 +26,15 @@
             autocomplete="off"
             enterkeyhint="go"
           >
-          <button type="submit" class="btn btn--sidecar scanner-form__button">Scan My Business</button>
+          <button type="submit" class="btn <?= $isSidecarVariant ? 'btn--sidecar' : 'btn--cta' ?> scanner-form__button">Scan My Business</button>
         </div>
-        <p class="scanner-form__note">Free. Takes 15 seconds. No signup required.</p>
+        <p class="scanner-form__note">Free. Takes 15 seconds. No signup required. <button type="button" class="scanner-form__link" id="scannerNoSite">No website? Describe your business instead.</button></p>
+
+        <div class="scanner-form__describe" id="scannerDescribe" hidden>
+          <label for="scannerDescription">Tell us what your business does, in a sentence or two</label>
+          <textarea id="scannerDescription" name="description" rows="3" placeholder="We're a two-truck landscaping crew in Stillwater. Mowing, cleanups, and small hardscape jobs. Quotes go out by text and half of them never get followed up."></textarea>
+          <button type="submit" class="btn <?= $isSidecarVariant ? 'btn--sidecar' : 'btn--cta' ?> scanner-form__button">Use this instead</button>
+        </div>
       </form>
 
       <div class="scanner-form__loading" id="scannerLoading" style="display: none;">
@@ -34,7 +47,7 @@
   </div>
 </section>
 
-<!-- How the Sidecar scanner works -->
+<!-- How the scan works -->
 <section class="scanner-how-it-works">
   <div class="container">
     <h2 class="scanner-how-it-works__title">How the scan works</h2>
@@ -45,11 +58,11 @@
       </div>
       <div class="scanner-how-it-works__step">
         <span class="scanner-how-it-works__number">2</span>
-        <p>We read your site and identify opportunities</p>
+        <p>We read your site and find the tasks eating your week</p>
       </div>
       <div class="scanner-how-it-works__step">
         <span class="scanner-how-it-works__number">3</span>
-        <p>You get a custom hiring plan, 3 agents ready to work</p>
+        <p>You get three tasks, each with a do-it-yourself prompt, a build-it-together plan, and a hands-off option</p>
       </div>
     </div>
   </div>

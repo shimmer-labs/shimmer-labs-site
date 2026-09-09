@@ -1,5 +1,5 @@
-Title: Your AI Agent Team
+Title: What to Automate First
 
 ----
 
-Meta_description: See which AI agents would work best for your business. Free personalized scan in 15 seconds.
+Meta_description: We read your website and pick the three tasks most worth getting off your plate, each with a prompt to run this week, a build-it-together plan, and a hands-off option. Free, 15 seconds.

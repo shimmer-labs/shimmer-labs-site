@@ -357,6 +357,7 @@ return [
     $tools      = $clean($body['tools'] ?? '');
     $triedAi    = $clean($body['tried_ai'] ?? '');
     $tier       = $clean($body['tier'] ?? '');
+    $scanId     = preg_match('/^[0-9a-f-]{20,40}$/i', (string)($body['scan_id'] ?? '')) ? (string)$body['scan_id'] : '';
     $sourcePage = substr(preg_replace('~[^a-z0-9/_-]~i', '', (string)($body['source_page'] ?? '')), 0, 120);
 
     $errors = [];
@@ -429,6 +430,7 @@ return [
       "WOULD PAY MOST TO NEVER DO AGAIN:\n" . mb_substr($payToNever, 0, 500) . "\n\n" .
       "CURRENT TOOLS: " . ($tools !== '' ? mb_substr($tools, 0, 300) : '(not given)') . "\n" .
       "TRIED WITH AI SO FAR: " . ($triedAi !== '' ? mb_substr($triedAi, 0, 500) : '(not given)') . "\n" .
+      ($scanId !== '' ? "WEBSITE SCAN: " . url('scan') . "?id=" . $scanId . "\n" : '') .
       "SUBMITTED: " . date('Y-m-d H:i') . " from /" . $sourcePage;
 
     $upsertBody = [

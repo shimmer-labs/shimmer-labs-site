@@ -3621,6 +3621,47 @@ img.loaded {
   margin: 0 auto;
 }
 
+.hero--inline-neutral {
+  background: var(--color-cream, #FFF9E6);
+}
+.hero--inline-neutral .hero__title,
+.hero--inline-neutral .hero__description,
+.hero--inline-neutral .scanner-form__note {
+  color: var(--color-navy);
+}
+.scanner-form__link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.scanner-form__describe {
+  margin-top: 1rem;
+  text-align: left;
+  display: grid;
+  gap: 0.5rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.scanner-form__describe label {
+  font-weight: 600;
+}
+.scanner-form__describe textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--color-gray-light);
+  border-radius: 8px;
+  font: inherit;
+  resize: vertical;
+}
+.scanner-form__describe .scanner-form__button {
+  justify-self: start;
+}
+
 .service-pricing__grid--four {
   grid-template-columns: repeat(2, 1fr);
 }

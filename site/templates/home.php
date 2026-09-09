@@ -36,6 +36,9 @@
   </div>
 </section>
 
+<!-- Website scanner: what should you automate first? -->
+<?php snippet('sidecar-scanner', ['variant' => 'neutral']) ?>
+
 <!-- Social Proof -->
 <?php snippet('social-proof', ['clients' => $page->clients()]) ?>
 

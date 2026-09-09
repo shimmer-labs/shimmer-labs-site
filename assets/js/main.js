@@ -20,11 +20,24 @@ onReady(function() {
   var loadingSteps = [
     { at: 0, text: 'Reading your website...', progress: 15 },
     { at: 4000, text: 'Identifying opportunities...', progress: 45 },
-    { at: 8000, text: 'Writing job descriptions...', progress: 75 },
+    { at: 8000, text: 'Finding the tasks eating your week...', progress: 75 },
     { at: 12000, text: 'Almost done — this one\'s a meaty site.', progress: 88 },
   ];
 
-  function showError(msg) {
+  var describeEl = document.getElementById('scannerDescribe');
+  var noSiteBtn = document.getElementById('scannerNoSite');
+  var descriptionEl = document.getElementById('scannerDescription');
+
+  function showDescribe(focus) {
+    if (!describeEl) return;
+    describeEl.hidden = false;
+    if (focus && descriptionEl) descriptionEl.focus();
+  }
+  if (noSiteBtn) {
+    noSiteBtn.addEventListener('click', function() { showDescribe(true); });
+  }
+
+  function showError(msg, reason) {
     var errorEl = document.getElementById('scannerError');
     var loadingEl = document.getElementById('scannerLoading');
     var progressFill = document.getElementById('scannerProgressFill');
@@ -33,6 +46,9 @@ onReady(function() {
     progressFill.style.width = '0%';
     errorEl.textContent = msg;
     errorEl.style.display = 'block';
+    if (typeof gtag === 'function') {
+      gtag('event', 'scan_failed', { reason: reason || 'unknown' });
+    }
   }
 
   scannerForm.addEventListener('submit', function(e) {
@@ -45,10 +61,15 @@ onReady(function() {
     var progressFill = document.getElementById('scannerProgressFill');
 
     var url = urlInput.value.trim();
-    if (!url) return;
+    var description = descriptionEl ? descriptionEl.value.trim() : '';
+    if (!url && description.length < 20) {
+      showDescribe(true);
+      return;
+    }
+    if (!url && !description) return;
 
     // Normalize URL
-    if (url.indexOf('http://') !== 0 && url.indexOf('https://') !== 0) {
+    if (url && url.indexOf('http://') !== 0 && url.indexOf('https://') !== 0) {
       url = 'https://' + url;
     }
 
@@ -77,7 +98,7 @@ onReady(function() {
       aborted = true;
       if (controller) controller.abort();
       stepTimeouts.forEach(clearTimeout);
-      showError('Scan timed out. The site may be too large or temporarily unreachable. Please try again.');
+      showError('Scan timed out. The site may be too large or temporarily unreachable. Please try again.', 'timeout');
     }, SCAN_TIMEOUT_MS);
 
     var aborted = false;
@@ -96,7 +117,7 @@ onReady(function() {
     var fetchOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url: url })
+      body: JSON.stringify({ url: url, description: description })
     };
     if (controller) {
       fetchOptions.signal = controller.signal;
@@ -106,7 +127,9 @@ onReady(function() {
       .then(function(response) {
         return response.json().then(function(data) {
           if (!response.ok) {
-            throw new Error(data.error || 'Scan failed. Please try again.');
+            var err = new Error(data.message || data.error || 'Scan failed. Please try again.');
+            err.code = data.error || ('http_' + response.status);
+            throw err;
           }
           return data;
         });
@@ -124,11 +147,15 @@ onReady(function() {
         clearTimeout(timeoutId);
         stepTimeouts.forEach(clearTimeout);
         var msg = err.message || 'Something went wrong. Please try again.';
+        var reason = err.code || 'error';
         // Friendlier message for network/CORS errors
         if (msg === 'Failed to fetch' || msg.indexOf('NetworkError') !== -1 || msg.indexOf('CORS') !== -1) {
           msg = 'Could not reach the scanner. Check your connection and try again.';
+          reason = 'network';
         }
-        showError(msg);
+        showError(msg, reason);
+        // Site couldn't be read: open the describe-your-business box right under the error
+        if (err.code === 'no_content') showDescribe(true);
       });
   });
 });

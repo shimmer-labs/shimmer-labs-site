@@ -35,9 +35,11 @@
   </div>
 </section>
 
-<!-- Sidecar: Free Scanner Tool -->
+<!-- Website scanner: what should you automate first? -->
 <?php if ($isSidecar): ?>
-  <?php snippet('sidecar-scanner') ?>
+  <?php snippet('sidecar-scanner', ['variant' => 'sidecar']) ?>
+<?php elseif ($isConcierge): ?>
+  <?php snippet('sidecar-scanner', ['variant' => 'neutral']) ?>
 <?php endif ?>
 
 <!-- Sidecar: Stats Cards -->
