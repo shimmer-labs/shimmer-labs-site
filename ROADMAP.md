@@ -74,3 +74,24 @@ Shipped this session: $1k/$250 pricing floor with half-up-front terms, landscape
 - [ ] **Short Loom-style sales video** behind a QR code for in-person events
 - [ ] **Sweep Desktop sell sheets / decks** still carrying $5k-era pricing
 - [ ] **Watch trade page traffic** in GA4; whichever trade gets traction graduates to a standalone microsite on its own domain (Alex's stillwaterkids.com play)
+
+---
+
+## September 10, 2026 — Team-size pricing, scanner reframe, 17 industry templates
+
+Shipped Sep 7-9: legacy 404 redirects, Review schema removed, AI Concierge priced by team size (Solo $750 / Crew $1,000 / Shop $1,500 / Company $2,250 / 51+ custom, founding = one tier down), three math/why notes, homepage retitled around AI consulting, GBP post + category + description, website scanner reframed around the three-rung ladder (do it yourself / build it together / have it built and run) with a rendered-scrape fallback, describe-your-business path, prefilled intake, and all 17 industry templates tuned against real Stillwater/OKC/Tulsa sites (new: property management, auto services, cleaning, creative services, oil & gas operators).
+
+### Next up, in order of payoff
+- [ ] **12+ industry pages for SEO/AEO** — "What should a plumber in Oklahoma automate first?" generated from the tuned templates: three tasks, the copy-paste prompt, ladder, FAQPage schema, link to /scan. One per template, same voice as the Sep 7 notes.
+- [ ] **Get scans flowing** — 27 scans in six months, half ours. GBP post + personal FB/LinkedIn post ("put your website in, see what to take off your plate"), human-sourced per the Sep 1 rule. Watch GA4 `scan_started` vs `scan_completed` vs `scan_failed` and `scan_next_step`.
+- [ ] **Search Console housekeeping** — click Validate Fix on the Not found (404) and Review snippets reports; export the 404 CSV (Pages report > Not found > Export) and drop it in the repo root for redirect mapping. Request-indexing quota is ~10/day.
+- [ ] **Old pricing off-site** — Google Ads copy still says the flat $1,000/mo concierge. Sweep. (Brand kit doc in Desktop/Presentations still carries $2,000/$500 Sidecar anchor; site says from $1,000 + $250/mo.)
+- [ ] **GHL nurture on the `concierge-intake` tag** — scans now feed the intake, so the drip matters more. Also delete the dead CALENDLY_URL var on Vercel.
+- [ ] **Two more scanner templates** — coworking spaces (tour → follow-up → renewal → room booking) and event rentals/venues (date check, deposits, weather policy). Both common locally.
+- [ ] **Velvet Fudge** — velvetfudgevinyl.com is a dead "store unavailable" Shopify page. The Shopify Partners lead is still open; reach out.
+- [ ] **No-website audience** — many salons/massage/trainers only have Acuity/Square/Linktree. That's who the "describe your business" box is for; say so in the office-hours pitch.
+- [ ] **Vlad on Leadership episode push** (Sep 10) — comment on Vlad's share, own LinkedIn post, FB personal + page + Main Street AI group, quote card. Copy in `references/podcast-vlad/`.
+- [ ] **Re-index after the industry pages ship** — pull fresh inspection links via the API, never hand-built.
+
+### Carry-forward from Aug 25 (still open)
+- [ ] Buy automatepaperwork.com; landscaper permission for the named case study; postmortem asks (roofer/HVAC church prospect, Heritage Petroleum); vendor-show calendar; Loom-style sales video behind a QR; sweep Desktop sell sheets with $5k-era pricing; watch trade-page traffic monthly (search is a 90-day bet, not a two-week one).
