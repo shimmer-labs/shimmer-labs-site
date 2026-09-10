@@ -46,6 +46,8 @@
   <?php endif ?>
 </main>
 
+<?php snippet('scanner-inline') ?>
+
 <?php if ($page->cta_type()->toString() === 'intake'): ?>
 <section class="cta-final">
   <div class="container">

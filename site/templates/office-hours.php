@@ -312,6 +312,8 @@
 </section>
 
 <!-- ═══════ CTA ═══════ -->
+<?php snippet('scanner-inline') ?>
+
 <section class="oh-cta">
   <div class="container">
     <p class="oh-cta__text">Got something that needs more than two hours on a Tuesday?</p>

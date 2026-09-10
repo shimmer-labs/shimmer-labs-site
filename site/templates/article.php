@@ -39,6 +39,8 @@
   </section>
 </main>
 
+<?php snippet('scanner-inline') ?>
+
 <?php snippet('walkthrough-cta') ?>
 
 <?php snippet('footer') ?>

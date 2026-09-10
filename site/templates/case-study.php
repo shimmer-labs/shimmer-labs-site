@@ -159,4 +159,6 @@
   </article>
 </main>
 
+<?php snippet('scanner-inline') ?>
+
 <?php snippet('footer') ?>
