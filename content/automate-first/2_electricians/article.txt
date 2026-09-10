@@ -1,0 +1,124 @@
+Title: What should an electrician automate first?
+
+----
+
+Seo_title: What should an electrician automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI help for Oklahoma electricians: missed-call text-back, quotes that follow up, and same-day invoices and inspection tracking.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You know the feeling: a missed call from nine in the morning turns into a voicemail about no power in half the house that you don't hear until five. By the time you write up a quote and turn the day's scribbles into invoices, it's nine at night and the truck notebook still isn't empty.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For electricians, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Missed Calls and After-Hours Service Requests
+
+**No more finding a 'no power in half the house' voicemail at 5 PM that came in at 9 AM.**
+
+Where most electricians start: **Have it built and run.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Text back every missed call and web form within minutes with the three questions that sort the job: what's happening, where, and is anything hot, smoking, or sparking
+- Sort by urgency: a burning smell, sparking, or half the house dark goes to your phone right now, a dead outlet or a ceiling fan install goes on the schedule
+- Book the non-emergencies into the next open slot and confirm with an arrival window and what to have ready (panel access, gate code, dog put up)
+- Answer the same five questions without you: service area, panel upgrades, EV chargers, whether you pull the permit, how billing works
+- Hand anything touchy (a complaint, a callback on a job you already did) to you with the whole thread, never a canned reply
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me draft text-back replies for missed calls at my electrical business in [city], Oklahoma. When I paste in a missed call or web form message, ask the three questions that sort the job: what's happening, where it is, and whether anything is hot, smoking, or sparking. Flag anything with sparking, smoke, or partial power loss as urgent and tell me to call back right now. For non-emergencies, draft a text that offers [next available appointment] and lists what the customer should have ready: panel access, gate code, or pets put up. Keep the tone plain and short, like a text from a real person, not a script.
+
+**Build it together.** Set up a missed-call text-back flow in your phone or Housecall Pro that sends the sorting questions automatically and books the routine jobs onto your calendar. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Sends the text-back within minutes of any missed call, sorts urgent jobs from routine ones, and books the routine calls straight onto your schedule while you sleep. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Text (missed-call text-back), Website contact form, Housecall Pro, Jobber, ServiceTitan, or Google Calendar.
+
+## 2. Quotes and Bids That Don't Go Quiet
+
+**No more $4,000 panel upgrade quote dying in a homeowner's inbox because you never circled back.**
+
+Where most electricians start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Turn your walkthrough notes or a voice memo from the truck ('200 amp panel, 40 feet to the meter, two runs for the garage') into a written quote from your own price list, materials list attached
+- Nudge quotes that went quiet after 3 days and again at 10 ('Still want that charger in before the new car shows up?')
+- Keep every open bid in one list, homeowner and GC alike, so you know what's pending, won, and dead before the builder calls asking
+- Draft the change-order note when the scope grows on site (extra circuits, the inspector wants AFCI everywhere) so it's in writing before the invoice
+- Send the seasonal note to past customers: generator check before ice storm season, surge protection before spring storms
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me turn a voice memo or rough notes from a job walkthrough into a written quote for my electrical business. I'll paste in notes like [200 amp panel, 40 feet to meter, two runs for garage]. Write a clean quote broken into labor and materials, using my rates: [paste price list]. Also write a materials list I can hand to the supply house. Then draft a short follow-up text I can send after 3 days if I haven't heard back, and another one for day 10, referencing the specific job so it doesn't sound canned.
+
+**Build it together.** Set up a quote template tied to your own price list and a tracking sheet that flags which bids need a nudge at day 3 and day 10. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Turns every walkthrough note into a sent quote and fires the day 3 and day 10 follow-up texts automatically without you touching it. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Voice memo or phone notes, Housecall Pro, Jobber, or a Google Doc quote template, Email or text.
+
+## 3. Day's Jobs Into Invoices, Receipts, and Inspection Dates
+
+**No more 9 PM at the kitchen table turning a day of scribbles into invoices.**
+
+Where most electricians start: **Build it together.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Turn end-of-day notes (a voice memo or a photo of the truck notebook) into invoice lines with the parts you used priced from your list
+- Log supply-house receipts from a photo and match them to the job so the materials markup doesn't get forgotten
+- Track every permit pulled and inspection scheduled so the builder never waits on you for a final and nobody covers a rough-in that hasn't passed yet
+- Text the customer a wrap-up the evening of the job: what was done, the warranty, and the Google review link
+- Produce a short end-of-day summary: invoices out, receipts logged, inspections waiting, callbacks owed
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me turn end-of-day job notes into invoice lines for my electrical business. I'll paste in a voice memo transcript or scribbled notes like [replaced 3 outlets, added 20 amp circuit, 2 hours labor]. Write invoice line items with quantities and prices from my rate list: [paste price list]. Then draft a short text to send the customer that evening explaining what was done, the warranty terms, and a link to leave a Google review: [paste review link]. Keep it plain, no fluff, like something you'd actually type.
+
+**Build it together.** Build a template that turns your end-of-day voice memo into invoice lines and a customer wrap-up text with one click. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Logs every job note into an invoice, matches supply-house receipts by photo, tracks permits and inspections, and sends the customer wrap-up text the same evening on its own. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Phone camera, Housecall Pro, Jobber, QuickBooks, or Square, Google Calendar.
+
+## Run it on your own business
+
+The list above is written for an electrician in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Do I need Housecall Pro or Jobber for this, or can I use what I already have?'
+  answer: >
+    Most of this works with whatever you're already running, including plain text messages, a Google Doc quote template, or Google Calendar. If you're already paying for Housecall Pro, Jobber, or ServiceTitan, we build on top of that instead of adding another subscription.
+-
+  question: 'How much time does this actually save an electrician?'
+  answer: >
+    For a typical one to ten person shop, these three tasks together run roughly 11 hours a week: about 4 hours on missed calls and after-hours requests, 3 hours on quotes and follow-ups, and 4 hours on invoicing and paperwork. That's not hype, it's just the hours these tasks eat when you do them by hand every night.
+-
+  question: 'What parts of my electrical business shouldn''t I hand over to AI?'
+  answer: >
+    Anything involving live troubleshooting, a safety call on site, or a customer who's genuinely angry needs you, not a bot. We build these tools to sort, draft, and remind, but the judgment calls and the touchy conversations still go to your phone.

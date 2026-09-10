@@ -3,7 +3,7 @@
 <main class="main-content">
   <section class="hero hero--compact">
     <div class="container">
-      <span class="cs-tag">Notes</span>
+      <span class="cs-tag"><?= $page->eyebrow()->or('Notes') ?></span>
       <h1 class="hero__title"><?= $page->title() ?></h1>
       <?php if ($page->intro()->isNotEmpty()): ?>
         <p class="hero__intro"><?= $page->intro() ?></p>
@@ -18,7 +18,7 @@
           <?php foreach ($page->children()->listed()->sortBy('date', 'desc') as $note): ?>
             <li>
               <a href="<?= $note->url() ?>"><?= $note->title() ?></a>
-              <?php if ($note->intro()->isNotEmpty()): ?> &mdash; <?= $note->intro() ?><?php endif ?>
+              <?php if ($note->intro()->isNotEmpty()): ?>: <?= $note->intro() ?><?php endif ?>
             </li>
           <?php endforeach ?>
         </ul>

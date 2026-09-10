@@ -1,0 +1,124 @@
+Title: What should a small oil and gas operator automate first?
+
+----
+
+Seo_title: What should a small oil and gas operator automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI help for Oklahoma oil and gas operators: WolfePak check stubs, pumper reports, and royalty owner questions, handled faster.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You know the drill: it's the 28th, you've got a stack of purchaser check stubs, and WolfePak isn't going to key itself. Same thing with the phone ringing the week after checks go out, or finding out a well's been down since the 12th because nobody wrote it down.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For small operators, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Check Stubs and JIBs Into WolfePak
+
+**No more keying check stubs into WolfePak at 9 PM on the 28th.**
+
+Where most small operators start: **Build it together.** Time back: about 2 days each month-end.
+
+What it takes care of:
+
+- Turn a photo or PDF of each purchaser check stub into a typed line laid out the way WolfePak wants it: property, product, volume, price, gross, taxes, deducts, net
+- Do the same for JIBs from operators you hold a working interest with, coded to the well and the AFE
+- Flag the stub that doesn't look right: a decimal that doesn't match your division of interest, a well that paid last month and not this one, a deduct that wasn't there before
+- Match vendor invoices from pumpers, hot oil, and saltwater haulers to the well and the month so nothing gets paid twice or not at all
+- Keep a month-end checklist that says what's keyed, what's still waiting on a stub, and what's out of balance
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me get check stubs and JIBs ready to key into WolfePak. I run a small oil and gas operation in Oklahoma. I'll paste in the text from a purchaser check stub or describe the fields off a photo: property, product, volume, price, gross, taxes, deducts, net. Lay it out as one clean line in that order, the way WolfePak expects it. Then tell me if anything looks off: a decimal that doesn't match my usual division of interest, a well that paid last month but not this one, or a new deduct that wasn't there before. Here's the stub: [paste check stub or JIB details]. My usual division of interest for this well is [DOI percentage].
+
+**Build it together.** Build a saved workflow that turns your check stub and JIB photos into WolfePak-ready lines and flags anything off the same way every month. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Route each new check stub or JIB straight into WolfePak-formatted lines and flag anything that doesn't match your division of interest before month-end. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: WolfePak or QuickBooks, Phone camera or scanner, Email (PDF statements), Google Sheet.
+
+## 2. Pumper Reports and Field Tickets, Logged Daily
+
+**No more finding out at month-end that a well has been down since the 12th.**
+
+Where most small operators start: **Have it built and run.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Take the pumper's morning text (a photo of the gauge sheet counts) and log it per well: oil in the tank, water, gas, pressure, anything down
+- Flag by 9 AM which wells didn't report and which one is down, off, or close to a full tank that needs a haul called
+- Turn the signed field ticket photo from the truck into an invoice line (well, date, hours or barrels, rate) the same day, before it rides around in the cab for two weeks
+- Match saltwater disposal and hauling tickets to the well and the month so the invoice can be checked instead of trusted
+- Send the office a short daily summary: production by lease, downtime, tickets logged, hauls to schedule
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me keep track of pumper reports and field tickets by hand this week. I run a small oil and gas operation in Oklahoma. I'll paste in the pumper's text or gauge sheet numbers for each well: oil in the tank, water, gas, pressure, and anything down. Organize it into a simple daily log by well, and flag which wells didn't report today or look close to a full tank. Then I'll paste in a field ticket (well, date, hours or barrels, rate), and you turn it into an invoice line I can check against the saltwater hauling ticket. Pumper text: [paste text]. Field ticket: [paste ticket details].
+
+**Build it together.** Set up a workflow that logs pumper texts and field tickets by well every day and flags downtime before it costs you a week. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Log every pumper text and field ticket the moment it comes in, flag down wells and full tanks by 9 AM, and send the office a daily summary automatically. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Text (pumper reports), Phone camera, Google Sheet, WolfePak, or QuickBooks.
+
+## 3. Royalty Owner Questions and Partner Updates
+
+**No more spending the day after checks go out on the phone explaining why they shrank.**
+
+Where most small operators start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Answer the same royalty owner questions the same way every time: why the check went down, where the 1099 is, what a division order is, how to transfer an interest after a death and which papers you need
+- Turn this month's purchaser statements into a plain-English note for working interest partners: what produced, what it sold for, what it cost, what they net
+- Draft the cover letter for a new division order, a suspense release, or a change of purchaser so it doesn't start from a blank page
+- Boil an OCC notice or rule change down to what it means for your wells and what's due when
+- Keep a running list of address changes, unclaimed-check questions, and who's still waiting on an answer
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me answer a royalty owner or working interest partner question. I run a small oil and gas operation in Oklahoma. I'll paste in the question and the relevant numbers from this month's purchaser statement or division order. Answer the way I'd want it explained to a nontechnical owner: plain English, a couple of sentences on why the check changed or what the document means. If it's a partner update, summarize what produced, what it sold for, what it cost, and what they net. Question or request: [paste question]. Numbers or statement details: [paste relevant figures].
+
+**Build it together.** Build a set of saved templates for owner letters, partner updates, and division order cover letters pulled straight from your records. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Draft and send routine owner and partner updates on a schedule tied to your purchaser statements without you touching a keyboard. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Email, WolfePak owner records or a Google Sheet, Phone.
+
+## Run it on your own business
+
+The list above is written for a small oil and gas operator in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Does this work with WolfePak, or do I have to switch software?'
+  answer: >
+    It works alongside WolfePak and QuickBooks, it doesn't replace either one. The idea is to get check stubs, JIBs, and pumper reports into a clean format before they hit your existing system, so keying them in takes less time and fewer mistakes slip through.
+-
+  question: 'How much time does this actually save?'
+  answer: >
+    For check stubs and JIBs it's roughly 2 days back at month-end, since that's usually the worst stretch. Pumper reports and field tickets run roughly 4 hours a week, and owner or partner questions run roughly 2 hours a week, depending on how many checks went out that month.
+-
+  question: 'Should I let AI answer royalty owner calls on its own?'
+  answer: >
+    No, not the calls themselves. AI is good at drafting the plain-English explanation or the division order cover letter so you're not starting from scratch, but the owner still wants to hear it from you, especially anything about a death, a dispute, or a check that shrank.

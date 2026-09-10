@@ -708,6 +708,7 @@ return [
           'ai-security-business',
           'ai-security-education',
           'scan',
+          'automate-first',
           'landscapers',
           'plumbers',
           'roofers',

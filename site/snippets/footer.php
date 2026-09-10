@@ -43,6 +43,7 @@
             <li><a href="<?= url('roofers') ?>">Roofers</a></li>
             <li><a href="<?= url('oklahoma-city-ai-consultant') ?>">Oklahoma City</a></li>
             <li><a href="<?= url('tulsa-ai-consultant') ?>">Tulsa</a></li>
+            <li><a href="<?= url('automate-first') ?>">What to Automate First</a></li>
             <li><a href="<?= url('scan') ?>">Scan Your Website</a></li>
           </ul>
         </div>

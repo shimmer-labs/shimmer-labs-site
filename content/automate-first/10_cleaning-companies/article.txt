@@ -1,0 +1,124 @@
+Title: What should a cleaning company automate first?
+
+----
+
+Seo_title: What should a cleaning company automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI help for Oklahoma cleaning companies: faster quotes, day-before confirmations, and hiring screens that skip the late-night grind.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You know the drill: a quote sits in your texts for two days while the homeowner books whoever answered first, then Monday morning a crew's standing on a porch because nobody confirmed the job. None of it is hard work, it just eats hours you don't have between cleans and hiring and everything else.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For cleaning companies, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Quotes From a Walkthrough or Photos
+
+**No more walkthrough quotes still sitting in your Notes app while the homeowner books the other company.**
+
+Where most cleaning companies start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Turn walkthrough notes or a few texted photos (bedrooms, baths, pets, 'it's been a while') into a quote from your actual price list, first clean and recurring rate both
+- Ask the three questions that change the price before you quote: how often, first-time deep clean or maintenance, and who supplies the products
+- Reply the same day with the quote, what's included, what isn't (inside the oven, the garage), and the next open spot
+- Nudge quotes that went quiet after 3 days and again at 10 ('Still want to get on the biweekly rotation?')
+- Answer the same five questions (insured and bonded, do you bring supplies, how do you get in, can I skip a week, do you do move-outs) without retyping them
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me quote a cleaning job in Stillwater. Here's my price list: [paste price list]. Here are the walkthrough notes or texted photos: [paste notes or describe the photos]. Ask me how often they want service, whether it's a first-time deep clean or ongoing maintenance, and who's supplying the cleaning products, then use my price list to build a quote with the first-clean rate and recurring rate. Write a same-day reply that says what's included, what's not (oven interior, garage), and lists my next open slot: [paste open dates].
+
+**Build it together.** Build a saved quoting workflow loaded with your price list and FAQ answers so every quote, follow-up nudge, and objection answer sounds like you and goes out the same day. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send automatic quotes and follow-up nudges the moment a photo or walkthrough note comes in, no matter what time it lands. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Text, email, or Facebook Messenger, Phone camera, ZenMaid, Jobber, Housecall Pro, Square, or a Google Sheet.
+
+## 2. Day-Before Confirmations and Reschedules
+
+**No more crew standing on a porch at 8 AM because nobody confirmed and the client is out of town.**
+
+Where most cleaning companies start: **Have it built and run.** Time back: about 5 hrs/week.
+
+What it takes care of:
+
+- Confirm every job the evening before with the arrival window, which crew is coming, and a reminder to leave the way clear (dogs up, dishes out of the sink)
+- Read the replies: 'yes' does nothing, 'can we do Thursday' finds the next open slot on the route, 'skip this one' puts them back on their weekly, biweekly, or monthly rotation
+- When a slot opens, offer it to the next person waiting for a deep clean or move-out
+- Pull entry notes (lockbox code, alarm, garage keypad, 'use the side door') from the customer record into the crew lead's morning text, never in a group chat
+- Log the crew's end-of-job checklist and photos to the customer record so 'they missed the baseboards' has an answer and the invoice goes out the same day
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a cleaning company. Here's tomorrow's job list: [paste job list with addresses, arrival windows, crew assigned]. Write a day-before confirmation text for each customer that includes the arrival window, which crew is coming, and a reminder to clear the way (dogs put up, dishes out of the sink). Then, if I paste a customer's reply, tell me whether it needs a reschedule, a skip note back to their rotation, or nothing at all, and suggest the next open slot from this list: [paste open slots].
+
+**Build it together.** Set up your confirmation texts, reply routing, and entry notes (lockbox codes, alarm codes) so reschedules and skips update the schedule without anyone retyping anything. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send every confirmation text the evening before, read the replies overnight, rebook reschedules to the next open slot, and text the crew lead their entry notes each morning automatically. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Text, ZenMaid, Jobber, Housecall Pro, or Google Calendar, Square or QuickBooks.
+
+## 3. Hiring Screen and Review Replies
+
+**No more reading 30 applications at 10 PM to find the two who might actually show up Monday.**
+
+Where most cleaning companies start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Screen this week's applicants from a Google Form against your must-haves (car, weekday mornings, can lift 30 lbs, clean background check) in five minutes instead of an evening
+- Draft the 'come in Tuesday at 10' text and the 'we went another direction' text so both go out the same day, in your voice
+- Boil the month's reviews down to three piles: fix this, out of your control, brag about
+- Draft a calm reply to any review under four stars that names the fix instead of arguing. You read it, you send it
+- Ask for a Google review after the first clean and again every few months, in a text that sounds like you, with the link
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a cleaning company hiring for [role]. Here are this week's applicants from my Google Form: [paste applicant answers]. Screen them against my must-haves: reliable car, available weekday mornings, can lift 30 lbs, clean background check. Sort into 'invite in' and 'pass' and draft a short text for each, one inviting them in Tuesday at 10, one letting them down. Then here are this month's reviews: [paste reviews]. Sort them into fix this, out of my control, and brag about, and draft a calm reply to anything under four stars that names the fix.
+
+**Build it together.** Set up a repeatable screening sheet and review-sorting template tied to your must-haves and your voice so applicant texts and review replies take minutes instead of an evening. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Screen new applicants and sort new reviews the moment they come in, drafting texts and replies that wait for your yes before anything goes out. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Google Forms, Google Business Profile, Facebook, Text.
+
+## Run it on your own business
+
+The list above is written for a cleaning company in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Does this work with ZenMaid, Jobber, or Housecall Pro, or do I need new software?'
+  answer: >
+    It works alongside what you've already got, ZenMaid, Jobber, Housecall Pro, Square, or even a Google Sheet if that's your system. Nobody's asking you to switch platforms, the goal is to stop retyping the same information into text messages.
+-
+  question: 'How much time does this actually save a cleaning company?'
+  answer: >
+    Based on the three tasks above, roughly 10 hours a week: about 3 on quoting, 5 on confirmations and reschedules, and 2 on hiring screens and review replies. Your number depends on how many jobs and applicants you're running through it each week.
+-
+  question: 'What shouldn''t I hand over to AI?'
+  answer: >
+    Anything that involves an actual apology, an angry customer on the phone, or a price exception for a longtime client, that still needs your voice and your judgment. Automate the repetitive typing, not the moments where the relationship is on the line.

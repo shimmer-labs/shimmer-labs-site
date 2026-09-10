@@ -1,0 +1,124 @@
+Title: What should a roofer automate first?
+
+----
+
+Seo_title: What should a roofer automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI help for Oklahoma roofers: follow up on proposals and claims, handle storm-week leads fast, and manage reviews and homeowner FAQs.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You didn't get into roofing to become a part-time claims adjuster or a social media manager. Between chasing depreciation checks, answering the same insurance question for the fourth time today, and trying to remember which lead texted you last night, the actual roofing keeps sliding to the bottom of the list.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For roofers, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Proposal and Claim Follow-Up
+
+**No more finding out in November that the homeowner never sent in the paperwork and the last $4,000 is still sitting with the insurance company.**
+
+Where most roofers start: **Build it together.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Nudge proposals that went quiet after 3 days and again at 10 ("Still thinking about the roof? Happy to walk through the shingle options again")
+- Keep every job in one list by stage: inspected, waiting on adjuster, approved, supplement pending, scheduled, built, waiting on the depreciation check
+- Draft the supplement request when the adjuster's scope missed drip edge, ice and water, or the code items, from your photos and notes
+- Remind the homeowner to send the completion certificate and final invoice to their carrier so the recoverable depreciation actually gets released
+- Turn a texted photo of the receipt or material invoice into a line on the job so the books match the roof
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me follow up on roofing proposals and insurance claims. Here is my current job list with stage, homeowner name, and last contact date: [paste job list]. Write a short, friendly text for any proposal that's gone quiet for 3 days, and a different one for 10 days, reminding them I'm happy to walk through shingle options again. Also flag any job marked 'approved' or 'built' where I don't have a note that the completion certificate or final invoice went to the carrier, so I know to remind the homeowner before the depreciation check gets stuck.
+
+**Build it together.** Set up a shared job tracker that sorts every job by stage, flags proposals gone quiet, and drafts the supplement request straight from your photos and notes. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send the 3-day and 10-day nudges automatically, flag stalled paperwork, and remind the homeowner to forward the completion certificate before that last check gets forgotten. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: AccuLynx, JobNimbus, or a Google Sheet, CompanyCam or your phone camera, Email or text, QuickBooks.
+
+## 2. Storm-Week First Response
+
+**No more coming down off a ladder to 40 missed calls and losing half of them to whoever answered first.**
+
+Where most roofers start: **Have it built and run.** Time back: about 6 hrs/week in storm season.
+
+What it takes care of:
+
+- Answer every web form, text, and Facebook message within minutes, day or night, with what happens next and when someone can get on the roof
+- Ask the four things you need before you drive out: address, roof age, insurance carrier, and whether a claim is already open
+- Put active leaks and tarp jobs at the top of the list and everything else in order behind them
+- Book the inspection on your calendar and send a reminder the morning of, so the drive isn't wasted on a no-show
+- Answer the same five questions (do you work with insurance, what's my deductible, do you offer financing, how long does it take, what shingle) without you stopping the truck
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a roofing company and need to respond fast to a storm lead before I can automate anything. Here's a lead that just came in by text or web form: [paste lead message]. Write a quick reply that tells them what happens next, asks for their address, roof age, insurance carrier, and whether a claim is already open, and gives a rough window for when someone can get out to inspect. Keep the tone calm and confident, like someone who's done this through a hundred storms, not a call center script.
+
+**Build it together.** Connect your website form, texts, and Facebook messages into one queue that puts leaks and tarp jobs on top and books the inspection straight onto your calendar. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Answer every incoming lead within minutes, day or night, collect the four key details, prioritize active leaks, and book and confirm the inspection without you touching your phone. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Website contact form, Text or Facebook Messenger, Google Calendar, Calendly, or your CRM, AccuLynx, JobNimbus, or a Google Sheet.
+
+## 3. Reviews, Finished-Roof Posts, and Homeowner FAQs
+
+**No more 4.2 stars because the only people who write reviews are the ones whose gutters got dented.**
+
+Where most roofers start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Boil the last year of Google reviews down to three piles: fix this, out of your control, brag about it
+- Draft a calm reply to any review under four stars that names the fix instead of arguing. You send it, not the robot
+- Ask for a Google review at the final walkthrough, by text, with the link, while the roof still looks brand new
+- Turn this week's drone shots and before-and-afters into 2-3 posts that name the neighborhood and the storm, in your voice
+- Write the one-page 'what to expect on install day' sheet (start time, nails in the yard, park on the street, where the dumpster goes) so you stop explaining it on every job
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me manage my roofing company's online reputation and social posts. Here are my Google reviews from the last year: [paste reviews]. Sort them into three piles: things we should actually fix, things out of our control, and ones worth bragging about. Draft a calm, specific reply to any review under four stars that names the fix instead of arguing. Then, using these notes about a recent job [paste job details or photo descriptions], write two short Facebook posts naming the neighborhood and the storm, in a plain, no-hype voice.
+
+**Build it together.** Build a simple review and posting routine that pulls in your reviews, sorts them, and turns this week's photos into ready-to-post captions in your voice. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Text the homeowner for a Google review right after the final walkthrough while the roof still looks new, and queue up drafted social posts from new job photos as they come in. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Google Business Profile, Facebook, Instagram, Text.
+
+## Run it on your own business
+
+The list above is written for a roofer in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Do I need AccuLynx or JobNimbus for this, or can I just use a Google Sheet?'
+  answer: >
+    A Google Sheet works fine if you've got a handful of crews and a manageable job count. Once you're running several jobs a week through insurance, a tool like AccuLynx or JobNimbus makes the stage tracking and photo attachments easier to keep straight, but it's not required to get started.
+-
+  question: 'How much time does this actually save a roofing crew?'
+  answer: >
+    Based on the three tasks here, it's roughly 12 hours a week combined, with storm-week response saving the most on its own during active season. Most of that time comes back as fewer dropped leads and fewer forgotten claims, not just faster typing.
+-
+  question: 'Should I let AI just reply to bad reviews on its own?'
+  answer: >
+    No. Have it draft the reply so you're not starting from a blank screen, but read it and send it yourself, especially for anything under four stars. A homeowner who's upset can tell the difference between a real answer and a form letter.

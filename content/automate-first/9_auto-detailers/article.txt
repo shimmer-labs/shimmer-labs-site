@@ -1,0 +1,124 @@
+Title: What should an auto detailer automate first?
+
+----
+
+Seo_title: What should an auto detailer automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI tools for Oklahoma auto detailers and repair shops: quotes from a photo, appointment reminders, and before-and-after posts and reviews.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You know the drill: a photo comes in on your phone, you mean to quote it after this car, and by the time you circle back the customer already booked somewhere else. Same story with the truck you detailed at 8 AM that never made it to Instagram, and the empty bay at 9 because nobody confirmed the 8:30.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For detailers and repair shops, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Quotes From a Photo or Text
+
+**No more quotes half-written in your phone while the customer books with someone else.**
+
+Where most detailers and repair shops start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Turn a texted photo and a sentence ('dog hair, spilled coffee, 2019 F-150') into a quote from your actual price list
+- Ask the two questions that change the price before you quote: vehicle size and how bad is it, really
+- Reply the same day with the quote, what's included, and the next open slot, in your voice
+- Nudge quotes that went quiet after 2 days ('Still want that interior done before the weekend?')
+- Keep every quote in one list so you know what's open, booked, and lost
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me quote a detailing job for my shop. Here's my price list: [paste price list]. A customer sent this photo description and note: [paste photo description and customer's text]. Ask me the two questions you need before quoting: vehicle size and how bad the mess really is. Once I answer, write a same-day reply I can text back with the price, what's included, and the next open slot: [paste next open slot]. Keep the tone like I'd actually text a customer, not a form letter.
+
+**Build it together.** Build a quoting workflow that pulls from your actual price list and keeps every quote in one running sheet you can check before you bid. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send the same-day quote automatically, log it in your pipeline, and follow up on quiet ones after two days without you lifting a finger. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Text or Facebook Messenger, Phone camera, Square, Jobber, or a Google Sheet.
+
+## 2. Appointment Reminders and No-Show Recovery
+
+**No more empty bay at 9 AM because the 8:30 forgot.**
+
+Where most detailers and repair shops start: **Build it together.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Confirm the booking the day before with the address, drop-off or pickup time, and what to leave out of the car
+- Text a 'running on time' or 'ready for pickup' update so the phone stops ringing while your hands are wet
+- When a slot opens (cancel or no-show), offer it to the next person on the waitlist automatically
+- Ask the no-show to rebook the next day, once, politely
+- Send the 'due for another detail' reminder at 3 or 6 months, based on what they had done
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me manage next-day appointment reminders for my shop. Here's tomorrow's schedule: [paste names, times, services]. Write a text for each customer confirming drop-off or pickup time, the address, and anything they should take out of the car first. Also write a short 'running on time' text and a 'ready for pickup' text I can send as the day goes. If someone no-shows, write one polite follow-up asking them to rebook the next day. Keep everything short and in my normal texting voice, not formal.
+
+**Build it together.** Set up a reminder and waitlist system that fires the day before, texts pickup updates, and offers open slots to the next person automatically. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send reminders, pickup updates, and rebook texts on autopilot, and fill last-minute cancellations from your waitlist while you're under a hood. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Text, Google Calendar or your booking tool, Customer list (Square, Jobber, or a Google Sheet).
+
+## 3. Before-and-After Posts and Review Requests
+
+**No more remembering at 9 PM that you never posted the truck you detailed that morning.**
+
+Where most detailers and repair shops start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Turn the day's before-and-after photos into a post that names the vehicle, the problem, and the service, in your voice
+- Ask for a Google review by text the evening after each job, with the link, while they're still admiring the car
+- Answer the messages that matter (pricing, 'do you do boats?') and skip the rest
+- Keep a folder of your best transformations so posting never starts from scratch
+- Flag any review under four stars the day it lands so you can reply personally
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me write a social post about today's detail job. Here's what I did: [paste vehicle, problem, and service, like '2021 Tahoe, dog hair and mud, full interior detail']. Write a short Instagram/Facebook caption in my voice that names the vehicle, the problem, and what I did to fix it, plus a call to action to book. Then write a text I can send the customer this evening asking for a Google review, with a spot for the link. Keep both short, casual, and not salesy.
+
+**Build it together.** Set up a photo folder and posting routine so before-and-afters and review texts go out the same day without starting from scratch. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Post the before-and-after, send the review text, and flag any review under four stars the day it lands, automatically. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Instagram, Facebook, Google Business Profile.
+
+## Run it on your own business
+
+The list above is written for an auto detailer or small repair shop in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Do I need new software to do this, or can I use what I already have?'
+  answer: >
+    You can start with what's already on your phone: text, Facebook Messenger, and whatever you use for scheduling, whether that's Square, Jobber, or a plain Google Sheet. The prompts and workflows here are built to plug into those, not replace them. If you're still tracking jobs on paper, that's the one thing worth switching first.
+-
+  question: 'How much time does this actually save a small shop?'
+  answer: >
+    Roughly 7 hours a week across quoting, reminders, and posting, based on the three tasks here. That's not a guarantee, it depends on how many cars you run through and how much of this you're already doing by habit. Most of it comes back as fewer missed quotes and fewer empty bays, not just less typing.
+-
+  question: 'What shouldn''t I let AI handle in a detail or repair shop?'
+  answer: >
+    Anything involving a mad customer, a pricing dispute, or damage to their vehicle needs your voice, not a script. AI is good at drafting the routine stuff, quotes, reminders, posts, so you have more time for the calls that actually need you. Keep the hard conversations yours.

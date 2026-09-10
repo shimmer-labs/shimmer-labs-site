@@ -1,0 +1,124 @@
+Title: What should a realtor automate first?
+
+----
+
+Seo_title: What should a realtor automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI for Oklahoma realtors: lead response and qualification, listing and market updates, and transaction follow-up, handled automatically.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You know the feeling: a lead comes in Tuesday night while you're at a showing, and by the time you call back Wednesday morning they've already toured with another agent. Or it's Sunday night and you're still pulling comps and typing listing descriptions instead of being off the clock.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For realtors, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Lead Response & Qualification Agent
+
+**No more losing deals because the other agent responded two days faster.**
+
+Where most realtors start: **Have it built and run.** Time back: about 5 hrs/week.
+
+What it takes care of:
+
+- Respond to new inquiries within 5 minutes, a lead from Zillow or your website gets a personal response before they move on to the next agent
+- Ask qualifying questions: timeline, budget, pre-approval status, preferred neighborhoods
+- Forward qualified leads with a clear summary so you can focus on relationships, not data entry
+- Book showings and consultations directly on your calendar
+- Send follow-ups to leads who went quiet, 48 hours, 7 days, and 30 days
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me respond to a new real estate lead. Here's their inquiry: [paste lead message]. Draft a warm, personal reply that thanks them, asks about their timeline, budget range, pre-approval status, and preferred neighborhoods, and offers two times to meet or talk this week. Keep it under 150 words, sound like a real person texting, not a form letter, and end with one clear next step.
+
+**Build it together.** Build your lead-response workflow around your actual sources, Zillow, your website form, and your calendar, in one 45-minute session so it runs the same way every time. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Answers new inquiries within 5 minutes day or night, asks the qualifying questions, books the showing on your calendar, and sends the 48-hour, 7-day, and 30-day follow-ups on its own. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Email, Google Calendar, Website contact form, Zillow.
+
+## 2. Listing & Market Update Agent
+
+**No more spending your morning manually pulling comps and typing up listing descriptions.**
+
+Where most realtors start: **Do it yourself this week.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Send personalized new listing alerts to buyers based on their saved criteria
+- Compile weekly market updates for your farm area, new listings, price changes, days on market
+- Draft listing descriptions from your property notes and photos
+- Monitor comparable sales and flag pricing opportunities for your sellers
+- Track listing performance, views, saves, showing requests, and summarize weekly
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I'm a realtor working [farm area or neighborhood name] in Oklahoma. Here's this week's MLS export: [paste new listings, price changes, and days-on-market data]. Write a short weekly market update for my buyer and seller list: 3-4 sentences on what changed, one line on what it means for buyers, one line on what it means for sellers. Plain language, no jargon, sound like a local expert, not a form newsletter.
+
+**Build it together.** Build a standing market update workflow using your MLS export and farm area list so listing alerts and weekly summaries go out without you touching a spreadsheet. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Pulls new listings and price changes from the MLS, sends buyers personalized alerts based on their saved criteria, and compiles the weekly market update on its own. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: MLS, Email, Google Docs.
+
+## 3. Transaction & Follow-Up Agent
+
+**No more scrambling to remember inspection deadlines or forgetting to follow up after closing.**
+
+Where most realtors start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Track all active transactions, inspections, appraisals, closing dates, and send reminders before deadlines
+- Send milestone updates to buyers and sellers so they always know where they stand
+- Draft post-closing thank-you messages and request referrals 30 days after close
+- Send home anniversary messages to past clients annually to stay top-of-mind
+- Compile a weekly pipeline summary, what's pending, what's closing, what needs attention
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I'm tracking my active real estate transactions. Here's my list: [paste property address, closing date, inspection date, appraisal date, and current stage for each]. Build me a simple table showing what's due in the next 7 days per transaction, flag anything overdue, and draft a one-line status text I can send each client today.
+
+**Build it together.** Build a transaction tracker from your current pipeline in a Google Sheet in one session, so deadline reminders and milestone updates fire the same way on every deal. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Tracks every active transaction, sends reminders before inspection and appraisal deadlines, sends milestone updates to clients, and follows up automatically after closing. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Email, Google Calendar, Google Sheets.
+
+## Run it on your own business
+
+The list above is written for a realtor in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Can this work with the tools I already use, like my MLS and Zillow leads?'
+  answer: >
+    Yes. These workflows plug into email, Google Calendar, your website contact form, Zillow, MLS, and Google Sheets, whatever you're already using day to day. You don't have to switch systems or learn new software to get the benefit.
+-
+  question: 'How much time does this actually save, and what does it cost?'
+  answer: >
+    Between lead response, listing and market updates, and transaction follow-up, realtors typically save roughly 12 hours a week combined. Cost depends on the level, a copy-paste prompt is free to run yourself, and the built-out automation is a project we price after seeing your actual workload, usually starting with a free office hours conversation.
+-
+  question: 'What shouldn''t I automate as a realtor?'
+  answer: >
+    Don't automate the actual relationship, tough negotiations, or the moments a client needs to hear your voice, like a low inspection report or a lowball offer. Automation should handle the repetitive tracking and follow-up so you have more time for the parts of the job that actually close deals.

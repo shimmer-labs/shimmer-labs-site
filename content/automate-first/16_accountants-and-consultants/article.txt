@@ -1,0 +1,124 @@
+Title: What should an accountant or consultant automate first?
+
+----
+
+Seo_title: What should an accountant or consultant automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: For Oklahoma accountants, insurance agents, and consultants: fix slow intake, messy call notes, and unpaid invoices with three simple workflows.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You know the drill: a promising inquiry sits in your inbox for four days, your call notes are still trapped in a voice memo from the parking lot, and that invoice from March is starting to feel awkward to even mention. None of it is hard work, it's just work that piles up while you're doing the actual job.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For small professional firms, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Inquiry to Booked Intake Call
+
+**No more finding Tuesday's inquiry on Friday, after they already hired someone else.**
+
+Where most small professional firms start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Reply to a new inquiry the same day with the four or five questions you always ask first (what kind of business, what software, how far behind, what's the deadline) and a link to book a call
+- Turn those questions into a free Google Form so the answers land in one place before the call, not across three emails and a voicemail
+- Nudge inquiries that went quiet after 3 days and again at 10, once each, in your words, then stop
+- Sort out the ones that aren't a fit (wrong state, wrong size, wants it done yesterday for free) with a polite no and a name to try instead, so they don't take a call slot
+- Keep one running list of who asked, what they need, and where they are, so the first call is still yours to have
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a [accounting/insurance/consulting] practice in Oklahoma. You are helping me reply to a new client inquiry the same day. Here is the inquiry: [paste inquiry email or notes]. Write a short, friendly reply that asks: what kind of business they run, what software they use, how far behind or what stage they're in, and their deadline. Include a line inviting them to book a call at [your booking link]. Keep the tone [describe it, e.g., 'plain and warm, not salesy']. End with one clear next step instead of a question mark hanging in the air.
+
+**Build it together.** Build the intake form, booking link, and two follow-up nudges into one flow so every inquiry lands in the same tracker without you copying anything by hand. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send the first reply, the form link, and both scheduled nudges the moment an inquiry hits your inbox, and flag the ones that aren't a fit before they take a call slot. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Email, Google Forms, Calendly or Google Calendar, HubSpot free, Zoho, or a Google Sheet.
+
+## 2. Call Notes Into the CRM and the Engagement Letter
+
+**No more Sunday night catching up on a week of call notes that should have gone in the CRM Tuesday.**
+
+Where most small professional firms start: **Build it together.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Turn a voice memo from the parking lot, or three lines of scribbled notes, into a clean call summary: what they said, what you promised, what happens next
+- Log it in the CRM the same day (HubSpot, Zoho, or a Sheet) with the next step and a date, so the pipeline is real instead of in your head
+- Draft the proposal or engagement letter from those notes, from your own template in your own wording, ready for a five-minute read before it goes out
+- Write the recap email that says what you heard and what you need from them (statements, the declarations page, last year's return)
+- Put every promise with a date on it ('I'll have that by Friday') on your calendar, not just in your memory
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me turn rough call notes into something usable. Here are my notes or voice memo transcript: [paste notes]. Write three things: what the client said, what I promised them, and what happens next with dates attached. Then draft a short recap email in my voice asking for [documents needed, e.g., 'last year's return and bank statements'] by [date]. Keep the sentences short, skip the jargon, and flag any date I mentioned so I remember to put it on my calendar.
+
+**Build it together.** Set up the voice-memo-to-summary workflow, the CRM log template, and your engagement letter draft as one saved project that runs the same way after every call. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Turn a submitted voice memo into a logged CRM entry and a drafted engagement letter automatically, sitting in your inbox ready for a five-minute review. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Phone voice memos, HubSpot free, Zoho, or a Google Sheet, Google Docs or Word, Google Calendar.
+
+## 3. Stale Proposals and Unpaid Invoices
+
+**No more feeling awkward about a 60-day-old invoice you never followed up on.**
+
+Where most small professional firms start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Nudge proposals that went quiet at 5 and 14 days with a short 'still want to do this?' in your voice, once each
+- Send invoice reminders at 30, 45, and 60 days, friendly first and firmer later, and stop the moment the payment lands
+- Match what came in (bank, Stripe, checks) against what you billed, so reconciliation takes 45 minutes instead of a Friday afternoon
+- Monday morning list: open proposals by age, unpaid invoices by age, and the two or three you should call yourself
+- Ask for the testimonial or Google review when the engagement wraps and the client is happiest, with a link and two sentences that sound like you
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me follow up on a proposal or invoice that's gone quiet. Here's what I sent and when: [paste proposal or invoice details and date sent]. If it's a proposal at 5 or 14 days, write a short friendly nudge in my voice. If it's an invoice at 30, 45, or 60 days, write a reminder that's polite but gets firmer the later it is. Skip the apologizing and the hedging, end with one clear ask.
+
+**Build it together.** Set up the proposal and invoice tracker with the 5, 14, 30, 45, and 60 day nudges built in, so your Monday morning list builds itself. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send every nudge and reminder on schedule, stop the moment payment lands, and hand you a Monday list of who still needs a personal call. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: QuickBooks, FreshBooks, or a Google Sheet, Email, Google Business Profile.
+
+## Run it on your own business
+
+The list above is written for an accountant, insurance agent, or consultant in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Can I run this with just a Google Sheet, or do I need to buy software?'
+  answer: >
+    A Google Sheet is genuinely enough to start, most solo and small shops track inquiries, calls, and invoices that way for years. If you outgrow it, HubSpot's free tier or Zoho are the next step up, but you don't need to buy anything to try the workflows we recommend.
+-
+  question: 'How much time does this actually save?'
+  answer: >
+    Based on the three tasks here, it works out to roughly 9 hours a week combined: about 2 hours on intake, 4 on call notes and drafting, and 3 on chasing proposals and invoices. That's time back for actual client work instead of admin catch-up.
+-
+  question: 'What parts of client work should I not hand over to AI?'
+  answer: >
+    Anything that involves real judgment, like actual tax advice, coverage recommendations, or telling a client what to do with their money, stays with you. AI is good for drafting, sorting, and reminding, not for deciding. The final review before anything goes out should always be yours.

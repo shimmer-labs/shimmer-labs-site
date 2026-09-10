@@ -1,0 +1,124 @@
+Title: What should a local shop automate first?
+
+----
+
+Seo_title: What should a local shop automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI tools for Oklahoma shops and boutiques: answering DMs, posting new arrivals, and handling custom orders.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You already know the DM at 9:47 on a Saturday night: 'is this still available?' You answer it at open the fortieth time this week while someone's standing at the counter waiting on you.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For local shops, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. The Same Five Questions in Your DMs
+
+**No more typing 'yes we ship!' for the fortieth time while a customer at the counter waits.**
+
+Where most local shops start: **Have it built and run.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Answer the five things everyone asks (are you open, do you have this, does it run small, do you ship, can I return it) in minutes, from your own answer sheet, in your voice
+- Check the store for 'do you still have the green one in a medium' before saying yes, and offer to hold it or ring it up over the phone
+- Reply after close and on Sunday so a Saturday night 'is this still available?' doesn't turn into a Monday 'never mind'
+- Hand anything custom, a complaint, or a 'can you order this for me' to you with a two-line summary instead of a whole thread to scroll
+- Keep one short list of the questions that keep coming up so the answer sheet (and your website FAQ) gets better on its own
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me write quick, friendly replies to the five questions I get most in my shop's DMs: are you open, do you have this item, does it run small or true to size, do you ship, and what's your return policy. Here are my real answers: [paste your answers to the five questions]. When a customer asks something close to one of these, write a short reply in my voice, warm but to the point. If it's about a specific in-stock item or a custom request, tell me to check with the shop before I send anything.
+
+**Build it together.** Build your answer sheet, connect it to your DMs, and set up the hand-off so anything custom lands on your desk with a two-line summary instead of a whole thread. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Replies to the five common questions around the clock, checks stock before saying yes, and flags customs, complaints, and order requests for you. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Instagram and Facebook DMs, Shopify or Square, Text or email.
+
+## 2. New Arrivals Into Listings and Posts
+
+**No more gorgeous new stock sitting in the back for a week because writing the listing felt like homework.**
+
+Where most local shops start: **Do it yourself this week.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Turn a phone photo and a sentence ('new Nashville tee, runs big, $34') into the Shopify listing: title, description, size notes, tags
+- Write the Instagram caption and the story text for the same item so one photo gets three jobs done
+- Draft a short new-arrivals email for your list once a week (Shopify Email or Klaviyo) so the people who asked to hear from you actually do
+- Reply to Google and Facebook reviews in your voice, the nice ones with a real thank-you, the rough ones calmly and once
+- Keep a running list of what came in this week so posting never starts from a blank screen and a full stockroom
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a small boutique in Oklahoma. I'm giving you a phone photo description and a short note: [item name, price, sizing notes, anything special about it]. Write a Shopify listing (title, description, size notes, tags), an Instagram caption, and a matching story text, all in a friendly, casual voice that sounds like a real person running a small shop, not a big brand. Keep the caption under 60 words and the listing description under 100.
+
+**Build it together.** Build a saved template for listings, captions, and your weekly new-arrivals email so posting a new item takes minutes instead of half an hour. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Turns your phone photo and one sentence into the listing, caption, and email draft automatically each time new stock comes in. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Phone camera, Instagram and Facebook, Shopify or Square, Shopify Email or Klaviyo, Google Business Profile.
+
+## 3. Custom Orders, Special Orders, and Vendor Pitches
+
+**No more re-explaining your wholesale minimums from scratch to the twelfth vendor this month.**
+
+Where most local shops start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Answer 'can you make one like this but in gold' with the questions that set the price (size, stones, when do you need it) before you spend twenty minutes quoting from scratch
+- Reply to the same-day 'can you order this for me' with a yes, a rough ETA, and what deposit you need, from your own price sheet and lead times
+- Answer vendor and wholesale inquiries with your application, your terms, and your agreement attached, so a 22-minute reply becomes a 4-minute one
+- Say a polite no to the rep pitches and 'we'll feature your store for $299' emails without you writing a fresh one each time
+- Keep every open custom order and special order in one list with the promised date, and nudge the ones that went quiet before they turn into a 'did you ever hear back?'
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a small shop and someone just asked me to make or order a custom item. Here's what they want: [describe the request]. Using my price sheet and lead times here: [paste your price sheet and typical timelines], write a reply that asks the right follow-up questions (size, materials, timeline, deposit) before I quote a price, and give me a rough price range and ETA I can send back today.
+
+**Build it together.** Build an intake workflow using your price sheet, vendor terms, and agreement templates so quotes and vendor replies go out in minutes instead of twenty. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Tracks every open custom and special order with its promised date and nudges the ones that have gone quiet before a customer has to ask. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Email and DMs, Your price sheet, vendor application, and agreement template, Shopify, Square, or a Google Sheet.
+
+## Run it on your own business
+
+The list above is written for a local shop or boutique in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Can this work with the Shopify, Square, or Instagram setup I already have?'
+  answer: >
+    Yes. These tools are built around what most small shops already use: Shopify or Square for orders, Instagram and Facebook for DMs, and text or email for the rest. Nothing here requires switching platforms.
+-
+  question: 'How much time does this actually save, and what does it cost?'
+  answer: >
+    Across these three tasks, shops typically save roughly 10 hours a week between DMs, listings, and custom order follow-up. Cost depends on whether you want a copy-paste prompt, a built workflow, or a fully automated version, we walk through that in office hours before you spend anything.
+-
+  question: 'What should I NOT hand over to AI in my shop?'
+  answer: >
+    Anything where the customer needs to feel heard by an actual person, a real complaint, a custom piece that matters to them, or a longtime customer's specific ask, should still come from you. AI can draft the reply or flag it for you, but the final word on anything emotional or high dollar should stay yours.

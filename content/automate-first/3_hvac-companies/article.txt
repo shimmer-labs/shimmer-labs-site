@@ -1,0 +1,124 @@
+Title: What should an HVAC company automate first?
+
+----
+
+Seo_title: What should an HVAC company automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: Oklahoma HVAC shops can automate replacement quote follow-up, maintenance reminders, and after-hours no-AC calls.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You quote a $9,000 replacement, hear nothing back, and just have to guess whether the homeowner is thinking it over or shopping three other companies. Then the phone rings at 11 PM with no AC and a toddler in the house, and it's you deciding between answering it and sleeping.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For HVAC companies, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Replacement Quotes That Don't Go Quiet
+
+**No more $9K replacement quotes going silent because the only follow-up was hoping they'd call back.**
+
+Where most HVAC companies start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Turn the tech's diagnostic notes (a photo of the ticket works) into a good/better/best quote from your real price book, with the monthly payment next to each option
+- Send it the same day, in plain words a homeowner can forward to their spouse, with the one reason each option is on the list
+- Nudge quotes that went quiet after 3 days and again at 10 ("Still limping along on the old unit? Financing is still open")
+- Answer the questions that stall a decision without retyping them: how long does install take, what about the rebate, is the old warranty worth anything
+- Keep every open, accepted, and lost quote in one list so you know what's sitting out there before the next heat wave
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me write a good/better/best replacement quote for a homeowner. Here are the tech's diagnostic notes: [paste ticket notes or describe the photo]. Here is my price book range for each tier: [paste prices]. Write three options in plain language a homeowner could forward to their spouse, with one clear reason each option made the list, and the rough monthly payment if financed over 60 months. Keep the tone plain and honest, no pressure. Also draft a 3-day follow-up text and a 10-day follow-up text for if I don't hear back, mentioning financing is still open.
+
+**Build it together.** Build the good/better/best quote template pulling straight from your price book, plus the 3-day and 10-day nudge texts, so every quote goes out the same day and looks the same way every time. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send the same-day quote, track when it goes quiet, and fire the 3-day and 10-day nudges automatically until the homeowner answers or you mark the quote dead. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: ServiceTitan, Housecall Pro, FieldEdge, or Jobber, Text or email, QuickBooks or a Google Sheet.
+
+## 2. Maintenance Plans, Tune-Up Reminders, and Filter Nags
+
+**No more dead weeks in April and October while July and January bury you.**
+
+Where most HVAC companies start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Send the spring AC tune-up blast in March and the fall furnace check in September to every past customer, before the phones melt down
+- Flag every maintenance plan 30 days before it lapses and draft the renewal text in your voice, with the price and the next visit already picked
+- Text a filter reminder every 60 or 90 days based on what they've got, with the size, so the June call isn't a frozen coil
+- After each install, remind the homeowner to register the warranty and draft the OG&E or ONG rebate paperwork from the invoice
+- Keep one list of who's on a plan, who's due, and who hasn't had a visit in 18 months so the slow weeks fill themselves
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run an HVAC company in Oklahoma. Help me draft the spring AC tune-up text blast for March and the fall furnace check blast for September, going out to past customers in plain language. Also write a maintenance plan renewal text for someone whose plan lapses in 30 days, using this price and next visit date: [paste price and date]. And write a filter reminder text for a customer with this filter size and interval: [paste size and 60 or 90 day interval]. Keep everything short and easy to send from my phone.
+
+**Build it together.** Set up the seasonal blast calendar, the 30-day renewal nudge, and the filter reminder cadence tied to your customer list, so nobody falls through in April or October. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send the seasonal blasts, renewal nudges, and filter reminders automatically off your customer list, and flag anyone who hasn't had a visit in 18 months. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: ServiceTitan, Housecall Pro, FieldEdge, or Jobber, Text or email, Google Calendar, QuickBooks or a Google Sheet.
+
+## 3. After-Hours No-AC Calls and the Same Five Questions
+
+**No more picking between sleep and losing the 11 PM no-AC call to whoever answered first.**
+
+Where most HVAC companies start: **Have it built and run.** Time back: about 4 hrs/week, and your nights back.
+
+What it takes care of:
+
+- Answer after-hours texts, form fills, and missed calls within minutes with what happens next and the after-hours rate, so they don't call the next name on Google
+- Sort the real emergencies (no heat with a newborn or grandma in the house, gas smell, CO alarm) from the ones that can wait for 8 AM, and only wake the on-call tech for the real ones
+- Tell the gas smell and CO alarm callers to get out and call ONG or 911 first, every time, before anything else
+- Answer the same five questions (do you service my town, what's a service call cost, do you finance, what brands, are you open Saturday) without anyone touching a phone
+- Hand the office a list at 7 AM: who called overnight, what they said, who's already booked, who needs a callback
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run an HVAC company and just got this after-hours message from a customer: [paste text or voicemail summary]. Help me figure out if this is a real emergency (no heat with a baby or elderly person in the house, gas smell, CO alarm) or something that can wait until 8 AM. If it's a gas smell or CO alarm, give me the exact words to tell them to get out and call ONG or 911 right now. If it can wait, draft a short reply telling them what happens next and our after-hours rate.
+
+**Build it together.** Build the after-hours text flow and the emergency sorting rules using your after-hours rate and on-call schedule, so it's ready to hand off the day it's built. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Answer after-hours texts and calls within minutes, sort real emergencies from ones that can wait, and hand the office a 7 AM list of who called and what they need. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Text and phone, Website contact form, ServiceTitan, Housecall Pro, FieldEdge, or Jobber, Google Calendar.
+
+## Run it on your own business
+
+The list above is written for an HVAC company in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Does this work with ServiceTitan or Housecall Pro, or do I have to switch software?'
+  answer: >
+    It plugs into what you already run, ServiceTitan, Housecall Pro, FieldEdge, Jobber, or even just a Google Sheet and QuickBooks. Nobody has to migrate systems or learn a new dashboard. The quotes and reminders pull from your existing price book and customer list either way.
+-
+  question: 'How much time does this actually save, and what does it cost?'
+  answer: >
+    Across quote follow-up, maintenance reminders, and after-hours calls, it's roughly 10 hours a week back, plus your nights. Cost depends on which pieces you want built and hosted versus a prompt you run yourself, and we talk through that in the free office hours before anything's built.
+-
+  question: 'What parts of my HVAC business should I NOT automate?'
+  answer: >
+    Diagnosing the actual problem on the unit and talking someone through a real gas leak or CO alarm both need a human, every time. Automate the paperwork and reminders around those moments, the quote, the rebate form, the follow-up text, not the judgment call about whether to send a tech.

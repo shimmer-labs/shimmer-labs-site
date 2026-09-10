@@ -1,0 +1,124 @@
+Title: What should a plumber automate first?
+
+----
+
+Seo_title: What should a plumber automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI tools for Oklahoma plumbers: after hours call sorting, estimate follow up, and turning truck tickets into invoices and reviews.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You're elbow deep in a water heater install when your phone buzzes with a voicemail from midnight, and by the time you call back, they've already booked the next plumber on Google. Then Sunday night rolls around and you're squinting at a stack of handwritten tickets trying to remember what a 3/4 inch coupling actually cost you on Tuesday.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For plumbers, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. After-Hours Calls and Emergency Sort
+
+**No more finding a 2 AM 'water everywhere' voicemail at 7 while the homeowner already called the next name on Google.**
+
+Where most plumbers start: **Have it built and run.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Text back every missed call and form submission within minutes, day or night, with what happens next so they don't dial the next plumber on Google
+- Sort by urgency: water you can't shut off, sewer backing up into the house, and no water at all go to the on-call phone now. No hot water, a slow drain, or a running toilet wait for the morning route
+- Ask the three questions that change the dispatch before anyone drives: is the water shut off, where is it coming from, and is someone home
+- Tell them where the main shutoff usually is and to turn it off while they wait, then confirm the arrival window and the trip fee so nobody's surprised
+- Answer the same five questions callers ask (service area, trip fee, do you do gas lines, financing, do you work weekends) without retyping them
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me handle after-hours plumbing calls. I'll paste in a missed call or text from a customer, including what they told me about the problem. Sort it into one of two categories: EMERGENCY (water that can't be shut off, sewage backing up into the house, or no water at all) or CAN WAIT (no hot water, slow drain, running toilet). If it's an emergency, write a text telling them to find the main shutoff and turn it off if they can, confirm I'm on my way, and ask if the water is off, where it's coming from, and if someone is home. If it can wait, write a text giving them tomorrow's arrival window. Customer message: [paste text or call notes here]
+
+**Build it together.** Set up missed-call text-back and intake questions inside your scheduling software so every caller gets an instant reply and the urgency sort happens before you even see the message. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Answers every missed call and form submission within minutes, sorts by urgency, and texts the shutoff instructions and arrival window on its own. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Text and missed-call text-back, Website contact form, ServiceTitan, Housecall Pro, Jobber, or Google Calendar.
+
+## 2. Estimates, Follow-Up, and Annual Reminders
+
+**No more $4,000 repipe estimates dying in a text thread because nobody circled back.**
+
+Where most plumbers start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Turn the tech's notes and photos (a picture of the handwritten ticket works) into a typed estimate from your price book, with the options spelled out: repair or replace, tank or tankless, spot fix or trenchless
+- Nudge estimates that went quiet after 3 days and again at 10 ("Still want that water heater swapped before it quits on you?")
+- Keep every open estimate in one list, sent, approved, waiting, dead, so the $6,000 sewer replacement doesn't get lost behind twenty drain calls
+- Send the reminders that are on a calendar anyway: backflow test due, water heater flush, maintenance plan renewal, outdoor faucets before the first freeze
+- Log the walk-through notes from a remodel or new-construction bid into the job file so the estimate matches what you said standing in their kitchen
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a plumbing company and need to turn field notes into a customer estimate. I'll paste in the tech's notes, or describe the photo of the handwritten ticket, and our price book info. Write a typed estimate that spells out the options clearly, like repair versus replace or tank versus tankless, with pricing for each. Keep the tone plain, no sales pitch. Then write two follow-up texts I can send if they go quiet, one for day 3 and one for day 10, that remind them what's at stake without sounding pushy. Notes: [paste tech notes or ticket details here]. Price book info: [paste relevant pricing]
+
+**Build it together.** Build a running list in a Google Sheet or your existing software that tracks every estimate by status and fires the 3-day and 10-day follow-up texts automatically. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Sends the follow-up texts and seasonal reminders on schedule without anyone opening the list. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Phone camera, ServiceTitan, Housecall Pro, Jobber, or a Google Sheet, Text or email.
+
+## 3. Truck Tickets Into Invoices and Review Asks
+
+**No more Sunday night at the kitchen table typing up a week of tickets you can barely read.**
+
+Where most plumbers start: **Build it together.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Turn a photo of the day's handwritten tickets into typed invoices with the parts, labor, and address filled in, ready for you to check and send
+- Log the Ferguson, Locke, and Home Depot receipts by photo against the job they went on so the month closes without a shoebox
+- Keep a restock list from what came off the truck this week so the third trip to the supply house for a 3/4-inch ball valve stops happening
+- Send the review ask by text the evening after each job, with the Google link, while the water's back on and they still like you
+- Once a week, boil the new reviews down to three piles: fix this, out of your control, brag about it. Draft replies to anything under four stars for you to send yourself
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a plumbing company and need to turn today's handwritten truck tickets into an invoice. I'll describe or paste in what's written on the ticket: customer name, address, parts used, and labor time. Write a typed invoice with parts, labor, and total, formatted so I can copy it into QuickBooks, Square, or Housecall Pro. Then write a short text I can send the customer that evening asking for a Google review, with a line that fits the specific job we did. Ticket details: [paste ticket info here]
+
+**Build it together.** Build a simple photo-to-invoice workflow and a weekly review roundup so tickets turn into invoices and reviews get sorted without a Sunday night session. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Turns ticket photos into ready-to-send invoices, logs receipts against jobs, and texts the review ask the same evening automatically. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Phone camera, QuickBooks, Square, or Housecall Pro, Google Business Profile.
+
+## Run it on your own business
+
+The list above is written for a plumber in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Do I need to switch software to do this, or can it work with what I already use?'
+  answer: >
+    No, most of this works with whatever you're already running, whether that's ServiceTitan, Housecall Pro, Jobber, or just a Google Sheet and your phone camera. We build around your existing tools instead of asking you to learn new ones.
+-
+  question: 'How much time does this actually save a plumbing company?'
+  answer: >
+    Based on the three tasks above, it's roughly 11 hours a week combined between after-hours call handling, estimate follow-up, and turning tickets into invoices. That's time you get back for actual plumbing instead of paperwork and phone tag.
+-
+  question: 'What parts of the business should I NOT hand over to AI?'
+  answer: >
+    Anything that requires your judgment on-site, like diagnosing a tricky leak or deciding whether a pipe needs full replacement, stays with you and your techs. AI is good for sorting, drafting, and reminding, not for making the actual call on someone's plumbing.

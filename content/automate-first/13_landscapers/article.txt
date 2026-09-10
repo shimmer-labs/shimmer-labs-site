@@ -1,0 +1,124 @@
+Title: What should a landscaper automate first?
+
+----
+
+Seo_title: What should a landscaper automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI help for Oklahoma landscapers: quote follow-up, turning job notes into invoices, and social posts and review requests.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You're hosing mud off your boots at eight at night while a homeowner wonders why nobody's called them back about their cleanup. Somewhere between the truck, the mower, and the invoice pile, the paperwork always loses.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For landscapers, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Quote Follow-Up
+
+**No more losing a job because the homeowner heard back from another crew first.**
+
+Where most landscapers start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Reply to new quote requests the same day with what you need to price the job and when you can look at it
+- Nudge quotes that went quiet after 3 days and again at 10 ("Still need that cleanup done?")
+- Keep every pending, accepted, and expired quote in one list so nothing falls through the cracks
+- Send seasonal reminders to past customers before the rush: spring cleanup, aeration, fall leaves, winterization, Christmas lights
+- Answer the same five questions (service area, pricing ranges, how scheduling works) without retyping them
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me respond to landscaping quote requests fast. I'll paste in a new lead's message with what they want done, their address, and any photos they mention. Draft a same-day reply that confirms what I need to price the job (property size, specific tasks, timeline) and gives them a window for when I can come look. Also draft a 3-day and 10-day follow-up nudge for quotes that go quiet, in a friendly, no-pressure tone. Use this info: [customer message], [service area], [pricing range], [scheduling notes].
+
+**Build it together.** Set up a shared quote tracker that pulls in every web and text lead so pending, accepted, and expired quotes live in one place. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send the same-day reply and the 3-day and 10-day nudges automatically, and keep the tracker current without you touching it. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Email or text, Website contact form, Jobber, Square, or a Google Sheet.
+
+## 2. Day's Jobs Into Invoices and the Schedule
+
+**No more two hours at the keyboard after ten hours in the sun.**
+
+Where most landscapers start: **Build it together.** Time back: about 5 hrs/week.
+
+What it takes care of:
+
+- Turn the crew's end-of-day notes (a photo of the clipboard or route sheet works, Spanish included) into typed job records
+- Flag upsells the crew noticed (hedges, weeds, a dead patch) and draft the estimate or add-on invoice
+- Flag skips and why (sprinklers running, ground too wet) and put the property back on the 7, 10, or 14-day rotation
+- Log what was done at each property so the customer database and invoicing stay current without evening typing
+- Produce a short end-of-day summary: jobs done, upsells to send, reschedules to confirm
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me turn end-of-day crew notes into clean job records. I'll paste in the route sheet notes or describe what's in a photo, property name, what was done, anything skipped and why, anything the crew flagged like overgrown hedges or a dead patch. Turn that into a typed job log entry per property, a draft add-on estimate for any upsell mentioned, a rescheduled date for anything skipped, and a short summary of jobs done, upsells to send, and reschedules to confirm. Notes: [crew notes or photo description].
+
+**Build it together.** Connect the crew's photo or text notes to your invoicing and scheduling system so job records update themselves each evening. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Turn crew notes into finished invoices, upsell drafts, and rescheduled routes every night without anyone opening a laptop. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Phone camera, Jobber, Square, QuickBooks, or a Google Sheet, Text or email.
+
+## 3. Social Posts and Review Requests
+
+**No more Sunday nights trying to think of something to post besides another sawdust pile.**
+
+Where most landscapers start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Turn this week's job photos into 2-3 posts in your voice, with the neighborhood and the service named
+- Ask for a Google review a week after each job, with a link, in a message that sounds like you
+- Boil the week's comments and reviews down to what needs an answer, and draft those answers. Skip the trolls
+- Keep a running list of before-and-after shots so posting never starts from a blank screen
+- Flag any review under four stars the day it lands so you can reply personally
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me turn this week's landscaping job photos into social posts and review requests. I'll describe or paste in what jobs I did this week, the neighborhoods, and the services, mowing, cleanup, mulch, whatever it was. Write 2-3 short Facebook or Instagram posts in a plain, friendly voice that name the neighborhood and service. Then draft a text I can send a week after each job asking for a Google review, with a spot for the link. Also draft short replies to any recent reviews or comments I paste in, skipping anything obviously a troll. Info: [job list], [neighborhoods], [recent reviews or comments].
+
+**Build it together.** Build a running photo library and posting calendar so you're never starting from a blank screen on Sunday night. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Post the drafted content and send review requests on schedule, and flag any review under four stars the day it lands. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Facebook, Instagram, Google Business Profile.
+
+## Run it on your own business
+
+The list above is written for a landscaper in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Do I need Jobber or Square for this to work, or can I just use a Google Sheet?'
+  answer: >
+    No, plain landscaping outfits get by fine with a shared Google Sheet or even a notes app, the AI just needs a consistent place to read from and write to. If you already run Jobber or Square, we build around what's there instead of asking you to switch. The goal is less software, not more.
+-
+  question: 'How much time does this actually save a small landscaping crew?'
+  answer: >
+    Across quote follow-up, end-of-day paperwork, and social posts, owners doing all three by hand are often losing roughly 10 hours a week to it. That's most of a workday spent typing instead of mowing or bidding the next job.
+-
+  question: 'What parts of running a landscaping business should I leave alone?'
+  answer: >
+    Don't hand off pricing judgment calls, a weird property or an angry customer still needs your eyes on it before anything gets sent. Keep your own voice on reviews under four stars too, a canned reply on a bad review usually makes it worse.

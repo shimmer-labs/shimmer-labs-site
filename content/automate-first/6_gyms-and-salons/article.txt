@@ -1,0 +1,124 @@
+Title: What should a gym, salon, or studio automate first?
+
+----
+
+Seo_title: What should a gym, salon, or studio automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI help for Oklahoma gyms, salons, and studios: missed-call texts, freeze and cancel replies, and lapsed-client outreach.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You walk out of a 90-minute session or a full color appointment and your phone shows three missed calls, no voicemails, and one of them already booked somewhere else. The parts of the job that actually drain you aren't the workouts or the haircuts, it's the texting, the same freeze policy answer forty times, and wondering who quietly stopped showing up.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For gyms, salons, and studios, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Missed Calls, Confirmations, and No-Show Recovery
+
+**No more walking out of a 90-minute session to three missed calls and no voicemails.**
+
+Where most gyms, salons, and studios start: **Have it built and run.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Text back any call you miss inside a minute with the booking link and 'in a session, back with you by 3', so the caller doesn't dial the next name on Google
+- Answer the ten questions every caller asks (prices, how long, what to wear, parking, gift cards, do you take walk-ins) by text, without you leaving the table or the chair
+- Confirm every appointment the day before and ask for a yes, so you know who's actually coming
+- When someone cancels or no-shows, offer the open slot to the clients who asked for an earlier time, first come first served
+- Ask the no-show to rebook the next morning, once, politely, and log who owes a late fee
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me handle missed calls and no-shows for my [gym, salon, or studio] in [city]. I run a [type of business] with [number] staff and a typical session runs [length]. Here are the questions clients ask most: [paste your FAQ, like prices, hours, parking, gift cards]. Draft: 1) a text to send within a minute of a missed call, 2) short text answers to each FAQ in my voice, 3) a day-before confirmation text asking for a yes, and 4) a one-time rebooking text for a no-show. Keep it warm and short, this tone: [friendly, direct, casual, etc].
+
+**Build it together.** Build a missed-call and confirmation flow inside your booking software so the texts go out from the same number clients already have saved. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send the missed-call text, answer FAQs, confirm appointments, and offer open slots to waitlisted clients automatically, day and night, no matter who's on the table or the floor. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Your phone line and text, WellnessLiving, Mindbody, Vagaro, Acuity, or Square Appointments, Google Calendar as a fallback.
+
+## 2. Freeze and Cancel Replies, and the Monthly Staff Schedule
+
+**No more reading forty versions of the same late-cancel story and typing the same answer forty times.**
+
+Where most gyms, salons, and studios start: **Build it together.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Draft the reply to every freeze, cancel, and 'I know I late-cancelled, but' message from your actual policy, kind and consistent, so you stop reading each one from scratch
+- Sort the DMs: the 80% that get the standard answer, and the handful that really need you (an injury, a billing mistake, someone moving away for good)
+- During the May and December move-out wave, batch the freezes and cancels into one list so you enter them into WellnessLiving in one sitting instead of forty
+- Draft next month's staff schedule from everyone's availability, the class grid, and who can't work Tuesday nights, ready for you to tweak instead of build
+- Keep the policy answers (freeze rules, late-cancel fee, how to cancel) in one place so a new front desk hire gives the same answer you would
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me reply to freeze, cancel, and late-cancel messages for my [gym, salon, or studio]. Here is my actual policy: [paste your freeze, cancel, and late-fee policy]. Here are three recent messages: [paste messages]. Write a reply to each one that matches my policy, is kind and consistent, and flag any message that needs a personal reply instead of a standard one, like an injury or a billing mistake. Then, using this staff availability: [paste availability] and this class grid: [paste grid], draft a first pass at next month's schedule.
+
+**Build it together.** Load your actual policy and staff availability into a saved project so freeze, cancel, and schedule drafts are ready for you to review instead of write from scratch. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Sort every freeze and cancel DM as it comes in, send the standard reply automatically, and flag only the ones that need your voice. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Instagram DMs and text, WellnessLiving, Mindbody, or Vagaro, A Google Sheet for the schedule.
+
+## 3. Lapsed Clients, Reviews, and Class Posts
+
+**No more regulars who quietly stopped coming and nobody noticed until the chair sat empty.**
+
+Where most gyms, salons, and studios start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Turn your lapsed-client list (nobody's seen them in 8 weeks) into short texts in your voice, one per person, not a blast
+- In August, message everyone who froze or cancelled in May: 'Back in town? Your spot's still here'
+- Ask for a Google review by text the evening after a great appointment, with the link, while they still feel amazing
+- Draft a calm reply to any review under four stars that names the fix instead of arguing
+- Turn this week's class schedule, a new stylist, or a slow Tuesday into 2-3 posts that sound like you, not a franchise
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me win back lapsed clients and get more reviews for my [gym, salon, or studio] in [city]. Here is my list of clients who haven't been in for 8 or more weeks, with a note on each: [paste names and notes]. Write a short, personal text for each one, not a group blast, in this tone: [describe your voice]. Then write a review-request text to send the evening after a great appointment, and a calm reply for any review under four stars that names the fix instead of arguing. Finally, turn this into 2 to 3 short social posts: [paste this week's class schedule, new hire, or slow day].
+
+**Build it together.** Build a lapsed-client and review-request workflow pulling straight from your client list so texts and post drafts are ready every week. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send lapsed-client texts, review requests, and draft social posts automatically on a set schedule, pulling from your booking software without you opening it. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Instagram, Google Business Profile, Your client list (Vagaro, Square, or a Google Sheet).
+
+## Run it on your own business
+
+The list above is written for a gym, salon, or studio in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Do I need new software, or can this work with WellnessLiving, Mindbody, or Vagaro?'
+  answer: >
+    This works with what you already have, whichever of those you use, or Square or Acuity. We build the texting and reminders to run off your existing client list and calendar, so nobody has to learn a new system or double-enter anything.
+-
+  question: 'How much time does this actually save a small studio?'
+  answer: >
+    Across the three tasks here, it's roughly 10 hours a week, split between missed calls and no-shows, freeze and cancel replies plus scheduling, and lapsed-client and review work. Which piece matters most depends on whether your bottleneck is the front desk, the DMs, or the empty chairs nobody noticed.
+-
+  question: 'What should I keep doing myself instead of automating?'
+  answer: >
+    Keep the conversations that need a real person: an injury, a billing dispute, someone canceling because they're moving away for good, or a client who's upset. Automate the repeat stuff, the FAQ answers and the standard freeze reply, and save your actual attention for the moments that need it.

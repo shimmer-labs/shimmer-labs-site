@@ -1,0 +1,124 @@
+Title: What should a photographer or maker automate first?
+
+----
+
+Seo_title: What should a photographer or maker automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI help for Oklahoma photographers, florists, and makers: faster quotes, deposits that actually get paid, and captions that write themselves.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You've had a DM sitting unanswered since Tuesday because you were up to your wrists in glue, floral wire, or Lightroom, and now someone else booked that Saturday. Your prices live in your head, your calendar lives in your phone, and neither one talks to Instagram.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For photographers, florists, and makers, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Inquiry to Quote, With the Date Checked
+
+**No more 'just DM for pricing' followed by three days of silence while she books someone else.**
+
+Where most photographers, florists, and makers start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Answer the same five DM questions (pricing, availability, do you do X, turnaround, deposit) in your voice, from your real price guide, not a 'DM us for pricing' that starts another round
+- Check the date against your calendar before replying, so 'are you free June 14?' gets a yes, a no, or 'that's a peak Saturday, here's how to hold it'
+- Ask the two questions that change the price before you quote: what's the date, and what's the budget
+- Draft the quote from your actual packages and add-ons, and nudge once if it goes quiet after 3 days
+- Keep every inquiry (open, quoted, booked, passed) in one list, then hand the real conversation to you. The consult call stays yours
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me answer inquiry DMs for my [photography/florist/maker] business in [town], Oklahoma. Here's my real price guide and packages: [paste price guide]. Here's my open availability for the next 3 months: [paste dates or say 'open except']. When I paste in a new inquiry, write a reply in my voice that answers what they asked, checks the date if one was mentioned, and asks for their date and budget if they left that out. Keep it warm, no more than 5 sentences. Here's the inquiry: [paste DM].
+
+**Build it together.** Build a shared inquiry tracker that pulls in every DM and checks it against your calendar automatically. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Watches every inquiry channel, checks the date, drafts the quote from your real price guide, and nudges anyone who's gone quiet after three days. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Instagram and Facebook DMs, HoneyBook, Dubsado, or a Google Sheet, Google Calendar.
+
+## 2. Contracts, Deposits, Delivery, and the Follow-Up
+
+**No more finding out the week of the wedding that the deposit never got paid.**
+
+Where most photographers, florists, and makers start: **Have it built and run.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Send the contract and deposit link the minute they say yes, and tell you when it's signed and paid (and when it isn't, a week later)
+- Fire the prep note a week out: the timeline, what to wear, where to park, the final stem count, whatever your version is
+- Deliver the gallery, the proofs, or the shipping notice with a short note in your voice, and chase the 'did you get it?' silence once
+- Ask for the review two weeks after delivery, with the link, once they've shown everyone
+- Bring them back at the right time: prints and albums after the gallery, anniversary and holiday minis a year later, a restock note for the pair that sold out
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me handle the paperwork after someone books me for a [wedding, session, custom order]. I'll give you the client's name, when they booked, and the deposit due date. Write me: a reminder email if the deposit isn't paid within a week, a prep note to send 7 days out covering timeline, attire, or pickup details, and a review request to send two weeks after delivery. Match this tone: [paste 2 emails I've actually sent]. Here's the client info: [paste details].
+
+**Build it together.** Set up a workflow that fires the contract, deposit reminder, prep note, and review request right on schedule. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Sends the contract and deposit link the second someone says yes, chases unpaid deposits, delivers the gallery or order, and asks for the review, all while you're on to the next job. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: HoneyBook, Dubsado, or a Google Sheet, Pixieset or ShootProof (photographers), Shopify or Square (makers), Email or text.
+
+## 3. Posts, Captions, and Product Descriptions in Your Voice
+
+**No more spending an hour on a caption when the photo already did the talking.**
+
+Where most photographers, florists, and makers start: **Do it yourself this week.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Turn this week's phone photos (the sneak peek, the bench shot, the bouquet in the cooler) into 3 posts in your voice, with the client, the venue, or the piece named
+- Write the listing for a new piece from one photo and two sentences: materials, size, care, and why you made it
+- Keep a Brand Kit (your voice, three captions you actually liked, the words you never use) so a post takes five minutes, not an hour
+- Draft the seasonal push before the season: senior sessions in July, holiday minis in October, Valentine's and Mother's Day for the shop, so yours goes out first
+- Answer the comments and DMs that matter (pricing, 'do you do custom?') and skip the rest
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me write social posts and product listings for my [photography/florist/maker] business. Here's my Brand Kit: my voice is [describe it], here are three captions that sound like me: [paste examples], and words I never use: [list them]. I'll paste in what I shot or made this week, and you'll give me 3 short posts in my voice, naming the client, venue, or piece specifically. Keep each under 60 words. Here's this week's stuff: [paste details].
+
+**Build it together.** Build your Brand Kit document and a content calendar tied to your actual busy seasons. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Pulls in this week's new photos, drafts three ready-to-post captions in your voice, and queues them so posting day never depends on you remembering. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Instagram, Facebook, ChatGPT or Claude with your Brand Kit attached.
+
+## Run it on your own business
+
+The list above is written for a photographer, florist, or maker in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Can this work with the tools I already use, like HoneyBook or just a Google Sheet?'
+  answer: >
+    Yes. This is built around whatever you're already using, whether that's HoneyBook, Dubsado, or a plain Google Sheet with your calendar. Nobody has to switch systems to get the inquiry, contract, or delivery steps running smoother.
+-
+  question: 'How much time does this actually save a week?'
+  answer: >
+    Roughly 3 hours a week on inquiries and quotes, roughly 4 hours a week on contracts, delivery, and follow-up, and roughly 3 hours a week on posts and listings. Put together, that's roughly 10 hours a week back once it's running.
+-
+  question: 'What shouldn''t I hand over to AI?'
+  answer: >
+    The actual consult call, pricing conversations that get personal, and anything where a client is upset. Automate the repetitive stuff, the reminders and the drafts, and keep the parts where your judgment and your voice matter most.

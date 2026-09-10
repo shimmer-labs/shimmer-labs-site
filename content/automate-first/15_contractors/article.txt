@@ -1,0 +1,124 @@
+Title: What should a contractor automate first?
+
+----
+
+Seo_title: What should a contractor automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI help for Oklahoma remodelers and GCs: faster bids, daily logs and change orders, and homeowner updates that write themselves.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You've got a bid that went quiet three weeks ago, a change order riding around on the dash of your truck, and a homeowner texting 'any update?' before you've had coffee. None of that is because you're bad at this job, it's because there's one of you and about six jobs' worth of paperwork.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For contractors, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Bids From Walkthrough Notes and Quiet-Bid Follow-Up
+
+**No more $40K bathroom bid that just sort of stopped texting back.**
+
+Where most contractors start: **Build it together.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Turn your walkthrough notes or a voice memo from the truck into a bid with line items, allowances, and exclusions, priced from your own rules (per square foot, per fixture, your markup on subs)
+- Ask the questions that change the number before you send it: permits needed, who's supplying finishes, is the homeowner living there during the job
+- Nudge bids that went quiet after 5 days and again at 14 ("Still thinking about the kitchen? Happy to walk through the numbers")
+- Keep every open, accepted, and lost bid in one list with the dollar amount so you know what's really in the pipeline
+- Answer the same five questions in your voice (how long will it take, how payments work, do you pull the permits, do you do insurance jobs, what's your service area)
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me turn walkthrough notes into a bid. I run a remodeling and general contracting business in [city], Oklahoma. Here are my notes or voice memo transcript: [paste notes]. Here's how I price: [per square foot rates, per fixture rates, markup on subs]. Build me a bid with line items, allowances, and exclusions in my usual format. Then list the questions I still need answered before I send this, like permits needed, who's supplying finishes, and whether the homeowner is living there during the job.
+
+**Build it together.** Build a bid workflow that turns your walkthrough notes into a priced bid using your own rules, tracks every open, accepted, and lost bid with the dollar amount, and flags what's changed. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send the 5-day and 14-day follow-up texts on its own once a bid goes quiet, no reminder from you needed. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Phone voice memo or notes, Buildertrend, JobTread, CoConstruct, Houzz Pro, or a Google Sheet, Email or text.
+
+## 2. Day's Photos Into Daily Logs, Change Orders, and Draw Requests
+
+**No more finding the change order on the dash of the truck two weeks after you ate the cost.**
+
+Where most contractors start: **Build it together.** Time back: about 5 hrs/week.
+
+What it takes care of:
+
+- Turn the day's job-site photos and a few sentences into a daily log per project: what got done, who was there, what's waiting on what
+- Draft a priced change order from a text or a photo of the paper one, and get it to the homeowner for a signature before the work happens, not after the invoice
+- Draft the draw request or progress invoice when a milestone hits (rough-in done, drywall up, cabinets in) so you're not building it from memory at month end
+- Confirm subs a few days out ("Tile still good for Thursday?") and flag anyone who hasn't answered, so you find out Tuesday instead of Thursday morning
+- Keep a running material and punch list per job from the daily notes, so the Lowe's run and the final walkthrough don't start from scratch
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me turn today's job site notes into a daily log. I run a remodeling and general contracting business. Here's what happened today: [paste notes or photo descriptions]. Write a daily log entry covering what got done, who was on site, and what's waiting on what. Then, using this change: [describe the change or paste a photo of the paper change order], draft a priced change order ready for the homeowner to sign. Also tell me if this milestone should trigger a draw request: [describe milestone, e.g., rough-in done, drywall up].
+
+**Build it together.** Build a job-by-job system that turns daily photos and notes into logs, priced change orders, and draw requests, and confirms subs a few days out. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Draft the daily log, change order, and draw request the moment your photos land, and text subs automatically to confirm they're still on for Thursday. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Phone camera (CompanyCam if you have it), Buildertrend, JobTread, CoConstruct, or a Google Sheet, QuickBooks, Text.
+
+## 3. Homeowner Updates, Reviews, and Project Posts
+
+**No more homeowner texting 'any update?' at 7 AM because they haven't heard from you since Monday.**
+
+Where most contractors start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Draft a Friday update for each active homeowner: what happened this week, what's next, and what you need from them ("pick the tile by Tuesday or we lose the slot")
+- Draft the inspection and permit reminders for the week (what's scheduled, what needs to be ready, who has to be there)
+- Ask for a Google review the week after the final walkthrough, with the link, in a message that sounds like you
+- Boil the reviews down to three piles: fix this, out of your control, brag about it. Draft replies to anything under four stars for you to send
+- Turn this month's before-and-after photos into 2-3 posts that name the neighborhood and the job, so posting doesn't start from a blank screen
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me write homeowner updates. I run a remodeling and general contracting business. Here's what happened this week on the [job name] project: [paste notes]. Draft a Friday update covering what happened, what's next, and what I need from the homeowner, like picking tile by a certain date. Then draft a review request text for a homeowner who had their final walkthrough this week. Finally, take these before-and-after photo details: [paste descriptions] and write 2 to 3 social posts naming the neighborhood and the job.
+
+**Build it together.** Build a saved template pulling your active job list into weekly homeowner updates, review requests, and ready-to-post before-and-after captions. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send the Friday update and review request to each homeowner automatically, timed to when the job actually needs it. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Text or email, Google Business Profile, Facebook, Instagram.
+
+## Run it on your own business
+
+The list above is written for a remodeler or general contractor in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Do I need Buildertrend or JobTread for any of this to work?'
+  answer: >
+    No. It helps if you already have one, but a Google Sheet does the job fine for tracking bids, logs, and draws. The point is having one place things live, not which software it is.
+-
+  question: 'How much time does this actually save a remodeler?'
+  answer: >
+    Based on the three tasks here, roughly 11 hours a week combined between bidding, daily logs and change orders, and homeowner updates. Your mileage depends on how many jobs you're running at once and how much of this you're already doing on your phone at 9 PM.
+-
+  question: 'Should I let AI send bids or change orders without me checking them first?'
+  answer: >
+    No. Anything with a dollar amount or a signature line should go through you before it goes to a homeowner. AI is good at drafting the number and the language fast, it's not the one standing behind the price.

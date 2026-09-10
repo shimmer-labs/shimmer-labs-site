@@ -65,5 +65,6 @@ $isSidecarVariant = $variant === 'sidecar';
         <p>You get three tasks, each with a do-it-yourself prompt, a build-it-together plan, and a hands-off option</p>
       </div>
     </div>
+    <p class="scanner-how-it-works__cta">Want to see what a typical shop in your trade should automate first? <a href="<?= url('automate-first') ?>">One page per trade, prompts included.</a></p>
   </div>
 </section>

@@ -1,0 +1,124 @@
+Title: What should a property manager automate first?
+
+----
+
+Seo_title: What should a property manager automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI tools for Oklahoma property managers: maintenance triage, lease renewal tracking, and review responses.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You already know the tenant who calls three times about the same leak, and the lease that quietly expires while you're dealing with someone else's emergency. None of it is hard, there's just too much of it to hold in your head while the phone keeps ringing.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For property managers, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Maintenance Request Triage
+
+**No more one-star reviews that start with 'I reported it three times.'**
+
+Where most property managers start: **Build it together.** Time back: about 5 hrs/week.
+
+What it takes care of:
+
+- Sort every incoming maintenance request by urgency: no heat, active leak, and lockout go to the top, a dripping faucet waits for the route
+- Reply to the tenant in minutes with what happens next and when, so 'nobody called me back' stops showing up in reviews
+- Draft the work order with unit, issue, access notes, and photos so the tech or vendor gets it in one message
+- Keep a running list of open tickets by age so the ones about to turn into a complaint get flagged first
+- Close the loop: a short 'did we fix it?' message after the ticket closes
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me triage maintenance requests for my rental properties in Oklahoma. Here is my list of open tickets: [paste ticket list with unit, issue, and date reported]. Sort them into three groups: emergency (no heat, active leak, lockout), urgent (within 48 hours), and routine. For each one, draft a short tenant reply saying what happens next and roughly when. Then draft a work order for [tech or vendor name] with unit number, issue, access notes, and any photos I describe. Flag any ticket that's been open longer than 5 days so it doesn't turn into a bad review.
+
+**Build it together.** Build a shared tracking sheet or portal view that flags aging tickets and drafts tenant replies and work orders as requests come in. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Sorts incoming maintenance requests by urgency, texts the tenant back within minutes, and has the work order drafted before you open the ticket. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Email or text, Tenant portal (AppFolio, Buildium, Rent Manager, or a form), Google Sheet.
+
+## 2. Lease Renewals and Turnover Calendar
+
+**No more finding out a lease expired last week because nobody was watching the dates.**
+
+Where most property managers start: **Build it together.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Flag every lease 90, 60, and 30 days out and draft the renewal offer in your voice
+- Turn move-out notices into a turnover checklist: inspection, cleaning, repairs, photos, relisting
+- Draft the move-in packet and the move-out instructions so they go out the same way every time
+- Keep owners posted with a short monthly note per property: occupancy, open tickets, upcoming renewals
+- Line up the rush: know in March which August student leases are turning so the summer isn't a fire drill
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I manage rental properties in Oklahoma and need help staying ahead of lease renewals and turnovers. Here is my lease list with end dates: [paste lease list]. Flag which ones hit the 90, 60, and 30 day marks from today, and draft a renewal offer for each in a friendly, direct tone. For any move-out notice I paste in: [paste notice], build a turnover checklist covering inspection, cleaning, repairs, photos, and relisting. Also draft a short monthly owner update template covering occupancy, open tickets, and upcoming renewals for [property name].
+
+**Build it together.** Set up a renewal and turnover calendar tied to your actual lease dates that drafts offers, checklists, and owner updates on its own. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Watches every lease date and sends out renewal offers, turnover checklists, and owner updates on schedule without anyone checking a calendar. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Property management software or a Google Sheet, Email, Google Calendar.
+
+## 3. Reviews and Tenant Messages
+
+**No more 3.4 stars because the only tenants who write reviews are the angry ones.**
+
+Where most property managers start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Boil the last year of Google reviews down to the three things tenants actually complain about, and the three they praise
+- Draft a calm, specific reply to every review under four stars, in your voice, that names the fix instead of arguing
+- Ask happy tenants for a review at the moments that work: after a fast repair, after move-in, at renewal
+- Turn the ten questions the office answers every day (parking, pets, laundry, deposit) into ready answers
+- Keep a monthly pulse: reviews in, average rating, what changed
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I manage rental properties in Oklahoma and want to get ahead of my online reviews. Here are my Google reviews from the last year: [paste reviews]. Summarize the three things tenants complain about most and the three things they praise. Draft a calm, specific reply to every review under four stars that names the actual fix instead of arguing. Then write three short scripts for asking happy tenants for a review: after a fast repair, after move-in, and at renewal. Also turn these common tenant questions into ready answers: [list of questions, like parking, pets, laundry, deposit].
+
+**Build it together.** Build a review response and request routine that pulls in new reviews and drops draft replies and ask-for-review moments into your workflow. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Watches your Google Business Profile for new reviews, drafts a reply the same day, and sends review requests when tenants are happiest. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Google Business Profile, Facebook, Email or text.
+
+## Run it on your own business
+
+The list above is written for a property manager in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Do I need new software, or can I use AppFolio, Buildium, or a Google Sheet I already have?'
+  answer: >
+    Most of this works with whatever you're already using. If you're on a property management platform, we build around it. If you're running things off a spreadsheet and text messages, that works too, we just set up the process to match what you've got instead of asking you to switch systems.
+-
+  question: 'How much time does this actually save a property manager?'
+  answer: >
+    Across maintenance triage, lease renewals, and review responses, it works out to roughly 11 hours a week. That's mostly time spent chasing tickets, checking lease dates, and writing the same replies over and over, which is exactly the stuff that's easiest to hand off.
+-
+  question: 'What parts of property management should I not hand over to AI?'
+  answer: >
+    Anything that needs a judgment call, like deciding whether to renew a difficult tenant, handling an eviction conversation, or diagnosing whether a repair is really an emergency. AI can draft the message and organize the information, but the actual decision and any hard conversation still needs to come from you.

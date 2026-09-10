@@ -1,0 +1,124 @@
+Title: What should a restaurant or bakery automate first?
+
+----
+
+Seo_title: What should a restaurant or bakery automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI tools for Oklahoma restaurants, bakeries, and food trucks: DM answers, catering quotes, and weekly review or specials posts.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: You didn't get into baking or cooking to spend your morning typing your own hours into Instagram DMs for the fortieth time. Between the lunch rush, the weekend catering order, and the pile of unread reviews, the small stuff eats the hours you needed for prep.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For restaurants and bakeries, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Same Five Questions in the DMs
+
+**No more answering 'what time do you close?' forty times while the line is out the door.**
+
+Where most restaurants and bakeries start: **Have it built and run.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Answer hours, location, parking, pricing, 'do you do gluten free', and 'where are you parked tonight' in Instagram and Facebook DMs within a minute, from ten lines of business info you keep current
+- Point people to the online order or menu link instead of typing it out for the ninth time during the lunch rush
+- Take a one-line text from you ('sold out of kolaches', 'truck at Boomer Lake till 8') and update the answers for the day
+- Hand anything with a complaint, a refund, an allergy question, or a party over 20 straight to your phone. Those stay with you
+- Leave a short list each morning of what people asked yesterday that the ten lines could not answer
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me draft quick-copy answers for my [bakery/food truck/restaurant]'s Instagram and Facebook DMs. Here are my ten lines of current info: [paste hours, location, parking, pricing, gluten free info, tonight's spot, order link]. Write short, friendly answers in my voice to the questions I get most: hours, location, parking, pricing, gluten free, and where I'm parked tonight. Keep each answer under two sentences and end with the online order link where it fits. Also flag which of my ten lines are missing information I should add.
+
+**Build it together.** Build a DM auto-responder that pulls from your ten lines of business info so it answers instantly and flags anything it can't handle. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Answers the DMs itself around the clock, updates the day's answers from your one-line text, and routes complaints or big parties straight to your phone. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Instagram and Facebook DMs, Google Business Profile messages, Text, Square or Toast online ordering link.
+
+## 2. Catering and Custom Orders to Quote
+
+**No more finding the 'can you do our wedding?' message a week later, buried under sixty emoji reactions.**
+
+Where most restaurants and bakeries start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Turn a DM, email, or form message ('tacos for 40 next Saturday', 'two-tier cake, October 12') into a quote from your actual catering menu and prices
+- Ask the three questions that change the price before you quote: headcount, date and time, and drop-off or staffed
+- Reply the same day with the quote, what's included, the deposit, and how to lock the date, in your voice
+- Nudge quotes that went quiet after 3 days ('Still want us for the 14th? We're holding the date until Friday')
+- Keep every open, booked, and lost catering job in one list so you know what's coming and where the Saturday prep sheet starts
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a [bakery/restaurant/food truck] in [Stillwater, OK]. Here is my catering menu and pricing: [paste menu and prices]. Here is a message I got: [paste the DM, email, or form message]. Write a same-day quote in my voice that includes what's included, the headcount and date it's based on, whether it's drop-off or staffed, and the deposit needed to hold the date. If headcount, date, or drop-off versus staffed is missing, add a short friendly line asking me to confirm before I send it. Keep it phone-readable.
+
+**Build it together.** Build a catering quote workflow tied to your actual menu and price sheet so every quote goes out the same day, in your voice. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Tracks every open, booked, and lost catering job in one list and nudges quotes that go quiet after three days. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Instagram DMs, email, or website form, Your catering menu and price sheet, Square, Toast, or a Google Sheet.
+
+## 3. Review Roundup and the Weekly Specials Post
+
+**No more 30 unread reviews and a Sunday night spent staring at a blank caption box.**
+
+Where most restaurants and bakeries start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Boil the last 30 Google reviews down to three lists: fix this week, out of your control, and brag about
+- Draft a short reply to every review that deserves one, in your voice, and skip the ones about refunds so you can handle those yourself
+- Turn a phone photo and one sentence ('kolaches back Friday', 'pierogi special all week') into the Instagram and Facebook post, caption and all
+- Ask for a Google review in the thank-you text after each catering job, with the link, while they're still full
+- Keep a running list of the last month's posts so you stop reposting the same brisket picture
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me handle Google reviews and social posts for my [bakery/restaurant/food truck]. Here are my last 30 Google reviews: [paste reviews]. Sort them into three lists: fix this week, out of my control, and brag about. Draft short replies in my voice for the ones that deserve one, and skip any refund complaints. Then turn this into an Instagram and Facebook caption: [paste one sentence and describe the photo]. Keep the caption short, plain, and true to how I actually talk, not like an ad.
+
+**Build it together.** Set up a saved review and posting workflow so the sorting, replies, and caption drafts follow the same steps every week. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Pulls new reviews and drafts replies on its own, and turns your daily texted photo and sentence into a ready-to-post caption. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Google Business Profile, Instagram, Facebook.
+
+## Run it on your own business
+
+The list above is written for a restaurant, bakery, or food truck in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Can this work with the Instagram and Facebook DMs I already use, or do I need new software?'
+  answer: >
+    It plugs into what you already have: Instagram and Facebook DMs, Google Business Profile messages, text, and your Square or Toast order link. There's no new app for you or your staff to learn, and your catering menu and price sheet stay exactly where they are.
+-
+  question: 'How much time does this actually save a small bakery or food truck?'
+  answer: >
+    Based on the three tasks above, it's roughly 9 hours a week combined: about 4 hours from the DM answers, 3 from catering quotes, and 2 from reviews and posts. For a shop with 1 to 10 people, that's usually a full shift back.
+-
+  question: 'What should I keep handling myself instead of automating?'
+  answer: >
+    Anything with a complaint, a refund, an allergy question, or a party over 20 should stay with you, along with any review that needs a real apology. Automation is for the repetitive stuff so you have the time and headspace for the parts that actually need you.
