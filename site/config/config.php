@@ -629,6 +629,15 @@ return [
         exit;
       }
     ],
+    // Old project slugs that never became case studies (the old catch-all
+    // sent them to /case-studies/<slug>, which 404s). Land on the index.
+    [
+      'pattern' => 'case-studies/(amazon-price-tracker|apify-gov-monitor|apify-contracts|off-the-apps-ok|shopify-store-app|taddy-api-nodes|n8n-taddy-api|_n8n-taddy-api|curbcheck|velvet-fudge|ottomate)',
+      'action'  => function() {
+        header('Location: ' . url('case-studies'), true, 301);
+        exit;
+      }
+    ],
     // Case study slug renames
     [
       'pattern' => 'case-studies/n8n_taddy_api_nodes',
