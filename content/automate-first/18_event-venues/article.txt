@@ -1,0 +1,124 @@
+Title: What should an event venue automate first?
+
+----
+
+Seo_title: What should an event venue automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: AI help for Oklahoma event venues and party rental companies: fast quotes, automated contracts and deposits, and weekend photo posts.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: Someone texts at midnight asking if a Saturday in June is open, and you answer from bed, wrong. Then the head count grows by 40 the week of, the balance never got paid, and Sunday night you're hunting for something to post after stacking 200 chairs.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For venues and rental companies, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Is That Date Open? Inquiry to Quote
+
+**No more 'is June 14 open?' answered from bed at 11 PM, wrong.**
+
+Where most venues and rental companies start: **Build it together.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Check the date against your calendar before replying, so 'is October 11 open?' gets a yes, a no, or 'that's a peak Saturday, here's how to hold it' instead of sitting until morning
+- Answer the same five questions (capacity, alcohol, decor, hours, parking) in your voice, from your real policy sheet, not a 'give us a call' that starts another round
+- Ask the two things that change the price before you quote: the date and the head count (or for rentals, the address and what's the ground like)
+- Draft the quote from your actual packages and add-ons (chairs, arch, extra hour, generator, delivery fee) and nudge once if it goes quiet after 3 days
+- Keep every inquiry (open, quoted, held, booked, passed) in one list, then hand the real conversation to you. The tour stays yours
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run an event venue in [city], Oklahoma. Someone is asking if [date] is open for [event type] with [head count] guests. My open dates this month are: [paste open dates]. My policy sheet says: [paste capacity, alcohol, decor, hours, parking rules]. My pricing packages are: [paste packages and add-ons]. Write a reply that answers whether the date is open, answers any of the five common questions they asked, and if the date is booked, offer to hold or suggest alternate dates. Keep it in a warm, direct tone, no exclamation points, sound like a real person texting back, not a form letter.
+
+**Build it together.** Build a shared inquiry tracker connected to your calendar and policy sheet so every question gets a same-day, accurate answer. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Answer date checks and draft quotes the moment an inquiry comes in, day or night, using your real calendar and price sheet. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Google Calendar, Text, email, and Instagram/Facebook DMs, HoneyBook, Planning Pod, or a Google Sheet.
+
+## 2. Contracts, Deposits, and the Week-Of Checklist
+
+**No more finding out Thursday that the head count grew by 40 and the balance never got paid.**
+
+Where most venues and rental companies start: **Have it built and run.** Time back: about 5 hrs/week.
+
+What it takes care of:
+
+- Send the contract and deposit link the minute they say yes, and tell you when it's signed and paid (and when it isn't, a week later)
+- Chase the balance 30 days out, once, politely, so nobody is settling up at the door
+- Ask for the final count, the timeline, and the vendor list 10 days out, and flag it to you the day it doesn't come
+- Confirm the delivery window and address the day before, and put setup and teardown times on the crew's sheet (for venues: open, vendor load-in, last song, out by)
+- When the forecast turns, send your weather policy and the rain plan before they ask, and after the walkthrough, send the damage-deposit note so you're not the one starting that conversation
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a [venue/rental company] in [city], Oklahoma. A client just booked [event] for [date]. Draft the contract-ready message and deposit request I should send now, in my voice, including the deposit amount and due date. Also draft the 30-days-out balance reminder, the 10-days-out request for final head count, timeline, and vendor list, and the day-before delivery confirmation. Use these details: [package, price, event date, address, contact name]. Keep each message short, friendly, and specific, not generic.
+
+**Build it together.** Build a scheduled reminder system tied to your calendar and Square account so deposit, balance, and week-of messages fire on time. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Track every contract and deposit automatically, chase unpaid balances and missing details on schedule, and flag anything overdue the day it happens. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: HoneyBook, Planning Pod, or a Google Sheet, Square for deposits and the balance, Google Calendar, Text and email.
+
+## 3. Photos, Posts, and Review Requests
+
+**No more Sunday night hunting for something to post after you just spent it stacking chairs.**
+
+Where most venues and rental companies start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Turn the weekend's phone photos (the arch at golden hour, the slide mid-jump, the tent before the tables went in) into 2-3 posts in your voice, with the couple, the planner, or the photographer tagged once they've said it's fine
+- Ask for a Google review the Monday after each event, with the link, in a message that sounds like you
+- Draft the seasonal push before the season: spring and fall wedding dates in January, graduation parties in March, Fourth of July and back-to-school in May, so yours goes out first
+- Keep a folder of your best shots by season and setup so posting never starts from a blank screen
+- Answer the comments and DMs that matter ('do you allow outside catering?', 'what's the price for a Saturday?') and flag any review under four stars the day it lands so you can reply personally
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run an event venue or party rental company in [city], Oklahoma. Here's what happened this weekend: [describe setup, event type, standout photo moments]. Write 2-3 Instagram/Facebook captions in a warm, plain voice, no hashtag spam, that could go with these photos. Also draft a short Google review request text to send the couple or client on Monday, with a placeholder for the review link. Keep it sounding like a real person who just spent the weekend setting up and tearing down, not a marketing team.
+
+**Build it together.** Build a seasonal content calendar and photo folder so posts are drafted and ready before the next holiday rush. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Post the season's photos, send the Google review request, and flag any review under four stars automatically, without you touching your phone. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Instagram, Facebook, Google Business Profile.
+
+## Run it on your own business
+
+The list above is written for an event venue or party rental company in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Do I have to give up HoneyBook or Planning Pod for this to work?'
+  answer: >
+    No. Everything here plugs into what you already use, whether that's HoneyBook, Planning Pod, a plain Google Sheet, Google Calendar, or Square for payments. We build around your existing setup, not instead of it.
+-
+  question: 'How much time does this actually save?'
+  answer: >
+    Based on the tasks above, it adds up to roughly 11 hours a week across quoting, contracts, and social media. That's time back for sales calls, site walkthroughs, or getting home before dark on a Saturday.
+-
+  question: 'Should AI handle site tours or price negotiations?'
+  answer: >
+    No. Keep the actual tour, the walkthrough, and any real back and forth on price with you, that's where people decide to book. AI is for the repetitive stuff: answering the same five questions, chasing a signature, or posting the photos you already took.

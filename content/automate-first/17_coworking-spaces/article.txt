@@ -1,0 +1,124 @@
+Title: What should a coworking space automate first?
+
+----
+
+Seo_title: What should a coworking space automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+
+----
+
+Meta_description: How Oklahoma coworking spaces use AI for tour follow-up, room bookings and renewals, and monthly newsletters and reviews.
+
+----
+
+Eyebrow: Automate first
+
+----
+
+Date: 2026-09-10
+
+----
+
+Intro: A great tour on Tuesday, radio silence by Wednesday, and the lead signs with the space down the street. Meanwhile two groups are standing in the hall holding confirmations for the same conference room, and the member newsletter is three weeks late.
+
+----
+
+Text:
+
+## Start where you groan
+
+We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For coworking spaces, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
+
+## 1. Tour Requests and Follow-Up
+
+**No more losing a member because they toured on Tuesday and heard from you the following Wednesday.**
+
+Where most coworking spaces start: **Build it together.** Time back: about 3 hrs/week.
+
+What it takes care of:
+
+- Reply to every tour request the same day with two open slots, parking directions, and which door to come to, so nobody wanders the building looking for you
+- Confirm the tour the day before and send the 'we're on the second floor, coffee's on' text the morning of
+- Follow up the day after the tour with the plan they asked about and the link to sign up, then once more a week later if they went quiet ('Still thinking about the dedicated desk?')
+- Answer the same five questions (24/7 access, can I bring a client, mail and package handling, month-to-month or contract, what's a day pass) without retyping them
+- Keep every tour in one list: requested, toured, signed, or gone cold, with the last thing you said to them
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me manage tour requests for my coworking space in [city]. I'll paste in a tour request or a list of open time slots. Draft a same-day reply with two available slots, parking directions, and which door to enter. Also draft a day-before confirmation text, a morning-of text, a day-after follow-up with [plan name] and signup link, and a one-week-later check-in if they've gone quiet. Keep the tone friendly and plain, like a person, not a hotel. Also draft short answers to these five questions: 24/7 access, bringing a client, mail and package handling, month-to-month vs contract, and what a day pass includes.
+
+**Build it together.** Build a shared tour tracker that logs every lead as requested, toured, signed, or gone cold, with the last thing you said to them, so nobody slips through. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Send the same-day reply, both confirmation texts, and the two follow-ups automatically the moment a tour request comes in, and update the tracker without you touching it. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Email or text, Website contact form, Nexudus, OfficeRnD, Optix, or a Google Sheet.
+
+## 2. Renewals, Room Bookings, and Day Passes
+
+**No more two groups standing in the hall at 2 PM both holding a confirmation for the same conference room.**
+
+Where most coworking spaces start: **Have it built and run.** Time back: about 4 hrs/week.
+
+What it takes care of:
+
+- Confirm every meeting-room and event-space booking the moment it lands, with the door code, WiFi, setup notes, and the cancellation cutoff, and put it on the calendar so two people never get the same room
+- Answer after-hours booking requests (the 7 AM client meeting somebody asks about at 10 PM) instead of making them wait until you open
+- Flag memberships 30 days out and draft the renewal note in your voice, with the plan they're on and what changes if they upgrade or downgrade
+- Catch failed cards and unpaid invoices the day they bounce and send the polite 'your card didn't go through' note before it turns into an awkward conversation at the coffee pot
+- Turn day-pass walk-ins into a name, an email, and a follow-up a week later asking if they want to make it a habit
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> I run a coworking space in [city] and need help handling a booking or renewal by hand today. I'll paste in a room booking request, a membership renewal date, or a bounced payment notice. Draft a confirmation with the door code, WiFi, setup notes, and cancellation cutoff for a booking. Draft a renewal note in my voice for [member name] on [plan], noting what changes if they upgrade or downgrade. Draft a polite 'your card didn't go through' message for a failed payment. Keep everything short and friendly, no corporate tone.
+
+**Build it together.** Set up a shared calendar and booking template so every confirmation, renewal flag, and failed-payment note goes out the same way every time. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Watch the booking system and calendar around the clock, sending confirmations, renewal notes, and failed-card alerts the moment they're due, even at 2 AM. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Nexudus, OfficeRnD, Optix, or a Google Sheet, Google Calendar, Square, Email or text.
+
+## 3. Member Newsletter, Events, and Reviews
+
+**No more 4.1 stars because the only member who wrote a review is the one who hit the WiFi outage during a Zoom call.**
+
+Where most coworking spaces start: **Do it yourself this week.** Time back: about 2 hrs/week.
+
+What it takes care of:
+
+- Turn the month's calendar (lunch and learn, happy hour, the new member who does taxes) into a short member newsletter that sounds like you, not a hotel
+- Draft the Instagram and Facebook posts for each event from a photo and two sentences, with the date, the room, and how to RSVP
+- Boil the month's Google reviews down to three piles: fix this (WiFi dropped, coffee ran out, too loud), out of your control, brag about
+- Draft a calm reply to any review under four stars that names the fix instead of arguing. You read it, you send it
+- Ask for a Google review at the moments that work: two weeks after signup, after a good event, at renewal, in a message with the link
+
+**Do it yourself this week.** Paste this into ChatGPT or Claude:
+
+> You are helping me write this month's coworking space newsletter and social posts for [city]. I'll paste in this month's event list (dates, rooms, short descriptions) and two sentences about each one. Draft a short newsletter that sounds like a person running the space, not a hotel. Then draft matching Instagram and Facebook posts with the date, room, and RSVP link. Separately, I'll paste in this month's Google reviews. Sort them into three piles: fix this, out of our control, and brag about. Draft a calm reply to any review under four stars that names the fix, not an argument. I'll read and send everything myself.
+
+**Build it together.** Build a simple monthly template that pulls your event list and reviews straight into the newsletter, social posts, and review replies in one pass. That is one or two <a href="/services/concierge">AI Concierge</a> sessions.
+
+**Have it built and run.** Pull the month's events and reviews on its own and draft the newsletter, social posts, and review replies for you to approve, no digging required. That is <a href="/services/sidecar">Sidecar</a>, built for you and hosted by us.
+
+Works with: Email, Instagram, Facebook, Google Business Profile.
+
+## Run it on your own business
+
+The list above is written for a coworking space in general. Yours has a name, a price list, and a set of tools, and the tasks read differently once those are in. Put your website into the <a href="/services/concierge#scanner">scanner</a> and you get the same three tasks written for your shop, prompts included, in about 20 seconds. No website? It will ask you to describe the business instead.
+
+Then bring the one that made you groan to <a href="/office-hours">free AI office hours</a>, Tuesdays and Thursdays 2 to 4 PM at WorkIT in Stillwater, and we will get it started on the spot. If you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: 'Do I need Nexudus or OfficeRnD for this, or can I just use a Google Sheet?'
+  answer: >
+    A Google Sheet works fine for a space with one location and a small team, and a lot of the built-out versions of these tasks can run right off of it. If you're already paying for Nexudus, OfficeRnD, or Optix, we just connect to what you have instead of adding another system.
+-
+  question: 'How much time does this actually save for a space our size?'
+  answer: >
+    Across tour follow-up, bookings and renewals, and the newsletter and reviews, it works out to roughly 9 hours a week. That's not hours you notice disappearing, it's the texts and drafts you'd otherwise write one at a time between showing people around.
+-
+  question: 'What shouldn''t I hand over to AI at a coworking space?'
+  answer: >
+    Anything that's really a judgment call, a member complaint in person, a rent negotiation, or deciding whether to ask someone to leave, still needs you. AI can draft the message or the reply, but the awkward conversation itself is yours.
