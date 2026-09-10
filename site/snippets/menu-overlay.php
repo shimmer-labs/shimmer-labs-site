@@ -27,7 +27,7 @@
             <a href="<?= url('services/concierge') ?>">
               <span class="menu-link-icon">🤝</span>
               <span class="menu-link-title">AI Concierge</span>
-              <span class="menu-link-price">$1,000/mo · intro $750</span>
+              <span class="menu-link-price">from $750/mo · by team size</span>
             </a>
           </li>
           <li>
