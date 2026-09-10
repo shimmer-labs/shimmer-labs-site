@@ -514,6 +514,55 @@ if (in_array($page->intendedTemplate()->name(), ['trade', 'landing', 'article'])
 }
 
 // ─────────────────────────────────────────────────────────────
+// VideoObject for pages that embed or host a video. Google only counts a
+// video as indexed when the page carries this. Durations and upload dates
+// for hosted embeds are pinned here (Vimeo/YouTube oEmbed, Sep 10 2026).
+// ─────────────────────────────────────────────────────────────
+$videoMeta = [
+  'vimeo:1188212057' => ['name' => 'Anna Moore, Sweat Yoga & Fitness, on the membership sidecar', 'duration' => 'PT59S', 'uploadDate' => '2026-04-30T15:31:10-05:00',
+    'thumbnail' => 'https://i.vimeocdn.com/video/2152417916-ea257fcdbad3261cb565a1e44d14859d1ac7e6bb007a47fff0d7dc1561fb5803-d_1280x720'],
+  'youtube:31U-SAh8NLM' => ['name' => 'Sample event recap video: ASC Conference intro', 'duration' => 'PT3M51S', 'uploadDate' => '2026-04-14T13:24:10-07:00',
+    'thumbnail' => 'https://i.ytimg.com/vi/31U-SAh8NLM/hqdefault.jpg'],
+];
+$videos = [];
+$tpl = $page->intendedTemplate()->name();
+$videoUrl = $page->video_url()->isNotEmpty() ? $page->video_url()->value() : ($tpl === 'event-video' ? 'https://www.youtube.com/embed/31U-SAh8NLM?rel=0' : '');
+if ($videoUrl !== '') {
+  $key = null;
+  if (preg_match('~vimeo\.com/video/(\d+)~', $videoUrl, $m)) { $key = 'vimeo:' . $m[1]; $embed = 'https://player.vimeo.com/video/' . $m[1]; }
+  elseif (preg_match('~youtube\.com/embed/([\w-]+)~', $videoUrl, $m)) { $key = 'youtube:' . $m[1]; $embed = 'https://www.youtube.com/embed/' . $m[1]; }
+  if ($key && isset($videoMeta[$key])) {
+    $vm = $videoMeta[$key];
+    $videos[] = [
+      '@context' => 'https://schema.org',
+      '@type' => 'VideoObject',
+      'name' => $vm['name'],
+      'description' => $page->summary()->or($page->meta_description())->excerpt(300)->value(),
+      'thumbnailUrl' => [$vm['thumbnail']],
+      'uploadDate' => $vm['uploadDate'],
+      'duration' => $vm['duration'],
+      'embedUrl' => $embed,
+      'publisher' => ['@id' => $site->url() . '#organization'],
+    ];
+  }
+}
+if ($page->demo_video()->isNotEmpty() && ($vf = $page->demo_video()->toFile())) {
+  $thumb = $page->images()->findBy('name', 'eventsnag-home-screen') ?? $page->images()->first();
+  $videos[] = [
+    '@context' => 'https://schema.org',
+    '@type' => 'VideoObject',
+    'name' => $page->title()->value() . ' demo',
+    'description' => $page->summary()->or($page->meta_description())->excerpt(300)->value(),
+    'thumbnailUrl' => $thumb ? [$thumb->url()] : [],
+    'uploadDate' => date('c', $vf->modified()),
+    'duration' => 'PT32S',
+    'contentUrl' => $vf->url(),
+    'publisher' => ['@id' => $site->url() . '#organization'],
+  ];
+}
+foreach ($videos as $v) { $schema[] = $v; }
+
+// ─────────────────────────────────────────────────────────────
 // Emit
 // ─────────────────────────────────────────────────────────────
 foreach ($schema as $item):
