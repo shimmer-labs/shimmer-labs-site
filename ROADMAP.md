@@ -83,16 +83,16 @@ Shipped Sep 7-9: legacy 404 redirects, Review schema removed, AI Concierge price
 
 ### Next up, in order of payoff
 - [x] **16 industry pages for SEO/AEO** (shipped Sep 10, /automate-first) — "What should a plumber in Oklahoma automate first?" generated from the tuned templates: three tasks, the copy-paste prompt, ladder, FAQPage schema, link to /scan. One per template, same voice as the Sep 7 notes.
-- [ ] **Get scans flowing** — 27 scans in six months, half ours. GBP post + personal FB/LinkedIn post ("put your website in, see what to take off your plate"), human-sourced per the Sep 1 rule. Watch GA4 `scan_started` vs `scan_completed` vs `scan_failed` and `scan_next_step`.
+- [ ] **Get scans flowing** — posts drafted in references/sep-2026-handoffs/scan-promo-posts.md. 27 scans in six months, half ours. GBP post + personal FB/LinkedIn post ("put your website in, see what to take off your plate"), human-sourced per the Sep 1 rule. Watch GA4 `scan_started` vs `scan_completed` vs `scan_failed` and `scan_next_step`.
 - [ ] **Search Console housekeeping** — click Validate Fix on the Not found (404) and Review snippets reports; export the 404 CSV (Pages report > Not found > Export) and drop it in the repo root for redirect mapping. Request-indexing quota is ~10/day.
-- [ ] **Old pricing off-site** — Google Ads copy still says the flat $1,000/mo concierge. Sweep. (Brand kit doc in Desktop/Presentations still carries $2,000/$500 Sidecar anchor; site says from $1,000 + $250/mo. llms.txt updated Sep 10.)
-- [ ] **GHL nurture on the `concierge-intake` tag** — scans now feed the intake, so the drip matters more. Also delete the dead CALENDLY_URL var on Vercel.
-- [ ] **Two more scanner templates** — coworking spaces (tour → follow-up → renewal → room booking) and event rentals/venues (date check, deposits, weather policy). Both common locally.
-- [ ] **Velvet Fudge** — velvetfudgevinyl.com is a dead "store unavailable" Shopify page. The Shopify Partners lead is still open; reach out.
+- [ ] **Old pricing off-site** — Google Ads copy still says the flat $1,000/mo concierge. Replacement copy in references/sep-2026-handoffs/google-ads-copy.md (the Ads UI would not render for the browser tool, so it is a paste job). (Brand kit doc in Desktop/Presentations still carries $2,000/$500 Sidecar anchor; site says from $1,000 + $250/mo. llms.txt updated Sep 10.)
+- [ ] **GHL nurture on the `concierge-intake` tag** — 4-email sequence drafted in references/sep-2026-handoffs/ghl-concierge-nurture.md; build in the GHL UI (PIT has no workflows scope). Also delete the dead CALENDLY_URL var on Vercel.
+- [x] **Two more scanner templates** (shipped Sep 10: coworking, event_venues; 19 total, pages at /automate-first/coworking-spaces and /event-venues)
+- [ ] **Velvet Fudge** — velvetfudgevinyl.com is a dead "store unavailable" Shopify page. Outreach message in references/sep-2026-handoffs/velvet-fudge-outreach.md.
 - [ ] **No-website audience** — many salons/massage/trainers only have Acuity/Square/Linktree. That's who the "describe your business" box is for; say so in the office-hours pitch.
 - [ ] **Vlad on Leadership episode push** (Sep 10) — comment on Vlad's share, own LinkedIn post, FB personal + page + Main Street AI group, quote card. Copy in `references/podcast-vlad/`.
 - [ ] **Re-index the industry pages** — 10 links handed over Sep 10 (index + 9 trades); the other 7 next day. Pull fresh links via the API, never hand-built.
-- [ ] **Vary the page intros** — several /automate-first intros open with "You know the drill" / "You know the feeling"; hand-edit a few so they don't read as one template.
+- [x] **Vary the page intros** (done Sep 10, ten of eighteen hand-rewritten)
 
 ### Carry-forward from Aug 25 (still open)
 - [ ] Buy automatepaperwork.com; landscaper permission for the named case study; postmortem asks (roofer/HVAC church prospect, Heritage Petroleum); vendor-show calendar; Loom-style sales video behind a QR; sweep Desktop sell sheets with $5k-era pricing; watch trade-page traffic monthly (search is a 90-day bet, not a two-week one).
