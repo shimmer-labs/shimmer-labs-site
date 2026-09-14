@@ -65,6 +65,14 @@ $isSidecarVariant = $variant === 'sidecar';
         <p>You get three tasks, each with a do-it-yourself prompt, a build-it-together plan, and a hands-off option</p>
       </div>
     </div>
-    <p class="scanner-how-it-works__cta">Want to see what a typical shop in your trade should automate first? <a href="<?= url('automate-first') ?>">One page per trade, prompts included.</a></p>
+    <p class="scanner-how-it-works__cta">Or start with what a typical shop in your trade should automate first:</p>
+    <?php if ($auto = page('automate-first')): ?>
+    <ul class="trade-chips">
+      <?php foreach ($auto->children()->listed() as $t): ?>
+        <li><a href="<?= $t->url() ?>"><?= html(preg_replace('/^What should (an? |a small )?(.*?) automate first\?$/i', '$2', $t->title()->value())) ?></a></li>
+      <?php endforeach ?>
+      <li><a href="<?= $auto->url() ?>" class="trade-chips__all">All trades &rarr;</a></li>
+    </ul>
+    <?php endif ?>
   </div>
 </section>

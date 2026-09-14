@@ -46,6 +46,8 @@
   <?php endif ?>
 </main>
 
+<?php snippet('related-links') ?>
+
 <?php snippet('scanner-inline') ?>
 
 <?php if ($page->cta_type()->toString() === 'intake'): ?>

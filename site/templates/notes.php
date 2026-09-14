@@ -22,6 +22,11 @@
             </li>
           <?php endforeach ?>
         </ul>
+        <?php if ($page->slug() === 'notes' && ($a = page('automate-first'))): ?>
+          <p class="notes-crosslink">Looking for your trade? <a href="<?= $a->url() ?>">What should you automate first?</a> has one page per trade, prompts included.</p>
+        <?php elseif ($page->slug() === 'automate-first' && ($n = page('notes'))): ?>
+          <p class="notes-crosslink">Want the math behind these? The <a href="<?= $n->url() ?>">notes</a> cover cost per employee, hours saved, and why most AI pilots stall.</p>
+        <?php endif ?>
       </div>
     </div>
   </section>

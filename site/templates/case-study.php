@@ -159,6 +159,8 @@
   </article>
 </main>
 
+<?php snippet('related-links') ?>
+
 <?php snippet('scanner-inline') ?>
 
 <?php snippet('footer') ?>

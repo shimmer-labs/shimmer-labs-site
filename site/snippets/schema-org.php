@@ -514,6 +514,22 @@ if (in_array($page->intendedTemplate()->name(), ['trade', 'landing', 'article'])
 }
 
 // ─────────────────────────────────────────────────────────────
+// BreadcrumbList for every non-home page (Home > Section > Page)
+// ─────────────────────────────────────────────────────────────
+if (!$page->isHomePage()) {
+  $crumbs = [['name' => 'Home', 'item' => $site->url()]];
+  foreach ($page->parents()->flip() as $ancestor) {
+    $crumbs[] = ['name' => $ancestor->title()->value(), 'item' => $ancestor->url()];
+  }
+  $crumbs[] = ['name' => $page->title()->value(), 'item' => $page->url()];
+  $schema[] = [
+    '@context' => 'https://schema.org',
+    '@type' => 'BreadcrumbList',
+    'itemListElement' => array_map(fn($c, $i) => ['@type' => 'ListItem', 'position' => $i + 1, 'name' => $c['name'], 'item' => $c['item']], $crumbs, array_keys($crumbs)),
+  ];
+}
+
+// ─────────────────────────────────────────────────────────────
 // VideoObject for pages that embed or host a video. Google only counts a
 // video as indexed when the page carries this. Durations and upload dates
 // for hosted embeds are pinned here (Vimeo/YouTube oEmbed, Sep 10 2026).
