@@ -33,6 +33,9 @@ return [
       CURLOPT_TIMEOUT        => 60,
       CURLOPT_HTTPHEADER     => [
         'Content-Type: application/json',
+        // Vercel rewrites X-Forwarded-For to this server's IP, so the visitor
+        // IP travels in its own header for the scanner's rate limiter.
+        'X-Visitor-IP: ' . trim(explode(',', $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? '')[0]),
         'X-Forwarded-For: ' . ($_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? ''),
       ],
     ];
