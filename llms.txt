@@ -41,6 +41,7 @@ Three tasks per trade, each with a copy-paste prompt (do it yourself), a build-i
 - [Do I need new software to automate my paperwork?](https://shimmerlabs.co/notes/automate-without-new-software)
 - [How do I stop re-explaining everything to my AI? (use projects)](https://shimmerlabs.co/notes/stop-re-explaining-to-ai)
 - [Can AI build my employee schedule?](https://shimmerlabs.co/notes/ai-employee-schedule)
+- [What did the mayor say at Stillwater's 2026 State of the City?](https://shimmerlabs.co/notes/stillwater-state-of-the-city-2026)
 - [What should I delegate to AI?](https://shimmerlabs.co/notes/ai-what-to-delegate)
 - [How do I spot AI scams?](https://shimmerlabs.co/notes/spot-ai-scams)
 - [What is an AI concierge?](https://shimmerlabs.co/notes/what-is-an-ai-concierge)
