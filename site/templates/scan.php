@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header', ['noindex' => true]) ?>
 
 <style>
   .scan-results {

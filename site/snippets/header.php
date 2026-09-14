@@ -72,6 +72,7 @@
 
   <!-- Meta Description -->
   <meta name="description" content="<?= $metaDescription ?>">
+  <?php if (!empty($noindex)): ?><meta name="robots" content="noindex, follow"><?php endif ?>
 
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:type" content="<?= $ogType ?>">

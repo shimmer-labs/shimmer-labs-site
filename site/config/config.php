@@ -719,7 +719,6 @@ return [
           'ai-agents-guide',
           'ai-security-business',
           'ai-security-education',
-          'scan',
           'automate-first',
           'landscapers',
           'plumbers',

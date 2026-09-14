@@ -94,5 +94,8 @@ Shipped Sep 7-9: legacy 404 redirects, Review schema removed, AI Concierge price
 - [ ] **Re-index the industry pages** — 10 links handed over Sep 10 (index + 9 trades); the other 7 next day. Pull fresh links via the API, never hand-built.
 - [x] **Vary the page intros** (done Sep 10, ten of eighteen hand-rewritten)
 
+- [x] **Internal linking pass** (Sep 14) — related-links blocks, trade chips, breadcrumbs. Re-run the link graph after adding sections; nothing important should sit at 0 in-body inbound links (still at 0 by design: /comparison, /work, /sbu, /event-video, /business-at-lunch).
+- [ ] **Re-request** cleaning-companies (never crawled), coworking-spaces (crawled, not indexed), paidly (still on the Aug 30 copy), event-video, eventsnag, office-hours.
+
 ### Carry-forward from Aug 25 (still open)
 - [ ] Buy automatepaperwork.com; landscaper permission for the named case study; postmortem asks (roofer/HVAC church prospect, Heritage Petroleum); vendor-show calendar; Loom-style sales video behind a QR; sweep Desktop sell sheets with $5k-era pricing; watch trade-page traffic monthly (search is a 90-day bet, not a two-week one).
