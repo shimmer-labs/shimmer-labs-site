@@ -1,0 +1,106 @@
+Title: AI Consultant in Stillwater, Oklahoma
+
+----
+
+Seo_title: AI Consultant in Stillwater, Oklahoma: Local, In Person, Free Office Hours
+
+----
+
+Meta_description: Shimmer Labs is Stillwater's local AI consultant. Free AI office hours every Tuesday and Thursday at WorkIT, a done-with-you AI Concierge priced by team size from $750/mo, and Sidecar builds when a process is too big to build together.
+
+----
+
+Eyebrow: Stillwater, OK
+
+----
+
+Cta_type: intake
+
+----
+
+Show_map: true
+
+----
+
+Hero_title: AI Consultant in Stillwater, Oklahoma
+
+----
+
+Intro: Shimmer Labs is the AI consultant that is actually in Stillwater. Logan Shimmer, OSU class of '09, runs it from WorkIT on Main Street. Free AI office hours twice a week, a done-with-you AI Concierge priced by team size from $750 a month, and Sidecar builds when a process is too big to build together. No account managers, no Dallas agency, no chatbot pitch.
+
+----
+
+Text:
+
+## We're the local ones
+
+<a href="/about">Logan Shimmer</a> came back to Stillwater after 17 years in California, most of it as a systems engineer at <a href="https://www.ni.com" rel="noopener" target="_blank">National Instruments</a>, <a href="https://iterable.com" rel="noopener" target="_blank">Iterable</a>, <a href="https://www.weavegrid.com" rel="noopener" target="_blank">WeaveGrid</a>, and <a href="https://sense.com" rel="noopener" target="_blank">Sense</a>, making complex systems behave before AI was the hammer. Shimmer Labs is a two-line shop. You talk to Logan directly. No handoffs, no offshore subcontracting, no one between you and the person doing the work.
+
+Most "AI consultants" you'll find on Google are in Dallas, Austin, or a Slack channel six time zones away. If AI is going to touch real customer-facing work in your business, membership changes, quotes, invoices, scheduling, you want the person building it reachable, accountable, and in the room. Here, that's a ten-minute drive.
+
+## Start free: AI office hours at WorkIT
+
+Every Tuesday and Thursday, 2 to 4 PM, at WorkIT Coworking, 901 S Main Street, Suite 86. Walk in, no appointment, no pitch. Bring the one task that eats your week and we'll work on it together at the table. Sometimes the honest answer is "skip it for now," and you'll hear that too. Details on the <a href="/office-hours">office hours page</a>.
+
+## Keep going: the AI Concierge
+
+When you want a standing plan instead of a drop-in, the <a href="/services/concierge">AI Concierge</a> is two working sessions a month, text access to Logan between them, and a shared hub of everything we automate together. Every task goes through the same three steps: audit how you actually do it, cut the steps that don't need to exist, then automate what's left with you at the keyboard. In Stillwater, sessions happen at your shop when the process lives in the building.
+
+It's priced by team size. $750 a month if it's just you, $1,000 for a crew of 2 to 10, $1,500 for a shop of 11 to 25, $2,250 for a company of 26 to 50. No contract. The next 5 clients get one tier down, locked in. We published <a href="/notes/ai-consultant-cost-per-employee">the per-employee math</a> so you can check our work.
+
+## When it's too big to build together: Sidecar
+
+Some processes need an engineer to build and run them. <a href="/case-studies/sweat-yoga-fitness">Anna Moore at Sweat Yoga & Fitness</a>, across the street from our office, had a booking platform that doesn't let outside software cancel or freeze memberships. We built a <a href="/services/sidecar">Sidecar</a> agent that works the website the way a person would. It handled real customer requests in the first week and ran on its own by week four. Builds from $1,000, half up front and half at go-live, from $250 a month to run.
+
+## Local proof
+
+- <a href="/case-studies/sweat-yoga-fitness">Sweat Yoga & Fitness</a>: membership cancellations and freezes run themselves, including the post-graduation rush.
+- <a href="/case-studies/stillwater-landscaper">A Stillwater landscaper</a>: two hours of nightly typing became one photo of the day's job sheet, handwriting and Spanish included.
+- <a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">Stillwater Chamber Small Business University</a>: we teach the AI and marketing session.
+- Meridian Technology Center: "AI for the Boring Parts of Your Business," a hands-on workshop for local owners.
+- <a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">OSU CEAT AI for Industry microcredential</a>, completed through OSU CEAT Professional Development.
+- We sit in the room for things like the <a href="/notes/stillwater-state-of-the-city-2026">State of the City</a> and write up what matters if you run a business here.
+
+## Who this is for
+
+Owner-operators in Stillwater, Payne County, and north-central Oklahoma with 1 to 50 people on the team. Trades like plumbing, HVAC, electrical, roofing, and landscaping. Studios, gyms, and salons. Property managers riding the August student-lease wave. Restaurants, shops, and the OSU-connected operators who want a local engineer instead of a vendor. If you're not sure where to start, <a href="/automate-first">we wrote a page per trade</a> on the three tasks worth automating first.
+
+## What we don't do
+
+- Build chatbots for your website.
+- Replace your team with AI.
+- Sell "set it and forget it" maintenance contracts.
+- Pretend to be a big-enterprise vendor with procurement contracts and yearlong audits.
+
+## The fastest way to find out if we can help
+
+Walk in to office hours with the task that's eating your week. If you'd rather start from your desk, put your website into the scanner below and you'll get the three tasks worth automating first, prompts included, in about 20 seconds. And when you want a standing partner, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: What does an AI consultant cost in Stillwater?
+  answer: >
+    Office hours are free. The AI Concierge runs $750 to $2,250 a month depending on team size, with no contract: two working sessions a month, in person when it helps, and direct text access in between. Sidecar builds start at $1,000 plus $250 a month to run. Agencies from Dallas or Austin quote retainers from $5,000 a month, mostly remote.
+-
+  question: Do I have to come to WorkIT?
+  answer: >
+    No. Office hours are at WorkIT because it's a good table and it's free. Concierge sessions happen at your business when the process we're fixing lives in the building, and over video when it lives on a laptop. Anywhere in Stillwater or Payne County is a short drive.
+-
+  question: Is Shimmer Labs an agency?
+  answer: >
+    No. It's a two-line shop run by Logan Shimmer, an OSU alum and systems engineer. You work with the person who builds it. If something breaks, he comes to your shop and fixes it.
+-
+  question: What kinds of Stillwater businesses do you work with?
+  answer: >
+    Mostly trades and service businesses with 1 to 50 people: plumbers, HVAC, roofers, landscapers, studios and gyms, property managers, restaurants, and shops. A yoga studio across the street and a landscaper on the north side are the two case studies we point to most.
+-
+  question: Can OSU students or staff come to office hours?
+  answer: >
+    Yes. Office hours are open to anyone. Most weeks it's business owners, but students working on a side business and staff trying to automate a department process show up too.
+
+----
+
+Uuid: stillwater-ai-consultant-001

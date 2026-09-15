@@ -26,7 +26,7 @@ Hero_title: AI Consultant in Tulsa Who Shows Up In Person
 
 ----
 
-Intro: Most AI consultants are a Zoom call in another time zone. We're an hour away, and when the process we're fixing lives in your building, we drive to Tulsa, sit in your office, and work on it with you at the counter where it actually happens.
+Intro: Most AI consultants are a Zoom call in another time zone. We're an hour west on the Cimarron Turnpike, and when the process we're fixing lives in your building, we drive to Tulsa, sit in your office, and work on it with you at the counter where it actually happens.
 
 ----
 
@@ -48,6 +48,10 @@ The same things eating every small business's week:
 - Paperwork between the field and the office
 
 If a task is mostly reading, understanding, and typing, a computer does it better now. Our job is finding those tasks in your business and handing them off, one per session, permanently.
+
+## What we see in Tulsa
+
+Tulsa is about 70 miles and just over an hour east, Highway 51 to the Cimarron Turnpike, and we're in Broken Arrow, Owasso, Jenks, Bixby, and Sand Springs often enough to know which exits back up at four o'clock. The Tulsa-side businesses that reach us tend to be contractors and remodelers juggling draws and change orders, cleaning and restoration companies living in insurance paperwork, event venues and studios booking by text, and lab and medical offices with an onboarding process that is mostly forms. We meet at your business when the process lives there. If it lives on a laptop, video works fine. If you're not sure which task to start with, our pages for <a href="/automate-first/contractors">contractors</a>, <a href="/automate-first/cleaning-companies">cleaning companies</a>, <a href="/automate-first/event-venues">event venues</a>, and <a href="/automate-first/gyms-and-salons">gyms, salons, and studios</a> are the short version of the first session.
 
 ## The proof
 
@@ -75,6 +79,10 @@ Faq:
   question: What happens at the first session?
   answer: >
     Before we ever make the drive, you fill out our intake form covering your tools and the tasks eating your week. The first session sets up your AI foundation and starts on the process you said you'd pay the most to never do again. No generic audit deck, just work.
+-
+  question: Do you cover Broken Arrow, Owasso, Jenks, and Bixby?
+  answer: >
+    Yes, all of the Tulsa metro, including Sand Springs, Sapulpa, and Claremore. Same price anywhere in the Tulsa area, and the drive is on us.
 -
   question: We're not technical. Is that a problem?
   answer: >

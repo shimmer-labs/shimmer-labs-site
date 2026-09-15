@@ -1,8 +1,8 @@
-Title: AI for Plumbing and HVAC Businesses
+Title: Sidecar for Plumbing and HVAC Shops
 
 ----
 
-Seo_title: Automate Plumbing & HVAC Paperwork and Invoices
+Seo_title: Sidecar for Plumbers and HVAC Shops: Done-for-You Paperwork Automation, Builds from $1,000
 
 ----
 
@@ -10,11 +10,11 @@ Meta_description: One vendor invoice shouldn't take an hour to type into QuickBo
 
 ----
 
-Eyebrow: For plumbing and HVAC shops
+Eyebrow: Sidecar, for plumbing and HVAC shops
 
 ----
 
-Hero_title: Still running the office on paper?
+Hero_title: Done-for-you AI for plumbing and HVAC shops
 
 ----
 
@@ -27,6 +27,8 @@ Intro: Your best people should be on jobs and sending estimates, not retyping ve
 ----
 
 Text:
+
+This is the done-for-you path. Sidecar is the AI agent Shimmer Labs builds and runs for your plumbing or HVAC shop, with builds from $1,000 and from $250 a month to run, and you approve anything that goes to a customer. If you would rather start with a prompt you can run this week, or build it with us in a working session, read <a href="/automate-first/plumbers">what a plumber should automate first</a>. This page is for when you want it handled.
 
 ## We did the math with a local shop
 

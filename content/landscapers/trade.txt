@@ -1,8 +1,8 @@
-Title: AI for Landscaping Businesses
+Title: Sidecar for Landscaping Businesses
 
 ----
 
-Seo_title: Automate Landscaping Paperwork and Invoicing
+Seo_title: Sidecar for Landscapers: Done-for-You Job Sheets, Invoicing, and Scheduling, Builds from $1,000
 
 ----
 
@@ -10,11 +10,11 @@ Meta_description: A Stillwater landscaper turned two hours of nightly typing int
 
 ----
 
-Eyebrow: For landscapers and lawn care crews
+Eyebrow: Sidecar, for landscapers and lawn care crews
 
 ----
 
-Hero_title: Stop typing up job sheets. Take a photo instead.
+Hero_title: Done-for-you AI for landscaping businesses
 
 ----
 
@@ -27,6 +27,8 @@ Intro: You already worked ten hours in the sun. The paperwork at the end of the 
 ----
 
 Text:
+
+This is the done-for-you path. Sidecar is the AI agent Shimmer Labs builds and runs for your landscaping business, with builds from $1,000 and from $250 a month to run, and you approve anything that goes to a customer. If you would rather start with a prompt you can run this week, or build it with us in a working session, read <a href="/automate-first/landscapers">what a landscaper should automate first</a>. This page is for when you want it handled.
 
 ## The clipboard problem
 

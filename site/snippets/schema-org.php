@@ -87,7 +87,7 @@ if ($page->intendedTemplate()->name() === 'home') {
       ['@type' => 'State', 'name' => 'Oklahoma'],
       ['@type' => 'Country', 'name' => 'United States']
     ],
-    'priceRange' => '$250+',
+    'priceRange' => '$750 to $2,250 per month',
     'founder' => [
       '@id' => $site->url() . '#logan'
     ],
@@ -379,13 +379,13 @@ if ($page->intendedTemplate()->name() === 'case-study') {
 // ─────────────────────────────────────────────────────────────
 // Stillwater AI consultant landing page: LocalBusiness schema
 // ─────────────────────────────────────────────────────────────
-if ($page->intendedTemplate()->name() === 'stillwater-ai-consultant') {
+if ($page->slug() === 'stillwater-ai-consultant') {
   $schema[] = [
     '@context' => 'https://schema.org',
     '@type' => 'LocalBusiness',
     '@id' => $site->url() . '#stillwater-local',
-    'name' => 'Shimmer Labs — AI Consultant in Stillwater, OK',
-    'description' => 'Local AI consultant and software shop serving Stillwater and north-central Oklahoma small businesses. AI-assisted workflows, custom web and iOS apps, API integrations. Free Office Hours every Tuesday and Thursday at WorkIT.',
+    'name' => 'Shimmer Labs, AI Consultant in Stillwater, OK',
+    'description' => 'Local AI consultant for Stillwater and north-central Oklahoma small businesses. Free AI office hours every Tuesday and Thursday at WorkIT, a done-with-you AI Concierge priced by team size from $750 a month, and Sidecar builds when a process is too big to build together.',
     'url' => $page->url(),
     'telephone' => '+1-405-880-6674',
     'email' => 'logan@shimmerlabs.co',

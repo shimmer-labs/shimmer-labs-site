@@ -707,7 +707,6 @@ return [
           'contact',
           'case-studies',
           'comparison',
-          'work',
           'stillwater-ai-consultant',
           'services/sidecar',
           'services/concierge',

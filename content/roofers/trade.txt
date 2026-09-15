@@ -1,8 +1,8 @@
-Title: AI for Roofing Companies
+Title: Sidecar for Roofing Companies
 
 ----
 
-Seo_title: Automate Roofing Paperwork and Estimates
+Seo_title: Sidecar for Roofers: Done-for-You Estimates, Invoices, and Follow-Up, Builds from $1,000
 
 ----
 
@@ -10,11 +10,11 @@ Meta_description: You're on a roof all day. We automate estimates, supplier invo
 
 ----
 
-Eyebrow: For roofing companies
+Eyebrow: Sidecar, for roofing companies
 
 ----
 
-Hero_title: You're on a roof all day. The paperwork can handle itself.
+Hero_title: Done-for-you AI for roofing companies
 
 ----
 
@@ -27,6 +27,8 @@ Intro: Roofing runs on paperwork: estimates, supplier invoices, job photos, insu
 ----
 
 Text:
+
+This is the done-for-you path. Sidecar is the AI agent Shimmer Labs builds and runs for your roofing company, with builds from $1,000 and from $250 a month to run, and you approve anything that goes to a customer. If you would rather start with a prompt you can run this week, or build it with us in a working session, read <a href="/automate-first/roofers">what a roofer should automate first</a>. This page is for when you want it handled.
 
 ## The office work behind every roof
 

@@ -35,6 +35,10 @@ fields:
       walkthrough: Walkthrough offer (default)
       intake: Concierge intake form
     default: walkthrough
+  show_map:
+    label: Show the WorkIT map section
+    type: toggle
+    default: false
   faq:
     label: FAQ
     type: structure

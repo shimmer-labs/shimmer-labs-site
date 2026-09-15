@@ -49,6 +49,10 @@ The same things eating every small business's week:
 
 If a task is mostly reading, understanding, and typing, a computer does it better now. Our job is finding those tasks in your business and handing them off, one per session, permanently.
 
+## What we see in Oklahoma City
+
+Oklahoma City is about 65 miles and a little over an hour from our office, Highway 51 to I-35, so a morning session at your shop in Edmond, Moore, Norman, Yukon, or Midwest City is a normal Tuesday for us, not a special trip. The businesses that find us from the metro are the same shapes we see at home, just bigger: HVAC and roofing companies whose office can't keep up after a hail week, property managers with hundreds of doors and one inbox, contractors running job costing out of a truck, and small oil and gas operators with month-end living in WolfePak. We meet at your business when the process lives there. If it lives on a laptop, video works fine. If you're not sure which task to start with, our pages for <a href="/automate-first/hvac-companies">HVAC companies</a>, <a href="/automate-first/roofers">roofers</a>, <a href="/automate-first/property-managers">property managers</a>, <a href="/automate-first/contractors">contractors</a>, and <a href="/automate-first/oil-and-gas-operators">oil and gas operators</a> are the short version of the first session.
+
 ## The proof
 
 We do this every week in Stillwater. <a href="/case-studies/stillwater-landscaper">A landscaper's two hours of nightly typing became one photo</a>. <a href="/case-studies/sweat-yoga-fitness">A gym owner's membership paperwork now runs itself while she sleeps</a>. A shop manager's 90-minute monthly schedule became a 5-minute review. Different businesses, same pattern.
@@ -75,6 +79,10 @@ Faq:
   question: What happens at the first session?
   answer: >
     Before we ever drive down, you fill out our intake form covering your tools and the tasks eating your week. The first session sets up your AI foundation and starts on the process you said you'd pay the most to never do again. No generic audit deck, just work.
+-
+  question: Do you work with businesses in Edmond, Norman, or Moore?
+  answer: >
+    Yes, the whole metro. Edmond is on our way in, and Norman, Moore, Yukon, Mustang, and Midwest City are all inside the normal drive. Same price anywhere in the Oklahoma City area.
 -
   question: We're not technical. Is that a problem?
   answer: >
