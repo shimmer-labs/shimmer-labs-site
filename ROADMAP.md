@@ -99,3 +99,12 @@ Shipped Sep 7-9: legacy 404 redirects, Review schema removed, AI Concierge price
 
 ### Carry-forward from Aug 25 (still open)
 - [ ] Buy automatepaperwork.com; landscaper permission for the named case study; postmortem asks (roofer/HVAC church prospect, Heritage Petroleum); vendor-show calendar; Loom-style sales video behind a QR; sweep Desktop sell sheets with $5k-era pricing; watch trade-page traffic monthly (search is a 90-day bet, not a two-week one).
+
+### Sep 15 2026: header / structure audit (see references/sep-2026-handoffs/seo-aeo-structure-audit.md)
+Shipped: direct answers under H1s (18 trade pages, home, concierge, sidecar, office hours, 3 notes), descriptive H2s, city in city-page H1s, intake noindex + out of sitemap, scanner below the pitch on service pages, main landmarks, office-hours FAQ + Event schema, home thesis stats updated to 2025/2026 figures.
+Still open (need a decision or facts):
+- [ ] Duplicate trade pages: /plumbers, /roofers, /landscapers (old Sidecar landers in the nav) vs /automate-first/* guides. 301 the old ones, or retitle as Sidecar pages and cross-link.
+- [ ] /work vs /case-studies: two portfolio indexes. Redirect or noindex one.
+- [ ] /stillwater-ai-consultant still on 2025 Sidecar/custom-apps positioning. Rewrite to match OKC/Tulsa (concierge-first, scanner, FAQ).
+- [ ] OKC and Tulsa pages are the same copy with the city swapped. Each needs 150 to 200 city-specific words (drive time, a named client or trade concentration, where you meet).
+- [ ] AB Newswire test ($80 to $100, three releases in a month) if Logan wants to try the press-release angle.

@@ -219,6 +219,15 @@
   line-height: 1.6;
   margin-bottom: 1.75rem;
 }
+.oh-cta__subtext {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 1.25rem auto 0;
+}
+.oh-cta__subtext a {
+  color: #FDBE34;
+}
 .oh-cta__btn {
   display: inline-flex;
   align-items: center;
