@@ -71,14 +71,14 @@
   ?>
 
   <!-- Meta Description -->
-  <meta name="description" content="<?= $metaDescription ?>">
+  <meta name="description" content="<?= esc($metaDescription, 'html') ?>">
   <?php if (!empty($noindex)): ?><meta name="robots" content="noindex, follow"><?php endif ?>
 
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:type" content="<?= $ogType ?>">
   <meta property="og:url" content="<?= $page->url() ?>">
-  <meta property="og:title" content="<?= $page->title() ?> | Shimmer Labs">
-  <meta property="og:description" content="<?= $metaDescription ?>">
+  <meta property="og:title" content="<?= esc($page->title(), 'html') ?> | Shimmer Labs">
+  <meta property="og:description" content="<?= esc($metaDescription, 'html') ?>">
   <meta property="og:image" content="<?= $ogImage ?>">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -87,8 +87,8 @@
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="<?= $page->url() ?>">
-  <meta name="twitter:title" content="<?= $page->title() ?> | Shimmer Labs">
-  <meta name="twitter:description" content="<?= $metaDescription ?>">
+  <meta name="twitter:title" content="<?= esc($page->title(), 'html') ?> | Shimmer Labs">
+  <meta name="twitter:description" content="<?= esc($metaDescription, 'html') ?>">
   <meta name="twitter:image" content="<?= $ogImage ?>">
   
   <!-- Fonts -->
