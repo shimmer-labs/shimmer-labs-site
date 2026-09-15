@@ -24,7 +24,9 @@ Intro: It's the 28th. The purchaser check stubs are stacked next to the keyboard
 
 Text:
 
-## Start where you groan
+A small oil and gas operator should automate three things first: getting check stubs and JIBs into WolfePak, logging pumper reports and field tickets every day, and answering royalty owner questions and partner updates. Together those give back roughly 6 hours a week plus about 2 days at every month-end, and all three work with WolfePak, QuickBooks, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For small operators, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

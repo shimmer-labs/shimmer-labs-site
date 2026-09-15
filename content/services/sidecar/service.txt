@@ -14,7 +14,7 @@ Icon:
 
 ----
 
-Summary: You stay in the driver's seat. Everything else goes in the sidecar. AI agents that handle hiring, social media, prospecting, and proposals so you can get back to the work you love.
+Summary: Sidecar is a custom AI agent that Shimmer Labs builds and runs for your small business, handling one recurring job like membership changes, lead follow-up, document parsing, or proposals. Builds start at $1,000, half up front and half at go-live, running costs from $250 a month, live in a week and fully autonomous by week four. Cancel anytime.
 
 ----
 
@@ -30,7 +30,7 @@ You're a plumber. Or a massage therapist. Or a personal trainer. You got into th
 
 But here you are. Half your week eaten by admin that has nothing to do with your craft. The tasks you procrastinate on pile up. The work you actually love gets squeezed into whatever's left.
 
-## That's what the sidecar is for.
+## What a Sidecar agent does
 
 You stay in the driver's seat. You do the work. Everything else, the boring stuff, the repetitive stuff, the stuff you keep meaning to get to, rides in the sidecar.
 
@@ -57,11 +57,11 @@ If you're great at your craft but drowning in the stuff that isn't your craft, S
 
 In the trades? We wrote pages in your language: [landscapers](/landscapers), [plumbers and HVAC](/plumbers), [roofers](/roofers).
 
-## What would you do with 15 hours a week back?
+## What Sidecar saves you: 15 hours a week at Supabase
 
-That's the number we returned to Sarah Gold's creator-outreach desk at Supabase. 5x output, 100+ creators shipped, 15 hours per week returned — over months, not quarters. The right question isn't "how much does an employee cost." It's what *you* would do with that time back.
+That's the number we returned to Sarah Gold's creator-outreach desk at Supabase. 5x output, 100+ creators shipped, 15 hours per week returned, over months, not quarters. The right question isn't "how much does an employee cost." It's what *you* would do with that time back.
 
-Rather learn to drive this stuff yourself, with us in the passenger seat? That's the [AI Concierge](/services/concierge), $1,000/mo.
+Rather learn to drive this stuff yourself, with us in the passenger seat? That's the [AI Concierge](/services/concierge), priced by team size from $750/mo.
 
 *Want a deeper read before booking a call? Grab the free guide: [AI Agents for Small Business →](/ai-agents-guide).*
 
@@ -107,7 +107,7 @@ Techstack: Claude, Gemini, n8n, ManyChat, Browser Automation, Custom Integration
 
 ----
 
-Techstackintro: Claude as the default. We pick the right model per job — Gemini for high-volume document parsing (Paidly), Claude for long-context judgment work. When the vendor's API doesn't exist, we build browser automation against the UI instead (Sweat Yoga).
+Techstackintro: Claude as the default. We pick the right model per job: Gemini for high-volume document parsing (Paidly), Claude for long-context judgment work. When the vendor's API doesn't exist, we build browser automation against the UI instead (Sweat Yoga).
 
 ----
 
@@ -126,7 +126,7 @@ Ctadescription: Tell us what's eating your time. We'll tell you which tasks Side
 Stats:
 -
   number: '5x'
-  label: 'Creator outreach output for Sarah Gold at Supabase — 15 hrs/week back'
+  label: 'Creator outreach output for Sarah Gold at Supabase, 15 hrs/week back'
 -
   number: '50+'
   label: 'Cancellations and freezes handled to date for Sweat Yoga, including graduation rush'

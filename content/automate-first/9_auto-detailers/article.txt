@@ -24,7 +24,9 @@ Intro: A photo of a dog-hair interior came in at lunch. You meant to quote it af
 
 Text:
 
-## Start where you groan
+An auto detailer should automate three things first: turning a photo or text into a quote the same day, sending appointment reminders and filling the bay when someone no-shows, and posting before-and-after shots with a review request attached. Together those give back roughly 7 hours a week, and all three work with Jobber, Square, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For detailers and repair shops, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

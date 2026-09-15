@@ -24,7 +24,9 @@ Intro: A walkthrough quote from Tuesday is still sitting in your Notes app, the 
 
 Text:
 
-## Start where you groan
+A cleaning company should automate three things first: turning a walkthrough or a few photos into a quote, sending day-before confirmations and handling reschedules, and screening job applicants and replying to reviews. Together those give back roughly 10 hours a week, and all three work with ZenMaid, Jobber, Housecall Pro, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For cleaning companies, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

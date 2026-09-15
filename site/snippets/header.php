@@ -18,6 +18,8 @@
     'landing' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
     'trade' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
     'article' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
+    'notes' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
+    'office-hours' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
     default => $page->title() . ' | Shimmer Labs'
   };
   ?>

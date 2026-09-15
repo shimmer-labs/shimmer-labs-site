@@ -14,7 +14,7 @@ Date: 2026-09-07
 
 ----
 
-Intro: We just changed how we price the AI Concierge, and instead of hiding the spreadsheet we're publishing it. Here's what done-with-you AI consulting costs per employee, and how many saved hours a month it takes to break even in Stillwater, Oklahoma City, and Tulsa.
+Intro: Done-with-you AI consulting from Shimmer Labs costs $750 a month for a solo operator, about $100 per head for a crew of 2 to 10, about $60 per head for a shop of 11 to 25, and about $45 per head for a company of 26 to 50. We changed how we price the AI Concierge, and instead of hiding the spreadsheet we're publishing it: what it costs per employee, and how many saved hours a month it takes to break even in Stillwater, Oklahoma City, and Tulsa.
 
 ----
 

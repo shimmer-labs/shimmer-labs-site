@@ -24,7 +24,9 @@ Intro: The inquiry that came in Tuesday gets answered Friday, the notes from thr
 
 Text:
 
-## Start where you groan
+An accountant or consultant should automate three things first: getting a new inquiry onto the calendar for an intake call, turning call notes into CRM entries and a drafted engagement letter, and nudging stale proposals and unpaid invoices. Together those give back roughly 9 hours a week, and all three work with HubSpot, Zoho, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For small professional firms, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

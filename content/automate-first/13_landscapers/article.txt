@@ -24,7 +24,9 @@ Intro: You're hosing mud off your boots at eight at night while a homeowner wond
 
 Text:
 
-## Start where you groan
+A landscaper should automate three things first: following up on quotes that went quiet, turning the day's jobs into invoices and the schedule, and posting job photos and asking for reviews. Together those give back roughly 10 hours a week, and all three work with Jobber, Square, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For landscapers, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

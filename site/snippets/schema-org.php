@@ -514,6 +514,53 @@ if (in_array($page->intendedTemplate()->name(), ['trade', 'landing', 'article'])
 }
 
 // ─────────────────────────────────────────────────────────────
+// Free AI Office Hours: recurring Event
+// ─────────────────────────────────────────────────────────────
+if ($page->intendedTemplate()->name() === 'office-hours') {
+  $schema[] = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Event',
+    'name' => 'Free AI Office Hours in Stillwater, OK',
+    'description' => 'Free, walk-in help with AI and automation for small business owners. Every Tuesday and Thursday, 2 to 4 PM, at WorkIT Coworking in Stillwater, Oklahoma. No RSVP, no pitch.',
+    'url' => $page->url(),
+    'image' => url('assets/images/office.jpg'),
+    'eventAttendanceMode' => 'https://schema.org/OfflineEventAttendanceMode',
+    'eventStatus' => 'https://schema.org/EventScheduled',
+    'isAccessibleForFree' => true,
+    'startDate' => '2026-01-06T14:00:00-06:00',
+    'eventSchedule' => [
+      '@type' => 'Schedule',
+      'byDay' => ['https://schema.org/Tuesday', 'https://schema.org/Thursday'],
+      'startTime' => '14:00',
+      'endTime' => '16:00',
+      'repeatFrequency' => 'P1W',
+      'scheduleTimezone' => 'America/Chicago',
+    ],
+    'location' => [
+      '@type' => 'Place',
+      'name' => 'WorkIT Coworking Center',
+      'address' => [
+        '@type' => 'PostalAddress',
+        'streetAddress' => '901 S Main St',
+        'addressLocality' => 'Stillwater',
+        'addressRegion' => 'OK',
+        'postalCode' => '74074',
+        'addressCountry' => 'US',
+      ],
+    ],
+    'offers' => [
+      '@type' => 'Offer',
+      'price' => '0',
+      'priceCurrency' => 'USD',
+      'availability' => 'https://schema.org/InStock',
+      'url' => $page->url(),
+    ],
+    'organizer' => ['@id' => $site->url() . '#organization'],
+    'performer' => ['@id' => $site->url() . '#logan'],
+  ];
+}
+
+// ─────────────────────────────────────────────────────────────
 // BreadcrumbList for every non-home page (Home > Section > Page)
 // ─────────────────────────────────────────────────────────────
 if (!$page->isHomePage()) {

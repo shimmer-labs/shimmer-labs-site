@@ -1,7 +1,7 @@
 <section class="hook-questions">
   <div class="container">
     <div class="hook-questions__inner">
-      <h2 class="hook-questions__headline">What's in your sidecar?</h2>
+      <h2 class="hook-questions__headline">Three questions we ask before we automate anything</h2>
       <p class="hook-questions__lead">Before we pitch anything, these are the three questions we ask in every discovery call. Grab a pen.</p>
       <ol class="hook-questions__list">
         <li>

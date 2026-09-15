@@ -1,7 +1,7 @@
 <section class="how-it-works">
   <div class="container">
     <div class="how-it-works__inner">
-      <h2 class="how-it-works__headline">How this actually works.</h2>
+      <h2 class="how-it-works__headline">How a Sidecar agent works</h2>
 
       <p class="how-it-works__lead">
         Think of it like a motorcycle sidecar. You stay in the driver's seat. Everything you can delegate, you throw in the sidecar. The sidecar doesn't drive. It handles the load so you can focus on the road.

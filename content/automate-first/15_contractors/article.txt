@@ -24,7 +24,9 @@ Intro: You've got a bid that went quiet three weeks ago, a change order riding a
 
 Text:
 
-## Start where you groan
+A contractor should automate three things first: turning walkthrough notes into bids and chasing the ones that went quiet; converting the day's photos into daily logs, change orders, and draw requests; and sending homeowner updates, review asks, and project posts. Together those give back roughly 11 hours a week, and all three work with Buildertrend, CoConstruct, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For contractors, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

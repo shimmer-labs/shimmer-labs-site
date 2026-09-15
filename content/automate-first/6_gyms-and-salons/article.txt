@@ -24,7 +24,9 @@ Intro: You walk out of a 90-minute session or a full color appointment and your 
 
 Text:
 
-## Start where you groan
+A gym, salon, or studio should automate three things first: catching missed calls, sending confirmations, and recovering no-shows; replying to freeze and cancel requests and drafting the monthly staff schedule; and winning back lapsed clients, asking for reviews, and posting classes. Together those give back roughly 10 hours a week, and all three work with Vagaro, Mindbody, Square, or Acuity.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For gyms, salons, and studios, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

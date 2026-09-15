@@ -24,7 +24,9 @@ Intro: A great tour on Tuesday, radio silence by Wednesday, and the lead signs w
 
 Text:
 
-## Start where you groan
+A coworking space should automate three things first: booking tour requests and following up after the visit; handling membership renewals, room bookings, and day passes; and putting out the member newsletter, event posts, and review asks. Together those give back roughly 9 hours a week, and all three work with Nexudus, OfficeRnD, Optix, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For coworking spaces, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

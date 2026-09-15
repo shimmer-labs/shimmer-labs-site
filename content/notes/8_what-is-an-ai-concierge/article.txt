@@ -20,6 +20,8 @@ Intro: You're going to start hearing the phrase "AI concierge" a lot. The troubl
 
 Text:
 
+An AI concierge, in the sense that matters for a small business, is a monthly done-with-you service: a person who works with AI every day sits down with you on a regular schedule and automates your business alongside you, so you own and understand everything that gets built. The other meaning, a hotel or retail chatbot, is software, and it is not what this article is about.
+
 ## The name means two different things
 
 **Meaning one: a chatbot.** Hotels and online stores have used "AI concierge" for years to mean a digital assistant that answers guest questions or recommends products. Software. You've chatted with one. This is the meaning most of the internet still uses.

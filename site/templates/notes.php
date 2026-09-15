@@ -4,7 +4,7 @@
   <section class="hero hero--compact">
     <div class="container">
       <span class="cs-tag"><?= $page->eyebrow()->or('Notes') ?></span>
-      <h1 class="hero__title"><?= $page->title() ?></h1>
+      <h1 class="hero__title"><?= $page->hero_title()->or($page->title()) ?></h1>
       <?php if ($page->intro()->isNotEmpty()): ?>
         <p class="hero__intro"><?= $page->intro() ?></p>
       <?php endif ?>

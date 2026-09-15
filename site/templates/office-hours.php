@@ -166,6 +166,17 @@
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
+.oh-board__q {
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem;
+  color: #fff;
+}
+.oh-board__items--faq li p {
+  margin: 0;
+  font-family: var(--font-body), sans-serif;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+}
 .oh-board__items li {
   font-size: 1.05rem;
   line-height: 1.5;
@@ -251,12 +262,13 @@
 </style>
 
 <!-- ═══════ HERO ═══════ -->
+<main class="main-content">
 <section class="oh-hero">
   <div class="container">
     <div class="oh-hero__content">
       <span class="oh-hero__badge">Free &middot; Walk in &middot; No RSVP</span>
-      <h1 class="oh-hero__title">AI <span>Office Hours</span></h1>
-      <p class="oh-hero__subtitle">Bring your workflows, your questions, your half-baked ideas. I'm here to help you figure out which manual tasks are eating your time (or your sanity) and what to do about them.</p>
+      <h1 class="oh-hero__title">Free AI Office Hours in <span>Stillwater</span></h1>
+      <p class="oh-hero__subtitle">AI office hours are free, walk-in help with AI and automation for small business owners, every Tuesday and Thursday from 2 to 4 PM at WorkIT Coworking, 901 S Main St in Stillwater, Oklahoma. No RSVP, no pitch. Bring one task that eats your week and we'll work on getting it off your plate together.</p>
     </div>
     <div class="oh-hero__visual">
       <div class="oh-hero__photo-wrap">
@@ -298,13 +310,14 @@
 <!-- ═══════ WHAT ACTUALLY HAPPENS ═══════ -->
 <section class="oh-expect">
   <div class="container">
-    <h2>What Actually Happens</h2>
+    <h2>Questions people ask before they come</h2>
     <div class="oh-board">
-      <ul class="oh-board__items">
-        <li><strong>Bring your questions.</strong> "Can AI do this?" "What tool should I use?" "Why is my workflow broken?" All fair game.</li>
-        <li><strong>Bring your laptop.</strong> We can dig in together. Whiteboards are involved. Diagrams will be drawn.</li>
-        <li><strong>Show up whenever.</strong> Drop in at 2, leave at 2:30. Come at 3:15. There's no roll call.</li>
-        <li><strong>No pitch. No funnel.</strong> I'm not selling you anything. I just like solving problems and this beats eating lunch alone.</li>
+      <ul class="oh-board__items oh-board__items--faq">
+        <li><h3 class="oh-board__q">Do I need to RSVP?</h3><p>No. Drop in at 2, leave at 2:30, come at 3:15. There's no roll call and no sign-up sheet.</p></li>
+        <li><h3 class="oh-board__q">What should I bring?</h3><p>Your laptop and one real task. "Can AI do this?" "What tool should I use?" "Why is my workflow broken?" All fair game. Whiteboards are involved.</p></li>
+        <li><h3 class="oh-board__q">Is it really free?</h3><p>Yes. No pitch, no funnel. I like solving problems and this beats eating lunch alone.</p></li>
+        <li><h3 class="oh-board__q">Can I come more than once?</h3><p>Please do. Most people come back with the next task once the first one is running.</p></li>
+        <li><h3 class="oh-board__q">Who shows up?</h3><p>Business owners, founders, office managers, and people who googled "can AI do my job" at 2 AM. All levels.</p></li>
       </ul>
       <div class="oh-board__footer">Basically, it's free consulting disguised as hanging out.</div>
     </div>
@@ -323,4 +336,5 @@
   </div>
 </section>
 
+</main>
 <?php snippet('footer') ?>

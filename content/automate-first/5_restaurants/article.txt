@@ -24,7 +24,9 @@ Intro: You didn't get into baking or cooking to spend your morning typing your o
 
 Text:
 
-## Start where you groan
+A restaurant or bakery should automate three things first: answering the same five questions that show up in the DMs, quoting catering and custom orders without the back and forth, and rounding up reviews and posting the weekly specials. Together those give back roughly 9 hours a week, and all three work with Toast, Square, Instagram, or Google Business Profile.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For restaurants and bakeries, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

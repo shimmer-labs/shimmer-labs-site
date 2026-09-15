@@ -1,7 +1,7 @@
 <section class="engagement">
   <div class="container">
     <div class="engagement__inner">
-      <h2 class="engagement__headline">How working together actually works.</h2>
+      <h2 class="engagement__headline">How an engagement works, from first call to live</h2>
 
       <ol class="engagement__steps">
         <li class="engagement__step">

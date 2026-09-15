@@ -24,7 +24,9 @@ Intro: The lead came in Tuesday night while you were at a showing. By the time y
 
 Text:
 
-## Start where you groan
+A realtor should automate three things first: responding to and qualifying new leads within minutes, writing listing descriptions and market updates from your notes, and keeping every transaction and client follow-up on schedule. Together those give back roughly 12 hours a week, and all three work with email, Google Calendar, and Google Sheets.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For realtors, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

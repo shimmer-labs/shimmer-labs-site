@@ -24,7 +24,9 @@ Intro: You didn't get into roofing to become a part-time claims adjuster or a so
 
 Text:
 
-## Start where you groan
+A roofer should automate three things first: following up on proposals and open insurance claims, answering the flood of calls and texts that hits during storm week, and asking for reviews, posting finished roofs, and answering homeowner questions. Together those give back roughly 12 hours a week, and all three work with JobNimbus, AccuLynx, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For roofers, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

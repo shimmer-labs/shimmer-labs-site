@@ -22,7 +22,7 @@ Hero_image: hero-okc.jpg
 
 ----
 
-Hero_title: An AI consultant who shows up at your shop. In person.
+Hero_title: AI Consultant in Oklahoma City Who Shows Up In Person
 
 ----
 

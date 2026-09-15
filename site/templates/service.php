@@ -4,6 +4,7 @@
 <?php $isConcierge = $page->slug() === 'concierge'; ?>
 
 <!-- Service Hero -->
+<main class="main-content">
 <section class="service-hero<?= $isSidecar ? ' service-hero--sidecar' : '' ?>">
   <div class="container">
     <div class="service-hero__content">
@@ -35,12 +36,6 @@
   </div>
 </section>
 
-<!-- Website scanner: what should you automate first? -->
-<?php if ($isSidecar): ?>
-  <?php snippet('sidecar-scanner', ['variant' => 'sidecar']) ?>
-<?php elseif ($isConcierge): ?>
-  <?php snippet('sidecar-scanner', ['variant' => 'neutral']) ?>
-<?php endif ?>
 
 <!-- Sidecar: Stats Cards -->
 <?php if ($isSidecar && $page->stats()->isNotEmpty()): ?>
@@ -79,6 +74,13 @@
     </div>
   </div>
 </section>
+<?php endif ?>
+
+<!-- Website scanner: what should you automate first? -->
+<?php if ($isSidecar): ?>
+  <?php snippet('sidecar-scanner', ['variant' => 'sidecar']) ?>
+<?php elseif ($isConcierge): ?>
+  <?php snippet('sidecar-scanner', ['variant' => 'neutral']) ?>
 <?php endif ?>
 
 <!-- Sidecar: Benefit Table -->
@@ -318,4 +320,5 @@ if ($page->portfolioProjects()->isNotEmpty()) {
 </div>
 <?php endif ?>
 
+</main>
 <?php snippet('footer') ?>

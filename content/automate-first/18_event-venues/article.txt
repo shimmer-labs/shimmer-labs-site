@@ -24,7 +24,9 @@ Intro: Someone texts at midnight asking if a Saturday in June is open, and you a
 
 Text:
 
-## Start where you groan
+An event venue should automate three things first: answering "is that date open?" with a real quote; moving each booking through contract, deposit, and the week-of checklist; and turning event photos into posts and review requests. Together those give back roughly 11 hours a week, and all three work with HoneyBook, Planning Pod, Square, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For venues and rental companies, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

@@ -711,7 +711,6 @@ return [
           'stillwater-ai-consultant',
           'services/sidecar',
           'services/concierge',
-          'intake',
           'oklahoma-city-ai-consultant',
           'tulsa-ai-consultant',
           'services/custom-apps',

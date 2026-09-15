@@ -24,7 +24,9 @@ Intro: 'Is this still available?' lands at 9:47 on a Saturday night. Meanwhile t
 
 Text:
 
-## Start where you groan
+A local shop should automate three things first: answering the same five questions that land in your DMs, turning new arrivals into product listings and social posts, and replying to custom orders, special orders, and vendor pitches. Together those give back roughly 10 hours a week, and all three work with Shopify, Square, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For local shops, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

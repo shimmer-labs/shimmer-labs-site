@@ -24,7 +24,9 @@ Intro: There's a tenant on their third call about the same leak, a lease that ex
 
 Text:
 
-## Start where you groan
+A property manager should automate three things first: sorting incoming maintenance requests by urgency, tracking lease renewals and the turnover calendar before dates sneak up, and replying to reviews and routine tenant messages. Together those give back roughly 11 hours a week, and all three work with AppFolio, Buildium, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For property managers, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 

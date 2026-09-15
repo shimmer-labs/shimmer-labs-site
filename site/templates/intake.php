@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header', ['noindex' => true]) ?>
 
 <main class="main-content">
 <?php if (get('success')): ?>

@@ -24,7 +24,9 @@ Intro: You're elbow deep in a water heater install when your phone buzzes with a
 
 Text:
 
-## Start where you groan
+A plumber should automate three things first: answering after-hours calls and sorting real emergencies from the rest; sending estimates, following up on them, and firing off annual reminders; and turning truck tickets into invoices with a review ask attached. Together those give back roughly 11 hours a week, and all three work with Housecall Pro, ServiceTitan, Jobber, or a Google Sheet.
+
+## How we picked these three tasks
 
 We ask every owner the same three questions at office hours: what do you dread doing, what do you procrastinate, and what would you do with that time back? For plumbers, the answers cluster around the same three tasks. Each one below comes with three ways to get it off your plate: a prompt you can run this week, a version we build together in a working session, and an always-on version we build and run for you. Start on whichever rung fits.
 
