@@ -103,8 +103,8 @@ Shipped Sep 7-9: legacy 404 redirects, Review schema removed, AI Concierge price
 ### Sep 15 2026: header / structure audit (see references/sep-2026-handoffs/seo-aeo-structure-audit.md)
 Shipped: direct answers under H1s (18 trade pages, home, concierge, sidecar, office hours, 3 notes), descriptive H2s, city in city-page H1s, intake noindex + out of sitemap, scanner below the pitch on service pages, main landmarks, office-hours FAQ + Event schema, home thesis stats updated to 2025/2026 figures.
 Still open (need a decision or facts):
-- [ ] Duplicate trade pages: /plumbers, /roofers, /landscapers (old Sidecar landers in the nav) vs /automate-first/* guides. 301 the old ones, or retitle as Sidecar pages and cross-link.
-- [ ] /work vs /case-studies: two portfolio indexes. Redirect or noindex one.
-- [ ] /stillwater-ai-consultant still on 2025 Sidecar/custom-apps positioning. Rewrite to match OKC/Tulsa (concierge-first, scanner, FAQ).
-- [ ] OKC and Tulsa pages are the same copy with the city swapped. Each needs 150 to 200 city-specific words (drive time, a named client or trade concentration, where you meet).
+- [x] Duplicate trade pages: kept both, retitled /plumbers, /roofers, /landscapers as Sidecar done-for-you pages with a first paragraph linking the matching /automate-first guide (Sep 15).
+- [x] /work is noindex,follow and out of the sitemap; footer link kept (Sep 15).
+- [x] /stillwater-ai-consultant rewritten concierge-first on the trade template with FAQ, scanner, intake CTA, and an opt-in map section (`Show_map: true`); old template deleted (Sep 15).
+- [x] OKC and Tulsa each got a 'What we see in' section (route, suburbs, trades we meet there, links to the matching guides) and a metro-coverage FAQ. No client names used; add one when there is a client to name (Sep 15).
 - [ ] AB Newswire test ($80 to $100, three releases in a month) if Logan wants to try the press-release angle.
