@@ -1,0 +1,94 @@
+Title: Shimmer Labs founder selected for the 2026 Google Data Center Community AI Fellowship
+
+----
+
+Seo_title: Logan Shimmer Selected for the 2026 Google Data Center Community AI Fellowship | Stillwater, OK
+
+----
+
+Meta_description: Logan Shimmer, founder of Shimmer Labs in Stillwater, Oklahoma, has been selected for the 2026 Google Data Center Community AI Fellowship, powered by Watson Institute. What the fellowship is, why Stillwater qualifies, and what it means for local small businesses.
+
+----
+
+Eyebrow: News
+
+----
+
+Date: 2026-09-18
+
+----
+
+Og_image: logan-headshot-2026.jpg
+
+----
+
+Intro: Logan Shimmer, founder of Shimmer Labs, has been selected for the 2026 Google Data Center Community AI Fellowship, a program powered by Watson Institute for community leaders using AI to build local solutions in the towns where Google runs data centers. Stillwater, Oklahoma is one of those towns. Here's the official announcement, and what it means for businesses here.
+
+----
+
+Text:
+
+## The announcement
+
+The text below is the fellowship's approved announcement, published on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7506722698061062144/" rel="noopener" target="_blank">LinkedIn</a> on September 18, 2026, and reproduced here as written.
+
+> I'm so excited to share that I've been selected for the 2026 Google Data Center Community AI Fellowship, powered by Watson Institute!
+>
+> I'm joining a network of leaders scaling local, AI-driven solutions, while learning from exceptional mentors and speakers - including Kevin Koidl, Sarah Windrum, and Rania Hoteit - whose expertise spans impact, technology, and AI.
+>
+> I'm looking forward to connecting with other local leaders leveraging AI and technology to scale inclusive, local solutions in the Google Data Center Communities we call home across the US, England, the Netherlands, and Finland
+>
+> Google Data Center Community AI Fellowship Alumni have gone on to create 1,316 paid jobs, raise $41.5M in capital that they've reinvested into their local solutions, and positively impact 13.1M lives. I am thrilled and grateful to be part of this incredible community of impact.
+>
+> Thank you to Google's Economic and Community Development Team for championing the impact of leaders like me through the Google Data Center Community AI Fellowship!
+
+Everything from here down is Logan talking, not the fellowship.
+
+## What the fellowship actually is
+
+The <a href="https://watson.is/google-data-center-community-ai-fellowship/" rel="noopener" target="_blank">Google Data Center Community AI Fellowship</a> is run by Watson Institute and funded by Google. It runs from September 2026 to January 2027 and is built for people leading local, AI-driven work in the communities where Google operates data centers. Fellows get entrepreneurship and AI training from practitioners, mentorship, financial tools, pitch coaching, and a global cohort across the United States, England, the Netherlands, and Finland.
+
+The part I care most about: every fellow designs and leads a one-day workshop, called a Basecamp, for earlier-stage entrepreneurs in their own community, with a community development stipend behind it. So part of this is a commitment to put on a real, free, in-person AI day for Stillwater business owners.
+
+## Why Stillwater is a Google data center community
+
+Google is building a data center in Stillwater. At the <a href="/notes/stillwater-state-of-the-city-2026">2026 State of the City</a>, the mayor put the numbers at nearly 2,000 construction workers on site today, more than $1.5 million in new sales and use tax already collected, and more than $100 million projected for the city over the next two decades. That's why Stillwater qualifies, and why a fellowship built around data center communities landed on a consultant from a town of 50,000 in Oklahoma.
+
+## What it means if you run a business here
+
+Nothing about how Shimmer Labs works changes. The business is still <a href="/office-hours">free AI office hours</a> every Tuesday and Thursday at WorkIT, the <a href="/services/concierge">AI Concierge</a> for owners who want a standing partner, and <a href="/services/sidecar">Sidecar</a> when a process needs to be built and run for you.
+
+What the fellowship adds:
+
+- **A free one-day AI workshop for Stillwater entrepreneurs**, the Basecamp, sometime before the program ends in January 2027. Date and venue to come. If you want a seat, come to office hours or <a href="/contact">send a note</a> and I'll put you on the list.
+- **The <a href="/ai-security-business">Don't Get Got</a> security material gets a bigger stage.** Small businesses in a boomtown are a target, and that's the piece of the curriculum I'm building out first.
+- **Better answers for the questions I get every week.** Part of the program is spending time with people who have done this in other data center towns. I'll write up what transfers and what doesn't, right here in the notes.
+
+## The fine print
+
+Selection for the fellowship is not an endorsement by Google or Watson Institute of Shimmer Labs or its services. It's a training and community program, and I'm in it as a participant. If you want to know what the program is, the <a href="https://watson.is/google-data-center-community-ai-fellowship/" rel="noopener" target="_blank">Watson Institute page</a> is the source.
+
+----
+
+Faq:
+
+-
+  question: What is the Google Data Center Community AI Fellowship?
+  answer: >
+    A fully funded program from Google, powered by Watson Institute, for community leaders using AI to build local solutions in the communities where Google runs data centers. The 2026 cohort runs September 2026 through January 2027 and includes training, mentorship, pitch coaching, a global network, and a requirement that each fellow lead a one-day workshop for local entrepreneurs.
+-
+  question: Why is Stillwater, Oklahoma a Google data center community?
+  answer: >
+    Google is building a data center in Stillwater. As of the September 2026 State of the City, construction has nearly 2,000 workers on site and has already produced more than $1.5 million in new local sales and use tax, with more than $100 million projected for the city over the next two decades.
+-
+  question: Does the fellowship change what Shimmer Labs charges or offers?
+  answer: >
+    No. Office hours stay free, the AI Concierge stays priced by team size from $750 a month, and Sidecar builds stay at $1,000 and up. The fellowship adds a free one-day workshop for Stillwater entrepreneurs and more written material, not a new price list.
+-
+  question: When is the Stillwater AI workshop?
+  answer: >
+    Before the program ends in January 2027. The date and venue are not set yet. Come to office hours or use the contact page to get on the list, and it will be announced in the notes and on the Shimmer Labs Google Business Profile when it's scheduled.
+-
+  question: Is this an endorsement from Google?
+  answer: >
+    No. Being selected for a training fellowship is not an endorsement of Shimmer Labs or its services by Google or Watson Institute. Logan is a participant in the program.

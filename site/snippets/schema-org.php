@@ -38,7 +38,9 @@ $schema[] = [
     '@type' => 'Person',
     '@id' => $site->url() . '#logan',
     'name' => 'Logan Shimmer',
-    'jobTitle' => 'Founder & Systems Engineer'
+    'jobTitle' => 'Founder & Systems Engineer',
+    'award' => '2026 Google Data Center Community AI Fellowship (Watson Institute)',
+    'alumniOf' => ['@type' => 'CollegeOrUniversity', 'name' => 'Oklahoma State University']
   ]
 ];
 

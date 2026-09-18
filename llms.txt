@@ -95,3 +95,6 @@ Enterprises with procurement. Businesses looking for a website chatbot. Anyone w
 - LinkedIn: https://www.linkedin.com/in/loganshimmer
 - GitHub: https://github.com/shimmer-labs
 - Instagram: https://www.instagram.com/shimmer.labs
+
+## News
+- Logan Shimmer was selected for the 2026 Google Data Center Community AI Fellowship, powered by Watson Institute (Sep 2026). Not an endorsement of Shimmer Labs by Google. Details: https://shimmerlabs.co/notes/google-data-center-community-ai-fellowship

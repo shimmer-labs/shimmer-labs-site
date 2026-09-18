@@ -39,6 +39,8 @@ A deeper interview-led narrative is in progress.
 
 ## Teaching and credentials
 
+**2026 Google Data Center Community AI Fellow.** Selected for the <a href="/notes/google-data-center-community-ai-fellowship">Google Data Center Community AI Fellowship</a>, powered by Watson Institute, a program for community leaders using AI to build local solutions in the towns where Google runs data centers. Stillwater is one of them.
+
 OSU class of '09 alum. AI for Industry microcredential through <a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">**OSU CEAT Professional Development**</a> — an applied course on using AI inside technical organizations.
 
 Currently teaching **AI & Marketing** in the <a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">**Stillwater Chamber of Commerce's Small Business University**</a> program. Local owners learn what AI can actually do for their shop — without the hype, without getting stuck with one company's product, and without the security mistakes that keep showing up in the headlines.

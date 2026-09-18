@@ -23,7 +23,7 @@
         <h1 class="home-hero__headline">We put AI to work on the boring parts of your business.</h1>
         <p class="home-hero__tagline">You drive. We build the sidecar.</p>
         <p class="home-hero__lede">Shimmer Labs is a done-with-you AI consultancy in Stillwater, Oklahoma, working with businesses of 1 to 50 people across the state. Start free at AI office hours, keep going with the AI Concierge from $750 a month, or have us build and run a Sidecar agent.</p>
-        <p class="home-hero__credential">Built by a systems engineer with two decades across <a href="<?= url('about') ?>">National Instruments, Iterable, WeaveGrid, and Sense</a>, making complex systems behave before AI was the hammer.</p>
+        <p class="home-hero__credential">Built by a systems engineer with two decades across <a href="<?= url('about') ?>">National Instruments, Iterable, WeaveGrid, and Sense</a>, making complex systems behave before AI was the hammer. <a href="<?= url('notes/google-data-center-community-ai-fellowship') ?>">2026 Google Data Center Community AI Fellow</a>.</p>
         <div class="home-hero__ctas">
           <a href="<?= url('case-studies') ?>" class="btn btn--cta">See the Work</a>
           <a href="<?= url('contact') ?>" class="btn btn--secondary home-hero__btn-secondary">Book a Call</a>
