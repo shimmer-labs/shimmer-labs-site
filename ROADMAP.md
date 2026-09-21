@@ -114,6 +114,7 @@ Shipped: new /services/assessment page (free Snapshot > paid Assessment > Concie
 Logan's side:
 - [ ] GBP description: lead with "operations partner for small businesses" and add the Assessment; keep AI in the second sentence. Category "Business management consultant" already fits.
 - [ ] Decide Concierge cadence: site says two sessions a month; Kimberly call said weekly at $2k. Pick one before the next close.
-- [ ] Update the GHL nurture copy and the Resend intake auto-reply to mention the Assessment.
-- [ ] Request re-indexing: /services/assessment, /services/concierge, /, /intake is noindex (fine).
+- [x] Resend intake auto-reply branches on start_with (Sep 21). 
+- [ ] GHL nurture: paste the Assessment line from references/sep-2026-handoffs/operations-positioning-handoff.md into the live email; the handoff doc's office-hours time is now 2 to 3 PM, check the live template matches.
+- [ ] Request re-indexing: /services/assessment, /services/concierge, /, /contact, /comparison, /about.
 - [ ] Recheck Sep 28: search data for the new title tag and the assessment page.
