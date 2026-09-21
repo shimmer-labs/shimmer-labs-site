@@ -54,28 +54,32 @@
     <div class="build-section__grid build-section__grid--four">
       <a href="/office-hours" class="build-card">
         <div class="build-card__icon">☕</div>
-        <h3 class="build-card__title">1. The Snapshot</h3>
+        <span class="build-card__step">Step 1</span>
+        <h3 class="build-card__title">The Snapshot</h3>
         <p class="build-card__description">Free. Office hours at WorkIT, a 30-minute call, or the scanner. Three questions, and you leave with the five tasks eating your week and the first move.</p>
         <span class="build-card__price">Free. Genuinely.</span>
         <span class="build-card__arrow">Come Say Hi →</span>
       </a>
       <a href="/services/assessment" class="build-card">
         <div class="build-card__icon">🔍</div>
-        <h3 class="build-card__title">2. Operations Assessment</h3>
+        <span class="build-card__step">Step 2</span>
+        <h3 class="build-card__title">Operations Assessment</h3>
         <p class="build-card__description">A day in your business, process maps, an hours ledger, and a written 90-day plan, delivered digitally and on paper and walked through with you.</p>
         <span class="build-card__price">$1,500 one time · half credited to the Concierge</span>
         <span class="build-card__arrow">View Details →</span>
       </a>
       <a href="/services/concierge" class="build-card">
         <div class="build-card__icon">🤝</div>
-        <h3 class="build-card__title">3. AI Concierge</h3>
+        <span class="build-card__step">Step 3</span>
+        <h3 class="build-card__title">AI Concierge</h3>
         <p class="build-card__description">Your standing operations partner. Two working sessions a month, text us when you're stuck, every fix built on your screen so you own it, AI where it earns its place.</p>
         <span class="build-card__price">from $1,000/mo · priced by team size</span>
         <span class="build-card__arrow">View Details →</span>
       </a>
       <a href="/services/sidecar" class="build-card">
         <div class="build-card__icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" style="width: 48px; height: 48px; display: block;"></div>
-        <h3 class="build-card__title">4. Sidecar</h3>
+        <span class="build-card__step">When it's too big to build together</span>
+        <h3 class="build-card__title">Sidecar</h3>
         <p class="build-card__description">Done FOR you. We build the automation, run it, and maintain it while you stay in the driver's seat. Live for Sweat Yoga and a Stillwater landscaper.</p>
         <span class="build-card__price">Scoped to your build, sized to fit</span>
         <span class="build-card__arrow">View Details →</span>
