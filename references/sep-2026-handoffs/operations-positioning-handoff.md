@@ -15,8 +15,8 @@ GBP services list: add "Operations Assessment" ($1,500) and rename the concierge
 ## LinkedIn headline (current: "Exploring AI + Automation | Business Automation Consulting | Solutions Architect at Heart")
 Fractional operations partner for Oklahoma small businesses | Free AI office hours in Stillwater | Operations Assessment, AI Concierge, Sidecar | 2026 Google Data Center Community AI Fellow
 
-## Resend intake auto-reply (add one line)
-"If you picked the Operations Assessment, I'll reply with two or three dates for the on-site day. If you picked the Concierge or 'not sure', I'll reply with a time for a 30-minute snapshot call first."
+## Resend intake auto-reply
+Done in code (config.php, Sep 21): the "what happens next" paragraph now branches on the start_with answer.
 
 ## GHL nurture (concierge-intake tag): first email, replace the price line
 "The Concierge runs $1,000 to $3,000 a month by team size, no contract. If there's more than one thing to fix, the Operations Assessment ($1,500, half credited to your first month) comes first so month one starts with a plan."

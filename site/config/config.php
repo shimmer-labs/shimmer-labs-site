@@ -500,8 +500,12 @@ return [
       $emailHtml =
         '<div style="font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 560px; margin: 0 auto; color: #1a1a2e;">' .
         '<p>Hey ' . $esc($firstName) . ',</p>' .
-        '<p>Got your AI Concierge intake. This is exactly what we build the first call around, so thank you for the detail.</p>' .
-        '<p><strong>What happens next:</strong> Logan reads every one of these personally and will text or email you within one business day to set up your first session. No phone trees, no scheduling links, just a person.</p>' .
+        '<p>Got your intake. This is exactly what we build the first conversation around, so thank you for the detail.</p>' .
+        '<p><strong>What happens next:</strong> ' . match ($startWith) {
+          'assessment' => 'You picked the Operations Assessment. Logan will reply within one business day with two or three dates for the on-site day. Two weeks after that you get the written plan, digital and printed, and we walk through it together.',
+          'concierge'  => 'You picked the AI Concierge. Logan will text or email you within one business day to set up your first working session.',
+          default      => 'Logan will reply within one business day with a time for a free 30-minute snapshot call. We look at what is eating your week and tell you plainly whether the Operations Assessment or the AI Concierge is the right next step, or neither.',
+        } . ' No phone trees, no scheduling links, just a person.</p>' .
         '<hr style="border:none;border-top:1px solid #eee;margin:24px 0;">' .
         '<p style="font-size:14px;color:#555;"><strong>Your answers, for the record:</strong></p>' .
         '<p style="font-size:14px;color:#555;white-space:pre-line;">' . $esc($intakeBlock) . '</p>' .
@@ -512,7 +516,7 @@ return [
         'from'    => 'Logan Shimmer <logan@shimmerlabs.co>',
         'to'      => [$email],
         'cc'      => ['logan@shimmerlabs.co'],
-        'subject' => 'Got your AI Concierge intake, ' . mb_substr($firstName, 0, 50),
+        'subject' => 'Got your intake, ' . mb_substr($firstName, 0, 50),
         'html'    => $emailHtml,
       ]);
       $ch = curl_init('https://api.resend.com/emails');
