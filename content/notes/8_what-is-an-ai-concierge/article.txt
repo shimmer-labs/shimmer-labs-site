@@ -49,7 +49,7 @@ Done-with-you closes that gap, and consultants have noticed. There are now playb
 
 ## What it costs
 
-Across the markets where this model has taken off, the going rate runs from about $750 to $2,000 a month, typically with no contracts. Ours is priced by team size, from $750 a month for a solo operator to $2,250 for a company of 26 to 50 people, and while we prove the model out here in Oklahoma, the first 5 founding clients get one tier down, locked in. Details on the <a href="/services/concierge">AI Concierge page</a>.
+Across the markets where this model has taken off, the going rate runs from about $750 to $2,000 a month, typically with no contracts. Ours is priced by team size, from $1,000 a month for a solo operator to $3,000 for a company of 26 to 50 people, and while we prove the model out here in Oklahoma, the first 5 founding clients get one tier down, locked in. If there's more than one thing to fix, a one-time <a href="/services/assessment">Operations Assessment</a> ($1,500) scopes it first. Details on the <a href="/services/concierge">AI Concierge page</a>.
 
 ## Five questions to ask before you pay anyone for this
 
@@ -63,7 +63,7 @@ Ask these of any AI concierge, including us. The answers separate the real thing
 
 ## The cheapest way to find out if it's for you
 
-Before paying anyone a monthly rate, test the working style. We host free AI office hours at <a href="/office-hours">WorkIT in Stillwater</a> every Tuesday and Thursday, 2 to 4 PM. Bring your biggest time suck, and the goal is to walk out an hour later with it automated. That hour is exactly what the paid service feels like, month after month. If it clicks, the <a href="/intake">intake form</a> is the front door.
+Before paying anyone a monthly rate, test the working style. We host free AI office hours at <a href="/office-hours">WorkIT in Stillwater</a> every Tuesday and Thursday, 2 to 3 PM. Bring your biggest time suck, and the goal is to walk out an hour later with it automated. That hour is exactly what the paid service feels like, month after month. If it clicks, the <a href="/intake">intake form</a> is the front door.
 
 ----
 
@@ -80,7 +80,7 @@ Faq:
 -
   question: What does an AI concierge cost?
   answer: >
-    In the markets where the model has taken off, roughly $750 to $2,000 a month, usually without contracts. Shimmer Labs charges $1,000 a month, with founding pricing of $750 a month locked in for the first 5 clients while we prove the model in Oklahoma.
+    In the markets where the model has taken off, roughly $750 to $2,000 a month, usually without contracts. Shimmer Labs charges $1,000 to $3,000 a month by team size, and the first 5 founding clients get one tier down, locked in, while we prove the model in Oklahoma.
 -
   question: How is this different from hiring an automation agency?
   answer: >

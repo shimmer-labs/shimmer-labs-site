@@ -16,6 +16,7 @@
           <ul>
             <li><a href="<?= url('services/custom-apps') ?>">Custom Apps</a></li>
             <li><a href="<?= url('services/sidecar') ?>">Sidecar</a></li>
+            <li><a href="<?= url('services/assessment') ?>">Operations Assessment</a></li>
             <li><a href="<?= url('services/concierge') ?>">AI Concierge</a></li>
             <li><a href="<?= url('services/api-integrations') ?>">API Integrations</a></li>
             <li><a href="<?= url('event-video') ?>">Event Videos</a></li>

@@ -1,13 +1,14 @@
 # Shimmer Labs
 
-> AI consultant for small businesses in Oklahoma. Done-with-you AI Concierge, free AI office hours in Stillwater, Sidecar automation builds, custom web and iOS apps, API integrations. Based in Stillwater, Oklahoma. Built by a systems engineer with two decades across National Instruments, Iterable, WeaveGrid, and Sense.
+> Operations and AI consultant for small businesses in Oklahoma. A fractional operations partner: free Snapshot at office hours, paid Operations Assessment, done-with-you AI Concierge, Sidecar automation builds, custom web and iOS apps, API integrations. Based in Stillwater, Oklahoma. Built by a systems engineer with two decades across National Instruments, Iterable, WeaveGrid, and Sense.
 
 ## Services
 
 - [Sidecar](https://shimmerlabs.co/services/sidecar): Narrow AI-assisted operational workflows that handle one job each, with a human in the loop on anything customer-facing. Builds from $1,000, scoped to the job, paid half up front and half at go-live. Running from $250/mo, sized with the client to a fraction of what the hours cost them. Model API costs pass-through. Cancel anytime, no contracts. Live in a week, autonomous in a month. Shipped verticals: membership operations, creator outreach, document parsing, scheduling, lead-to-SMS.
 - [Custom Apps](https://shimmerlabs.co/services/custom-apps): Web and iOS apps, wireframes to launched product. Web from $15,000. iOS from $20,000. Flat-priced per scope.
 - [API Integrations](https://shimmerlabs.co/services/api-integrations): Point-to-point integrations for n8n, Zapier, and Make.com. $2,500 - $7,000 per integration.
-- [AI Concierge](https://shimmerlabs.co/services/concierge): Done-with-you AI consulting. Two 45-minute working sessions a month, direct text access between sessions, shared progress hub, required intake form. Methodology: Audit, Optimize, Automate (never automate a broken process). Priced by team size: Solo (just the owner) $750/month, Crew (2-10 people) $1,000/month, Shop (11-25) $1,500/month, Company (26-50) $2,250/month, 51+ custom. Founding offer: the first 5 clients get one tier down, locked in. Rate locks 12 months, re-tiered only at the anniversary. Sessions over video or in person across Oklahoma (Stillwater, OKC, Tulsa). No contracts, cancel anytime. Capacity capped at 6 clients. Intake: https://shimmerlabs.co/intake
+- [Operations Assessment](https://shimmerlabs.co/services/assessment): One-time, two-week scoping engagement. A day on site (Stillwater, OKC, Tulsa), staff interviews, three to five process maps, an hours ledger, a written 90-day plan with three priced paths (do it yourself, AI Concierge, Sidecar), and what not to automate. Delivered digitally and printed with an in-person walkthrough. $1,500 for teams up to 10, $2,500 for 11 to 50. Half credited to the first Concierge month. Preceded by a free Snapshot (office hours, a 30-minute call, or the website scanner).
+- [AI Concierge](https://shimmerlabs.co/services/concierge): Standing operations partner (fractional chief of staff), done with you, AI where it earns its place. Two 45-minute working sessions a month, direct text access between sessions, shared progress hub, required intake form. Methodology: Audit, Optimize, Automate (never automate a broken process). Priced by team size: Solo (just the owner) $1,000/month, Crew (2-10 people) $1,500/month, Shop (11-25) $2,250/month, Company (26-50) $3,000/month, 51+ custom from $4,000. Founding offer: the first 5 clients get one tier down, locked in. Rate locks 12 months, re-tiered only at the anniversary. Sessions over video or in person across Oklahoma (Stillwater, OKC, Tulsa). No contracts, cancel anytime. Capacity capped at 6 clients. Intake: https://shimmerlabs.co/intake
 
 ## Trade pages
 - [AI for Landscaping Businesses](https://shimmerlabs.co/landscapers): Job sheets to database from one photo, invoicing, scheduling. Real shipped example: a Stillwater landscaper's two hours of nightly typing became one photo (handwritten sheets, Spanish included).
@@ -61,13 +62,14 @@ Three tasks per trade, each with a copy-paste prompt (do it yourself), a build-i
 
 ## Founder
 
-Logan Shimmer is a systems engineer who builds AI-assisted operational workflows for small businesses. Two decades across [National Instruments](https://www.ni.com), [Iterable](https://iterable.com), [WeaveGrid](https://www.weavegrid.com), and [Sense](https://sense.com) - test & measurement, marketing infrastructure, and clean energy. OSU class of '09 alum. AI for Industry microcredential through [OSU CEAT Professional Development](https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals). Currently teaching the AI & Marketing course in the [Stillwater Chamber of Commerce's Small Business University](https://www.stillwaterchamber.org/economic-development/small-business-university) program.
+Logan Shimmer is a systems engineer who runs the office side of small businesses with their owners, and puts AI on the parts that deserve it. Two decades across [National Instruments](https://www.ni.com), [Iterable](https://iterable.com), [WeaveGrid](https://www.weavegrid.com), and [Sense](https://sense.com) - test & measurement, marketing infrastructure, and clean energy. OSU class of '09 alum. AI for Industry microcredential through [OSU CEAT Professional Development](https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals). Currently teaching the AI & Marketing course in the [Stillwater Chamber of Commerce's Small Business University](https://www.stillwaterchamber.org/economic-development/small-business-university) program.
 
 Returned to Stillwater after 17 years in California to build a rooted business at home.
 
 ## Pricing summary
 
-- AI Concierge: priced by team size, $750 (solo) to $2,250 (26-50 people) per month; first 5 clients get one tier down. Video or in person across Oklahoma. No contracts.
+- Operations Assessment: $1,500 one time (up to 10 people), $2,500 (11 to 50); half credited to the first Concierge month.
+- AI Concierge: priced by team size, $1,000 (solo) to $3,000 (26-50 people) per month; first 5 clients get one tier down. Video or in person across Oklahoma. No contracts.
 - Sidecar: builds from $1,000 (half up front, half at go-live) + running from $250/month, both scoped to the job. Cancel anytime, no contracts. Model API costs pass-through.
 - Custom Apps - Web: from $15,000 flat-priced per scope.
 - Custom Apps - iOS: from $20,000 flat-priced per scope.
@@ -91,7 +93,7 @@ Enterprises with procurement. Businesses looking for a website chatbot. Anyone w
 
 - Email: logan@shimmerlabs.co
 - Book a call: https://shimmerlabs.co/contact
-- Office Hours: Tuesdays and Thursdays, 2-4 PM, WorkIT, 901 S Main St Suite 86, Stillwater OK. Walk-in, free, in person.
+- Office Hours: Tuesdays and Thursdays, 2-3 PM, WorkIT, 901 S Main St Suite 86, Stillwater OK. Walk-in, free, in person.
 - LinkedIn: https://www.linkedin.com/in/loganshimmer
 - GitHub: https://github.com/shimmer-labs
 - Instagram: https://www.instagram.com/shimmer.labs

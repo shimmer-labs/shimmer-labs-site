@@ -2,11 +2,11 @@ Title: About
 
 ----
 
-Meta_description: Logan Shimmer — systems engineer with two decades across National Instruments, Iterable, WeaveGrid, and Sense. Now building AI-assisted operational workflows for small businesses out of Stillwater, Oklahoma. OSU alum. Teaches the AI & Marketing course at the Stillwater Chamber's Small Business University.
+Meta_description: Logan Shimmer, systems engineer with two decades across National Instruments, Iterable, WeaveGrid, and Sense. Now a fractional operations partner for small businesses out of Stillwater, Oklahoma, putting AI on the parts that deserve it. OSU alum. Teaches the AI & Marketing course at the Stillwater Chamber's Small Business University.
 
 ----
 
-Headline: Logan Shimmer is a systems engineer who builds AI-assisted operational workflows for small businesses.
+Headline: Logan Shimmer is a systems engineer who runs the office side of small businesses with their owners, and puts AI on the parts that deserve it.
 
 ----
 
@@ -51,7 +51,7 @@ The Supabase and <a href="/case-studies/taddy-api-integrations">Taddy</a> projec
 
 ## Why Stillwater
 
-Logan returned to Stillwater after **17 years in California** to build a rooted business at home. Office Hours runs every Tuesday and Thursday, 2-4 PM, at WorkIT Stillwater. Walk-in, free, in person.
+Logan returned to Stillwater after **17 years in California** to build a rooted business at home. Office Hours runs every Tuesday and Thursday, 2-3 PM, at WorkIT Stillwater. Walk-in, free, in person.
 
 ## What we do and don't do
 

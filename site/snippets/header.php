@@ -8,7 +8,7 @@
   // intendedTemplate() returns a Template object; call ->name() for a string.
   $templateName = $page->intendedTemplate()->name();
   $seoTitle = match($templateName) {
-    'home' => 'Shimmer Labs | AI Consultant for Small Businesses in Oklahoma',
+    'home' => 'Shimmer Labs | Operations and AI Consultant for Oklahoma Small Businesses',
     'case-studies' => 'Small Business AI Case Studies | Shimmer Labs',
     'case-study' => $page->title() . ' Case Study | Shimmer Labs',
     'projects' => 'Portfolio - SaaS Apps, API Integrations & iOS Development | Shimmer Labs',
@@ -42,7 +42,7 @@
       $page->intro()->or(
         $page->mission()->or(
           $page->heroDescription()->or(
-            'Custom software for small businesses. Web apps, mobile apps, and Shopify solutions, built fast. Based in Stillwater, OK.'
+            'Fractional operations partner for Oklahoma small businesses. Free snapshot, paid Operations Assessment, and the AI Concierge. Based in Stillwater, OK.'
           )
         )
       )

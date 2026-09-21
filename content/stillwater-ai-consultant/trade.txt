@@ -6,7 +6,7 @@ Seo_title: AI Consultant in Stillwater, Oklahoma: Local, In Person, Free Office 
 
 ----
 
-Meta_description: Shimmer Labs is Stillwater's local AI consultant. Free AI office hours every Tuesday and Thursday at WorkIT, a done-with-you AI Concierge priced by team size from $750/mo, and Sidecar builds when a process is too big to build together.
+Meta_description: Shimmer Labs is Stillwater's local AI consultant. Free AI office hours every Tuesday and Thursday at WorkIT, a done-with-you AI Concierge priced by team size from $1,000/mo, and Sidecar builds when a process is too big to build together.
 
 ----
 
@@ -26,7 +26,7 @@ Hero_title: AI Consultant in Stillwater, Oklahoma
 
 ----
 
-Intro: Shimmer Labs is the AI consultant that is actually in Stillwater. Logan Shimmer, OSU class of '09, runs it from WorkIT on Main Street. Free AI office hours twice a week, a done-with-you AI Concierge priced by team size from $750 a month, and Sidecar builds when a process is too big to build together. No account managers, no Dallas agency, no chatbot pitch.
+Intro: Shimmer Labs is the AI consultant that is actually in Stillwater. Logan Shimmer, OSU class of '09, runs it from WorkIT on Main Street. Free AI office hours twice a week, a done-with-you AI Concierge priced by team size from $1,000 a month, and Sidecar builds when a process is too big to build together. No account managers, no Dallas agency, no chatbot pitch.
 
 ----
 
@@ -40,13 +40,17 @@ Most "AI consultants" you'll find on Google are in Dallas, Austin, or a Slack ch
 
 ## Start free: AI office hours at WorkIT
 
-Every Tuesday and Thursday, 2 to 4 PM, at WorkIT Coworking, 901 S Main Street, Suite 86. Walk in, no appointment, no pitch. Bring the one task that eats your week and we'll work on it together at the table. Sometimes the honest answer is "skip it for now," and you'll hear that too. Details on the <a href="/office-hours">office hours page</a>.
+Every Tuesday and Thursday, 2 to 3 PM, at WorkIT Coworking, 901 S Main Street, Suite 86. Walk in, no appointment, no pitch. Bring the one task that eats your week and we'll work on it together at the table. Sometimes the honest answer is "skip it for now," and you'll hear that too. Details on the <a href="/office-hours">office hours page</a>.
+
+## Scope it: the Operations Assessment
+
+When office hours turns up more than one thing, or the work runs through several people, the <a href="/services/assessment">Operations Assessment</a> comes first. A day at your business, process maps, an hours ledger, and a written 90-day plan delivered digitally and on paper, walked through with you at the table. $1,500 for teams up to 10, half credited to your first Concierge month.
 
 ## Keep going: the AI Concierge
 
 When you want a standing plan instead of a drop-in, the <a href="/services/concierge">AI Concierge</a> is two working sessions a month, text access to Logan between them, and a shared hub of everything we automate together. Every task goes through the same three steps: audit how you actually do it, cut the steps that don't need to exist, then automate what's left with you at the keyboard. In Stillwater, sessions happen at your shop when the process lives in the building.
 
-It's priced by team size. $750 a month if it's just you, $1,000 for a crew of 2 to 10, $1,500 for a shop of 11 to 25, $2,250 for a company of 26 to 50. No contract. The next 5 clients get one tier down, locked in. We published <a href="/notes/ai-consultant-cost-per-employee">the per-employee math</a> so you can check our work.
+It's priced by team size. $1,000 a month if it's just you, $1,500 for a crew of 2 to 10, $2,250 for a shop of 11 to 25, $3,000 for a company of 26 to 50. No contract. The next 5 clients get one tier down, locked in. We published <a href="/notes/ai-consultant-cost-per-employee">the per-employee math</a> so you can check our work.
 
 ## When it's too big to build together: Sidecar
 
@@ -83,7 +87,7 @@ Faq:
 -
   question: What does an AI consultant cost in Stillwater?
   answer: >
-    Office hours are free. The AI Concierge runs $750 to $2,250 a month depending on team size, with no contract: two working sessions a month, in person when it helps, and direct text access in between. Sidecar builds start at $1,000 plus $250 a month to run. Agencies from Dallas or Austin quote retainers from $5,000 a month, mostly remote.
+    Office hours are free. The AI Concierge runs $1,000 to $3,000 a month depending on team size, with no contract: two working sessions a month, in person when it helps, and direct text access in between. Sidecar builds start at $1,000 plus $250 a month to run. Agencies from Dallas or Austin quote retainers from $5,000 a month, mostly remote.
 -
   question: Do I have to come to WorkIT?
   answer: >

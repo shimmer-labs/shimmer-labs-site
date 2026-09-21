@@ -18,7 +18,7 @@ $schema[] = [
   'name' => 'Shimmer Labs',
   'url' => $site->url(),
   'logo' => url('assets/images/shimmer-labs-logo.png'),
-  'description' => 'AI consultant for small businesses in Oklahoma. Done-with-you AI Concierge, free AI office hours, and Sidecar automation builds. Based in Stillwater, Oklahoma.',
+  'description' => 'Operations and AI consultant for small businesses in Oklahoma. Free snapshot, paid Operations Assessment, done-with-you AI Concierge, free AI office hours, and Sidecar automation builds. Based in Stillwater, Oklahoma.',
   'email' => 'logan@shimmerlabs.co',
   'telephone' => '+1-405-880-6674',
   'address' => [
@@ -67,7 +67,7 @@ if ($page->intendedTemplate()->name() === 'home') {
     '@id' => $site->url() . '#business',
     'name' => 'Shimmer Labs',
     'image' => url('assets/images/shimmer-labs-logo.png'),
-    'description' => 'AI consulting for Oklahoma small businesses. AI Concierge (done-with-you, $750 to $2,250/mo by team size), Sidecar (AI-assisted workflows built for you, from $1,000 + from $250/mo), Custom Apps and API Integrations. Based in Stillwater, Oklahoma.',
+    'description' => 'Operations and AI consulting for Oklahoma small businesses. Free Snapshot, Operations Assessment ($1,500 to $2,500 one time), AI Concierge (done-with-you, $1,000 to $3,000/mo by team size), Sidecar (AI-assisted workflows built for you, from $1,000 + from $250/mo), Custom Apps and API Integrations. Based in Stillwater, Oklahoma.',
     'url' => $site->url(),
     'email' => 'logan@shimmerlabs.co',
     'telephone' => '+1-405-880-6674',
@@ -89,7 +89,7 @@ if ($page->intendedTemplate()->name() === 'home') {
       ['@type' => 'State', 'name' => 'Oklahoma'],
       ['@type' => 'Country', 'name' => 'United States']
     ],
-    'priceRange' => '$750 to $2,250 per month',
+    'priceRange' => '$1,000 to $3,000 per month',
     'founder' => [
       '@id' => $site->url() . '#logan'
     ],
@@ -229,7 +229,7 @@ if ($page->intendedTemplate()->name() === 'service') {
       ['@type' => 'State', 'name' => 'Oklahoma'],
       ['@type' => 'Country', 'name' => 'United States']
     ],
-    'serviceType' => 'Custom software development'
+    'serviceType' => match ($slug) { 'concierge' => 'Business operations consulting', 'assessment' => 'Business operations assessment', default => 'Custom software development' }
   ];
 
   if ($slug === 'sidecar') {
@@ -248,12 +248,23 @@ if ($page->intendedTemplate()->name() === 'service') {
       '@type' => 'Offer',
       'priceSpecification' => [
         '@type' => 'UnitPriceSpecification',
-        'minPrice' => '750',
-        'maxPrice' => '2250',
+        'minPrice' => '1000',
+        'maxPrice' => '3000',
         'priceCurrency' => 'USD',
         'unitText' => 'MONTH'
       ],
-      'description' => 'Done-with-you AI consulting priced by team size: Solo $750/month, Crew (2-10 people) $1,000/month, Shop (11-25) $1,500/month, Company (26-50) $2,250/month, 51+ custom. Founding offer: first 5 clients get one tier down, locked in. Two working sessions a month, direct text access, shared progress hub. Video or in person across Oklahoma.'
+      'description' => 'Standing operations partner (fractional chief of staff) priced by team size: Solo $1,000/month, Crew (2-10 people) $1,500/month, Shop (11-25) $2,250/month, Company (26-50) $3,000/month, 51+ custom. Founding offer: first 5 clients get one tier down, locked in. Two working sessions a month, direct text access, shared progress hub. Video or in person across Oklahoma.'
+    ];
+  } elseif ($slug === 'assessment') {
+    $serviceSchema['offers'] = [
+      '@type' => 'Offer',
+      'priceSpecification' => [
+        '@type' => 'PriceSpecification',
+        'minPrice' => '1500',
+        'maxPrice' => '2500',
+        'priceCurrency' => 'USD'
+      ],
+      'description' => 'One-time Operations Assessment: a day on site, staff interviews, process maps, an hours ledger, and a written 90-day plan delivered digitally and printed with an in-person walkthrough. $1,500 for teams up to 10, $2,500 for 11 to 50. Half credited to the first AI Concierge month.'
     ];
   } elseif ($slug === 'custom-apps') {
     $serviceSchema['offers'] = [
@@ -387,7 +398,7 @@ if ($page->slug() === 'stillwater-ai-consultant') {
     '@type' => 'LocalBusiness',
     '@id' => $site->url() . '#stillwater-local',
     'name' => 'Shimmer Labs, AI Consultant in Stillwater, OK',
-    'description' => 'Local AI consultant for Stillwater and north-central Oklahoma small businesses. Free AI office hours every Tuesday and Thursday at WorkIT, a done-with-you AI Concierge priced by team size from $750 a month, and Sidecar builds when a process is too big to build together.',
+    'description' => 'Local AI consultant for Stillwater and north-central Oklahoma small businesses. Free AI office hours every Tuesday and Thursday at WorkIT, a paid Operations Assessment, a done-with-you AI Concierge priced by team size from $1,000 a month, and Sidecar builds when a process is too big to build together.',
     'url' => $page->url(),
     'telephone' => '+1-405-880-6674',
     'email' => 'logan@shimmerlabs.co',
@@ -415,7 +426,7 @@ if ($page->slug() === 'stillwater-ai-consultant') {
         '@type' => 'OpeningHoursSpecification',
         'dayOfWeek' => ['Tuesday', 'Thursday'],
         'opens' => '14:00',
-        'closes' => '16:00',
+        'closes' => '15:00',
         'name' => 'AI Office Hours (walk-in)'
       ]
     ],
@@ -523,7 +534,7 @@ if ($page->intendedTemplate()->name() === 'office-hours') {
     '@context' => 'https://schema.org',
     '@type' => 'Event',
     'name' => 'Free AI Office Hours in Stillwater, OK',
-    'description' => 'Free, walk-in help with AI and automation for small business owners. Every Tuesday and Thursday, 2 to 4 PM, at WorkIT Coworking in Stillwater, Oklahoma. No RSVP, no pitch.',
+    'description' => 'Free, walk-in help with AI and automation for small business owners. Every Tuesday and Thursday, 2 to 3 PM, at WorkIT Coworking in Stillwater, Oklahoma. No RSVP, no pitch.',
     'url' => $page->url(),
     'image' => url('assets/images/office.jpg'),
     'eventAttendanceMode' => 'https://schema.org/OfflineEventAttendanceMode',
@@ -534,7 +545,7 @@ if ($page->intendedTemplate()->name() === 'office-hours') {
       '@type' => 'Schedule',
       'byDay' => ['https://schema.org/Tuesday', 'https://schema.org/Thursday'],
       'startTime' => '14:00',
-      'endTime' => '16:00',
+      'endTime' => '15:00',
       'repeatFrequency' => 'P1W',
       'scheduleTimezone' => 'America/Chicago',
     ],

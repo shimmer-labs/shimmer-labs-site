@@ -1,0 +1,191 @@
+Title: Operations Assessment
+
+----
+
+Seo_title: Business Operations Assessment for Small Businesses in Oklahoma | $1,500, Two Weeks, On Site
+
+----
+
+Meta_description: A paid two-week look at how the work actually moves through your small business: every recurring task, who touches it, what it costs in hours, and what to fix first. Written plan, delivered digitally and on paper, walked through in person. $1,500 for teams up to 10.
+
+----
+
+Summary: The Operations Assessment is a paid, two-week look at how the work actually moves through your business: every recurring task, who touches it, what it costs you in hours, and what to fix first. You get a written plan, delivered digitally and on paper, and we walk through it with you in person. $1,500 for teams up to 10, $2,500 for 11 to 50. Half of it comes off your first month if you continue into the AI Concierge.
+
+----
+
+Pricerange: $1,500 to $2,500, one time
+
+----
+
+Icon: 🔍
+
+----
+
+Text:
+
+## First, the free Snapshot
+
+Before anyone pays anything, we talk. That can be <a href="/office-hours">office hours</a> at WorkIT, a 30-minute call, or your website through <a href="/services/concierge#scanner">the scanner</a>. We ask three questions: what do you dread doing, what do you procrastinate, and what would you do with that time back. You leave with a one-page Snapshot: the five tasks eating your week, a rough count of the hours, and the one move we'd make first. It also shows you how we think, so you can decide whether you want more of it.
+
+Most people stop there and go run the prompt. Good. The Snapshot is the free rung on purpose.
+
+## Then the Assessment
+
+The Assessment is for when the Snapshot turned up more than one thing, or the thing it turned up involves more than one person. We spend a day in your business watching the work happen, talk to the people who actually do it, and map how each recurring task really flows: where it starts, who hands it to whom, which tools it touches, and where it breaks. Then we build the plan.
+
+Two weeks after the on-site day you get the written Assessment, in a shared digital copy and a printed one, and we sit down together and walk through it page by page. Nothing in it is a surprise, and nothing in it requires you to hire us again to understand.
+
+## What's in the written plan
+
+- **Where you are.** The business in one paragraph, the team, the tools, and the five tasks from the Snapshot with real hours attached.
+- **How the work actually flows.** Three to five process maps, cleaned up from the whiteboard: trigger, steps, handoffs, tools, and the exact spot each one breaks.
+- **The hours ledger.** Every recurring task, who does it, hours a week, and what that costs at your loaded wage. One number at the bottom.
+- **What to fix and in what order.** Each project with what changes, whether it's a prompt you run yourself, something we build together, or something built and run for you, the tools involved, whether AI is part of it at all, and the hours it gives back.
+- **The first 90 days.** Quick wins in the first two weeks, the first real build in month one, and what months two and three look like.
+- **What not to automate.** The handoffs that are really conversations, and the steps that should stay human on purpose.
+- **What it costs, three ways.** Do it yourself, do it with us, or have it built. With the break-even for each.
+
+## Where AI fits, honestly
+
+Usually in a small slice. Most of what we find is a process with three steps too many, a spreadsheet that should talk to another spreadsheet, and one place where a computer that can read and write would save someone an hour a day. That last piece is where AI earns its keep. The rest is plain operations work, and we say so in the plan. If the answer is "you don't need AI for this," you'll read that sentence in your Assessment.
+
+## What happens after
+
+Three options, and the plan prices all three. Run it yourself with the prompts and the order of operations we give you. Bring it to the <a href="/services/concierge">AI Concierge</a> and we build it together, month by month, with half the Assessment fee credited to your first month. Or hand the biggest piece to <a href="/services/sidecar">Sidecar</a> and have it built and run for you. Plenty of businesses do some of each.
+
+----
+
+Whatsincluded:
+
+-
+  title: The intake form
+  icon: 📋
+  description: Ten minutes of honest answers about your business, your tools, and the tasks eating your week. We read it before we show up, so the on-site day starts with questions, not introductions.
+-
+  title: A day in your business
+  icon: 🚪
+  description: We come to you, in Stillwater, Oklahoma City, or Tulsa. We watch the work happen at the counter, the truck, and the desk, and we talk to the people who do it. Not a survey. A visit.
+-
+  title: Process maps and the hours ledger
+  icon: 🗺️
+  description: Three to five recurring processes drawn out step by step, handoffs included, plus a table of every recurring task with hours a week and what it costs you.
+-
+  title: The written plan
+  icon: 📄
+  description: What to fix, in what order, three ways to do each, what AI is and isn't part of, and a 90-day sequence. Shared digitally and printed for the walkthrough.
+-
+  title: The walkthrough
+  icon: 🤝
+  description: We sit down together and go through the plan page by page, in person when we can. You ask, we answer, you mark it up. It's your document when we're done.
+
+----
+
+Process:
+
+-
+  title: The Snapshot, free
+  description: Office hours, a 30-minute call, or the website scanner. Three questions, one page back, and you know how we think.
+-
+  title: The intake form
+  description: Ten minutes online. Your tools, your team size, the tasks eating your week, the one process you'd pay the most to never do again.
+-
+  title: A day on site
+  description: We watch the work, talk to your people, and draw the processes on the whiteboard. Half a day for a solo operator, a full day for a team.
+-
+  title: We write the plan
+  description: About two weeks. Process maps, the hours ledger, the fix list in order, the 90-day sequence, and honest pricing for each path.
+-
+  title: The walkthrough
+  description: Digital copy in your inbox, printed copy on the table. We walk through it together and you leave knowing your next three moves.
+
+----
+
+Pricingtiers:
+
+-
+  name: Up to 10 people
+  price: $1,500
+  description: Solo operators and crews. Half a day on site, three process maps, one walkthrough. Half the fee comes off your first AI Concierge month if you continue within 30 days.
+  features: |
+    Half day on site
+    Three process maps
+    Hours ledger for the whole team
+    Written plan, digital and printed
+    In-person walkthrough
+    $750 credit toward the Concierge
+  featured: true
+-
+  name: 11 to 50 people
+  price: $2,500
+  description: Shops and companies, where the owner isn't the only one doing the work. Full day on site, staff interviews, five process maps, and a rollout section in the plan.
+  features: |
+    Full day on site
+    Interviews with the people who do the work
+    Five process maps
+    Hours ledger by role
+    Rollout plan for the team
+    $1,250 credit toward the Concierge
+  featured: false
+
+----
+
+Qualifieryes:
+
+-
+  item: You have more than one thing eating your week and you're not sure which to fix first
+-
+  item: The work touches more than one person, and the handoffs are where it breaks
+-
+  item: You want a written plan you own, whether or not you hire us to run it
+-
+  item: You've been quoted an "AI transformation" and you'd like a second opinion that isn't selling software
+
+----
+
+Qualifierno:
+
+-
+  item: You have one clear task and you just want it automated (bring it to office hours, we'll start there)
+-
+  item: You want a slide deck for the board (this is a working document, not a presentation)
+-
+  item: You can't give us a day in the building
+
+----
+
+Faq:
+
+-
+  question: What is a business operations assessment?
+  answer: 'A paid, time-boxed look at how the recurring work in a small business actually gets done: who does it, how long it takes, what it costs, where it breaks, and what to fix first. Ours takes two weeks, includes a day on site, and ends with a written plan we walk through with you. It covers the whole office side of the business, not just the parts a computer could do.'
+-
+  question: How is this different from the free Snapshot?
+  answer: 'The Snapshot is a conversation and one page: the five tasks eating your week and the first move. The Assessment is a day in your business, interviews with your people, process maps, an hours ledger with real numbers, and a 90-day plan with three priced paths. The Snapshot tells you where to start. The Assessment tells you what everything is going to take.'
+-
+  question: Do I have to do the Assessment before the AI Concierge?
+  answer: 'No. Solo operators and small crews with one obvious problem can go straight from office hours to the Concierge. The Assessment is for businesses with several things to fix, or teams where more than one person touches the work. When you do both, half the Assessment fee comes off your first Concierge month.'
+-
+  question: Is this an AI assessment?
+  answer: 'It''s an operations assessment. AI is one of the tools we consider for each task, and the plan says plainly where it belongs and where it doesn''t. Most businesses find that a small slice of the work benefits from AI and the rest is process, handoffs, and a spreadsheet that should talk to another spreadsheet.'
+-
+  question: What do I actually receive?
+  answer: 'A written document, usually 10 to 15 pages: where you are, three to five process maps, the hours ledger, the fix list in order with three ways to do each, the first 90 days, what not to automate, and costs for each path. You get a shared digital copy and a printed one, and we walk through it together in person.'
+-
+  question: What does it cost, and is the fee credited?
+  answer: '$1,500 for teams up to 10 people, $2,500 for 11 to 50. Paid up front. If you continue into the AI Concierge within 30 days of the walkthrough, half the fee comes off your first month.'
+-
+  question: Where do you do these?
+  answer: 'Stillwater, Oklahoma City, Tulsa, and the towns between. The on-site day is the point, so we don''t do the Assessment fully remote. If your work lives on laptops, the day on site is shorter and the walkthrough can be over video.'
+
+----
+
+Ctatitle: Start with the intake form
+
+----
+
+Ctadescription: Ten minutes of honest answers about what eats your week. Pick "Operations Assessment" as where you want to start and we'll reply within a business day with dates.
+
+----
+
+Uuid: assessment-service-001

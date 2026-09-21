@@ -49,7 +49,7 @@
   <section class="local-map">
     <div class="container">
       <h2 class="local-map__title">Where to find us in Stillwater</h2>
-      <p class="local-map__address">WorkIT &middot; 901 S Main St, Suite 86, Stillwater, OK 74074 &middot; <a href="<?= url('office-hours') ?>">Free AI Office Hours Tue &amp; Thu, 2 to 4 PM</a></p>
+      <p class="local-map__address">WorkIT &middot; 901 S Main St, Suite 86, Stillwater, OK 74074 &middot; <a href="<?= url('office-hours') ?>">Free AI Office Hours Tue &amp; Thu, 2 to 3 PM</a></p>
       <div class="local-map__embed">
         <iframe
           src="https://www.google.com/maps?q=Shimmer+Labs,901+S+Main+St+Suite+86,Stillwater,OK+74074&output=embed"

@@ -118,4 +118,4 @@ Faq:
 -
   question: Do you teach this to teams?
   answer: >
-    Yes. The scam material comes from our talk "AI for Every Business: The Upside, the Scams, and How Not to Get Got," and we cover the habits at our free AI office hours at WorkIT in Stillwater every Tuesday and Thursday, 2 to 4 PM. Bring your team and your questions.
+    Yes. The scam material comes from our talk "AI for Every Business: The Upside, the Scams, and How Not to Get Got," and we cover the habits at our free AI office hours at WorkIT in Stillwater every Tuesday and Thursday, 2 to 3 PM. Bring your team and your questions.

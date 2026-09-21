@@ -108,3 +108,12 @@ Still open (need a decision or facts):
 - [x] /stillwater-ai-consultant rewritten concierge-first on the trade template with FAQ, scanner, intake CTA, and an opt-in map section (`Show_map: true`); old template deleted (Sep 15).
 - [x] OKC and Tulsa each got a 'What we see in' section (route, suburbs, trades we meet there, links to the matching guides) and a metro-coverage FAQ. No client names used; add one when there is a client to name (Sep 15).
 - [ ] AB Newswire test ($80 to $100, three releases in a month) if Logan wants to try the press-release angle.
+
+### Sep 21 2026: operations-first repositioning + Operations Assessment
+Shipped: new /services/assessment page (free Snapshot > paid Assessment > Concierge > Sidecar ladder), Concierge bumped to $1,000 / $1,500 / $2,250 / $3,000, home H1 + lede + 4-card ladder + engagement steps rewritten operations-first, title tag "Operations and AI Consultant", intake `start_with` field, schema/llms/menu/footer/city pages/notes updated. Deliverable templates in references/sep-2026-handoffs/operations-assessment-template.md and -print.html.
+Logan's side:
+- [ ] GBP description: lead with "operations partner for small businesses" and add the Assessment; keep AI in the second sentence. Category "Business management consultant" already fits.
+- [ ] Decide Concierge cadence: site says two sessions a month; Kimberly call said weekly at $2k. Pick one before the next close.
+- [ ] Update the GHL nurture copy and the Resend intake auto-reply to mention the Assessment.
+- [ ] Request re-indexing: /services/assessment, /services/concierge, /, /intake is noindex (fine).
+- [ ] Recheck Sep 28: search data for the new title tag and the assessment page.

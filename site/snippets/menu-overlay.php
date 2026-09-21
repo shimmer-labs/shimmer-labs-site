@@ -24,10 +24,17 @@
             </a>
           </li>
           <li>
+            <a href="<?= url('services/assessment') ?>">
+              <span class="menu-link-icon">🔍</span>
+              <span class="menu-link-title">Operations Assessment</span>
+              <span class="menu-link-price">$1,500 one time</span>
+            </a>
+          </li>
+          <li>
             <a href="<?= url('services/concierge') ?>">
               <span class="menu-link-icon">🤝</span>
               <span class="menu-link-title">AI Concierge</span>
-              <span class="menu-link-price">from $750/mo · by team size</span>
+              <span class="menu-link-price">from $1,000/mo · by team size</span>
             </a>
           </li>
           <li>
@@ -101,7 +108,7 @@
             <a href="<?= url('office-hours') ?>">
               <span class="menu-link-icon">🤖</span>
               <span class="menu-link-title">AI Office Hours</span>
-              <span class="menu-link-price">Tue &amp; Thu, 2–4 PM</span>
+              <span class="menu-link-price">Tue &amp; Thu, 2–3 PM</span>
             </a>
           </li>
         </ul>

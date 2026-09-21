@@ -83,7 +83,7 @@ Faq:
 -
   question: Does the fellowship change what Shimmer Labs charges or offers?
   answer: >
-    No. Office hours stay free, the AI Concierge stays priced by team size from $750 a month, and Sidecar builds stay at $1,000 and up. The fellowship adds a free one-day workshop for Stillwater entrepreneurs and more written material, not a new price list.
+    No. Office hours stay free, the AI Concierge stays priced by team size from $1,000 a month, and Sidecar builds stay at $1,000 and up. The fellowship adds a free one-day workshop for Stillwater entrepreneurs and more written material, not a new price list.
 -
   question: When is the Stillwater AI workshop?
   answer: >

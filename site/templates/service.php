@@ -2,6 +2,7 @@
 
 <?php $isSidecar = $page->slug() === 'sidecar'; ?>
 <?php $isConcierge = $page->slug() === 'concierge'; ?>
+<?php $isAssessment = $page->slug() === 'assessment'; ?>
 
 <!-- Service Hero -->
 <main class="main-content">
@@ -28,8 +29,8 @@
       <?php endif ?>
 
       <div class="service-hero__cta">
-        <a href="<?= $isConcierge ? url('intake') : '#contact-form' ?>" class="btn <?= $isSidecar ? 'btn--sidecar' : 'btn--primary' ?>">
-          <?= $isSidecar ? 'Book a Free Discovery Call' : ($isConcierge ? 'Start With the Intake Form →' : 'Get Started →') ?>
+        <a href="<?= ($isConcierge || $isAssessment) ? url('intake') : '#contact-form' ?>" class="btn <?= $isSidecar ? 'btn--sidecar' : 'btn--primary' ?>">
+          <?= $isSidecar ? 'Book a Free Discovery Call' : ($isConcierge ? 'Start With the Intake Form →' : ($isAssessment ? 'Book the Assessment →' : 'Get Started →')) ?>
         </a>
       </div>
     </div>
@@ -79,7 +80,7 @@
 <!-- Website scanner: what should you automate first? -->
 <?php if ($isSidecar): ?>
   <?php snippet('sidecar-scanner', ['variant' => 'sidecar']) ?>
-<?php elseif ($isConcierge): ?>
+<?php elseif ($isConcierge || $isAssessment): ?>
   <?php snippet('sidecar-scanner', ['variant' => 'neutral']) ?>
 <?php endif ?>
 
@@ -246,7 +247,7 @@ if ($page->portfolioProjects()->isNotEmpty()) {
 <?php if ($page->qualifierYes()->isNotEmpty()): ?>
 <section class="qualifier">
   <div class="container">
-    <h2 class="qualifier__title">Is <?= $isSidecar ? 'Sidecar' : ($isConcierge ? 'the Concierge' : $page->title()) ?> Right For You?</h2>
+    <h2 class="qualifier__title">Is <?= $isSidecar ? 'Sidecar' : ($isConcierge ? 'the Concierge' : ($isAssessment ? 'the Assessment' : $page->title())) ?> Right For You?</h2>
     <div class="qualifier__grid">
       <div class="qualifier__column">
         <h3 class="qualifier__column-title qualifier__column-title--yes">&#10003; Great Fit</h3>
@@ -301,13 +302,13 @@ if ($page->portfolioProjects()->isNotEmpty()) {
 <?php endif ?>
 
 <!-- Contact Form / Intake CTA -->
-<?php if ($isConcierge): ?>
+<?php if ($isConcierge || $isAssessment): ?>
 <section class="cta-final">
   <div class="container">
     <div class="cta-final__content">
       <h2><?= $page->ctaTitle()->or('Start with the intake form') ?></h2>
       <p><?= $page->ctaDescription() ?></p>
-      <a href="<?= url('intake') ?>" class="btn btn--cta">Fill Out the Intake →</a>
+      <a href="<?= url('intake') ?>" class="btn btn--cta"><?= $isAssessment ? 'Book the Assessment →' : 'Fill Out the Intake →' ?></a>
     </div>
   </div>
 </section>

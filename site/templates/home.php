@@ -4,7 +4,7 @@
 <a href="<?= url('office-hours') ?>" class="event-banner" id="eventBanner">
   <div class="container">
     <span class="event-banner__text">
-      <strong>Free AI Office Hours</strong>, Tuesdays &amp; Thursdays, 2–4 PM at WorkIT Stillwater
+      <strong>Free AI Office Hours</strong>, Tuesdays &amp; Thursdays, 2–3 PM at WorkIT Stillwater
     </span>
     <span class="event-banner__cta">Drop In →</span>
   </div>
@@ -20,9 +20,9 @@
           <p>You didn't start your business to answer emails at midnight.</p>
           <p>Most small business owners lose 15+ hours a week to admin that has nothing to do with the work they love.</p>
         </div>
-        <h1 class="home-hero__headline">We put AI to work on the boring parts of your business.</h1>
-        <p class="home-hero__tagline">You drive. We build the sidecar.</p>
-        <p class="home-hero__lede">Shimmer Labs is a done-with-you AI consultancy in Stillwater, Oklahoma, working with businesses of 1 to 50 people across the state. Start free at AI office hours, keep going with the AI Concierge from $750 a month, or have us build and run a Sidecar agent.</p>
+        <h1 class="home-hero__headline">We run the office side of your business with you.</h1>
+        <p class="home-hero__tagline">You drive. We build the sidecar. AI goes on the parts that deserve it.</p>
+        <p class="home-hero__lede">Shimmer Labs is a fractional operations partner for Oklahoma businesses with 1 to 50 people. We start with a free snapshot of where your business is, scope the fixes in a paid Operations Assessment, then build them with you month by month through the AI Concierge. Stillwater, Oklahoma City, and Tulsa, in person.</p>
         <p class="home-hero__credential">Built by a systems engineer with two decades across <a href="<?= url('about') ?>">National Instruments, Iterable, WeaveGrid, and Sense</a>, making complex systems behave before AI was the hammer. <a href="<?= url('notes/google-data-center-community-ai-fellowship') ?>">2026 Google Data Center Community AI Fellow</a>.</p>
         <div class="home-hero__ctas">
           <a href="<?= url('case-studies') ?>" class="btn btn--cta">See the Work</a>
@@ -48,27 +48,34 @@
 <section id="build" class="build-section">
   <div class="container">
     <div class="build-section__header">
-      <h2 class="build-section__title">Three Ways to Work With Us</h2>
-      <p class="build-section__subtitle">Start free, learn with a partner, or hand it off entirely. Every rung is a small yes.</p>
+      <h2 class="build-section__title">How working with us goes</h2>
+      <p class="build-section__subtitle">A free snapshot, a paid plan, a standing partner, and a build-it-for-you option. Every step is a small yes.</p>
     </div>
-    <div class="build-section__grid">
+    <div class="build-section__grid build-section__grid--four">
       <a href="/office-hours" class="build-card">
         <div class="build-card__icon">☕</div>
-        <h3 class="build-card__title">Start Free</h3>
-        <p class="build-card__description">Walk into AI Office Hours at WorkIT, Tuesdays and Thursdays. Or join Main Street AI, our free community for local business owners. Bring your weirdest question.</p>
+        <h3 class="build-card__title">1. The Snapshot</h3>
+        <p class="build-card__description">Free. Office hours at WorkIT, a 30-minute call, or the scanner. Three questions, and you leave with the five tasks eating your week and the first move.</p>
         <span class="build-card__price">Free. Genuinely.</span>
         <span class="build-card__arrow">Come Say Hi →</span>
       </a>
+      <a href="/services/assessment" class="build-card">
+        <div class="build-card__icon">🔍</div>
+        <h3 class="build-card__title">2. Operations Assessment</h3>
+        <p class="build-card__description">A day in your business, process maps, an hours ledger, and a written 90-day plan, delivered digitally and on paper and walked through with you.</p>
+        <span class="build-card__price">$1,500 one time · half credited to the Concierge</span>
+        <span class="build-card__arrow">View Details →</span>
+      </a>
       <a href="/services/concierge" class="build-card">
         <div class="build-card__icon">🤝</div>
-        <h3 class="build-card__title">AI Concierge</h3>
-        <p class="build-card__description">Done WITH you. Two working sessions a month, text us when you're stuck, and every automation built on your screen so you own it and understand it.</p>
-        <span class="build-card__price">from $750/mo · priced by team size</span>
+        <h3 class="build-card__title">3. AI Concierge</h3>
+        <p class="build-card__description">Your standing operations partner. Two working sessions a month, text us when you're stuck, every fix built on your screen so you own it, AI where it earns its place.</p>
+        <span class="build-card__price">from $1,000/mo · priced by team size</span>
         <span class="build-card__arrow">View Details →</span>
       </a>
       <a href="/services/sidecar" class="build-card">
         <div class="build-card__icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="Sidecar" style="width: 48px; height: 48px; display: block;"></div>
-        <h3 class="build-card__title">Sidecar</h3>
+        <h3 class="build-card__title">4. Sidecar</h3>
         <p class="build-card__description">Done FOR you. We build the automation, run it, and maintain it while you stay in the driver's seat. Live for Sweat Yoga and a Stillwater landscaper.</p>
         <span class="build-card__price">Scoped to your build, sized to fit</span>
         <span class="build-card__arrow">View Details →</span>

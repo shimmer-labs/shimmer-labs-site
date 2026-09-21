@@ -13,7 +13,7 @@
     <div class="container">
       <div class="long-form__body" style="text-align:center;">
         <p>No phone trees, no scheduling links, just a person reaching out.</p>
-        <p>Can't wait? Come say hi in person: free AI Office Hours, Tuesdays and Thursdays, 2 to 4 PM at <a href="<?= url('office-hours') ?>">WorkIT in Stillwater</a>.</p>
+        <p>Can't wait? Come say hi in person: free AI Office Hours, Tuesdays and Thursdays, 2 to 3 PM at <a href="<?= url('office-hours') ?>">WorkIT in Stillwater</a>.</p>
       </div>
     </div>
   </section>
@@ -87,6 +87,16 @@
           </div>
 
           <div class="form-group">
+            <label for="start_with">Where do you want to start?</label>
+            <select name="start_with" id="start_with" required>
+              <option value="" disabled selected>Pick one</option>
+              <option value="assessment">Operations Assessment (a day on site, a written 90-day plan)</option>
+              <option value="concierge">AI Concierge (standing partner, two sessions a month)</option>
+              <option value="not-sure">Not sure, tell me</option>
+            </select>
+          </div>
+
+          <div class="form-group">
             <label for="tier">How do you prefer to meet?</label>
             <select name="tier" id="tier" required>
               <option value="" disabled selected>Pick one</option>
@@ -106,7 +116,7 @@
 
           <button type="submit" class="btn btn--cta" id="form-submit">Send my intake →</button>
 
-          <p class="form-note">The AI Concierge is priced by team size, $750 to $2,250/mo (pick your team size above to see yours). Right now the next 5 clients get one tier down, locked in, because we're trying something new. Logan reads every submission personally. No spam, no drip campaigns you didn't ask for.</p>
+          <p class="form-note">The Operations Assessment is $1,500 for teams up to 10 and $2,500 for 11 to 50, one time, with half credited to your first Concierge month. The AI Concierge is priced by team size, $1,000 to $3,000/mo (pick your team size above to see yours), and the next 5 clients get one tier down, locked in. Logan reads every submission personally. No spam, no drip campaigns you didn't ask for.</p>
         </form>
       </div>
     </div>
@@ -151,8 +161,8 @@
     }
 
     var tierHints = <?= json_encode(array_map(fn($t) => match ($t['name']) {
-      'Custom' => 'Custom pricing, starts at $3,000/mo. We\'ll talk.',
-      'Solo'   => 'Solo tier: $750/mo. That\'s already the founding price.',
+      'Custom' => 'Custom pricing, starts at $4,000/mo. We\'ll talk.',
+      'Solo'   => 'Solo tier: $1,000/mo. Founding offer: next 5 clients pay $750, locked in.',
       default  => $t['name'] . ' tier: $' . number_format($t['price']) . '/mo. Founding offer: next 5 clients get one tier down.',
     }, option('concierge.tiers'))) ?>;
     var hintEl = document.getElementById('team_size_hint');
@@ -163,7 +173,7 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       errEl.style.display = 'none';
-      var required = ['first_name', 'email', 'phone', 'business', 'team_size', 'tasks', 'pay_to_never', 'tier'];
+      var required = ['first_name', 'email', 'phone', 'business', 'team_size', 'tasks', 'pay_to_never', 'tier', 'start_with'];
       for (var i = 0; i < required.length; i++) {
         if (!form[required[i]].value.trim()) {
           showError('Please fill in every required field.');
@@ -183,6 +193,7 @@
         tools: form.tools.value,
         tried_ai: form.tried_ai.value,
         tier: form.tier.value,
+        start_with: form.start_with.value,
         scan_id: form.scan_id.value,
         source_page: '<?= $page->uri() ?>',
         company_url: form.company_url.value

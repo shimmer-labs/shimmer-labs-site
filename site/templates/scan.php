@@ -360,7 +360,7 @@
         <a href="<?= url('office-hours') ?>" class="scan-next__card" data-scan-cta="office_hours">
           <span class="scan-next__icon">☕</span>
           <strong>Bring it to office hours</strong>
-          <span>Free. Tuesdays and Thursdays, 2 to 4 PM at WorkIT in Stillwater. Bring one of these, leave with it automated.</span>
+          <span>Free. Tuesdays and Thursdays, 2 to 3 PM at WorkIT in Stillwater. Bring one of these, leave with it automated.</span>
         </a>
         <a href="<?= url('intake') ?>" class="scan-next__card scan-next__card--primary" id="scanIntakeLink" data-scan-cta="intake">
           <span class="scan-next__icon">🤝</span>

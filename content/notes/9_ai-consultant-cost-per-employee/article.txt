@@ -14,7 +14,7 @@ Date: 2026-09-07
 
 ----
 
-Intro: Done-with-you AI consulting from Shimmer Labs costs $750 a month for a solo operator, about $100 per head for a crew of 2 to 10, about $60 per head for a shop of 11 to 25, and about $45 per head for a company of 26 to 50. We changed how we price the AI Concierge, and instead of hiding the spreadsheet we're publishing it: what it costs per employee, and how many saved hours a month it takes to break even in Stillwater, Oklahoma City, and Tulsa.
+Intro: The AI Concierge from Shimmer Labs costs $1,000 a month for a solo operator, about $150 per head for a crew of 2 to 10, about $90 per head for a shop of 11 to 25, and about $60 per head for a company of 26 to 50. (Updated September 21, 2026 with the current tiers.) We changed how we price the AI Concierge, and instead of hiding the spreadsheet we're publishing it: what it costs per employee, and how many saved hours a month it takes to break even in Stillwater, Oklahoma City, and Tulsa.
 
 ----
 
@@ -30,10 +30,10 @@ Here's the tier table and what it works out to per person at the top of each ban
 
 | Tier | Team size | Per month | Per head, top of band |
 |---|---|---|---|
-| Solo | Just you | $750 | $750 |
-| Crew | 2 to 10 | $1,000 | $100 |
-| Shop | 11 to 25 | $1,500 | $60 |
-| Company | 26 to 50 | $2,250 | $45 |
+| Solo | Just you | $1,000 | $1,000 |
+| Crew | 2 to 10 | $1,500 | $150 |
+| Shop | 11 to 25 | $2,250 | $90 |
+| Company | 26 to 50 | $3,000 | $60 |
 
 For comparison, here's what those same businesses already pay per seat for things nobody questions:
 
@@ -41,7 +41,7 @@ For comparison, here's what those same businesses already pay per seat for thing
 - **Outsourced HR or a PEO:** most full-service plans land between $100 and $150 per employee per month.
 - **ChatGPT Team, Claude Team, or Microsoft Copilot:** $20 to $30 per seat per month, on top of whatever else you're paying.
 
-So at Crew and up, the concierge costs less per head than the IT contract. The difference is that IT keeps the computers running. This makes the people faster.
+So at Crew, the concierge lands inside the range of the IT contract, and at Shop and up it costs less per head. The difference is that IT keeps the computers running. This makes the people faster.
 
 ## What an Oklahoma hour actually costs
 
@@ -60,11 +60,11 @@ That's wages, not cost. Payroll tax, insurance, workers comp, the desk, the lapt
 
 ## The break-even math
 
-Take a Crew client at $1,000 a month with eight people in Stillwater. At $33 an hour loaded, the concierge has to save 30 hours a month across the whole team to pay for itself. That's under one hour per person per week.
+Take a Crew client at $1,500 a month with eight people in Stillwater. At $33 an hour loaded, the concierge has to save 45 hours a month across the whole team to pay for itself. That's about 1.3 hours per person per week.
 
-The Federal Reserve Bank of St. Louis surveyed workers in 2024 and found the ones who actually use generative AI save about 2.2 hours a week. Our job is turning "actually use" into "everybody on the team, for the tasks that matter." Even at half the Fed's number, one hour a week, that eight-person crew gets back 35 hours a month. Break-even with change left over, and that's before you count the owner's hours, which are worth a lot more than $33.
+The Federal Reserve Bank of St. Louis surveyed workers in 2024 and found the ones who actually use generative AI save about 2.2 hours a week. Our job is turning "actually use" into "everybody on the team, for the tasks that matter." At the Fed's number, that eight-person crew gets back 76 hours a month. Even at one hour a week each, it's 35 hours, most of the way there before you count the owner, and that's before you count the owner's hours, which are worth a lot more than $33.
 
-Now run it at Shop. Twenty people in Tulsa at $40 an hour. $1,500 a month is 38 hours. One hour a week each is 87 hours. The bigger the team, the sillier the comparison gets, which is the whole reason the price climbs. You're paying more and getting a wildly better ratio.
+Now run it at Shop. Twenty people in Tulsa at $40 an hour. $2,250 a month is 56 hours. One hour a week each is 87 hours. The bigger the team, the sillier the comparison gets, which is the whole reason the price climbs. You're paying more and getting a wildly better ratio.
 
 ## The catch, stated plainly
 
@@ -89,7 +89,7 @@ Faq:
 -
   question: Why is Solo more per person than every other tier?
   answer: >
-    Because it's the owner's hour, and the owner's hour is the most expensive one in the building. Solo clients also tend to have the most tangled processes, since one person has been holding all of it in their head. $750 is already our founding price, so it doesn't go lower.
+    Because it's the owner's hour, and the owner's hour is the most expensive one in the building. Solo clients also tend to have the most tangled processes, since one person has been holding all of it in their head. Solo is $1,000, and the founding offer for the next 5 clients takes it to $750.
 -
   question: What if our wages are lower than the county average?
   answer: >

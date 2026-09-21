@@ -277,7 +277,7 @@
     <div class="oh-hero__content">
       <span class="oh-hero__badge">Free &middot; Walk in &middot; No RSVP</span>
       <h1 class="oh-hero__title">Free AI Office Hours in <span>Stillwater</span></h1>
-      <p class="oh-hero__subtitle">AI office hours are free, walk-in help with AI and automation for small business owners, every Tuesday and Thursday from 2 to 4 PM at WorkIT Coworking, 901 S Main St in Stillwater, Oklahoma. No RSVP, no pitch. Bring one task that eats your week and we'll work on getting it off your plate together.</p>
+      <p class="oh-hero__subtitle">AI office hours are free, walk-in help with AI and automation for small business owners, every Tuesday and Thursday from 2 to 3 PM at WorkIT Coworking, 901 S Main St in Stillwater, Oklahoma. No RSVP, no pitch. Bring one task that eats your week and we'll work on getting it off your plate together.</p>
     </div>
     <div class="oh-hero__visual">
       <div class="oh-hero__photo-wrap">
@@ -293,7 +293,7 @@
     <div class="oh-details__grid">
       <div class="oh-details__card">
         <div class="card-label">When</div>
-        <p>Tuesdays &amp; Thursdays<br>2:00 &ndash; 4:00 PM</p>
+        <p>Tuesdays &amp; Thursdays<br>2:00 &ndash; 3:00 PM</p>
       </div>
       <div class="oh-details__card">
         <div class="card-label">Where</div>
@@ -322,7 +322,7 @@
     <h2>Questions people ask before they come</h2>
     <div class="oh-board">
       <ul class="oh-board__items oh-board__items--faq">
-        <li><h3 class="oh-board__q">Do I need to RSVP?</h3><p>No. Drop in at 2, leave at 2:30, come at 3:15. There's no roll call and no sign-up sheet.</p></li>
+        <li><h3 class="oh-board__q">Do I need to RSVP?</h3><p>No. Drop in at 2, leave at 2:30, come at 2:45. There's no roll call and no sign-up sheet.</p></li>
         <li><h3 class="oh-board__q">What should I bring?</h3><p>Your laptop and one real task. "Can AI do this?" "What tool should I use?" "Why is my workflow broken?" All fair game. Whiteboards are involved.</p></li>
         <li><h3 class="oh-board__q">Is it really free?</h3><p>Yes. No pitch, no funnel. I like solving problems and this beats eating lunch alone.</p></li>
         <li><h3 class="oh-board__q">Can I come more than once?</h3><p>Please do. Most people come back with the next task once the first one is running.</p></li>
@@ -340,7 +340,7 @@
   <div class="container">
     <p class="oh-cta__text">Got something that needs more than two hours on a Tuesday?</p>
     <a href="/contact" class="oh-cta__btn">Let's Talk About Building It &rarr;</a>
-    <p class="oh-cta__subtext">Or make it a standing thing: the <a href="<?= url('services/concierge') ?>">AI Concierge</a> is two working sessions a month with text access in between. Priced by team size from $750/mo, and the first 5 clients get one tier down.</p>
+    <p class="oh-cta__subtext">Or make it a standing thing: the <a href="<?= url('services/concierge') ?>">AI Concierge</a> is two working sessions a month with text access in between. Priced by team size from $1,000/mo, and the first 5 clients get one tier down. Several things to fix? Start with the <a href="<?= url('services/assessment') ?>">Operations Assessment</a>.</p>
     <p class="oh-cta__subtext">And if office hours ever helped you out, tap "Add to Preferred Sources" in the footer. Google will show you more of what we publish. Costs you nothing.</p>
   </div>
 </section>

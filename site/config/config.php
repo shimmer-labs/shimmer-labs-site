@@ -115,13 +115,16 @@ return [
   'ghl.teamSizes' => ['Just me', '2-10', '11-25', '26-50', '51-100', '100+'],
   // AI Concierge pricing by team size (Sep 2026). Keys match ghl.teamSizes.
   'concierge.tiers' => [
-    'Just me' => ['name' => 'Solo',    'price' => 750],
-    '2-10'    => ['name' => 'Crew',    'price' => 1000],
-    '11-25'   => ['name' => 'Shop',    'price' => 1500],
-    '26-50'   => ['name' => 'Company', 'price' => 2250],
-    '51-100'  => ['name' => 'Custom',  'price' => 3000],
-    '100+'    => ['name' => 'Custom',  'price' => 3000],
+    'Just me' => ['name' => 'Solo',    'price' => 1000],
+    '2-10'    => ['name' => 'Crew',    'price' => 1500],
+    '11-25'   => ['name' => 'Shop',    'price' => 2250],
+    '26-50'   => ['name' => 'Company', 'price' => 3000],
+    '51-100'  => ['name' => 'Custom',  'price' => 4000],
+    '100+'    => ['name' => 'Custom',  'price' => 4000],
   ],
+  // Operations Assessment, one-time, by team size band (Sep 21 2026).
+  'assessment.prices' => ['Just me' => 1500, '2-10' => 1500, '11-25' => 2500, '26-50' => 2500, '51-100' => 2500, '100+' => 2500],
+  'ghl.startWith' => ['assessment', 'concierge', 'not-sure'],
   'ghl.conciergeTiers' => ['video', 'in-person'],
   'ghl.pipeline' => ['id' => '416qDXyImHwG7lcm3cEC', 'leadStageId' => '032fa7d2-53bc-4cb3-887b-348e696c67e5'],
 
@@ -362,6 +365,7 @@ return [
     $tools      = $clean($body['tools'] ?? '');
     $triedAi    = $clean($body['tried_ai'] ?? '');
     $tier       = $clean($body['tier'] ?? '');
+    $startWith  = $clean($body['start_with'] ?? 'not-sure');
     $scanId     = preg_match('/^[0-9a-f-]{20,40}$/i', (string)($body['scan_id'] ?? '')) ? (string)$body['scan_id'] : '';
     $sourcePage = substr(preg_replace('~[^a-z0-9/_-]~i', '', (string)($body['source_page'] ?? '')), 0, 120);
 
@@ -376,6 +380,7 @@ return [
     if (mb_strlen($tools) > 300) { $errors[] = 'tools'; }
     if (mb_strlen($triedAi) > 500) { $errors[] = 'tried_ai'; }
     if (!in_array($tier, option('ghl.conciergeTiers'), true)) { $errors[] = 'tier'; }
+    if (!in_array($startWith, option('ghl.startWith'), true)) { $startWith = 'not-sure'; }
     if (!empty($errors)) {
       return $json(['ok' => false, 'error' => 'Please double-check the form and try again.', 'fields' => $errors], 422);
     }
@@ -427,8 +432,11 @@ return [
     $tierLabel = $tier === 'in-person'
       ? 'Prefers in-person sessions'
       : 'Prefers video sessions';
-    $priceTier = option('concierge.tiers')[$teamSize] ?? ['name' => 'Crew', 'price' => 1000];
+    $priceTier = option('concierge.tiers')[$teamSize] ?? ['name' => 'Crew', 'price' => 1500];
+    $assessPrice = option('assessment.prices')[$teamSize] ?? 1500;
+    $startLabel = match ($startWith) { 'assessment' => 'Operations Assessment ($' . number_format($assessPrice) . ' one time)', 'concierge' => 'AI Concierge', default => 'Not sure yet' };
     $intakeBlock =
+      "START WITH: " . $startLabel . "\n" .
       "TIER: " . $priceTier['name'] . " ($" . number_format($priceTier['price']) . "/mo, team " . $teamSize . ")\n" .
       "MEETING PREFERENCE: " . $tierLabel . "\n" .
       "TASKS EATING THE WEEK:\n" . mb_substr($tasks, 0, 1000) . "\n\n" .
@@ -478,7 +486,7 @@ return [
       'contactId'       => $contactId,
       'name'            => 'AI Concierge - ' . mb_substr($firstName, 0, 50) . ' (' . mb_substr($business, 0, 80) . ')',
       'status'          => 'open',
-      'monetaryValue'   => $priceTier['price'],
+      'monetaryValue'   => $startWith === 'assessment' ? $assessPrice : $priceTier['price'],
     ]);
     if ($e3 || $c3 < 200 || $c3 >= 300) {
       error_log('[ghl.intake] opportunity ' . $c3 . ' (' . $contactId . '): ' . $e3 . ' ' . substr((string)$r3, 0, 200));
@@ -710,6 +718,7 @@ return [
           'stillwater-ai-consultant',
           'services/sidecar',
           'services/concierge',
+          'services/assessment',
           'oklahoma-city-ai-consultant',
           'tulsa-ai-consultant',
           'services/custom-apps',

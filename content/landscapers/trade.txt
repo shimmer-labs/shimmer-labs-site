@@ -78,4 +78,4 @@ Faq:
 -
   question: How do I know if my paperwork can be automated?
   answer: >
-    Quick test: does the task mostly involve reading something, understanding it, and writing it down somewhere else? Then yes, probably. Bring a real example to our free AI Office Hours at WorkIT in Stillwater, Tuesdays and Thursdays 2 to 4 PM, and we'll tell you straight.
+    Quick test: does the task mostly involve reading something, understanding it, and writing it down somewhere else? Then yes, probably. Bring a real example to our free AI Office Hours at WorkIT in Stillwater, Tuesdays and Thursdays 2 to 3 PM, and we'll tell you straight.

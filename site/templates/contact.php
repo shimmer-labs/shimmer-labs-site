@@ -24,7 +24,7 @@
             <div class="contact-location__label">Drop In</div>
             <p>
               <a href="/office-hours">AI Office Hours</a><br>
-              Tuesdays &amp; Thursdays, 2&ndash;4 PM<br>
+              Tuesdays &amp; Thursdays, 2&ndash;3 PM<br>
               Free. No appointment needed.
             </p>
           </div>

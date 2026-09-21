@@ -134,4 +134,4 @@ faq:
   answer: "No. The point of a well-built assistant is that you do not become your own IT department. You approve the work and the system handles the steps. If you can use email and your phone, you can run one."
 -
   question: "Where can I get help with this in Stillwater?"
-  answer: "Shimmer Labs builds these assistants for local businesses and runs free AI Office Hours at WorkIT in Stillwater every Tuesday and Thursday, 2 to 4 PM. Bring the task that is driving you nuts and we will tell you straight whether AI helps."
+  answer: "Shimmer Labs builds these assistants for local businesses and runs free AI Office Hours at WorkIT in Stillwater every Tuesday and Thursday, 2 to 3 PM. Bring the task that is driving you nuts and we will tell you straight whether AI helps."

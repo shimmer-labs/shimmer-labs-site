@@ -2,19 +2,19 @@ Title: AI Concierge
 
 ----
 
-Seo_title: AI Concierge for Small Businesses | From $750/mo, Priced by Team Size
+Seo_title: AI Concierge | Fractional Operations Partner for Oklahoma Small Businesses | From $1,000/mo
 
 ----
 
-Meta_description: Done-with-you AI consulting priced by team size, $750 to $2,250 a month. Two working sessions a month, text Logan directly between calls, and a shared hub of everything built. First 5 clients get one tier down, locked in.
+Meta_description: A standing operations partner for your small business: two working sessions a month, text access between them, and every fix built with you on your screen, using AI where it earns its place. Priced by team size, $1,000 to $3,000 a month, no contract. First 5 clients get one tier down.
 
 ----
 
-Summary: The AI Concierge is done-with-you AI consulting for Oklahoma small businesses. Two working sessions a month, text access to Logan between them, and a shared hub of everything we automate together. Priced by team size from $750 to $2,250 a month, no contract, on site in Stillwater, Oklahoma City, and Tulsa when the process lives in your building.
+Summary: The AI Concierge is a standing operations partner for your Oklahoma small business. Think fractional chief of staff: someone who fixes the office side of the work with you, month by month, and puts AI on the parts that deserve it. Two working sessions a month, text access between them, and a shared hub of everything we build. Priced by team size from $1,000 to $3,000 a month, no contract, on site in Stillwater, Oklahoma City, and Tulsa when the process lives in your building.
 
 ----
 
-Pricerange: $750 to $2,250/mo, by team size
+Pricerange: $1,000 to $3,000/mo, by team size
 
 ----
 
@@ -24,23 +24,33 @@ Icon: 🤝
 
 Text:
 
-## You don't need another app. You need a partner.
+## You don't need another app. You need someone who runs the office side with you.
 
-Here's who we keep meeting: a business owner who knows AI could save them hours, tried ChatGPT a few times, and stalled out. Not because they're bad at computers. Because nobody sat down with them and fixed the underlying process first.
+Here's who we keep meeting: an owner who is great at the work and buried in everything around it. Quotes go out late. Invoices get typed in twice. The schedule lives in one person's head. They've heard AI could help, tried it for a weekend, and stalled. Not because they're bad at computers. Because nobody sat down with them and fixed the process first.
 
-Courses don't fix that. You don't have time for a course. Agencies don't fix it either. They disappear into a black box, install something, and leave you with a system you don't understand and can't maintain.
+Courses don't fix that. Agencies don't either. They disappear into a black box, install something, and leave you with a system you don't understand and can't maintain.
 
-The AI Concierge is the third option: a partner in the seat next to you. Twice a month we get on a working session, you share your screen, and we turn your manual processes into automations together. You watch every step. You understand everything we build. And between calls, you text us when you're stuck.
+The AI Concierge is the third option: a partner in the seat next to you. Twice a month we get on a working session, you share your screen or we sit at your counter, and we take one recurring task at a time and make it stop eating your week. You watch every step. You understand everything we build. Between sessions, you text us when you're stuck.
+
+## Start with the Snapshot, then the Assessment
+
+Everyone starts free. <a href="/office-hours">Office hours</a>, a 30-minute call, or the scanner below gets you a one-page Snapshot: the five tasks eating your week and the first move. If it's one obvious problem, we go straight to the Concierge from there.
+
+If it's several things, or the work touches more than one person, the <a href="/services/assessment">Operations Assessment</a> comes first: a day in your business, process maps, an hours ledger, and a written 90-day plan we walk through with you. Half the Assessment fee comes off your first Concierge month.
 
 ## How we work: Audit, Optimize, Automate
 
-Every manual task goes through the same three steps, in order:
+Every recurring task goes through the same three steps, in order:
 
-1. **Audit.** You show us how you actually do it today. Every click.
+1. **Audit.** You show us how you actually do it today. Every click, every handoff.
 2. **Optimize.** We cut the fat first. Most 15-step processes only need nine.
-3. **Automate.** Then, and only then, we turn the clean process into an automation.
+3. **Automate.** Then, and only then, we hand the clean process to software, and to AI where it earns its place.
 
-Skipping straight to automate is the classic mistake. Automating a broken process just speeds up the mess. Fixing it first is why this works.
+Skipping straight to automate is the classic mistake. Automating a broken process just speeds up the mess.
+
+## Where AI fits, and where it doesn't
+
+In most businesses we work with, a small slice of the work benefits from a computer that can read and write: the invoice that needs to be typed into QuickBooks, the estimate follow-up nobody remembers to send, the after-hours call that needs sorting. That's where AI earns its place, and we're good at it. The rest is plain operations: fewer steps, a better handoff, a spreadsheet that talks to another spreadsheet. We'll tell you which is which, every time.
 
 ## Why the price follows team size
 
@@ -50,10 +60,11 @@ Your rate locks for 12 months. If you grow past your band, we re-tier at your an
 
 ## How this fits with everything else we do
 
-- **Free AI Office Hours** (Tuesdays and Thursdays at WorkIT): come anytime, ask anything, no charge. The concierge is for when you want guaranteed time, a standing plan, and someone on the hook for your progress.
-- **[Sidecar](/services/sidecar)**: we build and run the automation FOR you. The concierge builds it WITH you, so the skills stay in your hands. Plenty of clients do both.
+- **Free office hours** (Tuesdays and Thursdays at WorkIT): come anytime, ask anything, no charge. The Concierge is for when you want guaranteed time, a standing plan, and someone on the hook for your progress.
+- **<a href="/services/assessment">Operations Assessment</a>**: the paid scoping step for businesses with several things to fix. Written plan, on-site day, half the fee credited to the Concierge.
+- **<a href="/services/sidecar">Sidecar</a>**: we build and run the automation FOR you. The Concierge builds it WITH you, so the skills stay in your hands. Plenty of clients do both.
 
-We have room for **6 concierge clients** total, so the service never gets thin. A Company-size client takes two of those seats. When the seats are full, they're full.
+We have room for **6 Concierge clients** total, so the service never gets thin. A Company-size client takes two of those seats. When the seats are full, they're full.
 
 ----
 
@@ -66,7 +77,7 @@ Whatsincluded:
 -
   title: Two working sessions a month
   icon: 🖥️
-  description: 45 minutes each, every two weeks. You share your screen, we work on your real processes together. The first session is pure setup, getting your AI foundation in place, so everything after moves fast.
+  description: 45 minutes each, every two weeks, on your screen or at your counter. The first session is pure setup, getting your workspace and connections in place, so everything after moves fast.
 -
   title: Text Logan directly
   icon: 💬
@@ -82,8 +93,8 @@ Pricingtiers:
 
 -
   name: Solo
-  price: $750/mo
-  description: Just you. Every hour we hand back is an owner hour, which is the most expensive hour in the building. This is already the founding price, so it doesn't drop further.
+  price: $1,000/mo
+  description: Just you. Every hour we hand back is an owner hour, which is the most expensive hour in the building. The founding offer takes the next 5 clients to $750, locked in.
   features: |
     Two 45-minute working sessions per month
     Direct text access between sessions
@@ -94,33 +105,33 @@ Pricingtiers:
   featured: false
 -
   name: Crew
-  price: $1,000/mo
-  description: 2 to 10 people. The shop where the owner still does the books, the scheduling, and the follow-ups. At ten people that's $100 a head, less than most of them pay their IT guy per seat.
+  price: $1,500/mo
+  description: 2 to 10 people. The shop where the owner still does the books, the scheduling, and the follow-ups. At ten people that's $150 a head, in line with what most of them pay their IT guy per seat.
   features: |
     Everything in Solo
-    Automations built for the whole crew, not just the owner
+    Fixes built for the whole crew, not just the owner
     Video, or in person in Stillwater, OKC, and Tulsa
     Founding offer: next 5 clients pay the Solo price, locked
   featured: true
 -
   name: Shop
-  price: $1,500/mo
+  price: $2,250/mo
   description: 11 to 25 people. The owner isn't the only one who has to adopt what we build, so one of your two monthly sessions can be a team session with staff in the room.
   features: |
     Everything in Crew
     One session a month can be a team session
-    Rollout help so the automations actually get used
-    $60 a head at 25 people
+    Rollout help so the fixes actually get used
+    $90 a head at 25 people
   featured: false
 -
   name: Company
-  price: $2,250/mo
+  price: $3,000/mo
   description: 26 to 50 people. Enough people that getting them all working the same way is the project. Quarterly half-day on site with the team. Takes two of our six seats.
   features: |
     Everything in Shop
     Quarterly half-day on-site working session with your team
     Department-by-department rollout plan
-    $45 a head at 50 people
+    $60 a head at 50 people
   featured: false
 
 ----
@@ -153,25 +164,28 @@ Faq:
 
 -
   question: What is an AI concierge?
-  answer: 'Done-with-you AI consulting. Instead of a course you never finish or an agency that builds in a black box, you get a standing partner: two working sessions a month where we fix and automate your processes together on your screen, direct text access between sessions, and a shared hub tracking everything we build. You end up with automations you understand and own.'
+  answer: 'A standing operations partner for a small business, sometimes called a fractional chief of staff. Instead of a course you never finish or an agency that builds in a black box, you get two working sessions a month where we fix and automate your processes together on your screen, direct text access between sessions, and a shared hub tracking everything we build. AI is one of the tools; the job is running the office side of the business with you.'
 -
   question: What actually happens on the calls?
-  answer: 'You share your screen and we work on a real task from your list. First we watch how you do it today, then we cut the unnecessary steps, then we automate what''s left. One process at a time, permanent progress every session. The first call is setup: getting your AI workspace, connections, and context in place so the rest of the engagement moves fast.'
+  answer: 'You share your screen and we work on a real task from your list. First we watch how you do it today, then we cut the unnecessary steps, then we automate what''s left. One process at a time, permanent progress every session. The first call is setup: getting your workspace, connections, and context in place so the rest of the engagement moves fast.'
+-
+  question: Do I need the Operations Assessment first?
+  answer: 'Not always. If office hours turned up one obvious problem, start here. If it turned up five, or the work runs through several people, do the <a href="/services/assessment">Assessment</a> first so month one of the Concierge starts with a plan. Half the Assessment fee comes off your first month.'
 -
   question: How is this different from Sidecar?
-  answer: 'Sidecar is done FOR you: we build and run the automation, you approve the output. The concierge is done WITH you: we build together and the skills stay in your hands. Concierge is a flat monthly with no build fee. Sidecar builds start at $1,000 plus a monthly to run. Some clients start concierge, find a beast of a process, and hand that one to Sidecar.'
+  answer: 'Sidecar is done FOR you: we build and run the automation, you approve the output. The Concierge is done WITH you: we build together and the skills stay in your hands. Concierge is a flat monthly with no build fee. Sidecar builds start at $1,000 plus a monthly to run. Some clients start Concierge, find a beast of a process, and hand that one to Sidecar.'
 -
   question: Why is the intake form required?
   answer: 'Because it makes your first paid minute count. The form surfaces the tasks eating your week and the one process you''d pay the most to never do again. We read it before we ever get on a call, so session one starts with a plan instead of an interview. No form, no call. We''re strict about it because it works.'
 -
   question: What does it cost, and is there a contract?
-  answer: 'It depends on how many of you there are. Solo is $750 a month, Crew (2 to 10 people) is $1,000, Shop (11 to 25) is $1,500, Company (26 to 50) is $2,250, and past 50 we talk. Right now the next 5 clients get one tier down, locked in for as long as they stay, because we''re trying something new and want early clients to prove it with us. No contracts, cancel anytime. If a month didn''t earn its keep, stop paying. The hub makes it easy to judge.'
+  answer: 'It depends on how many of you there are. Solo is $1,000 a month, Crew (2 to 10 people) is $1,500, Shop (11 to 25) is $2,250, Company (26 to 50) is $3,000, and past 50 we talk. Right now the next 5 clients get one tier down, locked in for as long as they stay. No contracts, cancel anytime. If a month didn''t earn its keep, stop paying. The hub makes it easy to judge.'
 -
   question: Why does the price go up with team size?
-  answer: 'Because the payoff does. The two sessions cost us about the same whether you have 3 people or 30, but every automation we build together saves hours for every person who touches that process. Thirty people saving one hour a week is 130 hours a month. So bigger teams pay more in total and less per person. A Company client at 50 people pays $45 a head; a Solo client pays $750 for one very expensive head, their own. Small shops get the deal, big shops get the leverage.'
+  answer: 'Because the payoff does. The two sessions cost us about the same whether you have 3 people or 30, but every fix we build together saves hours for every person who touches that process. Thirty people saving one hour a week is 130 hours a month. So bigger teams pay more in total and less per person. A Company client at 50 people pays $60 a head; a Solo client pays $1,000 for one very expensive head, their own.'
 -
   question: How do you count team size, and what if we grow?
-  answer: 'Count everyone on payroll who touches a computer or a phone for work, including regular 1099 help. Owners count. Seasonal crew that never opens a laptop doesn''t. You tell us on the intake form and we take your word for it. Your rate locks for 12 months. If you hire past your band, we re-tier at your anniversary with 30 days notice, never mid-year. Growing should feel like a win, not a rate hike.'
+  answer: 'Count everyone on payroll who touches a computer or a phone for work, including regular 1099 help. Owners count. Seasonal crew that never opens a laptop doesn''t. You tell us on the intake form and we take your word for it. Your rate locks for 12 months. If you hire past your band, we re-tier at your anniversary with 30 days notice, never mid-year.'
 -
   question: Do you really drive to OKC and Tulsa?
   answer: 'Yes. Some processes can''t be fixed over a screen share: the paper on the counter, the whiteboard schedule, the way jobs actually flow through the shop. When that''s your situation, we come to you. We''re based in Stillwater and regularly work on site in Oklahoma City and Tulsa. Same price either way.'
