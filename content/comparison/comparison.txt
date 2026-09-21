@@ -2,11 +2,11 @@ Title: How Shimmer Labs compares
 
 ----
 
-Meta_description: Sidecar vs n8n consultants, Make/Zapier shops, full-service agencies, Fiverr automation freelancers, and hiring a part-time admin. Honest take on when Shimmer is the right call and when it isn't.
+Meta_description: Shimmer Labs vs a fractional COO, a business coach, an AI automation agency, a Zapier shop, a Fiverr freelancer, and hiring an office manager. Honest take on when we're the right call for an Oklahoma small business and when we aren't.
 
 ----
 
-Intro: Most "AI consulting" pages are vendor pitch material dressed up as comparison. This one is honest about who wins and where. If a cheaper or larger competitor fits your situation, we say so.
+Intro: Most "how we compare" pages are a pitch in a costume. This one says who wins where. If a cheaper, bigger, or more strategic option fits your situation, we say so.
 
 ----
 
@@ -14,108 +14,117 @@ Text:
 
 ## TL;DR
 
-**Pick Shimmer Labs Sidecar if** you're running a 1-10 person service business, your back-office work is bleeding hours every week, and you want one engineer who's accountable end-to-end. Builds from $1,000 + from $250/mo to run, scoped before we start. Live in a week. Cancel anytime.
+**Pick Shimmer Labs if** you run an Oklahoma business with 1 to 50 people, the office side still runs through you, and you want someone who fixes the process with you before anyone buys software. Start with a free Snapshot. If there's more than one thing to fix, the Operations Assessment is $1,500 to $2,500 one time. The AI Concierge is $1,000 to $3,000 a month by team size. Sidecar builds and runs the biggest piece for you.
 
-**Pick something else if** you're an enterprise with procurement, you only need a Zapier between two SaaS tools, you want a chatbot for your website, or your budget caps out below $250/mo total.
+**Pick something else if** you're an enterprise with procurement, you need a full strategic reorganization, you only need a Zapier between two SaaS tools, you want a chatbot on your website, or you're not within a drive of Stillwater and the on-site part matters to you.
 
 ## Honest comparison
 
-### Sidecar vs. n8n consultants
+### Shimmer Labs vs. a fractional COO
 
-| | Sidecar (Shimmer Labs) | n8n consultant |
+| | Shimmer Labs | Fractional COO |
 |---|---|---|
-| What you get | An engineer who builds the workflow, runs it on your account, and maintains it | Someone who builds an n8n flow and hands you the keys |
-| Pricing | From $250/mo (covers maintenance, model upgrades, edge-case work) | $75-200/hr or flat per flow, no maintenance |
-| When it breaks | We see it, we fix it, you find out via a Slack message | You see it, you call them, you wait |
-| Which AI we use | Claude by default, Gemini for high-volume document work, we swap as the models keep improving | Whatever AI was the popular one when they built it |
-| Best for | Owner-operators who want the engineering AND the operations | Buyers who want to own the flow long-term and have someone in-house to run it |
+| What you get | An operations partner who sits at your counter, maps the work, and builds the fixes with you | An executive who runs operations strategy, hires, and reports to you a few days a month |
+| Scope | The recurring work: quotes, invoices, scheduling, follow-up, handoffs, and the software or AI that takes it off your plate | Org design, KPIs, leadership, vendor and hiring decisions |
+| Pricing | Assessment $1,500 to $2,500 once; Concierge $1,000 to $3,000 a month | Typically $5,000 to $15,000 a month |
+| Team size fit | 1 to 50 | Usually 20 and up |
+| Best for | Owners who still do the books and the schedule and want that to stop | Businesses with a management layer that needs running |
 
-**They win when** you have an in-house technical person who'll babysit the flow forever. **We win when** you're the in-house technical person and you'd rather not.
+**They win when** you have managers to manage and the problem is leadership, not paperwork. **We win when** the problem is Tuesday.
 
-### Sidecar vs. Make/Zapier shops
+### Shimmer Labs vs. a business coach
 
-| | Sidecar (Shimmer Labs) | Make/Zapier agency |
+| | Shimmer Labs | Business coach |
 |---|---|---|
-| Scope | Workflows that need real engineering: software that clicks through websites when there's no other way, AI making judgment calls, parsing documents, a person reviewing before anything goes out | Plug-and-play connections between two tools that already let outsiders connect |
-| When the vendor has no API | We build browser automation that drives the UI like a person would ([Sweat Yoga](/case-studies/sweat-yoga-fitness): WellnessLiving has no membership-action endpoints; we shipped anyway) | They tell you it can't be done |
-| AI doing the judgment work | Built in. Claude or Gemini is part of the workflow, and you approve anything that goes to a customer | Possible but tacked on later, usually through OpenAI's $20/mo add-on |
-| Pricing | From $250/mo, includes maintenance | $50-150/mo for the Make/Zapier subscription PLUS $1k-5k build fee, no maintenance |
+| What happens in a session | We open your QuickBooks, your inbox, or your scheduling board and fix a real process together | You talk through goals, mindset, and accountability |
+| What you leave with | A working fix, a written plan, or a prompt you can run tonight | Clarity, a plan, homework |
+| Pricing | Concierge $1,000 to $3,000 a month by team size | $500 to $3,000 a month |
+| Best for | Owners who know what they want and need the work done | Owners who need to figure out what they want |
 
-**They win when** the integration is two tools that already talk to each other cleanly and AI judgment isn't needed. **We win when** the work needs AI making real decisions, software that has to click through a website that won't let outsiders connect, or a person approving anything before it goes to a customer.
+**They win when** the bottleneck is in your head. **We win when** it's in your inbox.
 
-### Sidecar vs. full-service agencies (HubSpot partners, etc.)
+### Shimmer Labs vs. an AI automation agency
 
-| | Sidecar (Shimmer Labs) | Full-service agency |
+| | Shimmer Labs | AI automation agency |
 |---|---|---|
-| Engagement size | One job at a time, flat monthly | $25K-100K projects with retainer |
-| Time to first value | Live in week 1 | 3-6 months |
-| Who you talk to | Logan, directly | Account manager → strategist → ops lead → developer |
-| Scope | Operational workflows. We don't redesign your brand or run your campaigns. | Strategy, brand, campaigns, infrastructure, you-name-it |
-| Best for | Service businesses with a known operational bottleneck | Companies with budget for a full marketing overhaul |
+| Where it starts | With your process. We cut steps before we automate anything, and we tell you when AI isn't the answer | With the tool. The engagement is scoped as "AI implementation" before anyone has watched the work happen |
+| Who does the work | Logan, at your business, with you at the keyboard | An account manager, a strategist, and an offshore build team |
+| What you own | Everything. You built it with us, it runs on your accounts | Often a system you can't change without them |
+| Pricing | Assessment from $1,500; Concierge from $1,000 a month; Sidecar from $1,000 plus $250 a month | Retainers from $5,000 a month, mostly remote |
+| Best for | Businesses with 1 to 50 people that want to understand what got built | Companies that want it done and don't need to understand it |
 
-**They win when** you have $50K+ in annual marketing budget and need a strategic partner across multiple channels. **We win when** you have one specific operational job that needs doing and want to stop paying for it after a year if it's not paying for itself.
+**They win when** you have the budget and want to be hands-off entirely. **We win when** the owner needs to own it.
 
-### Sidecar vs. Fiverr automation freelancers
+### Shimmer Labs vs. a Zapier or Make shop
 
-| | Sidecar (Shimmer Labs) | Fiverr freelancer |
+| | Shimmer Labs | Zapier or Make agency |
 |---|---|---|
-| What you get | A working production system, owned by you, maintained by us | A starter workflow you'll need to debug yourself |
-| Communication | Phone, Slack, in-person at Office Hours | Fiverr DMs, often across time zones |
-| Accountability | One US-based engineer responsible end-to-end | A freelancer who'll move on to the next gig |
-| Pricing | From $1,000 setup + from $250/mo to run | $50-500 for the build, nothing after |
-| Total cost over 12 months | $4,000-$14,000 including maintenance, scoped to the job | $500 to start + your time fixing it forever |
+| Scope | The whole process, including the parts that aren't software | The connection between two tools that already talk |
+| When the vendor has no API | Sidecar drives the website the way a person would ([Sweat Yoga](/case-studies/sweat-yoga-fitness): WellnessLiving has no membership endpoints; we shipped anyway) | They tell you it can't be done |
+| Judgment calls | AI where it earns its place, a person approving anything that goes to a customer | Possible, bolted on later |
+| Pricing | Sidecar from $1,000 plus $250 a month, includes maintenance | $1,000 to $5,000 build plus the subscription, no maintenance |
 
-**They win when** the workflow is genuinely simple, you have time to debug, and the failure mode is "I lose a few hours." **We win when** the failure mode is "a customer gets the wrong message" and the workflow needs to actually keep working.
+**They win when** the job is two SaaS tools with clean APIs. **We win when** the work needs judgment, a website that won't let outsiders connect, or a human in the loop.
 
-### Sidecar vs. hiring a part-time admin
+### Shimmer Labs vs. a Fiverr freelancer
 
-| | Sidecar (Shimmer Labs) | Part-time admin |
+| | Shimmer Labs | Fiverr freelancer |
 |---|---|---|
-| Hourly cost | $0.35-$1.40/hour, runs 24/7 (math: $250-$1,000/mo ÷ 730 hours) | $15-25/hour, 20 hours/week max |
-| True cost of a $40K hire | N/A | ~$67K/year (salary + payroll tax + benefits + overhead + ramp) |
-| Availability | Always | 9-5, weekdays, when not sick or on vacation |
-| Errors | Approval gates catch them before send | Depends on the human |
-| Gets better over time? | Yes — we tune against your data | If they stay |
-| Best for | Repetitive work that follows rules and improves with feedback | Judgment calls that require a human in the room |
+| What you get | A working system, maintained, with the person who built it on text | A starter workflow you'll debug yourself |
+| Accountability | One engineer in Stillwater, in person at office hours | Someone who'll move on to the next gig |
+| Pricing | Sidecar from $1,000 plus $250 a month | $50 to $500 for the build, nothing after |
 
-**They win when** you need someone who can answer a customer in person, handle exceptions, and use judgment under ambiguity. **We win when** the work is rules-based, repetitive, and the bottleneck is "I keep meaning to get to it."
+**They win when** the workflow is simple and the failure mode is "I lose an hour." **We win when** the failure mode is "a customer gets the wrong message."
+
+### Shimmer Labs vs. hiring an office manager
+
+| | Shimmer Labs | Office manager |
+|---|---|---|
+| True cost | Concierge $12,000 to $36,000 a year by team size | A $40,000 hire costs about $67,000 a year loaded |
+| What changes | The work gets smaller. The process gets shorter and the boring parts get automated | The work gets moved. Same process, different person doing it |
+| Availability | Two sessions a month plus text; automations run around the clock | 9 to 5, when not sick or on vacation |
+| Best for | Making the office side small enough that one person can run it | The judgment calls and the customer at the counter |
+
+**They win when** you need a human in the room. **We win when** the goal is to need fewer hours of one. Plenty of clients do both: we shrink the work, then they hire for what's left.
 
 ## Three honest answers
 
 **Where Shimmer Labs is the wrong call.**
 
 - You're an enterprise with procurement. We don't do RFPs, MSAs, or SOC 2 audits.
-- Your job is two SaaS tools with public APIs that just need to talk. Hire a Zapier shop for $500. We'll route you to one.
-- You want a chatbot on your homepage. We don't build chatbots. We build agents that handle one specific job each.
-- Your total budget for back-office automation is under $250/mo. We're not the right match yet. Read the [free AI Agents Guide](/ai-agents-guide) and start with DIY.
+- Your job is two SaaS tools with public APIs that just need to talk. Hire a Zapier shop. We'll route you to one.
+- You want a chatbot on your homepage. We don't build chatbots.
+- You need a strategic reorganization or a management layer run for you. That's a fractional COO, and we know a couple.
 
 **Where Shimmer Labs is the right call.**
 
-- You run a 1-10 person service business and 10+ hours of your week is admin work that has nothing to do with your craft.
-- You've tried a Zapier or a Make.com flow and watched it break the first time something unusual came up.
-- You need AI making real decisions because the work requires judgment (drafting outreach, parsing an invoice that isn't standardized, sorting customer questions).
-- The vendor's API doesn't exist for the action you actually need taken.
+- You run a business with 1 to 50 people and ten or more hours of your week is office work that has nothing to do with your craft.
+- More than one thing is broken and you're not sure which to fix first.
+- You've bought software, or tried ChatGPT, and it didn't stick because the process underneath was the problem.
+- You want to understand and own what gets built.
 
 **Where we won't pretend.**
 
-- We're not the cheapest. A Fiverr freelancer is cheaper to start.
-- We're not the biggest. A 50-person agency has more hands.
-- We're not the fastest to "sign and ship 50 automations." We ship one workflow at a time and make it work before we build the next.
+- We're not the cheapest. A freelancer is cheaper to start.
+- We're not the biggest. An agency has more hands.
+- We're not remote-first. The on-site day is the point, so we work within a drive of Stillwater.
 
 ## What you'd pay, in plain numbers
 
-| Option | First-year cost | What you get |
+| Option | What it costs | What you get |
 |---|---|---|
-| Sidecar (Shimmer Labs) | $4,000-$14,000 (build + 12 months, scoped to the job) | One workflow, live in a week, maintained, with the engineer who built it on Slack |
-| Make/Zapier shop | $2,000-$5,000 | The flow, no maintenance. You own the breakage. |
-| Fiverr freelancer | $500-$2,000 | A starting point. You finish it. |
-| Part-time admin ($20/hr × 20 hrs/wk) | ~$22,000 + payroll burden | A person, when they're at work |
-| Full-service agency | $50,000-$150,000 | Strategy + execution across multiple workstreams |
-| n8n consultant (project) | $4,000-$15,000 | A flow on your n8n instance. You run it. |
+| Free Snapshot | $0 | One page: the five tasks eating your week and the first move |
+| Operations Assessment | $1,500 (up to 10 people) or $2,500 (11 to 50), one time, half credited | A day in your business, process maps, an hours ledger, a written 90-day plan |
+| AI Concierge | $1,000 to $3,000 a month by team size | Two working sessions a month, text access, every fix built with you |
+| Sidecar | From $1,000 build plus $250 a month | One process built and run for you |
+| Fractional COO | $5,000 to $15,000 a month | Operations strategy and management |
+| AI automation agency | $5,000 a month and up | Done for you, mostly remote |
+| Office manager | About $67,000 a year loaded | A person, when they're at work |
+| Zapier shop or freelancer | $500 to $5,000 | A flow. You own the breakage |
 
 ## Want to test it cheap?
 
-Walk into [Office Hours](/office-hours), Tuesdays and Thursdays, 2-3 PM, at WorkIT Stillwater. Bring the workflow that's eating your week. We'll tell you in 20 minutes whether Sidecar is the right answer or whether you should hire a Fiverr freelancer instead.
+Walk into [Office Hours](/office-hours), Tuesdays and Thursdays, 2-3 PM, at WorkIT Stillwater. Bring the task that's eating your week. That's the free Snapshot. We'll tell you in 20 minutes whether it's a prompt, an Assessment, the Concierge, a Sidecar, or nothing at all.
 
 No pitch. No pressure. Sometimes the honest answer is "you don't need us yet."
 

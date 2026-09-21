@@ -1,7 +1,7 @@
 Title: Contact
 ----
-Intro: Got a project in mind? Let's talk through what you need, no pressure, no jargon.
+Intro: Start with a free Snapshot at office hours or a 30-minute call, then a paid Operations Assessment if there's more than one thing to fix. Stillwater, OKC, Tulsa. No pressure, no jargon.
 ----
-Intake_question: What are you looking to build?
+Intake_question: What's eating your week?
 ----
 Uuid: c8mcaaheouodjlg6

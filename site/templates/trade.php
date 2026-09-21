@@ -38,7 +38,7 @@
         <?php endforeach ?>
       </div>
       <div class="landing-byline">
-        <p>Written by <strong>Logan Shimmer</strong>, founder of Shimmer Labs, a software and AI studio in Stillwater, Oklahoma. <a href="<?= url('about') ?>">More about Logan &rarr;</a></p>
+        <p>Written by <strong>Logan Shimmer</strong>, founder of Shimmer Labs, a fractional operations partner for Oklahoma small businesses, based in Stillwater. <a href="<?= url('about') ?>">More about Logan &rarr;</a></p>
       </div>
       </div>
     </div>

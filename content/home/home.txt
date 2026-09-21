@@ -6,15 +6,15 @@ Meta_description: Fractional operations partner for Oklahoma small businesses. A
 
 ----
 
-Herosubheading: Custom software for small businesses
+Herosubheading: Fractional operations partner for Oklahoma small businesses
 
 ----
 
-Herotitle: We Build the Software Your Business Actually Needs
+Herotitle: We run the office side of your business with you.
 
 ----
 
-Herodescription: Off-the-shelf tools don't fit. Agencies charge too much. We build mobile apps, web apps, and Shopify solutions, fast and built around your actual problem.
+Herodescription: A free snapshot of where your business is, a paid Operations Assessment with a written 90-day plan, and the AI Concierge to build the fixes with you. AI on the parts that deserve it.
 
 ----
 
@@ -37,14 +37,17 @@ Herocircleimage: - 'file://ivckyndgl6sqniun'
 Clients:
 
 -
-  name: Sidecar (AI Agents)
-  url: "#sidecar"
+  name: Free Snapshot
+  url: "/office-hours"
 -
-  name: Custom Apps
-  url: "#build"
+  name: Operations Assessment
+  url: "/services/assessment"
 -
-  name: API Integrations
-  url: "#build"
+  name: AI Concierge
+  url: "/services/concierge"
+-
+  name: Sidecar
+  url: "/services/sidecar"
 
 
 ----
@@ -67,11 +70,11 @@ Finalctatitle: Tell us what's eating your week
 
 ----
 
-Finalctadescription: Tell us what's broken, what's missing, or what you wish existed. We'll tell you what it costs and how fast we can ship it.
+Finalctadescription: Tell us what's eating your week. We'll tell you whether it's a prompt you can run yourself, something we build together, or something we build and run for you.
 
 ----
 
-Finalctatext: Schedule a Free Consultation
+Finalctatext: Get Your Free Snapshot
 
 ----
 

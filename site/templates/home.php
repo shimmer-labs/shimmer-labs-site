@@ -26,9 +26,9 @@
         <p class="home-hero__credential">Built by a systems engineer with two decades across <a href="<?= url('about') ?>">National Instruments, Iterable, WeaveGrid, and Sense</a>, making complex systems behave before AI was the hammer. <a href="<?= url('notes/google-data-center-community-ai-fellowship') ?>">2026 Google Data Center Community AI Fellow</a>.</p>
         <div class="home-hero__ctas">
           <a href="<?= url('case-studies') ?>" class="btn btn--cta">See the Work</a>
-          <a href="<?= url('contact') ?>" class="btn btn--secondary home-hero__btn-secondary">Book a Call</a>
+          <a href="<?= url('contact') ?>" class="btn btn--secondary home-hero__btn-secondary">Get Your Free Snapshot</a>
         </div>
-        <p class="home-hero__trust">No pitch. No pressure. Just a 30-minute conversation.</p>
+        <p class="home-hero__trust">No pitch. No pressure. Three questions and one page back.</p>
       </div>
       <div class="home-hero__photo">
         <img src="<?= url('assets/images/logan-presenting.jpg') ?>" alt="Logan Shimmer teaching an AI workshop at Meridian Technology Center in Stillwater">

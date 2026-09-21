@@ -6,7 +6,7 @@ Intro: Real small businesses, real outcomes. The work we've been doing to give o
 
 ----
 
-Meta_description: Case studies from Shimmer Labs. AI agents, custom software, and API integrations built for Main Street small businesses.
+Meta_description: Real Oklahoma small businesses that got hours back. Sidecar builds, done-with-you fixes, and the apps we shipped along the way.
 
 ----
 

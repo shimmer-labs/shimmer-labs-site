@@ -12,8 +12,8 @@
     'case-studies' => 'Small Business AI Case Studies | Shimmer Labs',
     'case-study' => $page->title() . ' Case Study | Shimmer Labs',
     'projects' => 'Portfolio - SaaS Apps, API Integrations & iOS Development | Shimmer Labs',
-    'contact' => 'Book a Call - Custom Apps & Software | Shimmer Labs',
-    'services' => 'Services & Pricing - Web Apps, APIs, iOS Development | Shimmer Labs',
+    'contact' => 'Start With a Free Snapshot | Shimmer Labs',
+    'services' => 'Services & Pricing | Shimmer Labs',
     'service' => $page->seo_title()->or($page->title() . ($page->priceRange()->isNotEmpty() ? ' | ' . $page->priceRange() : ''))->toString() . ' | Shimmer Labs',
     'landing' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
     'trade' => $page->seo_title()->or($page->title()) . ' | Shimmer Labs',
@@ -129,8 +129,10 @@
               <span class="nav-menu__caret" aria-hidden="true">▾</span>
             </button>
             <ul class="nav-dropdown" role="menu">
+              <li role="none"><a href="<?= url('services/assessment') ?>" role="menuitem">Operations Assessment</a></li>
+              <li role="none"><a href="<?= url('services/concierge') ?>" role="menuitem">AI Concierge</a></li>
+              <li role="none"><a href="<?= url('services/sidecar') ?>" role="menuitem">Sidecar</a></li>
               <li role="none"><a href="<?= url('services/custom-apps') ?>" role="menuitem">Custom Apps</a></li>
-              <li role="none"><a href="<?= url('services/sidecar') ?>" role="menuitem">Sidecar &mdash; AI Agents</a></li>
               <li role="none"><a href="<?= url('services/api-integrations') ?>" role="menuitem">API Integrations</a></li>
               <li role="none"><a href="<?= url('event-video') ?>" role="menuitem">Event Videos</a></li>
             </ul>

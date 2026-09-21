@@ -36,8 +36,8 @@
 <section class="cta-final">
   <div class="container">
     <div class="cta-final__content">
-      <h2>Got a problem? Let's build the fix.</h2>
-      <a href="/contact" class="btn btn--cta">Get in Touch</a>
+      <h2>Got a Tuesday problem? Start with a free Snapshot.</h2>
+      <a href="/contact" class="btn btn--cta">Get Your Free Snapshot</a>
     </div>
   </div>
 </section>

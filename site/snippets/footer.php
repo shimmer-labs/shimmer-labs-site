@@ -5,7 +5,7 @@
         <a href="<?= $site->url() ?>" class="footer-logo">
           <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="Shimmer Labs">
         </a>
-        <p class="footer-tagline">We automate the boring stuff.</p>
+        <p class="footer-tagline">We run the office side with you.</p>
         <div google-add-preferred-source-btn data-theme="dark" class="footer-preferred-source"></div>
         <p class="footer-preferred-caption">One tap, and Google starts showing you more of our stuff.</p>
       </div>
@@ -14,10 +14,10 @@
         <div class="footer-col">
           <h4>Services</h4>
           <ul>
-            <li><a href="<?= url('services/custom-apps') ?>">Custom Apps</a></li>
-            <li><a href="<?= url('services/sidecar') ?>">Sidecar</a></li>
             <li><a href="<?= url('services/assessment') ?>">Operations Assessment</a></li>
             <li><a href="<?= url('services/concierge') ?>">AI Concierge</a></li>
+            <li><a href="<?= url('services/sidecar') ?>">Sidecar</a></li>
+            <li><a href="<?= url('services/custom-apps') ?>">Custom Apps</a></li>
             <li><a href="<?= url('services/api-integrations') ?>">API Integrations</a></li>
             <li><a href="<?= url('event-video') ?>">Event Videos</a></li>
           </ul>

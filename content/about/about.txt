@@ -22,7 +22,7 @@ Text:
 
 ## The short version
 
-Logan Shimmer is a systems engineer who builds AI-assisted operational workflows for small businesses. Shimmer Labs is the consultancy he runs out of Stillwater, Oklahoma.
+Logan Shimmer is a systems engineer who runs the office side of small businesses with their owners, and puts AI on the parts that deserve it. Shimmer Labs is the fractional operations practice he runs out of Stillwater, Oklahoma.
 
 The work that became Shimmer Labs was the work Logan was already doing — making complex systems behave, designing the operational glue between tools, shipping reliable infrastructure — before AI became the hammer.
 
@@ -55,7 +55,7 @@ Logan returned to Stillwater after **17 years in California** to build a rooted 
 
 ## What we do and don't do
 
-We build for owner-operators of service businesses and indie SaaS founders. We don't pretend to be a big-company software vendor, we don't build chat bots, and we don't replace teams. We've been building real software for two decades. AI is a new tool we picked up, not our whole skill set.
+We run the office side of small businesses with their owners: trades, studios, shops, property managers, and service businesses with 1 to 50 people in Oklahoma. We start with a free Snapshot, scope the fixes in a paid Operations Assessment, and build them together through the AI Concierge, or build and run them with Sidecar when a process is too big to do together. We don't build chatbots, we don't replace teams, and we tell you plainly when AI isn't the answer. We've been building real systems for two decades. AI is a new tool we picked up, not our whole skill set.
 
 Want to see what that looks like for your business? <a href="/contact">Let's talk.</a>
 

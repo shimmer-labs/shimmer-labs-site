@@ -6,7 +6,7 @@ Seo_title: Sidecar AI Agents, From $1,000 + $250/mo
 
 ----
 
-Meta_description: AI-assisted workflows for small service businesses. Shipped for Sweat Yoga, a Stillwater landscaper, Supabase, and Paidly. Live in a week, autonomous in a month. Builds from $1,000, running from $250/mo. Cancel anytime.
+Meta_description: Built-and-run AI workflows for small businesses with 1 to 50 people. Shipped for Sweat Yoga, a Stillwater landscaper, Supabase, and Paidly. Live in a week, autonomous in a month. Builds from $1,000, running from $250/mo. Cancel anytime.
 
 ----
 
@@ -47,7 +47,7 @@ Coming next: hiring, proposals. We build a sidecar for one job at a time. Think 
 
 ## Who It's For
 
-Small service businesses with 1-10 employees:
+Small businesses with 1 to 50 people:
 - Plumbers, electricians, general contractors
 - Massage therapists, personal trainers, yoga studios
 - Barbers, nail salons, house cleaners
@@ -70,8 +70,8 @@ Rather learn to drive this stuff yourself, with us in the passenger seat? That's
 Whatsincluded:
 -
   icon: '📞'
-  title: 'Free Discovery Call'
-  description: 'We learn about your business, your pain points, and figure out which tasks to automate first.'
+  title: 'Free Snapshot'
+  description: 'Office hours, a 30-minute call, or the scanner. We find the tasks eating your week and figure out which one is a Sidecar. If it is several, the Operations Assessment scopes and prices the build.'
 -
   icon: '🤖'
   title: 'Agent Setup'
@@ -89,8 +89,8 @@ Whatsincluded:
 
 Process:
 -
-  title: 'Day 0: Free Discovery Call'
-  description: 'Tell us what eats your time. We figure out what to automate and whether Sidecar is the right fit.'
+  title: 'Day 0: Free Snapshot'
+  description: 'Tell us what eats your time. We figure out what to automate and whether Sidecar is the right fit, or whether the Operations Assessment should scope it first.'
 -
   title: 'Week 1: MVP live, handling real work with supervision'
   description: 'We build, connect to your existing tools, and ship the first version into production. Anna at Sweat Yoga had her membership-ops sidecar handling real customer requests in week one.'
@@ -115,7 +115,7 @@ Portfolioprojects:
 
 ----
 
-Ctatitle: Book a Free Discovery Call
+Ctatitle: Start with a free Snapshot
 
 ----
 
@@ -170,7 +170,7 @@ Benefitsyou:
 
 Qualifieryes:
 -
-  item: 'Service business with 1-10 employees'
+  item: 'Service business with 1 to 50 people'
 -
   item: 'Spending 10+ hours/week on admin'
 -
@@ -184,7 +184,7 @@ Qualifierno:
 -
   item: 'Enterprise company (100+ employees)'
 -
-  item: 'Need a full custom software build (see Custom Apps)'
+  item: 'Want to learn to run this yourself, with us next to you (see the AI Concierge)'
 -
   item: 'Looking for a chatbot on your website'
 -

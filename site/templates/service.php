@@ -30,7 +30,7 @@
 
       <div class="service-hero__cta">
         <a href="<?= ($isConcierge || $isAssessment) ? url('intake') : '#contact-form' ?>" class="btn <?= $isSidecar ? 'btn--sidecar' : 'btn--primary' ?>">
-          <?= $isSidecar ? 'Book a Free Discovery Call' : ($isConcierge ? 'Start With the Intake Form →' : ($isAssessment ? 'Book the Assessment →' : 'Get Started →')) ?>
+          <?= $isSidecar ? 'Get Your Free Snapshot' : ($isConcierge ? 'Start With the Intake Form →' : ($isAssessment ? 'Book the Assessment →' : 'Get Started →')) ?>
         </a>
       </div>
     </div>

@@ -10,24 +10,10 @@
         <h3>Services</h3>
         <ul class="menu-links">
           <li>
-            <a href="<?= url('services/custom-apps') ?>">
-              <span class="menu-link-icon">⚡</span>
-              <span class="menu-link-title">Custom Apps</span>
-              <span class="menu-link-price">Web from $15k · iOS from $20k</span>
-            </a>
-          </li>
-          <li>
-            <a href="<?= url('services/sidecar') ?>" class="menu-link--sidecar">
-              <span class="menu-link-icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="" style="width: 24px; height: 24px; display: inline-block; vertical-align: middle;"></span>
-              <span class="menu-link-title">Sidecar, AI Agents</span>
-              <span class="menu-link-price">scoped to fit</span>
-            </a>
-          </li>
-          <li>
             <a href="<?= url('services/assessment') ?>">
               <span class="menu-link-icon">🔍</span>
               <span class="menu-link-title">Operations Assessment</span>
-              <span class="menu-link-price">$1,500 one time</span>
+              <span class="menu-link-price">$1,500 to $2,500 one time</span>
             </a>
           </li>
           <li>
@@ -35,6 +21,20 @@
               <span class="menu-link-icon">🤝</span>
               <span class="menu-link-title">AI Concierge</span>
               <span class="menu-link-price">from $1,000/mo · by team size</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?= url('services/sidecar') ?>" class="menu-link--sidecar">
+              <span class="menu-link-icon"><img src="<?= url('assets/images/sidecar-logo-nobg.png') ?>" alt="" style="width: 24px; height: 24px; display: inline-block; vertical-align: middle;"></span>
+              <span class="menu-link-title">Sidecar</span>
+              <span class="menu-link-price">built and run for you</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?= url('services/custom-apps') ?>">
+              <span class="menu-link-icon">⚡</span>
+              <span class="menu-link-title">Custom Apps</span>
+              <span class="menu-link-price">Web from $15k · iOS from $20k</span>
             </a>
           </li>
           <li>

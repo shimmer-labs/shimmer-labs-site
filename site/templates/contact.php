@@ -4,8 +4,8 @@
   <div class="container">
     <div class="contact-content">
       <div class="contact-header">
-        <h1>Let's Build Something</h1>
-        <p>Book a quick call. Tell us what you need built, we'll give you a straight answer on cost and timeline.</p>
+        <h1>Tell us what's eating your week</h1>
+        <p>Start with a free Snapshot: office hours, a 30-minute call, or the scanner. Three questions and you leave with the five tasks eating your week and the first move. If there's more than one thing to fix, the <a href="<?= url('services/assessment') ?>">Operations Assessment</a> comes next.</p>
       </div>
 
       <!-- Location & Contact Info -->
@@ -59,15 +59,16 @@
         </div>
       </section>
 
-      <!-- Calendly transition -->
+      <!-- Snapshot call -->
       <div class="contact-calendly-intro">
-        <p>Want to talk it through first? Grab 30 minutes and we'll figure out what makes sense.</p>
+        <p><strong>Book the free Snapshot call.</strong> Thirty minutes. Bring the task you hate most. We'll tell you plainly whether it's a prompt you can run yourself, an Operations Assessment, or the AI Concierge, or none of the above.</p>
+        <p>Prefer to skip the call? <a href="<?= url('intake') ?>">Fill out the intake form</a> and pick where you want to start. Logan replies within a business day.</p>
       </div>
 
       <!-- GHL booking widget (Consultation calendar) -->
       <iframe src="https://api.leadconnectorhq.com/widget/booking/tCHB0sj6MoYpJYWJyVqd"
               style="width:100%; min-height:700px; border:none; overflow:hidden;"
-              scrolling="no" id="ghl-booking-contact" title="Book a free consultation with Shimmer Labs"></iframe>
+              scrolling="no" id="ghl-booking-contact" title="Book a free Snapshot call with Shimmer Labs"></iframe>
       <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
     </div>
   </div>

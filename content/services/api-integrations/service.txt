@@ -20,6 +20,8 @@ Pricerange: $2,500 - $7,000 per integration
 
 Text:
 
+Most businesses start with a <a href="/office-hours">free Snapshot</a> and the <a href="/services/assessment">Operations Assessment</a>. This page is for when the fix is a product, not a process.
+
 ## Stop Paying Agencies $10k for API Work
 
 Most agencies charge $7k-15k and take 2 months for custom API integrations. We deliver in 1-2 weeks for **$2,500-$7,000** because:
@@ -104,7 +106,7 @@ Whatsincluded:
 
 Process:
 -
-  title: 'Discovery Call (30 min, FREE)'
+  title: 'Free Snapshot call (30 min)'
   description: 'We talk about your workflow, pain points, and what tools you want to connect. We''ll tell you if it''s possible and give you a rough timeline.'
 -
   title: 'Scoping & Quote'

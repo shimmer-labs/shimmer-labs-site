@@ -24,6 +24,8 @@ Pricerange: Web from $15k | iOS from $20k
 
 Text:
 
+Most businesses start with a <a href="/office-hours">free Snapshot</a> and the <a href="/services/assessment">Operations Assessment</a>. This page is for when the fix is a product, not a process.
+
 ## Your Idea Deserves to Exist. Let's Build It.
 
 Maybe you've got polished Figma files. Maybe you've got rough sketches. Maybe you've just got a problem you want to solve and no idea where to start.
@@ -79,7 +81,7 @@ Whatsincluded:
 
 Process:
 -
-  title: 'Discovery Call (FREE)'
+  title: 'Free Snapshot call'
   description: 'Tell us about your idea, show us what you have (designs, sketches, or just words), and we will tell you what is realistic and what it costs.'
 -
   title: 'Scoping & Proposal'
