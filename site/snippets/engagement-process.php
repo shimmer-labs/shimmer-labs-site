@@ -15,7 +15,7 @@
           <span class="engagement__num">2</span>
           <div class="engagement__body">
             <h3 class="engagement__step-title">The Operations Assessment</h3>
-            <p>A day in your business, process maps, an hours ledger, and a written 90-day plan with three priced paths. Delivered digitally and on paper, walked through in person. $1,500, half credited if you continue.</p>
+            <p>A day in your business, process maps, an hours ledger, and a written 90-day plan with three priced paths. Delivered digitally and on paper, walked through in person. From $1,500, half credited if you continue.</p>
           </div>
         </li>
         <li class="engagement__step">

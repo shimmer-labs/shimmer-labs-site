@@ -70,7 +70,7 @@ Finalctatitle: Tell us what's eating your week
 
 ----
 
-Finalctadescription: Tell us what's eating your week. We'll tell you whether it's a prompt you can run yourself, something we build together, or something we build and run for you.
+Finalctadescription: Free, at office hours or on a 30-minute call. We'll tell you whether it's a prompt you can run yourself, something we build together, or something we build and run for you.
 
 ----
 
