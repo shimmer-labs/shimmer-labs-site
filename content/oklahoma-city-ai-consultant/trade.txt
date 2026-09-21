@@ -57,11 +57,15 @@ Oklahoma City is about 65 miles and a little over an hour from our office, Highw
 
 We do this every week in Stillwater. <a href="/case-studies/stillwater-landscaper">A landscaper's two hours of nightly typing became one photo</a>. <a href="/case-studies/sweat-yoga-fitness">A gym owner's membership paperwork now runs itself while she sleeps</a>. A shop manager's 90-minute monthly schedule became a 5-minute review. Different businesses, same pattern.
 
+## Start free, then decide
+
+Everyone starts with a free Snapshot: a 30-minute call, or your website through the scanner below. Three questions, one page back, and you know how we think before you pay for anything.
+
 ## The plain math
 
 The AI Concierge is priced by team size: $1,000 a month if it's just you, $1,500 for a crew of 2 to 10, $2,250 for a shop of 11 to 25, $3,000 for a company of 26 to 50. Right now the next 5 clients get one tier down, locked in, because we're trying something new. No contracts, cancel anytime. Two working sessions a month plus text access, over video or in person when the process we're fixing lives in the building. If we can't find and kill enough wasted hours to cover that several times over, fire us. The shared progress hub we keep makes that judgment easy: every session, everything built, in one place.
 
-Full details on the <a href="/services/concierge">AI Concierge page</a>. Same price whether we meet over video or across the counter. If there's more than one thing to fix, the <a href="/services/assessment">Operations Assessment</a> comes first: a day at your business, process maps, and a written 90-day plan, $1,500 one time with half credited to the Concierge.
+Full details on the <a href="/services/concierge">AI Concierge page</a>. Same price whether we meet over video or across the counter. If there's more than one thing to fix, the <a href="/services/assessment">Operations Assessment</a> comes first: a day at your business, process maps, and a written 90-day plan, $1,500 for teams up to 10 and $2,500 for 11 to 50, half credited to the Concierge.
 
 ----
 
@@ -74,7 +78,7 @@ Faq:
 -
   question: What does an AI consultant cost in Oklahoma City?
   answer: >
-    Agencies quote retainers from $5,000 a month and up, mostly remote. Our AI Concierge runs $1,000 to $3,000 a month depending on team size, with no contract: two working sessions a month, in person when it helps, and direct text access in between. A crew of 2 to 10 is $1,500 a month, and the next 5 clients get one tier down, locked in. The one-time Operations Assessment is $1,500. We keep it simple on purpose.
+    Agencies quote retainers from $5,000 a month and up, mostly remote. Our AI Concierge runs $1,000 to $3,000 a month depending on team size, with no contract: two working sessions a month, in person when it helps, and direct text access in between. A crew of 2 to 10 is $1,500 a month, and the next 5 clients get one tier down, locked in. The one-time Operations Assessment is $1,500 for teams up to 10 and $2,500 for 11 to 50. We keep it simple on purpose.
 -
   question: What happens at the first session?
   answer: >

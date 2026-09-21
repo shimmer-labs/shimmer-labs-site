@@ -6,7 +6,7 @@
     <div class="container">
       <span class="cs-tag">Got it</span>
       <h1 class="hero__title">Your intake is in.</h1>
-      <p class="hero__intro">Logan reads every one of these personally and will text or email you within one business day to set up your first session. A copy just landed in your inbox.</p>
+      <p class="hero__intro">Logan reads every one of these personally and will text or email you within one business day, with a time for your first session or dates for the on-site day if you picked the Assessment. A copy just landed in your inbox.</p>
     </div>
   </section>
   <section class="long-form">

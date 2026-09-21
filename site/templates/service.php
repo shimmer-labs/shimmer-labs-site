@@ -315,7 +315,7 @@ if ($page->portfolioProjects()->isNotEmpty()) {
 <?php else: ?>
 <div id="contact-form" class="<?= $isSidecar ? 'service-form--sidecar' : '' ?>">
   <?php snippet('service-contact-form', [
-    'ctaTitle' => $isSidecar ? "See which hats you can take off." : $page->ctaTitle()->or("Ready to Get Started?"),
+    'ctaTitle' => $page->ctaTitle()->or("Ready to Get Started?"),
     'ctaDescription' => $page->ctaDescription()->value()
   ]) ?>
 </div>

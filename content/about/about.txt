@@ -24,16 +24,16 @@ Text:
 
 Logan Shimmer is a systems engineer who runs the office side of small businesses with their owners, and puts AI on the parts that deserve it. Shimmer Labs is the fractional operations practice he runs out of Stillwater, Oklahoma.
 
-The work that became Shimmer Labs was the work Logan was already doing — making complex systems behave, designing the operational glue between tools, shipping reliable infrastructure — before AI became the hammer.
+The work that became Shimmer Labs was the work Logan was already doing, making complex systems behave, designing the operational glue between tools, shipping reliable infrastructure, before AI became the hammer.
 
 ## The career arc
 
 Two decades of systems engineering and operations work, in production, before AI was the category it is now:
 
-- <a href="https://www.ni.com" rel="noopener" target="_blank">**National Instruments**</a> — test & measurement systems.
-- <a href="https://iterable.com" rel="noopener" target="_blank">**Iterable**</a> — marketing infrastructure at scale.
-- <a href="https://www.weavegrid.com" rel="noopener" target="_blank">**WeaveGrid**</a> — clean energy / utility grid platforms.
-- <a href="https://sense.com" rel="noopener" target="_blank">**Sense**</a> — clean energy / home energy monitoring.
+- <a href="https://www.ni.com" rel="noopener" target="_blank">**National Instruments**</a>, test & measurement systems.
+- <a href="https://iterable.com" rel="noopener" target="_blank">**Iterable**</a>, marketing infrastructure at scale.
+- <a href="https://www.weavegrid.com" rel="noopener" target="_blank">**WeaveGrid**</a>, clean energy / utility grid platforms.
+- <a href="https://sense.com" rel="noopener" target="_blank">**Sense**</a>, clean energy / home energy monitoring.
 
 A deeper interview-led narrative is in progress.
 
@@ -41,13 +41,13 @@ A deeper interview-led narrative is in progress.
 
 **2026 Google Data Center Community AI Fellow.** Selected for the <a href="/notes/google-data-center-community-ai-fellowship">Google Data Center Community AI Fellowship</a>, powered by Watson Institute, a program for community leaders using AI to build local solutions in the towns where Google runs data centers. Stillwater is one of them.
 
-OSU class of '09 alum. AI for Industry microcredential through <a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">**OSU CEAT Professional Development**</a> — an applied course on using AI inside technical organizations.
+OSU class of '09 alum. AI for Industry microcredential through <a href="https://ceat.catalog.instructure.com/browse/ai/courses/ai-literacy-and-application-for-technical-professionals" rel="noopener" target="_blank">**OSU CEAT Professional Development**</a>, an applied course on using AI inside technical organizations.
 
-Currently teaching **AI & Marketing** in the <a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">**Stillwater Chamber of Commerce's Small Business University**</a> program. Local owners learn what AI can actually do for their shop — without the hype, without getting stuck with one company's product, and without the security mistakes that keep showing up in the headlines.
+Currently teaching **AI & Marketing** in the <a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">**Stillwater Chamber of Commerce's Small Business University**</a> program. Local owners learn what AI can actually do for their shop, without the hype, without getting stuck with one company's product, and without the security mistakes that keep showing up in the headlines.
 
 ## Work that came before the brand
 
-The Supabase and <a href="/case-studies/taddy-api-integrations">Taddy</a> projects that anchor our case studies happened **before Shimmer Labs existed.** Same pattern. Same human checking everything before it goes out. Same real, working code in front of real customers. The work didn't change when the brand showed up — that's the proof it was solid all along.
+The Supabase and <a href="/case-studies/taddy-api-integrations">Taddy</a> projects that anchor our case studies happened **before Shimmer Labs existed.** Same pattern. Same human checking everything before it goes out. Same real, working code in front of real customers. The work didn't change when the brand showed up, that's the proof it was solid all along.
 
 ## Why Stillwater
 

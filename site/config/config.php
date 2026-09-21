@@ -680,7 +680,7 @@ return [
         $log = kirby()->root('site') . '/logs/qr-clicks.log';
         @mkdir(dirname($log), 0755, true);
         @file_put_contents($log, date('c') . " chamber\n", FILE_APPEND);
-        header('Location: https://calendly.com/logan-shimmerlabs/30-min-consult?utm_source=chamber-bag-drop&utm_medium=qr&utm_campaign=new-member-bag', true, 302);
+        header('Location: ' . url('contact') . '?utm_source=chamber-bag-drop&utm_medium=qr&utm_campaign=new-member-bag', true, 302);
         exit;
       }
     ],

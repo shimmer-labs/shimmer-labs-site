@@ -364,8 +364,8 @@
         </a>
         <a href="<?= url('intake') ?>" class="scan-next__card scan-next__card--primary" id="scanIntakeLink" data-scan-cta="intake">
           <span class="scan-next__icon">🤝</span>
-          <strong>Start the AI Concierge intake</strong>
-          <span>Two working sessions a month, built with you on your screen. Your three tasks are already filled in.</span>
+          <strong>Scope it, then build it with us</strong>
+          <span>More than one thing? The Operations Assessment comes first. Then the AI Concierge, two working sessions a month on your screen. Your three tasks are already filled in.</span>
         </a>
         <a href="<?= url('services/sidecar') ?>" class="scan-next__card" data-scan-cta="sidecar">
           <span class="scan-next__icon">🏍️</span>

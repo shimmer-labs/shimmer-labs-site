@@ -21,7 +21,7 @@
           <p class="external-proof__result">5x output. 100+ shirts in months. 15 hours a week back. Sarah went from YouTube detective to leading creative campaigns.</p>
         </div>
       </div>
-      <p class="external-proof__note"><strong>Logan built this for Supabase before Shimmer Labs existed.</strong> Same pattern, same guardrails, same human checking everything before it went out — done as a contractor for a developer-tools company hiring out work that mattered. The work didn&rsquo;t change when the brand showed up. It was already real, working, in front of real customers.</p>
+      <p class="external-proof__note"><strong>Logan built this for Supabase before Shimmer Labs existed.</strong> Same pattern, same guardrails, same human checking everything before it went out, done as a contractor for a developer-tools company hiring out work that mattered. The work didn&rsquo;t change when the brand showed up. It was already real, working, in front of real customers.</p>
     </div>
   </div>
 </section>

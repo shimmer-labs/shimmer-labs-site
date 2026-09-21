@@ -65,7 +65,7 @@
         <span class="build-card__step">Step 2</span>
         <h3 class="build-card__title">Operations Assessment</h3>
         <p class="build-card__description">A day in your business, process maps, an hours ledger, and a written 90-day plan, delivered digitally and on paper and walked through with you.</p>
-        <span class="build-card__price">$1,500 one time · half credited to the Concierge</span>
+        <span class="build-card__price">from $1,500 one time · half credited to the Concierge</span>
         <span class="build-card__arrow">View Details →</span>
       </a>
       <a href="/services/concierge" class="build-card">

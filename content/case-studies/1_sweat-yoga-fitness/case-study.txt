@@ -166,7 +166,7 @@ Results_headline_stat: 50+
 
 ----
 
-Results_headline_label: cancellations and freezes processed seamlessly to date — including the graduation rush, the highest-volume window of the year for a college-town studio
+Results_headline_label: cancellations and freezes processed seamlessly to date, including the graduation rush, the highest-volume window of the year for a college-town studio
 
 ----
 

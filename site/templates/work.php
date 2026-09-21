@@ -24,7 +24,7 @@
   <div class="container">
     <div class="cta-final__content">
       <h2>See something close to your problem? Let's talk.</h2>
-      <a href="<?= url('contact') ?>" class="btn btn--cta">Book a Call</a>
+      <a href="<?= url('contact') ?>" class="btn btn--cta">Get Your Free Snapshot</a>
     </div>
   </div>
 </section>

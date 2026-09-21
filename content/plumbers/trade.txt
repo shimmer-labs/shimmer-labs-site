@@ -51,6 +51,10 @@ We've shipped this pattern before. <a href="/case-studies/stillwater-landscaper"
 
 Want the full cost breakdown, including when automation is NOT worth it? [We wrote it up honestly here](/notes/cost-to-automate-invoicing).
 
+## Not sure it needs a build?
+
+Start with the free Snapshot at <a href="/office-hours">office hours</a> or a 30-minute call. If it's several things, the <a href="/services/assessment">Operations Assessment</a> scopes them first, and the <a href="/services/concierge">AI Concierge</a> builds the smaller ones with you. Sidecar is for the piece that has to run on its own.
+
 ## Local, and accountable
 
 Shimmer Labs is in Stillwater, Oklahoma. You work directly with <a href="/about">Logan Shimmer</a>, the engineer who builds it. If something breaks, he comes to your shop and fixes it in person. Support is included in the monthly, not sold as a ticket queue.

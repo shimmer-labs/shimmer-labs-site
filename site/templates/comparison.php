@@ -24,8 +24,8 @@
   <div class="container">
     <div class="cta-final__content">
       <h2>Want a real answer about whether Shimmer Labs fits your situation?</h2>
-      <p>Bring it to Office Hours, or book a 30-minute call. No pitch.</p>
-      <a href="<?= url('contact') ?>" class="btn btn--cta">Book a Call</a>
+      <p>Bring it to Office Hours, or start with the free Snapshot. No pitch.</p>
+      <a href="<?= url('contact') ?>" class="btn btn--cta">Get Your Free Snapshot</a>
     </div>
   </div>
 </section>

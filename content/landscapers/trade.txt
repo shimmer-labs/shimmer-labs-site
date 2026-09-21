@@ -51,6 +51,10 @@ They're fine tools, and if one of them fits how you already work, use it. But mo
 
 Want the full cost breakdown, including when automation is NOT worth it? [We wrote it up honestly here](/notes/cost-to-automate-invoicing).
 
+## Not sure it needs a build?
+
+Start with the free Snapshot at <a href="/office-hours">office hours</a> or a 30-minute call. If it's several things, the <a href="/services/assessment">Operations Assessment</a> scopes them first, and the <a href="/services/concierge">AI Concierge</a> builds the smaller ones with you. Sidecar is for the piece that has to run on its own.
+
 ## Local, and accountable
 
 Shimmer Labs is in Stillwater, Oklahoma. You'll work directly with <a href="/about">Logan Shimmer</a>, a systems engineer who builds these himself. When something needs a tweak, he comes to you. No ticket queue, no offshore support line.

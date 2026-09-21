@@ -2,7 +2,7 @@ Title: What we've shipped
 
 ----
 
-Meta_description: Inventory of everything Shimmer Labs has shipped — Sidecar workflows, custom apps, and API integrations — with year, stack, outcome, and links.
+Meta_description: Inventory of everything Shimmer Labs has shipped, Sidecar workflows, custom apps, and API integrations, with year, stack, outcome, and links.
 
 ----
 

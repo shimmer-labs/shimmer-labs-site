@@ -22,7 +22,7 @@ Twitter:
 
 ----
 
-Description: Shimmer Labs builds custom software, AI agents, and API integrations for small businesses. Based in Stillwater, Oklahoma. Founded by Logan Shimmer, a systems engineer with two decades across National Instruments, Iterable, WeaveGrid, and Sense.
+Description: Shimmer Labs is a fractional operations partner for Oklahoma small businesses with 1 to 50 people. Free Snapshot, Operations Assessment, AI Concierge, and Sidecar. Based in Stillwater, Oklahoma. Founded by Logan Shimmer, a systems engineer with two decades across National Instruments, Iterable, WeaveGrid, and Sense.
 
 ----
 

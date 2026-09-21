@@ -99,6 +99,16 @@ if ($page->intendedTemplate()->name() === 'home') {
       'itemListElement' => [
         [
           '@type' => 'Offer',
+          'itemOffered' => ['@type' => 'Service', 'name' => 'Operations Assessment', 'description' => 'A day on site, process maps, an hours ledger, and a written 90-day plan delivered digitally and printed with an in-person walkthrough. Half credited to the first AI Concierge month.'],
+          'priceSpecification' => ['@type' => 'PriceSpecification', 'minPrice' => '1500', 'maxPrice' => '2500', 'priceCurrency' => 'USD']
+        ],
+        [
+          '@type' => 'Offer',
+          'itemOffered' => ['@type' => 'Service', 'name' => 'AI Concierge (standing operations partner)', 'description' => 'Two working sessions a month, text access between them, every fix built with the owner. Priced by team size.'],
+          'priceSpecification' => ['@type' => 'UnitPriceSpecification', 'minPrice' => '1000', 'maxPrice' => '3000', 'priceCurrency' => 'USD', 'unitText' => 'MONTH']
+        ],
+        [
+          '@type' => 'Offer',
           'itemOffered' => [
             '@type' => 'Service',
             'name' => 'Sidecar (AI-assisted operational workflows)',
@@ -174,7 +184,7 @@ if ($page->intendedTemplate()->name() === 'about') {
     'givenName' => 'Logan',
     'familyName' => 'Shimmer',
     'jobTitle' => 'Founder & Systems Engineer',
-    'description' => 'Systems engineer who builds AI-assisted operational workflows for small businesses. Two decades across National Instruments, Iterable, WeaveGrid, and Sense before founding Shimmer Labs.',
+    'description' => 'Fractional operations partner for Oklahoma small businesses. Systems engineer with two decades across National Instruments, Iterable, WeaveGrid, and Sense before founding Shimmer Labs.',
     'url' => $page->url(),
     'image' => $page->headshot()->isNotEmpty() && $page->image($page->headshot()) ? $page->image($page->headshot())->url() : null,
     'email' => 'logan@shimmerlabs.co',
@@ -436,7 +446,7 @@ if ($page->slug() === 'stillwater-ai-consultant') {
     'parentOrganization' => [
       '@id' => $site->url() . '#organization'
     ],
-    'priceRange' => '$250+',
+    'priceRange' => 'Free to $3,000 per month',
     'sameAs' => [
       'https://www.linkedin.com/in/loganshimmer/',
       'https://github.com/shimmer-labs',

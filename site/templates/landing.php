@@ -15,10 +15,10 @@
         // First CTA card is page-driven. Defaults preserve the consultation
         // booking for existing guides; a community page (e.g. /sbu) overrides
         // these fields to invite people into Main Street AI instead.
-        $tyTitle = $page->thankyou_cta_title()->or('Free Consultation');
-        $tyText  = $page->thankyou_cta_text()->or('30 minutes. No pitch, no pressure, just practical advice.');
-        $tyLabel = $page->thankyou_cta_label()->or('Book a Call →');
-        $tyUrl   = $page->thankyou_cta_url()->or('https://api.leadconnectorhq.com/widget/booking/tCHB0sj6MoYpJYWJyVqd');
+        $tyTitle = $page->thankyou_cta_title()->or('Free Snapshot');
+        $tyText  = $page->thankyou_cta_text()->or('Office hours Tuesdays and Thursdays, 2 to 3 PM at WorkIT, or a 30-minute call. Three questions, one page back.');
+        $tyLabel = $page->thankyou_cta_label()->or('Get Your Free Snapshot →');
+        $tyUrl   = $page->thankyou_cta_url()->or(url('contact'));
         ?>
         <div class="landing-thankyou__cta-card">
           <h3><?= $tyTitle ?></h3>
