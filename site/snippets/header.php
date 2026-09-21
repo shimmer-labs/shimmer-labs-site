@@ -9,7 +9,7 @@
   $templateName = $page->intendedTemplate()->name();
   $seoTitle = match($templateName) {
     'home' => 'Shimmer Labs | Operations and AI Consultant for Oklahoma Small Businesses',
-    'case-studies' => 'Small Business AI Case Studies | Shimmer Labs',
+    'case-studies' => 'Case Studies: Oklahoma Small Businesses That Got Hours Back | Shimmer Labs',
     'case-study' => $page->title() . ' Case Study | Shimmer Labs',
     'projects' => 'Portfolio - SaaS Apps, API Integrations & iOS Development | Shimmer Labs',
     'contact' => 'Start With a Free Snapshot | Shimmer Labs',

@@ -14,7 +14,7 @@ Eyebrow: Sidecar, for roofing companies
 
 ----
 
-Hero_title: Done-for-you AI for roofing companies
+Hero_title: The office side of a roofing company, built and run for you
 
 ----
 

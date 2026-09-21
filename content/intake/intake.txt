@@ -6,7 +6,7 @@ Seo_title: AI Concierge Intake | Shimmer Labs
 
 ----
 
-Meta_description: The AI Concierge intake form. Ten minutes of honest answers about your business and the tasks eating your week. Logan reads every one and replies within a business day.
+Meta_description: The intake form for the Operations Assessment and the AI Concierge. Ten minutes of honest answers about your business and the tasks eating your week. Logan reads every one and replies within a business day.
 
 ----
 

@@ -6,7 +6,7 @@ Seo_title: AI Consultant in Stillwater, Oklahoma: Local, In Person, Free Office 
 
 ----
 
-Meta_description: Shimmer Labs is Stillwater's local AI consultant. Free AI office hours every Tuesday and Thursday at WorkIT, a done-with-you AI Concierge priced by team size from $1,000/mo, and Sidecar builds when a process is too big to build together.
+Meta_description: Shimmer Labs is Stillwater's local operations partner, with AI on the parts that deserve it. Free AI office hours every Tuesday and Thursday at WorkIT, a done-with-you AI Concierge priced by team size from $1,000/mo, and Sidecar builds when a process is too big to build together.
 
 ----
 
@@ -26,7 +26,7 @@ Hero_title: AI Consultant in Stillwater, Oklahoma
 
 ----
 
-Intro: Shimmer Labs is the AI consultant that is actually in Stillwater. Logan Shimmer, OSU class of '09, runs it from WorkIT on Main Street. Free AI office hours twice a week, a done-with-you AI Concierge priced by team size from $1,000 a month, and Sidecar builds when a process is too big to build together. No account managers, no Dallas agency, no chatbot pitch.
+Intro: Shimmer Labs is the operations partner that is actually in Stillwater, and the AI consultant when the work calls for one. Logan Shimmer, OSU class of '09, runs it from WorkIT on Main Street. Free AI office hours twice a week, a done-with-you AI Concierge priced by team size from $1,000 a month, and Sidecar builds when a process is too big to build together. No account managers, no Dallas agency, no chatbot pitch.
 
 ----
 
@@ -36,7 +36,7 @@ Text:
 
 <a href="/about">Logan Shimmer</a> came back to Stillwater after 17 years in California, most of it as a systems engineer at <a href="https://www.ni.com" rel="noopener" target="_blank">National Instruments</a>, <a href="https://iterable.com" rel="noopener" target="_blank">Iterable</a>, <a href="https://www.weavegrid.com" rel="noopener" target="_blank">WeaveGrid</a>, and <a href="https://sense.com" rel="noopener" target="_blank">Sense</a>, making complex systems behave before AI was the hammer. Shimmer Labs is a two-line shop. You talk to Logan directly. No handoffs, no offshore subcontracting, no one between you and the person doing the work.
 
-Most "AI consultants" you'll find on Google are in Dallas, Austin, or a Slack channel six time zones away. If AI is going to touch real customer-facing work in your business, membership changes, quotes, invoices, scheduling, you want the person building it reachable, accountable, and in the room. Here, that's a ten-minute drive.
+Most consultants you'll find on Google are in Dallas, Austin, or a Slack channel six time zones away. If anyone is going to touch real customer-facing work in your business, membership changes, quotes, invoices, scheduling, you want the person building it reachable, accountable, and in the room. Here, that's a ten-minute drive.
 
 ## Start free: AI office hours at WorkIT
 

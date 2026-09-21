@@ -2,11 +2,11 @@ Title: Notes
 
 ----
 
-Seo_title: AI and Automation Answers for Small Business Owners | Notes
+Seo_title: Plain Answers for Small Business Owners on Operations, Automation, and AI | Notes
 
 ----
 
-Hero_title: Notes: plain answers about AI and automation for small businesses
+Hero_title: Notes: plain answers on running the office side of a small business
 
 ----
 
@@ -14,4 +14,4 @@ Intro: Plain answers to the questions small business owners actually ask us abou
 
 ----
 
-Meta_description: Plain answers about AI and automation for small businesses, from Shimmer Labs in Stillwater, OK. What it costs, what it can read, and when not to bother.
+Meta_description: Plain answers on operations, automation, and AI for small businesses, from Shimmer Labs in Stillwater, OK. What it costs, what it can read, and when not to bother.

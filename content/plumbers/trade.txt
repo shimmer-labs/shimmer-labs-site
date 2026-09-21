@@ -14,7 +14,7 @@ Eyebrow: Sidecar, for plumbing and HVAC shops
 
 ----
 
-Hero_title: Done-for-you AI for plumbing and HVAC shops
+Hero_title: The office side of a plumbing and HVAC shop, built and run for you
 
 ----
 

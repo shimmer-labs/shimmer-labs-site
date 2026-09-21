@@ -20,7 +20,7 @@
 <?php else: ?>
   <section class="hero hero--compact">
     <div class="container">
-      <span class="cs-tag">AI Concierge intake</span>
+      <span class="cs-tag">Intake</span>
       <h1 class="hero__title"><?= $page->title() ?></h1>
       <?php if ($page->intro()->isNotEmpty()): ?>
         <p class="hero__intro"><?= $page->intro() ?></p>
