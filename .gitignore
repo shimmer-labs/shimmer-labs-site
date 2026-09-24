@@ -82,6 +82,7 @@ router.dev.php
 !/content/**/*.png
 !/assets/**/*.png
 !/business-at-lunch/assets/*.png
+!/riata-center/assets/*.png
 !/realtor-lunch/assets/*.png
 
 # QR click logs (runtime, not content)
