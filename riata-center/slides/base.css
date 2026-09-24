@@ -1,0 +1,69 @@
+/* Chamber Business@Lunch deck — shared styles.
+   Big room (~80 seats): body text floor 30px, readable at 50% zoom. PDF-safe: no box-shadows on dark, no masks. */
+:root{
+  --navy:#0A1A2F;
+  --gold:#FDBE34;
+  --goldink:#D4920A;
+  --orange:#FF6600;
+  --ink:#374151;
+  --soft:#6B7280;
+  --light:#F8F9FA;
+  --green:#28a745;
+  --red:#DC3545;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{width:1920px;height:1080px;overflow:hidden;}
+body{font-family:'Inter',sans-serif;}
+
+/* dark slides */
+body.dark{background:var(--navy);color:#fff;padding:0 90px;}
+body.dark .accent{position:absolute;top:0;left:0;right:0;height:8px;
+  background:linear-gradient(90deg,#FDBE34,#FF6600,#FDBE34);}
+
+/* light slides */
+body.light{background:var(--light);color:var(--ink);padding:0 90px;}
+body.light .stripe{position:absolute;top:0;left:0;bottom:0;width:10px;
+  background:linear-gradient(180deg,var(--navy),var(--goldink));}
+
+/* section tag */
+.tag{position:absolute;top:44px;left:90px;
+  font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:20px;
+  letter-spacing:3px;text-transform:uppercase;
+  background:var(--navy);color:var(--gold);padding:10px 22px;border-radius:8px;}
+body.dark .tag{background:var(--gold);color:var(--navy);}
+
+/* slide number */
+.num{position:absolute;bottom:28px;right:44px;font-family:'Space Grotesk',sans-serif;
+  font-size:17px;color:#9CA3AF;}
+
+h1.slide-title{font-family:'Space Grotesk',sans-serif;font-weight:700;
+  font-size:64px;line-height:1.1;margin-top:120px;}
+body.light h1.slide-title{color:var(--navy);}
+h1.slide-title .gold{color:var(--gold);}
+body.light h1.slide-title .gold{color:var(--goldink);}
+
+.big-stat{font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--gold);line-height:1;}
+
+.cite{font-size:20px;color:#9CA3AF;}
+body.light .cite{color:var(--soft);}
+
+/* cards */
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:32px 38px;}
+body.dark .card{border:none;color:var(--ink);}
+
+/* placeholder convention */
+.placeholder{
+  background:#E9ECEF;border:4px dashed #9CA3AF;border-radius:16px;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  color:#495057;font-size:28px;line-height:1.4;padding:30px;
+  font-style:italic;
+}
+.placeholder b{display:block;font-style:normal;font-family:'Space Grotesk',sans-serif;
+  font-size:32px;margin-bottom:10px;color:#212529;}
+
+/* takeaway bar */
+.takeaway{position:absolute;left:90px;right:90px;bottom:60px;
+  background:var(--navy);color:#fff;border-radius:14px;padding:24px 40px;
+  font-size:34px;font-weight:500;text-align:center;}
+.takeaway b{color:var(--gold);}
+body.dark .takeaway{background:rgba(253,190,52,.14);border:2px solid var(--gold);}

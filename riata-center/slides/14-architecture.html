@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Architecture</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+  h1.slide-title{margin-top:130px;}
+  .flow{display:flex;align-items:stretch;gap:0;margin-top:70px;}
+  .box{flex:1;background:rgba(255,255,255,.06);border:2px solid rgba(253,190,52,.5);border-radius:18px;padding:40px 26px;text-align:center;display:flex;flex-direction:column;justify-content:center;min-height:330px;}
+  .box .k{font-family:'Space Grotesk',sans-serif;font-size:22px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);}
+  .box .v{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:42px;color:#fff;margin-top:10px;line-height:1.15;}
+  .box .e{font-size:28px;color:rgba(255,255,255,.7);margin-top:10px;line-height:1.3;}
+  .arr{flex:0 0 70px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:64px;font-weight:700;}
+  .note{margin-top:64px;font-size:36px;font-weight:300;color:rgba(255,255,255,.85);max-width:1600px;line-height:1.4;}
+  .note b{color:#fff;font-weight:600;}
+</style></head>
+<body class="dark">
+<div class="accent"></div>
+<div class="tag">The back end, in one line</div>
+<h1 class="slide-title">Every one of these is the <span class="gold">same shape.</span></h1>
+<div class="flow">
+  <div class="box"><div class="k">Trigger</div><div class="v">Something arrives</div><div class="e">Email, form, text, a file in a folder</div></div>
+  <div class="arr">&rarr;</div>
+  <div class="box"><div class="k">Read</div><div class="v">An assistant reads it</div><div class="e">Pulls out the 5 fields a human would</div></div>
+  <div class="arr">&rarr;</div>
+  <div class="box"><div class="k">Do</div><div class="v">Puts it where it goes</div><div class="e">QuickBooks, the CRM, a calendar, a reply</div></div>
+  <div class="arr">&rarr;</div>
+  <div class="box"><div class="k">Check</div><div class="v">A human approves</div><div class="e">One click, or a daily digest</div></div>
+</div>
+<div class="note">Tools change (n8n, Zapier, Make, whatever is cheapest that month). <b>The shape doesn&rsquo;t.</b> If you can draw the four boxes for your dread task, it can be built.</div>
+<div class="takeaway">Trigger &rarr; read &rarr; do &rarr; <b>human checks.</b> That last box is not optional.</div>
+
+
+<div class="num">14</div>
+</body></html>

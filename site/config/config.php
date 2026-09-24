@@ -773,6 +773,12 @@ return [
           'priority' => '0.4',
           'changefreq' => 'monthly'
         ];
+        $sitemap[] = [
+          'url' => $site->url() . '/riata-center/',
+          'lastmod' => date('Y-m-d'),
+          'priority' => '0.4',
+          'changefreq' => 'monthly'
+        ];
 
         // Generate XML
         $xml = '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;

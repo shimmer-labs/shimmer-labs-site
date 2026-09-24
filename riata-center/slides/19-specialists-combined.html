@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920">
+    <title>What This Looks Like in Practice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #F8F9FA; color: #0A1A2F;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .side-accent {
+            position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(180deg, #FDBE34, #0A1A2F 30%, #0A1A2F 70%, #FDBE34);
+        }
+        .content {
+            position: relative; z-index: 1;
+            padding: 52px 80px 150px 80px;
+            height: 100%;
+            display: flex; flex-direction: column;
+        }
+        .section-tag {
+            display: inline-block;
+            background: #0A1A2F; color: #FDBE34;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 16px; font-weight: 600;
+            padding: 6px 18px; border-radius: 6px;
+            text-transform: uppercase; letter-spacing: 1.5px;
+            margin-bottom: 20px;
+        }
+        .title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 52px; font-weight: 700;
+            margin-bottom: 28px;
+        }
+        .title .gold { color: #D4920A; }
+        .columns {
+            display: flex; gap: 24px;
+            flex: 1;
+        }
+        .column {
+            flex: 1;
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 28px 24px;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            display: flex; flex-direction: column;
+        }
+        .col-emoji {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+        .col-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px; font-weight: 700; color: #0A1A2F;
+            margin-bottom: 16px;
+        }
+        .ruw-item {
+            margin-bottom: 12px;
+        }
+        .ruw-label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+        .ruw-read { color: #4a90d9; }
+        .ruw-understand { color: #9b59b6; }
+        .ruw-write { color: #28a745; }
+        .ruw-text {
+            font-size: 22px; color: #374151;
+            line-height: 1.4;
+        }
+        .col-nomore {
+            margin-top: auto;
+            background: #FFF9E6;
+            border: 1px solid #D4A017;
+            border-radius: 10px;
+            padding: 12px 16px;
+            font-size: 22px; font-weight: 500; color: #8B6914;
+        }
+        .col-nomore strong { font-weight: 700; }
+        .bottom-bar {
+            position: absolute; bottom: 60px; left: 80px; right: 80px;
+            background: #0A1A2F; border-radius: 12px; padding: 24px 44px;
+            text-align: center; z-index: 2;
+        }
+        .bottom-bar p {
+            font-family: 'Inter', sans-serif; font-size: 34px;
+            font-weight: 400; color: #FFFFFF;
+        }
+        .bottom-bar strong { color: #FDBE34; font-weight: 600; }
+        .slide-number {
+            position: absolute; bottom: 20px; right: 40px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px; color: #9CA3AF;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-accent"></div>
+    <div class="content">
+        <div class="section-tag">Real Use Cases</div>
+        <div class="title">What This Looks Like for <span class="gold">Your</span> Business</div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="col-emoji">📋</div>
+                <div class="col-name">Proposal Follow-Up</div>
+                <div class="ruw-item">
+                    <div class="ruw-label ruw-read">Read:</div>
+                    <div class="ruw-text">A lead fills out your contact form at 9pm.</div>
+                </div>
+                <div class="ruw-item">
+                    <div class="ruw-label ruw-understand">Understand:</div>
+                    <div class="ruw-text">They want a quote. They're comparing you to two other shops.</div>
+                </div>
+                <div class="ruw-item">
+                    <div class="ruw-label ruw-write">Write:</div>
+                    <div class="ruw-text">By 9:01 they have a response with your availability and a booking link.</div>
+                </div>
+                <div class="col-nomore"><strong>No more</strong> leaving money on the table because your competitor responded first.</div>
+            </div>
+            <div class="column">
+                <div class="col-emoji">🎙️</div>
+                <div class="col-name">Sales Call Notes</div>
+                <div class="ruw-item">
+                    <div class="ruw-label ruw-read">Read:</div>
+                    <div class="ruw-text">You walk out of an on-site visit with a voice memo of the whole conversation.</div>
+                </div>
+                <div class="ruw-item">
+                    <div class="ruw-label ruw-understand">Understand:</div>
+                    <div class="ruw-text">Interprets the audio. Pulls out action items, follow-ups, and key decisions.</div>
+                </div>
+                <div class="ruw-item">
+                    <div class="ruw-label ruw-write">Write:</div>
+                    <div class="ruw-text">Notes written and CRM updated before you leave the parking lot.</div>
+                </div>
+                <div class="col-nomore"><strong>No more</strong> logging touchpoints late into the evening.</div>
+            </div>
+            <div class="column">
+                <div class="col-emoji">💬</div>
+                <div class="col-name">Social Media Responses</div>
+                <div class="ruw-item">
+                    <div class="ruw-label ruw-read">Read:</div>
+                    <div class="ruw-text">Someone DMs your business page asking about pricing.</div>
+                </div>
+                <div class="ruw-item">
+                    <div class="ruw-label ruw-understand">Understand:</div>
+                    <div class="ruw-text">They want your rate card and availability for next week.</div>
+                </div>
+                <div class="ruw-item">
+                    <div class="ruw-label ruw-write">Write:</div>
+                    <div class="ruw-text">Sends your rate card and booking link. You find out when the appointment hits your calendar.</div>
+                </div>
+                <div class="col-nomore"><strong>No more</strong> doom scrolling comments late at night when you could be with family.</div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>These are <strong>real use cases</strong>. Not hypothetical.</p>
+    </div>
+    <div class="slide-number">19</div>
+</body>
+</html>

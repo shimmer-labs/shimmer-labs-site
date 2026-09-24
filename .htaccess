@@ -42,6 +42,8 @@ RewriteRule ^business-at-lunch([^/].*)?$ https://shimmerlabs.co/business-at-lunc
 RewriteRule ^business-at-lunch/[<>%][^/]*$ https://shimmerlabs.co/business-at-lunch/ [R=301,L]
 RewriteCond %{REQUEST_URI} !^/realtor-lunch/
 RewriteRule ^realtor-lunch([^/].*)?$ https://shimmerlabs.co/realtor-lunch/ [R=301,L]
+RewriteCond %{REQUEST_URI} !^/riata-center/
+RewriteRule ^riata-center([^/].*)?$ https://shimmerlabs.co/riata-center/ [R=301,L]
 
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f

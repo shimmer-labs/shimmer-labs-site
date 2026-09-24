@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920">
+    <title>Three Businesses, Three Wins</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; background: #111; overflow: hidden; }
+        body {
+            width: 1920px; height: 1080px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #F8F9FA; color: #0A1A2F;
+            overflow: hidden; position: relative; transform-origin: top left;
+        }
+        .side-accent {
+            position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(180deg, #FDBE34, #0A1A2F 30%, #0A1A2F 70%, #FDBE34);
+        }
+        .content {
+            position: relative; z-index: 1;
+            padding: 60px 80px 180px 80px;
+            height: 100%;
+            display: flex; flex-direction: column;
+        }
+        .section-tag {
+            display: inline-block;
+            background: #0A1A2F; color: #FDBE34;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px; font-weight: 600;
+            padding: 8px 20px; border-radius: 6px;
+            letter-spacing: 2px; text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 60px; font-weight: 700;
+            color: #0A1A2F; margin-bottom: 36px;
+        }
+        .gold { color: #D4920A; }
+        .cards {
+            flex: 1;
+            display: flex; flex-direction: column;
+            justify-content: center;
+        }
+        .card {
+            background: #FFFFFF;
+            border-radius: 14px;
+            padding: 28px 36px;
+            margin-bottom: 20px;
+            border-left: 6px solid #FDBE34;
+        }
+        .card:last-child { margin-bottom: 0; }
+        .card-header {
+            display: flex; align-items: center; gap: 14px;
+            margin-bottom: 10px;
+        }
+        .card-emoji { font-size: 36px; }
+        .card-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 30px; font-weight: 700;
+            color: #0A1A2F;
+        }
+        .card-desc {
+            font-family: 'Inter', sans-serif;
+            font-size: 28px; color: #374151;
+            line-height: 1.5;
+            margin-bottom: 4px;
+        }
+        .badge {
+            display: inline-block;
+            background: #E8F8EF; color: #1a6b2d;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px; font-weight: 600;
+            padding: 6px 16px; border-radius: 20px;
+            margin-top: 12px;
+        }
+        .bottom-bar {
+            position: absolute; bottom: 72px; left: 100px; right: 140px;
+            background: #0A1A2F; border-radius: 12px; padding: 28px 44px;
+            text-align: center;
+        }
+        .bottom-bar p {
+            font-family: 'Inter', sans-serif; font-size: 34px;
+            font-weight: 400; color: #FFFFFF;
+        }
+        .bottom-bar strong { color: #FDBE34; font-weight: 600; }
+        .slide-number {
+            position: absolute;
+            bottom: 24px; right: 40px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px; color: #9CA3AF;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-accent"></div>
+    <div class="content">
+        <span class="section-tag">REAL RESULTS</span>
+        <h1>Three Businesses, Three <span class="gold">Wins</span></h1>
+        <div class="cards">
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-emoji">📗</span>
+                    <span class="card-name">The Bookkeeper</span>
+                </div>
+                <div class="card-desc">Invoice reconciliation: 6 hrs/wk → 45 min</div>
+                <span class="badge">Saved $15K/yr</span>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-emoji">🏠</span>
+                    <span class="card-name">The Realtor</span>
+                </div>
+                <div class="card-desc">Lead follow-up: 2 days late → same-day</div>
+                <span class="badge">3 extra closings in Q1</span>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-emoji">🔨</span>
+                    <span class="card-name">The Contractor</span>
+                </div>
+                <div class="card-desc">Change orders: paper to automated alerts</div>
+                <span class="badge">Caught $12K billing error</span>
+            </div>
+        </div>
+        <div class="bottom-bar"><p>None of these businesses are tech companies. They just found the <strong>right task</strong>.</p></div>
+    </div>
+    <div class="slide-number">18</div>
+</body>
+</html>
