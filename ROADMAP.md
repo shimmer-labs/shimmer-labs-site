@@ -6,7 +6,7 @@
 - [ ] (moved to Open) GBP reviews: 2 today. Ask the 7 case-study clients. Local pack leaders have 6 to 79.
 - [x] GBP description (checked in Chrome Sep 28: already the operations-partner copy, category Business management consultant).
 - [ ] GBP Services list is empty under the primary category (only "IT consulting" under Computer consultant). Add: Operations Assessment ($1,500), AI Concierge (from $1,000/mo), Sidecar (from $1,000), Free AI Office Hours ($0). Path: search "Shimmer Labs" signed in as logan@shimmerlabs.co > Edit services. Also add the company LinkedIn, Facebook, Instagram under social profiles. Or tell Claude to do it in Chrome.
-- [ ] www.shimmerlabs.co has no DNS record (Sep 28 audit). Add a CNAME or redirect rule at Cloudflare pointing www to the apex.
+- [ ] www.shimmerlabs.co has no DNS record (Sep 28 audit). Nameservers are DigitalOcean, not Cloudflare: add www in the App Platform app under Settings > Domains as an alias of shimmerlabs.co, and DO writes the CNAME itself. Then validate the two Event fixes under Search Console > Enhancements > Events.
 - [ ] (moved to Open) Decide Concierge cadence (site: two sessions a month; Kimberly call: weekly at $2k) before the next close.
 - [ ] GHL nurture on the `concierge-intake` tag: build the 4-email sequence (references/sep-2026-handoffs/ghl-concierge-nurture.md) and paste the Assessment line; times are 2 to 3 PM.
 - [ ] Google Ads copy still says the flat $1,000/mo Concierge; replacement in references/sep-2026-handoffs/google-ads-copy.md.
