@@ -3,8 +3,8 @@
 ## Open, as of Sep 28 2026 (everything below this block is history)
 
 **Logan only (off-site audit, Sep 28; reports in references/sep-2026-handoffs/offsite-audit-*.md)**
-- [ ] Bing Webmaster Tools: sign in, My Sites > Import from Google Search Console > Allow > Import. Bing is missing 28 of 67 pages including /automate-first and /notes. IndexNow is already wired (scripts/seo/indexnow.mjs, 67 URLs accepted Sep 28).
-- [ ] Bing Places for Business: create the listing (it can import from GBP). Today the address resolves to WorkIT only.
+- [x] Bing Webmaster Tools (Sep 28): verified via CNAME + meta tag + BingSiteAuth.xml, sitemap submitted, 38 URLs submitted for crawl (quota 100/day). IndexNow wired (scripts/seo/indexnow.mjs). Check Sitemaps > URLs discovered and Site Explorer around Oct 5.
+- [x] Bing Places (Sep 28): imported from GBP with weekly sync, verified, publishing in 7 to 12 days. GBP is the source of truth now; fix Suite 86 and anything else on GBP, not on Bing.
 - [ ] Fix the stale copies of us out there: Shopify Partner dashboard FlowMint developer address still "23 Roka Ridge" (should be 901 S Main St Suite 86); LinkedIn company About body and Crunchbase description are the old automation copy; Facebook page handle is logan.herr.5203; loganshimmer.com should redirect to shimmerlabs.co.
 - [ ] Five link asks, one email each: Tanya at WorkIT (link the three coworkit.net pages, fix Spotlight hours to 2 to 3), Chamber SBU page (link + "co-founder" to "founder"), Watson fellows page (add website), Vlad Moskovski (make shimmerlabs.co clickable in the episode description), OSU CEAT (instructor credit on the AI course page).
 - [ ] Journal Record guest opinion: "How much does an AI consultant cost an Oklahoma small business?" ~500 words to copy.desk@journalrecord.com with headshot. Claude drafts on your go.
