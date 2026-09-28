@@ -2,7 +2,12 @@
 
 ## Open, as of Sep 28 2026 (everything below this block is history)
 
-**Logan only**
+**Logan only (off-site audit, Sep 28; reports in references/sep-2026-handoffs/offsite-audit-*.md)**
+- [ ] Bing Webmaster Tools: sign in, My Sites > Import from Google Search Console > Allow > Import. Bing is missing 28 of 67 pages including /automate-first and /notes. IndexNow is already wired (scripts/seo/indexnow.mjs, 67 URLs accepted Sep 28).
+- [ ] Bing Places for Business: create the listing (it can import from GBP). Today the address resolves to WorkIT only.
+- [ ] Fix the stale copies of us out there: Shopify Partner dashboard FlowMint developer address still "23 Roka Ridge" (should be 901 S Main St Suite 86); LinkedIn company About body and Crunchbase description are the old automation copy; Facebook page handle is logan.herr.5203; loganshimmer.com should redirect to shimmerlabs.co.
+- [ ] Five link asks, one email each: Tanya at WorkIT (link the three coworkit.net pages, fix Spotlight hours to 2 to 3), Chamber SBU page (link + "co-founder" to "founder"), Watson fellows page (add website), Vlad Moskovski (make shimmerlabs.co clickable in the episode description), OSU CEAT (instructor credit on the AI course page).
+- [ ] Journal Record guest opinion: "How much does an AI consultant cost an Oklahoma small business?" ~500 words to copy.desk@journalrecord.com with headshot. Claude drafts on your go.
 - [ ] (moved to Open) GBP reviews: 2 today. Ask the 7 case-study clients. Local pack leaders have 6 to 79.
 - [x] GBP description (checked in Chrome Sep 28: already the operations-partner copy, category Business management consultant).
 - [ ] GBP Services list is empty under the primary category (only "IT consulting" under Computer consultant). Add: Operations Assessment ($1,500), AI Concierge (from $1,000/mo), Sidecar (from $1,000), Free AI Office Hours ($0). Path: search "Shimmer Labs" signed in as logan@shimmerlabs.co > Edit services. Also add the company LinkedIn, Facebook, Instagram under social profiles. Or tell Claude to do it in Chrome.
@@ -16,6 +21,7 @@
 - [ ] Watch /services/assessment in Search Console; two requests in, still "discovered, not indexed." If it's still out on Oct 5, we look at why.
 
 **Claude, on your go**
+- [ ] Community answers, one a week, no links unless the forum allows: Contractor Talk "juggling too many apps" thread, HVAC-Talk "job's done but billing isn't", r/ArtificialInteligence "should we hire an AI consultant", the Oklahoma Small Business Contractors FB group (13.4K). Ranked list with what each answer should say is in offsite-audit-communities.md. Drafts need your voice, so I write, you post.
 - [x] Sep 28 technical audit fixes shipped (commit 7306d72): cache + security headers, 1200x630 social card, og:title = title, 45 real meta descriptions, Updated fields on every sitemap page, Article image everywhere, Event schema endDate/validFrom, trailing-slash 301s, image dimensions, anna-moore.jpg 805KB to 70KB, service-worker cleanup removed.
 - [ ] Next audit pass, lower value: webp/srcset for the hero and testimonial photos; PageSpeed run needs an API key; automate-first titles are 91 to 129 chars (Google truncates around 60, the question stays visible so leaving them).
 - [ ] Local notes, one a week: calendar in references/sep-2026-handoffs/local-notes-calendar.md. First: "Do I need a CRM, or just a spreadsheet and an AI?" (the garage door installer), target Oct 5.
