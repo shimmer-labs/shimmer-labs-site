@@ -30,6 +30,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="<?= url('assets/images/favicon-32x32.png') ?>">
   <link rel="icon" type="image/png" sizes="16x16" href="<?= url('assets/images/favicon-16x16.png') ?>">
   <link rel="manifest" href="<?= url('site.webmanifest') ?>">
+  <meta name="msvalidate.01" content="3D0919EE5DF94496ABFA97FF1042B61B">
   <link rel="shortcut icon" href="<?= url('favicon.ico') ?>">
 
   <!-- Canonical -->
