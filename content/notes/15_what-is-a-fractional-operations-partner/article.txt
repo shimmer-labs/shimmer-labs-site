@@ -1,0 +1,122 @@
+Title: What is a fractional operations partner?
+
+----
+
+Seo_title: What Is a Fractional Operations Partner? How It Differs From a Fractional COO, a Coach, and an Agency
+
+----
+
+Meta_description: A fractional operations partner runs the office side of a small business with the owner, part time, fixing the process before adding software or AI. What one does, how it differs from a fractional COO, a coach, and an agency, what it costs, and five questions to ask before you hire one.
+
+----
+
+Eyebrow: Notes
+
+----
+
+Date: 2026-09-28
+
+----
+
+Updated: 2026-09-28
+----
+
+Intro: A fractional operations partner is someone who runs the office side of a small business with the owner on a part-time, standing basis: quotes, invoices, scheduling, follow-up, and handoffs, fixed as processes first and automated only where software or AI earns its place. It's done with the owner, not for them, so the owner keeps what gets built. Some people call the same job a fractional chief of staff.
+
+----
+
+Text:
+
+## What a fractional operations partner actually does
+
+The job is the recurring work that keeps a small business running and never makes the owner money directly. Quotes. Invoices. The schedule. The follow-up call that nobody remembers to make. The handoff from the person who sold the job to the person who does it.
+
+A normal month with one looks like this. Two working sessions, 45 minutes each, on your screen or at your counter. Session one, we map how a quote actually gets out the door today, every click and every text message. We cut the steps that exist only because they always have. Most 15-step processes only need nine. Then we hand the clean version to software, or to AI where a computer that can read and write earns its place.
+
+Session two, the invoice that gets typed into QuickBooks twice. Same routine: audit, optimize, automate, in that order. Between sessions, you text when something breaks or a new mess shows up. Every session, every fix, and every next step gets logged in a shared hub, so you can see what the month produced.
+
+The word that matters is with. You're at the keyboard. The automations live in your accounts. If we stop working together, everything keeps running and you know how it works. That's the difference between building capability and renting it.
+
+## Fractional operations partner vs. fractional COO
+
+A fractional COO runs the management layer. They sit above your managers, set the org chart, build the reporting cadence, and lead the quarterly planning. The going rate is $5,000 to $15,000 a month. It makes sense for companies with 20 or more people and a management team to run.
+
+A fractional operations partner works one level down, in the process itself. The scheduling board. The estimate template. The thing that happens after a customer says yes. It costs a fraction of the COO price because the work is narrower and the owner is doing half of it.
+
+If you have managers who need managing, get a COO. If you are the manager and you're drowning in admin, get an operations partner. Longer version on our <a href="/comparison">comparison page</a>.
+
+## Fractional operations partner vs. a business coach
+
+A coach helps you think. Goals, accountability, mindset, the occasional hard conversation about why you haven't fired your cousin. Good coaches earn their $500 to $3,000 a month, and plenty of owners need one.
+
+A coach does not open your QuickBooks. An operations partner does. You leave a coaching call with a plan and a deadline. You leave a session with us with a process that works differently than it did an hour ago. The two aren't competitors. Some owners have both.
+
+## Fractional operations partner vs. an AI automation agency
+
+An agency builds for you. You describe the problem, they go away, they come back with a system, and you get an invoice. Retainers start around $5,000 a month, and most of them are remote. That's the right call for a big build with a clear spec.
+
+The trouble for a 12-person business is what happens after. The system lives in the agency's accounts, or on a platform nobody in your building understands. Change one thing and you're back in the queue. And because they never watched how you actually work, they often automate the broken version. Automating a broken process just speeds up the mess.
+
+An operations partner fixes the process first, builds the automation with you, and leaves it in your hands. When something really does need to be built and run for you, that's a separate deal. We call ours <a href="/services/sidecar">Sidecar</a>. Plenty of clients use both.
+
+## Who it's for
+
+The businesses this fits have a few things in common. The owner still does the books, the schedule, or the follow-up, or all three. The team is somewhere between one person and 50. And more than one thing is broken at the same time, so a single app won't fix it.
+
+We work with those businesses from Stillwater, Oklahoma. When the process lives on a counter or a whiteboard, we come to you, in Stillwater, Oklahoma City, and Tulsa. Contractors, clinics, shops, small professional offices. The industry matters less than the shape: great at the work, buried in everything around it.
+
+If you're past 50 people with a management layer, you probably want the COO. If you're a solo operator with time to tinker and learn the tools yourself, free office hours might be all you need.
+
+## What it costs
+
+We run the model as a ladder. Every step is optional, and every step is cheaper than the wrong hire.
+
+| Step | What you get | Price |
+|---|---|---|
+| Snapshot | One page: the five tasks eating your week and the first move. Office hours, a 30-minute call, or the website scanner. | Free |
+| <a href="/services/assessment">Operations Assessment</a> | A day in your business, process maps, an hours ledger, a written 90-day plan | $1,500 up to 10 people, $2,500 for 11 to 50. One time, half credited to the Concierge. |
+| <a href="/services/concierge">AI Concierge</a> | The standing partner: two 45-minute sessions a month, text access, shared hub, no contract | $1,000 to $3,000 a month by team size |
+| <a href="/services/sidecar">Sidecar</a> | We build and run a specific process for you | From $1,000 plus $250 a month |
+
+For context, an office manager runs about $67,000 a year loaded for a $40,000 hire. We did the math on <a href="/notes/ai-consultant-cost-per-employee">what the Concierge works out to per employee</a> if you want to check it. And if you've seen us call this an <a href="/notes/what-is-an-ai-concierge">AI concierge</a>, that's the same service. Same seat, two names.
+
+## Five questions to ask before you hire one
+
+Ask these of anyone selling this, including us.
+
+1. **Do they come to the building?** Some processes can't be fixed over a screen share. The paper on the counter, the whiteboard schedule, the way jobs flow through the shop. If they'll never set foot in your building, they're guessing at half of it.
+2. **Do you own what gets built?** Correct answer: yes, in your accounts, with your logins. If it lives on their side, you're renting your own business.
+3. **Do they fix the process before buying software?** If the first meeting ends with a list of subscriptions, walk. The first meeting should end with fewer steps.
+4. **What's the written deliverable?** A plan you can read, a log of every session, or both. If the value lives in someone's head, it leaves when they do.
+5. **What happens in month one?** They should be able to tell you. Ours is the intake form, a setup session, then the first real process. Vague answers here usually mean vague months later.
+
+## Start with the free Snapshot
+
+The cheapest way to find out if this fits is to test the working style before paying for it. Bring one task to <a href="/office-hours">office hours</a> at WorkIT, 901 S Main St in Stillwater, any Tuesday or Thursday from 2 to 3 PM. Or book a 30-minute call, or run the website scanner. You leave with a one-page Snapshot and the first move. We ask three questions: what do you dread doing, what do you procrastinate, and what would you do with that time back. The answers usually point straight at the first process.
+
+If it clicks, the <a href="/intake">intake form</a> is the front door.
+
+----
+
+Faq:
+
+-
+  question: Is a fractional operations partner the same as a fractional COO?
+  answer: >
+    No. A fractional COO runs the management layer: org chart, reporting, quarterly planning, usually for companies with 20 or more people and managers to lead, at $5,000 to $15,000 a month. A fractional operations partner works inside the processes themselves, quotes, invoices, scheduling, follow-up, alongside the owner of a 1 to 50 person business, at a fraction of that price. If you have managers who need managing, get the COO. If you are the manager and you're buried in admin, get the operations partner.
+-
+  question: How many hours a month do you get?
+  answer: >
+    With the AI Concierge, two 45-minute working sessions a month, plus direct text access between them with a reply within one business day. That's about an hour and a half of scheduled time, and the point is what gets fixed in it, not the hours. The Operations Assessment adds a full day in your business up front, and Sidecar work is scoped separately.
+-
+  question: Do you need one if you already have an office manager?
+  answer: >
+    Not always. If your office manager owns the process and it runs clean, you're fine. But often the office manager is the person typing the invoice twice, because nobody ever fixed the process they inherited. An operations partner fixes the process the office manager runs, and works with them, not around them. For comparison, an office manager costs about $67,000 a year loaded for a $40,000 hire, and the Concierge runs $1,000 to $3,000 a month with no contract.
+-
+  question: What does "done with you" mean in practice?
+  answer: >
+    You're at the keyboard during the sessions. The automations get built in your accounts with your logins. You watch every step, so you understand what was built and can change it. If you cancel, everything keeps running and it's yours. The opposite is done for you, where a provider builds in a black box and you depend on them to change anything.
+-
+  question: How do you know it's working?
+  answer: >
+    Three ways. A shared hub logs every session, everything built, and what's next, so you can see what the money produced at any moment. If you started with the Operations Assessment, the hours ledger gives you a baseline to measure against. And there's no contract, so if a month didn't earn its keep, you stop paying. That last one keeps us honest.

@@ -1,0 +1,120 @@
+Title: How do I stop retyping invoices into QuickBooks?
+
+----
+
+Seo_title: How to Stop Retyping Vendor Invoices Into QuickBooks: Three Ways, From Free to Built for You
+
+----
+
+Meta_description: Three ways to stop retyping vendor invoices into QuickBooks: a free prompt you can run tonight, a system we build with you, or one built and run for you. A human approves before anything posts.
+
+----
+
+Eyebrow: Notes
+
+----
+
+Date: 2026-09-28
+
+----
+
+Updated: 2026-09-28
+----
+
+Intro: Three ways. One, do it yourself this week: QuickBooks Online's own receipt capture for the simple ones, plus a prompt below for the messy PDFs. Two, build it with us in the AI Concierge: a shared inbox where AI reads every invoice and a person approves it. Three, for high-volume shops, Sidecar builds and runs it for you, and bills land in QuickBooks waiting for approval.
+
+----
+
+Text:
+
+## Why this eats so much time
+
+We timed it with a plumbing and HVAC shop near Stillwater. One vendor invoice took about an hour to get from a PDF into QuickBooks. Open the PDF, find the invoice number, retype every line, pick a category, check the total, attach the file. Their office guy spent about 40 hours a month on it. At his wage, that's roughly $1,000 a month of labor spent typing.
+
+The wage is not the real cost. When we asked what he'd do with those 40 hours, he said "send estimates." Every hour on invoices was an hour a quote did not go out. Some of those quotes would have closed. That's the number that should bother you, and it never shows up on a report.
+
+If you want the money math, including when automating is not worth it, read [what it costs to automate invoicing](/notes/cost-to-automate-invoicing). This note is about the how.
+
+## Way one: what QuickBooks can already do, and where it stops
+
+QuickBooks Online has receipt and bill capture built in, and plenty of owners have never opened it. We checked Intuit's own help pages before writing this. Here is what it does as of this writing.
+
+There are four ways in. Upload from your computer. Pull from Google Drive. Forward to a custom email address that ends in @assist.intuit.com. Or snap a photo in the QuickBooks mobile app. QuickBooks reads the file and pulls the date, amount, vendor, and last four digits of the card. It creates a transaction for you to review in the Receipts tab. From there you can edit it, add it to an account, or match it to a bank transaction that already came through.
+
+A few rules from the help pages. Files must be PDF, JPEG, JPG, GIF, or PNG. One receipt per file. Email attachments have to be between 46KB and 20MB, and the sender must be a QuickBooks user with permission. Intuit says the feature is limited on the QuickBooks Online Free and Lite plans, so check your plan before you count on it.
+
+For a gas receipt or a one-page supply house ticket, this is a good tool and you should use it. Where it stops:
+
+- **Multi-page supplier PDFs.** The help pages describe pulling a date, an amount, and a vendor. A 40-line distributor invoice needs the lines, or you never know what you paid for.
+- **Handwritten tickets.** A counter ticket with a scrawled part number is a different problem. The good news is [AI reads handwriting now](/notes/can-ai-read-handwriting), and Spanish too.
+- **Coding to jobs.** Nothing on the invoice says which job the copper went to. No capture tool can fill that in, so someone still makes that call one invoice at a time.
+
+## Way two: a prompt you can run tonight
+
+For the messy PDFs, use an AI assistant directly. Most of them accept an uploaded PDF or a phone photo. Paste this in, then attach the invoice:
+
+> You are helping a small business bookkeeper enter a vendor invoice into QuickBooks. I will paste the invoice text or attach a photo or PDF. Read it and return:
+>
+> 1. A table with: Vendor, Invoice number, Invoice date, Due date, Subtotal, Tax, Total.
+> 2. A second table with one row per line item: Description, Quantity, Unit price, Line total, Suggested expense category.
+> 3. One line saying whether the line totals add up to the invoice total. If they do not, say so.
+> 4. A list called "Check these": anything unreadable, anything you guessed, and anything odd, like a duplicate line or freight with no items.
+>
+> Do not invent values. If a field is missing or unreadable, write "unclear" and put it in the "Check these" list. Use these expense categories when they fit: [paste your QuickBooks category list here].
+
+How to use it: run one real invoice and compare the output to the PDF line by line. Where it missed, fix the prompt. Add your actual QuickBooks category list. Once it's right for one supplier, it's usually right for that supplier from then on. Now you type from a clean table instead of squinting at a PDF, and most of the hour is gone.
+
+Two rules. Never paste anything with a full card number or bank details into a chat window. And the rule we state on every page: a human approves before anything posts to the books. The AI reads and drafts. You post.
+
+That is the do-it-yourself rung. If you'd rather do it with someone next to you, bring three invoices to [office hours](/office-hours) and we'll tune the prompt together for free.
+
+## Way three: build it together
+
+When the prompt works but you're still copying tables into QuickBooks by hand, the next step is a small system. That is what the [AI Concierge](/services/concierge) is for, from $1,000 a month. We build it with you, not for you.
+
+The shape is simple. Invoices land in one place: a shared inbox like ap@yourshop.com, or a folder the crew drops photos into. AI reads each one and drafts the bill: vendor, lines, categories, and its best guess at the job. Whoever does the books today opens a review queue, fixes what's wrong, and clicks approve. Only then does it go to QuickBooks. Nothing posts on its own.
+
+The first session looks like this. You bring a month of real invoices, ugly ones included. We sort them by supplier and pick the one that hurts most. We set up the inbox, point the AI at it, and run last month's pile through while you watch. Where it gets things wrong, we fix the instructions on the spot. You leave with one supplier running and knowing how to add the next.
+
+We've shipped this pattern before. A [Stillwater landscaper's](/case-studies/stillwater-landscaper) two hours of nightly typing became one photo. Our own [Paidly](/case-studies/paidly) parsing pipeline hit 95% accuracy on production invoices. Different paperwork, same shape: read, understand, type.
+
+## Way four: built and run for you
+
+Some shops don't want to run it at all. If you're at hundreds of vendor invoices a month, or the bookkeeper is you and you're on job sites, that's [Sidecar](/services/sidecar). Builds from $1,000, from $250 a month to run.
+
+Same flow, and we operate it. The invoice arrives by email or photo. AI reads it and codes it, including the job where the paperwork makes that clear. It lands in QuickBooks as a bill waiting for approval. Your approver gets a short list instead of a pile of PDFs. When a supplier changes its invoice layout, we fix it, and you don't hear about it.
+
+If you're not sure whether you're a Concierge shop or a Sidecar shop, the [Operations Assessment](/services/assessment) sorts that out for $1,500, up to 10 people. We also wrote trade versions for [plumbers and HVAC](/plumbers), [roofers](/roofers), and [landscapers](/landscapers). For the free first step, read what to automate first for [plumbers](/automate-first/plumbers), [HVAC companies](/automate-first/hvac-companies), or [contractors](/automate-first/contractors).
+
+## What not to automate
+
+The phone call when a bill is wrong. If a supplier charged you for 12 fittings and shipped 10, that's a conversation between people. The AI's job is to flag the mismatch, not make the call. Same with the decision to pay. Which bills go out this Friday and which wait is a cash decision, and it stays with the owner. We build the system to put a clean, coded bill in front of you. What you do with it is still your job, and it should be.
+
+## Start with the free Snapshot
+
+Bring three invoices to office hours, Tuesday or Thursday from 2 to 3 PM at WorkIT, 901 S Main St in Stillwater. Or [book a 30-minute call](/contact). We'll run them through the prompt above, show you what QuickBooks can already handle, and tell you straight whether a build is worth it. If the answer is "use the prompt and go home," that's what we'll say.
+
+----
+
+Faq:
+
+-
+  question: Can AI read a supplier invoice PDF accurately?
+  answer: >
+    Yes, well enough to trust with review. Our Paidly parsing pipeline hit 95% accuracy on production invoices. The other 5% is why we build every system to flag what it isn't sure about instead of guessing, and why a person approves before anything posts.
+-
+  question: Will it post to QuickBooks by itself?
+  answer: >
+    No, and we won't build it that way. Every version, from the free prompt to Sidecar, drafts the bill and waits for a person to approve it. AI reads and codes. A human posts.
+-
+  question: What about handwritten job tickets?
+  answer: >
+    Modern AI reads handwriting, including mixed English and Spanish on the same page. A phone photo in a truck at 6 PM is fine. Anything it can't read with confidence gets flagged for a person rather than guessed at. We wrote up how it works in the handwriting note.
+-
+  question: How long does the first version take?
+  answer: >
+    The prompt takes an evening. In the AI Concierge, the first supplier is usually running by the end of the first working session, using last month's real invoices. A Sidecar build is scoped to the job, and most single-supplier flows are live within a few weeks.
+-
+  question: What does it cost?
+  answer: >
+    The Snapshot is free at office hours or on a 30-minute call. The Operations Assessment is $1,500 for up to 10 people. The AI Concierge starts at $1,000 a month. Sidecar builds start at $1,000 plus $250 a month to run, half up front and half at go-live. The full math, including when it's not worth it, is in the cost note.

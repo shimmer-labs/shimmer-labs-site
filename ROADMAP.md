@@ -123,11 +123,11 @@ Logan's side:
 Findings: 792 impressions, 13 clicks, all 13 brand. AI concierge note = 378 impr / 1 click at pos 19. GBP surfaces at pos 1 for marketing/consulting queries (0 clicks). AI Mode cites us on Stillwater-geo and trade "automate first" queries only; 0 citations on OKC/Tulsa or any /notes. Schema dates were 1980 sitewide (fixed Sep 28). Full SERP + AEO reports in the session; competitor set: Opinosis (Tulsa city page, ~3,500 words, 8 FAQs, testimonials), Nexvora (daily city posts), Coffey & Consult (OKC pack #1, 17 reviews).
 Priority moves (in order):
 - [ ] GBP reviews: 2 today; ask the 7 case-study clients. Pack leaders have 6 to 79. Confirm primary category (SERP shows Business management consultant).
-- [ ] LinkedIn: Logan's headline is the only Shimmer asset ranking for "AI consultant Tulsa/OKC"; link the three city pages from About.
-- [ ] Note: "How much does an AI consultant cost?" answered in sentence one with the real $1,000 to $3,000 range + Assessment fee, FAQPage. Current AIO source is a content farm.
-- [ ] Note: "What is a fractional operations partner?" (SERP is LinkedIn profiles and a job board; winnable).
-- [ ] City pages: on-page testimonial quotes, "businesses we've sat with in [city]", LocalBusiness schema with areaServed suburbs (NSN Management's Tulsa page is the model), footer links from every page.
-- [ ] Trade guides: add "AI automation for [trade] companies in Oklahoma" phrasing to title/H2; track "plumbing company" variant, the exact "what should a plumber automate first" query is glitching on Google's side.
-- [ ] New note answering "how do I stop retyping invoices into QuickBooks" (no matching page; AIO cites a tax coach).
+- [x] LinkedIn headline copy delivered Sep 28 (personal + company page); Logan to paste. Was: Logan's headline is the only Shimmer asset ranking for "AI consultant Tulsa/OKC"; link the three city pages from About.
+- [x] Note: "How much does an AI consultant cost?" (Sep 28) answered in sentence one with the real $1,000 to $3,000 range + Assessment fee, FAQPage. Current AIO source is a content farm.
+- [x] Note: "What is a fractional operations partner?" (Sep 28) (SERP is LinkedIn profiles and a job board; winnable).
+- [x] City pages (Sep 28): on-page quotes, LocalBusiness + areaServed suburbs, footer links. Still open: "businesses we've sat with in [city]" needs named clients with permission. Was: on-page testimonial quotes, "businesses we've sat with in [city]", LocalBusiness schema with areaServed suburbs (NSN Management's Tulsa page is the model), footer links from every page.
+- [x] Trade guides retitled Sep 28. Was: add "AI automation for [trade] companies in Oklahoma" phrasing to title/H2; track "plumbing company" variant, the exact "what should a plumber automate first" query is glitching on Google's side.
+- [x] New note (Sep 28): "how do I stop retyping invoices into QuickBooks" (no matching page; AIO cites a tax coach).
 - [ ] Stop investing in "what is an AI concierge" for search; Google reads it as hotel chatbots.
-- [ ] One local-tied note per week, linked to a city page and a trade page.
+- [ ] One local-tied note per week: four-week calendar in references/sep-2026-handoffs/local-notes-calendar.md (first one Oct 5, the garage door installer).

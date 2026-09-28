@@ -49,6 +49,9 @@ Three tasks per trade, each with a copy-paste prompt (do it yourself), a build-i
 - [Why do most AI pilots never make it out of pilot?](https://shimmerlabs.co/notes/why-ai-pilots-fail)
 - [How many hours does AI actually save per employee?](https://shimmerlabs.co/notes/hours-ai-saves-per-employee)
 - [What does an AI consultant cost per employee?](https://shimmerlabs.co/notes/ai-consultant-cost-per-employee)
+- [How much does an AI consultant cost for a small business?](https://shimmerlabs.co/notes/how-much-does-an-ai-consultant-cost): real prices ($1,000 to $3,000/mo Concierge, $1,500 to $2,500 Assessment), the three ways consultants bill, break-even math, red flags.
+- [What is a fractional operations partner?](https://shimmerlabs.co/notes/what-is-a-fractional-operations-partner): definition, vs fractional COO, coach, and AI agency, what it costs, five questions to ask.
+- [How do I stop retyping invoices into QuickBooks?](https://shimmerlabs.co/notes/stop-retyping-invoices-into-quickbooks): what QuickBooks does natively, a prompt to run tonight, build-it-together, built-and-run; a human approves before anything posts.
 
 ## Case studies
 

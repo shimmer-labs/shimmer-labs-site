@@ -1,0 +1,18 @@
+import {headers, ga} from './lib.mjs';
+const [A1,A2,B1,B2]=process.argv.slice(2).length===4?process.argv.slice(2):['2026-09-15','2026-09-21','2026-09-08','2026-09-14'];
+const H=await headers('https://www.googleapis.com/auth/analytics.readonly'); const rep=b=>ga(H,b);
+const rng=[{startDate:A1,endDate:A2}], prev=[{startDate:B1,endDate:B2}];
+const tot=async r=>{const d=await rep({dateRanges:r,metrics:[{name:'sessions'},{name:'totalUsers'},{name:'engagedSessions'}]}); return d.rows?.[0]?.metricValues.map(m=>m.value)||['?'];};
+console.log('sessions/users/engaged A:', (await tot(rng)).join('/'), '| B:', (await tot(prev)).join('/'));
+const ch=async r=>{const d=await rep({dateRanges:r,dimensions:[{name:'sessionDefaultChannelGroup'}],metrics:[{name:'sessions'}]}); return (d.rows||[]).map(x=>`${x.dimensionValues[0].value}=${x.metricValues[0].value}`).join(', ');};
+console.log('channels A:', await ch(rng)); console.log('channels B:', await ch(prev));
+const src=await rep({dateRanges:rng,dimensions:[{name:'sessionSource'}],metrics:[{name:'sessions'}],orderBys:[{metric:{metricName:'sessions'},desc:true}],limit:12});
+console.log('sources A:', (src.rows||[]).map(r=>`${r.dimensionValues[0].value}=${r.metricValues[0].value}`).join(', '));
+const lp=await rep({dateRanges:rng,dimensions:[{name:'landingPage'}],metrics:[{name:'sessions'}],orderBys:[{metric:{metricName:'sessions'},desc:true}],limit:15});
+console.log('landing pages A:'); for(const r of lp.rows||[]) console.log('  ',r.metricValues[0].value.padStart(3),r.dimensionValues[0].value);
+const ev=await rep({dateRanges:rng,dimensions:[{name:'eventName'}],metrics:[{name:'eventCount'}],dimensionFilter:{orGroup:{expressions:['scan','form','intake','lead'].map(v=>({filter:{fieldName:'eventName',stringFilter:{matchType:'CONTAINS',value:v}}}))}}});
+console.log('funnel events A:', (ev.rows||[]).map(r=>`${r.dimensionValues[0].value}=${r.metricValues[0].value}`).join(', ')||'none');
+const fp=await rep({dateRanges:rng,dimensions:[{name:'pagePath'}],metrics:[{name:'screenPageViews'}],dimensionFilter:{filter:{fieldName:'pagePath',stringFilter:{matchType:'CONTAINS',value:'fellowship'}}}});
+console.log('fellowship page views A:', (fp.rows||[]).map(r=>r.metricValues[0].value).join(',')||'0');
+const ai=await rep({dateRanges:[{startDate:B1,endDate:A2}],dimensions:[{name:'sessionSource'},{name:'date'}],metrics:[{name:'sessions'}],dimensionFilter:{orGroup:{expressions:['chatgpt','perplexity','gemini','copilot','claude','openai'].map(v=>({filter:{fieldName:'sessionSource',stringFilter:{matchType:'CONTAINS',value:v}}}))}}});
+console.log('AI-referred sessions B..A:', (ai.rows||[]).map(r=>`${r.dimensionValues[1].value} ${r.dimensionValues[0].value}=${r.metricValues[0].value}`).join(', ')||'none');

@@ -2,11 +2,11 @@ Title: What should a property manager automate first?
 
 ----
 
-Seo_title: What should a property manager automate first in Oklahoma? Three Tasks, Three Ways to Do Each
+Seo_title: What should a property manager automate first? AI Automation for Property Managers in Oklahoma
 
 ----
 
-Meta_description: AI tools for Oklahoma property managers: maintenance triage, lease renewal tracking, and review responses.
+Meta_description: AI automation for property managers in Oklahoma. Maintenance triage, lease renewal tracking, and review responses.
 
 ----
 
@@ -18,7 +18,7 @@ Date: 2026-09-10
 
 ----
 
-Updated: 2026-09-21
+Updated: 2026-09-28
 ----
 
 Intro: There's a tenant on their third call about the same leak, a lease that expired last week with nobody watching the date, and a Google rating drifting down because the only people who leave reviews are the ones with a broken AC in July.

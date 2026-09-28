@@ -457,6 +457,40 @@ if ($page->slug() === 'stillwater-ai-consultant') {
 }
 
 // ─────────────────────────────────────────────────────────────
+// OKC and Tulsa city pages: LocalBusiness anchored at the Stillwater office,
+// areaServed listing the metro and its suburbs (what the pages actually say).
+// ─────────────────────────────────────────────────────────────
+$cityServed = [
+  'oklahoma-city-ai-consultant' => ['label' => 'Oklahoma City', 'cities' => ['Oklahoma City', 'Edmond', 'Norman', 'Moore', 'Yukon', 'Mustang', 'Midwest City', 'Guthrie']],
+  'tulsa-ai-consultant'         => ['label' => 'Tulsa', 'cities' => ['Tulsa', 'Broken Arrow', 'Owasso', 'Jenks', 'Bixby', 'Sand Springs', 'Sapulpa', 'Claremore']],
+];
+if (isset($cityServed[$page->slug()])) {
+  $cs = $cityServed[$page->slug()];
+  $schema[] = [
+    '@context' => 'https://schema.org',
+    '@type' => 'LocalBusiness',
+    '@id' => $page->url() . '#local',
+    'name' => 'Shimmer Labs, Operations and AI Consultant serving ' . $cs['label'],
+    'description' => $page->meta_description()->value(),
+    'url' => $page->url(),
+    'telephone' => '+1-405-880-6674',
+    'email' => 'logan@shimmerlabs.co',
+    'image' => url('assets/images/shimmer-labs-logo.png'),
+    'address' => ['@type' => 'PostalAddress', 'streetAddress' => '901 S Main St, Suite 86', 'addressLocality' => 'Stillwater', 'addressRegion' => 'OK', 'postalCode' => '74074', 'addressCountry' => 'US'],
+    'areaServed' => array_merge(array_map(fn($c) => ['@type' => 'City', 'name' => $c], $cs['cities']), [['@type' => 'State', 'name' => 'Oklahoma']]),
+    'priceRange' => 'Free to $3,000 per month',
+    'founder' => ['@id' => $site->url() . '#logan'],
+    'parentOrganization' => ['@id' => $site->url() . '#organization'],
+    'hasOfferCatalog' => ['@type' => 'OfferCatalog', 'name' => 'Services', 'itemListElement' => [
+      ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => 'Operations Assessment'], 'priceSpecification' => ['@type' => 'PriceSpecification', 'minPrice' => '1500', 'maxPrice' => '2500', 'priceCurrency' => 'USD']],
+      ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => 'AI Concierge'], 'priceSpecification' => ['@type' => 'UnitPriceSpecification', 'minPrice' => '1000', 'maxPrice' => '3000', 'priceCurrency' => 'USD', 'unitText' => 'MONTH']],
+      ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => 'Sidecar'], 'priceSpecification' => ['@type' => 'UnitPriceSpecification', 'minPrice' => '250', 'priceCurrency' => 'USD', 'unitText' => 'MONTH']],
+    ]],
+    'sameAs' => ['https://www.linkedin.com/in/loganshimmer/', 'https://www.linkedin.com/company/shimmer-labs', 'https://maps.app.goo.gl/25HkLF86xh1cJTES6'],
+  ];
+}
+
+// ─────────────────────────────────────────────────────────────
 // Free-guide landing pages: Article schema
 // ─────────────────────────────────────────────────────────────
 if ($page->intendedTemplate()->name() === 'landing') {

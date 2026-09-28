@@ -1,0 +1,15 @@
+import {headers, sa} from './lib.mjs';
+const [A1,A2,B1,B2]=process.argv.slice(2).length===4?process.argv.slice(2):['2026-09-15','2026-09-19','2026-09-10','2026-09-14'];
+const H=await headers();
+const daily=await sa(H,{startDate:B1,endDate:'2026-12-31',dimensions:['date'],rowLimit:60});
+console.log('DAILY date | impr | clicks'); for(const r of daily.rows||[]) console.log(' ',r.keys[0],'|',r.impressions,'|',r.clicks);
+const per=(s,e,dim)=>sa(H,{startDate:s,endDate:e,dimensions:[dim],rowLimit:80});
+const mp=r=>Object.fromEntries((r.rows||[]).map(x=>[x.keys[0].replace('https://shimmerlabs.co',''),[x.impressions,x.clicks,x.position]]));
+const a=mp(await per(A1,A2,'page')), b=mp(await per(B1,B2,'page'));
+const tot=o=>Object.values(o).reduce((s,v)=>[s[0]+v[0],s[1]+v[1]],[0,0]);
+console.log(`\nTOTAL impr/clicks ${A1}..${A2}: ${tot(a).join('/')}  vs ${B1}..${B2}: ${tot(b).join('/')}`);
+console.log('PAGES A vs B'); for(const k of [...new Set([...Object.keys(a),...Object.keys(b)])].sort((x,y)=>((a[y]?.[0]||0)-(a[x]?.[0]||0))).slice(0,30)) console.log(' ',k.padEnd(48),(a[k]||[0,0]).slice(0,2).join('/').padStart(7),' vs ',(b[k]||[0,0]).slice(0,2).join('/'));
+const qa=mp(await per(A1,A2,'query')), qb=mp(await per(B1,B2,'query'));
+console.log('\nQUERIES A (impr/clicks/pos | prev pos)'); for(const [k,v] of Object.entries(qa).sort((x,y)=>y[1][0]-x[1][0]).slice(0,25)) console.log(' ',k.padEnd(48),v[0],v[1],v[2].toFixed(1),'|',qb[k]?qb[k][2].toFixed(1):'-');
+const nb=o=>Object.entries(o).filter(([k])=>!/shimmer/i.test(k)).reduce((s,[,v])=>[s[0]+v[0],s[1]+v[1]],[0,0]);
+console.log('NON-BRAND impr/clicks A:',nb(qa).join('/'),' B:',nb(qb).join('/'));

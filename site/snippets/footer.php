@@ -31,6 +31,8 @@
             <li><a href="<?= url('work') ?>">What We&rsquo;ve Shipped</a></li>
             <li><a href="<?= url('comparison') ?>">How We Compare</a></li>
             <li><a href="<?= url('stillwater-ai-consultant') ?>">Stillwater AI Consultant</a></li>
+            <li><a href="<?= url('oklahoma-city-ai-consultant') ?>">Oklahoma City AI Consultant</a></li>
+            <li><a href="<?= url('tulsa-ai-consultant') ?>">Tulsa AI Consultant</a></li>
             <li><a href="<?= url('office-hours') ?>">AI Office Hours</a></li>
             <li><a href="<?= url('contact') ?>">Contact</a></li>
           </ul>

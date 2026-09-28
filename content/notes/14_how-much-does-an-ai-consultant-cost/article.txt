@@ -1,0 +1,123 @@
+Title: How much does an AI consultant cost for a small business?
+
+----
+
+Seo_title: How Much Does an AI Consultant Cost for a Small Business? Real Oklahoma Prices, Not Vendor Math
+
+----
+
+Meta_description: An AI consultant costs a small business $1,000 to $3,000 a month for ongoing help, or $1,500 to $2,500 one time for an assessment. Those are our real Stillwater, Oklahoma prices. What hourly, project, and retainer pricing each cost, what the money should buy, and how to check if it paid off.
+
+----
+
+Eyebrow: Notes
+
+----
+
+Date: 2026-09-28
+
+----
+
+Updated: 2026-09-28
+----
+
+Intro: An AI consultant costs a small business $1,000 to $3,000 a month for ongoing help, or $1,500 to $2,500 for a one-time assessment. At least, that's what Shimmer Labs charges in Stillwater, Oklahoma, and those are real prices, not a range from a pricing guide. Below is what each way of paying costs, what the money should buy, and how to tell if it paid off.
+
+----
+
+Text:
+
+## The three ways to pay an AI consultant, and what each costs
+
+Every AI consulting quote you get will be one of three shapes. Hourly, project, or retainer. What you'll see quoted online is $150 to $300 an hour, $5,000 to $25,000 for a fixed-scope project, and retainers from $500 a month. Those numbers are averaged across the whole country, and they hide more than they show.
+
+**Hourly.** You pay for time, and the bill shows up after the work. Hourly punishes a consultant for being fast and rewards them for being slow. It also means you can't know what a fix costs until it's done. We don't bill hourly for exactly that reason. If we fix your scheduling mess in twenty minutes, you should get the fix, not a tiny invoice and a shrug.
+
+**Project.** You pay a fixed price for a defined piece of work. This is fine when the scope is real. The problem with the $5,000 to $25,000 range is that it's wide enough to mean anything. A project quote is only useful when it names the process, the deliverable, and who owns the result. Our version of a project is the <a href="/services/assessment">Operations Assessment</a>, and it costs $1,500 or $2,500 depending on headcount.
+
+**Retainer.** You pay a flat monthly fee for ongoing help. The $500 a month figure you'll see online usually buys a monthly check-in call and not much else. At the other end, AI automation agencies quote retainers from $5,000 a month, and most of them never set foot in your building. Our retainer is the <a href="/services/concierge">AI Concierge</a>. It runs $1,000 to $3,000 a month depending on team size, with no contract.
+
+## What Shimmer Labs charges
+
+We publish the whole ladder because nobody else in Oklahoma does. Here it is, cheapest to most expensive.
+
+| Step | Who it's for | Price |
+|---|---|---|
+| Snapshot | Anyone curious | Free |
+| Operations Assessment | Teams up to 10 | $1,500 one time |
+| Operations Assessment | Teams of 11 to 50 | $2,500 one time |
+| AI Concierge, Solo | Just you | $1,000 a month |
+| AI Concierge, Crew | 2 to 10 people | $1,500 a month |
+| AI Concierge, Shop | 11 to 25 people | $2,250 a month |
+| AI Concierge, Company | 26 to 50 people | $3,000 a month |
+| AI Concierge, 51+ | Bigger teams | Custom, from $4,000 a month |
+| Sidecar | A process we build and run for you | From $1,000 to build, from $250 a month to run |
+
+A few details that matter. The Concierge has no contract, and your rate locks for 12 months. The founding offer gives the next 5 clients one tier down, locked in. If you do the Assessment and start the Concierge within 30 days, half the Assessment fee comes off your first month. <a href="/services/sidecar">Sidecar</a> builds are half up front and half at go-live, model API costs pass through at cost, and you can cancel anytime.
+
+If you want to see how those numbers stack up against agencies, fractional COOs, coaches, and a full-time hire, the <a href="/comparison">comparison page</a> has the table. Short version: fractional COOs typically run $5,000 to $15,000 a month, and business coaches $500 to $3,000. A $40,000 office manager costs about $67,000 a year once you load in taxes and benefits. Zapier shops and freelancers will build you something for $500 to $5,000 and then disappear.
+
+## What the price should buy you
+
+A price without a deliverable is a vibe. Every rung on our ladder hands you something specific.
+
+The free Snapshot gets you one page back: the five tasks eating your week and the first move. That's it, and it's enough to decide whether to keep going.
+
+The Operations Assessment is a day on site. We interview your staff, map three to five of your processes, and build an hours ledger showing where the time actually goes. You get a written 90-day plan, delivered digitally and printed, with an in-person walkthrough. Whether you hire us after that or not, the plan is yours.
+
+The AI Concierge is two 45-minute working sessions a month and text access between them. A shared progress hub shows what's been done. Working sessions means we sit down and fix a process together. It is not a monthly status call.
+
+Sidecar is a working process that runs without you. You own it. If we stop working together, it keeps running.
+
+## How to know if it paid for itself
+
+The only honest test is hours. A consultant pays off when the hours saved cost more than the fee. So you need to know what an hour costs in your building. We use about $33 an hour fully loaded in Stillwater and about $40 in Oklahoma City and Tulsa. That's the BLS county wage times 1.3 for payroll tax, insurance, and overhead. We showed the full table in <a href="/notes/ai-consultant-cost-per-employee">what an AI consultant costs per employee</a>.
+
+Take a Crew client. Eight people in Stillwater, $1,500 a month.
+
+- $1,500 divided by $33 an hour is about 45 hours a month to break even.
+- 45 hours across eight people is about 5.7 hours per person per month.
+- That's about 1.3 hours per person per week.
+
+The Federal Reserve Bank of St. Louis surveyed workers in 2024 and found the ones who actually use generative AI save about 2.2 hours a week. At that rate, eight people get back about 76 hours a month, worth about $2,500 at $33 an hour. That's a $1,000 monthly surplus before you count the owner's hours, which are worth a lot more than $33. We broke down the hours-per-employee numbers in <a href="/notes/hours-ai-saves-per-employee">how many hours AI saves per employee</a>.
+
+Run the same math for your team. If the break-even hours look easy to hit, the price is fine. If they don't, don't buy it, from us or anybody.
+
+## Red flags in an AI consulting quote
+
+We've seen a lot of quotes come through office hours. These are the ones that should make you close the PDF.
+
+- **No written scope.** If the proposal doesn't say what gets built or fixed, you're buying time, not results.
+- **Hourly with no cap.** You are funding an open tab. Ask for a ceiling or walk.
+- **"AI transformation" with no named process.** If they can't say which task gets faster, they don't know yet. Transformation is a word people use when they don't have a plan.
+- **You don't own what gets built.** If the automations live in their accounts, you're renting your own operations. Every account, every workflow, every login should be yours.
+- **No one comes to the building.** Processes live in the building. Someone has to watch how the work actually happens, not how the owner describes it on a Zoom call.
+
+## Start free
+
+The first step costs nothing and doesn't require a sales call. Come to <a href="/office-hours">office hours</a> on Tuesdays and Thursdays from 2 to 3 PM at WorkIT, 901 S Main St in Stillwater. If you'd rather not drive, book a 30-minute call or run your site through the website scanner. Either way you get the Snapshot: one page with the five tasks eating your week and the first move. If it's useful, the <a href="/intake">intake form</a> is the next door.
+
+----
+
+Faq:
+
+-
+  question: Is $1,000 a month a lot for a small business?
+  answer: >
+    It depends on what an hour costs you. At $33 an hour loaded, $1,000 a month is about 30 hours. If the work we do together saves you 30 hours a month, it paid for itself. Most owners we meet are losing more than that to admin and follow-up. Compare it to what you already pay without blinking: managed IT, a bookkeeper, or a single part-time hire. The founding offer also takes Solo to $750 for the next 5 clients.
+-
+  question: Why don't you bill hourly?
+  answer: >
+    Because hourly billing rewards slow work. If we solve your problem fast, you should benefit from that, not us. Flat pricing also means you know the number before you say yes. The Assessment is $1,500 or $2,500 and the Concierge is a flat monthly fee by team size. Sidecar builds are quoted up front, with half due at go-live.
+-
+  question: What's the difference between the Assessment and the Concierge?
+  answer: >
+    The Operations Assessment is a one-time day on site that produces process maps, an hours ledger, and a written 90-day plan. The AI Concierge is the ongoing part: two working sessions a month, text access between them, and a shared progress hub, with no contract. You can do either one alone. If you do the Assessment and start the Concierge within 30 days, half the Assessment fee comes off your first month.
+-
+  question: Do bigger teams really pay more?
+  answer: >
+    Yes, and the math is in your favor. Our two sessions a month cost about the same to run whether you have three people or thirty. What changes is the payoff. Every process we fix saves time for every person who touches it, so the bigger the team, the more hours come back. A Company tier at $3,000 a month works out to about $60 per head. That's less per person than most managed IT contracts in Oklahoma.
+-
+  question: What does a first month actually produce?
+  answer: >
+    Two working sessions where we sit down and fix real processes, usually starting with whatever the Snapshot or Assessment flagged as the biggest time sink. Between sessions you can text us when something breaks or a new idea shows up. By the end of the month you should have at least one process that runs faster than it did. It's documented in the progress hub, and there's a clear pick for what's next.
