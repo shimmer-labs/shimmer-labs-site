@@ -6,7 +6,7 @@ Seo_title: AI Consultant Cost Per Employee: The Math for Oklahoma Small Business
 
 ----
 
-Meta_description: We priced our AI Concierge by team size, so here's the math behind it. What it works out to per employee, what an Oklahoma hour actually costs, and how many hours a month it has to save to pay for itself.
+Meta_description: We priced our AI Concierge by team size. The math: what it costs per employee, what an Oklahoma hour costs, and how many hours it must save to pay off.
 
 ----
 
@@ -14,7 +14,7 @@ Date: 2026-09-07
 
 ----
 
-Updated: 2026-09-21
+Updated: 2026-09-28
 ----
 
 Intro: The AI Concierge from Shimmer Labs costs $1,000 a month for a solo operator, about $150 per head for a crew of 2 to 10, about $90 per head for a shop of 11 to 25, and about $60 per head for a company of 26 to 50. (Updated September 21, 2026 with the current tiers.) We changed how we price the AI Concierge, and instead of hiding the spreadsheet we're publishing it: what it costs per employee, and how many saved hours a month it takes to break even in Stillwater, Oklahoma City, and Tulsa.

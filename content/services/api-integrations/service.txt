@@ -2,7 +2,7 @@ Title: API Integrations
 
 ----
 
-Meta_description: Custom n8n, Zapier, and Make integrations. $2,500-$7,000 per integration. Shipped Taddy on all three platforms, n8n, Zapier, Make.com. Fast delivery, clean code, proper documentation.
+Meta_description: Custom n8n, Zapier, and Make integrations, $2,500 to $7,000 each. Shipped Taddy on all three platforms at once. Fast delivery, clean code, documented.
 
 ----
 
@@ -141,3 +141,7 @@ Ctadescription: If you're copying data between tools every day, you're wasting m
 ----
 
 Uuid: 9h2k3l4m5n6o7p8q
+
+----
+
+Updated: 2026-09-28

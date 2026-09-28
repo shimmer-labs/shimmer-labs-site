@@ -3,7 +3,7 @@
     <div class="footer-content">
       <div class="footer-brand">
         <a href="<?= $site->url() ?>" class="footer-logo">
-          <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="Shimmer Labs">
+          <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="Shimmer Labs" width="1000" height="1000" loading="lazy">
         </a>
         <p class="footer-tagline">We run the office side with you.</p>
         <div google-add-preferred-source-btn data-theme="dark" class="footer-preferred-source"></div>

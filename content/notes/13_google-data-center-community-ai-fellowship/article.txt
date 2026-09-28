@@ -6,7 +6,7 @@ Seo_title: Logan Shimmer Selected for the 2026 Google Data Center Community AI F
 
 ----
 
-Meta_description: Logan Shimmer, founder of Shimmer Labs in Stillwater, Oklahoma, has been selected for the 2026 Google Data Center Community AI Fellowship, powered by Watson Institute. What the fellowship is, why Stillwater qualifies, and what it means for local small businesses.
+Meta_description: Logan Shimmer of Shimmer Labs in Stillwater, OK, was selected for the 2026 Google Data Center Community AI Fellowship. What it means for local business.
 
 ----
 
@@ -18,7 +18,7 @@ Date: 2026-09-18
 
 ----
 
-Updated: 2026-09-21
+Updated: 2026-09-28
 ----
 
 Og_image: logan-headshot-2026.jpg

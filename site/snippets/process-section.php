@@ -15,7 +15,7 @@
 
         <div class="how-it-works__story">
           <div class="how-it-works__story-photo">
-            <img src="<?= url('assets/images/testimonials/anna-moore.jpg') ?>" alt="Anna Moore, Owner of Sweat Yoga & Fitness in Stillwater, Oklahoma" loading="lazy">
+            <img src="<?= url('assets/images/testimonials/anna-moore.jpg') ?>" width="800" height="800" alt="Anna Moore, Owner of Sweat Yoga & Fitness in Stillwater, Oklahoma" loading="lazy">
           </div>
           <div class="how-it-works__story-text">
             <blockquote class="how-it-works__story-quote">&ldquo;I hated this place. I was actively looking for someone to buy it.&rdquo;<cite>Anna Moore, Sweat Yoga &amp; Fitness</cite></blockquote>
@@ -31,13 +31,13 @@
             <p class="how-it-works__payoff">So he can keep building the infrastructure that lets indie creators own their own work.</p>
           </div>
           <div class="how-it-works__story-photo">
-            <img src="<?= url('assets/images/testimonials/danny-mathews.jpg') ?>" alt="Danny Mathews, Founder of Taddy (podcast and webcomics API for indie creators)" loading="lazy">
+            <img src="<?= url('assets/images/testimonials/danny-mathews.jpg') ?>" width="800" height="800" alt="Danny Mathews, Founder of Taddy (podcast and webcomics API for indie creators)" loading="lazy">
           </div>
         </div>
 
         <div class="how-it-works__story">
           <div class="how-it-works__story-photo">
-            <img src="<?= url('assets/images/testimonials/kristen-hadley.jpg') ?>" alt="Kristen Hadley, Founder of TreeBidPro (tree service estimating software)" loading="lazy">
+            <img src="<?= url('assets/images/testimonials/kristen-hadley.jpg') ?>" width="800" height="800" alt="Kristen Hadley, Founder of TreeBidPro (tree service estimating software)" loading="lazy">
           </div>
           <div class="how-it-works__story-text">
             <p class="how-it-works__story-lead"><strong><a href="<?= url('case-studies/treebidpro') ?>">Kristen</a></strong> runs a tree service. Her sidecar handles estimating and invoicing.</p>

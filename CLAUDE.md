@@ -40,7 +40,7 @@ This is the main website for Shimmer Labs, a boutique automation consultancy bas
 
 **Analytics:**
 - Google Analytics 4: `G-KPVHKHKJJY`
-- Plausible Analytics (also enabled)
+- Plausible Analytics (snippet supports it, currently off in config)
 
 ---
 

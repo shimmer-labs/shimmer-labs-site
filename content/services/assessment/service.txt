@@ -6,7 +6,7 @@ Seo_title: Business Operations Assessment for Small Businesses in Oklahoma | $1,
 
 ----
 
-Meta_description: A paid two-week look at how the work actually moves through your small business: every recurring task, who touches it, what it costs in hours, and what to fix first. Written plan, delivered digitally and on paper, walked through in person. $1,500 for teams up to 10.
+Meta_description: A paid two-week look at how work moves through your business: every recurring task, what it costs in hours, and what to fix first. $1,500 up to 10 people.
 
 ----
 
@@ -189,3 +189,7 @@ Ctadescription: Ten minutes of honest answers about what eats your week. Pick "O
 ----
 
 Uuid: assessment-service-001
+
+----
+
+Updated: 2026-09-28

@@ -36,8 +36,9 @@
   <link rel="canonical" href="<?= $page->url() ?>">
 
   <?php
-  // Meta Description with smart fallbacks
-  $metaDescription = $page->meta_description()->or(
+  // Meta Description with smart fallbacks. Trim to a whole sentence (or word) under 158
+  // chars instead of Kirby's excerpt(), which chopped 43 pages mid-sentence with an ellipsis.
+  $metaDescription = trim(strip_tags($page->meta_description()->or(
     $page->summary()->or(
       $page->intro()->or(
         $page->mission()->or(
@@ -47,27 +48,45 @@
         )
       )
     )
-  )->excerpt(160);
+  )->value()));
+  $metaDescription = preg_replace('/\s+/', ' ', $metaDescription);
+  if (\Kirby\Toolkit\Str::length($metaDescription) > 158) {
+    $cut = \Kirby\Toolkit\Str::substr($metaDescription, 0, 158);
+    $end = max((int) strrpos($cut, '. '), (int) strrpos($cut, '? '), (int) strrpos($cut, '! '));
+    if ($end > 80) {
+      $metaDescription = \Kirby\Toolkit\Str::substr($cut, 0, $end + 1);
+    } else {
+      $sp = strrpos($cut, ' ');
+      $metaDescription = rtrim(\Kirby\Toolkit\Str::substr($cut, 0, $sp ?: 158), ' ,;:');
+    }
+  }
 
-  // Open Graph Image with smart fallbacks
-  $ogImage = null;
+  // Open Graph image with smart fallbacks. Default is a real 1200x630 card, not the square logo.
+  $ogFile = null;
   if ($page->og_image()->toFile()) {
-    $ogImage = $page->og_image()->toFile()->url();
+    $ogFile = $page->og_image()->toFile();
   } elseif ($templateName === 'case-study' && $page->hero_image()->toFile()) {
-    $ogImage = $page->hero_image()->toFile()->url();
+    $ogFile = $page->hero_image()->toFile();
   } elseif ($templateName === 'project' && $page->image()) {
-    $ogImage = $page->image()->url();
+    $ogFile = $page->image();
   } elseif ($templateName === 'trade' && $page->hero_image()->toFile()) {
-    $ogImage = $page->hero_image()->toFile()->url();
+    $ogFile = $page->hero_image()->toFile();
+  }
+  if ($ogFile) {
+    $ogImage = $ogFile->url();
+    $ogWidth = $ogFile->width();
+    $ogHeight = $ogFile->height();
   } else {
-    $ogImage = url('assets/images/shimmer-labs-logo.png');
+    $ogImage = url('assets/images/og-default.jpg');
+    $ogWidth = 1200;
+    $ogHeight = 630;
   }
 
   // Page-specific OG type
   $ogType = match($templateName) {
     'case-study' => 'article',
     'project' => 'article',
-    'service' => 'article',
+    'article' => 'article',
     default => 'website'
   };
   ?>
@@ -79,17 +98,17 @@
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:type" content="<?= $ogType ?>">
   <meta property="og:url" content="<?= $page->url() ?>">
-  <meta property="og:title" content="<?= esc($page->title(), 'html') ?> | Shimmer Labs">
+  <meta property="og:title" content="<?= esc($seoTitle, 'html') ?>">
   <meta property="og:description" content="<?= esc($metaDescription, 'html') ?>">
   <meta property="og:image" content="<?= $ogImage ?>">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="<?= $ogWidth ?>">
+  <meta property="og:image:height" content="<?= $ogHeight ?>">
   <meta property="og:site_name" content="Shimmer Labs">
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="<?= $page->url() ?>">
-  <meta name="twitter:title" content="<?= esc($page->title(), 'html') ?> | Shimmer Labs">
+  <meta name="twitter:title" content="<?= esc($seoTitle, 'html') ?>">
   <meta name="twitter:description" content="<?= esc($metaDescription, 'html') ?>">
   <meta name="twitter:image" content="<?= $ogImage ?>">
   
@@ -104,8 +123,6 @@
   <?php snippet('analytics') ?>
   <?php snippet('schema-org') ?>
 
-  <!-- Service Worker Registration -->
-  <?= js('assets/js/sw-register.js') ?>
 </head>
 <body class="page--<?= $page->intendedTemplate() ?><?= $page->slug() === 'sidecar' ? ' page--sidecar' : '' ?>">
   <header class="site-header">
@@ -113,7 +130,7 @@
       <nav class="site-nav">
         <a href="<?= $site->url() ?>" class="site-logo">
   <?php if ($site->logo()->toFile()): ?>
-    <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="<?= $site->title() ?>">
+    <img src="<?= url('assets/images/shimmer-labs-logo.png') ?>" alt="<?= $site->title() ?>" width="1000" height="1000">
 <span class="logo-text"><?= $site->title() ?></span>
 
   <?php else: ?>

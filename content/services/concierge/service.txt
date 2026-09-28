@@ -6,7 +6,7 @@ Seo_title: AI Concierge | Fractional Operations Partner for Oklahoma Small Busin
 
 ----
 
-Meta_description: A standing operations partner for your small business: two working sessions a month, text access between them, and every fix built with you on your screen, using AI where it earns its place. Priced by team size, $1,000 to $3,000 a month, no contract. First 5 clients get one tier down.
+Meta_description: A standing operations partner for your small business: two working sessions a month, text access between, every fix built with you. $1,000 to $3,000/mo.
 
 ----
 
@@ -201,3 +201,7 @@ Ctadescription: Ten minutes of honest answers about what eats your week. We read
 ----
 
 Uuid: concierge-service-001
+
+----
+
+Updated: 2026-09-28

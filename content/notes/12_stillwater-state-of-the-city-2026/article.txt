@@ -6,7 +6,7 @@ Seo_title: Stillwater State of the City 2026: The Numbers That Matter If You Run
 
 ----
 
-Meta_description: Notes from the Stillwater Chamber's 2026 State of the City: sales tax up 10%, the Google data center's $100 million, 1,200 housing units in the pipeline, a new terminal, and what's coming next. Written for local business owners.
+Meta_description: Notes from Stillwater's 2026 State of the City: sales tax up 10%, the Google data center's $100 million, 1,200 housing units, and what's coming next.
 
 ----
 
@@ -18,7 +18,7 @@ Date: 2026-09-14
 
 ----
 
-Updated: 2026-09-15
+Updated: 2026-09-28
 ----
 
 Intro: I sat in the room at the Chamber's State of the City on September 11. Here are the numbers and the plans that matter if you run a business in Stillwater, with none of the ceremony. These are the mayor's figures as he gave them, not ours.

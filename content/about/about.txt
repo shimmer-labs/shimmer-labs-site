@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Meta_description: Logan Shimmer, systems engineer with two decades across National Instruments, Iterable, WeaveGrid, and Sense. Now a fractional operations partner for small businesses out of Stillwater, Oklahoma, putting AI on the parts that deserve it. OSU alum. Teaches the AI & Marketing course at the Stillwater Chamber's Small Business University.
+Meta_description: Logan Shimmer, systems engineer (National Instruments, Iterable, WeaveGrid, Sense), now a fractional operations partner for small businesses in Stillwater.
 
 ----
 
@@ -64,3 +64,7 @@ Want to see what that looks like for your business? <a href="/contact">Let's tal
 ----
 
 Uuid: o2gegafhfruerlxw
+
+----
+
+Updated: 2026-09-28

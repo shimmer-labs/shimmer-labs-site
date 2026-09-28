@@ -2,7 +2,7 @@ Title: Home
 
 ----
 
-Meta_description: Fractional operations partner for Oklahoma small businesses. A free snapshot at office hours in Stillwater, a paid Operations Assessment with a written 90-day plan, and the AI Concierge from $1,000/mo. In person in Stillwater, OKC, and Tulsa.
+Meta_description: Fractional operations partner for Oklahoma small businesses. Free snapshot at office hours, paid Operations Assessment, AI Concierge from $1,000/mo.
 
 ----
 
@@ -110,3 +110,6 @@ Testimonials:
 ----
 
 Uuid: yhi58bsmbtamohnl
+----
+
+Updated: 2026-09-28

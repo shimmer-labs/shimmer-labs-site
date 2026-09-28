@@ -45,6 +45,14 @@ RewriteRule ^realtor-lunch([^/].*)?$ https://shimmerlabs.co/realtor-lunch/ [R=30
 RewriteCond %{REQUEST_URI} !^/riata-center/
 RewriteRule ^riata-center([^/].*)?$ https://shimmerlabs.co/riata-center/ [R=301,L]
 
+# strip trailing slashes on Kirby pages (real directories like /business-at-lunch/ keep theirs)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/panel
+RewriteRule ^(.+)/$ https://shimmerlabs.co/$1 [R=301,L]
+
+# keep repo housekeeping files private
+RewriteRule ^(README\.md|composer\.(json|lock)|package(-lock)?\.json)$ index.php [L]
+
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -73,5 +81,16 @@ AddOutputFilterByType DEFLATE application/x-javascript
 # (hardens against attacks from malicious file uploads)
 Header set Content-Type "text/plain" "expr=-z %{CONTENT_TYPE}"
 Header set X-Content-Type-Options "nosniff"
+Header always set Strict-Transport-Security "max-age=31536000"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+# cache static assets. The build zeroes file mtimes (Last-Modified 1980), so drop that
+# header and rely on max-age. CSS/JS carry a ?v=hash so a week is safe; images rarely change.
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|webp|svg|ico|woff2?|mp4|webmanifest)$">
+  Header unset Last-Modified
+  Header set Cache-Control "public, max-age=604800"
+</FilesMatch>
 
 </IfModule>

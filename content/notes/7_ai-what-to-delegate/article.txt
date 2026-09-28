@@ -6,7 +6,7 @@ Seo_title: Can AI Tell Me What to Delegate? A Weekly Priorities Audit
 
 ----
 
-Meta_description: A fractional economic developer walked into office hours wearing every hat. She walked out with an AI that sorts her week into Protect, Hand off, Systematize, and Trim. Here's the framework and the prompt.
+Meta_description: An economic developer came to office hours wearing every hat and left with an AI that sorts her week into Protect, Hand off, Systematize, and Trim.
 
 ----
 
@@ -14,7 +14,7 @@ Date: 2026-09-01
 
 ----
 
-Updated: 2026-09-21
+Updated: 2026-09-28
 ----
 
 Intro: A classmate from Small Business University walked into office hours just to say hi. She's a fractional economic developer for chambers of commerce, and a former chamber president on top of it. If anyone knows about wearing every hat, it's her. She walked out with an AI that tells her which hats to take off.

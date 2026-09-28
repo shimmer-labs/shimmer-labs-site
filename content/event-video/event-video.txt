@@ -2,8 +2,12 @@ Title: Event Videos Without the Agency Price Tag
 
 ----
 
-Meta_description: You shot the event. We'll turn it into a polished recap video with script, voiceover, and final editing. Lean production, fast turnaround, prices that make sense.
+Meta_description: You shot the event. We'll turn it into a polished recap video with script, voiceover, and editing. Lean production, fast turnaround, fair prices.
 
 ----
 
 Uuid: event-video
+
+----
+
+Updated: 2026-09-28

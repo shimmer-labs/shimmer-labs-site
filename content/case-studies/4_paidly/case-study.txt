@@ -5,11 +5,11 @@ Title: Paidly
 Date: 2026-04-24
 ----
 
-Meta_description: How Shimmer Labs built and validated a document-parsing capability (unstructured business document in, structured accounting data out, human in the loop) that applies to any business drowning in invoices, contracts, or statements.
+Meta_description: How Shimmer Labs built and validated document parsing: messy business document in, structured accounting data out, a human in the loop.
 
 ----
 
-Updated: 2026-08-25
+Updated: 2026-09-28
 ----
 
 Featured: true

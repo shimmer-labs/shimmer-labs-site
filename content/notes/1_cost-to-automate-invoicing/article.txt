@@ -6,7 +6,7 @@ Seo_title: Cost to Automate Invoicing for a Small Business
 
 ----
 
-Meta_description: Real numbers: automating invoice entry starts around $1,000 to build and $250/month to run. Here's the math, a real example, and when automation is NOT worth it.
+Meta_description: Real numbers: automating invoice entry starts around $1,000 to build and $250/month to run. The math, a real example, and when automation is not worth it.
 
 ----
 
@@ -14,7 +14,7 @@ Date: 2026-08-25
 
 ----
 
-Updated: 2026-08-25
+Updated: 2026-09-28
 ----
 
 Intro: Real numbers, a real example, and the honest cases where automation is not worth your money.

@@ -10,4 +10,8 @@ Intro: One page per trade. The three tasks most worth getting off your plate, ea
 
 ----
 
-Meta_description: What a plumber, roofer, landscaper, realtor, restaurant, gym, or contractor in Oklahoma should automate first. Three tasks per trade, each with a copy-paste prompt and two heavier options.
+Meta_description: What a plumber, roofer, landscaper, realtor, restaurant, gym, or contractor in Oklahoma should automate first. Three tasks per trade, each with a prompt.
+
+----
+
+Updated: 2026-09-28

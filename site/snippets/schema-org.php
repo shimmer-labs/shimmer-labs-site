@@ -383,9 +383,9 @@ if ($page->intendedTemplate()->name() === 'case-study') {
       '@id' => $page->url()
     ]
   ];
-  if ($page->hero_image()->isNotEmpty() && $page->hero_image()->toFile()) {
-    $articleSchema['image'] = $page->hero_image()->toFile()->url();
-  }
+  $articleSchema['image'] = ($page->hero_image()->isNotEmpty() && $page->hero_image()->toFile())
+    ? $page->hero_image()->toFile()->url()
+    : url('assets/images/og-default.jpg');
   if ($page->client_name()->isNotEmpty()) {
     $articleSchema['about'] = [
       '@type' => 'LocalBusiness',
@@ -499,6 +499,7 @@ if ($page->intendedTemplate()->name() === 'landing') {
     '@type' => 'Article',
     'headline' => $page->hero_title()->or($page->title())->value(),
     'description' => $page->hero_description()->or($page->meta_description())->excerpt(300)->value(),
+    'image' => url('assets/images/og-default.jpg'),
     'url' => $page->url(),
     'datePublished' => ($page->date()->isNotEmpty() ? $page->date()->toDate('c') : '2026-03-10T00:00:00-06:00'),
     'dateModified' => ($page->updated()->isNotEmpty() ? $page->updated()->toDate('c') : ($page->date()->isNotEmpty() ? $page->date()->toDate('c') : '2026-03-10T00:00:00-06:00')),
@@ -529,6 +530,7 @@ if (in_array($page->intendedTemplate()->name(), ['trade', 'article'])) {
     '@type' => 'Article',
     'headline' => $page->hero_title()->or($page->title())->value(),
     'description' => $page->meta_description()->or($page->intro())->excerpt(300)->value(),
+    'image' => ($page->hero_image()->isNotEmpty() && $page->hero_image()->toFile()) ? $page->hero_image()->toFile()->url() : url('assets/images/og-default.jpg'),
     'url' => $page->url(),
     'datePublished' => ($page->date()->isNotEmpty() ? $page->date()->toDate('c') : '2026-03-10T00:00:00-06:00'),
     'dateModified' => ($page->updated()->isNotEmpty() ? $page->updated()->toDate('c') : ($page->date()->isNotEmpty() ? $page->date()->toDate('c') : '2026-03-10T00:00:00-06:00')),
@@ -585,6 +587,7 @@ if ($page->intendedTemplate()->name() === 'office-hours') {
     'eventStatus' => 'https://schema.org/EventScheduled',
     'isAccessibleForFree' => true,
     'startDate' => '2026-01-06T14:00:00-06:00',
+    'endDate' => '2026-12-31T15:00:00-06:00',
     'eventSchedule' => [
       '@type' => 'Schedule',
       'byDay' => ['https://schema.org/Tuesday', 'https://schema.org/Thursday'],
@@ -610,6 +613,7 @@ if ($page->intendedTemplate()->name() === 'office-hours') {
       'price' => '0',
       'priceCurrency' => 'USD',
       'availability' => 'https://schema.org/InStock',
+      'validFrom' => '2026-01-06T00:00:00-06:00',
       'url' => $page->url(),
     ],
     'organizer' => ['@id' => $site->url() . '#organization'],

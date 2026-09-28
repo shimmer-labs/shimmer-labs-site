@@ -8,7 +8,7 @@
       <h2 class="external-proof__headline">Case study: 15 hours a week back on creator outreach at Supabase</h2>
       <div class="external-proof__body">
         <div class="external-proof__photo-col">
-          <img src="<?= url('assets/images/testimonials/sarah-gold.jpg') ?>" alt="Sarah Gold, Marketing Program Manager at Supabase" class="external-proof__photo">
+          <img src="<?= url('assets/images/testimonials/sarah-gold.jpg') ?>" width="400" height="400" loading="lazy" alt="Sarah Gold, Marketing Program Manager at Supabase" class="external-proof__photo">
           <div class="external-proof__caption">
             <strong>Sarah Gold</strong>
             Marketing Program Manager<br>

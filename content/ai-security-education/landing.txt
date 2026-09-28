@@ -9,7 +9,7 @@ hero_label: Free Guide, Higher Education
 
 ----
 
-Updated: 2026-09-21
+Updated: 2026-09-28
 ----
 
 hero_title: Using AI Securely in Higher Education
@@ -87,7 +87,7 @@ thank_you_description: We just sent "Using AI Securely in Higher Education" to y
 
 ----
 
-meta_description: Free guide for higher education: how to use AI securely without violating FERPA or exposing student data. Includes printable checklist and traffic light framework.
+Meta_description: Free guide for higher education: use AI securely without violating FERPA or exposing student data. Printable checklist and traffic light framework inside.
 
 ----
 

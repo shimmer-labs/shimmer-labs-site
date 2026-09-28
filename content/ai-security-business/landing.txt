@@ -9,7 +9,7 @@ hero_label: Free Guide, Business Leaders
 
 ----
 
-Updated: 2026-09-21
+Updated: 2026-09-28
 ----
 
 hero_title: Using AI Securely in Your Business
@@ -87,7 +87,7 @@ thank_you_description: We just sent "Using AI Securely in Your Business" to your
 
 ----
 
-meta_description: Free guide for business leaders: how to use AI securely without violating HIPAA, FERPA, or client contracts. Includes printable checklist and traffic light framework.
+Meta_description: Free guide for business leaders: use AI securely without violating HIPAA, FERPA, or client contracts. Printable checklist and traffic light framework.
 
 ----
 

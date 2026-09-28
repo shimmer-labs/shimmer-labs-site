@@ -775,6 +775,8 @@ section {
 }
 
 .tool-logo img {
+  width: auto;
+  height: auto;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -2652,6 +2654,7 @@ section {
 
 .footer-logo img {
   height: 40px;
+  width: auto;
 }
 
 .footer-tagline {

@@ -31,7 +31,7 @@
         <p class="home-hero__trust">No pitch. No pressure. Three questions and one page back.</p>
       </div>
       <div class="home-hero__photo">
-        <img src="<?= url('assets/images/logan-presenting.jpg') ?>" alt="Logan Shimmer teaching an AI workshop at Meridian Technology Center in Stillwater">
+        <img src="<?= url('assets/images/logan-presenting.jpg') ?>" width="1000" height="926" fetchpriority="high" alt="Logan Shimmer teaching an AI workshop at Meridian Technology Center in Stillwater">
         <span class="home-hero__photo-caption">Teaching "AI for the Boring Parts of Your Business" at Meridian Technology Center in Stillwater</span>
       </div>
     </div>

@@ -9,7 +9,7 @@ hero_label: Free Worksheet
 
 ----
 
-Updated: 2026-07-21
+Updated: 2026-09-28
 ----
 
 hero_title: Stop Running Your Marketing on Vibes
@@ -101,7 +101,7 @@ thankyou_cta_url: https://www.skool.com/main-street-ai-2900
 
 ----
 
-meta_description: Free one-page worksheet for small business owners: map the loop from stranger to repeat customer and see exactly where you are losing business. Taught at Small Business University in Stillwater, OK.
+Meta_description: Free one-page worksheet: map the loop from stranger to repeat customer and see where you lose business. From Small Business University in Stillwater, OK.
 
 ----
 

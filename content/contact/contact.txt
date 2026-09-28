@@ -1,7 +1,13 @@
 Title: Contact
 ----
+Meta_description: Start with a free Snapshot at office hours or a 30-minute call, then a paid Operations Assessment if needed. Stillwater, OKC, Tulsa. No pressure or jargon.
+----
 Intro: Start with a free Snapshot at office hours or a 30-minute call, then a paid Operations Assessment if there's more than one thing to fix. Stillwater, OKC, Tulsa. No pressure, no jargon.
 ----
 Intake_question: What's eating your week?
 ----
 Uuid: c8mcaaheouodjlg6
+
+----
+
+Updated: 2026-09-28

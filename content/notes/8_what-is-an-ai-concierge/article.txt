@@ -6,7 +6,7 @@ Seo_title: What Is an AI Concierge? The Chatbot vs. the Real Thing
 
 ----
 
-Meta_description: "AI concierge" means two very different things: a hotel chatbot, or a monthly done-with-you service where a real person helps you automate your business. What each one is, what the service costs, and the questions to ask before you pay anyone.
+Meta_description: "AI concierge" means two things: a hotel chatbot, or a monthly done-with-you service where a person helps you automate your business. What it costs.
 
 ----
 
@@ -14,7 +14,7 @@ Date: 2026-09-01
 
 ----
 
-Updated: 2026-09-21
+Updated: 2026-09-28
 ----
 
 Intro: You're going to start hearing the phrase "AI concierge" a lot. The trouble is, it means two completely different things, and the one Google shows you first is not the one that matters for your business.

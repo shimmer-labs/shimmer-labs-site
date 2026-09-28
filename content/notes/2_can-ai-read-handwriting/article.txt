@@ -2,7 +2,7 @@ Title: Can AI read handwritten job sheets and invoices?
 
 ----
 
-Meta_description: Yes. Modern AI reads handwriting, mixed languages, and margin notes, and understands what they mean. How a Stillwater landscaper's route sheet became one photo.
+Meta_description: Yes. Modern AI reads handwriting, mixed languages, and margin notes, and understands them. How a Stillwater landscaper's route sheet became one photo.
 
 ----
 
@@ -10,7 +10,7 @@ Date: 2026-08-25
 
 ----
 
-Updated: 2026-08-25
+Updated: 2026-09-28
 ----
 
 Intro: Yes, including messy handwriting, Spanish and English on the same page, and notes crammed in the margins. Here's how it actually works.

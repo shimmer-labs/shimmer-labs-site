@@ -6,7 +6,7 @@ Seo_title: Sidecar: Office Work Built and Run for You, AI Agents From $1,000 + $
 
 ----
 
-Meta_description: Built-and-run AI workflows for small businesses with 1 to 50 people. Shipped for Sweat Yoga, a Stillwater landscaper, Supabase, and Paidly. Live in a week, autonomous in a month. Builds from $1,000, running from $250/mo. Cancel anytime.
+Meta_description: Built-and-run AI workflows for small businesses with 1 to 50 people. Live in a week, autonomous in a month. Builds from $1,000, from $250/mo to run.
 
 ----
 
@@ -215,3 +215,7 @@ Faq:
 ----
 
 Uuid: sidecar-service-001
+
+----
+
+Updated: 2026-09-28

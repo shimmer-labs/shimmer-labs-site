@@ -6,7 +6,7 @@ Seo_title: Stop Re-Explaining Everything to Your AI: Use Projects
 
 ----
 
-Meta_description: Most people one-and-done their AI and re-type the same context every time. Projects fix that. What they are, how we use them for client work, and a prompt that finds where you need one.
+Meta_description: Most people re-type the same context into their AI every time. Projects fix that. What they are, how we use them, and a prompt to find where you need one.
 
 ----
 
@@ -14,7 +14,7 @@ Date: 2026-08-26
 
 ----
 
-Updated: 2026-08-26
+Updated: 2026-09-28
 ----
 
 Intro: Most people use AI like a vending machine: one question, one answer, walk away. Then they type the same background all over again tomorrow. There's a fix built into the tool, and almost nobody at our office hours has heard of it.

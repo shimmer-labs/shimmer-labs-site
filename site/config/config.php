@@ -705,7 +705,7 @@ return [
         // Add homepage
         $sitemap[] = [
           'url' => $site->url(),
-          'lastmod' => date('Y-m-d'),
+          'lastmod' => $site->homePage()->updated()->or('2026-09-28')->toString(),
           'priority' => '1.0',
           'changefreq' => 'weekly'
         ];
@@ -760,7 +760,7 @@ return [
 
           $sitemap[] = [
             'url' => $page->url(),
-            'lastmod' => ($page->updated()->isNotEmpty() ? $page->updated()->toDate('Y-m-d') : ($page->date()->isNotEmpty() ? $page->date()->toDate('Y-m-d') : date('Y-m-d'))),
+            'lastmod' => ($page->updated()->isNotEmpty() ? $page->updated()->toDate('Y-m-d') : ($page->date()->isNotEmpty() ? $page->date()->toDate('Y-m-d') : '2026-09-21')),
             'priority' => $priority,
             'changefreq' => $page->isHomePage() ? 'weekly' : 'monthly'
           ];
@@ -769,13 +769,13 @@ return [
         // Static (non-Kirby) pages served from webroot directories
         $sitemap[] = [
           'url' => $site->url() . '/business-at-lunch/',
-          'lastmod' => date('Y-m-d'),
+          'lastmod' => '2026-08-25',
           'priority' => '0.4',
           'changefreq' => 'monthly'
         ];
         $sitemap[] = [
           'url' => $site->url() . '/riata-center/',
-          'lastmod' => date('Y-m-d'),
+          'lastmod' => '2026-09-24',
           'priority' => '0.4',
           'changefreq' => 'monthly'
         ];

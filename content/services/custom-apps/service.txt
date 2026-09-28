@@ -6,7 +6,7 @@ Seo_title: Custom Web & iOS Apps for Small Businesses | From $15k
 
 ----
 
-Meta_description: Mobile app development and web apps, wireframes to launched product. iOS from $20k, web from $15k, one flat price. Built TreeBidPro in 2 weeks, Paidly to payments in 6.
+Meta_description: Mobile and web apps, wireframes to launched product. iOS from $20k, web from $15k, one flat price. Built TreeBidPro in 2 weeks, Paidly to payments in 6.
 
 ----
 
@@ -119,3 +119,7 @@ Ctadescription: Whether you need a web app, an iOS app, or both -- your product 
 ----
 
 Uuid: custom-apps-001
+
+----
+
+Updated: 2026-09-28

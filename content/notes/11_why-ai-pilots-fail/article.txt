@@ -6,7 +6,7 @@ Seo_title: Why 95% of AI Pilots Fail, and Why a Small Business Can Beat That Num
 
 ----
 
-Meta_description: MIT says 95% of generative AI pilots show no measurable return. McKinsey says 80% of people feel more productive while 63% of companies see nothing. Here's what's actually going wrong, and why a 12-person shop in Oklahoma has an advantage over a Fortune 500.
+Meta_description: MIT says 95% of generative AI pilots show no measurable return. What's going wrong, and why a 12-person Oklahoma shop has an edge over a Fortune 500.
 
 ----
 
@@ -14,7 +14,7 @@ Date: 2026-09-07
 
 ----
 
-Updated: 2026-09-07
+Updated: 2026-09-28
 ----
 
 Intro: The AI numbers from big companies are brutal, and they explain something we see every week at office hours: a business buys the tool, a couple of people get faster, and nothing changes for the business. Here's what the research says is going wrong, and why being small is the way out.

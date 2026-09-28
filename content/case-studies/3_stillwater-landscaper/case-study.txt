@@ -5,11 +5,11 @@ Title: The Landscaper
 Date: 2026-08-25
 ----
 
-Meta_description: A Stillwater landscaper spent two hours a night typing job reports into his customer database. Now he takes one photo. The AI reads the sheet, catches upsells and skipped yards, and logs it all.
+Meta_description: A Stillwater landscaper spent two hours a night typing job reports. Now he takes one photo. The AI reads the sheet, catches upsells, and logs it all.
 
 ----
 
-Updated: 2026-08-25
+Updated: 2026-09-28
 ----
 
 Featured: true
