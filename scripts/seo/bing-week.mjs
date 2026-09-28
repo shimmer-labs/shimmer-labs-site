@@ -5,8 +5,9 @@
 import { readFileSync, existsSync } from 'fs'; import { homedir } from 'os';
 const SITE = process.env.BING_SITE || 'https://shimmerlabs.co';
 const keyPath = `${homedir()}/.config/shimmer-seo/bing-api-key`;
-if (!existsSync(keyPath)) { console.error('no key at', keyPath, '(Bing Webmaster Tools > gear > API access, paste the key into that file)'); process.exit(1); }
-const KEY = readFileSync(keyPath, 'utf8').trim();
+const fromEnv = () => { try { return /^BING_WEBMASTER_API_KEY=(.+)$/m.exec(readFileSync('.env', 'utf8'))?.[1].trim(); } catch { return null; } };
+const KEY = existsSync(keyPath) ? readFileSync(keyPath, 'utf8').trim() : (process.env.BING_WEBMASTER_API_KEY || fromEnv());
+if (!KEY) { console.error('no Bing key: put it in', keyPath, 'or as BING_WEBMASTER_API_KEY in .env (Bing Webmaster Tools > gear > API access)'); process.exit(1); }
 const api = async (m, q = {}) => {
   const u = new URL(`https://ssl.bing.com/webmaster/api.svc/json/${m}`);
   u.searchParams.set('siteUrl', SITE); u.searchParams.set('apikey', KEY);
@@ -42,5 +43,8 @@ if (quota && !quota.error) console.log(`\nURL submission quota: ${quota.DailyQuo
 
 for (const p of process.argv.slice(2)) {
   const info = await api('GetUrlInfo', { url: SITE + p });
-  console.log(`\n${p}: ${info?.error ? info.error : JSON.stringify(info)}`);
+  if (info?.error) { console.log(`\n${p}: ${info.error}`); continue; }
+  const lc = msDate(info.LastCrawledDate), dd = msDate(info.DiscoveryDate);
+  const ok = d => d && d.getFullYear() > 1900;
+  console.log(`\n${p}: ${ok(lc) ? 'last crawled ' + day(lc) : 'never crawled by Bing'}${ok(dd) ? ', discovered ' + day(dd) : ''}, http ${info.HttpStatus || '-'}, inbound anchors ${info.AnchorCount}`);
 }

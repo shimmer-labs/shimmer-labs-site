@@ -1,6 +1,6 @@
 # SEO / AEO reporting scripts
 
-Run from the repo root: `node scripts/seo/<script>`. Google scripts use the service account key at `~/.config/shimmer-seo/service-account.json`. Bing uses `~/.config/shimmer-seo/bing-api-key`. Both files stay out of the repo.
+Run from the repo root: `node scripts/seo/<script>`. Google scripts use the service account key at `~/.config/shimmer-seo/service-account.json`. Bing uses `~/.config/shimmer-seo/bing-api-key`, or `BING_WEBMASTER_API_KEY` in the repo's gitignored `.env` as a fallback. Both files stay out of the repo.
 
 | Script | What it does |
 |---|---|
