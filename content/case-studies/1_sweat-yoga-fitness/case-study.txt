@@ -2,8 +2,14 @@ Title: Sweat Yoga & Fitness
 
 ----
 
+Date: 2026-04-24
+----
+
 Meta_description: MVP live in week one, autonomous by week four. 50+ cancellations and freezes handled to date, including graduation rush. How Shimmer Labs built membership, scheduling, and DM automations for a Stillwater yoga studio whose booking platform had no API.
 
+----
+
+Updated: 2026-09-21
 ----
 
 Featured: true

@@ -14,6 +14,9 @@ Date: 2026-09-02
 
 ----
 
+Updated: 2026-09-21
+----
+
 Intro: We just gave a talk to a room of 80 realtors, bankers, and title folks called "AI for Every Business: The Upside, the Scams, and How Not to Get Got." The scam half of that talk is too important to leave in a slide deck, so here it is.
 
 ----

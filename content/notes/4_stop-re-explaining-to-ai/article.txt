@@ -14,6 +14,9 @@ Date: 2026-08-26
 
 ----
 
+Updated: 2026-08-26
+----
+
 Intro: Most people use AI like a vending machine: one question, one answer, walk away. Then they type the same background all over again tomorrow. There's a fix built into the tool, and almost nobody at our office hours has heard of it.
 
 ----

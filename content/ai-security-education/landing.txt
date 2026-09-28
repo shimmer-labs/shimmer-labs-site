@@ -2,8 +2,14 @@ Title: Using AI Securely in Higher Education, Free Guide
 
 ----
 
+Date: 2026-03-10
+----
+
 hero_label: Free Guide, Higher Education
 
+----
+
+Updated: 2026-09-21
 ----
 
 hero_title: Using AI Securely in Higher Education

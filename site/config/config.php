@@ -705,7 +705,7 @@ return [
         // Add homepage
         $sitemap[] = [
           'url' => $site->url(),
-          'lastmod' => $site->modified('Y-m-d'),
+          'lastmod' => date('Y-m-d'),
           'priority' => '1.0',
           'changefreq' => 'weekly'
         ];
@@ -760,7 +760,7 @@ return [
 
           $sitemap[] = [
             'url' => $page->url(),
-            'lastmod' => $page->modified('Y-m-d'),
+            'lastmod' => ($page->updated()->isNotEmpty() ? $page->updated()->toDate('Y-m-d') : ($page->date()->isNotEmpty() ? $page->date()->toDate('Y-m-d') : date('Y-m-d'))),
             'priority' => $priority,
             'changefreq' => $page->isHomePage() ? 'weekly' : 'monthly'
           ];

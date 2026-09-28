@@ -2,8 +2,14 @@ Title: AI Agents for Small Business, Free Guide
 
 ----
 
+Date: 2026-03-10
+----
+
 hero_label: Free Guide
 
+----
+
+Updated: 2026-09-21
 ----
 
 hero_title: Too Many Hats, Not Enough Hours

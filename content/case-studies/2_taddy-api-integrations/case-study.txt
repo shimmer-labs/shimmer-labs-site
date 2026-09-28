@@ -2,8 +2,14 @@ Title: Taddy API Integrations
 
 ----
 
+Date: 2026-04-24
+----
+
 Meta_description: How Shimmer Labs shipped Taddy's podcast API across n8n, Zapier, and Make.com, putting the data in front of the no-code users who couldn't find it otherwise.
 
+----
+
+Updated: 2026-09-21
 ----
 
 Featured: true

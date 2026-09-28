@@ -1,6 +1,12 @@
 title: Trade Landing Page
 preset: page
 fields:
+  date:
+    label: Published
+    type: date
+  updated:
+    label: Last updated (feeds dateModified and sitemap lastmod)
+    type: date
   meta_description:
     label: Meta Description (SEO)
     type: textarea

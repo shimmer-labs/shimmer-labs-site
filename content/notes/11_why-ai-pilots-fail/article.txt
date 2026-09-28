@@ -14,6 +14,9 @@ Date: 2026-09-07
 
 ----
 
+Updated: 2026-09-07
+----
+
 Intro: The AI numbers from big companies are brutal, and they explain something we see every week at office hours: a business buys the tool, a couple of people get faster, and nothing changes for the business. Here's what the research says is going wrong, and why being small is the way out.
 
 ----

@@ -2,8 +2,14 @@ Title: Using AI Securely in Your Business, Free Guide
 
 ----
 
+Date: 2026-03-10
+----
+
 hero_label: Free Guide, Business Leaders
 
+----
+
+Updated: 2026-09-21
 ----
 
 hero_title: Using AI Securely in Your Business

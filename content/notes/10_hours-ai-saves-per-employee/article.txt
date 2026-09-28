@@ -14,6 +14,9 @@ Date: 2026-09-07
 
 ----
 
+Updated: 2026-09-07
+----
+
 Intro: Every AI vendor has a slide claiming their tool saves 10 hours a week. The people who measured it without selling anything found a smaller, more useful number. Here it is, plus what it means for a real team in Oklahoma.
 
 ----

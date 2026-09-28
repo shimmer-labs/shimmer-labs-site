@@ -370,8 +370,8 @@ if ($page->intendedTemplate()->name() === 'case-study') {
     'articleSection' => 'Case Study',
     'description' => $page->summary()->or($page->meta_description())->excerpt(300)->value(),
     'url' => $page->url(),
-    'datePublished' => $page->modified('c'),
-    'dateModified' => $page->modified('c'),
+    'datePublished' => ($page->date()->isNotEmpty() ? $page->date()->toDate('c') : '2026-03-10T00:00:00-06:00'),
+    'dateModified' => ($page->updated()->isNotEmpty() ? $page->updated()->toDate('c') : ($page->date()->isNotEmpty() ? $page->date()->toDate('c') : '2026-03-10T00:00:00-06:00')),
     'author' => [
       '@id' => $site->url() . '#organization'
     ],
@@ -466,8 +466,8 @@ if ($page->intendedTemplate()->name() === 'landing') {
     'headline' => $page->hero_title()->or($page->title())->value(),
     'description' => $page->hero_description()->or($page->meta_description())->excerpt(300)->value(),
     'url' => $page->url(),
-    'datePublished' => $page->modified('c'),
-    'dateModified' => $page->modified('c'),
+    'datePublished' => ($page->date()->isNotEmpty() ? $page->date()->toDate('c') : '2026-03-10T00:00:00-06:00'),
+    'dateModified' => ($page->updated()->isNotEmpty() ? $page->updated()->toDate('c') : ($page->date()->isNotEmpty() ? $page->date()->toDate('c') : '2026-03-10T00:00:00-06:00')),
     'author' => [
       '@id' => $site->url() . '#logan'
     ],
@@ -496,8 +496,8 @@ if (in_array($page->intendedTemplate()->name(), ['trade', 'article'])) {
     'headline' => $page->hero_title()->or($page->title())->value(),
     'description' => $page->meta_description()->or($page->intro())->excerpt(300)->value(),
     'url' => $page->url(),
-    'datePublished' => $page->modified('c'),
-    'dateModified' => $page->modified('c'),
+    'datePublished' => ($page->date()->isNotEmpty() ? $page->date()->toDate('c') : '2026-03-10T00:00:00-06:00'),
+    'dateModified' => ($page->updated()->isNotEmpty() ? $page->updated()->toDate('c') : ($page->date()->isNotEmpty() ? $page->date()->toDate('c') : '2026-03-10T00:00:00-06:00')),
     'author' => [
       '@id' => $site->url() . '#logan'
     ],

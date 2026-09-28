@@ -1,5 +1,11 @@
 title: Case Study
 fields:
+  date:
+    label: Published
+    type: date
+  updated:
+    label: Last updated (feeds dateModified and sitemap lastmod)
+    type: date
   meta_description:
     label: Meta Description (SEO)
     type: textarea

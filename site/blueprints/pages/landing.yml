@@ -6,6 +6,12 @@ columns:
       content:
         type: fields
         fields:
+          date:
+            label: Published
+            type: date
+          updated:
+            label: Last updated (feeds dateModified and sitemap lastmod)
+            type: date
           hero_label:
             label: Hero Label
             type: text
