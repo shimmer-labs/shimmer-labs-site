@@ -6,7 +6,11 @@
     <div class="container">
       <span class="cs-tag">Got it</span>
       <h1 class="hero__title">Your intake is in.</h1>
-      <p class="hero__intro">Logan reads every one of these personally and will text or email you within one business day, with a time for your first session or dates for the on-site day if you picked the Assessment. A copy just landed in your inbox.</p>
+      <p class="hero__intro"><?= match (get('start')) {
+        'assessment' => 'Logan reads every one of these personally and will text or email you within one business day with two or three dates for the on-site day. A copy just landed in your inbox.',
+        'concierge'  => 'Logan reads every one of these personally and will text or email you within one business day with a time for your first working session. A copy just landed in your inbox.',
+        default      => 'Logan reads every one of these personally and will text or email you within one business day with a time for a free 30-minute Snapshot call, where we figure out together whether the Assessment, the Concierge, or neither is the right next step. A copy just landed in your inbox.',
+      } ?></p>
     </div>
   </section>
   <section class="long-form">
@@ -206,7 +210,7 @@
         return r.json().then(function (j) { return { ok: r.ok, data: j }; });
       }).then(function (result) {
         if (result.ok && result.data.ok) {
-          window.location = '<?= $page->url() ?>?success=true';
+          window.location = '<?= $page->url() ?>?success=true&start=' + encodeURIComponent(form.start_with.value);
         } else {
           showError(result.data.error || 'Something went wrong. Please email logan@shimmerlabs.co.');
         }

@@ -432,19 +432,37 @@ return [
     $tierLabel = $tier === 'in-person'
       ? 'Prefers in-person sessions'
       : 'Prefers video sessions';
-    $priceTier = option('concierge.tiers')[$teamSize] ?? ['name' => 'Crew', 'price' => 1500];
+    $tiers = option('concierge.tiers');
+    $priceTier = $tiers[$teamSize] ?? ['name' => 'Crew', 'price' => 1500];
+    // Founding offer (next 5 clients): one tier down, locked. Solo goes to $750.
+    $tierOrder = array_keys($tiers);
+    $idx = array_search($teamSize, $tierOrder, true);
+    $foundingPrice = $priceTier['name'] === 'Custom' ? $priceTier['price']
+      : ($idx === false || $idx === 0 ? 750 : $tiers[$tierOrder[$idx - 1]]['price']);
     $assessPrice = option('assessment.prices')[$teamSize] ?? 1500;
-    $startLabel = match ($startWith) { 'assessment' => 'Operations Assessment ($' . number_format($assessPrice) . ' one time)', 'concierge' => 'AI Concierge', default => 'Not sure yet' };
+    $money = fn($n) => '$' . number_format($n);
+    // Customer-facing words only: the site never says "Crew" or "Shop" to a lead.
+    $startLabel = match ($startWith) {
+      'assessment' => 'Operations Assessment',
+      'concierge'  => 'AI Concierge',
+      default      => 'Not sure yet, start with a free Snapshot call',
+    };
+    $priceLine = match ($startWith) {
+      'assessment' => 'PRICING: Assessment ' . $money($assessPrice) . ' one time for a team of ' . $teamSize . ', half credited to your first Concierge month if you continue within 30 days',
+      'concierge'  => 'PRICING: AI Concierge ' . $money($foundingPrice) . '/mo for a team of ' . $teamSize . ' at the founding price (regular ' . $money($priceTier['price']) . '/mo), locked in',
+      default      => 'PRICING, IF IT HELPS: Assessment ' . $money($assessPrice) . ' one time, or the AI Concierge from ' . $money($foundingPrice) . '/mo for a team of ' . $teamSize . ' with the founding offer. Nothing is decided until we talk',
+    };
+    $submittedAt = (new DateTime('now', new DateTimeZone('America/Chicago')))->format('M j, Y g:i A T');
     $intakeBlock =
       "START WITH: " . $startLabel . "\n" .
-      "TIER: " . $priceTier['name'] . " ($" . number_format($priceTier['price']) . "/mo, team " . $teamSize . ")\n" .
+      $priceLine . "\n" .
       "MEETING PREFERENCE: " . $tierLabel . "\n" .
       "TASKS EATING THE WEEK:\n" . mb_substr($tasks, 0, 1000) . "\n\n" .
       "WOULD PAY MOST TO NEVER DO AGAIN:\n" . mb_substr($payToNever, 0, 500) . "\n\n" .
       "CURRENT TOOLS: " . ($tools !== '' ? mb_substr($tools, 0, 300) : '(not given)') . "\n" .
       "TRIED WITH AI SO FAR: " . ($triedAi !== '' ? mb_substr($triedAi, 0, 500) : '(not given)') . "\n" .
       ($scanId !== '' ? "WEBSITE SCAN: " . url('scan') . "?id=" . $scanId . "\n" : '') .
-      "SUBMITTED: " . date('Y-m-d H:i') . " from /" . $sourcePage;
+      "SUBMITTED: " . $submittedAt . " from /" . $sourcePage;
 
     $upsertBody = [
       'locationId'   => $loc,
@@ -478,18 +496,47 @@ return [
 
     // Drop the lead into the sales pipeline so it shows up in GHL's
     // opportunity view. Best effort: a pipeline hiccup never loses the lead.
+    // One company = one deal: if an open opportunity for the same business
+    // was created in the last 30 days, don't open a second one; leave a note
+    // on the original contact pointing at this teammate instead.
     $pipe = option('ghl.pipeline');
-    [$c3, $r3, $e3] = $api('/opportunities/', [
-      'locationId'      => $loc,
-      'pipelineId'      => $pipe['id'],
-      'pipelineStageId' => $pipe['leadStageId'],
-      'contactId'       => $contactId,
-      'name'            => 'AI Concierge - ' . mb_substr($firstName, 0, 50) . ' (' . mb_substr($business, 0, 80) . ')',
-      'status'          => 'open',
-      'monetaryValue'   => $startWith === 'assessment' ? $assessPrice : $priceTier['price'],
-    ]);
-    if ($e3 || $c3 < 200 || $c3 >= 300) {
-      error_log('[ghl.intake] opportunity ' . $c3 . ' (' . $contactId . '): ' . $e3 . ' ' . substr((string)$r3, 0, 200));
+    $oppName  = match ($startWith) { 'assessment' => 'Assessment', 'concierge' => 'Concierge', default => 'Snapshot call' };
+    $oppValue = match ($startWith) { 'assessment' => $assessPrice, 'concierge' => $foundingPrice, default => 0 };
+    $existing = null;
+    $chS = curl_init($base . '/opportunities/search?' . http_build_query([
+      'location_id' => $loc, 'pipeline_id' => $pipe['id'], 'status' => 'open', 'q' => mb_substr($business, 0, 80), 'limit' => 20,
+    ]));
+    curl_setopt_array($chS, [CURLOPT_RETURNTRANSFER => true, CURLOPT_TIMEOUT => 6, CURLOPT_CONNECTTIMEOUT => 4, CURLOPT_HTTPHEADER => $hdr]);
+    $sResp = curl_exec($chS); curl_close($chS);
+    $norm = fn($v) => preg_replace('/[^a-z0-9]/', '', strtolower((string)$v));
+    foreach ((json_decode((string)$sResp, true)['opportunities'] ?? []) as $o) {
+      $sameCompany = $norm($business) !== '' && $norm($o['contact']['companyName'] ?? '') === $norm($business);
+      $recent = strtotime($o['createdAt'] ?? '1970-01-01') > time() - 30 * 86400;
+      $otherContact = ($o['contact']['id'] ?? $o['contactId'] ?? '') !== $contactId;
+      if ($sameCompany && $recent && $otherContact) { $existing = $o; break; }
+    }
+    if ($existing) {
+      $ownerId = $existing['contact']['id'] ?? $existing['contactId'] ?? '';
+      if ($ownerId !== '') {
+        $api('/contacts/' . rawurlencode($ownerId) . '/notes', [
+          'userId' => $ownerId,
+          'body'   => 'Another intake from ' . $business . ': ' . $firstName . ' (' . $email . ', ' . $phone . ') on ' . $submittedAt . '. Wants to start with: ' . $startLabel . '. Full answers are on their own contact record. No second opportunity was created.',
+        ]);
+      }
+      $api('/contacts/' . rawurlencode($contactId) . '/tags', ['tags' => ['same-company-intake']]);
+    } else {
+      [$c3, $r3, $e3] = $api('/opportunities/', [
+        'locationId'      => $loc,
+        'pipelineId'      => $pipe['id'],
+        'pipelineStageId' => $pipe['leadStageId'],
+        'contactId'       => $contactId,
+        'name'            => $oppName . ' - ' . mb_substr($firstName, 0, 50) . ' (' . mb_substr($business, 0, 80) . ')',
+        'status'          => 'open',
+        'monetaryValue'   => $oppValue,
+      ]);
+      if ($e3 || $c3 < 200 || $c3 >= 300) {
+        error_log('[ghl.intake] opportunity ' . $c3 . ' (' . $contactId . '): ' . $e3 . ' ' . substr((string)$r3, 0, 200));
+      }
     }
 
     // Auto-reply to the client, CC Logan with the full intake answers.
