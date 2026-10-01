@@ -826,6 +826,12 @@ return [
           'priority' => '0.4',
           'changefreq' => 'monthly'
         ];
+        $sitemap[] = [
+          'url' => $site->url() . '/intro-entrepreneurship/',
+          'lastmod' => '2026-10-01',
+          'priority' => '0.4',
+          'changefreq' => 'monthly'
+        ];
 
         // Generate XML
         $xml = '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;

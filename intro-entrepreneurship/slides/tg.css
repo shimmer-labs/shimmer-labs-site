@@ -1,0 +1,39 @@
+/* Techie Grandkid skin: teal + tan + warm off-white, Poppins/Nunito Sans. Applied on top of base.css for slides 14-22. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap');
+:root{ --tg-teal:#1D617A; --tg-teal-deep:#13455A; --tg-tan:#D8CFC0; --tg-cream:#F6F1E8; --tg-ink:#2E2E2E; --tg-soft:#6E6A66; --tg-line:#E4DCCD; }
+body.tg{ font-family:'Nunito Sans',sans-serif; }
+body.tg.light{ background:var(--tg-cream); color:var(--tg-ink); }
+body.tg.dark{ background:var(--tg-teal-deep); color:#fff; }
+body.tg .accent{ background:linear-gradient(90deg,var(--tg-tan),var(--tg-teal),var(--tg-tan)); }
+body.tg.light .stripe{ background:linear-gradient(180deg,var(--tg-teal),var(--tg-tan)); }
+body.tg .tag{ font-family:'Poppins',sans-serif; background:var(--tg-teal); color:#fff; }
+body.tg.dark .tag{ background:var(--tg-tan); color:var(--tg-teal-deep); }
+body.tg h1, body.tg h2, body.tg h3, body.tg .k, body.tg .n, body.tg .nm, body.tg .big, body.tg .cap, body.tg .when, body.tg .what, body.tg .v { font-family:'Poppins',sans-serif !important; }
+body.tg h1.slide-title{ color:var(--tg-ink); }
+body.tg.dark h1, body.tg.dark h1.slide-title{ color:#fff; }
+body.tg h1 .gold, body.tg h1.slide-title .gold{ color:var(--tg-teal) !important; }
+body.tg.dark h1 .gold, body.tg.dark h1.slide-title .gold{ color:var(--tg-tan) !important; }
+body.tg .card{ background:#fff; border:1px solid var(--tg-line); }
+body.tg .takeaway{ background:var(--tg-teal); color:#fff; }
+body.tg .takeaway b{ color:var(--tg-tan); }
+body.tg.dark .takeaway{ background:rgba(216,207,192,.12); border:2px solid var(--tg-tan); }
+body.tg .num{ color:var(--tg-soft); }
+/* gold-ish accents remapped */
+body.tg [style*="var(--goldink)"], body.tg .k, body.tg .col .k, body.tg .card .k, body.tg .step .k, body.tg .box .k{ color:var(--tg-teal) !important; }
+body.tg.dark .k, body.tg.dark .col .k, body.tg.dark .box .k, body.tg.dark .side .k, body.tg.dark .qs .q span{ color:var(--tg-tan) !important; }
+body.tg li::before, body.tg .col li::before, body.tg .it .n{ background:var(--tg-teal) !important; }
+body.tg.dark li::before, body.tg.dark .col li::before{ background:var(--tg-tan) !important; }
+body.tg .col.them, body.tg .col.real, body.tg .col.hl{ border-color:var(--tg-tan) !important; background:rgba(216,207,192,.12) !important; }
+body.tg .col li b, body.tg .card p b, body.tg .pt .t b, body.tg .row .v b, body.tg .card li b, body.tg .pts .pt b, body.tg .sub b, body.tg .how b, body.tg .why b, body.tg .step .why b{ color:var(--tg-teal) !important; }
+body.tg.dark .col li b, body.tg.dark .pts .pt b, body.tg.dark .sub b, body.tg.dark .note b, body.tg.dark .box .v{ color:var(--tg-tan) !important; }
+body.tg .box, body.tg .arr, body.tg .arrow{ border-color:rgba(216,207,192,.7) !important; color:var(--tg-tan) !important; }
+body.tg.light .box{ border-color:var(--tg-line) !important; color:var(--tg-ink) !important; }
+body.tg.light .box .v{ color:var(--tg-ink) !important; }
+body.tg.light .box .k{ color:var(--tg-teal) !important; }
+body.tg.light .arr{ color:var(--tg-teal) !important; }
+body.tg .big{ color:var(--tg-teal) !important; }
+body.tg .col.a .big{ color:var(--tg-soft) !important; }
+body.tg .col.b .big{ color:var(--tg-teal) !important; }
+body.tg .pt .ico{ background:var(--tg-teal) !important; } body.tg .pt .ico svg{ stroke:var(--tg-tan) !important; }
+body.tg .when{ background:var(--tg-teal) !important; color:#fff !important; }
+body.tg .card.mars{ opacity:.85; }

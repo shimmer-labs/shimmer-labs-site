@@ -44,6 +44,8 @@ RewriteCond %{REQUEST_URI} !^/realtor-lunch/
 RewriteRule ^realtor-lunch([^/].*)?$ https://shimmerlabs.co/realtor-lunch/ [R=301,L]
 RewriteCond %{REQUEST_URI} !^/riata-center/
 RewriteRule ^riata-center([^/].*)?$ https://shimmerlabs.co/riata-center/ [R=301,L]
+RewriteCond %{REQUEST_URI} !^/intro-entrepreneurship/
+RewriteRule ^intro-entrepreneurship([^/].*)?$ https://shimmerlabs.co/intro-entrepreneurship/ [R=301,L]
 
 # strip trailing slashes on Kirby pages (real directories like /business-at-lunch/ keep theirs)
 RewriteCond %{REQUEST_FILENAME} !-d

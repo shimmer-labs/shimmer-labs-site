@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Constellation</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+  h1.slide-title{margin-top:100px;font-size:56px;}
+  .wrap{position:relative;height:760px;margin-top:20px;}
+  .core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:440px;height:440px;border-radius:50%;background:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 12px 40px rgba(10,26,47,.25);}
+  .core img{width:150px;margin-bottom:6px;}
+  .core .t{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;padding:0 40px;color:var(--gold);line-height:1.15;}
+  .core .s{display:none;}
+  .node{position:absolute;width:400px;background:#fff;border:1px solid #E5E7EB;border-radius:14px;padding:18px 22px;box-shadow:0 2px 8px rgba(10,26,47,.08);}
+  .node h3{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;color:var(--navy);line-height:1.15;margin-bottom:6px;}
+  .node p{font-size:25px;color:var(--ink);line-height:1.3;}
+  .n1{left:40px;top:0;} .n2{left:40px;top:290px;} .n3{left:40px;top:580px;} .n4{right:40px;top:0;} .n5{right:40px;top:290px;} .n6{right:40px;top:580px;}
+  svg.arrows{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
+</style></head>
+<body class="light"><div class="stripe"></div>
+<div class="tag">Day one, on a whiteboard</div>
+<h1 class="slide-title">Quit the job. Sat down. <span class="gold">What do I actually have?</span></h1>
+<div class="wrap">
+  <svg class="arrows" viewBox="0 0 1740 760" fill="none" stroke="#D4920A" stroke-width="4" stroke-linecap="round"><defs><marker id="a" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L10,6 L0,12 Z" fill="#D4920A"/></marker></defs>
+    <path d="M440 80 L620 260" marker-end="url(#a)"/><path d="M440 360 L630 375" marker-end="url(#a)"/><path d="M440 640 L620 500" marker-end="url(#a)"/>
+    <path d="M1300 80 L1120 260" marker-end="url(#a)"/><path d="M1300 360 L1110 375" marker-end="url(#a)"/><path d="M1300 640 L1120 500" marker-end="url(#a)"/></svg>
+  <div class="node n1"><h3>Early adopter</h3><p>I try every new tool the week it ships. Most people don&rsquo;t have time to.</p></div>
+  <div class="node n2"><h3>Hard puzzles</h3><p>Mechanical engineer. Big nerd. Happiest untangling something ugly.</p></div>
+  <div class="node n3"><h3>Small business owners</h3><p>Courageous people. They give me energy, not drain it.</p></div>
+  <div class="node n4"><h3>Local, face to face</h3><p>Trust is at an all-time low. In person still works.</p></div>
+  <div class="node n5"><h3>Community</h3><p>Small towns get skipped by every tech wave. I&rsquo;m here. Be the change.</p></div>
+  <div class="node n6"><h3>Time back</h3><p>I did 80-hour weeks for someone else. Nobody should fall in that trap.</p></div>
+  <div class="core"><img src="../assets/shimmer-labs-logo.png" alt="Shimmer Labs"><div class="t">We automate the boring stuff.</div><div class="s">for the people who&rsquo;d rather be doing the work</div></div>
+</div>
+<div class="num">4</div>
+</body></html>
