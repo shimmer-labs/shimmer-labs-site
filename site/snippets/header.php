@@ -94,7 +94,7 @@
 
   <!-- Meta Description -->
   <meta name="description" content="<?= esc($metaDescription, 'html') ?>">
-  <?php if (!empty($noindex)): ?><meta name="robots" content="noindex, follow"><?php endif ?>
+  <?php if (!empty($noindex)): ?><meta name="robots" content="noindex, follow"><?php else: ?><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"><?php endif ?>
 
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:type" content="<?= $ogType ?>">

@@ -76,9 +76,11 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# Microsoft / Copilot
+# ByteDance (TikTok search)
 User-agent: Bytespider
 Allow: /
+
+# Microsoft Copilot rides the bingbot index; Bingbot is allowed above.
 
 # Cohere
 User-agent: cohere-ai
