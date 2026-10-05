@@ -21,7 +21,8 @@ The same Google scripts exist in `~/techie-grandkid/scripts/seo/` (URL-prefix pr
 3. `inspect.mjs` on anything changed that week, plus anything the last report flagged. Hand back at most ~10 inspection links, priority order; Google's Request Indexing quota is ~10/day.
 4. If anything was pushed that week: confirm `indexnow.mjs` ran. Bing URL Submission in the dashboard is a separate 100/day quota (Home > URL Submission card > Submit URLs, one per line) for pages IndexNow hasn't picked up.
 5. Every few weeks, the AI citation spot check by hand in Chrome (see below).
-6. Every few weeks, Google Business Profile: reviews count, Services list, posts, hours consistency. Path is in memory `gsc_gbp_operations.md`.
+6. Monthly: Bing Webmaster Tools > AI Performance (citations, cited pages, grounding queries) in Chrome; no API for it. Bing's GEO guidelines: never set NOARCHIVE or NOCACHE (they remove content from Copilot), keep max-snippet uncapped (header.php sets max-snippet:-1), schema must match visible text.
+7. Every few weeks, Google Business Profile: reviews count, Services list, posts, hours consistency. Path is in memory `gsc_gbp_operations.md`.
 
 ## AI citation spot check (manual)
 
