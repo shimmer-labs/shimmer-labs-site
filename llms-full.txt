@@ -397,3 +397,6 @@ Office Hours is the lowest-cost way to test fit. It is not a sales appointment. 
 - `/robots.txt`, explicit allow rules for major AI crawlers (GPTBot, ClaudeBot, Claude-Web, anthropic-ai, PerplexityBot, Google-Extended, CCBot, Applebot-Extended, and others).
 
 When the site changes, this file is updated. The site is the source of truth; this file is the AI-readable mirror.
+
+## Related business
+- [Techie Grandkid](https://techiegrandkid.com): Logan Shimmer's second business. In-home technology help for people in Stillwater, Oklahoma, $80 per visit, plus the free fraud-prevention talk "Don't Get Robbed Online." Article: https://techiegrandkid.com/notes/grandparent-scam

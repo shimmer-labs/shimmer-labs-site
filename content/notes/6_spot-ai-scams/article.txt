@@ -14,7 +14,7 @@ Date: 2026-09-02
 
 ----
 
-Updated: 2026-09-28
+Updated: 2026-10-05
 ----
 
 Intro: We just gave a talk to a room of 80 realtors, bankers, and title folks called "AI for Every Business: The Upside, the Scams, and How Not to Get Got." The scam half of that talk is too important to leave in a slide deck, so here it is.
@@ -44,6 +44,10 @@ That's why we told this story to a room full of realtors. Wire fraud isn't a hyp
 It's not just email. A worker at a multinational firm joined a video call with his CFO and several coworkers. He knew every face. He knew every voice. Every single person on that call except him was an AI deepfake. He wired $25 million. It was gone.
 
 We know how easy this is because we tried it. For a Chamber talk earlier this year, with her okay, we made a short video of a local leader saying words we typed. It took about two minutes, from a few photos and a description of her voice. No real video, no audio clips. The scary part is what we built it with: not shady dark-web apps, but two of the most popular AI tools on earth, the ones already open in your browser. A face or a voice on a screen is no longer proof it's really them.
+
+## How much it actually costs
+
+The FBI's Internet Crime Report for 2025 counts $20.9 billion reported lost to online fraud in a single year. That works out to about $40,000 a minute, and it only counts the people who filed a report. The FTC's Protecting Older Consumers report (2024 to 2025, Figure 2) tracks the median loss per victim by age: $250 at 18 to 19, $500 in your 40s, $1,000 in your 70s, and $1,650 at 80 and over. The scripts are written for the people with savings and manners, which is why we also run <a href="https://techiegrandkid.com" rel="noopener">Techie Grandkid</a> for the Stillwater folks most likely to get the call, with a plain-language piece on <a href="https://techiegrandkid.com/notes/grandparent-scam" rel="noopener">the grandparent scam and the one habit that stops it</a>.
 
 ## Every scam is the same three moves
 

@@ -1,0 +1,92 @@
+Title: How do you find a customer nobody else is serving?
+
+----
+
+Seo_title: How Do You Find an Overlooked Customer? What I Told 110 OSU Entrepreneurship Students
+
+----
+
+Meta_description: You find an overlooked customer by noticing who already asks you for help. The two-business story I told 110 OSU freshmen, with the slides.
+
+----
+
+Eyebrow: Notes
+
+----
+
+Date: 2026-10-05
+
+----
+
+Updated: 2026-10-05
+
+----
+
+Intro: You find an overlooked customer by paying attention to who already asks you for help, then selling them the thing before you build it. I learned that the expensive way. On October 1, 2026 I guest lectured for Dr. Victoria Antin Yates in Intro to Entrepreneurship at Oklahoma State University's Spears School of Business, about 110 students in Legacy Hall, and the whole talk was the contrast between my two businesses: one I iterated on for months before the message landed, and one that walked up and handed itself to me.
+
+----
+
+Text:
+
+## What she asked me to cover
+
+Dr. Yates teaches EEE 2023, the survey course every Spears student takes. Her students were one unit in. They knew the textbook sequence: spot an opportunity, pick an idea, build a business model, write the plan, launch. She asked for the real version, from someone who had actually done it, and she had one takeaway she wanted above everything else: how to identify a customer group that is being overlooked, and how to create value for them. Her words. She said that's what separates the businesses that make it from the ones that don't, and that students blow past it on their way to building a cool app.
+
+So that's the talk. Slides are at <a href="/intro-entrepreneurship/">shimmerlabs.co/intro-entrepreneurship</a>, and the PDF is <a href="/intro-entrepreneurship/One-Year-Crash-Course.pdf">here</a>.
+
+## I built three apps nobody paid for
+
+Before Shimmer Labs found its footing I built Paidly, EventSnag, and FlowMint. Each one worked. Each one had zero paying users. I never asked a single person whether they wanted it before I built it. I asked a chatbot, and the chatbot said it was a great idea, because that is what chatbots say.
+
+The ads my friends kept texting me promised 10,000 users and "87 paying customers from one link." The burger on the menu versus the burger in the bag. Those ads exist because thousands of people built the app before talking to a human. I was one of them.
+
+## Shimmer Labs: months of edits before it landed
+
+Shimmer Labs started as consulting, which is the most basic way to start a business when you have a skill and no customers. The website went through 261 edits before the message landed. Five different answers to "what do you do?" Subcontracting, apps for friends, "your new AI employee," office hours, and finally the thing people actually paid for: running the office side of a small business with the owner, in person, and putting AI only on the parts that deserve it.
+
+At a bar, that pitch lands with about one person in five. I watched a lot of eyes glaze.
+
+## Techie Grandkid: the customer was already there
+
+I volunteer at Elite Repeat, a thrift store where the average volunteer is about 70. One of them asked if I could look at her TV. Then her phone. Then she asked if she could give my number to a friend. People started handing me twenties I hadn't asked for.
+
+One flyer. Zero ads. Visits went from $60 to $80 and people kept booking. That business is <a href="https://techiegrandkid.com" rel="noopener">Techie Grandkid</a>: in-home tech help for people in Stillwater who would rather have a person in the room than a chatbot, plus a free talk on <a href="https://techiegrandkid.com/notes/grandparent-scam" rel="noopener">how to spot the scams aimed at them</a>.
+
+Same bar, same me. That pitch lands nine times out of ten.
+
+## Why one worked and the other took a year
+
+The students' default customer is 18 to 22 year olds. No money, not that many of them, and they already have every app. The customer who was standing next to me the whole time had money, had a need, was a huge group, and nobody was serving them because the work isn't glamorous. Helping a 78-year-old log into email is not going to Mars. It is also a business.
+
+Three things I'd tell freshman me, and told them:
+
+1. Talk to people, not to the bot. Watch their face when you describe the thing. The face tells you what the chatbot never will.
+2. Sell it before you build it. A flyer and a phone number is a product test. Three months of code is not.
+3. Pick the customer who gives you energy. I am impatient with my own parents and delighted by the lady down the street. That difference is data.
+
+## What this has to do with your business
+
+Every owner I work with has a version of this. The service they love delivering is not always the one people line up for. The <a href="/services/assessment">Operations Assessment</a> is partly an exercise in finding out which of your customers already overlooks you back, and the free Snapshot at <a href="/office-hours">office hours</a> is where that conversation usually starts.
+
+Thanks to Dr. Yates for the invitation, to Ben Hennel for getting me to the right room, and to the students who stayed after to ask the questions that don't get asked in front of 110 people.
+
+----
+
+Faq:
+
+-
+  question: How do you find an overlooked customer?
+  answer: >
+    Notice who already asks you for help and isn't being served well. For me it was the volunteers at a thrift store asking about their phones. Then sell the help before you build anything: a flyer, a price, a phone number. If people pay, you found them.
+-
+  question: What did Logan Shimmer talk about at OSU?
+  answer: >
+    A guest lecture for Dr. Victoria Antin Yates's Intro to Entrepreneurship class at the Spears School of Business on October 1, 2026, titled "My One-Year Crash Course in Entrepreneurship." The spine was the contrast between Shimmer Labs, which took months of iteration, and Techie Grandkid, which came straight from the people he volunteers with.
+-
+  question: Why is "sell it before you build it" the advice?
+  answer: >
+    Because three apps with zero paying users cost months, and one flyer that filled a calendar cost an afternoon. Asking a chatbot if your idea is good is not a test. Asking ten people at a bar and watching their faces is.
+-
+  question: Are the slides available?
+  answer: >
+    Yes. The deck is at shimmerlabs.co/intro-entrepreneurship and the PDF is linked from that page.

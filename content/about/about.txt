@@ -45,6 +45,14 @@ OSU class of '09 alum. AI for Industry microcredential through <a href="https://
 
 Currently teaching **AI & Marketing** in the <a href="https://www.stillwaterchamber.org/economic-development/small-business-university" rel="noopener" target="_blank">**Stillwater Chamber of Commerce's Small Business University**</a> program. Local owners learn what AI can actually do for their shop, without the hype, without getting stuck with one company's product, and without the security mistakes that keep showing up in the headlines.
 
+## Talks
+
+Guest lecturer for Dr. Victoria Antin Yates's Intro to Entrepreneurship course at OSU's Spears School of Business (October 2026, 110 students, <a href="/notes/how-to-find-an-overlooked-customer">recap and slides</a>), and for the School of Entrepreneurship through the <a href="/riata-center/">Riata Center</a> (September 2026). Stillwater Chamber <a href="/business-at-lunch/">Business @ Lunch</a> on AI fraud prevention (August 2026). Meridian Technology Center, "AI for the Boring Parts of Your Business" (2025).
+
+## The other business: Techie Grandkid
+
+Logan also runs <a href="https://techiegrandkid.com" rel="noopener">Techie Grandkid</a>, patient in-home tech help for people in Stillwater who would rather have a person in the room than a chatbot: phones, TVs, email, Wi-Fi, and a free talk called "Don't Get Robbed Online" for the communities and families who need it most. It started because the volunteers at the thrift store where he works kept asking him to look at their phones. Same person, same patience, different customer.
+
 ## Work that came before the brand
 
 The Supabase and <a href="/case-studies/taddy-api-integrations">Taddy</a> projects that anchor our case studies happened **before Shimmer Labs existed.** Same pattern. Same human checking everything before it goes out. Same real, working code in front of real customers. The work didn't change when the brand showed up, that's the proof it was solid all along.
@@ -67,4 +75,4 @@ Uuid: o2gegafhfruerlxw
 
 ----
 
-Updated: 2026-09-28
+Updated: 2026-10-05

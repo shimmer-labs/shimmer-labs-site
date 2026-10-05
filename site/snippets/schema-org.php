@@ -31,9 +31,11 @@ $schema[] = [
   ],
   'sameAs' => [
     'https://www.linkedin.com/in/loganshimmer/',
+    'https://www.linkedin.com/company/shimmer-labs',
     'https://github.com/shimmer-labs',
     'https://www.instagram.com/shimmer.labs/'
   ],
+  'subOrganization' => ['@type' => 'LocalBusiness', 'name' => 'Techie Grandkid', 'url' => 'https://techiegrandkid.com', 'founder' => ['@id' => $site->url() . '#logan']],
   'founder' => [
     '@type' => 'Person',
     '@id' => $site->url() . '#logan',
@@ -201,6 +203,10 @@ if ($page->intendedTemplate()->name() === 'about') {
       '@type' => 'CollegeOrUniversity',
       'name' => 'Oklahoma State University',
       'url' => 'https://okstate.edu'
+    ],
+    'performerIn' => [
+      ['@type' => 'EducationalEvent', 'name' => 'Guest lecture, Intro to Entrepreneurship (EEE 2023)', 'startDate' => '2026-10-01', 'location' => ['@type' => 'Place', 'name' => 'Legacy Hall, Oklahoma State University', 'address' => ['@type' => 'PostalAddress', 'addressLocality' => 'Stillwater', 'addressRegion' => 'OK']], 'organizer' => ['@type' => 'Organization', 'name' => 'Spears School of Business, Oklahoma State University'], 'url' => $site->url() . '/intro-entrepreneurship/'],
+      ['@type' => 'EducationalEvent', 'name' => 'Business in the Age of AI, School of Entrepreneurship guest talk', 'startDate' => '2026-09-24', 'location' => ['@type' => 'Place', 'name' => 'Riata Center for Innovation and Entrepreneurship, Oklahoma State University', 'address' => ['@type' => 'PostalAddress', 'addressLocality' => 'Stillwater', 'addressRegion' => 'OK']], 'url' => $site->url() . '/riata-center/'],
     ],
     'hasCredential' => [
       '@type' => 'EducationalOccupationalCredential',
@@ -486,7 +492,7 @@ if (isset($cityServed[$page->slug()])) {
       ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => 'AI Concierge'], 'priceSpecification' => ['@type' => 'UnitPriceSpecification', 'minPrice' => '1000', 'maxPrice' => '3000', 'priceCurrency' => 'USD', 'unitText' => 'MONTH']],
       ['@type' => 'Offer', 'itemOffered' => ['@type' => 'Service', 'name' => 'Sidecar'], 'priceSpecification' => ['@type' => 'UnitPriceSpecification', 'minPrice' => '250', 'priceCurrency' => 'USD', 'unitText' => 'MONTH']],
     ]],
-    'sameAs' => ['https://www.linkedin.com/in/loganshimmer/', 'https://www.linkedin.com/company/shimmer-labs', 'https://maps.app.goo.gl/25HkLF86xh1cJTES6'],
+    'sameAs' => ['https://www.linkedin.com/in/loganshimmer/', 'https://www.linkedin.com/company/shimmer-labs', 'https://maps.app.goo.gl/25HkLF86xh1cJTES6', 'https://techiegrandkid.com'],
   ];
 }
 
