@@ -42,8 +42,9 @@ const quota = await api('GetUrlSubmissionQuota');
 if (quota && !quota.error) console.log(`\nURL submission quota: ${quota.DailyQuota} today, ${quota.MonthlyQuota} this month`);
 
 for (const p of process.argv.slice(2)) {
+  await new Promise(r => setTimeout(r, 1500)); // Bing throttles the per-URL endpoint
   const info = await api('GetUrlInfo', { url: SITE + p });
-  if (info?.error) { console.log(`\n${p}: ${info.error}`); continue; }
+  if (!info || info?.error || info?.ErrorCode) { console.log(`\n${p}: ${info?.error || info?.Message || 'no response (throttled?)'}`); continue; }
   const lc = msDate(info.LastCrawledDate), dd = msDate(info.DiscoveryDate);
   const ok = d => d && d.getFullYear() > 1900;
   console.log(`\n${p}: ${ok(lc) ? 'last crawled ' + day(lc) : 'never crawled by Bing'}${ok(dd) ? ', discovered ' + day(dd) : ''}, http ${info.HttpStatus || '-'}, inbound anchors ${info.AnchorCount}`);
