@@ -10,7 +10,8 @@
 - [ ] Journal Record guest opinion: "How much does an AI consultant cost an Oklahoma small business?" ~500 words to copy.desk@journalrecord.com with headshot. Claude drafts on your go.
 - [ ] (moved to Open) GBP reviews: 2 today. Ask the 7 case-study clients. Local pack leaders have 6 to 79.
 - [x] GBP description (checked in Chrome Sep 28: already the operations-partner copy, category Business management consultant).
-- [ ] GBP Services list is empty under the primary category (only "IT consulting" under Computer consultant). Add: Operations Assessment ($1,500), AI Concierge (from $1,000/mo), Sidecar (from $1,000), Free AI Office Hours ($0). Path: search "Shimmer Labs" signed in as logan@shimmerlabs.co > Edit services. Also add the company LinkedIn, Facebook, Instagram under social profiles. Or tell Claude to do it in Chrome.
+- [x] GBP Services (Oct 5): Operations Assessment from $1,500, AI Concierge from $1,000, Sidecar from $1,000, Free AI Office Hours (Free), each with a description; Instagram added to social profiles; two photos added (Meridian teaching, fellowship card). All pending Google review. GBP allows one link per platform, so the company LinkedIn cannot sit beside the personal one. Facebook page skipped: the only page is facebook.com/logan.herr.5203 (old surname handle); rename it first.
+- [ ] GBP: add Suite 86 to the address (Business information > Location), and a cover photo. Bing Places mirrors GBP weekly.
 - [ ] Validate the two Event schema fixes under Search Console > Enhancements > Events after /office-hours is recrawled.
 - [ ] (moved to Open) Decide Concierge cadence (site: two sessions a month; Kimberly call: weekly at $2k) before the next close.
 - [ ] GHL nurture on the `concierge-intake` tag: build the 4-email sequence (references/sep-2026-handoffs/ghl-concierge-nurture.md) and paste the Assessment line; times are 2 to 3 PM.
