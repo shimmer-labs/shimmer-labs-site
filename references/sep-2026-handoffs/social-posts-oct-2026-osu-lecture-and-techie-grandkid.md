@@ -33,7 +33,7 @@ Slides are at shimmerlabs.co/intro-entrepreneurship if you want them.
 
 ### Facebook (personal profile)
 
-Got to guest lecture at OSU on Thursday. Intro to Entrepreneurship, about 110 freshmen, Legacy Hall. I graduated from Spears in 2009 and had never been on that side of the room.
+Got to guest lecture at OSU on Thursday. Intro to Entrepreneurship, about 110 freshmen, Legacy Hall. I graduated from OSU's engineering college in 2009 and had never been on that side of a lecture hall.
 
 I told them about building three apps that nobody paid for, and about how the business I actually make money with started because a lady at the thrift store where I volunteer asked if I'd look at her TV. I didn't plan Techie Grandkid. The customers showed up and told me what it was.
 
