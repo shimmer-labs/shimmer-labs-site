@@ -221,6 +221,8 @@ if ($page->intendedTemplate()->name() === 'about') {
     'sameAs' => [
       'https://www.linkedin.com/in/loganshimmer/',
       'https://github.com/shimmer-labs'
+    ,
+      'https://techiegrandkid.com'
     ]
   ];
 }
