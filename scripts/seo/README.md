@@ -30,6 +30,9 @@ ChatGPT works logged out with `https://chatgpt.com/?q=<query>&hints=search`. Wai
 
 ## Things that bit us (do not relearn)
 
+- Before blaming a traffic change on a site push, fetch https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history and list any ranking update in the window. Oct 1 2026 non-brand drop overlapped both the Sep 28 push and Google's Sep 24 to Oct 8 Spam Update.
+- SerpApi rate-limits after a burst; Chrome search in Logan's profile is the fallback and the ground truth anyway.
+
 - Never trust `$page->modified()` on this site: DigitalOcean zeroes mtimes (1980). Dates come from `Date:` and `Updated:` fields. Bump `Updated:` whenever a content file changes, or the sitemap and Article schema lie.
 - Bing bot SERPs are junk on desktop (dictionary entries, Terraria). Use SerpApi `device: mobile` and the `url:` operator for per-URL index checks, or read Bing Webmaster Tools directly.
 - SerpApi Google positions are unreliable versus real Google; screenshots and Search Console are ground truth.

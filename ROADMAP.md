@@ -23,6 +23,7 @@
 - [ ] Watch /services/assessment in Search Console; two requests in, still "discovered, not indexed." If it's still out on Oct 5, we look at why.
 
 **Claude, on your go**
+- [ ] Oct 13: non-brand impressions down ~80% since Oct 1 (Spam Update Sep 24 to Oct 8, or our Sep 28 push). Re-check Oct 20 and Oct 27. If no recovery by Oct 27, A/B: restore the pre-Sep-28 meta descriptions on the concierge note and the four other top non-brand pages, request indexing, compare two weeks later.
 - [x] Oct 5: lecture recap note /notes/how-to-find-an-overlooked-customer (links deck + PDF), scams note refreshed with FBI 2025 and FTC age figures, About gets Talks + Techie Grandkid sections, llms files and schema cross-link techiegrandkid.com both ways (TG already linked here). techiegrandkid.com/notes/grandparent-scam is that site's first article. Link ask to Dr. Yates and Jason Cardenas drafted in Gmail.
 - [ ] Talk name: the Techie Grandkid home page says "Don't Get Got", the Primrose deck and the new article say "Don't Get Robbed Online", Logan said "Staying Safe Online" on Oct 5. Pick one and sweep.
 - [ ] Community answers, one a week, no links unless the forum allows: Contractor Talk "juggling too many apps" thread, HVAC-Talk "job's done but billing isn't", r/ArtificialInteligence "should we hire an AI consultant", the Oklahoma Small Business Contractors FB group (13.4K). Ranked list with what each answer should say is in offsite-audit-communities.md. Drafts need your voice, so I write, you post.
