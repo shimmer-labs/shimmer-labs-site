@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>12 Loop</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+  body{display:flex;flex-direction:column;}
+  h1.slide-title{margin-top:110px;font-size:62px;}
+  .sub{font-size:33px;font-weight:300;color:rgba(255,255,255,.8);margin-top:14px;max-width:1600px;line-height:1.35;}
+  .sub b{color:var(--gold);font-weight:600;}
+  .diagram{flex:1;display:flex;flex-direction:column;justify-content:center;padding-bottom:30px;gap:0;}
+  .loop-top{position:relative;height:130px;margin-top:10px;}
+  .loop-top .arc-label{position:absolute;top:-6px;left:50%;transform:translateX(-50%);font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:600;color:#2DD4BF;background:var(--navy);padding:4px 22px;white-space:nowrap;z-index:2;}
+  .loop-top svg{position:absolute;left:0;right:0;top:40px;width:100%;height:80px;overflow:visible;}
+  .track{display:flex;align-items:stretch;justify-content:space-between;}
+  .node{width:226px;flex:0 0 226px;border-radius:18px;padding:26px 12px;background:rgba(255,255,255,.05);border:2px solid rgba(253,190,52,.4);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:236px;}
+  .node .stage{font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:#fff;letter-spacing:-.5px;line-height:1.04;margin-bottom:12px;}
+  .node .touch{font-size:26px;color:rgba(255,255,255,.7);line-height:1.25;}
+  .arrow{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:0 10px;}
+  .arrow .auto{font-family:'Space Grotesk',sans-serif;font-size:27px;font-weight:600;color:#fff;text-align:center;line-height:1.12;}
+  .arrow .line{position:relative;width:100%;height:3px;background:var(--gold);}
+  .arrow .line::after{content:'';position:absolute;right:-2px;top:-7px;border-left:14px solid var(--gold);border-top:8px solid transparent;border-bottom:8px solid transparent;}
+  .arrow .ai{font-size:21px;font-weight:500;color:var(--gold);border:1px solid rgba(253,190,52,.5);border-radius:999px;padding:7px 14px;text-align:center;line-height:1.15;background:rgba(253,190,52,.07);}
+  .nurture{margin-top:44px;display:flex;align-items:center;gap:22px;border:2px dashed rgba(253,190,52,.55);border-radius:16px;padding:22px 34px;background:rgba(253,190,52,.05);}
+  .nurture .pill{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:23px;letter-spacing:1.5px;text-transform:uppercase;color:var(--navy);background:var(--gold);border-radius:8px;padding:9px 18px;white-space:nowrap;}
+  .nurture .txt{font-size:31px;color:rgba(255,255,255,.88);line-height:1.3;}
+  .nurture .txt b{color:#FFD96B;font-weight:600;}
+</style></head>
+<body class="dark"><div class="accent"></div>
+<div class="tag">If we get here: the map</div>
+<h1 class="slide-title">Your marketing is a <span class="gold">loop</span>, not a funnel.</h1>
+<p class="sub">Five stages. Nobody vanishes at the sale. The work lives in the <b>arrows</b>, and every arrow is a process you can write once and run forever.</p>
+<div class="diagram">
+  <div class="loop-top">
+    <div class="arc-label">Social proof &rarr; the next stranger finds you</div>
+    <svg viewBox="0 0 1740 90"><defs><marker id="ah" markerWidth="14" markerHeight="14" refX="9" refY="6" orient="auto"><path d="M0,0 L11,6 L0,12 Z" fill="#2DD4BF"/></marker></defs>
+      <path d="M 1624 84 C 1624 2, 232 2, 140 82" fill="none" stroke="#2DD4BF" stroke-width="3" marker-end="url(#ah)" opacity=".9"/></svg>
+  </div>
+  <div class="track">
+    <div class="node"><div class="stage">ANON</div><div class="touch">Social, your site, the boutique rack</div></div>
+    <div class="arrow"><div class="auto">Get found &amp; capture</div><div class="line"></div><div class="ai">&#10022; posts + a signup</div></div>
+    <div class="node"><div class="stage">KNOWN</div><div class="touch">On your list</div></div>
+    <div class="arrow"><div class="auto">Welcome + first offer</div><div class="line"></div><div class="ai">&#10022; emails</div></div>
+    <div class="node"><div class="stage">FIRST SALE</div><div class="touch">They buy</div></div>
+    <div class="arrow"><div class="auto">Post-purchase, new season</div><div class="line"></div><div class="ai">&#10022; emails</div></div>
+    <div class="node"><div class="stage">REPEAT</div><div class="touch">They come back</div></div>
+    <div class="arrow"><div class="auto">Ask for the review</div><div class="line"></div><div class="ai">&#10022; emails</div></div>
+    <div class="node"><div class="stage">EVANGELIST</div><div class="touch">Reviews, referrals, tags</div></div>
+  </div>
+  <div class="nurture"><span class="pill">&#8634; Nurture</span><span class="txt">The cheapest fix: everyone who <b>didn&rsquo;t move forward</b> is still reachable. The abandoned cart, the follower who never bought, the one-time buyer at season change.</span></div>
+</div>
+<div class="num">12</div>
+</body></html>
