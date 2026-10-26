@@ -17,6 +17,9 @@ Disallow: /panel
 Disallow: /kirby
 Disallow: /site
 
+# Cloudflare email-obfuscation helper, not a page
+Disallow: /cdn-cgi/
+
 # Disallow service worker and cache files
 Disallow: /sw.js
 

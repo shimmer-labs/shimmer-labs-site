@@ -638,6 +638,15 @@ return [
         return option('ghl.lead')();
       }
     ],
+    // GET on the POST-only endpoints: send crawlers somewhere real instead of a 404
+    // (Search Console flagged /_lead as Not found, Oct 2026)
+    [
+      'pattern' => '(_lead|_intake)',
+      'method'  => 'GET',
+      'action'  => function($which) {
+        go(url($which === '_intake' ? 'intake' : 'contact'), 301);
+      }
+    ],
     // /_intake — AI Concierge intake form, validates then upserts into GHL
     [
       'pattern' => '_intake',
