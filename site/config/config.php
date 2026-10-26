@@ -642,7 +642,7 @@ return [
     // (Search Console flagged /_lead as Not found, Oct 2026)
     [
       'pattern' => '(_lead|_intake)',
-      'method'  => 'GET',
+      'method'  => 'GET|HEAD',
       'action'  => function($which) {
         go(url($which === '_intake' ? 'intake' : 'contact'), 301);
       }

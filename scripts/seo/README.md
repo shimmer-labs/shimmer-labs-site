@@ -42,3 +42,7 @@ ChatGPT works logged out with `https://chatgpt.com/?q=<query>&hints=search`. Wai
 - Any page with fewer than two in-body inbound links ends up "Discovered, not indexed". Fix links before requesting indexing.
 - Meta descriptions are trimmed to a whole sentence under 158 chars in header.php, but write an explicit `Meta_description:` on every new page anyway.
 - Report AI-citation results with the cited sources listed, and say which engine and whether it was signed in.
+- POST-only Kirby routes (`_lead`, `_intake`) return 404 on GET, and Googlebot GETs whatever it finds in JS. Pair every POST route with a GET route that 301s to the page that hosts the form, or Search Console files it under Not found and the validation fails.
+- A Search Console "fixes failed" mail usually means the recrawl hit pages that still 404, not that the redirects are wrong. Open Pages > the reason > Examples, curl each URL, fix the live ones, then Start new validation.
+- DigitalOcean App Platform does not rebuild when the PHP buildpack gets a security fix. After any PHP advisory, push an empty commit (`git commit --allow-empty`) and confirm the deploy. Build logs in the DO dashboard show the PHP version; nothing on the live site does.
+
