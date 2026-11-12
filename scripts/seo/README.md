@@ -45,4 +45,4 @@ ChatGPT works logged out with `https://chatgpt.com/?q=<query>&hints=search`. Wai
 - POST-only Kirby routes (`_lead`, `_intake`) return 404 on GET, and Googlebot GETs whatever it finds in JS. Pair every POST route with a GET route that 301s to the page that hosts the form, or Search Console files it under Not found and the validation fails.
 - A Search Console "fixes failed" mail usually means the recrawl hit pages that still 404, not that the redirects are wrong. Open Pages > the reason > Examples, curl each URL, fix the live ones, then Start new validation.
 - DigitalOcean App Platform does not rebuild when the PHP buildpack gets a security fix. After any PHP advisory, push an empty commit (`git commit --allow-empty`) and confirm the deploy. Build logs in the DO dashboard show the PHP version; nothing on the live site does.
-
+- A failed validation can be a URL Google has not recrawled since the fix. `inspect.mjs` works on non-page URLs like `/_lead` and shows the stored verdict plus crawl date; if the crawl predates the deploy, request indexing from that inspection link to force the recrawl instead of touching the redirect again.
