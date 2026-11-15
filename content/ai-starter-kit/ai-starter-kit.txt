@@ -1,0 +1,17 @@
+Title: The AI Starter Kit
+
+----
+
+Seo_title: The AI Starter Kit: three AI helpers for your small business, set up in an afternoon
+
+----
+
+Meta_description: A short video course and prompt kit from Shimmer Labs. Set up Claude to draft your email replies, plan your week, and write your posts, in your voice. $299, one time.
+
+----
+
+Uuid: ai-starter-kit
+
+----
+
+Updated: 2026-11-15
