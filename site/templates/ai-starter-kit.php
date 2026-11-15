@@ -1,9 +1,9 @@
 <?php
-// The AI Starter Kit sales page. Unlisted (noindex, not in the nav) until the
-// course is published in Skool. To launch: drop the noindex flag below and
-// point $kitUrl at the course link.
+// The AI Starter Kit sales page. The course is sold inside Main Street AI on
+// Skool; people have to join the free group before they can buy, so $kitUrl
+// goes to the group's About page.
 $kitUrl = 'https://www.skool.com/main-street-ai-2900/about';
-snippet('header', ['noindex' => true]);
+snippet('header');
 ?>
 
 <style>

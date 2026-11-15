@@ -817,6 +817,7 @@ return [
           'notes/ai-employee-schedule',
           'office-hours',
           'event-video',
+          'ai-starter-kit',
         ];
         foreach ($extraPages as $slug) {
           if ($p = $site->find($slug)) {

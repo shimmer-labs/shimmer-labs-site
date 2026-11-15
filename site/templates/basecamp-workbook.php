@@ -84,7 +84,7 @@
         <a class="bw-btn bw-btn--solid" href="https://www.skool.com/main-street-ai-2900/about" target="_blank" rel="noopener">Join Main Street AI (free)</a>
         <a class="bw-btn bw-btn--line" href="<?= url('assets/basecamp/Basecamp-Workbook.pdf') ?>" target="_blank" rel="noopener">Download the PDF</a>
       </div>
-      <p class="bw-join">Main Street AI is where the slides and the plain-text prompts live, and where the full AI Starter Kit course is landing, with the calendar and content builds we didn't have time for.</p>
+      <p class="bw-join">Main Street AI is where the slides and the plain-text prompts live, and where the full <a href="<?= url('ai-starter-kit') ?>" style="color:#FDBE34">AI Starter Kit</a> course lives, with the calendar and content builds we didn't have time for.</p>
     </div>
   </section>
 

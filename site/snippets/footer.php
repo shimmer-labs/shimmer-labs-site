@@ -34,6 +34,7 @@
             <li><a href="<?= url('oklahoma-city-ai-consultant') ?>">Oklahoma City AI Consultant</a></li>
             <li><a href="<?= url('tulsa-ai-consultant') ?>">Tulsa AI Consultant</a></li>
             <li><a href="<?= url('office-hours') ?>">AI Office Hours</a></li>
+            <li><a href="<?= url('ai-starter-kit') ?>">AI Starter Kit</a></li>
             <li><a href="<?= url('contact') ?>">Contact</a></li>
           </ul>
         </div>
