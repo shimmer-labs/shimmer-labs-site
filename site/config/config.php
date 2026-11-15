@@ -623,6 +623,14 @@ return [
         return option('scanner.proxy')($id);
       }
     ],
+    // /Basecamp-Workbook: the link in the Nov 2026 Basecamp email is capitalized.
+    // Page folders are lowercase and the server is case-sensitive, so match any casing.
+    [
+      'pattern' => '(?i:basecamp-workbook)',
+      'action'  => function() {
+        return page('basecamp-workbook');
+      }
+    ],
     // /lunch-learn — page retired Aug 2026; old links go to office hours
     [
       'pattern' => 'lunch-learn',
