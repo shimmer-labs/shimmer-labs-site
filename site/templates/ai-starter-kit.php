@@ -157,7 +157,7 @@ snippet('header', ['noindex' => true]);
   <section class="sk-section">
     <div class="container">
       <h2 class="sk-h2">What you need</h2>
-      <p class="sk-sub">Claude, plus Gmail and Google Calendar. No other software to buy. If you can copy and paste, you can do this.</p>
+      <p class="sk-sub">A paid Claude plan, Gmail or Google Workspace, Google Calendar, and a real computer. No other software to buy. If you can copy and paste, you can do this.</p>
       <div class="sk-cards">
         <div class="sk-card">
           <h3>You stay in charge</h3>
