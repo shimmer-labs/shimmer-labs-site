@@ -631,6 +631,16 @@ return [
         return page('basecamp-workbook');
       }
     ],
+    // The workbook itself, shown inside the /Basecamp-Workbook page (a standalone print-styled HTML file)
+    [
+      'pattern' => '(?i:basecamp-workbook)/full',
+      'action'  => function() {
+        $file = kirby()->root('index') . '/assets/basecamp/workbook.html';
+        return is_file($file)
+          ? new Kirby\Cms\Response(file_get_contents($file), 'text/html')
+          : false;
+      }
+    ],
     // /lunch-learn — page retired Aug 2026; old links go to office hours
     [
       'pattern' => 'lunch-learn',

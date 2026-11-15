@@ -1,14 +1,9 @@
 <?php snippet('header', ['noindex' => true]) ?>
 
 <style>
-/* ═══════ Basecamp Workbook holding page ═══════ */
-.bw-hero { background: #0A1A2F; padding: 4.5rem 0; }
-.bw-hero .container {
-  display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  gap: 3.5rem;
-  align-items: center;
-}
+/* ═══════ Basecamp Workbook ═══════ */
+.bw-hero { background: #0A1A2F; padding: 3.25rem 0 3rem; }
+.bw-hero .container { max-width: 900px; }
 .bw-badge {
   display: inline-block;
   background: rgba(253,190,52,0.15);
@@ -18,124 +13,104 @@
   padding: 0.35rem 1rem;
   border-radius: 100px;
   border: 1px solid rgba(253,190,52,0.3);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   font-family: var(--font-body);
   letter-spacing: 0.02em;
 }
 .bw-title {
   font-family: var(--font-heading);
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 700;
   color: #fff;
-  line-height: 1.1;
-  margin: 0 0 1.25rem;
+  line-height: 1.12;
+  margin: 0 0 1rem;
 }
 .bw-title span { color: #FDBE34; }
 .bw-lede {
   color: rgba(255,255,255,0.82);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 1.6;
-  margin: 0 0 1rem;
-  max-width: 34rem;
+  margin: 0 0 1.5rem;
+  max-width: 40rem;
 }
-.bw-lede strong { color: #fff; }
-.bw-photo { margin: 0; }
-.bw-photo img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: 30% 70%;
-  border-radius: 14px;
-  display: block;
-  box-shadow: 0 24px 60px rgba(0,0,0,0.45);
-}
-.bw-photo figcaption {
-  color: rgba(255,255,255,0.55);
-  font-size: 0.85rem;
-  margin-top: 0.75rem;
-  text-align: right;
-}
-.bw-flyer { background: #FBFAF3; padding: 4.5rem 0 5rem; }
-.bw-flyer .container {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 3.5rem;
-  align-items: center;
-  max-width: 1000px;
-}
-.bw-flyer h2 {
+.bw-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.bw-btn {
+  display: inline-block;
   font-family: var(--font-heading);
-  font-size: 2rem;
-  line-height: 1.2;
-  color: #0A1A2F;
-  margin: 0 0 1rem;
-}
-.bw-flyer p { color: #33404f; font-size: 1.1rem; line-height: 1.65; margin: 0 0 1rem; }
-.bw-facts { list-style: none; padding: 0; margin: 1.5rem 0 0; }
-.bw-facts li {
-  padding: 0.85rem 0;
-  border-top: 1px solid rgba(10,26,47,0.12);
-  color: #0A1A2F;
-  font-size: 1.05rem;
-  line-height: 1.45;
-}
-.bw-facts b {
-  display: block;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #8a6a0f;
-  margin-bottom: 0.15rem;
-}
-.bw-flyer__img img {
-  width: 100%;
-  height: auto;
-  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
   border-radius: 10px;
-  box-shadow: 0 18px 50px rgba(10,26,47,0.22);
+  text-decoration: none;
+  border: 2px solid #FDBE34;
+}
+.bw-btn--solid { background: #FDBE34; color: #0A1A2F; }
+.bw-btn--line { background: transparent; color: #FDBE34; }
+.bw-btn:hover { filter: brightness(1.08); }
+.bw-join {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  margin: 1.25rem 0 0;
+  max-width: 40rem;
+}
+.bw-book { background: #FBFAF3; padding: 2rem 0 4rem; }
+.bw-book .container { max-width: 900px; }
+.bw-frame {
+  width: 100%;
+  min-height: 80vh;
+  border: 1px solid rgba(10,26,47,0.14);
+  border-radius: 12px;
+  background: #fff;
+  display: block;
+  box-shadow: 0 14px 40px rgba(10,26,47,0.10);
 }
 @media (max-width: 820px) {
-  .bw-hero { padding: 3rem 0; }
-  .bw-hero .container, .bw-flyer .container { grid-template-columns: 1fr; gap: 2rem; }
-  .bw-title { font-size: 2.2rem; }
-  .bw-lede { font-size: 1.08rem; }
-  .bw-flyer { padding: 3rem 0 3.5rem; }
-  .bw-flyer h2 { font-size: 1.6rem; }
+  .bw-hero { padding: 2.25rem 0 2rem; }
+  .bw-title { font-size: 2rem; }
+  .bw-lede { font-size: 1.05rem; }
+  .bw-book { padding: 1rem 0 3rem; }
+  .bw-book .container { padding-left: 0.5rem; padding-right: 0.5rem; }
 }
 </style>
 
 <main class="main-content">
   <section class="bw-hero">
     <div class="container">
-      <div>
-        <span class="bw-badge">Basecamp Workbook &middot; Automate with Confidence</span>
-        <h1 class="bw-title">Well, aren't you an <span>eager little beaver.</span></h1>
-        <p class="bw-lede">We're just putting some finishing touches on the workbook.</p>
-        <p class="bw-lede"><strong>It'll be right here, ready for you to use at Basecamp.</strong></p>
+      <span class="bw-badge">Business in the Age of AI Basecamp &middot; November 16, 2026</span>
+      <h1 class="bw-title">Automate with Confidence: <span>the workbook.</span></h1>
+      <p class="bw-lede">Everything from the session, right here. Every prompt has a Copy button, so paste it into your chatbot and replace anything in [brackets].</p>
+      <div class="bw-actions">
+        <a class="bw-btn bw-btn--solid" href="https://www.skool.com/main-street-ai-2900/about" target="_blank" rel="noopener">Join Main Street AI (free)</a>
+        <a class="bw-btn bw-btn--line" href="<?= url('assets/basecamp/Basecamp-Workbook.pdf') ?>" target="_blank" rel="noopener">Download the PDF</a>
       </div>
-      <figure class="bw-photo">
-        <img src="<?= url('assets/images/basecamp/eager-beaver.jpg') ?>" alt="A beaver in a pond, working on a pile of sticks" width="1280" height="851">
-        <figcaption>Us, right now, with the workbook.</figcaption>
-      </figure>
+      <p class="bw-join">Main Street AI is where the slides and the plain-text prompts live, and where the full AI Starter Kit course is landing, with the calendar and content builds we didn't have time for.</p>
     </div>
   </section>
 
-  <section class="bw-flyer">
+  <section class="bw-book">
     <div class="container">
-      <div>
-        <h2>Yep, you're in the right place.</h2>
-        <p>This is the workbook page for Business in the Age of AI. Come back to this same link at Basecamp.</p>
-        <ul class="bw-facts">
-          <li><b>When</b>Monday, November 16, 2026</li>
-          <li><b>Where</b>Meridian Technology Center, 1312 S Sangre Rd, Stillwater</li>
-          <li><b>The workbook is for</b>Automate with Confidence, 1:00 PM</li>
-        </ul>
-      </div>
-      <div class="bw-flyer__img">
-        <img src="<?= url('assets/images/basecamp/basecamp-flyer.jpg') ?>" alt="Flyer for Business in the Age of AI, Monday, November 16, 2026 at Meridian Technology Center in Stillwater" width="1082" height="1400" loading="lazy">
-      </div>
+      <iframe class="bw-frame" id="bw-frame" title="Automate with Confidence workbook" src="<?= url('basecamp-workbook/full') ?>"></iframe>
     </div>
   </section>
 </main>
+
+<script>
+(function () {
+  var f = document.getElementById('bw-frame');
+  function fit() {
+    try {
+      var d = f.contentDocument;
+      if (d && d.documentElement) { f.style.height = (d.documentElement.scrollHeight + 8) + 'px'; }
+    } catch (e) {}
+  }
+  f.addEventListener('load', function () {
+    fit();
+    setTimeout(fit, 400);
+    try { f.contentWindow.addEventListener('resize', fit); } catch (e) {}
+  });
+  window.addEventListener('resize', fit);
+})();
+</script>
 
 <?php snippet('footer') ?>
