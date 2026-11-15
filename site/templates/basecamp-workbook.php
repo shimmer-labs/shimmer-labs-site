@@ -101,7 +101,12 @@
   function fit() {
     try {
       var d = f.contentDocument;
-      if (d && d.documentElement) { f.style.height = (d.documentElement.scrollHeight + 8) + 'px'; }
+      // Measure the content (body), not the document: the document is never
+      // shorter than the frame, so sizing from it made the frame grow forever.
+      if (d && d.body) {
+        var h = d.body.offsetHeight + 4;
+        if (Math.abs(f.offsetHeight - h) > 1) { f.style.height = h + 'px'; }
+      }
     } catch (e) {}
   }
   f.addEventListener('load', function () {
