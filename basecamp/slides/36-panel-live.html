@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>36 Panel live</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+body.dark{display:flex;flex-direction:column;justify-content:flex-start;padding-top:96px;}
+.hdr{display:flex;align-items:baseline;justify-content:space-between;}
+h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:54px;line-height:1.05;} h1 .gold{color:var(--gold);}
+.when{font-family:'Space Grotesk',sans-serif;font-size:24px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.6);}
+.stage{position:relative;margin-top:30px;height:680px;}
+.card{position:absolute;inset:0;display:flex;gap:46px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:38px 46px;opacity:0;transition:opacity 1.4s ease;}
+.card.on{opacity:1;}
+.card img{width:400px;height:400px;object-fit:cover;border-radius:20px;border:4px solid var(--gold);flex-shrink:0;}
+.card.mod img{border-color:#fff;}
+.card .role{font-family:'Space Grotesk',sans-serif;font-size:20px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);}
+.card.mod .role{color:#fff;}
+.card .name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:56px;line-height:1.05;margin-top:8px;color:#fff;}
+.card .co{font-size:30px;color:rgba(255,255,255,.75);margin-top:6px;}
+.card .bio{font-size:33px;line-height:1.4;color:rgba(255,255,255,.93);margin-top:20px;max-width:1300px;}
+.q{margin-top:26px;background:rgba(253,190,52,.12);border-left:12px solid var(--gold);border-radius:0 16px 16px 0;padding:20px 34px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:37px;line-height:1.25;} .q b{color:var(--gold);}
+</style></head>
+<body class="dark">
+
+<div class="accent"></div>
+<div class="hdr"><h1>Fireside chat: <span class="gold">Business in the Age of AI</span></h1><div class="when">2:30 to 3:35 · Audience Q&amp;A at the end</div></div>
+
+<div class="stage">
+  <div class="card on" data-i="0"><img src="../assets/panel/behfar.png" alt="Behfar Jahanshahi"><div><div class="role">Panelist</div><div class="name">Behfar Jahanshahi</div><div class="co">Founder and CEO, InterWorks</div><div class="bio">Behfar started InterWorks in 1996 as a student at Oklahoma State University, providing networking and IT services to local businesses, and some of those first clients are still with InterWorks today. Thirty years later, InterWorks is a global IT, data and AI consultancy with more than 280 people, still headquartered in Stillwater. InterWorks has been named one of Forbes’ Small Giants, and Behfar has been recognized as one of Oklahoma’s Most Admired CEOs. He also serves on OSU’s MSIS advisory board. Today, AI is central to how InterWorks works, both in the solutions it builds for clients and in how its own people work every day.</div></div></div>
+  <div class="card" data-i="1"><img src="../assets/panel/cory.png" alt="Cory Williams"><div><div class="role">Panelist</div><div class="name">Cory Williams</div><div class="co">Owner and Broker, Look Properties</div><div class="bio">Cory is an attorney, a Realtor, and a developer, all at once. He grew up in Stillwater, came back after law school, and runs Look Properties, a brokerage and property management company on Husband Street. He also spent a decade representing Stillwater in the Oklahoma House. He runs businesses built on contracts, leases, licenses, and trust, which is exactly where AI gets interesting and risky.</div></div></div>
+  <div class="card" data-i="2"><img src="../assets/panel/brenda.png" alt="Dr. Brenda Rolls"><div><div class="role">Panelist</div><div class="name">Dr. Brenda Rolls</div><div class="co">President and CEO, Frontier Electronic Systems</div><div class="bio">Brenda has led Frontier Electronic Systems since 2008. FES was founded in Stillwater in 1973 by two OSU people who wanted to keep high-tech jobs in town, and it still builds high-reliability electronics for space flight, Navy ships, missiles, and aircraft from an 86,000 square foot facility on West 6th. Brenda holds a doctorate in psychology, is an OSU business graduate, serves on the OCAST OSTRaD board, and is the former chair of the Oklahoma Space Industry Development Authority.</div></div></div>
+  <div class="card mod" data-i="3"><img src="../assets/panel/alane.png" alt="Alane Zannotti"><div><div class="role">Moderator</div><div class="name">Alane Zannotti</div><div class="co">President and CEO, Stillwater Chamber of Commerce</div><div class="bio">Alane is asking the questions today. The one every panelist was given in advance: if you were starting your business today, in the age of AI, what would you do differently? Bring your own question, there is audience Q&amp;A at the end. Stand, say your name and your business, then ask.</div></div></div>
+</div>
+
+<div class="q">The question on the couch: <b>if you were starting your business today, in the age of AI, what would you do differently?</b></div>
+<div class="num">36</div>
+
+<script>
+(function(){
+  var cards=document.querySelectorAll('.card'), i=0, HOLD=22000;
+  if (location.search.indexOf('static')>=0) return;
+  setInterval(function(){
+    cards[i].classList.remove('on');
+    i=(i+1)%cards.length;
+    cards[i].classList.add('on');
+  }, HOLD);
+})();
+</script>
+</body></html>
