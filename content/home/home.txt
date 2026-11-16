@@ -14,7 +14,7 @@ Herotitle: We run the office side of your business with you.
 
 ----
 
-Herodescription: A free snapshot of where your business is, a paid Operations Assessment with a written 90-day plan, and the AI Concierge to build the fixes with you. AI on the parts that deserve it.
+Herodescription: A free snapshot of where your business is. The Operations Assessment is the planning: a written 90-day plan. The AI Concierge is the doing: we build the fixes with you, month by month. AI on the parts that deserve it.
 
 ----
 

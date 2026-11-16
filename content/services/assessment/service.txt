@@ -52,7 +52,7 @@ Usually in a small slice. Most of what we find is a process with three steps too
 
 ## What happens after
 
-Three options, and the plan prices all three. Run it yourself with the prompts and the order of operations we give you. Bring it to the <a href="/services/concierge">AI Concierge</a> and we build it together, month by month, with half the Assessment fee credited to your first month. Or hand the biggest piece to <a href="/services/sidecar">Sidecar</a> and have it built and run for you. Plenty of businesses do some of each.
+The Assessment is the planning. What comes next is the doing. Three options, and the plan prices all three. Run it yourself with the prompts and the order of operations we give you (the <a href="/ai-starter-kit">AI Starter Kit</a> is the home version of that, $299 one time). Bring it to the <a href="/services/concierge">AI Concierge</a> and we build it together, month by month, with half the Assessment fee credited to your first month. Or hand the biggest piece to <a href="/services/sidecar">Sidecar</a> and have it built and run for you. Plenty of businesses do some of each.
 
 ----
 
@@ -192,4 +192,4 @@ Uuid: assessment-service-001
 
 ----
 
-Updated: 2026-09-28
+Updated: 2026-11-15

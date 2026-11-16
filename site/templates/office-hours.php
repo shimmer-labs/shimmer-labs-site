@@ -340,7 +340,7 @@
   <div class="container">
     <p class="oh-cta__text">Got something that needs more than two hours on a Tuesday?</p>
     <a href="<?= url('services/assessment') ?>" class="oh-cta__btn">Start the Operations Assessment &rarr;</a>
-    <p class="oh-cta__subtext">Several things to fix? The <a href="<?= url('services/assessment') ?>">Operations Assessment</a> is a day in your business and a written 90-day plan, from $1,500, half credited. Or make it a standing thing: the <a href="<?= url('services/concierge') ?>">AI Concierge</a> is two working sessions a month with text access in between. Priced by team size from $1,000/mo, and the first 5 clients get one tier down.</p>
+    <p class="oh-cta__subtext">Several things to fix? The <a href="<?= url('services/assessment') ?>">Operations Assessment</a> is a day in your business and a written 90-day plan, from $1,500, half credited. Or make it a standing thing: the <a href="<?= url('services/concierge') ?>">AI Concierge</a> is two working sessions a month with text access in between. Priced by team size from $1,000/mo, and the first 5 clients get one tier down. Can't make a Tuesday? The <a href="<?= url('ai-starter-kit') ?>">AI Starter Kit</a> is the same first session as a short video course and prompt kit, $299, no appointment.</p>
     <p class="oh-cta__subtext">And if office hours ever helped you out, tap "Add to Preferred Sources" in the footer. Google will show you more of what we publish. Costs you nothing.</p>
   </div>
 </section>
