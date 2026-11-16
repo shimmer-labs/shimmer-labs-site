@@ -599,11 +599,15 @@ return [
 
   // Routes
   'routes' => [
-    // /_scan — start a new scan (POST) or catch bad GETs
+    // /_scan — start a new scan (POST). A bare GET is a crawler that found the path
+    // in main.js (Search Console filed it as Not found, Nov 2026): send it to the scanner.
     [
       'pattern' => '_scan',
-      'method'  => 'GET|POST',
+      'method'  => 'GET|HEAD|POST',
       'action'  => function() {
+        if (kirby()->request()->method() !== 'POST') {
+          go(url('services/concierge') . '#scanner', 301);
+        }
         return option('scanner.proxy')();
       }
     ],
@@ -657,9 +661,9 @@ return [
       }
     ],
     // GET on the POST-only endpoints: send crawlers somewhere real instead of a 404
-    // (Search Console flagged /_lead as Not found, Oct 2026)
+    // (Search Console flagged /_lead as Not found, Oct 2026; bare /lead, Nov 2026)
     [
-      'pattern' => '(_lead|_intake)',
+      'pattern' => '(_lead|lead|_intake)',
       'method'  => 'GET|HEAD',
       'action'  => function($which) {
         go(url($which === '_intake' ? 'intake' : 'contact'), 301);

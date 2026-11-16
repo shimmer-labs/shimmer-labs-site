@@ -54,6 +54,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !^/panel
 RewriteRule ^(.+)/$ https://shimmerlabs.co/$1 [R=301,L]
 
+# /api/scan is the localhost-only scanner path in main.js; Kirby reserves /api, so catch it here
+# (Search Console filed it as Not found, Nov 2026)
+RewriteRule ^api/scan/?$ https://shimmerlabs.co/services/concierge [R=301,L]
+
 # keep repo housekeeping files private
 RewriteRule ^(README\.md|composer\.(json|lock)|package(-lock)?\.json)$ index.php [L]
 
