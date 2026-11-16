@@ -90,6 +90,12 @@ Header always set Referrer-Policy "strict-origin-when-cross-origin"
 Header always set X-Frame-Options "SAMEORIGIN"
 Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
 
+# deck slide fragments (each deck's index.html loads them in an iframe) are not pages.
+# Search Console filed them as Soft 404 and duplicate-without-canonical in Nov 2026.
+<If "%{REQUEST_URI} =~ m#^/[^/]+/slides/[^/]+\.html$#">
+  Header set X-Robots-Tag "noindex"
+</If>
+
 # cache static assets. The build zeroes file mtimes (Last-Modified 1980), so drop that
 # header and rely on max-age. CSS/JS carry a ?v=hash so a week is safe; images rarely change.
 <FilesMatch "\.(css|js|png|jpg|jpeg|gif|webp|svg|ico|woff2?|mp4|webmanifest)$">
