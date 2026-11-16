@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>08 Projects</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+h1.slide-title{margin-top:113px;font-size:68px;}
+.lede{margin-top:20px;font-size:34px;}
+.wrap{display:flex;gap:45px;margin-top:39px;align-items:stretch;}
+.folders{flex:1.15;display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.folder{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:25px 30px;position:relative;}
+.folder::before{content:"";position:absolute;top:-14px;left:25px;width:136px;height:16px;background:var(--gold);border-radius:7px 7px 0 0;}
+.folder h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:36px;color:var(--navy);margin-bottom:7px;}
+.folder p{font-size:27px;color:var(--soft);line-height:1.35;}
+.fcap{grid-column:1/-1;font-size:32px;color:var(--ink);text-align:center;margin-top:5px;} .fcap b{color:var(--navy);}
+.right{flex:.95;display:flex;flex-direction:column;gap:20px;}
+table.names{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden;border:1px solid #E5E7EB;}
+table.names td{padding:16px 25px;font-size:32px;border-bottom:1px solid #E5E7EB;color:var(--ink);}
+table.names td:first-child{font-weight:600;color:var(--navy);width:45%;}
+table.names td:last-child{font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--goldink);}
+table.names tr:last-child td{border-bottom:0;}
+.right .shots2{height:258px;display:flex;gap:14px;} .right .shots2 img{flex:1;min-width:0;height:258px;}
+</style></head>
+<body class="light">
+
+<div class="stripe"></div>
+<div class="tag">Unlock 3 · Projects</div>
+<h1 class="slide-title">Projects. Gems. <span class="gold">Same idea, different name.</span></h1>
+<div class="lede">A Project is a <b>walled-off set of chats that share one set of instructions and files.</b> Four things live inside: <b>memory, files, instructions, automations.</b></div>
+<div class="wrap">
+  <div class="folders">
+    <div class="folder"><h2>Front desk</h2><p>Email replies, scheduling, “are you open Saturday”</p></div>
+    <div class="folder"><h2>Bookkeeper</h2><p>Invoice reminders, expense notes, “where’s my W-9”</p></div>
+    <div class="folder"><h2>Marketing</h2><p>Posts, captions, the newsletter nobody wants to write</p></div>
+    <div class="folder"><h2>Owner</h2><p>Plans, pricing decisions, the thing you argue with yourself about</p></div>
+    <div class="fcap">Think about the hats you wear. <b>One project per hat.</b></div>
+  </div>
+  <div class="right">
+    <table class="names">
+      <tr><td>ChatGPT</td><td>Projects</td></tr>
+      <tr><td>Claude</td><td>Projects</td></tr>
+      <tr><td>Gemini</td><td>Gems <span style="font-size:.7em;color:#6B7280;font-weight:500">(Skills from Nov 17)</span></td></tr>
+      <tr><td>Microsoft Copilot</td><td>Notebooks / Agents</td></tr>
+    </table>
+    <div class="shots2"><img class="shotimg" src="../assets/shots/chatgpt-projects-sidebar.png" alt=""><img class="shotimg" src="../assets/shots/claude-new-project.png" alt=""></div>
+  </div>
+</div>
+<div class="takeaway">Set it up once. <b>Stop re-explaining yourself.</b></div>
+<div class="num">8</div>
+</body></html>

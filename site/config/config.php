@@ -870,6 +870,12 @@ return [
           'priority' => '0.4',
           'changefreq' => 'monthly'
         ];
+        $sitemap[] = [
+          'url' => $site->url() . '/basecamp/',
+          'lastmod' => '2026-11-15',
+          'priority' => '0.4',
+          'changefreq' => 'monthly'
+        ];
 
         // Generate XML
         $xml = '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;

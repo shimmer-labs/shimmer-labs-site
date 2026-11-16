@@ -86,6 +86,7 @@ router.dev.php
 !/intro-entrepreneurship/assets/*.png
 !/realtor-lunch/assets/*.png
 !/fashion/assets/*.png
+!/basecamp/assets/**/*.png
 
 # QR click logs (runtime, not content)
 site/logs/
